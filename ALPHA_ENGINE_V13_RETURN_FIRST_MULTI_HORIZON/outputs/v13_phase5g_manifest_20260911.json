@@ -1,0 +1,34 @@
+{
+  "action_counts": {
+    "BUY": 30,
+    "EXIT": 2,
+    "REDUCE": 1
+  },
+  "asof": "2026-09-11",
+  "build": "V13_P5G_CONFIRMATION_GATED_PROPOSAL_LEDGER_2026-09-13",
+  "cash_state_mutated": false,
+  "executable": false,
+  "forbidden_direct_transition": "PROPOSED_TO_EXECUTABLE",
+  "forward_ledger_mutated": false,
+  "model_changed": false,
+  "next": "Explicit user confirmation must be recorded before any proposal can become executable.",
+  "next_allowed_transition": "USER_CONFIRMED",
+  "phase": "V13-P5G",
+  "policy_changed": false,
+  "portfolio_state_mutated": false,
+  "proposal_count": 33,
+  "proposal_digest": "b60fd275dbedf300b86ce57d34d3eea87d06a87ca0ebfb837f9d5bc94ddd79b4",
+  "proposal_state": "PROPOSED",
+  "real_orders_sent": false,
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "sheets_mutated": false,
+  "side_counts": {
+    "BUY": 30,
+    "SELL": 3
+  },
+  "source_phase5f_sizing_sha256": "4758392a9f8dcf180c69024c57a97a2d09e8734ceecc5a9ede773ed109263151",
+  "source_phase5f_summary_sha256": "572f680bf4f35bef0572e544034958d8c7eaef2f87333278bec3d36d4a6724ba",
+  "status": "PASS",
+  "user_confirmation_required": true,
+  "user_confirmed": false
+}

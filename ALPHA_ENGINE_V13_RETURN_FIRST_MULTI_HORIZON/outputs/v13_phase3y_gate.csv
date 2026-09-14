@@ -1,0 +1,11 @@
+test,status,blocking,value,rule
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-26,all OOF scores < 2025-01-01
+NO_PREDICTOR_RETRAINING,PASS,True,Phase2U OOF reused,portfolio translation only; Phase2U untouched
+ACTIVE_ALPHA_VS_SPY,PASS,True,"{'n': 1510, 'alpha_ann': 0.10280330224579348, 'beta': 1.2078232992055307, 'r2': 0.7753348703651401}",annualized regression alpha vs SPY > 0
+ACTIVE_ALPHA_VS_UEW,PASS,True,"{'n': 1510, 'alpha_ann': 0.03279732901716286, 'beta': 0.7654823209201524, 'r2': 0.5219126272468597}",annualized regression alpha vs dynamic eligible-universe EW > 0
+PERSISTENCE_REDUCES_TURNOVER,FAIL,True,"{'new': 18.66535790256984, 'baseline': 26.792056052092033, 'fraction': 0.6966750840726303}",cost-aware persistence should remove at least 40% of baseline turnover
+STRESS_40BPS_REMAINS_POSITIVE,PASS,True,0.27952693888401114,fixed active-alpha persistent policy remains profitable at 40bps
+EXECUTION_BLOCKING_ACCEPTABLE,PASS,True,0.02040668231479817,blocked requested notional <=5%
+CONVICTION_TOP_TAIL_ADDS_UEW_ALPHA,PASS,True,"{'top_deciles_9_10': 0.00840840935498672, 'middle_deciles_4_7': -0.004094775428974839}",strong active conviction must outperform UEW and middle conviction
+UNIVERSE_LINEAGE_RECORDED,PASS,False,"{'tickers_ever_eligible': 274, 'eligible_at_start': 212, 'eligible_at_end': 211, 'entries_after_start': 62, 'exits_before_end': 63}",dynamic universe entries/exits recorded before holdout
+BASELINE_UEW_ALPHA_REFERENCE,PASS,False,"{'baseline_alpha_ann': -0.0137016818151828, 'new_alpha_ann': 0.03279732901716286}",diagnostic comparison to Phase3X

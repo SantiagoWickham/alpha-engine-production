@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "phase": "V13-P3X",
+  "build": "V13_P3X_ALPHA_ATTRIBUTION_TURNOVER_AUDIT_2026-09-13",
+  "name": "ALPHA_ATTRIBUTION_AND_TURNOVER_AUDIT",
+  "holdout_used": false,
+  "policy_changed": false,
+  "selected_policy": {
+    "alpha_tilt": 1.0,
+    "edge_z": 0.0,
+    "edge_power": 2.0
+  },
+  "headline": {
+    "cagr_20bps": 0.27421967926719826,
+    "spy_cagr": 0.1711653713660084,
+    "uew_cagr_legacy": 0.40488066509133414,
+    "annual_turnover": 26.792056052092033,
+    "median_holdings": 109.0,
+    "median_max_weight": 0.060087384196028736
+  },
+  "questions": {
+    "market_beta": "See v13_phase3x_beta_attribution.csv",
+    "universe_benchmark_bias": "See v13_phase3x_uew_integrity_audit.csv",
+    "random_weak_signal_concern": "See v13_phase3x_conviction_curve.csv",
+    "micro_churn": "See turnover + rebalance counterfactual",
+    "lack_of_concentration": "See concentration_daily + holding_duration",
+    "short_horizon_dominance": "See horizon influence outputs"
+  },
+  "next": "Do not open 2025+. Use this audit to decide whether to redesign portfolio conviction/benchmark semantics or whether true active alpha is already present."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "outputs/phase2_canonical_pit_panel.parquet",
+    "bytes": 20285993,
+    "sha256": "9169879ff2aac7a19182bfb0f31333f5a699a0b30c537bdf094a3b213186c871"
+  },
+  {
+    "path": "data/fundamentals/sec_companyfacts_long.parquet",
+    "bytes": 2217468,
+    "sha256": "8d79c9294b17a1c8179e6595244525623b900ce380fc8025677b09aaafccabde"
+  },
+  {
+    "path": "outputs/phase3_return_targets.parquet",
+    "bytes": 216235583,
+    "sha256": "999e1c3a165bb1a7d3e33f0680587f099fd53c4fc7fe30f0019c7e1d9e8bd35d"
+  },
+  {
+    "path": "data/v13/benchmarks/SPY.parquet",
+    "bytes": 50049,
+    "sha256": "5c1d42ebf97af2641a7a40d6bacc588f2258932ec84964e72e9263db4bb26326"
+  },
+  {
+    "path": "data/v13/benchmarks/QQQ.parquet",
+    "bytes": 50169,
+    "sha256": "1cd33bba7b86ad123470bfb1533960f05451d1282279b6d72faa3adb8e91a813"
+  }
+]

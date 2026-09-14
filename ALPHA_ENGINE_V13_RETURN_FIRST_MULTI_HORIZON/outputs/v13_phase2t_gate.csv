@@ -1,0 +1,7 @@
+test,status,blocking,value,rule
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-26,max cached OOF date < 2025-01-01
+ROUTER_NESTED_PRIOR_ONLY,PASS,True,True,router architecture for each fold selected only from earlier router OOF evidence
+ALL_SIX_HORIZONS_RETAINED,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+2021_2022_META_ADVISOR_RECOVERY,FAIL,True,"[{'fold': 'WF_2021_2022', 'economic_score_20eq': -0.013273702649868227, 'worst_cut_20eq': -0.016650853092954065, 'positive_cut_share': 0.0, 'median_effective_horizon': 26.468524306642486, 'median_max_horizon_weight': 0.3799357213870357, 'rows': 110678}]",advisor economic score >0 and worst cut > -20bp (20-session equivalent)
+2023_2024_META_ADVISOR_CONFIRMATION,FAIL,True,"[{'fold': 'WF_2023_2024', 'economic_score_20eq': -0.029953773580857056, 'worst_cut_20eq': -0.033342253772102974, 'positive_cut_share': 0.0, 'median_effective_horizon': 25.926313456097848, 'median_max_horizon_weight': 0.3435214579610357, 'rows': 103922}]",advisor economic score >0
+NO_SINGLE_HORIZON_MONOPOLY,PASS,True,0.3190744203640805,prior reliability weight <85% for every horizon/fold

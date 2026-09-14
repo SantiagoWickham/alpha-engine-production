@@ -1,0 +1,510 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P2S",
+  "build": "V13_P2S_REGIME_TAIL_RESIDUAL_ALPHA_2026-09-12",
+  "name": "REGIME_TAIL_RESIDUAL_ALPHA_REBUILD",
+  "objective": "RECOVER_ROBUST_PRE2025_ALPHA_WITH_MACRO_REGIME_BETA_NEUTRAL_RESIDUALS_AND_ASYMMETRIC_TAIL_LEARNING",
+  "research_contract": {
+    "pre_holdout_research": "2015-2024 purged walk-forward",
+    "holdout_start": "2025-01-01",
+    "holdout_used": false,
+    "portfolio_run": false
+  },
+  "information_set": {
+    "phase1_features": 95,
+    "model_features_after_regime_beta_expansion": 154,
+    "macro_symbols": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "TLT",
+      "HYG",
+      "UUP",
+      "^VIX"
+    ],
+    "new_target": "40% cross-sectional excess + 30% beta-SPY residual + 30% beta-QQQ residual; upside/downside tails"
+  },
+  "horizon_summary": [
+    {
+      "horizon_sessions": 5,
+      "economic_score": 0.00010590622435654953,
+      "worst_fold": -0.0012636089283178228,
+      "worst_cut": -0.0019705897784663266,
+      "mean_ic": 0.031998270088380486,
+      "winner_lift": 1.1399275750370839,
+      "loser_avoidance": 1.0404771978076106,
+      "positive_cut_share": 0.3333333333333333,
+      "broad20_excess": -0.0002765379572497445
+    },
+    {
+      "horizon_sessions": 10,
+      "economic_score": 0.002129891282499707,
+      "worst_fold": -0.005186886794278061,
+      "worst_cut": -0.005452081467235217,
+      "mean_ic": 0.03705011135215616,
+      "winner_lift": 1.4324528916600647,
+      "loser_avoidance": 0.9202584216280005,
+      "positive_cut_share": 0.6666666666666666,
+      "broad20_excess": -0.00017019280798379532
+    },
+    {
+      "horizon_sessions": 20,
+      "economic_score": 0.004936506021804742,
+      "worst_fold": -0.023957228351223433,
+      "worst_cut": -0.028743029622565922,
+      "mean_ic": 0.037410952088732484,
+      "winner_lift": 1.5457890513414112,
+      "loser_avoidance": 0.9165624226722313,
+      "positive_cut_share": 0.6666666666666666,
+      "broad20_excess": 0.0001441154785839073
+    },
+    {
+      "horizon_sessions": 60,
+      "economic_score": -0.007219789030001146,
+      "worst_fold": -0.060448675908808175,
+      "worst_cut": -0.07611626115286532,
+      "mean_ic": 0.044805365273163755,
+      "winner_lift": 1.4906078514519434,
+      "loser_avoidance": 0.9653619530833416,
+      "positive_cut_share": 0.5833333333333333,
+      "broad20_excess": -0.007037641757949572
+    },
+    {
+      "horizon_sessions": 120,
+      "economic_score": -0.005804788539865378,
+      "worst_fold": -0.09298806715290653,
+      "worst_cut": -0.10705852426327413,
+      "mean_ic": 0.024846987998872222,
+      "winner_lift": 1.491859775422078,
+      "loser_avoidance": 1.0513884801830118,
+      "positive_cut_share": 0.5833333333333333,
+      "broad20_excess": -0.013881988490981371
+    },
+    {
+      "horizon_sessions": 252,
+      "economic_score": -0.11319798244988982,
+      "worst_fold": -0.24659613210200662,
+      "worst_cut": -0.3251514134645262,
+      "mean_ic": 0.005572330350471801,
+      "winner_lift": 1.3988698101680312,
+      "loser_avoidance": 1.4436915401516661,
+      "positive_cut_share": 0.25,
+      "broad20_excess": -0.03254354742760618
+    }
+  ],
+  "regime_2021_2022": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.0002961201479974925,
+      "worst_cut_robust_excess": -0.0006636985975405052,
+      "mean_rank_ic": 0.0069832888952730595,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.6106448827287587,
+      "loser_avoidance": 0.7496756700776456,
+      "residual_tail_spread": 0.001826581960929263,
+      "broad20_robust_excess": 0.00013196894450071163
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.005186886794278061,
+      "worst_cut_robust_excess": -0.005452081467235217,
+      "mean_rank_ic": 0.020030168149163374,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.5331994605517507,
+      "loser_avoidance": 0.7558113673991049,
+      "residual_tail_spread": 0.00038263397618376995,
+      "broad20_robust_excess": -0.0011269497852452054
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.023957228351223433,
+      "worst_cut_robust_excess": -0.028743029622565922,
+      "mean_rank_ic": 0.009457566858734681,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.5739303509431566,
+      "loser_avoidance": 0.6730568190284816,
+      "residual_tail_spread": -0.005532225936479391,
+      "broad20_robust_excess": -0.004333403667737908
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.060448675908808175,
+      "worst_cut_robust_excess": -0.07611626115286532,
+      "mean_rank_ic": -0.021320820180189045,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.3062456332725094,
+      "loser_avoidance": 0.6179632072901686,
+      "residual_tail_spread": -0.02416117007363596,
+      "broad20_robust_excess": -0.013709516545105048
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.09298806715290653,
+      "worst_cut_robust_excess": -0.10705852426327413,
+      "mean_rank_ic": -0.016052979200529775,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.0950680494953535,
+      "loser_avoidance": 0.6744043828373165,
+      "residual_tail_spread": -0.02738031978149395,
+      "broad20_robust_excess": -0.010556212686871732
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.24659613210200662,
+      "worst_cut_robust_excess": -0.3251514134645262,
+      "mean_rank_ic": -0.16486460239290915,
+      "positive_cut_share": 0.0,
+      "winner_lift": 0.4386918204597475,
+      "loser_avoidance": 0.5173084405980468,
+      "residual_tail_spread": -0.129591554330957,
+      "broad20_robust_excess": -0.12196717004927118
+    }
+  ],
+  "recent_2023_2024": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2023_2024",
+      "economic_score": -6.008795847316004e-05,
+      "worst_cut_robust_excess": -0.001315261884946232,
+      "mean_rank_ic": 0.04436083251682551,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 1.228123896159898,
+      "loser_avoidance": 1.0055062454163863,
+      "residual_tail_spread": 0.001663916733074024,
+      "broad20_robust_excess": -0.001482922150436875
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.0008902841239987972,
+      "worst_cut_robust_excess": -0.0019366601819049535,
+      "mean_rank_ic": 0.06871481726216053,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.3094139607944288,
+      "loser_avoidance": 1.0270752650883312,
+      "residual_tail_spread": 0.003727800063928955,
+      "broad20_robust_excess": -0.003434315261569691
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2023_2024",
+      "economic_score": 2.2746615604518454e-06,
+      "worst_cut_robust_excess": -0.002678452394409866,
+      "mean_rank_ic": 0.031833733410818174,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.5969872509283112,
+      "loser_avoidance": 0.9944784699033483,
+      "residual_tail_spread": 0.007601372689201194,
+      "broad20_robust_excess": -0.007467118793964973
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.009060509518570611,
+      "worst_cut_robust_excess": -0.002825660461378719,
+      "mean_rank_ic": 0.12263815796956433,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.5809813060309699,
+      "loser_avoidance": 1.322467635887742,
+      "residual_tail_spread": 0.03224300839931992,
+      "broad20_robust_excess": -0.014372125609439469
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.06169286763696961,
+      "worst_cut_robust_excess": 0.02559621611822357,
+      "mean_rank_ic": 0.08977468351866513,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.005297791678906,
+      "loser_avoidance": 1.4247132865862249,
+      "residual_tail_spread": 0.07370642596159055,
+      "broad20_robust_excess": -0.009731438738371373
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.04546899210284503,
+      "worst_cut_robust_excess": 0.0319686437082164,
+      "mean_rank_ic": 0.12226918862498044,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.1903330928546465,
+      "loser_avoidance": 1.7672327113262443,
+      "residual_tail_spread": 0.1561443974884871,
+      "broad20_robust_excess": 0.010402373730886904
+    }
+  ],
+  "final_expert_weights": [
+    {
+      "horizon_sessions": 5,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.19887530299743755
+    },
+    {
+      "horizon_sessions": 5,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.20731430062816536
+    },
+    {
+      "horizon_sessions": 5,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.21530935922619368
+    },
+    {
+      "horizon_sessions": 5,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.2179509528657584
+    },
+    {
+      "horizon_sessions": 5,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.16055008428244497
+    },
+    {
+      "horizon_sessions": 10,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.21571685289516992
+    },
+    {
+      "horizon_sessions": 10,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.291908181726285
+    },
+    {
+      "horizon_sessions": 10,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.2584465842199321
+    },
+    {
+      "horizon_sessions": 10,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.07362531922955605
+    },
+    {
+      "horizon_sessions": 10,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.160303061929057
+    },
+    {
+      "horizon_sessions": 20,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.42630500753200906
+    },
+    {
+      "horizon_sessions": 20,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.1759404491977145
+    },
+    {
+      "horizon_sessions": 20,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.1424994959646298
+    },
+    {
+      "horizon_sessions": 20,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.21062048483646054
+    },
+    {
+      "horizon_sessions": 20,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.044634562469186116
+    },
+    {
+      "horizon_sessions": 60,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.39997473475746464
+    },
+    {
+      "horizon_sessions": 60,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.24722328574833294
+    },
+    {
+      "horizon_sessions": 60,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.10489909232863823
+    },
+    {
+      "horizon_sessions": 60,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.17333277970210365
+    },
+    {
+      "horizon_sessions": 60,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.07457010746346043
+    },
+    {
+      "horizon_sessions": 120,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.16145395204318294
+    },
+    {
+      "horizon_sessions": 120,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.1969917638811602
+    },
+    {
+      "horizon_sessions": 120,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.18804376768262573
+    },
+    {
+      "horizon_sessions": 120,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.3992734157612194
+    },
+    {
+      "horizon_sessions": 120,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.05423710063181161
+    },
+    {
+      "horizon_sessions": 252,
+      "expert": "RIDGE_RESIDUAL_RANK",
+      "weight": 0.12368072565305005
+    },
+    {
+      "horizon_sessions": 252,
+      "expert": "HGB_RESIDUAL_RANK",
+      "weight": 0.17911623990277273
+    },
+    {
+      "horizon_sessions": 252,
+      "expert": "HGB_RESIDUAL_RETURN",
+      "weight": 0.11837364503881304
+    },
+    {
+      "horizon_sessions": 252,
+      "expert": "HGB_UPSIDE_TAIL",
+      "weight": 0.535810472162524
+    },
+    {
+      "horizon_sessions": 252,
+      "expert": "HGB_DOWNSIDE_AVOID",
+      "weight": 0.043018917242840245
+    }
+  ],
+  "gate": [
+    {
+      "test": "PHASE1_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 1 must PASS"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all research data < 2025-01-01"
+    },
+    {
+      "test": "MACRO_REGIME_DATA_READY",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        {
+          "symbol": "SPY",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "QQQ",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "IWM",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "TLT",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "HYG",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "UUP",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "^VIX",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        }
+      ],
+      "rule": "all regime proxies have long pre-2025 history"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_REBUILT",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "PRE2025_RESIDUAL_ALPHA",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 3,
+        "median_economic_score": -0.0028494411577544144
+      },
+      "rule": ">=4/6 positive and median > 0"
+    },
+    {
+      "test": "2021_2022_REGIME_RECOVERY",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 0,
+        "median_economic_score": -0.042202952130015806
+      },
+      "rule": ">=3/6 positive and median > 0"
+    },
+    {
+      "test": "2023_2024_RECENT_REGIME_EVIDENCE",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 5,
+        "median_economic_score": 0.004975396821284704
+      },
+      "rule": ">=3/6 positive and median > 0"
+    },
+    {
+      "test": "TAIL_ASYMMETRY_PRESENT",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "winner_lift_median": 1.461530371556004,
+        "loser_avoidance_median": 1.002919575445476
+      },
+      "rule": "median winner lift >1.2 and loser avoidance >1.05"
+    }
+  ],
+  "readiness": "PREDICTIVE_INFORMATION_SET_STILL_INSUFFICIENT",
+  "next": "If PASS, use v13_phase2s_oof_scores for one cached portfolio research block. If FAIL, stop tuning this price/fundamental information set and add genuinely new predictive sources before touching 2025+."
+}

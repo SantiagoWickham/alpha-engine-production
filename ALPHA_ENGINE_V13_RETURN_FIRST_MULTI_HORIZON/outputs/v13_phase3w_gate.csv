@@ -1,0 +1,12 @@
+test,status,blocking,value,rule
+PHASE3V_SELECTED_POLICY_QUALIFIED,PASS,True,"{'alpha_tilt': 1.0, 'edge_z': 0.0, 'edge_power': 2.0}",freeze exactly the already-qualified Phase3V policy; no policy reselection
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-26,all research/OOF scores remain before 2025-01-01
+DYNAMIC_AVAILABLE_HORIZON_ROUTING_VALID,PASS,True,"{'every_row_has_available_horizon': True, 'available_weights_renormalize_to_one': True, 'all_six_horizons_positive_in_every_fold': True, 'no_single_horizon_mean_monopoly': True, 'max_mean_horizon_weight': 0.43159144068404065, 'legacy_all_six_coverage_min': 0.5161591321333892, 'interpretation': 'OOF row completeness is label-maturity limited; the advisor renormalizes over causally available horizons. Production/live shadow must emit all six horizon forecasts when deployed.'}","OOF maturity may make some row/horizon outcomes unavailable; available horizon weights must renormalize to 1, every horizon must contribute in every fold, and no horizon may monopolize mean influence"
+LEGACY_ALL_SIX_ROW_COMPLETENESS,PASS,False,0.5161591321333892,diagnostic only: complete six-horizon OOF rows are limited by long-horizon label maturity before the holdout boundary
+SELECTED_POLICY_REPLAY_REPRODUCIBLE,PASS,True,0.0,20/40bps selected-policy replay must reproduce Phase3V CAGR
+BASE_20BPS_BEATS_SPY,PASS,True,0.10305430790118986,selected fixed policy must beat SPY net at 20bps
+STRESS_40BPS_REMAINS_POSITIVE,PASS,True,0.20859808839752536,selected fixed policy must remain profitable at 2x base cost
+EXTREME_COST_STRESS_REMAINS_POSITIVE,PASS,True,"{'cost_bps': 80.0, 'cagr': 0.08727149971518244}",selected fixed policy must remain positive at 4x base round-trip cost
+EXECUTION_BLOCKING_ACCEPTABLE,PASS,True,0.02132362220960086,base selected-policy execution blocked notional <=5%
+TURNOVER_DIAGNOSTIC,PASS,False,26.792056052092033,diagnostic only; high turnover is stress-tested through 20/40/60/80/100bps cost scenarios
+DRAWDOWN_DIAGNOSTIC,PASS,False,-0.3803779964295638,diagnostic only; freeze records the observed pre-holdout drawdown rather than tuning it away

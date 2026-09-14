@@ -1,0 +1,21 @@
+[v13_phase2]
+name = "NESTED_MULTI_HORIZON_MODEL_FACTORY"
+objective = "BUILD_SIX_INDEPENDENT_PRE2025_ALPHA_SURFACES_SELECTED_BY_ROBUST_BENCHMARK_EXCESS_RETURN"
+feature_library = "outputs/v13_phase1_feature_library.parquet"
+research_targets = "outputs/v13_phase1_research_targets.parquet"
+research_start = "2015-01-02"
+validation_start = "2023-01-03"
+holdout_start = "2025-01-01"
+horizons = [5, 10, 20, 60, 120, 252]
+minimum_feature_coverage = 0.50
+minimum_features = 30
+minimum_train_rows = 10000
+minimum_test_rows = 2000
+evaluation_cutoffs = [0.05, 0.10, 0.20]
+ridge_alpha = 20.0
+hgb_learning_rate = 0.05
+hgb_max_iter = 120
+hgb_max_leaf_nodes = 15
+hgb_min_samples_leaf = 100
+hgb_l2 = 2.0
+random_state = 13

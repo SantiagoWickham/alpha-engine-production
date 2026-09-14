@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "phase": "V13-P1",
+  "build": "V13_P1_FIX2_CANONICAL_PIT_PANEL_2026-09-12",
+  "name": "FRESH_MULTI_HORIZON_ALPHA_FACTORY",
+  "objective": "BUILD_PRE2025_CAUSAL_FEATURES_AND_BENCHMARK_AWARE_MULTI_HORIZON_ALPHA_EVIDENCE",
+  "source_contract": "V13_P0_RESET_CONTRACT_2026-09-12",
+  "feature_library": {
+    "rows": 708775,
+    "tickers": 412,
+    "first_date": "2013-12-23",
+    "last_date": "2024-12-31",
+    "feature_count": 95,
+    "price_coverage": 1.0,
+    "raw_market_price_coverage": 1.0,
+    "canonical_market_source": "outputs/phase2_canonical_pit_panel.parquet",
+    "research_key_missing_price_rows": 0,
+    "explicit_size_features": [
+      "size_log_market_cap"
+    ]
+  },
+  "research": {
+    "development_start": "2015-01-02",
+    "validation_start": "2023-01-03",
+    "holdout_start": "2025-01-01",
+    "horizons": [
+      5,
+      10,
+      20,
+      60,
+      120,
+      252
+    ],
+    "selection_uses_2025_plus": false,
+    "feature_admission_uses_validation": false,
+    "candidate_counts": {
+      "5": 40,
+      "10": 40,
+      "20": 35,
+      "60": 24,
+      "120": 40,
+      "252": 40
+    }
+  },
+  "benchmarks": {
+    "SPY": "adjusted future benchmark return",
+    "QQQ": "adjusted future benchmark return",
+    "UNIVERSE_EQUAL_WEIGHT": "same-date equal-weight labeled universe",
+    "daily_history": [
+      {
+        "benchmark": "SPY",
+        "rows": 3020,
+        "first_date": "2013-01-02",
+        "last_date": "2024-12-31"
+      },
+      {
+        "benchmark": "QQQ",
+        "rows": 3020,
+        "first_date": "2013-01-02",
+        "last_date": "2024-12-31"
+      }
+    ]
+  },
+  "source_manifest": [
+    {
+      "path": "outputs/phase2_canonical_pit_panel.parquet",
+      "bytes": 20285993,
+      "sha256": "9169879ff2aac7a19182bfb0f31333f5a699a0b30c537bdf094a3b213186c871"
+    },
+    {
+      "path": "data/fundamentals/sec_companyfacts_long.parquet",
+      "bytes": 2217468,
+      "sha256": "8d79c9294b17a1c8179e6595244525623b900ce380fc8025677b09aaafccabde"
+    },
+    {
+      "path": "outputs/phase3_return_targets.parquet",
+      "bytes": 216235583,
+      "sha256": "999e1c3a165bb1a7d3e33f0680587f099fd53c4fc7fe30f0019c7e1d9e8bd35d"
+    },
+    {
+      "path": "data/v13/benchmarks/SPY.parquet",
+      "bytes": 50049,
+      "sha256": "5c1d42ebf97af2641a7a40d6bacc588f2258932ec84964e72e9263db4bb26326"
+    },
+    {
+      "path": "data/v13/benchmarks/QQQ.parquet",
+      "bytes": 50169,
+      "sha256": "1cd33bba7b86ad123470bfb1533960f05451d1282279b6d72faa3adb8e91a813"
+    }
+  ],
+  "gate": [
+    {
+      "test": "PHASE1_NO_2025_PLUS_FEATURES",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "max feature date < 2025-01-01"
+    },
+    {
+      "test": "PHASE1_NO_2025_PLUS_TARGETS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "max target date < 2025-01-01"
+    },
+    {
+      "test": "FEATURE_PRICE_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 0.995"
+    },
+    {
+      "test": "CANONICAL_PIT_MARKET_SOURCE",
+      "status": "PASS",
+      "blocking": true,
+      "value": true,
+      "rule": "Phase 1 market surface must come from Phase 2 canonical PIT panel"
+    },
+    {
+      "test": "NO_DIRECT_PRICE_LEVEL_FEATURE",
+      "status": "PASS",
+      "blocking": true,
+      "value": [],
+      "rule": "no price/target level exported"
+    },
+    {
+      "test": "UNIQUE_FEATURE_KEY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 duplicate keys"
+    },
+    {
+      "test": "SIX_HORIZONS_PRESENT",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "USABLE_FEATURE_BREADTH",
+      "status": "PASS",
+      "blocking": true,
+      "value": 78,
+      "rule": ">=30 features with required coverage"
+    },
+    {
+      "test": "ALL_HORIZONS_HAVE_DEV_CANDIDATES",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "5": 40,
+        "10": 40,
+        "20": 35,
+        "60": 24,
+        "120": 40,
+        "252": 40
+      },
+      "rule": ">=3 DEV-only candidates per horizon"
+    },
+    {
+      "test": "SIZE_NOT_TRIPLE_COUNTED",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        "size_log_market_cap"
+      ],
+      "rule": "at most one explicit size-level feature"
+    }
+  ],
+  "next_gate": "If PASS: V13 Phase 2 trains one independent champion per horizon on DEVELOPMENT-only feature pools using purged walk-forward; no horizon is discarded. Phase 3 then learns cross-horizon conviction and dynamic cardinality/sizing from PRE-2025 net excess return."
+}

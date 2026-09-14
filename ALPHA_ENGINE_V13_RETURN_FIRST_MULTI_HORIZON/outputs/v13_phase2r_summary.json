@@ -1,0 +1,318 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P2R",
+  "build": "V13_P2R_ADAPTIVE_MULTI_EXPERT_ALPHA_REBUILD_2026-09-12",
+  "name": "ADAPTIVE_MULTI_EXPERT_ALPHA_REBUILD",
+  "objective": "REBUILD_PRE2025_OOF_ALPHA_WITH_RECENCY_WEIGHTING_MULTI_TARGET_EXPERTS_AND_DYNAMIC_ENSEMBLES",
+  "research_contract": {
+    "pre_holdout_research": "2015-01-02 through 2024-12-31 via purged walk-forward folds",
+    "holdout_start": "2025-01-01",
+    "holdout_used": false,
+    "portfolio_research_run": false
+  },
+  "features": {
+    "base": 78,
+    "regime_and_interactions": 14,
+    "total": 92
+  },
+  "oof_rows": 2515325,
+  "selected_ensembles": {
+    "5": {
+      "horizon_sessions": 5,
+      "selected_scheme": "ADAPTIVE_T075",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.03458815926748399,
+        "HGB_RANK_DECAY": 0.03458815926748399,
+        "HGB_ABS_RETURN_DECAY": 0.03458815926748399,
+        "HGB_BENCH_EXCESS_DECAY": 0.03458815926748399,
+        "HGB_WINNER_DECAY": 0.8616473629300642
+      }
+    },
+    "10": {
+      "horizon_sessions": 10,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    "20": {
+      "horizon_sessions": 20,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    "60": {
+      "horizon_sessions": 60,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    "120": {
+      "horizon_sessions": 120,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    "252": {
+      "horizon_sessions": 252,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    }
+  },
+  "oof_horizon_evidence": [
+    {
+      "horizon_sessions": 5,
+      "economic_score": 0.0016721775129518082,
+      "worst_fold": -0.002485258589939268,
+      "winner_lift": 1.8701017311364694,
+      "positive_cut_share": 0.6666666666666666,
+      "mean_ic": 0.0061043749508233455
+    },
+    {
+      "horizon_sessions": 10,
+      "economic_score": 0.001311615699289689,
+      "worst_fold": -0.006500073070314229,
+      "winner_lift": 1.5209591139291596,
+      "positive_cut_share": 0.5833333333333334,
+      "mean_ic": 0.04578991272743875
+    },
+    {
+      "horizon_sessions": 20,
+      "economic_score": 0.004536933967813124,
+      "worst_fold": -0.012315471931092982,
+      "winner_lift": 1.5812558994988706,
+      "positive_cut_share": 0.6666666666666666,
+      "mean_ic": 0.06649525067090763
+    },
+    {
+      "horizon_sessions": 60,
+      "economic_score": 0.002894466658714009,
+      "worst_fold": -0.025255839628605736,
+      "winner_lift": 1.6468777677831412,
+      "positive_cut_share": 0.5833333333333334,
+      "mean_ic": 0.07869562615397399
+    },
+    {
+      "horizon_sessions": 120,
+      "economic_score": 0.005734187553842671,
+      "worst_fold": -0.02151465571075536,
+      "winner_lift": 1.6996638402144872,
+      "positive_cut_share": 0.6666666666666666,
+      "mean_ic": 0.09194628255301601
+    },
+    {
+      "horizon_sessions": 252,
+      "economic_score": -0.006128094244323635,
+      "worst_fold": -0.08281675718777474,
+      "winner_lift": 1.9630171280098885,
+      "positive_cut_share": 0.41666666666666663,
+      "mean_ic": 0.07998552653916736
+    }
+  ],
+  "regime_2021_2022": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.002485258589939268,
+      "worst_cut_robust_excess": -0.003689209160995578,
+      "mean_rank_ic": -0.044141154018530776,
+      "positive_cut_share": 0.0,
+      "winner_lift": 2.2634330476435793
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.006500073070314229,
+      "worst_cut_robust_excess": -0.008756721078527678,
+      "mean_rank_ic": 0.010594511373888022,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.6039743843340697
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.012315471931092982,
+      "worst_cut_robust_excess": -0.01660668422550455,
+      "mean_rank_ic": 0.016799221175271252,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.5527965145248346
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.025255839628605736,
+      "worst_cut_robust_excess": -0.04258829982341713,
+      "mean_rank_ic": 0.003037662725852268,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.3676708894968301
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.02151465571075536,
+      "worst_cut_robust_excess": -0.04480506963734972,
+      "mean_rank_ic": -0.0025418922801231586,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.3785063822352512
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2021_2022",
+      "economic_score": -0.007012369223673082,
+      "worst_cut_robust_excess": -0.05945849662739451,
+      "mean_rank_ic": -0.129222334755595,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 1.0162871610692619
+    }
+  ],
+  "recent_2023_2024": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.0018307897869271484,
+      "worst_cut_robust_excess": -0.001180271483208827,
+      "mean_rank_ic": -0.02734524724148747,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 2.2696285226434627
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2023_2024",
+      "economic_score": -0.001388377566682019,
+      "worst_cut_robust_excess": -0.0027101363529784877,
+      "mean_rank_ic": 0.05599044836408854,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 1.298574899757636
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2023_2024",
+      "economic_score": -3.3758061479431115e-05,
+      "worst_cut_robust_excess": -0.003567970221500735,
+      "mean_rank_ic": 0.08427384024837498,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.4348816828362494
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2023_2024",
+      "economic_score": -0.004544717167423272,
+      "worst_cut_robust_excess": -0.00955710962231437,
+      "mean_rank_ic": 0.1047557080517896,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 1.4982343102915527
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.024972948221179486,
+      "worst_cut_robust_excess": 0.008838807630511038,
+      "mean_rank_ic": 0.16680621618111544,
+      "positive_cut_share": 1.0,
+      "winner_lift": 1.6916255733908954
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2023_2024",
+      "economic_score": 0.1116137174098105,
+      "worst_cut_robust_excess": 0.07894258667346515,
+      "mean_rank_ic": 0.2903668231219228,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.5687714179632426
+    }
+  ],
+  "gate": [
+    {
+      "test": "PHASE1_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 1 must PASS"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all research data < 2025-01-01"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_REBUILT",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "PRE2025_OOF_ALPHA_RECOVERED",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 5,
+        "median_economic_score": 0.0022833220858329084
+      },
+      "rule": ">=4/6 positive and median > 0"
+    },
+    {
+      "test": "2021_2022_REGIME_RECOVERY",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 0,
+        "median_economic_score": -0.009663920577383031
+      },
+      "rule": ">=3/6 positive and median > 0"
+    },
+    {
+      "test": "2023_2024_RECENT_REGIME_EVIDENCE",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 3,
+        "median_economic_score": 0.0008985158627238586
+      },
+      "rule": ">=3/6 positive and median > 0"
+    },
+    {
+      "test": "WINNER_CAPTURE_PRESENT",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.6732708039988142,
+      "rule": "median OOF top-decile winner lift > 1"
+    }
+  ],
+  "readiness": "PREDICTIVE_ENGINE_STILL_INSUFFICIENT",
+  "next": "If PASS, build a fast cached portfolio layer from v13_phase2r_oof_scores without retraining. If FAIL, do not optimize portfolio; expand predictive information set/targets before touching 2025+."
+}

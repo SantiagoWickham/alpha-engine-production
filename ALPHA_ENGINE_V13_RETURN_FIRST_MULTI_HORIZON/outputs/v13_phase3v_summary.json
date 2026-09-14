@@ -1,0 +1,243 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P3V",
+  "build": "V13_P3V_FIX1_V13_WORKSPACE_RESOLUTION_2026-09-13",
+  "name": "OOF_ECONOMIC_PORTFOLIO_CLOSURE",
+  "objective": "SELECT_A_DYNAMIC_MULTI_HORIZON_PORTFOLIO_ON_FULL_PRE2025_OOF_ECONOMICS_WITHOUT_REQUIRING_EVERY_REGIME_TO_OUTPERFORM",
+  "research_contract": {
+    "portfolio_research": "2019-2024 OOF only",
+    "holdout_start": "2025-01-01",
+    "holdout_used": false,
+    "2021_2022_role": "NONBLOCKING_STRESS_REGIME"
+  },
+  "predictor": {
+    "source": "Phase2U OOF scores",
+    "phase2u_reported_status": "FAIL",
+    "old_2021_gate_overridden": true
+  },
+  "advisor": {
+    "horizons": [
+      5,
+      10,
+      20,
+      60,
+      120,
+      252
+    ],
+    "causal_calibration": true,
+    "horizon_reliability": "prior OOF folds only",
+    "all_six_coverage_min": 0.5161591321333892
+  },
+  "selection": {
+    "candidate_policies": 27,
+    "qualified_policies": 9,
+    "selected_policy": {
+      "alpha_tilt": 1.0,
+      "edge_z": 0.0,
+      "edge_power": 2.0
+    },
+    "full_period_20bps": {
+      "days": 1510,
+      "total_return": 3.271993432967525,
+      "cagr": 0.27421967926719826,
+      "max_drawdown": -0.3803779964295638,
+      "annual_turnover": 26.792056052092033,
+      "median_holdings": 109.0,
+      "max_holdings": 122,
+      "mean_cash_weight": 0.006916973053421817,
+      "median_max_name_weight": 0.060087384196028736,
+      "p95_max_name_weight": 0.08700413273951729,
+      "execution_blocked_rate": 0.02132362220960086,
+      "target_deviation_rate": 0.02132362220960098,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.10305430790118986,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.04492120462346327,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.13066098582413588
+    },
+    "full_period_40bps": {
+      "days": 1510,
+      "total_return": 2.111991392084488,
+      "cagr": 0.20859808839752536,
+      "max_drawdown": -0.384858132470978,
+      "annual_turnover": 26.792056052092033,
+      "median_holdings": 109.0,
+      "max_holdings": 122,
+      "mean_cash_weight": 0.006916973053421817,
+      "median_max_name_weight": 0.060087384196028736,
+      "p95_max_name_weight": 0.08700413273951729,
+      "execution_blocked_rate": 0.02132362220960086,
+      "target_deviation_rate": 0.02132362220960098,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.03743271703151696,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": -0.020700386246209623,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.19628257669380877
+    }
+  },
+  "regime_diagnostics": {
+    "2019_2020": [
+      {
+        "fold": "WF_2019_2020",
+        "cost_bps": 20.0,
+        "days": 505,
+        "total_return": 1.3008939634452599,
+        "cagr": 0.5156188180668211,
+        "max_drawdown": -0.3803779964295638,
+        "annual_turnover": 36.62952072884605,
+        "median_holdings": 110.0,
+        "max_holdings": 122,
+        "mean_cash_weight": 0.015643626147510154,
+        "median_max_name_weight": 0.05816572843327126,
+        "p95_max_name_weight": 0.0836321511324572,
+        "execution_blocked_rate": 0.04573339676058336,
+        "target_deviation_rate": 0.04573339676058337,
+        "spy_cagr": 0.2455684354298897,
+        "excess_cagr_vs_spy": 0.2700503826369314,
+        "qqq_cagr": 0.43503321875238155,
+        "excess_cagr_vs_qqq": 0.08058559931443954,
+        "uew_cagr": 0.6256468036644802,
+        "excess_cagr_vs_uew": -0.11002798559765914
+      }
+    ],
+    "2021_2022": [
+      {
+        "fold": "WF_2021_2022",
+        "cost_bps": 20.0,
+        "days": 503,
+        "total_return": -0.012271587418119845,
+        "cagr": -0.006166932329573327,
+        "max_drawdown": -0.33307546235453445,
+        "annual_turnover": 21.459459512295,
+        "median_holdings": 112.0,
+        "max_holdings": 121,
+        "mean_cash_weight": 0.0030681526743006394,
+        "median_max_name_weight": 0.06499868408330979,
+        "p95_max_name_weight": 0.09460054261688745,
+        "execution_blocked_rate": 0.0,
+        "target_deviation_rate": 2.233939521760766e-16,
+        "spy_cagr": 0.026366017040575285,
+        "excess_cagr_vs_spy": -0.03253294937014861,
+        "qqq_cagr": -0.07326227315158773,
+        "excess_cagr_vs_qqq": 0.0670953408220144,
+        "uew_cagr": 0.24915604700336336,
+        "excess_cagr_vs_uew": -0.2553229793329367
+      }
+    ],
+    "2023_2024": [
+      {
+        "fold": "WF_2023_2024",
+        "cost_bps": 20.0,
+        "days": 502,
+        "total_return": 0.879734121912056,
+        "cagr": 0.37275875232989786,
+        "max_drawdown": -0.13576369339504613,
+        "annual_turnover": 22.239020987863203,
+        "median_holdings": 100.0,
+        "max_holdings": 115,
+        "mean_cash_weight": 0.0019946559980101443,
+        "median_max_name_weight": 0.05859019702381875,
+        "p95_max_name_weight": 0.08400673369921856,
+        "execution_blocked_rate": 0.0,
+        "target_deviation_rate": 2.1244817813525281e-16,
+        "spy_cagr": 0.2564324046154183,
+        "excess_cagr_vs_spy": 0.11632634771447958,
+        "qqq_cagr": 0.3963556052188031,
+        "excess_cagr_vs_qqq": -0.02359685288890523,
+        "uew_cagr": 0.36457764088728317,
+        "excess_cagr_vs_uew": 0.008181111442614686
+      }
+    ],
+    "single_positive_period_dependency": 0.5690260549705577
+  },
+  "gate": [
+    {
+      "test": "PHASE2U_CORE_QUALITY_ACCEPTED",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "phase2u_status": "FAIL",
+        "accepted_nonblocking_failure": "2021_2022_NEWINFO_RECOVERY"
+      },
+      "rule": "Phase2U may fail the old 2021-22 regime gate only; all core quality gates must pass"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-26",
+      "rule": "all OOF scores < 2025-01-01"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_RETAINED",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "MULTI_HORIZON_ADVISOR_COVERAGE",
+      "status": "FAIL",
+      "blocking": true,
+      "value": 0.5161591321333892,
+      "rule": ">=95% rows have all six horizon forecasts"
+    },
+    {
+      "test": "QUALIFIED_FULL_PERIOD_POLICY_EXISTS",
+      "status": "PASS",
+      "blocking": true,
+      "value": 9,
+      "rule": "at least one policy beats SPY net at 20bps, remains positive at 40bps, has >=2/3 positive folds, and execution blocking <=5%"
+    },
+    {
+      "test": "2021_2022_STRESS_REGIME",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "cagr": -0.006166932329573327,
+        "max_drawdown": -0.33307546235453445,
+        "spy_cagr": 0.026366017040575285,
+        "excess_cagr_vs_spy": -0.03253294937014861,
+        "qqq_cagr": -0.07326227315158773,
+        "excess_cagr_vs_qqq": 0.0670953408220144,
+        "uew_cagr": 0.24915604700336336,
+        "excess_cagr_vs_uew": -0.2553229793329367
+      },
+      "rule": "diagnostic only: a difficult regime may underperform"
+    },
+    {
+      "test": "2023_2024_RECENT_REGIME",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "cagr": 0.37275875232989786,
+        "max_drawdown": -0.13576369339504613,
+        "spy_cagr": 0.2564324046154183,
+        "excess_cagr_vs_spy": 0.11632634771447958,
+        "qqq_cagr": 0.3963556052188031,
+        "excess_cagr_vs_qqq": -0.02359685288890523,
+        "uew_cagr": 0.36457764088728317,
+        "excess_cagr_vs_uew": 0.008181111442614686
+      },
+      "rule": "diagnostic only"
+    },
+    {
+      "test": "NO_SINGLE_PERIOD_DEPENDENCE",
+      "status": "PASS",
+      "blocking": false,
+      "value": 0.5690260549705577,
+      "rule": "diagnostic: no single positive two-year fold contributes >=85% of positive log-return"
+    }
+  ],
+  "readiness": "PORTFOLIO_ECONOMICS_STILL_INSUFFICIENT",
+  "next": "If PASS, freeze/stress the selected pre-2025 policy and then open the code-blinded 2025+ holdout once. If FAIL, diagnose portfolio economics without reopening the 2021-22 predictor gate."
+}

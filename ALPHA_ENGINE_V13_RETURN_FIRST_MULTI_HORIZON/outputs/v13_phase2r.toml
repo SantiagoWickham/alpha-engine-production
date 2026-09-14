@@ -1,0 +1,24 @@
+[v13_phase2r]
+name = "ADAPTIVE_MULTI_EXPERT_ALPHA_REBUILD"
+objective = "REBUILD_PRE2025_OOF_ALPHA_WITH_RECENCY_WEIGHTING_MULTI_TARGET_EXPERTS_AND_DYNAMIC_ENSEMBLES"
+feature_library = "outputs/v13_phase1_feature_library.parquet"
+research_targets = "outputs/v13_phase1_research_targets.parquet"
+research_start = "2015-01-02"
+holdout_start = "2025-01-01"
+horizons = [5, 10, 20, 60, 120, 252]
+minimum_feature_coverage = 0.50
+max_selected_features = 40
+minimum_selected_features = 20
+correlation_prune_threshold = 0.95
+correlation_sample_rows = 50000
+max_train_years = 5
+recency_half_life_sessions = 504
+ridge_alpha = 30.0
+hgb_learning_rate = 0.055
+hgb_max_iter = 75
+hgb_max_leaf_nodes = 15
+hgb_min_samples_leaf = 160
+hgb_l2 = 4.0
+winner_quantile = 0.90
+evaluation_cutoffs = [0.05, 0.10, 0.20]
+random_state = 13

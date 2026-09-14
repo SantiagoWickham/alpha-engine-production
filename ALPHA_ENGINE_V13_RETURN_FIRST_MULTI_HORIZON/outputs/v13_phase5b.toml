@@ -1,0 +1,26 @@
+[v13_phase5b]
+name = "LIVE_PIT_SHADOW_FORWARD"
+objective = "EXTEND_THE_EXACT_SEALED_V13_INFERENCE_PIPELINE_TO_NEW_COMPLETED_US_SESSIONS_WITH_CAUSAL_LIVE_MARKET_AND_SEC_DATA_WITHOUT_RETUNING_OR_REAL_ORDERS"
+expected_seal_id = "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9"
+expected_holdout_verdict = "STRONG_CONFIRMATION"
+phase5a_summary = "outputs/shadow/v13_shadow_contract_summary.json"
+sealed_model_bundle = "outputs/v13_phase4_sealed_model_bundle.joblib"
+research_feature_library = "outputs/v13_phase1_feature_library.parquet"
+shadow_dir = "outputs/live_shadow"
+sec_mapping_candidates = ["data/fundamentals/sec_universe_mapping.csv", "data/fundamentals/sec_ticker_mapping.csv"]
+completed_session_grace_minutes = 45
+market_fetch_overlap_calendar_days = 35
+market_workers = 8
+yahoo_timeout_seconds = 25
+minimum_market_coverage = 0.85
+minimum_anchor_coverage = 0.80
+maximum_anchor_scale_deviation = 0.25
+minimum_sec_mapping_coverage = 0.65
+minimum_sec_success_rate = 0.80
+sec_timeout_seconds = 25
+sec_request_spacing_seconds = 0.25
+universe_snapshot_max_age_days = 45
+minimum_live_advisor_rows = 20
+base_round_trip_cost_bps = 20.0
+shadow_only = true
+real_orders = false

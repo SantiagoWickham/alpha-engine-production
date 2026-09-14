@@ -1,0 +1,49 @@
+{
+  "build": "V13_P0_RESET_CONTRACT_2026-09-12",
+  "source_v12_root": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER",
+  "workspace_root": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON",
+  "holdout_start": "2025-01-01",
+  "holdout_label": "CODE_BLINDED_HOLDOUT_PREVIOUSLY_OBSERVED_BY_RESEARCHERS",
+  "true_virgin_test": "FUTURE_FORWARD_AFTER_V13_FREEZE",
+  "allowed_sources": [
+    {
+      "path": "outputs/phase2_canonical_pit_panel.parquet",
+      "bytes": 20285993,
+      "sha256": "9169879ff2aac7a19182bfb0f31333f5a699a0b30c537bdf094a3b213186c871"
+    },
+    {
+      "path": "outputs/phase2c_return_price_layer.parquet",
+      "bytes": 8056491,
+      "sha256": "d02736c7993270e1a1c9a5ae58357540200b85167132b9396cb960ad56426e13"
+    },
+    {
+      "path": "outputs/phase3_return_targets.parquet",
+      "bytes": 216235583,
+      "sha256": "999e1c3a165bb1a7d3e33f0680587f099fd53c4fc7fe30f0019c7e1d9e8bd35d"
+    },
+    {
+      "path": "outputs/phase3c_terminal_outcome_overlay.csv",
+      "bytes": 47648,
+      "sha256": "45042afae6654f584679121480543f697ea84b0b05e1246e2ea8df715e861b05"
+    },
+    {
+      "path": "data",
+      "type": "root",
+      "exists": true
+    }
+  ],
+  "missing_allowed_sources": [],
+  "denied_source_patterns": [
+    "outputs/phase4*",
+    "outputs/phase5*",
+    "outputs/phase6*",
+    "outputs/phase7*",
+    "outputs/phase8*",
+    "outputs/phase9*",
+    "outputs/live_shadow*",
+    "src/alpha_engine_v12/model_tournament.py",
+    "src/alpha_engine_v12/portfolio_policy.py",
+    "src/alpha_engine_v12/edge_lineage.py",
+    "src/alpha_engine_v12/pre_freeze.py"
+  ]
+}

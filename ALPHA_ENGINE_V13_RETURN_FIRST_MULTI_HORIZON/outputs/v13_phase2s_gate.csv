@@ -1,0 +1,9 @@
+test,status,blocking,value,rule
+PHASE1_INPUT_PASS,PASS,True,PASS,Phase 1 must PASS
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-31,all research data < 2025-01-01
+MACRO_REGIME_DATA_READY,PASS,True,"[{'symbol': 'SPY', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': 'QQQ', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': 'IWM', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': 'TLT', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': 'HYG', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': 'UUP', 'rows': 3020, 'last_date': '2024-12-31'}, {'symbol': '^VIX', 'rows': 3020, 'last_date': '2024-12-31'}]",all regime proxies have long pre-2025 history
+ALL_SIX_HORIZONS_REBUILT,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+PRE2025_RESIDUAL_ALPHA,FAIL,True,"{'positive_horizons': 3, 'median_economic_score': -0.0028494411577544144}",>=4/6 positive and median > 0
+2021_2022_REGIME_RECOVERY,FAIL,True,"{'positive_horizons': 0, 'median_economic_score': -0.042202952130015806}",>=3/6 positive and median > 0
+2023_2024_RECENT_REGIME_EVIDENCE,PASS,True,"{'positive_horizons': 5, 'median_economic_score': 0.004975396821284704}",>=3/6 positive and median > 0
+TAIL_ASYMMETRY_PRESENT,FAIL,True,"{'winner_lift_median': 1.461530371556004, 'loser_avoidance_median': 1.002919575445476}",median winner lift >1.2 and loser avoidance >1.05

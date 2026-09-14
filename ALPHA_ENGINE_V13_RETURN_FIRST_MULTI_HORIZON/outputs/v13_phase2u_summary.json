@@ -1,0 +1,494 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P2U",
+  "build": "V13_P2U_EVENT_SECTOR_INCREMENTAL_ALPHA_2026-09-12",
+  "name": "EVENT_SECTOR_INCREMENTAL_ALPHA",
+  "objective": "ADD_GENUINELY_NEW_PIT_EARNINGS_EVENT_AND_SECTOR_ROTATION_INFORMATION_TO_PRE2025_OOF_ALPHA",
+  "research_contract": {
+    "research": "pre-2025 OOF stacking only",
+    "holdout_start": "2025-01-01",
+    "holdout_used": false,
+    "portfolio_run": false
+  },
+  "new_information": {
+    "earnings_events": "SEC filing-date PIT surprise/growth/recency/post-event reaction",
+    "rotation": "sector ETFs + rates/inflation/commodity ETFs with stock-specific rolling sector betas",
+    "base_predictor": "Phase2R OOF score; no base-model retraining",
+    "newinfo_cache_reused": false
+  },
+  "horizon_summary": [
+    {
+      "horizon_sessions": 5,
+      "economic_score": 0.0011129931566480186,
+      "worst_fold": -1.4763277130856641e-05,
+      "worst_cut": -0.00013677898924195536,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.4983390285803175,
+      "mean_ic": 0.01486588814827385
+    },
+    {
+      "horizon_sessions": 10,
+      "economic_score": 0.001832436620877489,
+      "worst_fold": -0.0031919486331404303,
+      "worst_cut": -0.0041341802013413155,
+      "positive_cut_share": 0.5555555555555555,
+      "winner_lift": 1.488512345265076,
+      "mean_ic": 0.03888678940058456
+    },
+    {
+      "horizon_sessions": 20,
+      "economic_score": 0.004358709154613256,
+      "worst_fold": -0.008779708476765987,
+      "worst_cut": -0.014057181240651632,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.6033002167305945,
+      "mean_ic": 0.07028564500670968
+    },
+    {
+      "horizon_sessions": 60,
+      "economic_score": 0.012789940834978865,
+      "worst_fold": -0.007353274412365642,
+      "worst_cut": -0.009905238195333973,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.630799529223518,
+      "mean_ic": 0.09031395076783637
+    },
+    {
+      "horizon_sessions": 120,
+      "economic_score": 0.01132028412361436,
+      "worst_fold": -0.03336780216027712,
+      "worst_cut": -0.035843106608422846,
+      "positive_cut_share": 0.5555555555555555,
+      "winner_lift": 1.8339452399814113,
+      "mean_ic": 0.1092610727635821
+    },
+    {
+      "horizon_sessions": 252,
+      "economic_score": -0.03411276340862098,
+      "worst_fold": -0.13140819762459352,
+      "worst_cut": -0.18277364662209997,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 2.0919208651156094,
+      "mean_ic": 0.11260663117622956
+    }
+  ],
+  "regime_2021_2022": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -1.4763277130856641e-05,
+      "worst_cut_robust_excess": -0.00013677898924195536,
+      "positive_cut_share": 0.3333333333333333,
+      "winner_lift": 1.5555927931683562,
+      "mean_rank_ic": -0.020801205970105627
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -0.0031919486331404303,
+      "worst_cut_robust_excess": -0.0041341802013413155,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.4193637436512059,
+      "mean_rank_ic": 0.025170989247260255
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -0.008779708476765987,
+      "worst_cut_robust_excess": -0.014057181240651632,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.4184248347694695,
+      "mean_rank_ic": 0.02805805456883549
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -0.007353274412365642,
+      "worst_cut_robust_excess": -0.009905238195333973,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.2951915486388956,
+      "mean_rank_ic": 0.0019113362168159398
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -0.03336780216027712,
+      "worst_cut_robust_excess": -0.035843106608422846,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.3338200796430877,
+      "mean_rank_ic": -0.03771315486635894
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2021_2022",
+      "expert": "META_BLEND",
+      "economic_score": -0.11036370586154866,
+      "worst_cut_robust_excess": -0.17201448413452655,
+      "positive_cut_share": 0.0,
+      "winner_lift": 0.8351511085877197,
+      "mean_rank_ic": -0.16737003426652144
+    }
+  ],
+  "recent_2023_2024": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 4.781829546051462e-05,
+      "worst_cut_robust_excess": -9.747297073531124e-06,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.650396279695658,
+      "mean_rank_ic": 0.004821980626019319
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 0.0009108589725707097,
+      "worst_cut_robust_excess": -0.0006740360158712065,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.6236633136375522,
+      "mean_rank_ic": 0.01556998422906099
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 0.005118006027425524,
+      "worst_cut_robust_excess": 0.00033701238735419953,
+      "positive_cut_share": 1.0,
+      "winner_lift": 1.7599420049272245,
+      "mean_rank_ic": 0.07253837869584352
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 0.012952711071660678,
+      "worst_cut_robust_excess": 0.0029354453584476015,
+      "positive_cut_share": 1.0,
+      "winner_lift": 1.6562094930585858,
+      "mean_rank_ic": 0.14310032683187576
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 0.0514635697931351,
+      "worst_cut_robust_excess": 0.02370600203127476,
+      "positive_cut_share": 1.0,
+      "winner_lift": 1.9534725678263885,
+      "mean_rank_ic": 0.22709285505187918
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2023_2024",
+      "expert": "META_BLEND",
+      "economic_score": 0.13943361326027923,
+      "worst_cut_robust_excess": 0.08599147238008784,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.74715564255092,
+      "mean_rank_ic": 0.30397552670593664
+    }
+  ],
+  "incremental_vs_base": [
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2019_2020",
+      "base_economic_score": 0.004604131502990982,
+      "newinfo_economic_score": 0.0033059244516143982,
+      "incremental_economic_score": -0.001298207051376584
+    },
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.002485258589939268,
+      "newinfo_economic_score": -1.4763277130856641e-05,
+      "incremental_economic_score": 0.0024704953128084116
+    },
+    {
+      "horizon_sessions": 5,
+      "fold": "WF_2023_2024",
+      "base_economic_score": 0.0018307897869271484,
+      "newinfo_economic_score": 4.781829546051462e-05,
+      "incremental_economic_score": -0.0017829714914666338
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2019_2020",
+      "base_economic_score": 0.009120873729534967,
+      "newinfo_economic_score": 0.007778399523202187,
+      "incremental_economic_score": -0.0013424742063327796
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.006500073070314229,
+      "newinfo_economic_score": -0.0031919486331404303,
+      "incremental_economic_score": 0.0033081244371737984
+    },
+    {
+      "horizon_sessions": 10,
+      "fold": "WF_2023_2024",
+      "base_economic_score": -0.001388377566682019,
+      "newinfo_economic_score": 0.0009108589725707097,
+      "incremental_economic_score": 0.0022992365392527285
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2019_2020",
+      "base_economic_score": 0.022184849775264026,
+      "newinfo_economic_score": 0.016737829913180232,
+      "incremental_economic_score": -0.005447019862083794
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.012315471931092982,
+      "newinfo_economic_score": -0.008779708476765987,
+      "incremental_economic_score": 0.0035357634543269952
+    },
+    {
+      "horizon_sessions": 20,
+      "fold": "WF_2023_2024",
+      "base_economic_score": -3.3758061479431115e-05,
+      "newinfo_economic_score": 0.005118006027425524,
+      "incremental_economic_score": 0.005151764088904955
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2019_2020",
+      "base_economic_score": 0.022803727600820334,
+      "newinfo_economic_score": 0.03277038584564156,
+      "incremental_economic_score": 0.009966658244821229
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.025255839628605736,
+      "newinfo_economic_score": -0.007353274412365642,
+      "incremental_economic_score": 0.017902565216240094
+    },
+    {
+      "horizon_sessions": 60,
+      "fold": "WF_2023_2024",
+      "base_economic_score": -0.004544717167423272,
+      "newinfo_economic_score": 0.012952711071660678,
+      "incremental_economic_score": 0.01749742823908395
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2019_2020",
+      "base_economic_score": 0.009441920891635834,
+      "newinfo_economic_score": 0.0158650847379851,
+      "incremental_economic_score": 0.0064231638463492675
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.02151465571075536,
+      "newinfo_economic_score": -0.03336780216027712,
+      "incremental_economic_score": -0.011853146449521759
+    },
+    {
+      "horizon_sessions": 120,
+      "fold": "WF_2023_2024",
+      "base_economic_score": 0.024972948221179486,
+      "newinfo_economic_score": 0.0514635697931351,
+      "incremental_economic_score": 0.026490621571955614
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2019_2020",
+      "base_economic_score": -0.08281675718777474,
+      "newinfo_economic_score": -0.13140819762459352,
+      "incremental_economic_score": -0.048591440436818775
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2021_2022",
+      "base_economic_score": -0.007012369223673082,
+      "newinfo_economic_score": -0.11036370586154866,
+      "incremental_economic_score": -0.10335133663787557
+    },
+    {
+      "horizon_sessions": 252,
+      "fold": "WF_2023_2024",
+      "base_economic_score": 0.1116137174098105,
+      "newinfo_economic_score": 0.13943361326027923,
+      "incremental_economic_score": 0.02781989585046872
+    }
+  ],
+  "gate": [
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all loaded research dates < 2025-01-01"
+    },
+    {
+      "test": "ROTATION_SOURCES_READY",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        {
+          "symbol": "XLB",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLE",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLF",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLI",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLK",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLP",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLU",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLV",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "XLY",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "IEF",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "SHY",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "TIP",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "GLD",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        },
+        {
+          "symbol": "DBC",
+          "rows": 3020,
+          "last_date": "2024-12-31"
+        }
+      ],
+      "rule": "all sector/rates/commodity sources have adequate pre-2025 history"
+    },
+    {
+      "test": "PIT_EARNINGS_EVENTS_READY",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        {
+          "metric": "sec_rows",
+          "value": 25953
+        },
+        {
+          "metric": "sec_tickers",
+          "value": 152
+        },
+        {
+          "metric": "event_rows",
+          "value": 5813
+        },
+        {
+          "metric": "event_tickers",
+          "value": 150
+        }
+      ],
+      "rule": "SEC filing event surface has material historical breadth"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_RETAINED",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "PRE2025_NEWINFO_ALPHA",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 5,
+        "median_economic_score": 0.0030955728877453724
+      },
+      "rule": ">=4/6 positive and median >0"
+    },
+    {
+      "test": "2021_2022_NEWINFO_RECOVERY",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 0,
+        "median_economic_score": -0.008066491444565815
+      },
+      "rule": ">=3/6 positive and median >0"
+    },
+    {
+      "test": "2023_2024_NEWINFO_CONFIRMATION",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "positive_horizons": 6,
+        "median_economic_score": 0.0090353585495431
+      },
+      "rule": ">=3/6 positive and median >0"
+    },
+    {
+      "test": "NEW_INFORMATION_INCREMENTAL_2021_2022",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "improved_horizons": 4,
+        "median_incremental_score": 0.0028893098749911052
+      },
+      "rule": "new event/sector information improves >=4/6 horizons and median improvement >0"
+    }
+  ],
+  "readiness": "NEW_INFORMATION_DID_NOT_RECOVER_ALPHA",
+  "next": "If PASS, build one cached portfolio block from v13_phase2u_oof_scores. If FAIL, stop adding architecture and decide whether to source true analyst-estimate/revision data before opening 2025+."
+}

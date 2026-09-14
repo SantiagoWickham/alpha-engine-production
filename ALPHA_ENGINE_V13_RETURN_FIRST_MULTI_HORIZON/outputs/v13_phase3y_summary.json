@@ -1,0 +1,198 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P3Y",
+  "build": "V13_P3Y_ACTIVE_ALPHA_PERSISTENT_PORTFOLIO_2026-09-13",
+  "name": "ACTIVE_ALPHA_PERSISTENT_PORTFOLIO_REBUILD",
+  "objective": "CONVERT_PHASE2U_OOF_SCORES_INTO_ACTIVE_ALPHA_WEIGHTS_WITH_COST_AWARE_PERSISTENCE_WITHOUT_TOPN_OR_FIXED_HOLDING_PERIOD",
+  "holdout_used": false,
+  "predictor_retrained": false,
+  "design": {
+    "ranking_target": "active alpha: 50% UEW excess + 25% SPY excess + 25% QQQ excess",
+    "entry": "expected active alpha over effective horizon must exceed round-trip cost",
+    "holding": "existing position may persist while expected active alpha remains positive",
+    "resize": "transaction-cost/risk no-trade band via soft threshold",
+    "top_n": false,
+    "fixed_holding_period": false,
+    "per_name_cap": false
+  },
+  "full_period_20bps": {
+    "days": 1510,
+    "total_return": 4.3639156728748185,
+    "cagr": 0.323553062127236,
+    "max_drawdown": -0.370882179118345,
+    "annual_turnover": 18.66535790256984,
+    "median_holdings": 44.0,
+    "max_holdings": 62,
+    "mean_cash_weight": 0.02493769693183265,
+    "median_max_name_weight": 0.07242178546735663,
+    "p95_max_name_weight": 0.1286256237732072,
+    "execution_blocked_rate": 0.02040668231479817,
+    "target_deviation_rate": 0.020406682314798176,
+    "spy_cagr": 0.1711653713660084,
+    "excess_cagr_vs_spy": 0.1523876907612276,
+    "qqq_cagr": 0.22929847464373498,
+    "excess_cagr_vs_qqq": 0.09425458748350102,
+    "uew_cagr": 0.40488066509133414,
+    "excess_cagr_vs_uew": -0.08132760296409813
+  },
+  "full_period_40bps": {
+    "days": 1510,
+    "total_return": 3.3797266356217692,
+    "cagr": 0.27952693888401114,
+    "max_drawdown": -0.3744688250833672,
+    "annual_turnover": 18.66535790256984,
+    "median_holdings": 44.0,
+    "max_holdings": 62,
+    "mean_cash_weight": 0.02493769693183265,
+    "median_max_name_weight": 0.07242178546735663,
+    "p95_max_name_weight": 0.1286256237732072,
+    "execution_blocked_rate": 0.02040668231479817,
+    "target_deviation_rate": 0.020406682314798176,
+    "spy_cagr": 0.1711653713660084,
+    "excess_cagr_vs_spy": 0.10836156751800274,
+    "qqq_cagr": 0.22929847464373498,
+    "excess_cagr_vs_qqq": 0.05022846424027616,
+    "uew_cagr": 0.40488066509133414,
+    "excess_cagr_vs_uew": -0.125353726207323
+  },
+  "beta_attribution": [
+    {
+      "benchmark": "SPY",
+      "n": 1510,
+      "alpha_ann": 0.10280330224579348,
+      "beta": 1.2078232992055307,
+      "r2": 0.7753348703651401
+    },
+    {
+      "benchmark": "QQQ",
+      "n": 1510,
+      "alpha_ann": 0.0822188420449734,
+      "beta": 0.9962938954974718,
+      "r2": 0.7937567530838261
+    },
+    {
+      "benchmark": "UEW",
+      "n": 1510,
+      "alpha_ann": 0.03279732901716286,
+      "beta": 0.7654823209201524,
+      "r2": 0.5219126272468597
+    }
+  ],
+  "turnover": {
+    "annual_turnover": 18.66535790256984,
+    "entry_exit_share": 0.36865237946179913,
+    "resize_share": 0.6313476205382008
+  },
+  "baseline_comparison": {
+    "phase3x_cagr_20bps": 0.27421967926719826,
+    "phase3x_turnover": 26.792056052092033,
+    "phase3x_uew_alpha_ann": -0.0137016818151828
+  },
+  "universe_lineage": {
+    "tickers_ever_eligible": 274,
+    "eligible_at_start": 212,
+    "eligible_at_end": 211,
+    "entries_after_start": 62,
+    "exits_before_end": 63
+  },
+  "gate": [
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-26",
+      "rule": "all OOF scores < 2025-01-01"
+    },
+    {
+      "test": "NO_PREDICTOR_RETRAINING",
+      "status": "PASS",
+      "blocking": true,
+      "value": "Phase2U OOF reused",
+      "rule": "portfolio translation only; Phase2U untouched"
+    },
+    {
+      "test": "ACTIVE_ALPHA_VS_SPY",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "n": 1510,
+        "alpha_ann": 0.10280330224579348,
+        "beta": 1.2078232992055307,
+        "r2": 0.7753348703651401
+      },
+      "rule": "annualized regression alpha vs SPY > 0"
+    },
+    {
+      "test": "ACTIVE_ALPHA_VS_UEW",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "n": 1510,
+        "alpha_ann": 0.03279732901716286,
+        "beta": 0.7654823209201524,
+        "r2": 0.5219126272468597
+      },
+      "rule": "annualized regression alpha vs dynamic eligible-universe EW > 0"
+    },
+    {
+      "test": "PERSISTENCE_REDUCES_TURNOVER",
+      "status": "FAIL",
+      "blocking": true,
+      "value": {
+        "new": 18.66535790256984,
+        "baseline": 26.792056052092033,
+        "fraction": 0.6966750840726303
+      },
+      "rule": "cost-aware persistence should remove at least 40% of baseline turnover"
+    },
+    {
+      "test": "STRESS_40BPS_REMAINS_POSITIVE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.27952693888401114,
+      "rule": "fixed active-alpha persistent policy remains profitable at 40bps"
+    },
+    {
+      "test": "EXECUTION_BLOCKING_ACCEPTABLE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.02040668231479817,
+      "rule": "blocked requested notional <=5%"
+    },
+    {
+      "test": "CONVICTION_TOP_TAIL_ADDS_UEW_ALPHA",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "top_deciles_9_10": 0.00840840935498672,
+        "middle_deciles_4_7": -0.004094775428974839
+      },
+      "rule": "strong active conviction must outperform UEW and middle conviction"
+    },
+    {
+      "test": "UNIVERSE_LINEAGE_RECORDED",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "tickers_ever_eligible": 274,
+        "eligible_at_start": 212,
+        "eligible_at_end": 211,
+        "entries_after_start": 62,
+        "exits_before_end": 63
+      },
+      "rule": "dynamic universe entries/exits recorded before holdout"
+    },
+    {
+      "test": "BASELINE_UEW_ALPHA_REFERENCE",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "baseline_alpha_ann": -0.0137016818151828,
+        "new_alpha_ann": 0.03279732901716286
+      },
+      "rule": "diagnostic comparison to Phase3X"
+    }
+  ],
+  "readiness": "PORTFOLIO_TRANSLATION_NEEDS_REVIEW_BEFORE_HOLDOUT",
+  "next": "Do not open 2025+. If PASS, review active-alpha attribution and universe lineage once, then freeze. If FAIL, diagnose which structural objective failed; do not retune Phase2U or 2021-2022."
+}

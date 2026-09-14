@@ -1,0 +1,10 @@
+test,status,blocking,value,rule
+PHASE2_INPUT_PASS,PASS,True,PASS,Phase 2 must PASS
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-31,all dense/advisor scores < 2025-01-01
+DENSE_ALL_SIX_HORIZONS,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+DAILY_COMPLETE_TERM_STRUCTURE,PASS,True,6,every emitted advisor row must have all six horizon forecasts
+NO_FIXED_CARDINALITY,PASS,True,False,must remain false
+NO_FIXED_POSITION_CAP,PASS,True,False,must remain false
+QUALIFIED_DYNAMIC_POLICY_EXISTS,FAIL,True,0,>=1 policy with positive robust excess CAGR at base/stress costs
+VALIDATION_NOT_USED_FOR_SELECTION,PASS,True,False,2023-2024 confirmation only
+VALIDATION_CONFIRMATION,FAIL,False,False,diagnostic: selected policy remains positive robust excess in 2023-2024

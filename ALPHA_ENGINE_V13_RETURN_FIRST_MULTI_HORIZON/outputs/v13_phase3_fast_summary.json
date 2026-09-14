@@ -1,0 +1,218 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P3R",
+  "build": "V13_P3R_FAST_CACHED_EXECUTION_HORIZON_SPARSITY_2026-09-12",
+  "mode": "FAST_CACHED_PORTFOLIO_RESEARCH",
+  "cache": {
+    "advisor_rows": 223727,
+    "models_retrained": false,
+    "dense_scores_rebuilt": false
+  },
+  "selection": {
+    "candidate_policies": 216,
+    "qualified_policies": 0,
+    "selected_policy": {
+      "horizon_skill_beta": 0.0,
+      "uncertainty_z": 0.0,
+      "entry_hurdle_bps": 0.0,
+      "sparsity_bps": 500.0,
+      "rebalance_extra_edge_bps": 0.0
+    },
+    "metrics": {
+      "cagr_20bps": 0.026050801366013676,
+      "robust_excess_cagr_20bps": -0.22310524563734968,
+      "cagr_40bps": 0.012774805127638622,
+      "robust_excess_cagr_40bps": -0.23638124187572473,
+      "median_holdings_20bps": 124.0,
+      "max_holdings_20bps": 155,
+      "median_max_name_weight_20bps": 0.18026872046551132,
+      "p95_max_name_weight_20bps": 0.23751913068904712,
+      "execution_blocked_rate_20bps": 0.48406808290207337,
+      "target_deviation_rate_20bps": 0.9674911677420892
+    }
+  },
+  "horizon_weights": {
+    "5": 0.16666666666666666,
+    "10": 0.16666666666666666,
+    "20": 0.16666666666666666,
+    "60": 0.16666666666666666,
+    "120": 0.16666666666666666,
+    "252": 0.16666666666666666
+  },
+  "pre2021_horizon_skill": [
+    {
+      "horizon_sessions": 5,
+      "architecture": "HGB_ROBUST_EXCESS",
+      "pre2021_economic_score": 0.0085164293959321,
+      "pre2021_worst_cut_robust_excess": 0.0020999163080734,
+      "pre2021_skill": 0.00530817285200275,
+      "skill_z": 0.5047469340453532
+    },
+    {
+      "horizon_sessions": 10,
+      "architecture": "HGB_ROBUST_EXCESS",
+      "pre2021_economic_score": 0.0070771517375722,
+      "pre2021_worst_cut_robust_excess": 0.0027727732669564,
+      "pre2021_skill": 0.0049249625022643,
+      "skill_z": 0.49594862964072545
+    },
+    {
+      "horizon_sessions": 20,
+      "architecture": "HGB_ROBUST_EXCESS",
+      "pre2021_economic_score": 0.01264737691912255,
+      "pre2021_worst_cut_robust_excess": 0.0077041150836417,
+      "pre2021_skill": 0.010175746001382126,
+      "skill_z": 0.6165038067635948
+    },
+    {
+      "horizon_sessions": 60,
+      "architecture": "RIDGE_RANK",
+      "pre2021_economic_score": 0.013064777647278451,
+      "pre2021_worst_cut_robust_excess": 0.0014575795641625,
+      "pre2021_skill": 0.007261178605720476,
+      "skill_z": 0.5495869002334431
+    },
+    {
+      "horizon_sessions": 120,
+      "architecture": "HGB_ROBUST_EXCESS",
+      "pre2021_economic_score": 0.021650068496796397,
+      "pre2021_worst_cut_robust_excess": -0.0525774358949041,
+      "pre2021_skill": -0.015463683699053852,
+      "skill_z": 0.02783623184173323
+    },
+    {
+      "horizon_sessions": 252,
+      "architecture": "HGB_ROBUST_EXCESS",
+      "pre2021_economic_score": -0.0382844454759578,
+      "pre2021_worst_cut_robust_excess": -0.1862414040178409,
+      "pre2021_skill": -0.11226292474689935,
+      "skill_z": -2.19462250252485
+    }
+  ],
+  "validation": {
+    "base": {
+      "days": 502,
+      "total_return": 0.33724778521985654,
+      "cagr": 0.15706394738288942,
+      "max_drawdown": -0.05058360394737449,
+      "annual_turnover": 12.49640262909184,
+      "trade_days": 501,
+      "median_holdings": 117.0,
+      "max_holdings": 161,
+      "mean_cash_weight": 4.152377336194914e-06,
+      "median_max_name_weight": 0.1723249844653266,
+      "p95_max_name_weight": 0.27011997578614344,
+      "scheduled_rebalances": 502,
+      "partial_execution_days": 501,
+      "full_execution_skip_days": 0,
+      "blocked_trade_names": 3639,
+      "requested_trade_notional": 439.6495176726934,
+      "executed_trade_notional": 49.78725491908019,
+      "blocked_requested_notional": 212.7903179518069,
+      "target_deviation_notional": 425.1727123773861,
+      "execution_blocked_requested_rate": 0.48399988945336064,
+      "target_deviation_rate": 0.9670719409134327,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.09936845723252885,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.23929165783591366,
+      "universe_equal_weight_cagr": 0.36457764088728317,
+      "excess_cagr_vs_universe_equal_weight": -0.20751369350439375,
+      "robust_excess_cagr": -0.23929165783591366
+    },
+    "stress": {
+      "days": 502,
+      "total_return": 0.29308201697220193,
+      "cagr": 0.13772001586246385,
+      "max_drawdown": -0.06099264793058079,
+      "annual_turnover": 13.314834894229861,
+      "trade_days": 501,
+      "median_holdings": 117.0,
+      "max_holdings": 161,
+      "mean_cash_weight": 4.470905987966912e-06,
+      "median_max_name_weight": 0.11128661699009769,
+      "p95_max_name_weight": 0.28850100938965,
+      "scheduled_rebalances": 502,
+      "partial_execution_days": 501,
+      "full_execution_skip_days": 0,
+      "blocked_trade_names": 3639,
+      "requested_trade_notional": 404.54919937504883,
+      "executed_trade_notional": 53.04799299129675,
+      "blocked_requested_notional": 194.00192399703047,
+      "target_deviation_notional": 387.6291304857217,
+      "execution_blocked_requested_rate": 0.47955087859950374,
+      "target_deviation_rate": 0.9581754977751399,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.11871238875295442,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.25863558935633923,
+      "universe_equal_weight_cagr": 0.36457764088728317,
+      "excess_cagr_vs_universe_equal_weight": -0.22685762502481932,
+      "robust_excess_cagr": -0.25863558935633923
+    },
+    "confirmed": false,
+    "used_for_selection": false
+  },
+  "holdout": {
+    "start": "2025-01-01",
+    "used": false
+  },
+  "diagnosis": [
+    "EXECUTION_MAPPING_STILL_BLOCKING",
+    "OVERDIVERSIFIED_SELECTION",
+    "INSUFFICIENT_SELECTION_ALPHA",
+    "VALIDATION_ALPHA_NOT_CONFIRMED"
+  ],
+  "gate": [
+    {
+      "test": "CACHED_ADVISOR_REUSED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase3_advisor_surface.parquet",
+      "rule": "no model retraining"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "< 2025-01-01"
+    },
+    {
+      "test": "EXECUTION_USES_RAW_CLOSE_NOT_RESEARCH_ELIGIBILITY",
+      "status": "PASS",
+      "blocking": true,
+      "value": true,
+      "rule": "exit availability comes from observable close on all rows"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_NONZERO",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "5": 0.16666666666666666,
+        "10": 0.16666666666666666,
+        "20": 0.16666666666666666,
+        "60": 0.16666666666666666,
+        "120": 0.16666666666666666,
+        "252": 0.16666666666666666
+      },
+      "rule": "all six remain active"
+    },
+    {
+      "test": "QUALIFIED_POLICY_EXISTS",
+      "status": "FAIL",
+      "blocking": true,
+      "value": 0,
+      "rule": "positive robust excess base/stress and executable"
+    },
+    {
+      "test": "VALIDATION_CONFIRMATION",
+      "status": "FAIL",
+      "blocking": false,
+      "value": false,
+      "rule": "2023-2024 diagnostic only"
+    }
+  ],
+  "next": "If selection qualifies, use this fast architecture as the Phase 3 candidate; if validation also confirms, freeze/stress without reopening model research. If it fails, diagnosis identifies whether execution, dilution, horizon aggregation, or alpha is the bottleneck."
+}

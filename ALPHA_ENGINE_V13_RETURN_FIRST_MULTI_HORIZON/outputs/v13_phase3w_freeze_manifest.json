@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "phase": "V13-P3W",
+  "build": "V13_P3W_PREHOLDOUT_STRESS_FREEZE_2026-09-13",
+  "freeze_scope": "PRE_2025_RESEARCH_POLICY_AND_CODE",
+  "holdout_start": "2025-01-01",
+  "holdout_used": false,
+  "selected_policy": {
+    "alpha_tilt": 1.0,
+    "edge_z": 0.0,
+    "edge_power": 2.0
+  },
+  "predictor": "Phase2U OOF / event+sector incremental alpha",
+  "coverage_semantics": {
+    "every_row_has_available_horizon": true,
+    "available_weights_renormalize_to_one": true,
+    "all_six_horizons_positive_in_every_fold": true,
+    "no_single_horizon_mean_monopoly": true,
+    "max_mean_horizon_weight": 0.43159144068404065,
+    "legacy_all_six_coverage_min": 0.5161591321333892,
+    "interpretation": "OOF row completeness is label-maturity limited; the advisor renormalizes over causally available horizons. Production/live shadow must emit all six horizon forecasts when deployed."
+  },
+  "hashes": {
+    "phase0_summary": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase0_summary.json",
+      "sha256": "aa55dd3aeb6b0ca6c4fbdc56a170a8c3c46820c783ad5ec53f9a1916795c7b39"
+    },
+    "phase2u_summary": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase2u_summary.json",
+      "sha256": "5eb6269a499e577c020c55d59ca1e9e249aec0ccfff3a23a8b252c76db2ce370"
+    },
+    "phase2u_oof_scores": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase2u_oof_scores.parquet",
+      "sha256": "0719b826c82a927c0c266bd1814af2b793ed90af812c7303cc5ead32fc1c11bb"
+    },
+    "phase1_research_targets": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase1_research_targets.parquet",
+      "sha256": "57b8713f5e297f6c3f7c677744eec2ad51a034f946753e645fcdaa42559c619e"
+    },
+    "phase3v_selected_policy": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase3v_selected_policy.json",
+      "sha256": "15af0bbc264559cdec1d9801cc843adbfe7c26e626af22158ed7b3a3c55dca76"
+    },
+    "phase3v_config": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\config\\v13_phase3v.toml",
+      "sha256": "f177abc2e5b0a21fa0823cbd31272384e97eac2187d986d017d5c58e4d6da1d3"
+    },
+    "phase3v_engine": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\src\\alpha_engine_v13\\economic_portfolio_closure.py",
+      "sha256": "e4a2d79bb42daf09cac1ab2e4d8dd3b11276db481a3547feb38779ab23a2ce52"
+    },
+    "phase3w_config": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\config\\v13_phase3w.toml",
+      "sha256": "bbeddc941f73ef6e51d8dbdaac59b3203d2a6c7c282cd1897ec02f967a94a272"
+    },
+    "phase3w_engine": {
+      "path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\src\\alpha_engine_v13\\preholdout_freeze.py",
+      "sha256": "6026fb050e38e2f2a03b40e4960aee20b158510b5a146f64d14b28763211d128"
+    }
+  },
+  "deployment_invariant": "Production/live-shadow forecast generation must emit 5/10/20/60/120/252 every session when required inputs are available; OOF evaluation completeness is not the same as production forecast availability."
+}

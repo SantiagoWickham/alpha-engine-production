@@ -1,0 +1,383 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P3",
+  "build": "V13_P3_FIX2_PARTIAL_EXECUTION_AND_AUDIT_2026-09-12",
+  "name": "CROSS_HORIZON_ADVISOR_DYNAMIC_PORTFOLIO",
+  "objective": "MAXIMIZE_PRE2025_NET_EXCESS_RETURN_WITH_SIMULTANEOUS_MULTI_HORIZON_ADVICE_AND_ENDOGENOUS_CARDINALITY",
+  "phase2_input": {
+    "status": "PASS",
+    "build": "V13_P2_NESTED_MULTI_HORIZON_MODELS_2026-09-12"
+  },
+  "advisor": {
+    "horizons": [
+      5,
+      10,
+      20,
+      60,
+      120,
+      252
+    ],
+    "simultaneous": true,
+    "daily_reevaluation": true,
+    "fixed_holding_period": false,
+    "tactical_horizons": [
+      5,
+      10,
+      20
+    ],
+    "strategic_horizons": [
+      60,
+      120,
+      252
+    ],
+    "dense_score_rows": 2038836,
+    "selection_advisor_rows": 115359,
+    "validation_advisor_rows": 108368
+  },
+  "dynamic_portfolio": {
+    "fixed_cardinality": false,
+    "fixed_min_weight": false,
+    "fixed_max_weight": false,
+    "cash_allowed": true,
+    "candidate_policies": 12,
+    "qualified_policies": 0,
+    "selected_policy": {
+      "uncertainty_z": 1.0,
+      "entry_hurdle_bps": 50.0,
+      "rebalance_extra_edge_bps": 50.0
+    },
+    "selection_metrics": {
+      "cagr_20bps": 0.035170379035939,
+      "robust_excess_cagr_20bps": -0.21560798438547968,
+      "median_holdings": 69.0,
+      "max_holdings": 86,
+      "median_max_name_weight": 0.19999966793438811,
+      "p95_max_name_weight": 0.43542389992105224,
+      "execution_shortfall_notional_rate_20bps": 0.7545490423984369
+    },
+    "horizon_influence": [
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 5,
+        "mean_return_weight": 0.03990887035144428,
+        "median_return_weight": 0.03270091415201956,
+        "mean_alpha_weight": 0.11070381478611015,
+        "median_alpha_weight": 0.1203413380420691
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 10,
+        "mean_return_weight": 0.042420032358774014,
+        "median_return_weight": 0.03699796988825188,
+        "mean_alpha_weight": 0.15924884166035455,
+        "median_alpha_weight": 0.1709417301258046
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 20,
+        "mean_return_weight": 0.04008780233475862,
+        "median_return_weight": 0.03704477811374142,
+        "mean_alpha_weight": 0.18490114576068184,
+        "median_alpha_weight": 0.20333193526196242
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 60,
+        "mean_return_weight": 0.06853136922923023,
+        "median_return_weight": 0.05751532989155347,
+        "mean_alpha_weight": 0.18556504958077452,
+        "median_alpha_weight": 0.16913684117303068
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 120,
+        "mean_return_weight": 0.15347595762225197,
+        "median_return_weight": 0.1236518994590829,
+        "mean_alpha_weight": 0.2129876902790007,
+        "median_alpha_weight": 0.18861199041169166
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "horizon_sessions": 252,
+        "mean_return_weight": 0.6555759681035409,
+        "median_return_weight": 0.7169938455761025,
+        "mean_alpha_weight": 0.14659345793307832,
+        "median_alpha_weight": 0.13667009615931358
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 5,
+        "mean_return_weight": 0.11524195779306379,
+        "median_return_weight": 0.11147456592365627,
+        "mean_alpha_weight": 0.13230627308941034,
+        "median_alpha_weight": 0.1376086872387441
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 10,
+        "mean_return_weight": 0.12234301345732172,
+        "median_return_weight": 0.11854707025852868,
+        "mean_alpha_weight": 0.15140331779645935,
+        "median_alpha_weight": 0.15896522709076188
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 20,
+        "mean_return_weight": 0.13463418081542167,
+        "median_return_weight": 0.1256802059454863,
+        "mean_alpha_weight": 0.18331681803242242,
+        "median_alpha_weight": 0.19523463724202939
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 60,
+        "mean_return_weight": 0.15047522476654335,
+        "median_return_weight": 0.14202795631065107,
+        "mean_alpha_weight": 0.1680661353711544,
+        "median_alpha_weight": 0.16340490487984805
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 120,
+        "mean_return_weight": 0.2072108446250045,
+        "median_return_weight": 0.20356684977222628,
+        "mean_alpha_weight": 0.18397620966460032,
+        "median_alpha_weight": 0.17635437510410265
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "horizon_sessions": 252,
+        "mean_return_weight": 0.270094778542645,
+        "median_return_weight": 0.25016906605501404,
+        "mean_alpha_weight": 0.1809312460459532,
+        "median_alpha_weight": 0.16817968568522756
+      }
+    ],
+    "benchmark_audit": [
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "benchmark": "SPY",
+        "start": "2021-01-04 00:00:00",
+        "end": "2023-01-03 00:00:00",
+        "cagr_from_returns": 0.026366017040575285,
+        "direct_price_cagr": 0.02636601704057484,
+        "cagr_abs_diff": 4.440892098500626e-16,
+        "total_return": 0.05331841751697808,
+        "median_active_names": NaN,
+        "min_active_names": NaN,
+        "max_active_names": NaN
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "benchmark": "QQQ",
+        "start": "2021-01-04 00:00:00",
+        "end": "2023-01-03 00:00:00",
+        "cagr_from_returns": -0.07326227315158773,
+        "direct_price_cagr": -0.07326227315158795,
+        "cagr_abs_diff": 2.220446049250313e-16,
+        "total_return": -0.14089784180063447,
+        "median_active_names": NaN,
+        "min_active_names": NaN,
+        "max_active_names": NaN
+      },
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "benchmark": "UNIVERSE_EQUAL_WEIGHT",
+        "start": "2021-01-04 00:00:00",
+        "end": "2023-01-03 00:00:00",
+        "cagr_from_returns": 0.2507783634214187,
+        "direct_price_cagr": NaN,
+        "cagr_abs_diff": NaN,
+        "total_return": 0.5630579642600624,
+        "median_active_names": 230.0,
+        "min_active_names": 224.0,
+        "max_active_names": 234.0
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "benchmark": "SPY",
+        "start": "2023-01-03 00:00:00",
+        "end": "2025-01-01 00:00:00",
+        "cagr_from_returns": 0.2564324046154183,
+        "direct_price_cagr": 0.2564324046154196,
+        "cagr_abs_diff": 1.3322676295501878e-15,
+        "total_return": 0.5757649603342738,
+        "median_active_names": NaN,
+        "min_active_names": NaN,
+        "max_active_names": NaN
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "benchmark": "QQQ",
+        "start": "2023-01-03 00:00:00",
+        "end": "2025-01-01 00:00:00",
+        "cagr_from_returns": 0.3963556052188031,
+        "direct_price_cagr": 0.39635560521880353,
+        "cagr_abs_diff": 4.440892098500626e-16,
+        "total_return": 0.9446493519859085,
+        "median_active_names": NaN,
+        "min_active_names": NaN,
+        "max_active_names": NaN
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "benchmark": "UNIVERSE_EQUAL_WEIGHT",
+        "start": "2023-01-03 00:00:00",
+        "end": "2025-01-01 00:00:00",
+        "cagr_from_returns": 0.3648864191177794,
+        "direct_price_cagr": NaN,
+        "cagr_abs_diff": NaN,
+        "total_return": 0.8583214096062095,
+        "median_active_names": 216.0,
+        "min_active_names": 211.0,
+        "max_active_names": 222.0
+      }
+    ]
+  },
+  "validation": {
+    "confirmed": false,
+    "base": {
+      "days": 502,
+      "total_return": 0.2493872239516446,
+      "cagr": 0.1182557859518163,
+      "max_drawdown": -0.050070522241727033,
+      "annual_turnover": 4.949056480727156,
+      "trade_days": 501,
+      "execution_skips": 0,
+      "positive_month_share": 0.6666666666666666,
+      "median_holdings": 141.0,
+      "min_holdings": 115,
+      "max_holdings": 187,
+      "mean_cash_weight": 1.019501530740799e-05,
+      "median_max_name_weight": 0.133181228062981,
+      "p95_max_name_weight": 0.3897257446119462,
+      "execution_skip_rate": 0.9946409689876649,
+      "execution_shortfall_notional_rate": 0.9946409689876649,
+      "full_execution_skip_days": 0,
+      "partial_execution_days": 501,
+      "blocked_trade_names": 3654,
+      "requested_trade_notional": 467.64170043687466,
+      "executed_trade_notional": 19.71766947083359,
+      "unfilled_trade_notional": 465.1355940615723,
+      "scheduled_rebalances": 502,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.13817661866360198,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.2780998192669868,
+      "universe_equal_weight_cagr": 0.3648864191177794,
+      "excess_cagr_vs_universe_equal_weight": -0.24663063316596312,
+      "robust_excess_cagr": -0.2780998192669868
+    },
+    "stress": {
+      "days": 502,
+      "total_return": 0.22499039043075442,
+      "cagr": 0.10724035023811496,
+      "max_drawdown": -0.05422664355378293,
+      "annual_turnover": 4.949056480727156,
+      "trade_days": 501,
+      "execution_skips": 0,
+      "positive_month_share": 0.6666666666666666,
+      "median_holdings": 141.0,
+      "min_holdings": 115,
+      "max_holdings": 187,
+      "mean_cash_weight": 1.019501530740799e-05,
+      "median_max_name_weight": 0.133181228062981,
+      "p95_max_name_weight": 0.3897257446119462,
+      "execution_skip_rate": 0.9946409689876649,
+      "execution_shortfall_notional_rate": 0.9946409689876649,
+      "full_execution_skip_days": 0,
+      "partial_execution_days": 501,
+      "blocked_trade_names": 3654,
+      "requested_trade_notional": 467.64170043687466,
+      "executed_trade_notional": 19.71766947083359,
+      "unfilled_trade_notional": 465.1355940615723,
+      "scheduled_rebalances": 502,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.14919205437730332,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.28911525498068813,
+      "universe_equal_weight_cagr": 0.3648864191177794,
+      "excess_cagr_vs_universe_equal_weight": -0.25764606887966446,
+      "robust_excess_cagr": -0.28911525498068813
+    },
+    "used_for_selection": false
+  },
+  "holdout": {
+    "start": "2025-01-01",
+    "used": false
+  },
+  "gate": [
+    {
+      "test": "PHASE2_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 2 must PASS"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all dense/advisor scores < 2025-01-01"
+    },
+    {
+      "test": "DENSE_ALL_SIX_HORIZONS",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "DAILY_COMPLETE_TERM_STRUCTURE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 6,
+      "rule": "every emitted advisor row must have all six horizon forecasts"
+    },
+    {
+      "test": "NO_FIXED_CARDINALITY",
+      "status": "PASS",
+      "blocking": true,
+      "value": false,
+      "rule": "must remain false"
+    },
+    {
+      "test": "NO_FIXED_POSITION_CAP",
+      "status": "PASS",
+      "blocking": true,
+      "value": false,
+      "rule": "must remain false"
+    },
+    {
+      "test": "QUALIFIED_DYNAMIC_POLICY_EXISTS",
+      "status": "FAIL",
+      "blocking": true,
+      "value": 0,
+      "rule": ">=1 policy with positive robust excess CAGR at base/stress costs"
+    },
+    {
+      "test": "VALIDATION_NOT_USED_FOR_SELECTION",
+      "status": "PASS",
+      "blocking": true,
+      "value": false,
+      "rule": "2023-2024 confirmation only"
+    },
+    {
+      "test": "VALIDATION_CONFIRMATION",
+      "status": "FAIL",
+      "blocking": false,
+      "value": false,
+      "rule": "diagnostic: selected policy remains positive robust excess in 2023-2024"
+    }
+  ],
+  "readiness": "NOT_READY",
+  "next_gate": "If PASS: Phase 4 stress-tests advisor persistence, benchmark alpha, concentration and turnover pre-2025; then freezes V13 before the code-blinded 2025+ confirmation."
+}

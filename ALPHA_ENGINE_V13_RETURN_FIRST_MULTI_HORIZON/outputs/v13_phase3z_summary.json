@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "phase": "V13-P3Z",
+  "build": "V13_P3Z_ROUNDTRIP_RESIZE_HYSTERESIS_2026-09-13",
+  "name": "ROUNDTRIP_RESIZE_HYSTERESIS",
+  "objective": "REMOVE_MICRO_CHURN_BY_REQUIRING_EXISTING_POSITION_RESIZES_TO_JUSTIFY_A_FULL_EXPECTED_ROUND_TRIP_WITHOUT_CHANGING_PHASE2U_OR_ACTIVE_ALPHA",
+  "holdout_used": false,
+  "predictor_retrained": false,
+  "design": {
+    "active_alpha": "unchanged from Phase3Y",
+    "entry_hurdle": "full round-trip cost",
+    "holding": "keep while expected active alpha > 0",
+    "resize_hurdle": "full expected round-trip cost / local risk curvature",
+    "top_n": false,
+    "fixed_holding_period": false,
+    "per_name_cap": false
+  },
+  "metrics": {
+    "20bps": {
+      "days": 1510,
+      "total_return": 4.33368687617036,
+      "cagr": 0.32230531748574864,
+      "max_drawdown": -0.36788580153295125,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.15113994611974024,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.09300684284201366,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.08257534760558549
+    },
+    "40bps": {
+      "days": 1510,
+      "total_return": 3.5623290088906163,
+      "cagr": 0.28827906464324315,
+      "max_drawdown": -0.37093650810653955,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.11711369327723475,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.05898058999950817,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.11660160044809098
+    },
+    "60bps": {
+      "days": 1510,
+      "total_return": 2.9023987691765374,
+      "cagr": 0.2551216216546024,
+      "max_drawdown": -0.3739734982169367,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.08395625028859399,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.02582314701086741,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.14975904343673174
+    }
+  },
+  "beta_attribution": [
+    {
+      "benchmark": "SPY",
+      "n": 1510,
+      "alpha_ann": 0.10296900385142073,
+      "beta": 1.1976835722203336,
+      "r2": 0.7769320007000481
+    },
+    {
+      "benchmark": "QQQ",
+      "n": 1510,
+      "alpha_ann": 0.08257437424441856,
+      "beta": 0.9878578987526229,
+      "r2": 0.7952757901641537
+    },
+    {
+      "benchmark": "UEW",
+      "n": 1510,
+      "alpha_ann": 0.03363142295108592,
+      "beta": 0.7588391560227495,
+      "r2": 0.5226888705671223
+    }
+  ],
+  "turnover": {
+    "annual_turnover": 15.305390220537522,
+    "entry_exit_share": 0.4951095349036477,
+    "resize_share": 0.5048904650963523
+  },
+  "phase3y_baseline": {
+    "cagr20": 0.323553062127236,
+    "cagr40": 0.27952693888401114,
+    "turnover": 18.66535790256984,
+    "uew_alpha": 0.03279732901716286
+  },
+  "efficiency": {
+    "new_cagr40_per_turnover": 0.01883513327588448,
+    "old_cagr40_per_turnover": 0.014975707422439833
+  },
+  "universe_lineage": {
+    "tickers_ever_eligible": 274,
+    "eligible_at_start": 212,
+    "eligible_at_end": 211,
+    "entries_after_start": 62,
+    "exits_before_end": 63
+  },
+  "gate": [
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-26",
+      "rule": "all OOF scores < 2025-01-01"
+    },
+    {
+      "test": "NO_PREDICTOR_RETRAINING",
+      "status": "PASS",
+      "blocking": true,
+      "value": "Phase2U OOF reused",
+      "rule": "portfolio mechanics only; Phase2U untouched"
+    },
+    {
+      "test": "ACTIVE_ALPHA_VS_UEW",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "n": 1510,
+        "alpha_ann": 0.03363142295108592,
+        "beta": 0.7588391560227495,
+        "r2": 0.5226888705671223
+      },
+      "rule": "annualized regression alpha vs dynamic eligible-universe EW > 0"
+    },
+    {
+      "test": "ROUNDTRIP_HYSTERESIS_PARETO_VS_PHASE3Y",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "new_turnover": 15.305390220537522,
+        "old_turnover": 18.66535790256984,
+        "new_cagr_40bps": 0.28827906464324315,
+        "old_cagr_40bps": 0.27952693888401114
+      },
+      "rule": "full-round-trip resize hysteresis must lower turnover without lowering 40bps CAGR"
+    },
+    {
+      "test": "RETURN_PER_TURNOVER_IMPROVES",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "new_cagr40_per_turnover": 0.01883513327588448,
+        "old_cagr40_per_turnover": 0.014975707422439833
+      },
+      "rule": "40bps CAGR per unit annual turnover must improve"
+    },
+    {
+      "test": "STRESS_60BPS_REMAINS_POSITIVE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.2551216216546024,
+      "rule": "fixed policy remains profitable at 60bps"
+    },
+    {
+      "test": "EXECUTION_BLOCKING_ACCEPTABLE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.02638001295410168,
+      "rule": "blocked requested notional <=5%"
+    },
+    {
+      "test": "CONVICTION_TOP_TAIL_ADDS_UEW_ALPHA",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "top_deciles_9_10": 0.00840840935498672,
+        "middle_deciles_4_7": -0.004094775428974839
+      },
+      "rule": "strong active conviction must outperform UEW and middle conviction"
+    },
+    {
+      "test": "UNIVERSE_LINEAGE_RECORDED",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "tickers_ever_eligible": 274,
+        "eligible_at_start": 212,
+        "eligible_at_end": 211,
+        "entries_after_start": 62,
+        "exits_before_end": 63
+      },
+      "rule": "dynamic universe entries/exits recorded"
+    }
+  ],
+  "readiness": "READY_FOR_PREHOLDOUT_FREEZE_REVIEW",
+  "next": "Do not open 2025+ automatically. If PASS, inspect turnover, active alpha and annual/regime behavior once; if they remain coherent, freeze. If FAIL, keep Phase3Y as the active-alpha baseline and do not modify Phase2U."
+}

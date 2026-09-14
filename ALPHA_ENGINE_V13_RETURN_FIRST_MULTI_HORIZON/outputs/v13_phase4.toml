@@ -1,0 +1,26 @@
+[v13_phase4]
+name = "ONE_SHOT_CODE_BLINDED_2025_PLUS_HOLDOUT"
+objective = "SEAL_FINAL_PRE2025_MODELS_THEN_OPEN_2025_PLUS_ONCE_WITHOUT_RETUNING"
+expected_research_freeze_id = "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8"
+expected_research_tag = "v13-preholdout-3c3ebdd8"
+expected_research_commit = "1215b151df2b0c6e7ab600c6814f90a07cb8e060"
+holdout_start = "2025-01-01"
+phase3aa_summary = "outputs/v13_phase3aa_summary.json"
+phase3aa_freeze_manifest = "outputs/v13_phase3aa_freeze_manifest.json"
+phase2r_model_spec = "outputs/v13_phase2r_model_spec.json"
+phase2r_oof_scores = "outputs/v13_phase2r_oof_scores.parquet"
+phase2r_expert_evidence = "outputs/v13_phase2r_expert_fold_leaderboard.csv"
+phase2u_oof_scores = "outputs/v13_phase2u_oof_scores.parquet"
+phase2u_newinfo_surface = "outputs/v13_phase2u_newinfo_surface.parquet"
+phase2u_expert_evidence = "outputs/v13_phase2u_expert_evidence.csv"
+research_feature_library = "outputs/v13_phase1_feature_library.parquet"
+research_targets = "outputs/v13_phase1_research_targets.parquet"
+sealed_model_bundle = "outputs/v13_phase4_sealed_model_bundle.joblib"
+seal_manifest = "outputs/v13_phase4_model_seal_manifest.json"
+seal_artifact_copy = "artifacts/freeze/v13_phase4_model_seal_manifest.json"
+holdout_open_marker = "outputs/v13_phase4_holdout_opened.json"
+summary = "outputs/v13_phase4_holdout_summary.json"
+base_round_trip_cost_bps = 20.0
+stress_round_trip_cost_bps = 40.0
+extreme_round_trip_cost_bps = 60.0
+maximum_execution_blocked_rate = 0.05

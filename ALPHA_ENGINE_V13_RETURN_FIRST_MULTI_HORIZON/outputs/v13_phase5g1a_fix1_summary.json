@@ -1,0 +1,31 @@
+{
+  "cedear_constraint_added": false,
+  "current_buy_count": 30,
+  "current_expected_contribution_share": {
+    "top10": 0.6737759033028404,
+    "top15": 0.8418266805517538,
+    "top20": 0.9364021344280951,
+    "top5": 0.40641868536809256
+  },
+  "current_weight_share": {
+    "top10": 0.5640830715042788,
+    "top15": 0.7444004469623745,
+    "top20": 0.8678001195972567,
+    "top5": 0.328124998857389
+  },
+  "decision_rule": "No production change from this audit alone. If core ex-ante groups materially dominate the marginal tail in both OOF and holdout, proceed to a separately frozen endogenous economic-materiality design. If ranking is flat, investigate alpha discrimination rather than imposing Top-N.",
+  "diagnostic_only": true,
+  "exact_advisor_parity": {
+    "max_effective_horizon_gap": 7.105427357601002e-15,
+    "max_expected_active_total_gap": 9.974659986866641e-17
+  },
+  "minimum_weight_added": false,
+  "model_changed": false,
+  "orders_sent": false,
+  "phase": "V13-P5G1-A-FIX1",
+  "phase5g_state": "PROPOSED",
+  "policy_changed": false,
+  "sheets_mutated": false,
+  "status": "PASS_ENDOGENOUS_SELECTIVITY_AUDIT_FIX1",
+  "top_n_added": false
+}

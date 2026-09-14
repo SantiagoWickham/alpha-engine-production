@@ -1,0 +1,67 @@
+{
+  "build": "V13_P4C_OBSERVED_HOLDOUT_EVIDENCE_CHECKPOINT_2026-09-13",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "research_freeze_id": "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8",
+  "economic_verdict": "STRONG_CONFIRMATION",
+  "holdout_start": "2025-01-01",
+  "holdout_end": "2026-09-04",
+  "policy_changed": false,
+  "predictor_retrained_after_holdout_open": false,
+  "files": [
+    {
+      "path": "outputs/v13_phase4_holdout_summary.json",
+      "sha256": "e63ef7b51fb3cf9fdbc574794bca7c06a9065ec1e39f84a25aa036f8ddcda354",
+      "bytes": 5460,
+      "stored_in_git": true
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_beta_attribution.csv",
+      "sha256": "7d813fd6d13f69eeb3a66b1c37d1c8cdda02e83958ece981f42167a997140fee",
+      "bytes": 232,
+      "stored_in_git": true
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_horizon_evidence.csv",
+      "sha256": "daadb35f71a5abdce2d7d0f7b41f3cc7e15994bcf853decb5308d04a1ed8d939",
+      "bytes": 651,
+      "stored_in_git": true
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_opened.json",
+      "sha256": "09ed6f1fbc60b90911e2c33c04de182b3afed900a6f0385a5e712e0352e8fa10",
+      "bytes": 309,
+      "stored_in_git": true
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_nav_20bps.csv",
+      "sha256": "a69c565213877395ba89637c3b41b4bf9ce30c7ae244c13bcd663e29efd90c54",
+      "bytes": 93269,
+      "stored_in_git": false
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_nav_40bps.csv",
+      "sha256": "a520aa3d221ae48e3200405cb94dde670b1fd2b4e39426a40c1be09d4c9de17b",
+      "bytes": 93277,
+      "stored_in_git": false
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_nav_60bps.csv",
+      "sha256": "d7ca12b9b97895f7c9ad7d1b70e2b1deae91c9543a65037ea8a56777795d375b",
+      "bytes": 93233,
+      "stored_in_git": false
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_scores.parquet",
+      "sha256": "89fc41b9a465848973ee41f651d7efee906b24a1da094259a220396ef4b2a93c",
+      "bytes": 856241,
+      "stored_in_git": false
+    },
+    {
+      "path": "outputs/v13_phase4_holdout_advisor.parquet",
+      "sha256": "8bc50c75d3e364442476e9d6023c8aee7faa2be2452616e3b7a0c5cf3a9ad538",
+      "bytes": 8267433,
+      "stored_in_git": false
+    }
+  ],
+  "note": "Observed 2025+ validation evidence. This checkpoint is archival only and MUST NOT be used to retune V13."
+}

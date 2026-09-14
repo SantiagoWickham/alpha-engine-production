@@ -1,0 +1,11 @@
+test,status,blocking,value,rule
+PHASE1_NO_2025_PLUS_FEATURES,PASS,True,2024-12-31,max feature date < 2025-01-01
+PHASE1_NO_2025_PLUS_TARGETS,PASS,True,2024-12-31,max target date < 2025-01-01
+FEATURE_PRICE_COVERAGE,PASS,True,1.0,>= 0.995
+CANONICAL_PIT_MARKET_SOURCE,PASS,True,True,Phase 1 market surface must come from Phase 2 canonical PIT panel
+NO_DIRECT_PRICE_LEVEL_FEATURE,PASS,True,[],no price/target level exported
+UNIQUE_FEATURE_KEY,PASS,True,0,0 duplicate keys
+SIX_HORIZONS_PRESENT,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+USABLE_FEATURE_BREADTH,PASS,True,78,>=30 features with required coverage
+ALL_HORIZONS_HAVE_DEV_CANDIDATES,PASS,False,"{5: 40, 10: 40, 20: 35, 60: 24, 120: 40, 252: 40}",>=3 DEV-only candidates per horizon
+SIZE_NOT_TRIPLE_COUNTED,PASS,True,['size_log_market_cap'],at most one explicit size-level feature

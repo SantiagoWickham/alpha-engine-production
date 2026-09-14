@@ -1,0 +1,42 @@
+{
+  "baseline_parity_required": true,
+  "cedear_constraint": false,
+  "covariance_estimator": "LedoitWolf",
+  "executable": false,
+  "holdout_plan_stats": {
+    "baseline_positive_targets": 16968,
+    "candidate_positive_targets": 5345,
+    "covariance_fallbacks": 10,
+    "dates_optimized": 410,
+    "dates_total": 420,
+    "optimizer_fallbacks": 0
+  },
+  "holdout_status": "POSTHOC_FOR_REDISTRIBUTION_REDESIGN",
+  "independent_covariance_window": 120,
+  "integer_nominals": false,
+  "minimum_weight": false,
+  "phase": "V13-P5G1-C-FIX1",
+  "phase5g_state": "PROPOSED",
+  "pre2025_plan_stats": {
+    "baseline_positive_targets": 69150,
+    "candidate_positive_targets": 19978,
+    "covariance_fallbacks": 117,
+    "dates_optimized": 1380,
+    "dates_total": 1500,
+    "optimizer_fallbacks": 0
+  },
+  "production_model_changed": false,
+  "production_policy_changed": false,
+  "production_v13_risk_lookback": 60,
+  "same_cost_scenarios": [
+    20.0,
+    40.0,
+    60.0
+  ],
+  "same_execution_lag": true,
+  "same_execution_surface": true,
+  "same_v13_alpha": true,
+  "status": "PASS_SHADOW_SIMULATION_COMPLETED",
+  "top_n": false,
+  "user_confirmed": false
+}

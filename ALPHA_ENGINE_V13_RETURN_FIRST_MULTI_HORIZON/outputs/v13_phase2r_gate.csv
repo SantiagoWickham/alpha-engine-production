@@ -1,0 +1,8 @@
+test,status,blocking,value,rule
+PHASE1_INPUT_PASS,PASS,True,PASS,Phase 1 must PASS
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-31,all research data < 2025-01-01
+ALL_SIX_HORIZONS_REBUILT,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+PRE2025_OOF_ALPHA_RECOVERED,PASS,True,"{'positive_horizons': 5, 'median_economic_score': 0.0022833220858329084}",>=4/6 positive and median > 0
+2021_2022_REGIME_RECOVERY,FAIL,True,"{'positive_horizons': 0, 'median_economic_score': -0.009663920577383031}",>=3/6 positive and median > 0
+2023_2024_RECENT_REGIME_EVIDENCE,PASS,True,"{'positive_horizons': 3, 'median_economic_score': 0.0008985158627238586}",>=3/6 positive and median > 0
+WINNER_CAPTURE_PRESENT,PASS,True,1.6732708039988142,median OOF top-decile winner lift > 1

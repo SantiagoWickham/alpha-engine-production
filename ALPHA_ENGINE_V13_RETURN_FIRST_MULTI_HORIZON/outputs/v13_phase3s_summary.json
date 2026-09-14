@@ -1,0 +1,372 @@
+{
+  "status": "FAIL",
+  "phase": "V13-P3S",
+  "build": "V13_P3S_FAST_STRUCTURAL_REPAIR_2026-09-12",
+  "mode": "FAST_CACHED_STRUCTURAL_REPAIR",
+  "cache": {
+    "advisor_rows": 223727,
+    "models_retrained": false,
+    "dense_scores_rebuilt": false
+  },
+  "execution": {
+    "surface_cache": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase3s_execution_surface.parquet",
+    "next_session_audit": [
+      {
+        "role": "POLICY_SELECTION_2021_2022",
+        "advisor_keys": 115359,
+        "next_session_execution_available": 115340,
+        "next_session_execution_coverage": 0.9998352967692161
+      },
+      {
+        "role": "VALIDATION_2023_2024",
+        "advisor_keys": 108157,
+        "next_session_execution_available": 108142,
+        "next_session_execution_coverage": 0.9998613127213218
+      }
+    ],
+    "source_audit": [
+      {
+        "metric": "rows",
+        "value": 586159.0
+      },
+      {
+        "metric": "tickers",
+        "value": 274.0
+      },
+      {
+        "metric": "execution_close_coverage",
+        "value": 1.0
+      },
+      {
+        "metric": "mark_price_coverage",
+        "value": 1.0
+      },
+      {
+        "metric": "execution_source::CANONICAL_CLOSE",
+        "value": 585832.0
+      },
+      {
+        "metric": "execution_source::PROVIDER_RAW_CLOSE",
+        "value": 327.0
+      },
+      {
+        "metric": "mark_source::PHASE2C_TOTAL_RETURN",
+        "value": 582002.0
+      },
+      {
+        "metric": "mark_source::CANONICAL_CLOSE",
+        "value": 3830.0
+      },
+      {
+        "metric": "mark_source::PROVIDER_ADJ",
+        "value": 327.0
+      }
+    ]
+  },
+  "horizon_prior": {
+    "5": 0.20050062588121018,
+    "10": 0.19896329083940403,
+    "20": 0.22125198708694835,
+    "60": 0.20854916767982712,
+    "120": 0.13393287937007628,
+    "252": 0.03680204914253399
+  },
+  "oof_2021_2022_horizon_evidence": [
+    {
+      "horizon_sessions": 5,
+      "architecture_used": "HGB_ROBUST_EXCESS",
+      "economic_score": -0.0022203349022623,
+      "worst_cut_robust_excess": -0.0026781060179561,
+      "mean_rank_ic": 0.0107010286746852,
+      "positive_cut_share": 0.0
+    },
+    {
+      "horizon_sessions": 10,
+      "architecture_used": "HGB_ROBUST_EXCESS",
+      "economic_score": -0.0064461374771955,
+      "worst_cut_robust_excess": -0.008093098112515,
+      "mean_rank_ic": 0.007721348828282,
+      "positive_cut_share": 0.0
+    },
+    {
+      "horizon_sessions": 20,
+      "architecture_used": "HGB_ROBUST_EXCESS",
+      "economic_score": -0.012863181090583,
+      "worst_cut_robust_excess": -0.0150083655477859,
+      "mean_rank_ic": -0.008685974439872,
+      "positive_cut_share": 0.0
+    },
+    {
+      "horizon_sessions": 60,
+      "architecture_used": "RIDGE_RANK",
+      "economic_score": -0.0192709384154407,
+      "worst_cut_robust_excess": -0.0351873260712474,
+      "mean_rank_ic": -0.0163563365438684,
+      "positive_cut_share": 0.0
+    },
+    {
+      "horizon_sessions": 120,
+      "architecture_used": "HGB_ROBUST_EXCESS",
+      "economic_score": -0.0433606706741212,
+      "worst_cut_robust_excess": -0.0760741691727308,
+      "mean_rank_ic": 0.0132354883354388,
+      "positive_cut_share": 0.0
+    },
+    {
+      "horizon_sessions": 252,
+      "architecture_used": "HGB_ROBUST_EXCESS",
+      "economic_score": -0.1559945172839685,
+      "worst_cut_robust_excess": -0.2230559411598126,
+      "mean_rank_ic": -0.0963573557305333,
+      "positive_cut_share": 0.0
+    }
+  ],
+  "selection": {
+    "candidate_policies": 81,
+    "qualified_policies": 0,
+    "selected_policy": {
+      "signal_gamma": 0.0,
+      "return_z_gate": 0.0,
+      "alpha_z_gate": -99.0,
+      "alpha_tilt": 0.5
+    },
+    "metrics": {
+      "cagr_20bps": 0.026171782423086265,
+      "robust_excess_cagr_20bps": -0.2229842645802771,
+      "cagr_40bps": 0.011245558972895253,
+      "robust_excess_cagr_40bps": -0.2379104880304681,
+      "median_holdings_20bps": 131.0,
+      "max_holdings_20bps": 163,
+      "median_max_name_weight_20bps": 0.18152124910249107,
+      "p95_max_name_weight_20bps": 0.23769965252680886,
+      "annual_turnover_20bps": 6.8067083590591215,
+      "execution_blocked_rate_20bps": 0.4836957044997807,
+      "target_deviation_rate_20bps": 0.9667372638505652
+    }
+  },
+  "selected_horizon_influence": [
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 5,
+      "mean_weight": 0.2005006258812103,
+      "median_weight": 0.20050062588121018,
+      "p10_weight": 0.20050062588121018,
+      "p90_weight": 0.20050062588121018
+    },
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 10,
+      "mean_weight": 0.1989632908394041,
+      "median_weight": 0.19896329083940403,
+      "p10_weight": 0.19896329083940403,
+      "p90_weight": 0.19896329083940403
+    },
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 20,
+      "mean_weight": 0.2212519870869483,
+      "median_weight": 0.22125198708694835,
+      "p10_weight": 0.22125198708694835,
+      "p90_weight": 0.22125198708694835
+    },
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 60,
+      "mean_weight": 0.20854916767982704,
+      "median_weight": 0.20854916767982715,
+      "p10_weight": 0.20854916767982715,
+      "p90_weight": 0.20854916767982715
+    },
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 120,
+      "mean_weight": 0.13393287937007625,
+      "median_weight": 0.13393287937007628,
+      "p10_weight": 0.13393287937007628,
+      "p90_weight": 0.13393287937007628
+    },
+    {
+      "role": "POLICY_SELECTION_2021_2022",
+      "horizon_sessions": 252,
+      "mean_weight": 0.036802049142533995,
+      "median_weight": 0.036802049142533995,
+      "p10_weight": 0.036802049142533995,
+      "p90_weight": 0.036802049142533995
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 5,
+      "mean_weight": 0.2005006258812103,
+      "median_weight": 0.20050062588121018,
+      "p10_weight": 0.20050062588121018,
+      "p90_weight": 0.20050062588121018
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 10,
+      "mean_weight": 0.19896329083940406,
+      "median_weight": 0.19896329083940403,
+      "p10_weight": 0.19896329083940403,
+      "p90_weight": 0.19896329083940403
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 20,
+      "mean_weight": 0.2212519870869483,
+      "median_weight": 0.22125198708694835,
+      "p10_weight": 0.22125198708694835,
+      "p90_weight": 0.22125198708694835
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 60,
+      "mean_weight": 0.20854916767982704,
+      "median_weight": 0.20854916767982715,
+      "p10_weight": 0.20854916767982715,
+      "p90_weight": 0.20854916767982715
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 120,
+      "mean_weight": 0.13393287937007625,
+      "median_weight": 0.13393287937007628,
+      "p10_weight": 0.13393287937007628,
+      "p90_weight": 0.13393287937007628
+    },
+    {
+      "role": "VALIDATION_2023_2024",
+      "horizon_sessions": 252,
+      "mean_weight": 0.03680204914253399,
+      "median_weight": 0.036802049142533995,
+      "p10_weight": 0.036802049142533995,
+      "p90_weight": 0.036802049142533995
+    }
+  ],
+  "validation": {
+    "base": {
+      "days": 502,
+      "total_return": 0.25887702726700557,
+      "cagr": 0.12251156492556459,
+      "max_drawdown": -0.044635310696430563,
+      "annual_turnover": 8.078076135499682,
+      "trade_days": 501,
+      "median_holdings": 136.0,
+      "max_holdings": 186,
+      "mean_cash_weight": 4.024779400531178e-06,
+      "median_max_name_weight": 0.17880940956115104,
+      "p95_max_name_weight": 0.35798827304145225,
+      "scheduled_rebalances": 502,
+      "partial_execution_days": 501,
+      "full_execution_skip_days": 0,
+      "blocked_trade_names": 3640,
+      "requested_trade_notional": 477.71139720616026,
+      "executed_trade_notional": 32.18408111127651,
+      "blocked_requested_notional": 235.13481208827025,
+      "target_deviation_notional": 469.62253126285805,
+      "execution_blocked_requested_rate": 0.4922110158213284,
+      "target_deviation_rate": 0.9830674629271795,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.1339208396898537,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.2738440402932385,
+      "universe_equal_weight_cagr": 0.36457764088728317,
+      "excess_cagr_vs_universe_equal_weight": -0.24206607596171859,
+      "robust_excess_cagr": -0.2738440402932385
+    },
+    "stress": {
+      "days": 502,
+      "total_return": 0.21900052521257374,
+      "cagr": 0.10451919794891418,
+      "max_drawdown": -0.050912019825254506,
+      "annual_turnover": 8.078076135499682,
+      "trade_days": 501,
+      "median_holdings": 136.0,
+      "max_holdings": 186,
+      "mean_cash_weight": 4.024779400531178e-06,
+      "median_max_name_weight": 0.17880940956115104,
+      "p95_max_name_weight": 0.35798827304145225,
+      "scheduled_rebalances": 502,
+      "partial_execution_days": 501,
+      "full_execution_skip_days": 0,
+      "blocked_trade_names": 3640,
+      "requested_trade_notional": 477.71139720616026,
+      "executed_trade_notional": 32.18408111127651,
+      "blocked_requested_notional": 235.13481208827025,
+      "target_deviation_notional": 469.62253126285805,
+      "execution_blocked_requested_rate": 0.4922110158213284,
+      "target_deviation_rate": 0.9830674629271795,
+      "spy_cagr": 0.2564324046154183,
+      "excess_cagr_vs_spy": -0.1519132066665041,
+      "qqq_cagr": 0.3963556052188031,
+      "excess_cagr_vs_qqq": -0.2918364072698889,
+      "universe_equal_weight_cagr": 0.36457764088728317,
+      "excess_cagr_vs_universe_equal_weight": -0.260058442938369,
+      "robust_excess_cagr": -0.2918364072698889
+    },
+    "confirmed": false,
+    "used_for_selection": false
+  },
+  "holdout": {
+    "start": "2025-01-01",
+    "used": false
+  },
+  "diagnosis": [
+    "EXECUTION_MAPPING_STILL_BLOCKING",
+    "OVERDIVERSIFIED_SELECTION",
+    "ALL_HORIZON_OOF_ALPHA_NEGATIVE_2021_2022",
+    "INSUFFICIENT_SELECTION_ALPHA",
+    "VALIDATION_ALPHA_NOT_CONFIRMED"
+  ],
+  "gate": [
+    {
+      "test": "CACHED_ADVISOR_REUSED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase3_advisor_surface.parquet",
+      "rule": "no model retraining"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "< 2025-01-01"
+    },
+    {
+      "test": "RAW_CLOSE_EXECUTION_SURFACE",
+      "status": "PASS",
+      "blocking": true,
+      "value": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase3s_execution_surface.parquet",
+      "rule": "execution uses canonical/phase2c/provider raw close only"
+    },
+    {
+      "test": "NEXT_SESSION_EXECUTION_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.9998352967692161,
+      "rule": ">= 0.95"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_NONZERO",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.036802049142533995,
+      "rule": "all six have strictly positive dynamic weights"
+    },
+    {
+      "test": "QUALIFIED_POLICY_EXISTS",
+      "status": "FAIL",
+      "blocking": true,
+      "value": 0,
+      "rule": "positive robust excess base/stress and executable"
+    },
+    {
+      "test": "VALIDATION_CONFIRMATION",
+      "status": "FAIL",
+      "blocking": false,
+      "value": false,
+      "rule": "2023-2024 diagnostic only"
+    }
+  ],
+  "next": "If PASS, freeze/stress Phase 3S before code-blinded 2025+ confirmation. If FAIL, this single run separates execution coverage, concentration/cardinality, horizon fusion, and alpha insufficiency without retraining models."
+}

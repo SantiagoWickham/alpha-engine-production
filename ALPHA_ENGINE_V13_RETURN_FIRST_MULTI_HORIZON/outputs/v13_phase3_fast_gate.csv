@@ -1,0 +1,7 @@
+test,status,blocking,value,rule
+CACHED_ADVISOR_REUSED,PASS,True,C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\v13_phase3_advisor_surface.parquet,no model retraining
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-31,< 2025-01-01
+EXECUTION_USES_RAW_CLOSE_NOT_RESEARCH_ELIGIBILITY,PASS,True,True,exit availability comes from observable close on all rows
+ALL_SIX_HORIZONS_NONZERO,PASS,True,"{5: 0.16666666666666666, 10: 0.16666666666666666, 20: 0.16666666666666666, 60: 0.16666666666666666, 120: 0.16666666666666666, 252: 0.16666666666666666}",all six remain active
+QUALIFIED_POLICY_EXISTS,FAIL,True,0,positive robust excess base/stress and executable
+VALIDATION_CONFIRMATION,FAIL,False,False,2023-2024 diagnostic only

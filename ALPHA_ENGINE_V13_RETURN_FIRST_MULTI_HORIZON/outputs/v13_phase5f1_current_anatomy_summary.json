@@ -1,0 +1,211 @@
+{
+  "asof": "2026-09-11",
+  "bottom_quartile_tests": {
+    "dd_252d": {
+      "buy_share_bottom_quartile": 0.36666666666666664,
+      "nonbuy_share_bottom_quartile": 0.22875816993464052,
+      "universe_q25": -0.2484353863413315
+    },
+    "dd_60d": {
+      "buy_share_bottom_quartile": 0.5,
+      "nonbuy_share_bottom_quartile": 0.20261437908496732,
+      "universe_q25": -0.14476272948882019
+    },
+    "range_position_252d": {
+      "buy_share_bottom_quartile": 0.23333333333333334,
+      "nonbuy_share_bottom_quartile": 0.2549019607843137,
+      "universe_q25": 0.3529946701909724
+    },
+    "ret_120d": {
+      "buy_share_bottom_quartile": 0.23333333333333334,
+      "nonbuy_share_bottom_quartile": 0.2565789473684211,
+      "universe_q25": 0.014509022667926197
+    },
+    "ret_20d": {
+      "buy_share_bottom_quartile": 0.4,
+      "nonbuy_share_bottom_quartile": 0.2222222222222222,
+      "universe_q25": -0.07873418155220818
+    },
+    "ret_60d": {
+      "buy_share_bottom_quartile": 0.4666666666666667,
+      "nonbuy_share_bottom_quartile": 0.20915032679738563,
+      "universe_q25": -0.07612854813074132
+    }
+  },
+  "buy_count": 30,
+  "buy_vs_nonbuy": {
+    "dd_252d": {
+      "buy_median": -0.2226848923891247,
+      "buy_target_weighted_mean": -0.21830773793920086,
+      "nonbuy_median": -0.126097871192957
+    },
+    "dd_60d": {
+      "buy_median": -0.15036813861882314,
+      "buy_target_weighted_mean": -0.13483624431008273,
+      "nonbuy_median": -0.0824334351021
+    },
+    "range_position_252d": {
+      "buy_median": 0.5391787461214068,
+      "buy_target_weighted_mean": 0.5368891215399803,
+      "nonbuy_median": 0.6177685005794638
+    },
+    "ret_120d": {
+      "buy_median": 0.1594743999969115,
+      "buy_target_weighted_mean": 0.11788942700845462,
+      "nonbuy_median": 0.10167767357036794
+    },
+    "ret_20d": {
+      "buy_median": -0.0406679817983458,
+      "buy_target_weighted_mean": -0.0337991815406219,
+      "nonbuy_median": -0.01979176346103695
+    },
+    "ret_252d": {
+      "buy_median": 0.5135532392613993,
+      "buy_target_weighted_mean": 0.4120948563843008,
+      "nonbuy_median": 0.1082740377245589
+    },
+    "ret_5d": {
+      "buy_median": 0.006692737278016336,
+      "buy_target_weighted_mean": -0.012090750151510059,
+      "nonbuy_median": -0.022448748427175147
+    },
+    "ret_60d": {
+      "buy_median": -0.07387813447554303,
+      "buy_target_weighted_mean": -0.07146630738154608,
+      "nonbuy_median": 0.031154626790283357
+    },
+    "vol_20d_ann": {
+      "buy_median": 0.35355072579232416,
+      "buy_target_weighted_mean": 0.3539417063954913,
+      "nonbuy_median": 0.26163449056536636
+    }
+  },
+  "buy_weight_spearman_correlations": {
+    "dd_252d": 0.21957730812013349,
+    "dd_60d": 0.5710789766407119,
+    "range_position_252d": 0.020244716351501667,
+    "ret_120d": -0.5150166852057843,
+    "ret_20d": 0.0389321468298109,
+    "ret_60d": 0.1274749721913237,
+    "reversal_signature_score": -0.05094549499443826
+  },
+  "canonical_market_path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\\outputs\\phase2_canonical_pit_panel.parquet",
+  "diagnostic_only": true,
+  "exact_asof_price_count_buy": 30,
+  "exact_asof_price_count_universe": 183,
+  "exact_asof_price_share_buy": 1.0,
+  "exact_asof_price_share_universe": 1.0,
+  "focus_names": [
+    {
+      "action_total_nav_basis": "BUY",
+      "dd_252d": -0.49023246213798966,
+      "dd_60d": -0.1772041279249028,
+      "effective_horizon_sessions": 37.14125031408989,
+      "expected_active_total": 0.0132819834496563,
+      "phase3z_target_weight_total_nav": 0.0634412928907998,
+      "price_date": "2026-09-11 00:00:00",
+      "range_position_252d": 0.005060485922902715,
+      "ret_120d": -0.2834990183380717,
+      "ret_20d": -0.0979778203261844,
+      "ret_5d": -0.05081251476510196,
+      "ret_60d": -0.1742812139862323,
+      "reversal_signature_score": 0.9221311475409835,
+      "ticker": "NKE",
+      "vol_20d_ann": 0.3054490229531453
+    },
+    {
+      "action_total_nav_basis": "BUY",
+      "dd_252d": -0.21281339755625617,
+      "dd_60d": -0.10851736439323145,
+      "effective_horizon_sessions": 35.69090166256359,
+      "expected_active_total": 0.017422083966546,
+      "phase3z_target_weight_total_nav": 0.0614307821431374,
+      "price_date": "2026-09-11 00:00:00",
+      "range_position_252d": 0.628042813936997,
+      "ret_120d": -0.06732670163514543,
+      "ret_20d": 0.064006054108523,
+      "ret_5d": 0.0071276110743410115,
+      "ret_60d": -0.10851736439323145,
+      "reversal_signature_score": 0.523224043715847,
+      "ticker": "CEPU",
+      "vol_20d_ann": 0.2655137871015534
+    },
+    {
+      "action_total_nav_basis": "BUY",
+      "dd_252d": -0.1580648131640352,
+      "dd_60d": -0.0801752229027789,
+      "effective_horizon_sessions": 39.557211665856485,
+      "expected_active_total": 0.0103974724882435,
+      "phase3z_target_weight_total_nav": 0.0574995527808328,
+      "price_date": "2026-09-11 00:00:00",
+      "range_position_252d": 0.6269621228432581,
+      "ret_120d": 0.05155285471012938,
+      "ret_20d": 0.028692989978251093,
+      "ret_5d": 0.015696038103485632,
+      "ret_60d": -0.0801752229027789,
+      "reversal_signature_score": 0.505464480874317,
+      "ticker": "CAAP",
+      "vol_20d_ann": 0.3277481805361509
+    },
+    {
+      "action_total_nav_basis": "BUY",
+      "dd_252d": -0.037602566018089534,
+      "dd_60d": -0.03394554032640085,
+      "effective_horizon_sessions": 36.81572090522146,
+      "expected_active_total": 0.0166039648057567,
+      "phase3z_target_weight_total_nav": 0.0443422055403633,
+      "price_date": "2026-09-11 00:00:00",
+      "range_position_252d": 0.9345773126927082,
+      "ret_120d": 0.058423525216600325,
+      "ret_20d": 0.15228877216892878,
+      "ret_5d": 0.02224897492474387,
+      "ret_60d": 0.10121273881926363,
+      "reversal_signature_score": 0.11885245901639344,
+      "ticker": "VIST",
+      "vol_20d_ann": 0.4888184697499476
+    },
+    {
+      "action_total_nav_basis": "BUY",
+      "dd_252d": -0.014196969986218333,
+      "dd_60d": -0.009097433530807053,
+      "effective_horizon_sessions": 37.32464658871329,
+      "expected_active_total": 0.0099896170547294,
+      "phase3z_target_weight_total_nav": 0.0405271845870347,
+      "price_date": "2026-09-11 00:00:00",
+      "range_position_252d": 0.9755948972894468,
+      "ret_120d": 0.3251431694530096,
+      "ret_20d": 0.1233568934278515,
+      "ret_5d": 0.05991221901908639,
+      "ret_60d": 0.08411392305642718,
+      "reversal_signature_score": 0.10928961748633881,
+      "ticker": "YPF",
+      "vol_20d_ann": 0.34811227307613063
+    }
+  ],
+  "interpretation_contract": {
+    "bottom_quartile_tests": "Diagnostic cross-sectional concentration only. No threshold is introduced into production policy.",
+    "next_required_test": "Historical conditional OOS audit: test whether BUY signals following deep prior weakness have superior, neutral, or inferior realized forward active returns.",
+    "reversal_signature_score": "Diagnostic only. High values indicate prior price weakness. It is not an entry filter and does not alter Phase3Z."
+  },
+  "live_extension_requested": 183,
+  "live_fetch_errors": {},
+  "live_fetch_successes": 183,
+  "mark_source_latest_counts": {
+    "LIVE_ADJ_ANCHORED": 183
+  },
+  "model_changed": false,
+  "name": "CURRENT_RECOMMENDATION_ANATOMY",
+  "orders_sent": false,
+  "phase": "V13-P5F.1-C-FIX1",
+  "policy_changed": false,
+  "return_price_layer_path": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\\outputs\\phase2c_return_price_layer.parquet",
+  "seal_ids": [
+    "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9"
+  ],
+  "sheets_mutated": false,
+  "source_base": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER",
+  "state_mutated": false,
+  "status": "PASS_CURRENT_ANATOMY",
+  "tuning_performed": false,
+  "universe_count": 183
+}

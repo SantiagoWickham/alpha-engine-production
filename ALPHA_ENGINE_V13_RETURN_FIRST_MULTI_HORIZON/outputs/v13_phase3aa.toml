@@ -1,0 +1,15 @@
+[v13_phase3aa]
+name = "FINAL_PREHOLDOUT_REVIEW_AND_FREEZE"
+objective = "AUDIT_PHASE3Z_ANNUAL_REGIME_BEHAVIOR_AND_FREEZE_THE_UNCHANGED_PRE2025_SYSTEM_BEFORE_ONE_CODE_BLINDED_HOLDOUT_OPEN"
+phase0_summary = "outputs/v13_phase0_summary.json"
+phase3z_summary = "outputs/v13_phase3z_summary.json"
+phase3z_nav_20bps = "outputs/v13_phase3z_nav_20bps.csv"
+phase3z_nav_40bps = "outputs/v13_phase3z_nav_40bps.csv"
+phase3z_nav_60bps = "outputs/v13_phase3z_nav_60bps.csv"
+phase3z_lineage = "outputs/v13_phase3z_universe_lineage.csv"
+execution_surface_cache = "outputs/v13_phase3s_execution_surface.parquet"
+source_spy_benchmark = "data/v13/benchmarks/SPY.parquet"
+source_qqq_benchmark = "data/v13/benchmarks/QQQ.parquet"
+holdout_start = "2025-01-01"
+portfolio_start = "2019-01-02"
+risk_lookback_sessions = 60

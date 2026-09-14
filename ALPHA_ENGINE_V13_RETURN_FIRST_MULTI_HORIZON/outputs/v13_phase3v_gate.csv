@@ -1,0 +1,9 @@
+test,status,blocking,value,rule
+PHASE2U_CORE_QUALITY_ACCEPTED,PASS,True,"{'phase2u_status': 'FAIL', 'accepted_nonblocking_failure': '2021_2022_NEWINFO_RECOVERY'}",Phase2U may fail the old 2021-22 regime gate only; all core quality gates must pass
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-26,all OOF scores < 2025-01-01
+ALL_SIX_HORIZONS_RETAINED,PASS,True,"[5, 10, 20, 60, 120, 252]","[5, 10, 20, 60, 120, 252]"
+MULTI_HORIZON_ADVISOR_COVERAGE,FAIL,True,0.5161591321333892,>=95% rows have all six horizon forecasts
+QUALIFIED_FULL_PERIOD_POLICY_EXISTS,PASS,True,9,"at least one policy beats SPY net at 20bps, remains positive at 40bps, has >=2/3 positive folds, and execution blocking <=5%"
+2021_2022_STRESS_REGIME,PASS,False,"{'cagr': -0.006166932329573327, 'max_drawdown': -0.33307546235453445, 'spy_cagr': 0.026366017040575285, 'excess_cagr_vs_spy': -0.03253294937014861, 'qqq_cagr': -0.07326227315158773, 'excess_cagr_vs_qqq': 0.0670953408220144, 'uew_cagr': 0.24915604700336336, 'excess_cagr_vs_uew': -0.2553229793329367}",diagnostic only: a difficult regime may underperform
+2023_2024_RECENT_REGIME,PASS,False,"{'cagr': 0.37275875232989786, 'max_drawdown': -0.13576369339504613, 'spy_cagr': 0.2564324046154183, 'excess_cagr_vs_spy': 0.11632634771447958, 'qqq_cagr': 0.3963556052188031, 'excess_cagr_vs_qqq': -0.02359685288890523, 'uew_cagr': 0.36457764088728317, 'excess_cagr_vs_uew': 0.008181111442614686}",diagnostic only
+NO_SINGLE_PERIOD_DEPENDENCE,PASS,False,0.5690260549705577,diagnostic: no single positive two-year fold contributes >=85% of positive log-return

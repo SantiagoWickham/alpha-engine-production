@@ -1,0 +1,53 @@
+{
+  "attribution_definition": {
+    "entry": "Actual transition from zero weight to positive weight in the exact persistent portfolio simulator.",
+    "entry_anatomy": "Frozen at the signal date whose plan is executed on the next trading session.",
+    "lifecycle": "Persists through all hysteresis resizes until exact policy exit, terminal exit, or sample end.",
+    "net_active_pnl": "Invested-capital contribution relative to the model active benchmark mix, less allocated transaction cost. This is not the same as total portfolio benchmark alpha because cash is not assigned benchmark opportunity cost here.",
+    "net_pnl": "Exact additive NAV-unit market PnL less transaction cost allocated pro-rata to executed name-level notional."
+  },
+  "build": "V13_P5F1_D3B_EXACT_EXECUTED_POSITION_LIFECYCLE_ATTRIBUTION_2026-09-13",
+  "diagnostic_only": true,
+  "files": {
+    "groups": "outputs\\phase5f1_diagnostics\\v13_phase5f1_d3b_group_attribution.csv",
+    "lifecycles": "outputs\\phase5f1_diagnostics\\v13_phase5f1_d3b_lifecycle_attribution.csv",
+    "nav_parity": "outputs\\phase5f1_diagnostics\\v13_phase5f1_d3b_nav_parity.csv"
+  },
+  "final_holdout": {
+    "allocated_cost_nav_units": 0.06341768128110267,
+    "final_nav": 1.553130240131626,
+    "gross_pnl_nav_units": 0.6165479214127262,
+    "nav_reconciliation_gap": -2.4424906541753444e-15,
+    "reconstructed_final_nav": 1.5531302401316236,
+    "sample": "FINAL_HOLDOUT",
+    "unallocated_cost_nav_units": 0.0
+  },
+  "holdout_validation_design": "FRESH_START_FROM_CASH_AT_2025_01_01",
+  "input_hashes": {
+    "d2_anatomy": "b37c1f6adeaccac37941396d33ce36b9053fd904c53521bb20fd4ecaafa5feda",
+    "phase3z_config": "e5a5c1aa604ce5d1bc320a1d1e2157f4e5f315392ec0bfc2c6aa461b75beb152",
+    "phase4_advisor": "8bc50c75d3e364442476e9d6023c8aee7faa2be2452616e3b7a0c5cf3a9ad538"
+  },
+  "lifecycles": {
+    "holdout": 919,
+    "pre2025": 2909,
+    "total": 3828
+  },
+  "model_changed": false,
+  "next": "Interpret actual lifecycle attribution for deep reversal versus positive-trend pullbacks. No production filter may be created from this diagnostic without a separately frozen prospective redesign.",
+  "phase": "V13-P5F1-D3B",
+  "policy_changed": false,
+  "pre2025": {
+    "allocated_cost_nav_units": 0.37760886569820207,
+    "final_nav": 5.333686876170334,
+    "gross_pnl_nav_units": 4.711295741868506,
+    "nav_reconciliation_gap": -3.019806626980426e-14,
+    "reconstructed_final_nav": 5.333686876170304,
+    "sample": "PRE2025_OOF",
+    "unallocated_cost_nav_units": 0.0
+  },
+  "real_orders_sent": false,
+  "sheets_mutated": false,
+  "status": "PASS_EXACT_EXECUTED_POSITION_ATTRIBUTION",
+  "tuning_performed": false
+}

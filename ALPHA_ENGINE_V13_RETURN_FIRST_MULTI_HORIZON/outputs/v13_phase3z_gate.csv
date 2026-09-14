@@ -1,0 +1,10 @@
+test,status,blocking,value,rule
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-26,all OOF scores < 2025-01-01
+NO_PREDICTOR_RETRAINING,PASS,True,Phase2U OOF reused,portfolio mechanics only; Phase2U untouched
+ACTIVE_ALPHA_VS_UEW,PASS,True,"{'n': 1510, 'alpha_ann': 0.03363142295108592, 'beta': 0.7588391560227495, 'r2': 0.5226888705671223}",annualized regression alpha vs dynamic eligible-universe EW > 0
+ROUNDTRIP_HYSTERESIS_PARETO_VS_PHASE3Y,PASS,True,"{'new_turnover': 15.305390220537522, 'old_turnover': 18.66535790256984, 'new_cagr_40bps': 0.28827906464324315, 'old_cagr_40bps': 0.27952693888401114}",full-round-trip resize hysteresis must lower turnover without lowering 40bps CAGR
+RETURN_PER_TURNOVER_IMPROVES,PASS,True,"{'new_cagr40_per_turnover': 0.01883513327588448, 'old_cagr40_per_turnover': 0.014975707422439833}",40bps CAGR per unit annual turnover must improve
+STRESS_60BPS_REMAINS_POSITIVE,PASS,True,0.2551216216546024,fixed policy remains profitable at 60bps
+EXECUTION_BLOCKING_ACCEPTABLE,PASS,True,0.02638001295410168,blocked requested notional <=5%
+CONVICTION_TOP_TAIL_ADDS_UEW_ALPHA,PASS,True,"{'top_deciles_9_10': 0.00840840935498672, 'middle_deciles_4_7': -0.004094775428974839}",strong active conviction must outperform UEW and middle conviction
+UNIVERSE_LINEAGE_RECORDED,PASS,False,"{'tickers_ever_eligible': 274, 'eligible_at_start': 212, 'eligible_at_end': 211, 'entries_after_start': 62, 'exits_before_end': 63}",dynamic universe entries/exits recorded

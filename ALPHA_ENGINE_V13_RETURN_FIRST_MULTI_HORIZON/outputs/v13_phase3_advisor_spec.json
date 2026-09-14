@@ -1,0 +1,43 @@
+{
+  "build": "V13_P3_FIX2_PARTIAL_EXECUTION_AND_AUDIT_2026-09-12",
+  "advisor": "SIMULTANEOUS_SIX_HORIZON_TERM_STRUCTURE",
+  "horizons": [
+    5,
+    10,
+    20,
+    60,
+    120,
+    252
+  ],
+  "horizon_discarded": false,
+  "holding_period_fixed": false,
+  "daily_reevaluation": true,
+  "aggregation": "each horizon score -> two OOF calibrations: absolute expected return for sizing and robust benchmark alpha for diagnostics; precision-weighted across all six; uncertainty includes cross-horizon disagreement",
+  "tactical_horizons": [
+    5,
+    10,
+    20
+  ],
+  "strategic_horizons": [
+    60,
+    120,
+    252
+  ],
+  "portfolio": {
+    "cardinality": "ENDOGENOUS_POSITIVE_RETURN_LCB",
+    "position_cap": null,
+    "position_floor": null,
+    "sizing": "LONG_ONLY_ONE_FACTOR_KELLY_ON_POSTERIOR_MEAN_RETURN_WITH_LCB_ADMISSION_AND_CASH",
+    "covariance": "CAUSAL_TRAILING_ONE_FACTOR_SPY_PLUS_IDIOSYNCRATIC_VARIANCE",
+    "execution": "evaluate every session; trade t+1 only when expected incremental portfolio return over each name's endogenous effective horizon > cost + learned extra edge; benchmark excess is enforced at portfolio qualification",
+    "selected_policy": {
+      "uncertainty_z": 1.0,
+      "entry_hurdle_bps": 50.0,
+      "rebalance_extra_edge_bps": 50.0
+    }
+  },
+  "selection_period": "2021-2022 only after calibration on 2019-2020",
+  "validation_period": "2023-2024 confirmation only",
+  "holdout_start": "2025-01-01",
+  "holdout_used": false
+}

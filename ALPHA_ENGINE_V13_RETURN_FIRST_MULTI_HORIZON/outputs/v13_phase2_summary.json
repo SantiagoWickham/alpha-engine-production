@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "phase": "V13-P2",
+  "build": "V13_P2_NESTED_MULTI_HORIZON_MODELS_2026-09-12",
+  "name": "NESTED_MULTI_HORIZON_MODEL_FACTORY",
+  "objective": "BUILD_SIX_INDEPENDENT_PRE2025_ALPHA_SURFACES_SELECTED_BY_ROBUST_BENCHMARK_EXCESS_RETURN",
+  "phase1_input": {
+    "status": "PASS",
+    "build": "V13_P1_FIX2_CANONICAL_PIT_PANEL_2026-09-12"
+  },
+  "research_contract": {
+    "research_start": "2015-01-02",
+    "validation_start": "2023-01-03",
+    "holdout_start": "2025-01-01",
+    "holdout_used": false,
+    "horizons": [
+      5,
+      10,
+      20,
+      60,
+      120,
+      252
+    ],
+    "validation_used_for_model_selection": false,
+    "portfolio_cardinality_selected": false,
+    "portfolio_weights_selected": false
+  },
+  "feature_pool": {
+    "count": 78,
+    "features": [
+      "mom_1d",
+      "mom_5d",
+      "mom_10d",
+      "mom_20d",
+      "mom_60d",
+      "mom_120d",
+      "mom_252d",
+      "mom_skip_20_5",
+      "mom_skip_60_5",
+      "mom_skip_120_20",
+      "mom_skip_252_20",
+      "trend_sma_20",
+      "dist_high_20",
+      "dist_low_20",
+      "trend_sma_60",
+      "dist_high_60",
+      "dist_low_60",
+      "trend_sma_120",
+      "dist_high_120",
+      "dist_low_120",
+      "trend_sma_252",
+      "dist_high_252",
+      "dist_low_252",
+      "vol_10",
+      "downside_vol_10",
+      "vol_20",
+      "downside_vol_20",
+      "vol_60",
+      "downside_vol_60",
+      "vol_120",
+      "downside_vol_120",
+      "skew_20",
+      "skew_60",
+      "skew_120",
+      "worst_day_20",
+      "best_day_20",
+      "worst_day_60",
+      "best_day_60",
+      "mom_accel_20_60",
+      "mom_accel_60_120",
+      "rel_mom_spy_5",
+      "rel_mom_qqq_5",
+      "rel_mom_spy_10",
+      "rel_mom_qqq_10",
+      "rel_mom_spy_20",
+      "rel_mom_qqq_20",
+      "rel_mom_spy_60",
+      "rel_mom_qqq_60",
+      "rel_mom_spy_120",
+      "rel_mom_qqq_120",
+      "rel_mom_spy_252",
+      "rel_mom_qqq_252",
+      "corr_spy_60",
+      "corr_qqq_60",
+      "corr_spy_120",
+      "corr_qqq_120",
+      "mom_20d_x_breadth",
+      "mom_60d_x_breadth",
+      "mom_120d_x_breadth",
+      "size_log_market_cap",
+      "cash_assets",
+      "equity_assets",
+      "current_ratio",
+      "ocf_assets",
+      "netinc_assets",
+      "earnings_yield",
+      "cash_yield",
+      "chg_net_income_252d",
+      "chg_operating_cash_flow_252d",
+      "chg_eps_diluted_252d",
+      "chg_assets_252d",
+      "chg_cash_252d",
+      "age_eps_diluted",
+      "age_assets",
+      "age_cash",
+      "fundamental_freshness_mean_days",
+      "fund_update_count_20d",
+      "fund_update_count_60d"
+    ]
+  },
+  "champions": {
+    "5": {
+      "horizon_sessions": 5,
+      "champion_architecture": "HGB_ROBUST_EXCESS",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": 0.001322394993149753,
+      "validation_worst_cut_robust_excess": -9.336311155533758e-05,
+      "validation_mean_rank_ic": 0.05341176775686578,
+      "validation_positive_cut_share": 0.6666666666666666,
+      "train_rows_final": 529549,
+      "validation_rows": 107087
+    },
+    "10": {
+      "horizon_sessions": 10,
+      "champion_architecture": "HGB_ROBUST_EXCESS",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": -0.002254295393385925,
+      "validation_worst_cut_robust_excess": -0.0028049541184907052,
+      "validation_mean_rank_ic": 0.06876994540063475,
+      "validation_positive_cut_share": 0.0,
+      "train_rows_final": 528439,
+      "validation_rows": 106032
+    },
+    "20": {
+      "horizon_sessions": 20,
+      "champion_architecture": "HGB_RANK",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": 0.0014844861823437294,
+      "validation_worst_cut_robust_excess": -0.000996156469412974,
+      "validation_mean_rank_ic": 0.11353382198196525,
+      "validation_positive_cut_share": 0.6666666666666666,
+      "train_rows_final": 526219,
+      "validation_rows": 103922
+    },
+    "60": {
+      "horizon_sessions": 60,
+      "champion_architecture": "RIDGE_RANK",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": 0.0035313747447650715,
+      "validation_worst_cut_robust_excess": -0.0016265611689526528,
+      "validation_mean_rank_ic": 0.15938168139436606,
+      "validation_positive_cut_share": 0.6666666666666666,
+      "train_rows_final": 517369,
+      "validation_rows": 95501
+    },
+    "120": {
+      "horizon_sessions": 120,
+      "champion_architecture": "HGB_ROBUST_EXCESS",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": 0.02422635838205528,
+      "validation_worst_cut_robust_excess": 0.020572474688065067,
+      "validation_mean_rank_ic": 0.2439644811605482,
+      "validation_positive_cut_share": 1.0,
+      "train_rows_final": 504182,
+      "validation_rows": 82901
+    },
+    "252": {
+      "horizon_sessions": 252,
+      "champion_architecture": "HGB_ROBUST_EXCESS",
+      "selection_periods": [
+        "EVIDENCE_2017_2018",
+        "OUTER_2019_2020",
+        "OUTER_2021_2022"
+      ],
+      "validation_used_for_selection": false,
+      "validation_economic_score": 0.005940232285310294,
+      "validation_worst_cut_robust_excess": 0.0010829048385613041,
+      "validation_mean_rank_ic": 0.2491675057587745,
+      "validation_positive_cut_share": 1.0,
+      "train_rows_final": 475405,
+      "validation_rows": 55599
+    }
+  },
+  "nested_oof_rows": 1177044,
+  "validation_score_rows": 551042,
+  "max_score_date": "2024-12-26",
+  "gate": [
+    {
+      "test": "PHASE1_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 1 must PASS"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "max loaded date < 2025-01-01"
+    },
+    {
+      "test": "ALL_SIX_HORIZONS_HAVE_CHAMPIONS",
+      "status": "PASS",
+      "blocking": true,
+      "value": [
+        5,
+        10,
+        20,
+        60,
+        120,
+        252
+      ],
+      "rule": "[5, 10, 20, 60, 120, 252]"
+    },
+    {
+      "test": "NESTED_OOF_AVAILABLE_ALL_HORIZONS",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "5": 228680,
+        "10": 226415,
+        "20": 221885,
+        "60": 203828,
+        "120": 177183,
+        "252": 119053
+      },
+      "rule": "each horizon has 2019-2022 nested OOF scores"
+    },
+    {
+      "test": "VALIDATION_NOT_USED_FOR_MODEL_SELECTION",
+      "status": "PASS",
+      "blocking": true,
+      "value": false,
+      "rule": "must be false for every horizon"
+    },
+    {
+      "test": "PURGED_CHRONOLOGY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 train target_end_date leaks across test start"
+    },
+    {
+      "test": "MULTI_HORIZON_PRESERVED",
+      "status": "PASS",
+      "blocking": true,
+      "value": 6,
+      "rule": "no horizon may be discarded"
+    },
+    {
+      "test": "VALIDATION_ECONOMIC_CONFIRMATION",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "5": 0.001322394993149753,
+        "10": -0.002254295393385925,
+        "20": 0.0014844861823437294,
+        "60": 0.0035313747447650715,
+        "120": 0.02422635838205528,
+        "252": 0.005940232285310294
+      },
+      "rule": "diagnostic only; validation does not select or discard horizons"
+    }
+  ],
+  "readiness": "READY_FOR_MULTI_HORIZON_CONVICTION_AND_DYNAMIC_PORTFOLIO_RESEARCH",
+  "next_gate": "If PASS: V13 Phase 3 learns cross-horizon conviction plus dynamic cardinality and endogenous sizing from NESTED OOF 2019-2022 only; 2023-2024 is confirmation; 2025+ remains blocked."
+}

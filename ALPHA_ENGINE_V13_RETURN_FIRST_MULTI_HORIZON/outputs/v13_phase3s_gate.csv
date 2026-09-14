@@ -1,0 +1,8 @@
+test,status,blocking,value,rule
+CACHED_ADVISOR_REUSED,PASS,True,C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\v13_phase3_advisor_surface.parquet,no model retraining
+FINAL_HOLDOUT_NOT_LOADED,PASS,True,2024-12-31,< 2025-01-01
+RAW_CLOSE_EXECUTION_SURFACE,PASS,True,C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\v13_phase3s_execution_surface.parquet,execution uses canonical/phase2c/provider raw close only
+NEXT_SESSION_EXECUTION_COVERAGE,PASS,True,0.9998352967692161,>= 0.95
+ALL_SIX_HORIZONS_NONZERO,PASS,True,0.036802049142533995,all six have strictly positive dynamic weights
+QUALIFIED_POLICY_EXISTS,FAIL,True,0,positive robust excess base/stress and executable
+VALIDATION_CONFIRMATION,FAIL,False,False,2023-2024 diagnostic only

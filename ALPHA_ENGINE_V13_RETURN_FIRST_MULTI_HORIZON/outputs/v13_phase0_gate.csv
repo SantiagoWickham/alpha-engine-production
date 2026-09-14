@@ -1,0 +1,10 @@
+test,status,blocking,value,rule
+NO_2025_PLUS_RESEARCH_SELECTION,PASS,True,False,must be false
+MULTI_HORIZON_ACTIVE,PASS,True,"[5, 10, 20, 60, 120, 252]",at least four simultaneous horizons
+NO_FIXED_HOLDING_PERIOD,PASS,True,False,must be false
+NO_FIXED_CARDINALITY,PASS,True,False,must be false
+NO_FIXED_MAX_WEIGHT,PASS,True,False,must be false
+NO_FIXED_MIN_WEIGHT,PASS,True,False,must be false
+NO_OLD_MODEL_ARTIFACTS_AS_RESEARCH_INPUT,PASS,True,11,old feature/model/policy/OOS artifacts denied
+SOURCE_DATA_PRESENT,PASS,True,[],all required causal source artifacts must exist
+CONCENTRATION_NOT_ARTIFICIALLY_CAPPED,PASS,True,1.0,research hard cap must permit up to 100% before economic/risk penalties
