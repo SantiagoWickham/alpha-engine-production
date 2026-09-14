@@ -7,7 +7,8 @@ permissions:
   contents: write
 
 jobs:
-  read-personal-portfolio:
+
+  personal-portfolio:
 
     runs-on: windows-latest
 
@@ -32,18 +33,51 @@ jobs:
         run: |
           python cloud/read_personal_portfolio.py
 
-      - name: Save personal portfolio ledger
+      - name: Build personal portfolio
+        shell: pwsh
+        run: |
+          python cloud/build_personal_portfolio.py
+
+      - name: Validate personal portfolio outputs
+        shell: pwsh
+        run: |
+          if (!(Test-Path "PRODUCT/personal_portfolio.json")) {
+            throw "MISSING personal_portfolio.json"
+          }
+
+          if (!(Test-Path "PRODUCT/personal_portfolio_positions.json")) {
+            throw "MISSING personal_portfolio_positions.json"
+          }
+
+          if (!(Test-Path "PRODUCT/personal_portfolio_cash.json")) {
+            throw "MISSING personal_portfolio_cash.json"
+          }
+
+          if (!(Test-Path "PRODUCT/personal_portfolio_snapshot.json")) {
+            throw "MISSING personal_portfolio_snapshot.json"
+          }
+
+          Write-Host ""
+          Write-Host "PERSONAL PORTFOLIO OUTPUT VALIDATION: PASS"
+
+      - name: Save personal portfolio state
         shell: pwsh
         run: |
           git config user.name "alpha-engine-bot"
           git config user.email "alpha-engine-bot@users.noreply.github.com"
 
-          git add PRODUCT/personal_portfolio_ledger.json
+          git add `
+            PRODUCT/personal_portfolio_ledger.json `
+            PRODUCT/personal_portfolio.json `
+            PRODUCT/personal_portfolio_positions.json `
+            PRODUCT/personal_portfolio_positions.csv `
+            PRODUCT/personal_portfolio_cash.json `
+            PRODUCT/personal_portfolio_snapshot.json
 
           $changes = git status --porcelain
 
           if ($changes) {
-            git commit -m "Update personal portfolio ledger"
+            git commit -m "Update personal portfolio state"
             git push origin main
           }
           else {
