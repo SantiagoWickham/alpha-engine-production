@@ -1,0 +1,17 @@
+[v13_phase3w]
+name = "PREHOLDOUT_STRESS_AND_FREEZE"
+objective = "FREEZE_THE_SELECTED_PHASE3V_POLICY_AFTER_MATURITY_AWARE_COVERAGE_VALIDATION_AND_COST_STRESS_WITHOUT_RESELECTION"
+phase3v_summary = "outputs/v13_phase3v_summary.json"
+phase3v_gate = "outputs/v13_phase3v_gate.csv"
+phase3v_selected_policy = "outputs/v13_phase3v_selected_policy.json"
+phase3v_leaderboard = "outputs/v13_phase3v_policy_leaderboard.csv"
+phase2u_oof_scores = "outputs/v13_phase2u_oof_scores.parquet"
+research_targets = "outputs/v13_phase1_research_targets.parquet"
+execution_surface_cache = "outputs/v13_phase3s_execution_surface.parquet"
+holdout_start = "2025-01-01"
+portfolio_start = "2019-01-02"
+stress_cost_bps = [20.0, 40.0, 60.0, 80.0, 100.0]
+blocking_extreme_cost_bps = 80.0
+maximum_execution_blocked_rate = 0.05
+maximum_mean_horizon_weight = 0.85
+weight_sum_tolerance = 1e-8

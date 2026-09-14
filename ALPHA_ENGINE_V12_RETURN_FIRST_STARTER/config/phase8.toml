@@ -1,0 +1,37 @@
+[phase8]
+name = "PRE_FREEZE_REFIT_REPLAY_AND_FINGERPRINT"
+objective = "REFIT_ONLY_FIXED_COMPONENTS_ON_ALL_MATURE_PRE_OOS_DATA_THEN_LOCK_A_DETERMINISTIC_FREEZE_ARTIFACT_WITHOUT_OPENING_FINAL_OOS"
+phase7_summary_path = "outputs/phase7_summary.json"
+phase7_candidate_path = "outputs/phase7_pre_freeze_candidate.json"
+phase5_feature_pool_path = "outputs/phase5_feature_pool.csv"
+feature_library_path = "outputs/phase4_feature_library.parquet"
+targets_path = "outputs/phase3_return_targets.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+
+[phase8.partitions]
+refit_start = "2015-01-02"
+replay_start = "2019-01-02"
+final_oos_start = "2025-01-01"
+
+[phase8.model]
+horizon_sessions = 20
+architecture = "DEV_IC_COMPOSITE"
+minimum_cross_section = 10
+minimum_fixed_features = 5
+
+[phase8.calibration]
+bins = 20
+hac_lag = 20
+
+[phase8.replay]
+base_round_trip_bps = 20.0
+stress_round_trip_bps = 40.0
+maximum_execution_skip_rate = 0.05
+
+[phase8.freeze]
+hash_algorithm = "sha256"
+float_decimals = 12
+require_policy_unchanged = true
+require_feature_set_unchanged = true
+require_replay_determinism = true

@@ -1,0 +1,2 @@
+ticker,resolution_type,effective_start_date,effective_end_date,security_type,evidence_source,evidence_note,evidence_url,target_only,feature_allowed
+ABXL,EXCLUDE_NON_EQUITY_SECURITY,2025-12-26,2026-01-30,SENIOR_NOTE,SEC_FORM_8K_2025-12-29,"Abacus common stock moved from ABL to ABX; ABXL is the 9.875% Fixed Rate Senior Notes due 2028, not common equity.",https://www.sec.gov/Archives/edgar/data/1814287/000162828025059007/abl-20251229.htm,True,False

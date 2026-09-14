@@ -1,0 +1,30 @@
+[phase9]
+name = "FINAL_OOS_ONE_SHOT_EVALUATION"
+objective = "OPEN_THE_LOCKED_2025_PLUS_HOLDOUT_EXACTLY_ONCE_AND_MEASURE_FROZEN_NET_PORTFOLIO_PERFORMANCE_WITHOUT_ANY_TUNING"
+phase8b_summary_path = "outputs/phase8b_summary.json"
+phase8b_execution_model_spec_path = "outputs/phase8b_execution_model_spec.json"
+phase8b_freeze_manifest_path = "outputs/phase8b_freeze_manifest.json"
+phase8_freeze_manifest_path = "outputs/phase8_freeze_manifest.json"
+phase8_pre_oos_scores_path = "outputs/phase8_pre_oos_frozen_scores.parquet"
+feature_library_path = "outputs/phase4_feature_library.parquet"
+targets_path = "outputs/phase3_return_targets.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+receipt_path = "outputs/phase9_oos_consumption_receipt.json"
+expected_final_freeze_fingerprint_sha256 = "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d"
+expected_execution_parity_source_sha256 = "4373d9100fe39a995e5c25fb251f6ac93c3b407074232c591d20a9b708a99148"
+
+[phase9.partitions]
+carry_state_start = "2023-01-03"
+score_fidelity_start = "2024-01-02"
+final_oos_start = "2025-01-01"
+
+[phase9.acceptance]
+minimum_oos_sessions = 252
+maximum_oos_drawdown = 0.50
+maximum_execution_skip_rate = 0.05
+require_milp_success_rate = 1.0
+require_positive_base_cagr = true
+require_positive_stress_cagr = true
+minimum_score_fidelity_correlation = 0.999999
+float_decimals = 12

@@ -1,0 +1,23 @@
+[phase3]
+name = "RETURN_TARGET_ENGINE"
+objective = "DEFINE_CAUSAL_MULTI_HORIZON_RETURN_TARGETS_BEFORE_ALPHA_RESEARCH"
+panel_path = "outputs/phase2_canonical_pit_panel.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+phase2c_summary_path = "outputs/phase2c_summary.json"
+phase3c_summary_path = "outputs/phase3c_summary.json"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+research_exclusions_path = "outputs/phase3c_research_exclusions.csv"
+output_targets_path = "outputs/phase3_return_targets.parquet"
+horizons = [1, 5, 10, 20, 40, 60, 120, 252]
+entry_anchor = "NEXT_TRADABLE_SESSION_CLOSE"
+
+[phase3.policies]
+entry_price_coverage_required = 0.995
+resolved_label_coverage_required = 0.999999
+unresolved_termination_rate_max = 0.0
+max_entry_delay_calendar_days = 7
+sample_end_grace_global_sessions = 5
+minimum_cross_section_size = 20
+return_floor_tolerance = -1.000001
+winner_top_decile_cutoff = 0.90
+winner_top_quintile_cutoff = 0.80

@@ -1,0 +1,15 @@
+[phase2b]
+name = "PRICE_SEMANTICS_AND_CORPORATE_ACTION_GATE"
+objective = "RESOLVE_RETURN_PRICE_SEMANTICS_BEFORE_TARGET_CONSTRUCTION"
+panel_path = "outputs/phase2_canonical_pit_panel.parquet"
+market_primary = "data/cache/production_market_ohlcv.parquet"
+market_secondary = "data/cache/market_ohlcv_extended.parquet"
+delisted_market_dir = "data/cache/delisted_prices_yahoo"
+
+[phase2b.policies]
+adjusted_coverage_required = 0.995
+source_match_tolerance = 0.000001
+minimum_overlap_rows = 250
+extreme_raw_return_abs = 0.35
+material_raw_vs_adjusted_gap = 0.01
+candidate_scan_max_files = 5000

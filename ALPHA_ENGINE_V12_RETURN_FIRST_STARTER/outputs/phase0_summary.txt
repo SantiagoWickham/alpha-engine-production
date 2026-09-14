@@ -1,0 +1,20 @@
+========================================================================================
+ALPHA ENGINE V12.0 RETURN FIRST - PHASE 0 SUMMARY
+========================================================================================
+Root: C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER
+Data exists: True
+Data files: 2512
+Data bytes: 4619400167
+Extensions: {'.csv': 163, '.json': 1991, '.md': 4, '.sha256': 1, '': 3, '.parquet': 330, '.zip': 2, '.log': 13, '.sqlite3': 5}
+Existing repos detected: 0
+Spreadsheet exports detected: 0
+
+RESEARCH ASSET MAP
+returns: 1913 candidate files
+alpha: 72 candidate files
+fundamental: 31 candidate files
+risk: 70 candidate files
+universe: 1893 candidate files
+
+PHASE 0 STATUS: PASS if the data inventory completed without errors.
+No signal, optimizer, Google Sheet, cloud workflow or forward state was modified.

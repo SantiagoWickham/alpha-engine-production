@@ -1,0 +1,177 @@
+{
+  "status": "COMPLETE",
+  "name": "ALPHA_ENGINE_BYMA_NATIVE",
+  "version": "2.1.2",
+  "build": "ALPHA_ENGINE_BYMA_NATIVE_2_1_2_2026-09-13",
+  "research_contract": {
+    "this_is_final_native_structural_attempt": true,
+    "2025_plus_used_for_tuning": false,
+    "v13_scores_used": false,
+    "v13_fitted_models_used": false,
+    "byma_native20_base_scores_used": true,
+    "stage2_models_fit_fresh": true,
+    "top_n": false,
+    "horizon_maturity_rule": "a horizon participates only after a purged inner meta train/validation split is feasible using prior data only"
+  },
+  "architecture": {
+    "stage1": "BYMA Native 2.0.1 cross-sectional ranking",
+    "stage2": "fresh BYMA meta-alpha magnitude model",
+    "meta_information": "state + sector/rotation + event features",
+    "experts": [
+      "Ridge",
+      "HistGradientBoosting",
+      "Isotonic"
+    ],
+    "expert_weighting": "inner temporal validation only",
+    "target": "50% BYMA UEW excess + 25% SPY excess + 25% QQQ excess",
+    "portfolio": "Phase3Z cost-aware persistent allocator"
+  },
+  "primary_pre2025": {
+    "metrics_20bps": {
+      "sessions": 1510,
+      "final_nav": 2.046647272709251,
+      "total_return": 1.0466472727092508,
+      "cagr": 0.1269617165430017,
+      "max_drawdown": -0.35635627505393164,
+      "annual_turnover": 19.48911338881939,
+      "median_holdings": 41.0,
+      "mean_cash": 0.040527322777997817,
+      "p95_max_name": 0.2520150269610806
+    },
+    "metrics_40bps": {
+      "sessions": 1510,
+      "final_nav": 1.6638554186131966,
+      "total_return": 0.6638554186131966,
+      "cagr": 0.08868291871784617,
+      "max_drawdown": -0.36564082763208194,
+      "annual_turnover": 19.48911338881939,
+      "median_holdings": 41.0,
+      "mean_cash": 0.040527322777997817,
+      "p95_max_name": 0.2520150269610806
+    },
+    "metrics_60bps": {
+      "sessions": 1510,
+      "final_nav": 1.3525631553118151,
+      "total_return": 0.35256315531181515,
+      "cagr": 0.05169193919098691,
+      "max_drawdown": -0.42122068632248544,
+      "annual_turnover": 19.48911338881939,
+      "median_holdings": 41.0,
+      "mean_cash": 0.040527322777997817,
+      "p95_max_name": 0.2520150269610806
+    },
+    "benchmark_cagr": {
+      "SPY": 0.1711653713660084,
+      "QQQ": 0.22929847464373498,
+      "UEW": 0.2223630376206569,
+      "BYMA_UEW": 0.22454350982966953
+    },
+    "gates": {
+      "positive_cagr_20bps": true,
+      "positive_cagr_40bps": true,
+      "positive_cagr_60bps": true,
+      "positive_alpha_vs_spy": false,
+      "positive_alpha_vs_qqq": false,
+      "positive_alpha_vs_byma_uew": false,
+      "beats_byma_uew_cagr": false,
+      "maxdd_above_minus_40pct": true,
+      "positive_in_at_least_2_of_3_subperiods": true,
+      "beats_byma_uew_in_at_least_2_of_3": false
+    },
+    "pass": false,
+    "subperiods": [
+      {
+        "period": "WF_2019_2020",
+        "strategy_cagr": 0.43369458386736714,
+        "byma_uew_cagr": 0.3316077461361524,
+        "excess": 0.10208683773121474,
+        "positive_strategy": true,
+        "beats_byma_uew": true
+      },
+      {
+        "period": "WF_2021_2022",
+        "strategy_cagr": -0.013365521678987857,
+        "byma_uew_cagr": 0.07999759526805295,
+        "excess": -0.0933631169470408,
+        "positive_strategy": false,
+        "beats_byma_uew": false
+      },
+      {
+        "period": "WF_2023_2024",
+        "strategy_cagr": 0.010659392724122974,
+        "byma_uew_cagr": 0.2764819763906359,
+        "excess": -0.2658225836665129,
+        "positive_strategy": true,
+        "beats_byma_uew": false
+      }
+    ]
+  },
+  "holdout_posthoc": {
+    "metrics_20bps": {
+      "sessions": 420,
+      "final_nav": 1.3992281101624036,
+      "total_return": 0.39922811016240356,
+      "cagr": 0.2233003862473142,
+      "max_drawdown": -0.3156999079580566,
+      "annual_turnover": 12.873014477049322,
+      "median_holdings": 31.0,
+      "mean_cash": 0.004989014358883798,
+      "p95_max_name": 0.17566326733867405
+    },
+    "metrics_40bps": {
+      "sessions": 420,
+      "final_nav": 1.3435128205784417,
+      "total_return": 0.3435128205784417,
+      "cagr": 0.1938371495650293,
+      "max_drawdown": -0.3177797934240454,
+      "annual_turnover": 12.873014477049322,
+      "median_holdings": 31.0,
+      "mean_cash": 0.004989014358883798,
+      "p95_max_name": 0.17566326733867405
+    },
+    "metrics_60bps": {
+      "sessions": 420,
+      "final_nav": 1.2900079864220944,
+      "total_return": 0.29000798642209435,
+      "cagr": 0.16507917447081244,
+      "max_drawdown": -0.31985363693614477,
+      "annual_turnover": 12.873014477049322,
+      "median_holdings": 31.0,
+      "mean_cash": 0.004989014358883798,
+      "p95_max_name": 0.17566326733867405
+    },
+    "gating": false
+  },
+  "references": {
+    "v13_ideal_pre": {
+      "sessions": 1510,
+      "final_nav": 5.333686876170334,
+      "total_return": 4.333686876170334,
+      "cagr": 0.32230531748574753,
+      "max_drawdown": -0.3678858015329515,
+      "annual_turnover": 15.305390220537513,
+      "median_holdings": 44.0,
+      "mean_cash": 0.03435861480695079,
+      "p95_max_name": 0.13203103550412754
+    },
+    "v13_ideal_hold": {
+      "sessions": 420,
+      "final_nav": 1.553130240131626,
+      "total_return": 0.553130240131626,
+      "cagr": 0.30234103682729474,
+      "max_drawdown": -0.2459151937657994,
+      "annual_turnover": 18.580710851549345,
+      "median_holdings": 39.0,
+      "mean_cash": 0.018464935538447445,
+      "p95_max_name": 0.1476860371112606
+    },
+    "transfer_summary_available": true
+  },
+  "current": {
+    "signal_date": "2026-09-04",
+    "continuous_target_names": 17
+  },
+  "verdict": "REJECT_NATIVE_FINAL_USE_TRANSFER",
+  "next_if_pass": "Freeze 2.1; start forward shadow; then GitHub + Sheets + website.",
+  "next_if_fail": "Stop native research. Operate/track V13 IDEAL + BYMA TRANSFER; improve only transfer execution and production plumbing."
+}

@@ -1,0 +1,17 @@
+{
+  "version": "V12.0_RETURN_FIRST",
+  "research_mode": true,
+  "principles": {
+    "primary_objective": "maximize_out_of_sample_net_return",
+    "no_manual_factor_weights": true,
+    "no_manual_portfolio_weights": true,
+    "no_lookahead": true,
+    "point_in_time_required": true,
+    "execution_constraints_after_signal": true,
+    "risk_as_diagnostic_first": true
+  },
+  "future_horizons_months": [1, 2, 3, 6],
+  "candidate_top_k": [1, 3, 5, 8, 10, 15, 20, 30, 50],
+  "transaction_cost_bps_grid": [0, 30, 60, 100],
+  "research_selection_rule": "nested_time_series_validation_only"
+}

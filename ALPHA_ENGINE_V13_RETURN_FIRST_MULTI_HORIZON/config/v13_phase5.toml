@@ -1,0 +1,14 @@
+[v13_phase5]
+name = "SHADOW_PRODUCTION_PARITY_CONTRACT"
+objective = "PROVE_THE_SEALED_V13_BUNDLE_REPRODUCES_THE_OBSERVED_HOLDOUT_ADVISOR_AND_EMIT_A_STABLE_PRODUCTION_CONTRACT_BEFORE_LIVE_DATA_OR_UI_INTEGRATION"
+expected_seal_id = "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9"
+expected_holdout_verdict = "STRONG_CONFIRMATION"
+seal_manifest = "outputs/v13_phase4_model_seal_manifest.json"
+sealed_model_bundle = "outputs/v13_phase4_sealed_model_bundle.joblib"
+holdout_summary = "outputs/v13_phase4_holdout_summary.json"
+holdout_marker = "outputs/v13_phase4_holdout_opened.json"
+holdout_scores = "outputs/v13_phase4_holdout_scores.parquet"
+holdout_advisor = "outputs/v13_phase4_holdout_advisor.parquet"
+phase0_summary = "outputs/v13_phase0_summary.json"
+shadow_dir = "outputs/shadow"
+parity_tolerance = 1e-12

@@ -1,0 +1,27 @@
+[v13_phase3z]
+name = "ROUNDTRIP_RESIZE_HYSTERESIS"
+objective = "REMOVE_MICRO_CHURN_BY_REQUIRING_EXISTING_POSITION_RESIZES_TO_JUSTIFY_A_FULL_EXPECTED_ROUND_TRIP_WITHOUT_CHANGING_PHASE2U_OR_ACTIVE_ALPHA"
+phase0_summary = "outputs/v13_phase0_summary.json"
+phase2u_summary = "outputs/v13_phase2u_summary.json"
+phase2u_oof_scores = "outputs/v13_phase2u_oof_scores.parquet"
+research_targets = "outputs/v13_phase1_research_targets.parquet"
+execution_surface_cache = "outputs/v13_phase3s_execution_surface.parquet"
+phase3x_summary = "outputs/v13_phase3x_summary.json"
+phase3x_beta = "outputs/v13_phase3x_beta_attribution.csv"
+phase3y_summary = "outputs/v13_phase3y_summary.json"
+source_terminal_overlay = "outputs/phase3c_terminal_outcome_overlay.csv"
+source_spy_benchmark = "data/v13/benchmarks/SPY.parquet"
+source_qqq_benchmark = "data/v13/benchmarks/QQQ.parquet"
+holdout_start = "2025-01-01"
+portfolio_start = "2019-01-02"
+risk_lookback_sessions = 60
+horizon_weight_floor = 0.02
+horizon_skill_temperature = 0.75
+minimum_positive_horizon_share = 0.50
+active_weight_uew = 0.50
+active_weight_spy = 0.25
+active_weight_qqq = 0.25
+base_round_trip_cost_bps = 20.0
+stress_round_trip_cost_bps = 40.0
+extreme_round_trip_cost_bps = 60.0
+maximum_execution_blocked_rate = 0.05

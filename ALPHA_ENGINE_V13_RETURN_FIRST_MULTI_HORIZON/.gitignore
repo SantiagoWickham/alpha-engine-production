@@ -1,0 +1,74 @@
+# ============================================================
+# ALPHA ENGINE — repository hygiene
+# Code/config/contracts are versioned; raw/derived data is not.
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Raw / cached / derived datasets
+data/
+cache/
+caches/
+*.parquet
+*.feather
+*.arrow
+*.pickle
+*.pkl
+*.joblib
+*.sqlite
+*.sqlite3
+*.db
+
+# Research outputs are local/derived.
+# Only curated freeze artifacts under artifacts/freeze are versioned.
+outputs/
+artifacts/*
+!artifacts/freeze/
+!artifacts/freeze/**
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OneDrive / OS transient files
+desktop.ini
+*.lnk

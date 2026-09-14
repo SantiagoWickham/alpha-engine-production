@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "phase": "V13-P3AA",
+  "build": "V13_P3AA_FINAL_PREHOLDOUT_REVIEW_FREEZE_2026-09-13",
+  "name": "FINAL_PREHOLDOUT_REVIEW_AND_FREEZE",
+  "objective": "AUDIT_PHASE3Z_ANNUAL_REGIME_BEHAVIOR_AND_FREEZE_THE_UNCHANGED_PRE2025_SYSTEM_BEFORE_ONE_CODE_BLINDED_HOLDOUT_OPEN",
+  "holdout_used": false,
+  "policy_changed": false,
+  "predictor_retrained": false,
+  "phase3z_metrics": {
+    "20bps": {
+      "days": 1510,
+      "total_return": 4.33368687617036,
+      "cagr": 0.32230531748574864,
+      "max_drawdown": -0.36788580153295125,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.15113994611974024,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.09300684284201366,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.08257534760558549
+    },
+    "40bps": {
+      "days": 1510,
+      "total_return": 3.5623290088906163,
+      "cagr": 0.28827906464324315,
+      "max_drawdown": -0.37093650810653955,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.11711369327723475,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.05898058999950817,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.11660160044809098
+    },
+    "60bps": {
+      "days": 1510,
+      "total_return": 2.9023987691765374,
+      "cagr": 0.2551216216546024,
+      "max_drawdown": -0.3739734982169367,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "max_holdings": 62,
+      "mean_cash_weight": 0.03435861480695082,
+      "median_max_name_weight": 0.07047083434233789,
+      "p95_max_name_weight": 0.13203103550412756,
+      "execution_blocked_rate": 0.02638001295410168,
+      "target_deviation_rate": 0.026380012954101688,
+      "spy_cagr": 0.1711653713660084,
+      "excess_cagr_vs_spy": 0.08395625028859399,
+      "qqq_cagr": 0.22929847464373498,
+      "excess_cagr_vs_qqq": 0.02582314701086741,
+      "uew_cagr": 0.40488066509133414,
+      "excess_cagr_vs_uew": -0.14975904343673174
+    }
+  },
+  "full_period_alpha": [
+    {
+      "benchmark": "SPY",
+      "n": 1510,
+      "alpha_ann": 0.10296900385141883,
+      "beta": 1.1976835722203318,
+      "r2": 0.7769320007000483
+    },
+    {
+      "benchmark": "QQQ",
+      "n": 1510,
+      "alpha_ann": 0.08257437424441676,
+      "beta": 0.987857898752621,
+      "r2": 0.7952757901641537
+    },
+    {
+      "benchmark": "UEW",
+      "n": 1510,
+      "alpha_ann": 0.033631422951084115,
+      "beta": 0.7588391560227482,
+      "r2": 0.5226888705671225
+    }
+  ],
+  "annual_returns": [
+    {
+      "year": 2019,
+      "strategy_return": 0.4012174805706077,
+      "turnover": 25.781635002343513,
+      "median_holdings": 48.0,
+      "median_max_name_weight": 0.07028373770340204,
+      "spy_return": 0.31223856996919896,
+      "excess_vs_spy": 0.08897891060140872,
+      "qqq_return": 0.3896155009655482,
+      "excess_vs_qqq": 0.011601979605059487,
+      "uew_return": 0.6480818979251621,
+      "excess_vs_uew": -0.24686441735455444
+    },
+    {
+      "year": 2020,
+      "strategy_return": 0.7618514158758629,
+      "turnover": 21.203420907454166,
+      "median_holdings": 47.0,
+      "median_max_name_weight": 0.0645677939764775,
+      "spy_return": 0.1833162601700431,
+      "excess_vs_spy": 0.5785351557058198,
+      "qqq_return": 0.4840609133574185,
+      "excess_vs_qqq": 0.2777905025184444,
+      "uew_return": 0.6066119955134897,
+      "excess_vs_uew": 0.15523942036237326
+    },
+    {
+      "year": 2021,
+      "strategy_return": 0.40614113132671426,
+      "turnover": 10.478297480798625,
+      "median_holdings": 45.0,
+      "median_max_name_weight": 0.0741314307588596,
+      "spy_return": 0.2872875190623225,
+      "excess_vs_spy": 0.11885361226439173,
+      "qqq_return": 0.2741974570365544,
+      "excess_vs_qqq": 0.13194367429015985,
+      "uew_return": 0.3969833800959901,
+      "excess_vs_uew": 0.009157751230724154
+    },
+    {
+      "year": 2022,
+      "strategy_return": -0.2596205870267859,
+      "turnover": 12.179088293513129,
+      "median_holdings": 44.0,
+      "median_max_name_weight": 0.0691762609860514,
+      "spy_return": -0.18175356948676824,
+      "excess_vs_spy": -0.07786701754001768,
+      "qqq_return": -0.3257699947091315,
+      "excess_vs_qqq": 0.06614940768234556,
+      "uew_return": 0.1159860102599597,
+      "excess_vs_uew": -0.3756065972867456
+    },
+    {
+      "year": 2023,
+      "strategy_return": 0.6842230264402467,
+      "turnover": 10.951611936249293,
+      "median_holdings": 42.0,
+      "median_max_name_weight": 0.06938501323567084,
+      "spy_return": 0.2617579670693284,
+      "excess_vs_spy": 0.42246505937091827,
+      "qqq_return": 0.5485555636120383,
+      "excess_vs_qqq": 0.1356674628282084,
+      "uew_return": 0.34547084881902257,
+      "excess_vs_uew": 0.3387521776212241
+    },
+    {
+      "year": 2024,
+      "strategy_return": 0.23216776424667862,
+      "turnover": 11.116816351909698,
+      "median_holdings": 39.0,
+      "median_max_name_weight": 0.0776446296662458,
+      "spy_return": 0.24886468043811139,
+      "excess_vs_spy": -0.016696916191432765,
+      "qqq_return": 0.2557827421122518,
+      "excess_vs_qqq": -0.023614977865573206,
+      "uew_return": 0.38054572178098467,
+      "excess_vs_uew": -0.14837795753430605
+    }
+  ],
+  "yearly_turnover": [
+    {
+      "year": 2019,
+      "annualized_turnover": 25.781635002343513,
+      "entry_exit_share": 0.5703720329437946,
+      "resize_share": 0.42962796705620543
+    },
+    {
+      "year": 2020,
+      "annualized_turnover": 21.11961291967767,
+      "entry_exit_share": 0.6152413845290009,
+      "resize_share": 0.38475861547099904
+    },
+    {
+      "year": 2021,
+      "annualized_turnover": 10.478297480798625,
+      "entry_exit_share": 0.27456418106328806,
+      "resize_share": 0.725435818936712
+    },
+    {
+      "year": 2022,
+      "annualized_turnover": 12.22761055763071,
+      "entry_exit_share": 0.4295449336010623,
+      "resize_share": 0.5704550663989377
+    },
+    {
+      "year": 2023,
+      "annualized_turnover": 11.039224831739288,
+      "entry_exit_share": 0.35178061140566824,
+      "resize_share": 0.6482193885943317
+    },
+    {
+      "year": 2024,
+      "annualized_turnover": 11.116816351909698,
+      "entry_exit_share": 0.5154655675227185,
+      "resize_share": 0.4845344324772814
+    }
+  ],
+  "drawdown_episode": {
+    "max_drawdown": -0.36788580153295103,
+    "peak_date": "2020-02-19",
+    "trough_date": "2020-03-18",
+    "recovery_date": "2020-04-29",
+    "sessions_peak_to_trough": 20,
+    "sessions_to_recovery": 49
+  },
+  "single_positive_year_dependency": 0.2868201630002637,
+  "freeze_id": "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8",
+  "gate": [
+    {
+      "test": "PHASE3Z_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "V13_P3Z_ROUNDTRIP_RESIZE_HYSTERESIS_2026-09-13",
+      "rule": "Phase3Z structural portfolio must already pass"
+    },
+    {
+      "test": "FINAL_HOLDOUT_NOT_LOADED",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all reviewed NAV dates < 2025-01-01"
+    },
+    {
+      "test": "FULL_PERIOD_ALPHA_POSITIVE_VS_SPY_QQQ_UEW",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "SPY": {
+          "n": 1510,
+          "alpha_ann": 0.10296900385141883,
+          "beta": 1.1976835722203318,
+          "r2": 0.7769320007000483
+        },
+        "QQQ": {
+          "n": 1510,
+          "alpha_ann": 0.08257437424441676,
+          "beta": 0.987857898752621,
+          "r2": 0.7952757901641537
+        },
+        "UEW": {
+          "n": 1510,
+          "alpha_ann": 0.033631422951084115,
+          "beta": 0.7588391560227482,
+          "r2": 0.5226888705671225
+        }
+      },
+      "rule": "annualized pre-holdout regression alpha >0 vs all three benchmarks"
+    },
+    {
+      "test": "60BPS_STILL_BEATS_SPY",
+      "status": "PASS",
+      "blocking": true,
+      "value": {
+        "strategy": 0.2551216216546024,
+        "spy": 0.1711653713660084
+      },
+      "rule": "fixed frozen candidate beats SPY even at 60bps"
+    },
+    {
+      "test": "ANNUAL_BEHAVIOR_RECORDED",
+      "status": "PASS",
+      "blocking": false,
+      "value": [
+        {
+          "year": 2019,
+          "strategy_return": 0.4012174805706077,
+          "turnover": 25.781635002343513,
+          "median_holdings": 48.0,
+          "median_max_name_weight": 0.07028373770340204,
+          "spy_return": 0.31223856996919896,
+          "excess_vs_spy": 0.08897891060140872,
+          "qqq_return": 0.3896155009655482,
+          "excess_vs_qqq": 0.011601979605059487,
+          "uew_return": 0.6480818979251621,
+          "excess_vs_uew": -0.24686441735455444
+        },
+        {
+          "year": 2020,
+          "strategy_return": 0.7618514158758629,
+          "turnover": 21.203420907454166,
+          "median_holdings": 47.0,
+          "median_max_name_weight": 0.0645677939764775,
+          "spy_return": 0.1833162601700431,
+          "excess_vs_spy": 0.5785351557058198,
+          "qqq_return": 0.4840609133574185,
+          "excess_vs_qqq": 0.2777905025184444,
+          "uew_return": 0.6066119955134897,
+          "excess_vs_uew": 0.15523942036237326
+        },
+        {
+          "year": 2021,
+          "strategy_return": 0.40614113132671426,
+          "turnover": 10.478297480798625,
+          "median_holdings": 45.0,
+          "median_max_name_weight": 0.0741314307588596,
+          "spy_return": 0.2872875190623225,
+          "excess_vs_spy": 0.11885361226439173,
+          "qqq_return": 0.2741974570365544,
+          "excess_vs_qqq": 0.13194367429015985,
+          "uew_return": 0.3969833800959901,
+          "excess_vs_uew": 0.009157751230724154
+        },
+        {
+          "year": 2022,
+          "strategy_return": -0.2596205870267859,
+          "turnover": 12.179088293513129,
+          "median_holdings": 44.0,
+          "median_max_name_weight": 0.0691762609860514,
+          "spy_return": -0.18175356948676824,
+          "excess_vs_spy": -0.07786701754001768,
+          "qqq_return": -0.3257699947091315,
+          "excess_vs_qqq": 0.06614940768234556,
+          "uew_return": 0.1159860102599597,
+          "excess_vs_uew": -0.3756065972867456
+        },
+        {
+          "year": 2023,
+          "strategy_return": 0.6842230264402467,
+          "turnover": 10.951611936249293,
+          "median_holdings": 42.0,
+          "median_max_name_weight": 0.06938501323567084,
+          "spy_return": 0.2617579670693284,
+          "excess_vs_spy": 0.42246505937091827,
+          "qqq_return": 0.5485555636120383,
+          "excess_vs_qqq": 0.1356674628282084,
+          "uew_return": 0.34547084881902257,
+          "excess_vs_uew": 0.3387521776212241
+        },
+        {
+          "year": 2024,
+          "strategy_return": 0.23216776424667862,
+          "turnover": 11.116816351909698,
+          "median_holdings": 39.0,
+          "median_max_name_weight": 0.0776446296662458,
+          "spy_return": 0.24886468043811139,
+          "excess_vs_spy": -0.016696916191432765,
+          "qqq_return": 0.2557827421122518,
+          "excess_vs_qqq": -0.023614977865573206,
+          "uew_return": 0.38054572178098467,
+          "excess_vs_uew": -0.14837795753430605
+        }
+      ],
+      "rule": "year-by-year behavior is diagnostic, not a requirement to win every year"
+    },
+    {
+      "test": "DRAWDOWN_RECORDED",
+      "status": "PASS",
+      "blocking": false,
+      "value": {
+        "max_drawdown": -0.36788580153295103,
+        "peak_date": "2020-02-19",
+        "trough_date": "2020-03-18",
+        "recovery_date": "2020-04-29",
+        "sessions_peak_to_trough": 20,
+        "sessions_to_recovery": 49
+      },
+      "rule": "drawdown is recorded, not tuned away"
+    },
+    {
+      "test": "NO_SINGLE_POSITIVE_YEAR_DOMINANCE",
+      "status": "PASS",
+      "blocking": false,
+      "value": 0.2868201630002637,
+      "rule": "diagnostic: no single positive calendar year contributes >=85% of positive log return"
+    }
+  ],
+  "readiness": "READY_TO_OPEN_CODE_BLINDED_2025_PLUS_ONCE",
+  "next": "If PASS: make no further pre-2025 changes. Open the code-blinded 2025+ holdout exactly once using this freeze manifest."
+}

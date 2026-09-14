@@ -1,0 +1,16 @@
+{
+  "release": "ALPHA_ENGINE_BYMA_NATIVE_2.0.1",
+  "date": "2026-09-13",
+  "syntax_check": "PASS",
+  "supersedes": "2.0.0",
+  "reason": "Remove inappropriate dependency on V13 Phase4 seal and fitted model bundle.",
+  "prediction_independence": {
+    "v13_oof_scores": false,
+    "v13_holdout_advisor": false,
+    "v13_fitted_bundle": false,
+    "v13_production_seal": false,
+    "shared_pit_feature_library": true,
+    "shared_research_targets": true,
+    "shared_market_and_backtest_code": true
+  }
+}

@@ -1,0 +1,24 @@
+[phase2]
+name = "CANONICAL_PIT_RESEARCH_PANEL"
+objective = "BUILD_LEAKAGE_RESISTANT_EVENT_DRIVEN_RESEARCH_PANEL"
+
+[phase2.sources]
+market_primary = "data/cache/production_market_ohlcv.parquet"
+market_secondary = "data/cache/market_ohlcv_extended.parquet"
+delisted_market_dir = "data/cache/delisted_prices_yahoo"
+benchmark_daily = "data/cache/cadence_spy_daily.parquet"
+universe_monthly = "data/universe/historical_universe_monthly.parquet"
+listing_lifecycle = "data/universe/listing_lifecycle.csv"
+historical_sec_mapping = "data/universe/historical_lifecycle_sec_mapping.csv"
+sec_facts_long = "data/fundamentals/sec_companyfacts_long.parquet"
+sec_monthly_crosscheck = "data/fundamentals/sec_monthly_point_in_time_facts.parquet"
+sec_universe_mapping = "data/fundamentals/sec_universe_mapping.csv"
+
+[phase2.policies]
+fundamental_availability = "NEXT_TRADING_SESSION_STRICT"
+price_information_time = "SESSION_CLOSE"
+execution_policy = "NEXT_TRADING_SESSION"
+universe_policy = "LATEST_GLOBAL_MONTHLY_SNAPSHOT_AT_OR_BEFORE_DATE"
+market_precedence = ["PRIMARY", "SECONDARY", "DELISTED"]
+price_conflict_relative_tolerance = 0.000001
+max_universe_snapshot_age_days = 45

@@ -1,0 +1,158 @@
+{
+  "status": "COMPLETE",
+  "name": "ALPHA_ENGINE_BYMA_NATIVE",
+  "version": "2.0.1",
+  "build": "ALPHA_ENGINE_BYMA_NATIVE_2_0_1_2026-09-13",
+  "prediction_independence": {
+    "reads_v13_oof_scores": false,
+    "reads_v13_holdout_advisor_as_predictions": false,
+    "fresh_models_fit_on_byma_rows": true,
+    "reads_v13_model_bundle": false,
+    "reads_v13_production_seal": false,
+    "shared_infrastructure": "PIT feature/target builders + market data + portfolio mechanics"
+  },
+  "methodology": {
+    "universe": "current certified BYMA programs filtered BEFORE training",
+    "target": "cross-sectional forward-return rank",
+    "active_alpha_calibration": "50% BYMA UEW excess + 25% SPY excess + 25% QQQ excess",
+    "models": "50% Ridge + 50% HistGradientBoosting, fixed architecture",
+    "walk_forward_folds": [
+      "WF_2017_2018",
+      "WF_2019_2020",
+      "WF_2021_2022",
+      "WF_2023_2024"
+    ],
+    "portfolio_start": "2019-01-02",
+    "holdout_start": "2025-01-01",
+    "holdout_status": "SECONDARY_POSTHOC_ALREADY_OBSERVED",
+    "integer_sizing_status": "implementation utility only; not a theoretical-model validation gate"
+  },
+  "native_metrics": {
+    "pre2025_20bps": {
+      "days": 1510,
+      "final_nav": 2.8754002838657255,
+      "cagr": 0.19275426029285425,
+      "max_drawdown": -0.37174999330298264,
+      "annual_turnover": 10.616614113324978,
+      "median_holdings": 51.0,
+      "mean_cash": 0.008699023181857704,
+      "p95_max_name": 0.11569412536270277
+    },
+    "pre2025_40bps": {
+      "days": 1510,
+      "final_nav": 2.562462393411097,
+      "cagr": 0.17003753651759035,
+      "max_drawdown": -0.3817019066402899,
+      "annual_turnover": 10.616614113324978,
+      "median_holdings": 51.0,
+      "mean_cash": 0.008699023181857704,
+      "p95_max_name": 0.11569412536270277
+    },
+    "pre2025_60bps": {
+      "days": 1510,
+      "final_nav": 2.283552825769402,
+      "cagr": 0.14775098469156278,
+      "max_drawdown": -0.3914970973801003,
+      "annual_turnover": 10.616614113324978,
+      "median_holdings": 51.0,
+      "mean_cash": 0.008699023181857704,
+      "p95_max_name": 0.11569412536270277
+    },
+    "holdout_20bps": {
+      "days": 420,
+      "final_nav": 1.3720293501914773,
+      "cagr": 0.20897700645678619,
+      "max_drawdown": -0.2327792376881338,
+      "annual_turnover": 9.800297921939979,
+      "median_holdings": 53.0,
+      "mean_cash": 0.007069924539627743,
+      "p95_max_name": 0.10133617585018312
+    },
+    "holdout_40bps": {
+      "days": 420,
+      "final_nav": 1.3322494858876148,
+      "cagr": 0.18782192363893024,
+      "max_drawdown": -0.2342787405338006,
+      "annual_turnover": 9.800297921939979,
+      "median_holdings": 53.0,
+      "mean_cash": 0.007069924539627743,
+      "p95_max_name": 0.10133617585018312
+    },
+    "holdout_60bps": {
+      "days": 420,
+      "final_nav": 1.2936185184553395,
+      "cagr": 0.16703460610973297,
+      "max_drawdown": -0.23577543219285457,
+      "annual_turnover": 9.800297921939979,
+      "median_holdings": 53.0,
+      "mean_cash": 0.007069924539627743,
+      "p95_max_name": 0.10133617585018312
+    }
+  },
+  "references": {
+    "v13_ideal_pre2025": {
+      "days": 1510,
+      "final_nav": 5.333686876170334,
+      "cagr": 0.32230531748574753,
+      "max_drawdown": -0.3678858015329515,
+      "annual_turnover": 15.305390220537513,
+      "median_holdings": 44.0,
+      "mean_cash": 0.03435861480695079,
+      "p95_max_name": 0.13203103550412754
+    },
+    "v13_ideal_holdout": {
+      "days": 420,
+      "final_nav": 1.553130240131626,
+      "cagr": 0.30234103682729474,
+      "max_drawdown": -0.2459151937657994,
+      "annual_turnover": 18.580710851549345,
+      "median_holdings": 39.0,
+      "mean_cash": 0.018464935538447445,
+      "p95_max_name": 0.1476860371112606
+    },
+    "transfer_pre2025": {
+      "days": 1510,
+      "final_nav": 4.726979176295019,
+      "cagr": 0.29592399007115877,
+      "max_drawdown": -0.37226520117051365,
+      "annual_turnover": 15.423447925924005,
+      "median_holdings": 24.0,
+      "mean_cash": 0.03684666127180304,
+      "p95_max_name": 0.1739678186131578
+    },
+    "transfer_holdout": {
+      "days": 420,
+      "final_nav": 1.4130098413741916,
+      "cagr": 0.2305155662746161,
+      "max_drawdown": -0.25687680556127646,
+      "annual_turnover": 18.49880691031998,
+      "median_holdings": 21.0,
+      "mean_cash": 0.021408408709505403,
+      "p95_max_name": 0.2906313698220536
+    }
+  },
+  "score_ic": {
+    "pre2025_mean": 0.05594213024393476,
+    "holdout_posthoc_mean": 0.058769377493621155
+  },
+  "primary_gates": {
+    "positive_cagr_20bps": true,
+    "positive_cagr_40bps": true,
+    "positive_cagr_60bps": true,
+    "positive_alpha_vs_spy": true,
+    "positive_alpha_vs_qqq": false,
+    "positive_alpha_vs_byma_uew": false,
+    "beats_byma_uew_cagr": false,
+    "maxdd_above_minus_40pct": true
+  },
+  "primary_pass": false,
+  "verdict": "REJECT_NATIVE_PRE2025",
+  "current": {
+    "signal_date": "2026-09-04",
+    "continuous_target_names": 50,
+    "practical_navs": [
+      320.42,
+      1000.0
+    ]
+  }
+}

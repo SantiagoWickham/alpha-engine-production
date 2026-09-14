@@ -1,0 +1,24 @@
+[phase2c]
+name = "RETURN_PRICE_ENRICHMENT"
+objective = "BUILD_VALIDATED_TARGET_ONLY_TOTAL_RETURN_PRICE_LAYER"
+panel_path = "outputs/phase2_canonical_pit_panel.parquet"
+requirements_path = "outputs/phase2b_adjusted_price_requirements.csv"
+cache_dir = "data/v12/adjusted_prices_yahoo"
+actions_path = "data/v12/corporate_actions_yahoo.parquet"
+local_adjusted_reference = "data/cache/market_ohlcv_6y.parquet"
+
+[phase2c.policies]
+provider = "YAHOO_CHART"
+coverage_required = 0.995
+per_ticker_coverage_required = 0.995
+raw_identity_match_required = 0.98
+raw_identity_relative_tolerance = 0.001
+local_adjusted_match_required = 0.98
+local_adjusted_relative_tolerance = 0.001
+minimum_validation_rows = 100
+minimum_short_history_validation_rows = 20
+request_timeout_seconds = 30
+request_retries = 4
+max_workers = 4
+backoff_seconds = 1.5
+cache_refresh_tail_days = 7

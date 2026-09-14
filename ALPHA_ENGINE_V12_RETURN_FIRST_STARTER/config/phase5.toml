@@ -1,0 +1,55 @@
+[phase5]
+name = "MODEL_ARCHITECTURE_TOURNAMENT"
+objective = "SELECT_PRE_OOS_PREDICTIVE_ARCHITECTURES_WITHOUT_TOUCHING_FINAL_OOS"
+feature_library_path = "outputs/phase4_feature_library.parquet"
+phase4_diagnostics_path = "outputs/phase4_predictive_diagnostics.csv"
+phase4_summary_path = "outputs/phase4_summary.json"
+targets_path = "outputs/phase3_return_targets.parquet"
+output_oof_scores_path = "outputs/phase5_oof_scores.parquet"
+output_validation_scores_path = "outputs/phase5_validation_scores.parquet"
+research_horizons = [20, 60, 120, 252]
+architectures = ["DEV_IC_COMPOSITE", "RIDGE_RANK", "HGB_RANK", "HGB_WINNER", "BLEND_RIDGE_HGB"]
+
+[phase5.partitions]
+development_start = "2015-01-02"
+validation_start = "2023-01-03"
+final_oos_start = "2025-01-01"
+
+[[phase5.cv_folds]]
+name = "WF_2019_2020"
+test_start = "2019-01-02"
+test_end = "2021-01-01"
+
+[[phase5.cv_folds]]
+name = "WF_2021_2022"
+test_start = "2021-01-04"
+test_end = "2023-01-03"
+
+[phase5.feature_selection]
+minimum_development_coverage = 0.50
+maximum_development_fdr_q = 0.10
+minimum_abs_development_ic = 0.005
+max_features_per_horizon = 36
+minimum_features_per_horizon = 8
+correlation_prune_threshold = 0.995
+correlation_sample_rows = 120000
+
+[phase5.models]
+max_train_rows = 250000
+random_seed = 42
+ridge_alpha = 10.0
+hgb_max_iter = 120
+hgb_learning_rate = 0.05
+hgb_max_leaf_nodes = 15
+hgb_min_samples_leaf = 200
+hgb_l2_regularization = 1.0
+
+[phase5.evaluation]
+minimum_cross_section_size = 20
+top_quantile = 0.10
+round_trip_cost_bps = 20.0
+minimum_validation_ic = 0.0
+minimum_validation_winner_lift = 1.0
+minimum_validation_top_vs_universe_net_spread = 0.0
+minimum_cv_ic = 0.0
+minimum_ready_horizons = 2

@@ -1,0 +1,21 @@
+[v13_phase1]
+name = "FRESH_MULTI_HORIZON_ALPHA_FACTORY"
+objective = "BUILD_PRE2025_CAUSAL_FEATURES_AND_BENCHMARK_AWARE_MULTI_HORIZON_ALPHA_EVIDENCE"
+source_canonical_pit_panel = "outputs/phase2_canonical_pit_panel.parquet"
+source_market_primary = "data/cache/production_market_ohlcv.parquet"
+source_market_secondary = "data/cache/market_ohlcv_extended.parquet"
+source_spy_daily = "data/cache/cadence_spy_daily.parquet"
+source_sec_facts = "data/fundamentals/sec_companyfacts_long.parquet"
+adjusted_cache_dir = "data/v12/adjusted_prices_yahoo"
+phase3_targets = "outputs/phase3_return_targets.parquet"
+phase0_summary = "outputs/v13_phase0_summary.json"
+research_start = "2015-01-02"
+validation_start = "2023-01-03"
+holdout_start = "2025-01-01"
+horizons = [5, 10, 20, 60, 120, 252]
+minimum_cross_section = 20
+minimum_feature_coverage = 0.50
+candidate_fdr_q = 0.20
+candidate_min_abs_ic = 0.003
+max_candidates_per_horizon = 40
+feature_price_coverage_required = 0.995

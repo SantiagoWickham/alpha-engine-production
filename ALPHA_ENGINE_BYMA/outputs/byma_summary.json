@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETE",
+  "name": "ALPHA_ENGINE_BYMA",
+  "version": "1.0.1",
+  "build": "ALPHA_ENGINE_BYMA_1_0_1_2026-09-13",
+  "v13_ideal_preserved": true,
+  "v13_root": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON",
+  "design": {
+    "forecast_surface": "frozen V13",
+    "universe": "current official BYMA CEDEAR union + certified local alternatives",
+    "filter_timing": "BEFORE portfolio allocation",
+    "allocator": "frozen V13 Phase3Z economics rebuilt on accessible universe",
+    "top_n": false,
+    "manual_replacements": false,
+    "integer_execution": true,
+    "cash_allowed": true
+  },
+  "gates": {
+    "minimum_cagr_retention": 0.95,
+    "maximum_cagr_shortfall": 0.02,
+    "maximum_dd_deterioration": 0.02,
+    "maximum_turnover_multiple": 1.25
+  },
+  "ideal": {
+    "pre2025": {
+      "final_nav": 5.333686876170334,
+      "cagr": 0.32230531748574753,
+      "max_drawdown": -0.3678858015329515,
+      "annual_turnover": 15.305390220537522,
+      "median_holdings": 44.0,
+      "mean_cash": 0.03435861480695082,
+      "p95_max_name": 0.13203103550412756
+    },
+    "holdout": {
+      "final_nav": 1.553130240131626,
+      "cagr": 0.30234103682729474,
+      "max_drawdown": -0.2459151937657994,
+      "annual_turnover": 18.58071085154936,
+      "median_holdings": 39.0,
+      "mean_cash": 0.018464935538447476,
+      "p95_max_name": 0.14768603711126063
+    }
+  },
+  "continuous_byma": {
+    "pre2025": {
+      "final_nav": 4.726979176295019,
+      "cagr": 0.29592399007115877,
+      "max_drawdown": -0.37226520117051354,
+      "annual_turnover": 15.423447925924016,
+      "median_holdings": 24.0,
+      "mean_cash": 0.03684666127180307,
+      "p95_max_name": 0.17396781861315783
+    },
+    "holdout": {
+      "final_nav": 1.4130098413741916,
+      "cagr": 0.2305155662746161,
+      "max_drawdown": -0.25687680556127646,
+      "annual_turnover": 18.498806910319992,
+      "median_holdings": 21.0,
+      "mean_cash": 0.021408408709505427,
+      "p95_max_name": 0.2906313698220537
+    },
+    "pre_gate": {
+      "pass": false,
+      "retention": 0.9181480230596712,
+      "shortfall": 0.026381327414588762,
+      "dd_deterioration": 0.004379399637562065,
+      "turnover_multiple": 1.007713472422812,
+      "tests": {
+        "cagr_retention": false,
+        "cagr_shortfall": false,
+        "drawdown": true,
+        "turnover": true
+      }
+    },
+    "hold_gate": {
+      "pass": false,
+      "retention": 0.7624355882800413,
+      "shortfall": 0.07182547055267863,
+      "dd_deterioration": 0.010961611795477055,
+      "turnover_multiple": 0.9955919909693586,
+      "tests": {
+        "cagr_retention": false,
+        "cagr_shortfall": false,
+        "drawdown": true,
+        "turnover": true
+      }
+    }
+  },
+  "current": {
+    "nav_usd": 320.42,
+    "signal_date": "2026-09-04",
+    "price_date": "2026-09-04",
+    "target_names": 17,
+    "integer_holdings": 10,
+    "cash": 0.13216366284380887,
+    "l1_tracking_error": 0.28418222396144516
+  },
+  "minimum_tested_pass_nav_usd": null,
+  "verdict": "REJECT_ALPHA_PORTABILITY",
+  "holdout_interpretation": "2025+ is secondary/post-hoc because V13 holdout has already been inspected."
+}

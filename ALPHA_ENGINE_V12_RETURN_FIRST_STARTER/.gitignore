@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+outputs/*.json
+outputs/*.csv
+outputs/*.parquet
+!outputs/.gitkeep
+data/
+inputs/
+*.sqlite3
+*.log
+.DS_Store

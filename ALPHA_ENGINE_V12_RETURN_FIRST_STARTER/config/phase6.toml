@@ -1,0 +1,122 @@
+[phase6]
+name = "PORTFOLIO_POLICY_TOURNAMENT"
+objective = "MAXIMIZE_ROBUST_PRE_OOS_NET_PORTFOLIO_RETURN_WITHOUT_TOUCHING_FINAL_OOS"
+phase5_summary_path = "outputs/phase5_summary.json"
+phase5_model_spec_path = "outputs/phase5_model_spec.json"
+phase5_feature_pool_path = "outputs/phase5_feature_pool.csv"
+phase5_oof_scores_path = "outputs/phase5_oof_scores.parquet"
+phase5_validation_scores_path = "outputs/phase5_validation_scores.parquet"
+feature_library_path = "outputs/phase4_feature_library.parquet"
+targets_path = "outputs/phase3_return_targets.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+output_policy_scores_path = "outputs/phase6_policy_scores.parquet"
+
+[phase6.partitions]
+final_oos_start = "2025-01-01"
+validation_start = "2023-01-03"
+
+[phase6.costs]
+base_round_trip_bps = 20.0
+stress_round_trip_bps = 40.0
+
+[phase6.policy]
+top_n = [5, 10, 15, 20]
+scheduled_cadences = ["MONTHLY", "WEEKLY", "DAILY"]
+max_execution_skip_rate = 0.05
+max_allowed_drawdown = 0.50
+minimum_entry_score = 0.80
+max_replacements_per_event = 2
+
+[[phase6.event_presets]]
+name = "EVENT_LOOSE"
+hold_floor = 0.70
+minimum_score_edge = 0.03
+
+[[phase6.event_presets]]
+name = "EVENT_BALANCED"
+hold_floor = 0.80
+minimum_score_edge = 0.05
+
+[[phase6.event_presets]]
+name = "EVENT_STRICT"
+hold_floor = 0.85
+minimum_score_edge = 0.10
+
+[[phase6.ensembles]]
+name = "H20"
+h20 = 1.0
+h60 = 0.0
+h120 = 0.0
+h252 = 0.0
+
+[[phase6.ensembles]]
+name = "H60"
+h20 = 0.0
+h60 = 1.0
+h120 = 0.0
+h252 = 0.0
+
+[[phase6.ensembles]]
+name = "H120"
+h20 = 0.0
+h60 = 0.0
+h120 = 1.0
+h252 = 0.0
+
+[[phase6.ensembles]]
+name = "H252"
+h20 = 0.0
+h60 = 0.0
+h120 = 0.0
+h252 = 1.0
+
+[[phase6.ensembles]]
+name = "SHORT_20_60"
+h20 = 0.5
+h60 = 0.5
+h120 = 0.0
+h252 = 0.0
+
+[[phase6.ensembles]]
+name = "MEDIUM_60_120"
+h20 = 0.0
+h60 = 0.5
+h120 = 0.5
+h252 = 0.0
+
+[[phase6.ensembles]]
+name = "LONG_120_252"
+h20 = 0.0
+h60 = 0.0
+h120 = 0.5
+h252 = 0.5
+
+[[phase6.ensembles]]
+name = "ALL_EQUAL"
+h20 = 0.25
+h60 = 0.25
+h120 = 0.25
+h252 = 0.25
+
+[[phase6.ensembles]]
+name = "ALL_LONG"
+h20 = 0.10
+h60 = 0.20
+h120 = 0.30
+h252 = 0.40
+
+[[phase6.ensembles]]
+name = "ALL_MEDIUM"
+h20 = 0.10
+h60 = 0.35
+h120 = 0.40
+h252 = 0.15
+
+[phase6.selection]
+require_positive_each_oof_fold = true
+require_positive_stress_oof = true
+minimum_qualified_policies = 1
+validation_requires_positive_base_cagr = true
+validation_requires_positive_stress_cagr = true
+score_fidelity_min_correlation = 0.9999

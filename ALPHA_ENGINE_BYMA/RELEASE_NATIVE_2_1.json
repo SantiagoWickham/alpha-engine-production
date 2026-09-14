@@ -1,0 +1,10 @@
+{
+  "release": "ALPHA_ENGINE_BYMA_NATIVE_2.1.0",
+  "date": "2026-09-13",
+  "syntax_check": "PASS",
+  "final_native_structural_attempt": true,
+  "primary_evidence": "PRE2025 walk-forward OOF only",
+  "holdout": "post-hoc diagnostic only",
+  "if_fail": "REJECT_NATIVE_FINAL_USE_TRANSFER",
+  "if_pass": "FREEZE_NATIVE_2_1_AND_START_FORWARD_SHADOW"
+}

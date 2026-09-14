@@ -1,0 +1,37 @@
+[phase4]
+name = "LEAKAGE_FREE_FEATURE_LIBRARY_AND_PREDICTIVE_RESEARCH"
+objective = "BUILD_CAUSAL_FEATURES_AND_MEASURE_PRE_OOS_PREDICTIVE_EVIDENCE"
+panel_path = "outputs/phase2_canonical_pit_panel.parquet"
+phase3_targets_path = "outputs/phase3_return_targets.parquet"
+phase3_summary_path = "outputs/phase3_summary.json"
+research_exclusions_path = "outputs/phase3c_research_exclusions.csv"
+adjusted_cache_dir = "data/v12/adjusted_prices_yahoo"
+output_feature_library_path = "outputs/phase4_feature_library.parquet"
+research_horizons = [1, 5, 10, 20, 40, 60, 120, 252]
+
+[phase4.partitions]
+development_start = "2015-01-02"
+validation_start = "2023-01-03"
+final_oos_start = "2025-01-01"
+
+[phase4.policies]
+feature_return_price_coverage_required = 0.995
+minimum_cross_section_size = 20
+minimum_feature_coverage = 0.20
+minimum_usable_feature_coverage = 0.50
+minimum_usable_feature_count = 25
+feature_rank_batch_size = 12
+hac_lag_cap = 60
+discovery_fdr_q = 0.10
+watch_fdr_q = 0.20
+minimum_abs_development_ic = 0.005
+minimum_validation_aligned_ic = 0.0
+minimum_validation_aligned_t = 1.50
+rich_diagnostics_q_threshold = 0.20
+
+[phase4.windows]
+return_windows = [1, 5, 10, 20, 40, 60, 120, 252]
+vol_windows = [10, 20, 60, 120]
+trend_windows = [20, 60, 120, 252]
+liquidity_windows = [20, 60]
+fundamental_change_windows = [126, 252]

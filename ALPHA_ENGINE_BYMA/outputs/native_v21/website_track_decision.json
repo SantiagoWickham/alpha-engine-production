@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "id": "V13_IDEAL",
+      "role": "international_ideal_reference"
+    },
+    {
+      "id": "BYMA_TRANSFER",
+      "role": "local_transfer_reference"
+    },
+    {
+      "id": "BYMA_NATIVE_2_1",
+      "role": "local_native_model",
+      "active_only_if_primary_pass": false
+    },
+    {
+      "id": "PERSONAL",
+      "role": "actual_discretionary_portfolio"
+    }
+  ],
+  "native21_verdict": "REJECT_NATIVE_FINAL_USE_TRANSFER"
+}

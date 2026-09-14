@@ -1,0 +1,248 @@
+{
+  "asof": "2026-09-04",
+  "tracks": {
+    "v13_ideal": {
+      "nav": 1.553130240131626,
+      "cagr": 0.30234103682729474,
+      "max_drawdown": -0.2459151937657994,
+      "rows": 420
+    },
+    "byma_transfer": {
+      "nav": 1.4130098413741916,
+      "cagr": 0.2305155662746161,
+      "max_drawdown": -0.25687680556127646,
+      "rows": 420
+    },
+    "personal": {
+      "nav": null,
+      "cagr": null,
+      "max_drawdown": null,
+      "note": "Populate from actual portfolio ledger later."
+    }
+  },
+  "research_reference": {
+    "v13_pre2025": {
+      "nav": 5.333686876170334,
+      "cagr": 0.32230531748574753,
+      "max_drawdown": -0.3678858015329515,
+      "rows": 1510
+    },
+    "byma_transfer_pre2025": {
+      "nav": 4.726979176295019,
+      "cagr": 0.29592399007115877,
+      "max_drawdown": -0.37226520117051365,
+      "rows": 1510
+    }
+  },
+  "byma_current_target": [
+    {
+      "ticker": "AMAT",
+      "target_weight": 0.0172094831088577,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "AMAT",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "5:1",
+      "unit_usd": 90.94199829101564
+    },
+    {
+      "ticker": "AMD",
+      "target_weight": 0.0210939544236385,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "AMD",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "10:1",
+      "unit_usd": 47.75700073242188
+    },
+    {
+      "ticker": "ARM",
+      "target_weight": 0.0078869746544203,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "ARM",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "27:1",
+      "unit_usd": 9.336666531032986
+    },
+    {
+      "ticker": "CAT",
+      "target_weight": 0.024374456447536,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "CAT",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "20:1",
+      "unit_usd": 40.69700012207032
+    },
+    {
+      "ticker": "CEPU",
+      "target_weight": 0.0970929197864015,
+      "vehicle": "LOCAL_BYMA_SHARE",
+      "byma_ticker": "CEPU",
+      "quantity": 22,
+      "actual_weight": 0.0963984767370222,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "1 ADR:10 LOCAL",
+      "unit_usd": 1.4039999961853027
+    },
+    {
+      "ticker": "DOW",
+      "target_weight": 0.0891120033235274,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "DOW",
+      "quantity": 6,
+      "actual_weight": 0.0918794099433793,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "6:1",
+      "unit_usd": 4.9066667556762695
+    },
+    {
+      "ticker": "FDX",
+      "target_weight": 0.1601336855731498,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "FDX",
+      "quantity": 2,
+      "actual_weight": 0.201310772744318,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "10:1",
+      "unit_usd": 32.25199890136719
+    },
+    {
+      "ticker": "GOOGL",
+      "target_weight": 0.0327797418181028,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "GOOGL",
+      "quantity": 2,
+      "actual_weight": 0.0364241751080024,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "58:1",
+      "unit_usd": 5.835517094053071
+    },
+    {
+      "ticker": "KEEL",
+      "target_weight": 0.0182532695015346,
+      "vehicle": "CEDEAR_CAJA_DE_VALORES",
+      "byma_ticker": "KEEL",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "1:5",
+      "unit_usd": 17.350000143051147
+    },
+    {
+      "ticker": "LAR",
+      "target_weight": 0.0359471776026105,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "LAR",
+      "quantity": 2,
+      "actual_weight": 0.0423818735525437,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "1:1",
+      "unit_usd": 6.789999961853027
+    },
+    {
+      "ticker": "MU",
+      "target_weight": 0.0135614159639675,
+      "vehicle": "CEDEAR_CAJA_DE_VALORES",
+      "byma_ticker": "MU",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "5:1",
+      "unit_usd": 203.31800537109376
+    },
+    {
+      "ticker": "NKE",
+      "target_weight": 0.0182307464316493,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "NKE",
+      "quantity": 2,
+      "actual_weight": 0.0199737852016514,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "12:1",
+      "unit_usd": 3.2000001271565752
+    },
+    {
+      "ticker": "NUE",
+      "target_weight": 0.0917871406264496,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "NUE",
+      "quantity": 2,
+      "actual_weight": 0.101846797689056,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "16:1",
+      "unit_usd": 16.316875457763672
+    },
+    {
+      "ticker": "ORCL",
+      "target_weight": 0.0138149448302424,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "ORCL",
+      "quantity": 0,
+      "actual_weight": 0.0,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "3:1",
+      "unit_usd": 52.926666259765625
+    },
+    {
+      "ticker": "OXY",
+      "target_weight": 0.092212794522113,
+      "vehicle": "CEDEAR_CAJA_DE_VALORES",
+      "byma_ticker": "OXY",
+      "quantity": 2,
+      "actual_weight": 0.074951627133796,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "5:1",
+      "unit_usd": 12.00800018310547
+    },
+    {
+      "ticker": "VIST",
+      "target_weight": 0.1603416623976948,
+      "vehicle": "CEDEAR_BANCO_COMAFI",
+      "byma_ticker": "VIST",
+      "quantity": 2,
+      "actual_weight": 0.1534028324426972,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "3:1",
+      "unit_usd": 24.57666778564453
+    },
+    {
+      "ticker": "YPF",
+      "target_weight": 0.0502687592615559,
+      "vehicle": "LOCAL_BYMA_SHARE",
+      "byma_ticker": "YPFD",
+      "quantity": 3,
+      "actual_weight": 0.0492665866037245,
+      "signal_date": "2026-09-04",
+      "price_date": "2026-09-04",
+      "ratio": "1 ADR:10 LOCAL",
+      "unit_usd": 5.261999893188476
+    }
+  ],
+  "policy": {
+    "v13_ideal": "frozen international/reference model",
+    "byma_transfer": "V13 forecast surface restricted to current BYMA universe before portfolio allocation",
+    "personal": "actual discretionary portfolio; never mutates model tracks"
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alpha Engine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">ALPHA ENGINE</p>
+        <h1>Model Monitor</h1>
+        <p class="sub">V13 Ideal · BYMA Transfer · Personal</p>
+      </div>
+      <div id="asof" class="asof">Loading…</div>
+    </header>
+
+    <section id="cards" class="cards"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">CURRENT SIGNAL</p>
+          <h2>BYMA Transfer target</h2>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Ticker</th><th>Target</th><th>Vehicle</th><th>Nominal</th></tr>
+          </thead>
+          <tbody id="target-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">POLICY</p>
+      <h2>Track separation</h2>
+      <p>V13 Ideal and BYMA Transfer are model tracks. Personal is the actual discretionary portfolio. Personal trades never rewrite either model track.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

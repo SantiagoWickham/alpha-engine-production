@@ -1,0 +1,17 @@
+[phase3b]
+name = "UNRESOLVED_TERMINATION_AUDIT"
+objective = "EXPLAIN_EARLY_PRICE_HISTORY_TERMINATIONS_BEFORE_ALPHA_RESEARCH"
+phase3_targets_path = "outputs/phase3_return_targets.parquet"
+phase3_summary_path = "outputs/phase3_summary.json"
+canonical_panel_path = "outputs/phase2_canonical_pit_panel.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+listing_lifecycle_path = "data/universe/listing_lifecycle.csv"
+alpha_vantage_active_path = "data/cache/alpha_vantage_listing_status_active.csv"
+alpha_vantage_delisted_path = "data/cache/alpha_vantage_listing_status_delisted.csv"
+delisted_price_dir = "data/cache/delisted_prices_yahoo"
+horizons = [1, 5, 10, 20, 40, 60, 120, 252]
+
+[phase3b.policies]
+sample_end_grace_calendar_days = 14
+recent_active_gap_calendar_days = 14
+max_sample_rows = 500

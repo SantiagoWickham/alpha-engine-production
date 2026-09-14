@@ -1,0 +1,56 @@
+[project]
+name = "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON"
+build = "V13_P0_RESET_CONTRACT_2026-09-12"
+timezone = "America/Argentina/Buenos_Aires"
+
+[objective]
+primary = "MAXIMIZE_PRE_OOS_NET_EXCESS_RETURN"
+benchmarks = ["SPY", "QQQ", "UNIVERSE_EQUAL_WEIGHT"]
+selection_metric_order = ["net_excess_return", "net_cagr", "worst_fold_net_cagr", "drawdown", "turnover"]
+
+[research]
+development_start = "2015-01-02"
+validation_start = "2023-01-03"
+code_blinded_holdout_start = "2025-01-01"
+use_2025_plus_for_research_selection = false
+multi_horizons = [5, 10, 20, 60, 120, 252]
+fixed_holding_period = false
+fixed_cardinality = false
+fixed_max_weight = false
+fixed_min_weight = false
+
+[portfolio]
+cardinality_rule = "ENDOGENOUS_FROM_POSITIVE_NET_EDGE_AND_SPARSITY_COST"
+weighting_rule = "ENDOGENOUS_FROM_EXPECTED_RETURN_UNCERTAINTY_COVARIANCE_TAIL_RISK_AND_COSTS"
+allow_cash = true
+allow_single_name_concentration_research = true
+hard_max_position_weight = 1.0
+hard_min_position_weight = 0.0
+
+[allowed_sources]
+roots = ["data"]
+files = [
+  "outputs/phase2_canonical_pit_panel.parquet",
+  "outputs/phase2c_return_price_layer.parquet",
+  "outputs/phase3_return_targets.parquet",
+  "outputs/phase3c_terminal_outcome_overlay.csv"
+]
+
+[denied_sources]
+patterns = [
+  "outputs/phase4*",
+  "outputs/phase5*",
+  "outputs/phase6*",
+  "outputs/phase7*",
+  "outputs/phase8*",
+  "outputs/phase9*",
+  "outputs/live_shadow*",
+  "src/alpha_engine_v12/model_tournament.py",
+  "src/alpha_engine_v12/portfolio_policy.py",
+  "src/alpha_engine_v12/edge_lineage.py",
+  "src/alpha_engine_v12/pre_freeze.py"
+]
+
+[epistemic_label]
+holdout_2025_2026 = "CODE_BLINDED_HOLDOUT_PREVIOUSLY_OBSERVED_BY_RESEARCHERS"
+true_virgin_test = "FUTURE_FORWARD_AFTER_V13_FREEZE"

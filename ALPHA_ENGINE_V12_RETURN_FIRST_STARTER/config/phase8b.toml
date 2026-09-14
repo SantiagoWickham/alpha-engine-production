@@ -1,0 +1,21 @@
+[phase8b]
+name = "PRE_OOS_EXECUTION_PARITY_LOCK"
+objective = "MAKE_THE_FROZEN_NAV_ENGINE_USE_THE_SAME_NET_EDGE_MEMBERSHIP_AND_MILP_WEIGHTING_THAT_WILL_BE_USED_LIVE_BEFORE_OPENING_FINAL_OOS"
+phase8_summary_path = "outputs/phase8_summary.json"
+phase8_final_model_spec_path = "outputs/phase8_final_model_spec.json"
+phase8_freeze_manifest_path = "outputs/phase8_freeze_manifest.json"
+phase8_pre_oos_scores_path = "outputs/phase8_pre_oos_frozen_scores.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+
+[phase8b.partitions]
+validation_start = "2023-01-03"
+final_oos_start = "2025-01-01"
+
+[phase8b.integrity]
+maximum_execution_skip_rate = 0.05
+require_milp_success_rate = 1.0
+require_positive_base_cagr = true
+require_positive_stress_cagr = true
+require_replay_determinism = true
+float_decimals = 12

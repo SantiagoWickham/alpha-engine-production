@@ -1,0 +1,24 @@
+{
+  "V13_IDEAL": {
+    "status": "ACCEPTED_FROZEN",
+    "role": "international_ideal_reference",
+    "pre2025_cagr": 0.3223,
+    "holdout_cagr": 0.3023
+  },
+  "BYMA_TRANSFER": {
+    "status": "ACCEPTED_LOCAL_MODEL",
+    "role": "local_transfer_model",
+    "pre2025_cagr": 0.2959,
+    "holdout_cagr": 0.2305
+  },
+  "BYMA_NATIVE": {
+    "status": "REJECTED_ARCHIVE",
+    "role": "research_only",
+    "further_tuning_authorized": false
+  },
+  "PERSONAL": {
+    "status": "DISCRETIONARY_TRACK",
+    "role": "actual_portfolio",
+    "mutates_models": false
+  }
+}

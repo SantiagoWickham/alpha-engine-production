@@ -1,0 +1,17 @@
+﻿{
+    "generated_at":  "2026-09-13T20:52:58.7306847-03:00",
+    "root":  "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST",
+    "tracks":  {
+                   "BYMA_TRANSFER":  "ALPHA_ENGINE_BYMA",
+                   "V13_IDEAL":  "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON",
+                   "PERSONAL":  "PRODUCT\\personal_portfolio.json"
+               },
+    "rejected":  {
+                     "BYMA_NATIVE":  "PRODUCT\\archive\\BYMA_NATIVE_REJECTED"
+                 },
+    "product":  {
+                    "sheets":  "PRODUCT\\sheets",
+                    "web":  "PRODUCT\\web"
+                },
+    "delete_policy":  "NO AUTOMATIC DELETE. Delete originals only after FINAL_VERIFY PASS and separate backup."
+}

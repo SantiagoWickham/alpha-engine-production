@@ -1,0 +1,70 @@
+[project]
+name = "ALPHA_ENGINE_V12_RETURN_FIRST"
+timezone = "America/Argentina/Buenos_Aires"
+objective = "MAXIMIZE_OUT_OF_SAMPLE_NET_RETURN"
+research_mode = "RETURN_FIRST"
+
+[clock]
+evaluation_policy = "EACH_TRADING_SESSION"
+trade_policy = "EVENT_DRIVEN"
+fixed_rebalance = false
+allow_multiple_trades_per_month = true
+allow_zero_trades_per_month = true
+
+[data_boundary]
+# V12 is built from data only. Previous model/research artifacts are audit-only.
+allowed_roots = [
+  "data/cache",
+  "data/fundamentals",
+  "data/universe"
+]
+
+deny_fragments = [
+  "/audit_",
+  "/extreme_audit_",
+  "/cadence_audit_",
+  "/validation/",
+  "/red_team/",
+  "/research_",
+  "/state/",
+  "/v10",
+  "/v11",
+  "v10_",
+  "v11_",
+  "alpha_attribution",
+  "strategy_monthly_returns",
+  "portfolio_performance",
+  "target_meta_",
+  "targets_daily",
+  "targets_weekly",
+  "targets_monthly",
+  "historical_pit_factor_inputs",
+  "v10_extended_trend_panel",
+  "pit_fundamental_diagnostic_scores",
+  "pit_fundamental_features"
+]
+
+[data_boundary.roles]
+market = [
+  "data/cache/market_ohlcv_extended.parquet",
+  "data/cache/production_market_ohlcv.parquet",
+  "data/cache/delisted_prices_yahoo"
+]
+fundamentals = [
+  "data/fundamentals/sec_companyfacts_long.parquet",
+  "data/fundamentals/sec_monthly_point_in_time_facts.parquet",
+  "data/cache/sec",
+  "data/cache/live_companyfacts"
+]
+universe = [
+  "data/universe/listing_lifecycle.csv",
+  "data/universe/historical_universe_monthly.parquet",
+  "data/universe/historical_lifecycle_sec_mapping.csv",
+  "data/fundamentals/sec_universe_mapping.csv",
+  "data/cache/alpha_vantage_listing_status_active.csv",
+  "data/cache/alpha_vantage_listing_status_delisted.csv"
+]
+benchmarks = [
+  "data/cache/fama_french_us_monthly.parquet",
+  "data/cache/cadence_spy_daily.parquet"
+]

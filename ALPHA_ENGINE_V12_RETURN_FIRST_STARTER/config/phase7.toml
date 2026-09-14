@@ -1,0 +1,47 @@
+[phase7]
+name = "EXPECTED_EDGE_CALIBRATION_AND_ALPHA_LINEAGE"
+objective = "CALIBRATE_EVENT_DRIVEN_NET_EDGE_AND_VERIFY_ALPHA_SURVIVES_PORTFOLIO_CONSTRUCTION_BEFORE_FREEZE"
+phase6_summary_path = "outputs/phase6_summary.json"
+phase6_champion_spec_path = "outputs/phase6_champion_spec.json"
+phase6_policy_scores_path = "outputs/phase6_policy_scores.parquet"
+phase3_targets_path = "outputs/phase3_return_targets.parquet"
+return_price_layer_path = "outputs/phase2c_return_price_layer.parquet"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+
+[phase7.partitions]
+selection_start = "2021-01-04"
+validation_start = "2023-01-03"
+final_oos_start = "2025-01-01"
+
+[phase7.costs]
+base_round_trip_bps = 20.0
+stress_round_trip_bps = 40.0
+
+[phase7.calibration]
+bins = 20
+hac_lag = 20
+
+[phase7.policy]
+top_n = 15
+max_allowed_drawdown = 0.50
+max_execution_skip_rate = 0.05
+
+[phase7.selection_grid]
+entry_floors = [0.80, 0.85]
+uncertainty_z = [0.5, 1.0, 1.5]
+minimum_extra_edge_bps = [0.0, 50.0, 100.0]
+max_replacements = [1, 2]
+
+[phase7.lineage]
+candidate_count = 20
+reference_top_n = 15
+optimizer_max_weight = 0.12
+milp_min_weight = 0.03
+milp_max_weight = 0.12
+milp_weight_step = 0.005
+milp_holdings = 15
+minimum_spearman = 0.75
+minimum_kendall = 0.60
+minimum_top10_capture = 0.90
+minimum_alpha_capture = 0.95
+maximum_optimizer_milp_l1 = 0.15

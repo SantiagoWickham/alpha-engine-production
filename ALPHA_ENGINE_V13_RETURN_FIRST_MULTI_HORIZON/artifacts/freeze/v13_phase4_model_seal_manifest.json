@@ -1,0 +1,128 @@
+{
+  "build": "V13_P4_ONE_SHOT_CODE_BLINDED_HOLDOUT_2026-09-13",
+  "research_freeze_id": "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8",
+  "research_tag": "v13-preholdout-3c3ebdd8",
+  "holdout_start": "2025-01-01",
+  "files": [
+    {
+      "path": "outputs/v13_phase3aa_freeze_manifest.json",
+      "sha256": "b21545c725c27acf51f0cfe76e6f358adb8d027f4053f1134b2c72b70aa2b390",
+      "bytes": 2756
+    },
+    {
+      "path": "outputs/v13_phase2r_model_spec.json",
+      "sha256": "8d56d404f85b7689ed1e5c20ed3d03f17670308a62277a88ce818a6ec0afa080",
+      "bytes": 3046
+    },
+    {
+      "path": "outputs/v13_phase2r_oof_scores.parquet",
+      "sha256": "6b7b825e34ea702eeae34646dbaab007e0ac9fec349b605c29a3d2307fbcf156",
+      "bytes": 5592945
+    },
+    {
+      "path": "outputs/v13_phase2u_oof_scores.parquet",
+      "sha256": "0719b826c82a927c0c266bd1814af2b793ed90af812c7303cc5ead32fc1c11bb",
+      "bytes": 5547446
+    },
+    {
+      "path": "outputs/v13_phase2u_newinfo_surface.parquet",
+      "sha256": "cf1853e1cb71b33b22c80dfdf1740d9979124bb4d52bf519132be7af756adf51",
+      "bytes": 128888803
+    },
+    {
+      "path": "outputs/v13_phase2u_expert_evidence.csv",
+      "sha256": "ef01464ac20279fedede8d107193821af5f6aa42830808b7b03d44c4bf72e236",
+      "bytes": 15541
+    },
+    {
+      "path": "outputs/v13_phase1_feature_library.parquet",
+      "sha256": "2b5fb0efa286fb273fce7a6e34b6a54e653c36387a0155cb83756be7d0a50415",
+      "bytes": 337347912
+    },
+    {
+      "path": "outputs/v13_phase1_research_targets.parquet",
+      "sha256": "57b8713f5e297f6c3f7c677744eec2ad51a034f946753e645fcdaa42559c619e",
+      "bytes": 143206722
+    },
+    {
+      "path": "config/v13_phase1.toml",
+      "sha256": "23917d513d07663766eddfb9a1a41c3c543011f9016b6ce33b32fa04a1ccb1ad",
+      "bytes": 961
+    },
+    {
+      "path": "config/v13_phase2r.toml",
+      "sha256": "080bbb93e3455b5f5b8950094ea5099b2aea8fd0a570fc7bc0f83978f5023797",
+      "bytes": 807
+    },
+    {
+      "path": "config/v13_phase2u.toml",
+      "sha256": "bdf8eb77b6bb768a0cc962302dec020dc919c9119d864935296dfca3b1c82926",
+      "bytes": 1214
+    },
+    {
+      "path": "config/v13_phase3z.toml",
+      "sha256": "e5a5c1aa604ce5d1bc320a1d1e2157f4e5f315392ec0bfc2c6aa461b75beb152",
+      "bytes": 1259
+    },
+    {
+      "path": "config/v13_phase4.toml",
+      "sha256": "d742d69e60d07e8ebd59187b94c4c4985b3c982bb84b5eaf66557b0d1b875535",
+      "bytes": 1514
+    },
+    {
+      "path": "src/alpha_engine_v13/alpha_factory.py",
+      "sha256": "7cc60e3fa739a5e9dc0ca56e804432fc0980b387a7fdebf264ec2e0d2578dcf7",
+      "bytes": 39718
+    },
+    {
+      "path": "src/alpha_engine_v13/adaptive_alpha_rebuild.py",
+      "sha256": "e7b25053c353c371d75ebd9420d4753ab0e4ce7bd17f13723935d194e8f02a7c",
+      "bytes": 23055
+    },
+    {
+      "path": "src/alpha_engine_v13/event_sector_incremental_alpha.py",
+      "sha256": "33b7f37f787c8af0ecb8fcaa3651ddc9fdf11b1e66c4bc1870e1a99d99c27951",
+      "bytes": 35475
+    },
+    {
+      "path": "src/alpha_engine_v13/active_alpha_persistent_portfolio.py",
+      "sha256": "3b2e88817d6c01bdefe8ad00de4f33bce94752e166d2934d46b1b289b430dbae",
+      "bytes": 20705
+    },
+    {
+      "path": "src/alpha_engine_v13/roundtrip_resize_hysteresis.py",
+      "sha256": "27cc3f64a8f52efcfc99ed3f8526ad5fb87e876184c1c16e3828a3ed70d85e4b",
+      "bytes": 9114
+    },
+    {
+      "path": "src/alpha_engine_v13/economic_portfolio_closure.py",
+      "sha256": "e4a2d79bb42daf09cac1ab2e4d8dd3b11276db481a3547feb38779ab23a2ce52",
+      "bytes": 27524
+    },
+    {
+      "path": "src/alpha_engine_v13/final_holdout.py",
+      "sha256": "d12d1e04bde3a9248c7374650fc71c552c90081135810e3037125e2b9c0c23fa",
+      "bytes": 36573
+    },
+    {
+      "path": "outputs/v13_phase4_sealed_model_bundle.joblib",
+      "sha256": "247e829cf3dbae02775e9df263697e8762a597d05468fec253967b2f2b045853",
+      "bytes": 4012164
+    },
+    {
+      "path": "outputs/v13_phase4_sealed_features.csv",
+      "sha256": "f93ac2b279d5c0a40be43e64cc0aa494033cb065a3b3c76b44d37be55fb568bd",
+      "bytes": 11593
+    }
+  ],
+  "horizon_reliability": {
+    "5": 0.2733959858390426,
+    "10": 0.1747808943414174,
+    "20": 0.3106961893921696,
+    "60": 0.09940327915382756,
+    "120": 0.10311250877129559,
+    "252": 0.03861114250224741
+  },
+  "models_retrained_using_2025_plus": false,
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9"
+}

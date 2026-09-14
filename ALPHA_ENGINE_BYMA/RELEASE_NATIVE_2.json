@@ -1,0 +1,16 @@
+{
+  "release": "ALPHA_ENGINE_BYMA_NATIVE_2.0.0",
+  "date": "2026-09-13",
+  "syntax_check": "PASS",
+  "purpose": "Fresh BYMA-native walk-forward predictor + holdout gap diagnostic + practical nominal targets",
+  "does_not_use_as_predictions": [
+    "v13_phase2u_oof_scores.parquet",
+    "v13_phase4_holdout_advisor.parquet"
+  ],
+  "shared_with_v13": [
+    "PIT feature/target infrastructure",
+    "market data",
+    "feature engineering code",
+    "portfolio cost/hysteresis mechanics"
+  ]
+}

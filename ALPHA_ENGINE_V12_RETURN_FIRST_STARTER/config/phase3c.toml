@@ -1,0 +1,17 @@
+[phase3c]
+name = "TERMINAL_OUTCOME_REPAIR"
+objective = "CONVERT_ONLY_HIGH_CONFIDENCE_DELISTING_TERMINATIONS_INTO_VALID_TARGET_OUTCOMES"
+phase3b_summary_path = "outputs/phase3b_summary.json"
+unresolved_tickers_path = "outputs/phase3b_unresolved_tickers.csv"
+terminal_overlay_path = "outputs/phase3c_terminal_outcome_overlay.csv"
+manual_resolutions_path = "config/phase3c_manual_resolutions.csv"
+research_exclusions_path = "outputs/phase3c_research_exclusions.csv"
+
+[phase3c.policies]
+required_classification = "CONFIRMED_OR_NEAR_DELISTING_METADATA_GAP"
+min_evidence_sources = 3
+max_terminal_gap_calendar_days = 4
+require_lifecycle_delisted = true
+require_av_delisted = true
+require_cache_parquet = true
+require_historical_name_identity = true

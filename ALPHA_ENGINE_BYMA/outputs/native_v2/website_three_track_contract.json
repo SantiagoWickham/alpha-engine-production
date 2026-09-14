@@ -1,0 +1,23 @@
+{
+  "tracks": [
+    {
+      "id": "V13_IDEAL",
+      "role": "international_frictionless_reference",
+      "model_independent": true,
+      "nav_history": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\outputs\\v13_phase4_holdout_nav_20bps.csv"
+    },
+    {
+      "id": "BYMA_NATIVE",
+      "role": "local_theoretical_model",
+      "model_independent": true,
+      "nav_history": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_BYMA\\outputs\\native_v2\\byma_native_nav_holdout_20bps.csv",
+      "current_target": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_BYMA\\outputs\\native_v2\\byma_native_current_target_continuous.csv"
+    },
+    {
+      "id": "PERSONAL_PORTFOLIO",
+      "role": "actual_user_portfolio_with_discretion",
+      "model_independent": false,
+      "note": "Tracked separately; discretionary trades never alter V13 or BYMA model records."
+    }
+  ]
+}

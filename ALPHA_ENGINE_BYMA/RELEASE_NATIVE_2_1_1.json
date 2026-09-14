@@ -1,0 +1,12 @@
+{
+  "release": "ALPHA_ENGINE_BYMA_NATIVE_2.1.1",
+  "date": "2026-09-13",
+  "syntax_check": "PASS",
+  "synthetic_purged_split_test": "PASS",
+  "supersedes": "2.1.0",
+  "classification": "ENGINEERING_FIX_NOT_MODEL_CHANGE",
+  "model_hypothesis_changed": false,
+  "gates_changed": false,
+  "holdout_tuning": false,
+  "fix": "Purged horizon-aware inner temporal split + explicit empty-target guards."
+}
