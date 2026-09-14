@@ -1,0 +1,30 @@
+{
+  "status": "ASSOCIATION_ONLY_NOT_CAUSAL",
+  "first_ever_entry": {
+    "cohort": "FIRST_EVER_ENTRY",
+    "episodes": 119,
+    "unique_tickers": 119,
+    "winner_share": 0.5462184873949579,
+    "mean_episode_return": 0.10425128005195683,
+    "median_episode_return": 0.024145125979446513,
+    "mean_portfolio_contribution": 0.007522094266060513,
+    "median_portfolio_contribution": 0.0,
+    "mean_days_held": 143.81512605042016,
+    "median_days_held": 61.0
+  },
+  "reentry": {
+    "cohort": "REENTRY",
+    "episodes": 609,
+    "unique_tickers": 107,
+    "winner_share": 0.5238095238095238,
+    "mean_episode_return": 0.085037424986784,
+    "median_episode_return": 0.008345183561663694,
+    "mean_portfolio_contribution": 0.0033714897898080957,
+    "median_portfolio_contribution": 0.0,
+    "mean_days_held": 110.59934318555008,
+    "median_days_held": 61.0
+  },
+  "mean_return_gap_reentry_minus_first": -0.019213855065172827,
+  "winner_share_gap_reentry_minus_first": -0.022408963585434094,
+  "interpretation": "If first-ever entries also work, the historical edge is less consistent with a strategy that only succeeds by recycling previously successful names. This is not a causal proof against research overfitting."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "INVENTORY_REQUIRED_BEFORE_DSR_PBO",
+  "model": "V10.4_FROZEN",
+  "known_research_families": [
+    "market factor candidates and horizons",
+    "Revenue Growth variants/horizons",
+    "Sales Yield variants/horizons",
+    "factor combinations",
+    "top-fraction / breadth alternatives",
+    "optimizer configurations",
+    "conviction weighting variants",
+    "risk-profile sleeves",
+    "V11 dynamic-weight/breadth challenger"
+  ],
+  "required_fields_per_trial": [
+    "trial_id",
+    "date_created",
+    "hypothesis",
+    "signals",
+    "weights",
+    "breadth",
+    "rebalance_frequency",
+    "optimizer_config",
+    "sample_definition",
+    "benchmark",
+    "OOS_rule",
+    "primary_metric",
+    "result"
+  ],
+  "warning": "Do not calculate a Deflated Sharpe Ratio or PBO from an invented trial count."
+}

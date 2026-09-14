@@ -1,0 +1,29 @@
+{
+  "status": "PRE_REGISTERED_RULE_APPLIED",
+  "selected_cadence": "MONTHLY",
+  "reason": "No more-frequent cadence passed every preregistered replacement gate.",
+  "candidate_gates": {
+    "WEEKLY": {
+      "passes": false,
+      "cagr_advantage_vs_monthly": -0.03464321414761695,
+      "mdd_improvement_vs_monthly": 0.0015532347862111662,
+      "performance_gate": false,
+      "pre_post_active_gate": true,
+      "100bps_active_gate": false,
+      "remove_best_year_gate": true,
+      "ff5_mom_alpha_positive_gate": true,
+      "coverage_gate": true
+    },
+    "DAILY": {
+      "passes": false,
+      "cagr_advantage_vs_monthly": -0.08847366745516116,
+      "mdd_improvement_vs_monthly": -0.03188615966449848,
+      "performance_gate": false,
+      "pre_post_active_gate": false,
+      "100bps_active_gate": false,
+      "remove_best_year_gate": false,
+      "ff5_mom_alpha_positive_gate": true,
+      "coverage_gate": true
+    }
+  }
+}

@@ -1,0 +1,62 @@
+C:\Users\santi\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_slsqp_py.py:435: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  fx = wrapped_fun(x)
+============================================================================================================================
+MMM ADVISOR V10.1 - CONVICTION & OPTIMIZER AUDIT
+============================================================================================================================
+No factor search. No parameter tuning. No threshold changes after V10.
+Goal: try to break Conviction and explain optimizer trade-offs.
+[1/5] RECONSTRUCT FROZEN HOLDINGS
+Holdings rows: 8,871
+[2/5] CONCENTRATION
+[3/5] RETURN FRAGILITY
+[4/5] OPTIMIZER ATTRIBUTION
+[5/5] FINAL AUDIT DECISION
+
+CONVICTION CONCENTRATION
+Median effective N: 3.76
+Median max weight:  40.56%
+Median top5 weight: 92.92%
+
+CONTRIBUTION CONCENTRATION
+             strategy  total_contribution_sum  top1_positive_contribution  top5_positive_contribution  top1_share_of_positive  top5_share_of_positive  unique_contributors
+FULL_ALPHA_CONVICTION                4.347075                     0.72971                    2.580463                0.155893                0.551283                  122
+
+RETURN FRAGILITY
+             strategy  ann_return_base  ann_return_drop_best_1m  ann_return_drop_best_3m  ann_return_cap_95pct_month  drop1_delta  drop3_delta  cap95_delta
+FULL_ALPHA_CONVICTION         0.340494                 0.318399                 0.278678                    0.307458    -0.022095    -0.061816    -0.033036
+
+OPTIMIZER ATTRIBUTION
+             strategy     cagr  ann_return  ann_vol  max_drawdown  information_ratio  avg_turnover  delta_cagr_vs_conviction  delta_vol_vs_conviction  delta_mdd_vs_conviction  delta_ir_vs_conviction  delta_turnover_vs_conviction
+FULL_ALPHA_CONVICTION 0.345137    0.340494 0.287552     -0.231288           0.680042      0.377676                  0.000000                 0.000000                 0.000000                0.000000                      0.000000
+      FULL_ALPHA_RISK 0.323792    0.316860 0.260728     -0.212305           0.639436      0.395081                 -0.021345                -0.026824                 0.018983               -0.040606                      0.017404
+      FINAL_OPTIMIZER 0.252258    0.245157 0.192120     -0.204688           0.575553      0.153226                 -0.092878                -0.095431                 0.026600               -0.104489                     -0.224451
+
+AUDIT DECISION
+{
+  "conviction_concentration": {
+    "status": "FAIL",
+    "median_effective_n": 3.7633081869593292,
+    "median_max_weight": 0.4056365170260411,
+    "median_top5_weight": 0.9291511788003042
+  },
+  "conviction_contribution_concentration": {
+    "status": "PASS",
+    "top1_share_of_positive": 0.15589318420841247,
+    "top5_share_of_positive": 0.5512831388601751
+  },
+  "conviction_fragility": {
+    "status": "PASS",
+    "drop1_delta": -0.022094915455740494,
+    "drop3_delta": -0.06181613610231457
+  },
+  "optimizer_value_add": {
+    "status": "PASS",
+    "delta_ir_vs_conviction": -0.10448904505521683,
+    "delta_mdd_vs_conviction": 0.0265998776808683,
+    "delta_vol_vs_conviction": -0.0954314632578499,
+    "delta_turnover_vs_conviction": -0.22445060010842507
+  },
+  "final_audit_status": "FAIL"
+}
+============================================================================================================================
+V10.1 AUDIT COMPLETED

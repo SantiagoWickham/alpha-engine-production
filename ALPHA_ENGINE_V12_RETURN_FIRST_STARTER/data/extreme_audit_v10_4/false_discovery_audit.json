@@ -1,0 +1,34 @@
+{
+  "persisted_inventory_rows": 553,
+  "distinct_persisted_return_paths": 446,
+  "champion_trial_id": "data\\v10\\strategy_monthly_returns.csv::gross_return_1m::strategy=FINAL_OPTIMIZER",
+  "dsr": {
+    "status": "PERSISTED_TRIAL_LOWER_BOUND_ONLY",
+    "champion_sharpe_ann": 1.2717469379127375,
+    "distinct_persisted_trials": 446,
+    "trial_sharpe_std_ann": 1.71449832751129,
+    "expected_max_null_sharpe_ann": 5.1743599399251305,
+    "skew": -0.012286410762845104,
+    "kurtosis": 4.6560371594945815,
+    "observations": 152,
+    "dsr_probability": 3.799472379022359e-39,
+    "interpretation": "Valid only for the automatically recovered distinct persisted return paths; not a complete historical research-trial inventory unless manually certified."
+  },
+  "pbo": {
+    "status": "INSUFFICIENT_ALIGNED_TRIAL_MATRIX",
+    "strategies": 0
+  },
+  "survivorship_uniform_monthly_break_even_haircut_bps_vs_spy": 77.97904318607053,
+  "nested_walk_forward_readiness": {
+    "status": "BLOCKED_BY_SURVIVORSHIP_PIT",
+    "artifacts_present": {
+      "historical_universe": true,
+      "sec_mapping": true,
+      "pit_factor_panel": true,
+      "extended_ohlcv": true,
+      "frozen_profile": true
+    },
+    "missing": []
+  },
+  "scientific_warning": "Persisted paths are a lower bound on the number of research trials. DSR/PBO cannot be called definitive until the historical research-decision inventory is manually certified complete."
+}

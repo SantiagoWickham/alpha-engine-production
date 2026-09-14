@@ -1,0 +1,6 @@
+removed_best_holding_episodes,cagr_without_those_gross_contributions,method,warning
+1,0.22286022859512644,CONCEPTUAL_CONTRIBUTION_REMOVAL_NO_REOPTIMIZATION,Not a counterfactual portfolio replay: subsequent optimizer weights are held fixed.
+3,0.19640354649114933,CONCEPTUAL_CONTRIBUTION_REMOVAL_NO_REOPTIMIZATION,Not a counterfactual portfolio replay: subsequent optimizer weights are held fixed.
+5,0.17820500266552108,CONCEPTUAL_CONTRIBUTION_REMOVAL_NO_REOPTIMIZATION,Not a counterfactual portfolio replay: subsequent optimizer weights are held fixed.
+10,0.1468583339936549,CONCEPTUAL_CONTRIBUTION_REMOVAL_NO_REOPTIMIZATION,Not a counterfactual portfolio replay: subsequent optimizer weights are held fixed.
+20,0.08540774325962674,CONCEPTUAL_CONTRIBUTION_REMOVAL_NO_REOPTIMIZATION,Not a counterfactual portfolio replay: subsequent optimizer weights are held fixed.

@@ -1,0 +1,6 @@
+test,status,metric,value,threshold_or_reference,interpretation
+BEST_5_MONTH_DEPENDENCE,PASS,active_cagr_spread_without_best_5_months,0.09801535739214162,> 0 is favorable,Tests whether outperformance survives removal of the five best active-return months.
+BEST_YEAR_DEPENDENCE,PASS,active_cagr_spread_without_best_year,0.08726672029623495,> 0 is favorable,Tests whether one exceptional calendar year explains the result.
+BLOCK_BOOTSTRAP_ACTIVE_RETURN,PASS,P(annualized mean active <= 0),0.0134,<10% favorable; <5% stronger,Six-month moving-block bootstrap preserves some serial dependence.
+ROLLING_3Y_CONSISTENCY,CONDITIONAL,rolling_3y_outperform_rate,0.690537084398977,>=80% favorable,Frequency of positive 3-year CAGR spread vs SPY.
+ROLLING_5Y_CONSISTENCY,CONDITIONAL,rolling_5y_outperform_rate,0.7841601392515231,>=80% favorable,Frequency of positive 5-year CAGR spread vs SPY.

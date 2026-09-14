@@ -1,0 +1,58 @@
+{
+  "A_alpha_engine_parece_funcionar": "No podemos saber todavía hacia adelante; históricamente hay evidencia favorable.",
+  "B_evidencia_actual_fuerte": "Parcial: fuerte en varias dimensiones del backtest, incompleta en survivorship, research selection, exact execution/capacity and forward evidence.",
+  "C_mayor_debilidad": "Survivorship-free certification and complete research-trial/false-discovery history are not closed.",
+  "D_mayor_riesgo_resultado_falso": "Combination of survivorship bias and research selection/data mining, amplified by concentration/high turnover.",
+  "E_test_urgente": "Close survivorship-free PIT replay and lock/execute the true forward protocol; both matter more than another optimized backtest.",
+  "F_test_redundante": "More ex-post parameter searching for a better champion would add little and increase false-discovery risk.",
+  "G_bien_construido": "Frozen profile reconstruction, PIT filing checks, factor/risk temporal slicing, forensic holdings/replay, explicit layer separation and audit logging.",
+  "H_rehacer": "Any claim of institutional readiness/capacity before local liquidity and forward evidence; also historical data-vintage certification if unavailable.",
+  "I_listo_para_congelarse": "Sí: V10.4 should remain frozen; changing it now would contaminate the forward test.",
+  "J_listo_para_forward_testing": "Sí, as research/shadow testing, provided the hash and execution rule are fixed and every decision is logged before outcomes.",
+  "K_listo_para_profesionales": "Sí as a transparent research project, with unresolved limitations presented prominently; no as a proven institutional strategy.",
+  "L_listo_para_monetizar": "No as a proven alpha product. Software/research tooling can have value, but strategy monetization claims should wait for critical evidence.",
+  "global_category": "🟢 Prometedor",
+  "blocking_tests": [
+    {
+      "test": "Data vintage/restatement integrity",
+      "current_evidence": "UNVERIFIED",
+      "status": "NO-GO"
+    },
+    {
+      "test": "Exact signal/fill timing",
+      "current_evidence": "UNVERIFIED",
+      "status": "NO-GO"
+    },
+    {
+      "test": "Survivorship-free replay",
+      "current_evidence": "UNRESOLVED",
+      "status": "NO-GO"
+    },
+    {
+      "test": "Research multiple-testing inventory",
+      "current_evidence": 446,
+      "status": "NO-GO"
+    },
+    {
+      "test": "DSR/PBO",
+      "current_evidence": "PERSISTED_TRIAL_LOWER_BOUND_ONLY",
+      "status": "NO-GO"
+    },
+    {
+      "test": "Capacity / CEDEAR liquidity",
+      "current_evidence": "UNVERIFIED",
+      "status": "NO-GO"
+    },
+    {
+      "test": "True forward test",
+      "current_evidence": "NOT YET MATURE",
+      "status": "NO-GO"
+    },
+    {
+      "test": "Decision reconstruction",
+      "current_evidence": "PASS_WITH_LIMITATIONS",
+      "status": "NO-GO"
+    }
+  ],
+  "rule": "Category is capped by critical unresolved evidence. Strong backtest performance cannot override missing survivorship/false-discovery/forward proof."
+}

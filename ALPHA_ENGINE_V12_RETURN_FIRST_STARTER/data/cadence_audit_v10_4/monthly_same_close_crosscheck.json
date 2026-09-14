@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "matched_periods": 150,
+  "mean_abs_error_bps": 8.645417113835146,
+  "p95_abs_error_bps": 17.465786734661386,
+  "max_abs_error_bps": 514.1346174136961,
+  "warning": "Cadence audit rebuilds PIT states from SEC facts; crosscheck is a calibration diagnostic, not a selection metric."
+}

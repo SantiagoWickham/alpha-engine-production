@@ -1,0 +1,654 @@
+{
+  "schema_version": 3,
+  "resolutions": {
+    "BAC": {
+      "model_ticker": "BAC",
+      "local_symbol": null,
+      "price_ars": null,
+      "source": "UNRESOLVED",
+      "observed_at": "2026-09-06T23:51:03.830551+00:00",
+      "candidates": [
+        "BA.C.BA",
+        "BAC.BA"
+      ],
+      "reason": "NO_VALID_LOCAL_QUOTE",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 2.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": null,
+      "quoted_name": null,
+      "exchange": null,
+      "settlement_currency": "UNKNOWN"
+    },
+    "MPC": {
+      "model_ticker": "MPC",
+      "local_symbol": "MPC.BA",
+      "price_ars": 5.460000038146973,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:14.834455+00:00",
+      "candidates": [
+        "MPC.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "USD",
+      "quoted_name": "MP MATERIALS CORP CEDEAR EACH 1",
+      "exchange": "BUE",
+      "settlement_currency": "USD_CABLE"
+    },
+    "MU": {
+      "model_ticker": "MU",
+      "local_symbol": "MU.BA",
+      "price_ars": 321250.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:16.518566+00:00",
+      "candidates": [
+        "MU.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Micron Technology, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NU": {
+      "model_ticker": "NU",
+      "local_symbol": "NU.BA",
+      "price_ars": 12160.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:19.033176+00:00",
+      "candidates": [
+        "NU.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Nu Holdings Ltd.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "AMGN": {
+      "model_ticker": "AMGN",
+      "local_symbol": "AMGN.BA",
+      "price_ars": 23090.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:50:57.735358+00:00",
+      "candidates": [
+        "AMGN.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 10.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Amgen Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "AMZN": {
+      "model_ticker": "AMZN",
+      "local_symbol": "AMZN.BA",
+      "price_ars": 2855.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:50:58.623274+00:00",
+      "candidates": [
+        "AMZN.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 144.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Amazon.com, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "ANET": {
+      "model_ticker": "ANET",
+      "local_symbol": "ANET.BA",
+      "price_ars": 10590.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:50:59.441698+00:00",
+      "candidates": [
+        "ANET.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Arista Networks, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "AVGO": {
+      "model_ticker": "AVGO",
+      "local_symbol": "AVGO.BA",
+      "price_ars": 14600.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:00.279717+00:00",
+      "candidates": [
+        "AVGO.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 39.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Broadcom Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "CEPU": {
+      "model_ticker": "CEPU",
+      "local_symbol": "CEPU.BA",
+      "price_ars": 2220.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:04.675735+00:00",
+      "candidates": [
+        "CEPU.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "LOCAL_EQUITY",
+      "cedear_ratio": null,
+      "ratio_source": "EXPLICIT_ARG_LOCAL_MAPPING",
+      "quoted_currency": "ARS",
+      "quoted_name": "Central Puerto S.A.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "COF": {
+      "model_ticker": "COF",
+      "local_symbol": null,
+      "price_ars": null,
+      "source": "UNRESOLVED",
+      "observed_at": "2026-09-06T23:51:07.088928+00:00",
+      "candidates": [
+        "COF.BA"
+      ],
+      "reason": "NO_VALID_LOCAL_QUOTE",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": null,
+      "quoted_name": null,
+      "exchange": null,
+      "settlement_currency": "UNKNOWN"
+    },
+    "COP": {
+      "model_ticker": "COP",
+      "local_symbol": "COP.BA",
+      "price_ars": 8495.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:07.915459+00:00",
+      "candidates": [
+        "COP.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "ConocoPhillips",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "CRM": {
+      "model_ticker": "CRM",
+      "local_symbol": "CRM.BA",
+      "price_ars": 22540.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:08.796504+00:00",
+      "candidates": [
+        "CRM.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 6.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Salesforce, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "CRWD": {
+      "model_ticker": "CRWD",
+      "local_symbol": "CRWD.BA",
+      "price_ars": 4270.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:09.626081+00:00",
+      "candidates": [
+        "CRWD.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "CrowdStrike Holdings, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "FDX": {
+      "model_ticker": "FDX",
+      "local_symbol": "FDX.BA",
+      "price_ars": 51000.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:10.505703+00:00",
+      "candidates": [
+        "FDX.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 10.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "FedEx Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "GOOGL": {
+      "model_ticker": "GOOGL",
+      "local_symbol": "GOOGL.BA",
+      "price_ars": 9270.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:11.359429+00:00",
+      "candidates": [
+        "GOOGL.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 58.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Alphabet Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "JD": {
+      "model_ticker": "JD",
+      "local_symbol": "JD.BA",
+      "price_ars": 11180.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:12.200751+00:00",
+      "candidates": [
+        "JD.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 2.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "JD.com, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "MA": {
+      "model_ticker": "MA",
+      "local_symbol": "MA.BA",
+      "price_ars": 26540.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:13.063448+00:00",
+      "candidates": [
+        "MA.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 33.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Mastercard Incorporated",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "MELI": {
+      "model_ticker": "MELI",
+      "local_symbol": "MELI.BA",
+      "price_ars": 26100.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:13.969839+00:00",
+      "candidates": [
+        "MELI.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 60.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "MercadoLibre, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "MSFT": {
+      "model_ticker": "MSFT",
+      "local_symbol": "MSFT.BA",
+      "price_ars": 26400.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:15.684285+00:00",
+      "candidates": [
+        "MSFT.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 10.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Microsoft Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NEM": {
+      "model_ticker": "NEM",
+      "local_symbol": "NEM.BA",
+      "price_ars": 67625.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:17.390976+00:00",
+      "candidates": [
+        "NEM.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 3.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Newmont Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NOW": {
+      "model_ticker": "NOW",
+      "local_symbol": "NOW.BA",
+      "price_ars": 1297.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:18.211303+00:00",
+      "candidates": [
+        "NOW.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "ServiceNow, Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NUE": {
+      "model_ticker": "NUE",
+      "local_symbol": "NUE.BA",
+      "price_ars": 25820.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:19.924318+00:00",
+      "candidates": [
+        "NUE.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 2.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Nucor Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NVDA": {
+      "model_ticker": "NVDA",
+      "local_symbol": "NVDA.BA",
+      "price_ars": 15220.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:20.780002+00:00",
+      "candidates": [
+        "NVDA.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 24.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "NVIDIA Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "NVO": {
+      "model_ticker": "NVO",
+      "local_symbol": "NVO.BA",
+      "price_ars": 10530.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:21.927733+00:00",
+      "candidates": [
+        "NVO.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Novo Nordisk A/S",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "PBR": {
+      "model_ticker": "PBR",
+      "local_symbol": "PBR.BA",
+      "price_ars": 32000.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:22.774001+00:00",
+      "candidates": [
+        "PBR.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 1.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Petróleo Brasileiro S.A. - Petrobras",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "PLTR": {
+      "model_ticker": "PLTR",
+      "local_symbol": "PLTR.BA",
+      "price_ars": 92200.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:23.909153+00:00",
+      "candidates": [
+        "PLTR.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Palantir Technologies Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "PSX": {
+      "model_ticker": "PSX",
+      "local_symbol": "PSX.BA",
+      "price_ars": 67325.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:24.741025+00:00",
+      "candidates": [
+        "PSX.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 6.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Phillips 66",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "ROP": {
+      "model_ticker": "ROP",
+      "local_symbol": null,
+      "price_ars": null,
+      "source": "UNRESOLVED",
+      "observed_at": "2026-09-06T23:51:26.866374+00:00",
+      "candidates": [
+        "ROP.BA"
+      ],
+      "reason": "NO_VALID_LOCAL_QUOTE",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": null,
+      "quoted_name": null,
+      "exchange": null,
+      "settlement_currency": "UNKNOWN"
+    },
+    "SCHW": {
+      "model_ticker": "SCHW",
+      "local_symbol": null,
+      "price_ars": null,
+      "source": "UNRESOLVED",
+      "observed_at": "2026-09-06T23:51:27.316934+00:00",
+      "candidates": [
+        "SCHW.BA"
+      ],
+      "reason": "NO_VALID_LOCAL_QUOTE",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": null,
+      "quoted_name": null,
+      "exchange": null,
+      "settlement_currency": "UNKNOWN"
+    },
+    "SONY": {
+      "model_ticker": "SONY",
+      "local_symbol": "SONY.BA",
+      "price_ars": 4865.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:28.194683+00:00",
+      "candidates": [
+        "SONY.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 4.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Sony Group Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "TEAM": {
+      "model_ticker": "TEAM",
+      "local_symbol": "TEAM.BA",
+      "price_ars": 6345.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:29.025044+00:00",
+      "candidates": [
+        "TEAM.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": "ARS",
+      "quoted_name": "Atlassian Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "TGT": {
+      "model_ticker": "TGT",
+      "local_symbol": "TGT.BA",
+      "price_ars": 10860.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:29.977550+00:00",
+      "candidates": [
+        "TGT.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 4.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Target Corporation",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "UNH": {
+      "model_ticker": "UNH",
+      "local_symbol": "UNH.BA",
+      "price_ars": 19100.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:30.806812+00:00",
+      "candidates": [
+        "UNH.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 33.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "UnitedHealth Group Incorporated",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "V": {
+      "model_ticker": "V",
+      "local_symbol": "V.BA",
+      "price_ars": 32960.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:31.635982+00:00",
+      "candidates": [
+        "V.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 6.0,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Visa Inc.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "VIST": {
+      "model_ticker": "VIST",
+      "local_symbol": "VIST.BA",
+      "price_ars": 39060.0,
+      "source": "YAHOO_LOCAL_PROBE",
+      "observed_at": "2026-09-06T23:51:32.477065+00:00",
+      "candidates": [
+        "VIST.BA"
+      ],
+      "reason": "OK",
+      "instrument_class": "CEDEAR",
+      "cedear_ratio": 0.2,
+      "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+      "quoted_currency": "ARS",
+      "quoted_name": "Vista Energy, S.A.B. de C.V.",
+      "exchange": "BUE",
+      "settlement_currency": "ARS"
+    },
+    "VLO": {
+      "model_ticker": "VLO",
+      "local_symbol": null,
+      "price_ars": null,
+      "source": "UNRESOLVED",
+      "observed_at": "2026-09-06T23:51:34.655222+00:00",
+      "candidates": [
+        "VLO.BA"
+      ],
+      "reason": "NO_VALID_LOCAL_QUOTE",
+      "instrument_class": "ACCIÓN USA/ADR",
+      "cedear_ratio": null,
+      "ratio_source": "",
+      "quoted_currency": null,
+      "quoted_name": null,
+      "exchange": null,
+      "settlement_currency": "UNKNOWN"
+    }
+  }
+}

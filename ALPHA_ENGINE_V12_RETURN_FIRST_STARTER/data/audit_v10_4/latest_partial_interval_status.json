@@ -1,0 +1,10 @@
+{
+  "status": "PARTIAL_LATEST_INTERVAL",
+  "partial": true,
+  "period_start": "2026-08-31T00:00:00",
+  "period_end": "2026-09-02T00:00:00",
+  "asof": "2026-09-02T00:00:00",
+  "max_ohlcv_date": "2026-09-02T00:00:00",
+  "business_month_end_reference": "2026-09-30T00:00:00",
+  "reason": "Latest forward return ends at the current OHLCV data frontier before business month-end; treat it as live/partial, not a completed historical month."
+}

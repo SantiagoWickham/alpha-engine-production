@@ -1,0 +1,6 @@
+name,status,detail
+SEC_MAPPING,PASS,lifecycle mapped=46.5%; threshold=40%
+REVENUE_GROWTH_PIT_COVERAGE,PASS,median monthly usable share=58.3%
+SALES_YIELD_PIT_COVERAGE,FAIL,median monthly usable share=2.7%
+DELISTED_PRICE_COVERAGE,FAIL,"2/9,457 delisted symbols have cached prices; cannot claim survivorship-free alpha yet."
+MODEL_RESEARCH_CLOSURE,FAIL,Automatic aggregation of data-integrity and locked-alpha gates.

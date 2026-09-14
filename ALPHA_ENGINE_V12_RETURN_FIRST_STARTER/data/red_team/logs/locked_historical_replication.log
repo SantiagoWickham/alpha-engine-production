@@ -1,0 +1,30 @@
+================================================================================================================
+MMM ADVISOR V0.8.5 - LOCKED HISTORICAL REPLICATION
+================================================================================================================
+Frozen candidates:
+  Revenue Growth 1M
+  Growth 3M
+  Sales Yield 12M
+No signal definitions, horizons or weights are re-optimized.
+Current-universe survivorship bias still remains.
+Using cached extended OHLCV:   550,514 rows
+Extended OHLCV rows:           550,514
+Extended OHLCV tickers:        181
+History:                       2014-01-02 00:00:00 -> 2026-09-02 00:00:00
+----------------------------------------------------------------------------------------------------------------
+PRE-2021 LOCKED REPLICATION IC SUMMARY
+       signal  hold_months  periods  mean_rank_ic  median_rank_ic  hit_rate  ic_ir_annualized  nw_tstat
+g_revenue_yoy            1       84      0.040387        0.043402  0.583333          0.759462  1.980297
+  growth_diag            3       84     -0.014058       -0.002992  0.488095         -0.343724 -0.634916
+v_sales_yield           12       84      0.069629        0.062167  0.595238          1.223703  1.314690
+----------------------------------------------------------------------------------------------------------------
+FULL EXTENDED-SAMPLE IC SUMMARY
+       signal  hold_months  periods  mean_rank_ic  median_rank_ic  hit_rate  ic_ir_annualized  nw_tstat
+g_revenue_yoy            1      152      0.031949        0.030625  0.592105          0.560165  2.003707
+  growth_diag            3      150      0.008165        0.026893  0.573333          0.168882  0.404305
+v_sales_yield           12      141      0.068318        0.047521  0.617021          1.381404  1.871741
+----------------------------------------------------------------------------------------------------------------
+The pre-2021 section is the key replication test.
+It is a backward out-of-time replication, not a perfect future holdout.
+================================================================================================================
+LOCKED HISTORICAL REPLICATION PASSED

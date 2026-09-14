@@ -1,0 +1,37 @@
+{
+  "status": "DESCRIPTIVE_DEPENDENCE_ADJUSTED",
+  "windows": {
+    "24": {
+      "overlapping_windows": 127,
+      "overlapping_outperform_share": 0.968503937007874,
+      "worst_overlapping_spread": -0.061402052327311996,
+      "nonoverlap_window_instances_across_offsets": 67,
+      "nonoverlap_outperform_share": 0.9552238805970149,
+      "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+    },
+    "36": {
+      "overlapping_windows": 115,
+      "overlapping_outperform_share": 1.0,
+      "worst_overlapping_spread": 0.014240882524918286,
+      "nonoverlap_window_instances_across_offsets": 43,
+      "nonoverlap_outperform_share": 1.0,
+      "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+    },
+    "48": {
+      "overlapping_windows": 103,
+      "overlapping_outperform_share": 1.0,
+      "worst_overlapping_spread": 0.04111746969709551,
+      "nonoverlap_window_instances_across_offsets": 31,
+      "nonoverlap_outperform_share": 1.0,
+      "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+    },
+    "60": {
+      "overlapping_windows": 91,
+      "overlapping_outperform_share": 1.0,
+      "worst_overlapping_spread": 0.05964319519063199,
+      "nonoverlap_window_instances_across_offsets": 24,
+      "nonoverlap_outperform_share": 1.0,
+      "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "benchmarks": [
+    {
+      "benchmark": "QQQ",
+      "months": 150,
+      "alpha_engine_cagr": 0.24774378285499932,
+      "benchmark_cagr": 0.1893059102947896,
+      "cagr_spread": 0.058437872560209714,
+      "active_month_hit_rate": 0.5533333333333333,
+      "tracking_error": 0.15407138499355363,
+      "information_ratio": 0.3297540010527285,
+      "active_nw_tstat": 1.24065735880296
+    },
+    {
+      "benchmark": "RSP",
+      "months": 150,
+      "alpha_engine_cagr": 0.24774378285499932,
+      "benchmark_cagr": 0.11071247282297492,
+      "cagr_spread": 0.1370313100320244,
+      "active_month_hit_rate": 0.6,
+      "tracking_error": 0.13420881388472392,
+      "information_ratio": 0.9247540362738611,
+      "active_nw_tstat": 3.6255527232565536
+    },
+    {
+      "benchmark": "SMH",
+      "months": 150,
+      "alpha_engine_cagr": 0.24774378285499932,
+      "benchmark_cagr": 0.30892463644543966,
+      "cagr_spread": -0.06118085359044034,
+      "active_month_hit_rate": 0.4866666666666667,
+      "tracking_error": 0.22661763488513534,
+      "information_ratio": -0.29158020755394265,
+      "active_nw_tstat": -1.083384309515054
+    },
+    {
+      "benchmark": "SPY",
+      "months": 150,
+      "alpha_engine_cagr": 0.24774378285499932,
+      "benchmark_cagr": 0.1388961367317143,
+      "cagr_spread": 0.10884764612328501,
+      "active_month_hit_rate": 0.5866666666666667,
+      "tracking_error": 0.13576939810220004,
+      "information_ratio": 0.7403352745465306,
+      "active_nw_tstat": 2.932672635844991
+    }
+  ]
+}

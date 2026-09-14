@@ -1,0 +1,7 @@
+{
+  "status": "FAIL",
+  "decision_rows": 153,
+  "violations": 1,
+  "max_days_after_period_start": 2,
+  "reason": "At least one decision is credited with a return interval that starts before the decision date. This is direct timing leakage for those rows; quantify its performance impact separately rather than treating the whole historical sample as invalid."
+}

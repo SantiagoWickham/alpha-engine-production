@@ -1,0 +1,17 @@
+{
+  "status": "COMPUTED",
+  "alpha_engine": {
+    "episodes": 26,
+    "worst_drawdown": -0.20468786476134004,
+    "worst_trough": "2022-06-30 00:00:00",
+    "worst_recovery": "2022-11-30 00:00:00",
+    "average_trough_to_recovery_months": 2.0
+  },
+  "spy": {
+    "episodes": 23,
+    "worst_drawdown": -0.23927182389219837,
+    "worst_trough": "2022-09-30 00:00:00",
+    "worst_recovery": "2023-12-29 00:00:00",
+    "average_trough_to_recovery_months": 2.4347826086956523
+  }
+}

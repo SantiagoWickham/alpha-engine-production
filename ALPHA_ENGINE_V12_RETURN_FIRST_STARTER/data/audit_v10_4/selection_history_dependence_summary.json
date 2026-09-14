@@ -1,0 +1,36 @@
+{
+  "status": "DESCRIPTIVE_NOT_CAUSAL",
+  "eligible_universe_observations": 26274,
+  "candidate_observations": 2928,
+  "overall_rates_by_history_state": [
+    {
+      "history_state": "HELD_PREV_MONTH",
+      "observations": 2899,
+      "candidate_rate": 0.7488789237668162,
+      "selected_rate": 0.7488789237668162,
+      "mean_target_weight": 0.049161453520155024
+    },
+    {
+      "history_state": "NEVER_HELD_BEFORE",
+      "observations": 16784,
+      "candidate_rate": 0.007268827454718779,
+      "selected_rate": 0.007268827454718779,
+      "mean_target_weight": 0.00017436175379002377
+    },
+    {
+      "history_state": "RETURNING_NOT_PREV_MONTH",
+      "observations": 6591,
+      "candidate_rate": 0.09634349871036262,
+      "selected_rate": 0.09634349871036262,
+      "mean_target_weight": 0.0009944558594232775
+    }
+  ],
+  "returning_minus_never_candidate_rate_gap_score_decile_controlled": 0.0010545421758066853,
+  "returning_minus_never_target_weight_gap_score_decile_controlled": -0.013444446735570699,
+  "matched_candidate_rate_score_deciles": 10,
+  "matched_target_weight_score_deciles": 3,
+  "candidate_selected_rate_test": "NOT_INFORMATIVE_ALL_CANDIDATES_SELECTED",
+  "v0_7_selection_rate_result_retracted": true,
+  "important_note": "HELD_PREV_MONTH persistence is expected because previous weights are an explicit optimizer input for turnover control. The more relevant old-name comparison is RETURNING_NOT_PREV_MONTH vs NEVER_HELD_BEFORE, because both start with previous weight zero.",
+  "interpretation": "Near-zero candidate-rate and target-weight gaps at similar current score are evidence against an explicit old-name preference, but remain associative because current risk/covariance characteristics can differ. The V0.7 all-ones selection-rate output was non-informative and is explicitly retracted rather than treated as evidence."
+}

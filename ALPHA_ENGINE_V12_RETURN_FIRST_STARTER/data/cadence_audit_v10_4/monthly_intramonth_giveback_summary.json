@@ -1,0 +1,11 @@
+{
+  "intervals": 151,
+  "mean_mfe": 0.047964919333773705,
+  "median_mfe": 0.039910444968641434,
+  "mean_giveback": 0.02819378802847685,
+  "median_giveback": 0.015821346562542297,
+  "p90_giveback": 0.07143245222397841,
+  "share_giveback_gt_10pp": 0.046357615894039736,
+  "share_mfe_gt_20pct": 0.006622516556291391,
+  "interpretation": "Descriptive portfolio-level excursion audit. It does not imply that an optimal take-profit exists or should be added."
+}

@@ -1,0 +1,229 @@
+ticker,sec_match,cik,sec_title,facts_rows,has_assets,has_capex,has_cash,has_current_assets,has_current_liabilities,has_eps_diluted,has_equity,has_long_term_debt,has_net_income,has_operating_cash_flow,has_operating_income,has_revenue,has_shares_outstanding
+MSFT,True,0000789019,MICROSOFT CORP,2595,True,True,True,True,True,True,True,True,True,True,True,True,True
+BRK-B,True,0001067983,BERKSHIRE HATHAWAY INC,1117,True,True,True,False,False,False,True,False,True,True,True,True,True
+PG,True,0000080424,PROCTER & GAMBLE Co,2551,True,True,True,True,True,True,True,True,True,True,True,True,True
+MELI,True,0001099590,MERCADOLIBRE INC,2349,True,True,True,True,True,True,True,True,True,True,True,True,True
+META,True,0001326801,"Meta Platforms, Inc.",1707,True,True,True,True,True,True,True,True,True,True,True,True,False
+AVGO,True,0001730168,Broadcom Inc.,991,True,True,True,True,True,True,True,True,True,True,True,True,True
+AMZN,True,0001018724,AMAZON COM INC,2756,True,True,True,True,True,True,True,True,True,True,True,True,True
+GE,True,0000040545,GENERAL ELECTRIC CO,1822,True,True,True,True,True,True,True,True,True,True,True,True,True
+NKE,True,0000320187,"NIKE, Inc.",1812,True,True,True,True,True,True,True,True,True,True,False,True,True
+DIS,True,0001744489,Walt Disney Co,1040,True,True,True,True,True,True,True,True,True,True,True,True,True
+CAT,True,0000018230,CATERPILLAR INC,2074,True,True,True,True,True,True,True,True,True,True,True,True,True
+MMM,True,0000066740,3M CO,2339,True,True,True,True,True,True,True,True,True,True,True,True,True
+PFE,True,0000078003,PFIZER INC,1665,True,True,True,True,True,True,True,True,True,True,False,True,True
+V,True,0001403161,VISA INC.,1385,True,False,True,True,True,False,True,True,True,True,True,True,True
+AXP,True,0000004962,AMERICAN EXPRESS CO,1624,True,True,True,False,False,True,True,True,True,True,True,True,True
+CAAP,True,0001717393,CORPORACION AMERICA AIRPORTS S.A.,13,False,False,True,False,False,False,False,False,False,False,False,False,True
+ABBV,True,0001551152,AbbVie Inc.,1494,True,True,True,True,True,True,True,True,True,True,True,True,True
+BABA,True,0001577552,Alibaba Group Holding Ltd,175,True,False,True,True,True,True,True,False,True,True,True,True,True
+COIN,True,0001679788,"Coinbase Global, Inc.",704,True,True,True,True,True,True,True,True,True,True,True,True,False
+NFLX,True,0001065280,NETFLIX INC,2716,True,True,True,True,True,True,True,True,True,True,True,True,True
+GLOB,True,0001557860,Globant S.A.,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+BA,True,0000012927,BOEING CO,2165,True,True,True,True,True,True,True,True,True,True,True,True,True
+NU,True,0001691493,Nu Holdings Ltd.,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+CIBR,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+ORCL,True,0001341439,ORACLE CORP,1804,True,True,True,True,True,True,True,True,True,True,True,True,True
+NVDA,True,0001045810,NVIDIA CORP,2140,True,True,True,True,True,True,True,True,True,True,True,True,True
+TSM,True,0001046179,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+ETHA,True,0002000638,iShares Ethereum Trust ETF,73,False,False,False,False,False,False,False,False,True,True,True,False,True
+AMD,True,0000002488,ADVANCED MICRO DEVICES INC,2105,True,True,True,True,True,True,True,True,True,True,True,True,True
+ASML,True,0000937966,ASML HOLDING NV,517,True,True,True,True,True,True,True,True,True,True,True,True,True
+LAR,True,0001440972,Lithium Argentina AG,10,False,False,False,False,False,False,False,False,False,False,False,False,True
+SH,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+GLD,True,0001222333,SPDR GOLD TRUST,794,True,False,True,False,False,False,True,False,True,True,True,False,True
+WMT,True,0000104169,Walmart Inc.,2426,True,True,True,True,True,True,True,True,True,True,True,True,True
+XLF,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+XLI,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+XLE,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+TM,True,0001094517,TOYOTA MOTOR CORP/,66,True,True,True,True,True,True,True,True,True,True,True,True,True
+SONY,True,0000313838,Sony Group Corp,357,True,False,True,True,True,True,True,False,True,True,True,True,True
+EWJ,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+PBR,True,0001119639,PETROBRAS - PETROLEO BRASILEIRO SA,243,True,True,True,True,True,False,True,True,True,True,True,True,True
+BBD,True,0001160330,BANK BRADESCO,40,True,True,True,False,False,False,True,True,True,True,False,False,True
+SID,True,0001049659,NATIONAL STEEL CO,34,True,True,True,True,True,False,True,False,True,True,True,False,True
+VALE,True,0000917851,Vale S.A.,633,True,True,True,True,True,False,True,True,True,True,True,True,True
+ARKK,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+EEM,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+EWZ,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+ARM,True,0001973239,ARM HOLDINGS PLC /UK,369,True,True,True,True,True,True,True,False,True,True,True,True,True
+TXAR,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+PAMP,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+CEPU,True,0001717161,CENTRAL PUERTO S.A.,10,False,False,False,False,False,False,False,False,False,False,False,False,True
+ECOG,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+CVX,True,0000093410,CHEVRON CORP,1626,True,False,True,True,True,True,True,True,True,True,False,True,True
+AAPL,True,0000320193,Apple Inc.,2316,True,True,True,True,True,True,True,True,True,True,True,True,True
+SPCX,True,0001181412,SPACE EXPLORATION TECHNOLOGIES CORP,36,True,True,True,True,True,True,True,True,True,True,True,True,False
+GOOGL,True,0001652044,Alphabet Inc.,1330,True,True,True,True,True,True,True,True,True,True,True,True,False
+MU,True,0000723125,MICRON TECHNOLOGY INC,2220,True,True,True,True,True,True,True,True,True,True,True,True,True
+ACN,True,0001467373,Accenture plc,2504,True,True,True,True,True,True,True,False,True,True,True,True,True
+COST,True,0000909832,COSTCO WHOLESALE CORP /NEW,2393,True,True,True,True,True,True,True,True,True,True,True,True,True
+LLY,True,0000059478,ELI LILLY & Co,1816,True,False,True,True,True,True,True,True,True,True,False,True,True
+TSLA,True,0001318605,"Tesla, Inc.",1803,True,True,True,True,True,True,True,True,True,True,True,True,True
+VIST,True,0001762506,"Vista Energy, S.A.B. de C.V.",5,False,False,False,False,False,False,False,False,False,False,False,False,True
+YPF,True,0000904851,YPF SOCIEDAD ANONIMA,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+BYMA.BA,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+PANW,True,0001327567,Palo Alto Networks Inc,1593,True,True,True,True,True,True,True,True,True,True,True,True,True
+KEEL,True,0001812477,Keel Infrastructure Corp.,99,True,False,True,True,True,True,True,True,True,True,True,True,True
+BPC7D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+BPD7D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+GD30D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AL30D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AL35D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+GD38D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+GD41D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+PNXCD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+PLC4D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+VSCVD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+YM34D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+YMCXD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+IRCPD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+RUCDD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+RUCED,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+TLCMD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+TLCPD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+TLCTD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+DNCAD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+VSCPD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+CS47D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+IRCOD,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+ZZC1D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+YM39D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AO27D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AO28D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+GD29D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AL29D,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+ADBE,True,0000796343,ADOBE INC.,2525,True,True,True,True,True,True,True,True,True,True,True,True,True
+CRM,True,0001108524,"Salesforce, Inc.",2672,True,True,True,True,True,True,True,True,True,True,True,True,True
+INTU,True,0000896878,INTUIT INC.,2500,True,True,True,True,True,True,True,True,True,True,True,True,True
+NOW,True,0001373715,"ServiceNow, Inc.",1697,True,True,True,True,True,True,True,True,True,True,True,True,True
+IBM,True,0000051143,INTERNATIONAL BUSINESS MACHINES CORP,1749,True,True,True,True,True,True,True,True,True,True,False,True,True
+CSCO,True,0000858877,"CISCO SYSTEMS, INC.",2251,True,True,True,True,True,True,True,True,True,True,True,True,True
+QCOM,True,0000804328,QUALCOMM INC/DE,2289,True,False,True,True,True,True,True,True,True,True,True,True,True
+TXN,True,0000097476,TEXAS INSTRUMENTS INC,2160,True,True,True,True,True,True,True,True,True,True,True,True,True
+ADI,True,0000006281,ANALOG DEVICES INC,2058,True,True,True,True,True,True,True,True,True,True,True,True,True
+ANET,True,0001596532,"Arista Networks, Inc.",1673,True,True,True,True,True,True,True,True,True,True,True,True,True
+PLTR,True,0001321655,Palantir Technologies Inc.,727,True,True,True,True,True,True,True,True,True,True,True,True,False
+CRWD,True,0001535527,"CrowdStrike Holdings, Inc.",787,True,True,True,True,True,True,True,True,True,True,True,False,True
+FTNT,True,0001262039,"Fortinet, Inc.",1705,True,True,True,True,True,True,True,True,True,True,True,True,True
+SNPS,True,0000883241,SYNOPSYS INC,1837,True,True,True,True,True,True,True,True,True,True,True,True,True
+CDNS,True,0000813672,CADENCE DESIGN SYSTEMS INC,1950,True,True,True,True,True,True,True,True,True,True,True,True,True
+ROP,True,0000882835,ROPER TECHNOLOGIES INC,2243,True,False,True,True,True,True,True,True,True,True,True,True,True
+ADSK,True,0000769397,"Autodesk, Inc.",2523,True,True,True,True,True,True,True,True,True,True,True,True,True
+TEAM,True,0001650372,Atlassian Corp,548,True,True,True,True,True,True,True,True,True,True,True,True,False
+DDOG,True,0001561550,"Datadog, Inc.",873,True,True,True,True,True,True,True,False,True,True,True,True,False
+MDB,True,0001441816,"MongoDB, Inc.",1097,True,True,True,True,True,True,True,True,True,True,True,True,True
+INTC,True,0000050863,INTEL CORP,1992,True,True,True,True,True,True,True,True,True,True,True,True,True
+LRCX,True,0000707549,LAM RESEARCH CORP,1837,True,False,True,True,True,True,True,True,True,True,True,True,True
+KLAC,True,0000319201,KLA CORP,2034,True,True,True,True,True,True,True,True,True,True,True,True,True
+AMAT,True,0000006951,APPLIED MATERIALS INC /DE,2262,True,True,True,True,True,True,True,True,True,True,True,True,True
+MRVL,True,0001835632,"Marvell Technology, Inc.",781,True,True,True,True,True,True,True,True,True,True,True,True,True
+MCHP,True,0000827054,MICROCHIP TECHNOLOGY INC,2241,True,True,True,True,True,True,True,True,True,True,True,True,True
+NXPI,True,0001413447,NXP Semiconductors N.V.,978,True,True,True,True,True,True,True,True,True,True,True,True,True
+ON,True,0001097864,ON SEMICONDUCTOR CORP,2128,True,True,True,True,True,True,True,True,True,True,True,True,True
+MPWR,True,0001280452,"MONOLITHIC POWER SYSTEMS, INC.",1985,True,True,True,True,True,True,True,False,True,True,True,True,True
+JPM,True,0000019617,JPMORGAN CHASE & CO,1292,True,False,True,False,False,True,True,True,True,True,False,True,True
+BAC,True,0000070858,BANK OF AMERICA CORP /DE/,1749,True,False,True,False,False,True,True,True,True,True,False,True,True
+WFC,True,0000072971,WELLS FARGO & COMPANY/MN,1249,True,False,True,False,False,True,True,True,True,True,False,True,True
+C,True,0000831001,CITIGROUP INC,1830,True,True,True,False,False,True,True,True,True,True,False,True,True
+GS,True,0000886982,GOLDMAN SACHS GROUP INC,1378,True,True,True,False,False,True,True,True,True,True,False,False,True
+MS,True,0000895421,MORGAN STANLEY,1455,True,False,True,False,False,True,True,True,True,True,False,True,True
+BLK,True,0002012383,"BlackRock, Inc.",212,True,True,True,False,False,True,True,True,True,True,True,True,True
+SCHW,True,0000316709,SCHWAB CHARLES CORP,1996,True,True,True,False,False,True,True,True,True,True,False,True,True
+MA,True,0001141391,Mastercard Inc,1870,True,True,True,True,True,True,True,True,True,True,True,True,True
+COF,True,0000927628,CAPITAL ONE FINANCIAL CORP,1555,True,True,True,False,False,True,True,True,True,True,False,True,True
+BNY,True,0001390777,Bank of New York Mellon Corp,1477,True,True,True,False,False,True,True,True,True,True,False,True,True
+PNC,True,0000713676,"PNC FINANCIAL SERVICES GROUP, INC.",900,True,False,True,False,False,True,True,True,True,True,False,True,True
+USB,True,0000036104,US BANCORP \DE\,1195,True,False,True,False,False,True,True,True,True,True,False,True,True
+SPGI,True,0000064040,S&P Global Inc.,2205,True,True,True,True,True,True,True,True,True,True,True,True,True
+MCO,True,0001059556,MOODYS CORP /DE/,2254,True,True,True,True,True,True,True,True,True,True,True,True,True
+UNH,True,0000731766,UNITEDHEALTH GROUP INC,2301,True,True,True,True,True,True,True,True,True,True,True,True,True
+JNJ,True,0000200406,JOHNSON & JOHNSON,1813,True,True,True,True,True,True,True,True,True,True,True,True,True
+MRK,True,0000310158,"Merck & Co., Inc.",1576,True,True,True,True,True,True,True,True,True,True,False,True,True
+AMGN,True,0000318154,AMGEN INC,2403,True,True,True,True,True,True,True,True,True,True,True,True,True
+GILD,True,0000882095,"GILEAD SCIENCES, INC.",2041,True,True,True,True,True,True,True,True,True,True,True,True,True
+REGN,True,0000872589,"REGENERON PHARMACEUTICALS, INC.",2076,True,False,True,True,True,True,True,True,True,True,True,True,True
+VRTX,True,0000875320,VERTEX PHARMACEUTICALS INC / MA,2197,True,True,True,True,True,True,True,True,True,True,True,True,True
+TMO,True,0000097745,THERMO FISHER SCIENTIFIC INC.,2298,True,True,True,True,True,True,True,True,True,True,True,True,True
+DHR,True,0000313616,DANAHER CORP /DE/,2470,True,True,True,True,True,True,True,True,True,True,True,True,True
+ISRG,True,0001035267,INTUITIVE SURGICAL INC,2011,True,True,True,True,True,True,True,False,True,True,True,True,True
+MDT,True,0001613103,Medtronic plc,1429,True,True,True,True,True,True,True,True,True,True,True,True,True
+BSX,True,0000885725,BOSTON SCIENTIFIC CORP,1734,True,True,True,True,True,True,True,True,True,True,True,True,True
+SYK,True,0000310764,STRYKER CORP,2250,True,True,True,True,True,True,True,True,True,True,True,True,True
+ZTS,True,0001555280,Zoetis Inc.,1522,True,True,True,True,True,True,True,True,True,True,False,True,True
+BMY,True,0000014272,BRISTOL MYERS SQUIBB CO,2119,True,True,True,True,True,True,True,True,True,True,True,True,True
+HD,True,0000354950,"HOME DEPOT, INC.",2014,True,False,True,True,True,True,True,True,True,True,True,True,True
+LOW,True,0000060667,LOWES COMPANIES INC,2013,True,True,True,True,True,True,True,True,True,True,True,True,True
+MCD,True,0000063908,MCDONALDS CORP,2750,True,True,True,True,True,True,True,True,True,True,True,True,True
+SBUX,True,0000829224,STARBUCKS CORP,2341,True,True,True,True,True,True,True,True,True,True,True,True,True
+BKNG,True,0001075531,Booking Holdings Inc.,1785,True,True,True,True,True,True,True,True,True,True,True,True,True
+ABNB,True,0001559720,"Airbnb, Inc.",607,True,True,True,True,True,False,True,True,True,True,True,True,False
+TJX,True,0000109198,TJX COMPANIES INC /DE/,2169,True,True,True,True,True,True,True,True,True,True,True,True,True
+ORLY,True,0000898173,O REILLY AUTOMOTIVE INC,2441,True,True,True,True,True,True,True,True,True,True,True,True,True
+AZO,True,0000866787,AUTOZONE INC,2277,True,True,True,True,True,True,True,True,True,True,True,True,True
+MAR,True,0001048286,MARRIOTT INTERNATIONAL INC /MD/,2544,True,True,True,True,True,True,True,True,True,True,True,True,True
+CMG,True,0001058090,CHIPOTLE MEXICAN GRILL INC,2217,True,True,True,True,True,True,True,True,True,True,True,True,True
+RCL,True,0000884887,ROYAL CARIBBEAN CRUISES LTD,2277,True,True,True,True,True,True,True,True,True,True,True,True,True
+KO,True,0000021344,COCA COLA CO,2168,True,True,True,True,True,True,True,True,True,True,True,True,True
+PEP,True,0000077476,PEPSICO INC,1899,True,False,True,True,True,True,True,True,True,True,True,True,True
+PM,True,0001413329,Philip Morris International Inc.,2140,True,True,True,True,True,True,True,True,True,True,True,True,True
+MO,True,0000764180,"ALTRIA GROUP, INC.",2035,True,True,True,True,True,True,True,True,True,True,True,True,True
+MDLZ,True,0001103982,"Mondelez International, Inc.",2160,True,True,True,True,True,True,True,True,True,True,True,True,True
+CL,True,0000021665,COLGATE PALMOLIVE CO,2084,True,True,True,True,True,True,True,True,True,True,True,True,True
+KMB,True,0000055785,KIMBERLY CLARK CORP,1926,True,False,True,True,True,True,True,True,True,True,True,True,True
+TGT,True,0000027419,TARGET CORP,2060,True,True,True,True,True,True,True,True,True,True,True,True,True
+KR,True,0000056873,KROGER CO,2193,True,False,True,True,True,True,True,True,True,True,True,True,True
+TMUS,True,0001283699,"T-Mobile US, Inc.",2435,True,True,True,True,True,True,True,True,True,True,True,True,True
+VZ,True,0000732712,VERIZON COMMUNICATIONS INC,2482,True,False,True,True,True,True,True,True,True,True,True,True,True
+T,True,0000732717,AT&T INC.,2217,True,True,True,True,True,True,True,True,True,True,True,True,True
+CMCSA,True,0001166691,COMCAST CORP,2146,True,True,True,True,True,True,True,False,True,True,True,True,True
+CHTR,True,0001091667,"CHARTER COMMUNICATIONS, INC. /MO/",2000,True,True,True,True,True,True,True,True,True,True,True,True,True
+EA,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+TTWO,True,0000946581,TAKE TWO INTERACTIVE SOFTWARE INC,2096,True,True,True,True,True,True,True,True,True,True,True,True,True
+HON,True,0000773840,HONEYWELL INTERNATIONAL INC,2091,True,True,True,True,True,True,True,True,True,True,True,True,True
+RTX,True,0000101829,RTX Corp,1908,True,True,True,True,True,True,True,True,True,True,True,True,True
+LMT,True,0000936468,LOCKHEED MARTIN CORP,2136,True,True,True,True,True,True,True,True,True,True,True,True,True
+NOC,True,0001133421,NORTHROP GRUMMAN CORP /DE/,2515,True,True,True,True,True,True,True,True,True,True,True,True,True
+GD,True,0000040533,GENERAL DYNAMICS CORP,1987,True,True,True,True,True,True,True,True,True,True,True,True,True
+DE,True,0000315189,DEERE & CO,2270,True,True,True,False,False,True,True,True,True,True,True,True,True
+ETN,True,0001551182,Eaton Corp plc,1549,True,True,True,True,True,True,True,True,True,True,True,True,True
+PH,True,0000076334,Parker-Hannifin Corp,2097,True,True,True,True,True,True,True,True,True,True,True,True,True
+EMR,True,0000032604,EMERSON ELECTRIC CO,2024,True,True,True,True,True,True,True,True,True,True,False,True,True
+ITW,True,0000049826,ILLINOIS TOOL WORKS INC,2025,True,True,True,True,True,True,True,True,True,True,True,True,True
+WM,True,0000823768,WASTE MANAGEMENT INC,2026,True,True,True,True,True,True,True,False,True,True,True,True,True
+UNP,True,0000100885,UNION PACIFIC CORP,2265,True,True,True,True,True,True,True,True,True,True,True,True,True
+UPS,True,0001090727,UNITED PARCEL SERVICE INC,2182,True,True,True,True,True,True,True,True,True,True,True,True,True
+FDX,True,0001048911,FEDEX CORP,2159,True,False,True,True,True,True,True,True,True,True,True,True,True
+UBER,True,0001543151,"Uber Technologies, Inc",836,True,True,True,True,True,True,True,True,True,True,True,True,True
+XOM,True,0002115436,ExxonMobil Holdings Corp,27,True,True,True,True,True,True,True,False,True,True,False,True,True
+COP,True,0001163165,CONOCOPHILLIPS,1690,True,False,True,True,True,True,True,True,True,True,False,True,True
+EOG,True,0000821189,EOG RESOURCES INC,2130,True,False,True,True,True,True,True,True,True,True,True,True,True
+SLB,True,0000087347,SLB LIMITED/NV,1746,True,True,True,True,True,True,True,True,True,True,True,True,True
+OXY,True,0000797468,OCCIDENTAL PETROLEUM CORP /DE/,1786,True,True,True,True,True,True,True,True,True,True,False,True,True
+MPC,True,0001510295,Marathon Petroleum Corp,1941,True,True,True,True,True,True,True,True,True,True,True,True,True
+VLO,True,0001035002,VALERO ENERGY CORP/TX,2036,True,True,True,True,True,True,True,True,True,True,True,False,True
+PSX,True,0001534701,Phillips 66,1361,True,False,True,True,True,True,True,True,True,True,False,True,True
+KMI,True,0001506307,"KINDER MORGAN, INC.",1680,True,True,True,True,True,True,True,True,True,True,True,True,True
+WMB,True,0000107263,"WILLIAMS COMPANIES, INC.",2147,True,True,True,True,True,True,True,False,True,True,True,True,True
+LIN,True,0001707925,LINDE PLC,1031,True,True,True,True,True,True,True,True,True,True,True,True,True
+APD,True,0000002969,"Air Products & Chemicals, Inc.",2180,True,True,True,True,True,True,True,True,True,True,True,True,True
+SHW,True,0000089800,SHERWIN WILLIAMS CO,2375,True,True,True,True,True,True,True,True,True,True,True,True,True
+FCX,True,0000831259,FREEPORT-MCMORAN INC,1846,True,False,True,True,True,True,True,True,True,True,True,True,True
+NEM,True,0001164727,NEWMONT Corp /DE/,1929,True,False,True,True,True,True,True,True,True,True,False,True,True
+NUE,True,0000073309,NUCOR CORP,1969,True,True,True,True,True,True,True,True,True,True,False,True,True
+STLD,True,0001022671,STEEL DYNAMICS INC,2110,True,True,True,True,True,True,True,True,True,True,True,True,True
+DOW,True,0001751788,DOW INC.,755,True,False,True,True,True,True,True,True,True,True,False,True,True
+SAP,True,0001000184,SAP SE,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+SHOP,True,0001594805,SHOPIFY INC.,403,True,True,True,True,True,True,True,False,True,True,True,True,False
+SE,False,,,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+JD,True,0001549802,"JD.com, Inc.",123,True,True,True,True,True,True,True,True,True,True,True,True,False
+BIDU,True,0001329099,"Baidu, Inc.",214,True,True,True,True,True,True,True,True,True,True,True,True,False
+NVO,True,0000353278,NOVO NORDISK A S,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+AZN,True,0000901832,ASTRAZENECA PLC,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+SNY,True,0001121404,Sanofi,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+BP,True,0000313807,BP PLC,0,False,False,False,False,False,False,False,False,False,False,False,False,False
+SHEL,True,0001306965,Shell plc,6,False,False,False,False,False,False,False,False,False,False,False,False,True
+RIO,True,0000863064,RIO TINTO PLC,10,False,False,False,False,False,False,False,False,False,False,False,False,True
+BHP,True,0000811809,BHP Group Ltd,6,False,False,False,False,False,False,False,False,False,False,False,False,True
+UL,True,0000217410,UNILEVER PLC,9,False,False,False,False,False,False,False,False,False,False,False,False,True
+DEO,True,0000835403,DIAGEO PLC,9,False,False,False,False,False,False,False,False,False,False,False,False,True

@@ -1,0 +1,29 @@
+{
+  "model_research_status": "FROZEN",
+  "capital_test_status": "READY_FOR_SMALL_CAPITAL_TEST",
+  "gates": {
+    "positive_cagr_spread_vs_spy": true,
+    "ff5_mom_alpha_positive_significant": true,
+    "rolling_3y_consistency": true,
+    "rolling_5y_consistency": true,
+    "drawdown_not_materially_worse_than_spy": true
+  },
+  "core_metrics": {
+    "cagr": 0.24841884567827588,
+    "spy_cagr": 0.13828509610056416,
+    "cagr_spread_vs_spy": 0.11013374957771171,
+    "ann_vol": 0.19314944911952409,
+    "spy_vol": 0.1449159480023751,
+    "max_drawdown": -0.20468786476133982,
+    "spy_max_drawdown": -0.2392718238921987,
+    "ff5_mom_alpha_ann": 0.10633942828329629,
+    "ff5_mom_alpha_hac_t": 3.193269850854426,
+    "rolling_3y_outperform_share": 1.0,
+    "rolling_5y_outperform_share": 1.0
+  },
+  "limitations": [
+    "Historical results do not guarantee future performance.",
+    "Full survivorship-free validation remains unavailable because public/free delisted-price coverage was insufficient.",
+    "The profiles are research capital-allocation sleeves; production execution still requires cash/ledger/CEDEAR/slippage integration."
+  ]
+}

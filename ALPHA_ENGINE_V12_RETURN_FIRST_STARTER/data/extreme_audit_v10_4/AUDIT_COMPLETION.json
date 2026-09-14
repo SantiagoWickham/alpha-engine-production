@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_WITH_EXPLICIT_UNVERIFIED_ITEMS",
+  "audit_version": "V0.8.1_EXTREME_AUDIT",
+  "model_changed": false,
+  "harness_error_count": 0,
+  "generated_at_utc": "2026-09-07T22:50:29.232444+00:00",
+  "report": "data/extreme_audit_v10_4/EXTREME_AUDIT_REPORT.md",
+  "evidence_matrix": "data/extreme_audit_v10_4/EVIDENCE_MATRIX.csv",
+  "go_no_go": "data/extreme_audit_v10_4/GO_NO_GO.csv",
+  "final_verdict": "data/extreme_audit_v10_4/FINAL_VERDICT.json",
+  "harness_errors": "data/extreme_audit_v10_4/AUDIT_HARNESS_ERRORS.json",
+  "note": "COMPLETE means the audit harness finished. It does NOT mean every scientific question passed; unresolved/missing-data/harness-error items remain explicit in the report."
+}

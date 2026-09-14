@@ -1,0 +1,56 @@
+{
+  "audit_version": "CADENCE_RC1_3",
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "preregistration_sha256": "d08ae2d0228faf348d56189204d94b39ae5b86d347ffbf3171b7e6152bc2054a",
+  "common_start": "2014-02-03 00:00:00",
+  "common_end": "2026-08-31 00:00:00",
+  "universe_tickers": 181,
+  "crosscheck": {
+    "status": "DIAGNOSTIC_ONLY",
+    "matched_periods": 150,
+    "mean_abs_error_bps": 8.645417113835146,
+    "p95_abs_error_bps": 17.465786734661386,
+    "max_abs_error_bps": 514.1346174136961,
+    "warning": "Cadence audit rebuilds PIT states from SEC facts; crosscheck is a calibration diagnostic, not a selection metric."
+  },
+  "giveback_summary": {
+    "intervals": 151,
+    "mean_mfe": 0.047964919333773705,
+    "median_mfe": 0.039910444968641434,
+    "mean_giveback": 0.02819378802847685,
+    "median_giveback": 0.015821346562542297,
+    "p90_giveback": 0.07143245222397841,
+    "share_giveback_gt_10pp": 0.046357615894039736,
+    "share_mfe_gt_20pct": 0.006622516556291391,
+    "interpretation": "Descriptive portfolio-level excursion audit. It does not imply that an optimal take-profit exists or should be added."
+  },
+  "decision": {
+    "status": "PRE_REGISTERED_RULE_APPLIED",
+    "selected_cadence": "MONTHLY",
+    "reason": "No more-frequent cadence passed every preregistered replacement gate.",
+    "candidate_gates": {
+      "WEEKLY": {
+        "passes": false,
+        "cagr_advantage_vs_monthly": -0.03464321414761695,
+        "mdd_improvement_vs_monthly": 0.0015532347862111662,
+        "performance_gate": false,
+        "pre_post_active_gate": true,
+        "100bps_active_gate": false,
+        "remove_best_year_gate": true,
+        "ff5_mom_alpha_positive_gate": true,
+        "coverage_gate": true
+      },
+      "DAILY": {
+        "passes": false,
+        "cagr_advantage_vs_monthly": -0.08847366745516116,
+        "mdd_improvement_vs_monthly": -0.03188615966449848,
+        "performance_gate": false,
+        "pre_post_active_gate": false,
+        "100bps_active_gate": false,
+        "remove_best_year_gate": false,
+        "ff5_mom_alpha_positive_gate": true,
+        "coverage_gate": true
+      }
+    }
+  }
+}

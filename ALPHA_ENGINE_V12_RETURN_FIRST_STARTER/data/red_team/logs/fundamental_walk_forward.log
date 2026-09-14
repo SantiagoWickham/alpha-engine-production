@@ -1,0 +1,39 @@
+============================================================================================================
+MMM ADVISOR V0.8.2 - FUNDAMENTAL WALK-FORWARD VALIDATION
+============================================================================================================
+Quality | Growth | Value + 14 transparent component features
+Horizons: 21D | 63D | 126D | 252D
+Diagnostic only. No production weights are changed.
+------------------------------------------------------------------------------------------------------------
+Merged validation rows:        11,635
+Assets represented:            181
+Rebalance dates:               65
+------------------------------------------------------------------------------------------------------------
+PILLAR SUMMARY
+      signal signal_type  horizon_days  periods  mean_rank_ic  median_rank_ic  rank_ic_hit_rate  ic_ir_annualized  nw_tstat_mean_ic  bootstrap_ci_low  bootstrap_ci_high  mean_top_minus_bottom  top_bottom_hit_rate  mean_top_minus_universe  quintile_monotonic_rate diagnostic_status
+ growth_diag      pillar            21       63      0.027417        0.057859          0.587302          0.526806          1.177044         -0.020258           0.077109               0.007919             0.603175                 0.005672                 0.031746         PROMISING
+  value_diag      pillar            21       63      0.015878        0.014294          0.507937          0.282728          0.774372         -0.021607           0.052149              -0.003434             0.492063                -0.000341                 0.079365      INCONCLUSIVE
+quality_diag      pillar            21       63      0.010691        0.013076          0.539683          0.263454          0.712438         -0.019821           0.041378              -0.000789             0.492063                 0.002045                 0.015873      INCONCLUSIVE
+ growth_diag      pillar            63       61      0.033698        0.074906          0.655738          0.606754          0.831307         -0.053466           0.117067               0.020389             0.721311                 0.016460                 0.081967         PROMISING
+  value_diag      pillar            63       61      0.019831        0.018093          0.524590          0.387675          0.702743         -0.036514           0.071141              -0.008039             0.393443                -0.000342                 0.032787      INCONCLUSIVE
+quality_diag      pillar            63       61     -0.009851       -0.001585          0.491803         -0.260707         -0.483633         -0.052833           0.027969              -0.007742             0.491803                 0.002636                 0.016393      INCONCLUSIVE
+  value_diag      pillar           126       58      0.035563        0.051567          0.620690          0.868284          1.221153         -0.027481           0.091899              -0.005277             0.448276                 0.002673                 0.000000         PROMISING
+ growth_diag      pillar           126       58      0.022887        0.033003          0.568966          0.381430          0.451709         -0.083226           0.121981               0.021833             0.637931                 0.024367                 0.086207         PROMISING
+quality_diag      pillar           126       58     -0.013910       -0.002976          0.500000         -0.382120         -0.488467         -0.076082           0.038769              -0.013168             0.448276                 0.007632                 0.000000      INCONCLUSIVE
+  value_diag      pillar           252       52      0.035658        0.054600          0.692308          1.034114          1.312061         -0.030795           0.091111               0.019502             0.557692                 0.010605                 0.000000         PROMISING
+ growth_diag      pillar           252       52     -0.013841       -0.027647          0.442308         -0.222969         -0.259591         -0.130505           0.102729               0.009440             0.557692                 0.038764                 0.076923     WEAK_NEGATIVE
+quality_diag      pillar           252       52     -0.045157       -0.006781          0.461538         -1.125792         -1.274690         -0.126389           0.032421              -0.057450             0.384615                -0.001276                 0.000000      INCONCLUSIVE
+------------------------------------------------------------------------------------------------------------
+BEST COMPONENT FEATURE BY HORIZON
+ horizon_days        signal  mean_rank_ic  rank_ic_hit_rate  nw_tstat_mean_ic  bootstrap_ci_low  bootstrap_ci_high  mean_top_minus_bottom diagnostic_status
+           21 g_revenue_yoy      0.034552          0.587302          1.513209         -0.010579           0.084133               0.011552         PROMISING
+           63 v_sales_yield      0.034620          0.540984          1.050078         -0.029226           0.101636               0.003639      INCONCLUSIVE
+          126 v_sales_yield      0.058232          0.620690          1.587063         -0.010968           0.138528               0.019125         PROMISING
+          252 v_sales_yield      0.075368          0.692308          2.364957          0.011088           0.152161               0.062541   ROBUST_POSITIVE
+------------------------------------------------------------------------------------------------------------
+IMPORTANT:
+A positive point estimate is not enough for PASS.
+ROBUST_POSITIVE requires NW t >= 1.96 + bootstrap CI entirely above zero + hit rate >=55%.
+No Alpha weights are changed by this script.
+============================================================================================================
+FUNDAMENTAL WALK-FORWARD PASSED

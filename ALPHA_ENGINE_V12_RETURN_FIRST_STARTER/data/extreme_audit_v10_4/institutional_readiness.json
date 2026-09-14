@@ -1,0 +1,43 @@
+{
+  "quant_recruiter": {
+    "technically_impressive": [
+      "PIT fundamental pipeline",
+      "frozen model governance",
+      "forensic portfolio reconstruction",
+      "optimizer/execution separation",
+      "red-team/false-discovery work",
+      "live cloud/ledger architecture"
+    ],
+    "easy_to_replicate": [
+      "basic factor ranking",
+      "standard performance ratios",
+      "simple FastAPI dashboard"
+    ],
+    "shows_judgment": [
+      "refusing to convert exact replay FAIL into PASS",
+      "separating backtest/PAPER/REAL",
+      "documenting survivorship as unresolved",
+      "pre-registering forward hash"
+    ],
+    "concerns": [
+      "survivorship unresolved",
+      "true OOS history not certified",
+      "local capacity unproven",
+      "research trial history incomplete"
+    ]
+  },
+  "institution_types": {
+    "hedge_fund": "Will focus on independent alpha, false discovery, capacity, execution and reproducibility.",
+    "family_office": "Will focus on drawdown, transparency, live evidence and operational simplicity.",
+    "ALyC": "Will focus on CEDEAR execution, suitability, compliance, liquidity, audit trail and client communication.",
+    "fintech": "Will focus on product reliability, explainability, scalability, data licensing and user safety.",
+    "bank": "Will require governance, model risk management, compliance, reproducibility and vendor/data controls.",
+    "asset_manager": "Will focus on benchmark-relative performance, capacity, factor exposures, turnover, drawdowns and team/process repeatability."
+  },
+  "economic_value": {
+    "today": "Software/research IP can have professional and development value, but a backtest alone is not an institutional track record and does not justify an arbitrary strategy valuation.",
+    "12_months": "A clean forward year adds evidence about implementation and signal persistence but remains statistically short.",
+    "3_years": "A frozen, net-of-cost three-year forward record can materially change credibility, especially with benchmark-relative and factor-adjusted evidence.",
+    "5_years": "Five years of independently auditable live/forward history across regimes can support far stronger commercial, AUM and licensing discussions, subject to capacity and regulation."
+  }
+}

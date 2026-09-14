@@ -1,0 +1,15 @@
+{
+  "strategy_vol": 0.19251051133418814,
+  "benchmark_vol": 0.1444511987990304,
+  "vol_diff": 0.048059312535157744,
+  "strategy_downside_dev": 0.10315604378793548,
+  "benchmark_downside_dev": 0.08799603635176567,
+  "strategy_mdd": -0.20468786476133982,
+  "benchmark_mdd": -0.2392718238921987,
+  "strategy_recovery_months": 5,
+  "benchmark_recovery_months": 15,
+  "up_capture": 1.193754718388152,
+  "down_capture": 0.6239689458454432,
+  "up_months": 106,
+  "down_months": 46
+}

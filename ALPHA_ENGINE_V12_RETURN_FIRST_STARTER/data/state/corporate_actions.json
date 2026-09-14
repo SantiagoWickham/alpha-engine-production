@@ -1,0 +1,108 @@
+{
+  "actions": [
+    {
+      "ticker": "AVGO",
+      "action_type": "SPLIT",
+      "ex_date": "2024-07-15",
+      "ratio": 10.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:20.985035+00:00",
+      "raw": {
+        "value": 10.0
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "action_type": "SPLIT",
+      "ex_date": "2014-04-03",
+      "ratio": 1.998,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:21.845595+00:00",
+      "raw": {
+        "value": 1.998
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "action_type": "SPLIT",
+      "ex_date": "2022-07-18",
+      "ratio": 20.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:21.845595+00:00",
+      "raw": {
+        "value": 20.0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2000-06-27",
+      "ratio": 2.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 2.0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2001-09-12",
+      "ratio": 2.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 2.0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2006-04-07",
+      "ratio": 2.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 2.0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2007-09-11",
+      "ratio": 1.5,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 1.5
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2021-07-20",
+      "ratio": 4.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 4.0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "action_type": "SPLIT",
+      "ex_date": "2024-06-10",
+      "ratio": 10.0,
+      "source": "YAHOO_SPLITS",
+      "observed_at": "2026-09-05T18:11:22.438652+00:00",
+      "raw": {
+        "value": 10.0
+      }
+    }
+  ],
+  "last_checked": {
+    "AVGO": "2026-09-06T23:49:22.470711+00:00",
+    "GOOGL": "2026-09-06T23:49:22.952663+00:00",
+    "NVDA": "2026-09-06T23:49:23.421431+00:00"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PENDING_DATA",
+  "underlying_capacity_proxy": "UNAVAILABLE_NO_VOLUME",
+  "cedear_capacity": "UNVERIFIED",
+  "missing_data": [
+    "historical underlying volume",
+    "historical BYMA CEDEAR price/volume/order-book spreads",
+    "broker participation/impact assumptions"
+  ]
+}

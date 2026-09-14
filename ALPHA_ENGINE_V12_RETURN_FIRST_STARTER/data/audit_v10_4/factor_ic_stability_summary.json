@@ -1,0 +1,30 @@
+{
+  "status": "ASSOCIATION_ONLY_NOT_CAUSAL",
+  "full_alpha_months": 153,
+  "full_alpha_mean_rank_ic": 0.04028027104475704,
+  "full_alpha_median_rank_ic": 0.0528823888128653,
+  "full_alpha_positive_month_share": 0.5816993464052288,
+  "full_alpha_years": 13,
+  "full_alpha_positive_year_share": 0.8461538461538461,
+  "full_alpha_negative_years": [
+    2019,
+    2023
+  ],
+  "best_full_alpha_year": {
+    "year": 2020,
+    "factor": "FULL_ALPHA",
+    "months": 12,
+    "mean_rank_ic": 0.11444201065591036,
+    "median_rank_ic": 0.0996042691109707,
+    "positive_ic_share": 0.75
+  },
+  "worst_full_alpha_year": {
+    "year": 2019,
+    "factor": "FULL_ALPHA",
+    "months": 12,
+    "mean_rank_ic": -0.02420738134590439,
+    "median_rank_ic": -0.061761232662386735,
+    "positive_ic_share": 0.3333333333333333
+  },
+  "interpretation": "A stable positive IC supports cross-sectional ordering ability; it does not prove causal alpha or guarantee portfolio outperformance."
+}

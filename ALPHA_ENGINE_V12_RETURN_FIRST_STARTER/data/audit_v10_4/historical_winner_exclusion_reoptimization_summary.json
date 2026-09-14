@@ -1,0 +1,74 @@
+{
+  "status": "EX_POST_FRAGILITY_STRESS_NOT_A_MODEL",
+  "baseline_cagr": 0.2512568229299954,
+  "top_contributors_order": [
+    "UNH",
+    "NFLX",
+    "MAR",
+    "NVDA",
+    "PBR",
+    "KLAC",
+    "CMG",
+    "TJX",
+    "AMZN",
+    "SBUX"
+  ],
+  "scenarios": [
+    {
+      "scenario": "BASELINE_RECONSTRUCTED",
+      "excluded_count": 0,
+      "excluded_tickers": "",
+      "valid_months": 151,
+      "cagr": 0.2512568229299954,
+      "annualized_volatility": 0.19338828188967008,
+      "max_drawdown": -0.20462345021844597,
+      "average_turnover": null,
+      "cagr_delta_vs_baseline": 0.0
+    },
+    {
+      "scenario": "EXCLUDE_TOP_1_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+      "excluded_count": 1,
+      "excluded_tickers": "UNH",
+      "valid_months": 151,
+      "cagr": 0.24892457477483743,
+      "annualized_volatility": 0.19684282066985695,
+      "max_drawdown": -0.20193897077878153,
+      "average_turnover": 0.16080112757662454,
+      "cagr_delta_vs_baseline": -0.002332248155157979
+    },
+    {
+      "scenario": "EXCLUDE_TOP_3_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+      "excluded_count": 3,
+      "excluded_tickers": "UNH;NFLX;MAR",
+      "valid_months": 151,
+      "cagr": 0.23445455880413668,
+      "annualized_volatility": 0.1904698121674086,
+      "max_drawdown": -0.2230503406394957,
+      "average_turnover": 0.17349952731706847,
+      "cagr_delta_vs_baseline": -0.016802264125858724
+    },
+    {
+      "scenario": "EXCLUDE_TOP_5_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+      "excluded_count": 5,
+      "excluded_tickers": "UNH;NFLX;MAR;NVDA;PBR",
+      "valid_months": 151,
+      "cagr": 0.2252417331098453,
+      "annualized_volatility": 0.18216164011330388,
+      "max_drawdown": -0.1920841877094478,
+      "average_turnover": 0.1798973667071416,
+      "cagr_delta_vs_baseline": -0.026015089820150106
+    },
+    {
+      "scenario": "EXCLUDE_TOP_10_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+      "excluded_count": 10,
+      "excluded_tickers": "UNH;NFLX;MAR;NVDA;PBR;KLAC;CMG;TJX;AMZN;SBUX",
+      "valid_months": 151,
+      "cagr": 0.19997823663649683,
+      "annualized_volatility": 0.19137974604787145,
+      "max_drawdown": -0.25888478917588387,
+      "average_turnover": 0.19287766027492484,
+      "cagr_delta_vs_baseline": -0.051278586293498574
+    }
+  ],
+  "warning": "Historical winners are identified with full-sample hindsight only to stress dependence. This is not a trading rule and must never be used to retune V10.4. Re-optimization uses the same frozen score, candidate fraction, risk inputs, optimizer and costs on the remaining universe."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "CURRENT_STATE_DIAGNOSTIC",
+  "portfolio_value_ars": 492250.0,
+  "cash_ars": 0.0,
+  "cash_pct": 0.13921787709497208,
+  "discrete_holdings": 13,
+  "discrete_turnover_ars": 763770.0,
+  "solver": "SCIPY_MILP_LEXICOGRAPHIC",
+  "objective_primary": 0.2294081225640572,
+  "note": "The current integer/CEDEAR implementation is audited separately from the continuous historical research backtest. Historical alpha loss from nominal rounding cannot be claimed without a historical discrete replay."
+}

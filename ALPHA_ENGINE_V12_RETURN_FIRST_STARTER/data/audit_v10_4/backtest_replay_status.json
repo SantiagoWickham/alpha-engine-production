@@ -1,0 +1,56 @@
+{
+  "status": "FAIL",
+  "exact_replay": false,
+  "secondary_assessment": "NEAR_REPLAY_MAX_ERROR_LE_10BPS",
+  "matched_periods": 152,
+  "tolerance": 1e-10,
+  "net_return_error": {
+    "matched": 152,
+    "mean_abs": 7.710751336282224e-05,
+    "median_abs": 3.2165520039230226e-05,
+    "p95_abs": 0.00034520176283941675,
+    "max_abs": 0.0007208430450850872,
+    "mean_abs_bps": 0.7710751336282223,
+    "median_abs_bps": 0.3216552003923023,
+    "p95_abs_bps": 3.4520176283941675,
+    "max_abs_bps": 7.208430450850872
+  },
+  "gross_return_error": {
+    "matched": 152,
+    "mean_abs": 7.710441019531272e-05,
+    "median_abs": 3.216913386819287e-05,
+    "p95_abs": 0.00034518225950815864,
+    "max_abs": 0.0007209467506046202,
+    "mean_abs_bps": 0.7710441019531272,
+    "median_abs_bps": 0.3216913386819287,
+    "p95_abs_bps": 3.451822595081587,
+    "max_abs_bps": 7.209467506046202
+  },
+  "turnover_error": {
+    "matched": 152,
+    "mean_abs": 0.0005507310589254007,
+    "median_abs": 0.00020009660800025114,
+    "p95_abs": 0.002089876481999504,
+    "max_abs": 0.006558574256931959,
+    "mean_abs_bps": 5.507310589254009,
+    "median_abs_bps": 2.0009660800025113,
+    "p95_abs_bps": 20.89876481999504,
+    "max_abs_bps": 65.58574256931959
+  },
+  "transaction_cost_error": {
+    "matched": 152,
+    "mean_abs": 5.507310589253954e-08,
+    "median_abs": 2.0009660800029093e-08,
+    "p95_abs": 2.0898764819994492e-07,
+    "max_abs": 6.558574256931999e-07,
+    "mean_abs_bps": 0.0005507310589253954,
+    "median_abs_bps": 0.00020009660800029093,
+    "p95_abs_bps": 0.002089876481999449,
+    "max_abs_bps": 0.006558574256931998
+  },
+  "max_abs_return_replay_error": 0.0007208430450850872,
+  "persisted_path_cagr_using_these_rows": 0.25185784314463566,
+  "reconstructed_path_cagr_using_these_rows": 0.25190675521020744,
+  "cagr_gap_reconstructed_minus_persisted": 4.891206557178229e-05,
+  "meaning": "Exact PASS requires reconstructed frozen weights to reproduce persisted FINAL_OPTIMIZER monthly net returns to numerical tolerance. The secondary assessment quantifies economic closeness but never converts an exact FAIL into PASS."
+}

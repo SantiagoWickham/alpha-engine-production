@@ -1,0 +1,45 @@
+{
+  "status": "UNRESOLVED",
+  "what_is_proven": [
+    "A formal pre-V10 survivorship/PIT gate was executed and persisted.",
+    "Delisted-price acquisition attempts are auditable from a persisted manifest."
+  ],
+  "what_is_not_proven": [
+    "A complete survivorship-free V10.4 champion backtest has not been certified by the frozen research decision."
+  ],
+  "minimum_dataset_to_close": [
+    "Point-in-time monthly universe membership including delisted names for the full backtest window",
+    "Historical prices covering the investment horizon for factor-eligible delisted securities",
+    "Point-in-time Revenue Growth and Sales Yield inputs for those delisted securities",
+    "Historical shares outstanding/filing availability dates needed for PIT market cap"
+  ],
+  "research_closure_gates": [
+    {
+      "name": "SEC_MAPPING",
+      "status": "PASS",
+      "detail": "lifecycle mapped=46.5%"
+    },
+    {
+      "name": "REVENUE_GROWTH_PIT_COVERAGE",
+      "status": "PASS",
+      "detail": "median usable=58.3%"
+    },
+    {
+      "name": "SALES_YIELD_PIT_COVERAGE",
+      "status": "FAIL",
+      "detail": "median usable=3.3%"
+    },
+    {
+      "name": "DELISTED_PRICE_COVERAGE",
+      "status": "FAIL",
+      "detail": "eligible delisted=285/1,837 (15.5%)"
+    },
+    {
+      "name": "MODEL_RESEARCH_CLOSURE",
+      "status": "FAIL",
+      "detail": "Automatic aggregation of data-integrity and locked-alpha gates."
+    }
+  ],
+  "delisted_attempted": 1837,
+  "delisted_with_usable_rows": 285
+}

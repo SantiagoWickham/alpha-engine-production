@@ -1,0 +1,5188 @@
+{
+  "saved_at": "2026-09-06T23:51:39.642694+00:00",
+  "payload": {
+    "mode": "DAILY_ALPHA",
+    "plan": {
+      "mode": "DAILY_ALPHA",
+      "fetch_intraday_prices": false,
+      "refresh_all_daily_bars": true,
+      "refresh_all_fundamentals": false,
+      "refresh_changed_fundamentals_only": false,
+      "recompute_cross_sectional_scores": true,
+      "recompute_risk_covariance": true,
+      "rerun_optimizer": true,
+      "reason": "Daily-close refresh aligned with the frequency of the frozen market/risk inputs."
+    },
+    "status": "OK",
+    "details": {
+      "status": "OK",
+      "preflight": {
+        "ok": true,
+        "checks": {
+          "sheet_api_url": true,
+          "sheet_api_token": true,
+          "sec_user_agent": true,
+          "universe_min_8": true,
+          "portfolio_available": true,
+          "state_dir_writable": true
+        },
+        "warnings": [],
+        "errors": [],
+        "details": {
+          "universe_size": 183,
+          "portfolio_positions": 3
+        }
+      },
+      "universe_size": 228,
+      "model_universe_size": 183,
+      "price_only_universe_size": 29,
+      "excluded_universe_size": 16,
+      "intraday_prices_seen": 183,
+      "intraday_prices_new": 0,
+      "earnings_events_seen": 3,
+      "earnings_events_new": 0,
+      "sec_events_seen": 0,
+      "sec_events_new": 0,
+      "sec_refresh_symbols": [],
+      "full_alpha_coverage": 169,
+      "factor_coverage": {
+        "universe": 183,
+        "price": 183,
+        "revenue_growth": 171,
+        "sales_yield": 170,
+        "trend": 183,
+        "full_alpha": 169,
+        "risk_60d": 182,
+        "full_alpha_pct": 92.34972677595628,
+        "missing_reasons": {
+          "BBD": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "BKNG": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "BNY": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "DDOG": [
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "GS": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "KEEL": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "MS": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "SAP": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE"
+          ],
+          "SHOP": [
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "SNY": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "SPCX": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "T": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "UBER": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ],
+          "XOM": [
+            "REVENUE_GROWTH_NEEDS_CURRENT_AND_PRIOR_ANNUAL_REVENUE",
+            "SALES_YIELD_NEEDS_REVENUE_SHARES_PRICE"
+          ]
+        }
+      },
+      "candidate_count": 34,
+      "optimizer_success": true,
+      "model_run_id": "4e3df2f2-134a-4189-bbb4-ab7bacf55997",
+      "portfolio_value_usd": 323.6144895141674,
+      "portfolio_positions": 3,
+      "recommendations_created": 0,
+      "alerts_generated": 0,
+      "alerts_sent": 0,
+      "alerts_suppressed": 8,
+      "recommendations": [],
+      "alerts": [],
+      "opportunity_book": [
+        {
+          "ticker": "PBR",
+          "alpha_score": 85.35923275455328,
+          "risk_score": 62.82051282051282,
+          "core_target_weight": 0.19990919789837472,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.935672514619883,
+            "sales_yield_percentile": 0.8764705882352941,
+            "trend_percentile": 0.7486338797814208
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "alpha_score": 64.49709670082203,
+          "risk_score": 58.97435897435898,
+          "core_target_weight": 0.15707438634527432,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9883040935672515,
+            "sales_yield_percentile": 0.01764705882352941,
+            "trend_percentile": 0.9289617486338798
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "MA",
+          "alpha_score": 79.64968673693234,
+          "risk_score": 12.454212454212454,
+          "core_target_weight": 0.13309993421319946,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9122807017543859,
+            "sales_yield_percentile": 0.7176470588235294,
+            "trend_percentile": 0.7595628415300546
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "UNH",
+          "alpha_score": 78.68615608452181,
+          "risk_score": 18.13186813186813,
+          "core_target_weight": 0.1025620926917439,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.6842105263157895,
+            "sales_yield_percentile": 0.9058823529411765,
+            "trend_percentile": 0.7704918032786885
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "SONY",
+          "alpha_score": 76.3214851658236,
+          "risk_score": 34.24908424908424,
+          "core_target_weight": 0.07305727816097327,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.5964912280701754,
+            "sales_yield_percentile": 0.9882352941176471,
+            "trend_percentile": 0.7049180327868853
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "NVO",
+          "alpha_score": 74.14569317325244,
+          "risk_score": 44.32234432234432,
+          "core_target_weight": 0.04520159305386256,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.4853801169590643,
+            "sales_yield_percentile": 0.9411764705882353,
+            "trend_percentile": 0.7978142076502732
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+LAST_VALID_FACTOR_STATE+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "JD",
+          "alpha_score": 72.18613070767566,
+          "risk_score": 54.02930402930403,
+          "core_target_weight": 0.029134852811051253,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.8070175438596491,
+            "sales_yield_percentile": 0.9705882352941176,
+            "trend_percentile": 0.3879781420765027
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "TGT",
+          "alpha_score": 67.70311345705956,
+          "risk_score": 32.234432234432234,
+          "core_target_weight": 0.026514830039204802,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.14035087719298245,
+            "sales_yield_percentile": 0.9235294117647059,
+            "trend_percentile": 0.9672131147540983
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "BAC",
+          "alpha_score": 67.62906945924762,
+          "risk_score": 3.6630036630036633,
+          "core_target_weight": 0.02092608295497344,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.6491228070175439,
+            "sales_yield_percentile": 0.5764705882352941,
+            "trend_percentile": 0.8032786885245902
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "SCHW",
+          "alpha_score": 64.74518826800205,
+          "risk_score": 28.20512820512821,
+          "core_target_weight": 0.019649476350403303,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.8596491228070176,
+            "sales_yield_percentile": 0.2411764705882353,
+            "trend_percentile": 0.8415300546448088
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "COF",
+          "alpha_score": 62.77998650327737,
+          "risk_score": 29.304029304029307,
+          "core_target_weight": 0.018608833649043977,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9532163742690059,
+            "sales_yield_percentile": 0.09411764705882353,
+            "trend_percentile": 0.8360655737704918
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "AMGN",
+          "alpha_score": 62.44033151559925,
+          "risk_score": 17.765567765567766,
+          "core_target_weight": 0.018566753783706858,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.6198830409356725,
+            "sales_yield_percentile": 0.3352941176470588,
+            "trend_percentile": 0.9180327868852459
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "ROP",
+          "alpha_score": 64.46985888593765,
+          "risk_score": 32.234432234432234,
+          "core_target_weight": 0.018076664909083787,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.6900584795321637,
+            "sales_yield_percentile": 0.43529411764705883,
+            "trend_percentile": 0.8087431693989071
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "VIST",
+          "alpha_score": 73.09920843037628,
+          "risk_score": 72.34432234432234,
+          "core_target_weight": 0.01805875730123848,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9590643274853801,
+            "sales_yield_percentile": 0.5235294117647059,
+            "trend_percentile": 0.7103825136612022
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "CEPU",
+          "alpha_score": 75.17426374250209,
+          "risk_score": 68.13186813186812,
+          "core_target_weight": 0.016295379558929693,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9883040935672515,
+            "sales_yield_percentile": 0.9882352941176471,
+            "trend_percentile": 0.2786885245901639
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "TEAM",
+          "alpha_score": 71.61712542365235,
+          "risk_score": 91.39194139194139,
+          "core_target_weight": 0.013942878372561899,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.8947368421052632,
+            "sales_yield_percentile": 0.2647058823529412,
+            "trend_percentile": 0.9890710382513661
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+LAST_VALID_FACTOR_STATE+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "NU",
+          "alpha_score": 73.02941270458908,
+          "risk_score": 65.01831501831502,
+          "core_target_weight": 0.011896144126132846,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.9707602339181286,
+            "sales_yield_percentile": 0.32941176470588235,
+            "trend_percentile": 0.8907103825136612
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+LAST_VALID_FACTOR_STATE+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "FDX",
+          "alpha_score": 62.11580864730132,
+          "risk_score": 34.61538461538462,
+          "core_target_weight": 0.011643682704197699,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.5263157894736842,
+            "sales_yield_percentile": 0.9,
+            "trend_percentile": 0.4371584699453552
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "PSX",
+          "alpha_score": 65.3105092099154,
+          "risk_score": 43.223443223443226,
+          "core_target_weight": 0.011598286722731287,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.05847953216374269,
+            "sales_yield_percentile": 0.9117647058823529,
+            "trend_percentile": 0.9890710382513661
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        },
+        {
+          "ticker": "V",
+          "alpha_score": 63.50691096110575,
+          "risk_score": 4.395604395604396,
+          "core_target_weight": 0.01142276358490724,
+          "is_candidate": true,
+          "optimizer_eligible": true,
+          "drivers": {
+            "revenue_growth_percentile": 0.6666666666666666,
+            "sales_yield_percentile": 0.5117647058823529,
+            "trend_percentile": 0.726775956284153
+          },
+          "provenance": {
+            "revenue_growth": "SEC_COMPANYFACTS",
+            "sales_yield": "SEC_COMPANYFACTS+SEC_COMPANYFACTS+LIVE_PRICE",
+            "trend": "DAILY_OHLCV_V8"
+          }
+        }
+      ],
+      "production_gate": {
+        "ready_for_recommendations": true,
+        "coverage_ok": true,
+        "optimizer_ok": true,
+        "portfolio_ok": true,
+        "source_ok": true,
+        "reasons": []
+      },
+      "sheet_baseline": {
+        "rows": 228,
+        "tickers": 228,
+        "with_legacy_alpha": 200,
+        "with_legacy_revenue_growth": 186,
+        "with_price": 227,
+        "by_ticker": {
+          "MSFT": {
+            "legacy_v8_alpha": 53.05763636343755,
+            "legacy_revenue_growth": 0.177,
+            "legacy_risk": 59.35231714126187,
+            "price": 499.7,
+            "data_quality_status": "OK"
+          },
+          "BRK-B": {
+            "legacy_v8_alpha": 51.67082906161951,
+            "legacy_revenue_growth": 0.1,
+            "legacy_risk": 87.71635957565606,
+            "price": 506.03,
+            "data_quality_status": "OK"
+          },
+          "PG": {
+            "legacy_v8_alpha": 44.162262426295214,
+            "legacy_revenue_growth": 0.015,
+            "legacy_risk": 85.98548297040759,
+            "price": 146.44,
+            "data_quality_status": "OK"
+          },
+          "MELI": {
+            "legacy_v8_alpha": 43.25381913438789,
+            "legacy_revenue_growth": 0.498,
+            "legacy_risk": 30.094919039642658,
+            "price": 1978.36,
+            "data_quality_status": "OK"
+          },
+          "META": {
+            "legacy_v8_alpha": 54.45701243748182,
+            "legacy_revenue_growth": 0.28,
+            "legacy_risk": 48.520379676158576,
+            "price": 616.77,
+            "data_quality_status": "OK"
+          },
+          "AVGO": {
+            "legacy_v8_alpha": 60.053587082145285,
+            "legacy_revenue_growth": 0.855,
+            "legacy_risk": 49.86041317699608,
+            "price": 357.895,
+            "data_quality_status": "OK"
+          },
+          "AMZN": {
+            "legacy_v8_alpha": 59.358896398348094,
+            "legacy_revenue_growth": 0.196,
+            "legacy_risk": 64.40536013400335,
+            "price": 258.51,
+            "data_quality_status": "OK"
+          },
+          "GE": {
+            "legacy_v8_alpha": 43.436237868837054,
+            "legacy_revenue_growth": 0.211,
+            "legacy_risk": 51.06085985482971,
+            "price": 337.12,
+            "data_quality_status": "OK"
+          },
+          "NKE": {
+            "legacy_v8_alpha": 47.80497012524836,
+            "legacy_revenue_growth": -0.011,
+            "legacy_risk": 51.535455053042995,
+            "price": 38.4,
+            "data_quality_status": "OK"
+          },
+          "DIS": {
+            "legacy_v8_alpha": 39.757944358846835,
+            "legacy_revenue_growth": 0.068,
+            "legacy_risk": 63.7353433835846,
+            "price": 105.31,
+            "data_quality_status": "OK"
+          },
+          "CAT": {
+            "legacy_v8_alpha": 53.52241915894715,
+            "legacy_revenue_growth": 0.24,
+            "legacy_risk": 40.56393076493578,
+            "price": 813.94,
+            "data_quality_status": "OK"
+          },
+          "MMM": {
+            "legacy_v8_alpha": 54.067202348131104,
+            "legacy_revenue_growth": 0.025,
+            "legacy_risk": 65.07537688442211,
+            "price": 168.56,
+            "data_quality_status": "OK"
+          },
+          "PFE": {
+            "legacy_v8_alpha": 42.245712993480424,
+            "legacy_revenue_growth": 0.026,
+            "legacy_risk": 82.83082077051927,
+            "price": 28.45,
+            "data_quality_status": "OK"
+          },
+          "V": {
+            "legacy_v8_alpha": 46.99877026440874,
+            "legacy_revenue_growth": 0.144,
+            "legacy_risk": 84.36627582356226,
+            "price": 375.07,
+            "data_quality_status": "OK"
+          },
+          "AXP": {
+            "legacy_v8_alpha": 43.54740138259152,
+            "legacy_revenue_growth": 0.128,
+            "legacy_risk": 60.189838079285316,
+            "price": 326.16,
+            "data_quality_status": "OK"
+          },
+          "CAAP": {
+            "legacy_v8_alpha": 60.52375990312955,
+            "legacy_revenue_growth": 0.12,
+            "legacy_risk": 32.04913456169737,
+            "price": 24.41,
+            "data_quality_status": "OK"
+          },
+          "ABBV": {
+            "legacy_v8_alpha": 57.110301288750655,
+            "legacy_revenue_growth": 0.102,
+            "legacy_risk": 69.93299832495812,
+            "price": 256.46,
+            "data_quality_status": "OK"
+          },
+          "BABA": {
+            "legacy_v8_alpha": 38.50527428052876,
+            "legacy_revenue_growth": 0.086,
+            "legacy_risk": 39.36348408710218,
+            "price": 113.24,
+            "data_quality_status": "OK"
+          },
+          "COIN": {
+            "legacy_v8_alpha": 62.208653146810015,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 29.59240647682859,
+            "price": 184.64,
+            "data_quality_status": "OK"
+          },
+          "NFLX": {
+            "legacy_v8_alpha": 54.640067603870904,
+            "legacy_revenue_growth": 0.134,
+            "legacy_risk": 48.073701842546065,
+            "price": 78.25,
+            "data_quality_status": "OK"
+          },
+          "GLOB": {
+            "legacy_v8_alpha": 42.729667486780585,
+            "legacy_revenue_growth": 0,
+            "legacy_risk": 8.45896147403685,
+            "price": 39.13,
+            "data_quality_status": "OK"
+          },
+          "BA": {
+            "legacy_v8_alpha": 38.72397702555387,
+            "legacy_revenue_growth": 0.08,
+            "legacy_risk": 57.95644891122277,
+            "price": 212.25,
+            "data_quality_status": "OK"
+          },
+          "NU": {
+            "legacy_v8_alpha": 69.57087754195095,
+            "legacy_revenue_growth": 0.521,
+            "legacy_risk": 47.85036292573981,
+            "price": 15.37,
+            "data_quality_status": "OK"
+          },
+          "CIBR": {
+            "legacy_v8_alpha": 65.511913519031,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 41.09436069235064,
+            "price": 94.59,
+            "data_quality_status": "OK"
+          },
+          "ORCL": {
+            "legacy_v8_alpha": 43.22434218008327,
+            "legacy_revenue_growth": 0.206,
+            "legacy_risk": 35.65047459519821,
+            "price": 158.78,
+            "data_quality_status": "OK"
+          },
+          "NVDA": {
+            "legacy_v8_alpha": 69.62897594082976,
+            "legacy_revenue_growth": 1.059,
+            "legacy_risk": 60.02233389168063,
+            "price": 230.36,
+            "data_quality_status": "OK"
+          },
+          "TSM": {
+            "legacy_v8_alpha": 67.76230688714624,
+            "legacy_revenue_growth": 0.36,
+            "legacy_risk": 53.76884422110553,
+            "price": 428.91,
+            "data_quality_status": "OK"
+          },
+          "ETHA": {
+            "legacy_v8_alpha": 80.57178614016215,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 34.226689000558345,
+            "price": 18.52,
+            "data_quality_status": "OK"
+          },
+          "AMD": {
+            "legacy_v8_alpha": 57.05180196842211,
+            "legacy_revenue_growth": 0.501,
+            "legacy_risk": 41.010608598548295,
+            "price": 477.57,
+            "data_quality_status": "OK"
+          },
+          "ASML": {
+            "legacy_v8_alpha": 45.531874307284056,
+            "legacy_revenue_growth": 0.213,
+            "legacy_risk": 36.01340033500838,
+            "price": 1714.88,
+            "data_quality_status": "OK"
+          },
+          "LAR": {
+            "legacy_v8_alpha": 44.255963993383794,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 8.235622557230597,
+            "price": 6.79,
+            "data_quality_status": "OK"
+          },
+          "SH": {
+            "legacy_v8_alpha": 39.32448200756742,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 73.78559463986599,
+            "price": 32.35,
+            "data_quality_status": "OK"
+          },
+          "GLD": {
+            "legacy_v8_alpha": 50.59497422693935,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 67.69960915689559,
+            "price": 406.77,
+            "data_quality_status": "OK"
+          },
+          "WMT": {
+            "legacy_v8_alpha": 28.05028164273869,
+            "legacy_revenue_growth": 0.059,
+            "legacy_risk": 65.18704634282524,
+            "price": 107.14,
+            "data_quality_status": "OK"
+          },
+          "XLF": {
+            "legacy_v8_alpha": 58.46737504908865,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 92.57398101619208,
+            "price": 58.1,
+            "data_quality_status": "OK"
+          },
+          "XLI": {
+            "legacy_v8_alpha": 44.43295700812876,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 86.1529871580123,
+            "price": 175.27,
+            "data_quality_status": "OK"
+          },
+          "XLE": {
+            "legacy_v8_alpha": 60.95724154061343,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 85.62255723059742,
+            "price": 64.06,
+            "data_quality_status": "OK"
+          },
+          "TM": {
+            "legacy_v8_alpha": 50.81327773212024,
+            "legacy_revenue_growth": 0.104,
+            "legacy_risk": 46.594081518704634,
+            "price": 197.11,
+            "data_quality_status": "OK"
+          },
+          "SONY": {
+            "legacy_v8_alpha": 52.74872140513403,
+            "legacy_revenue_growth": 0.082,
+            "legacy_risk": 44.13735343383584,
+            "price": 24.56,
+            "data_quality_status": "OK"
+          },
+          "EWJ": {
+            "legacy_v8_alpha": 56.11406643578126,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 68.31379117811278,
+            "price": 98.28,
+            "data_quality_status": "OK"
+          },
+          "PBR": {
+            "legacy_v8_alpha": 68.33271805157273,
+            "legacy_revenue_growth": 0.423,
+            "legacy_risk": 46.39865996649917,
+            "price": 20.12,
+            "data_quality_status": "OK"
+          },
+          "BBD": {
+            "legacy_v8_alpha": 45.072969891972114,
+            "legacy_revenue_growth": 0.072,
+            "legacy_risk": 51.75879396984925,
+            "price": 3.47,
+            "data_quality_status": "OK"
+          },
+          "SID": {
+            "legacy_v8_alpha": 38.0356328635837,
+            "legacy_revenue_growth": 0.057,
+            "legacy_risk": 12.088218872138475,
+            "price": 1.22,
+            "data_quality_status": "OK"
+          },
+          "VALE": {
+            "legacy_v8_alpha": 50.190481832352184,
+            "legacy_revenue_growth": 0.064,
+            "legacy_risk": 53.90843104410944,
+            "price": 15.27,
+            "data_quality_status": "OK"
+          },
+          "ARKK": {
+            "legacy_v8_alpha": 65.11340887312626,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 35.37130094919039,
+            "price": 86.22,
+            "data_quality_status": "OK"
+          },
+          "EEM": {
+            "legacy_v8_alpha": 56.35867419838428,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 74.48352875488554,
+            "price": 68.7,
+            "data_quality_status": "OK"
+          },
+          "EWZ": {
+            "legacy_v8_alpha": 57.26288916465526,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 78.95030709101061,
+            "price": 37.86,
+            "data_quality_status": "OK"
+          },
+          "ARM": {
+            "legacy_v8_alpha": 41.851504774373225,
+            "legacy_revenue_growth": 0.224,
+            "legacy_risk": 20.603015075376884,
+            "price": 252.09,
+            "data_quality_status": "OK"
+          },
+          "TXAR": {
+            "legacy_v8_alpha": 59.64438660492213,
+            "legacy_revenue_growth": 0.256,
+            "legacy_risk": 40.78726968174204,
+            "price": 691,
+            "data_quality_status": "OK"
+          },
+          "PAMP": {
+            "legacy_v8_alpha": 60.22926324717749,
+            "legacy_revenue_growth": 0.535,
+            "legacy_risk": 59.826912339475165,
+            "price": 5380,
+            "data_quality_status": "OK"
+          },
+          "CEPU": {
+            "legacy_v8_alpha": 61.20089100249327,
+            "legacy_revenue_growth": 2.247,
+            "legacy_risk": 41.233947515354544,
+            "price": 2216,
+            "data_quality_status": "OK"
+          },
+          "ECOG": {
+            "legacy_v8_alpha": 51.337633028872084,
+            "legacy_revenue_growth": 0.289,
+            "legacy_risk": 44.69570072585148,
+            "price": 2870,
+            "data_quality_status": "OK"
+          },
+          "CVX": {
+            "legacy_v8_alpha": 61.91546807625201,
+            "legacy_revenue_growth": 0.535,
+            "legacy_risk": 73.6460078168621,
+            "price": 208.6,
+            "data_quality_status": "OK"
+          },
+          "AAPL": {
+            "legacy_v8_alpha": 48.033610443162935,
+            "legacy_revenue_growth": 0.164,
+            "legacy_risk": 77.86152987158012,
+            "price": 319.97,
+            "data_quality_status": "OK"
+          },
+          "SPCX": {
+            "legacy_v8_alpha": 55.63982234356459,
+            "legacy_revenue_growth": 0.919,
+            "legacy_risk": 35.175879396984925,
+            "price": 147.95,
+            "data_quality_status": "OK"
+          },
+          "GOOGL": {
+            "legacy_v8_alpha": 60.771422195317015,
+            "legacy_revenue_growth": 0.242,
+            "legacy_risk": 64.65661641541038,
+            "price": 338.46,
+            "data_quality_status": "OK"
+          },
+          "MU": {
+            "legacy_v8_alpha": 78.94034236884306,
+            "legacy_revenue_growth": 3.457,
+            "legacy_risk": 36.767169179229484,
+            "price": 1016.59,
+            "data_quality_status": "OK"
+          },
+          "ACN": {
+            "legacy_v8_alpha": 52.878928436300654,
+            "legacy_revenue_growth": 0.056,
+            "legacy_risk": 28.364042434394197,
+            "price": 186.72,
+            "data_quality_status": "OK"
+          },
+          "COST": {
+            "legacy_v8_alpha": 43.87460833785338,
+            "legacy_revenue_growth": 0.215,
+            "legacy_risk": 75.12562814070351,
+            "price": 915.74,
+            "data_quality_status": "OK"
+          },
+          "LLY": {
+            "legacy_v8_alpha": 53.59461803457456,
+            "legacy_revenue_growth": 0.477,
+            "legacy_risk": 52.65214963707425,
+            "price": 1149.36,
+            "data_quality_status": "OK"
+          },
+          "TSLA": {
+            "legacy_v8_alpha": 28.487185203152322,
+            "legacy_revenue_growth": 0.255,
+            "legacy_risk": 42.629815745393635,
+            "price": 354.08,
+            "data_quality_status": "OK"
+          },
+          "VIST": {
+            "legacy_v8_alpha": 61.21054759559468,
+            "legacy_revenue_growth": 1.023,
+            "legacy_risk": 22.44556113902847,
+            "price": 73.73,
+            "data_quality_status": "OK"
+          },
+          "YPF": {
+            "legacy_v8_alpha": 72.06243502199042,
+            "legacy_revenue_growth": 0.722,
+            "legacy_risk": 52.56839754327192,
+            "price": 8355,
+            "data_quality_status": "OK"
+          },
+          "BYMA.BA": {
+            "legacy_v8_alpha": 57.30085980145046,
+            "legacy_revenue_growth": 0.253,
+            "legacy_risk": 51.256281407035175,
+            "price": 266,
+            "data_quality_status": "OK"
+          },
+          "PANW": {
+            "legacy_v8_alpha": 51.57572573007154,
+            "legacy_revenue_growth": 0.344,
+            "legacy_risk": 35.147962032384136,
+            "price": 333.26,
+            "data_quality_status": "OK"
+          },
+          "KEEL": {
+            "legacy_v8_alpha": 50.028317184609335,
+            "legacy_revenue_growth": "",
+            "legacy_risk": 17.16917922948073,
+            "price": 3.47,
+            "data_quality_status": "OK"
+          },
+          "BPC7D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 103.4,
+            "data_quality_status": "OK"
+          },
+          "BPD7D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 103.4,
+            "data_quality_status": "OK"
+          },
+          "GD30D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 58.06,
+            "data_quality_status": "OK"
+          },
+          "AL30D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 55.73,
+            "data_quality_status": "OK"
+          },
+          "AL35D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 76.09,
+            "data_quality_status": "OK"
+          },
+          "GD38D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 83.9,
+            "data_quality_status": "OK"
+          },
+          "GD41D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 74.33,
+            "data_quality_status": "OK"
+          },
+          "PNXCD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 114.05,
+            "data_quality_status": "OK"
+          },
+          "PLC4D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 110.85,
+            "data_quality_status": "OK"
+          },
+          "VSCVD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 112.4,
+            "data_quality_status": "OK"
+          },
+          "YM34D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 109.1,
+            "data_quality_status": "OK"
+          },
+          "YMCXD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 114,
+            "data_quality_status": "OK"
+          },
+          "IRCPD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 109.9,
+            "data_quality_status": "OK"
+          },
+          "RUCDD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 107.6,
+            "data_quality_status": "OK"
+          },
+          "RUCED": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 100.55,
+            "data_quality_status": "OK"
+          },
+          "TLCMD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 112.5,
+            "data_quality_status": "OK"
+          },
+          "TLCPD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 114,
+            "data_quality_status": "OK"
+          },
+          "TLCTD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 109,
+            "data_quality_status": "OK"
+          },
+          "DNCAD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 105.5,
+            "data_quality_status": "OK"
+          },
+          "VSCPD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 109.55,
+            "data_quality_status": "OK"
+          },
+          "CS47D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 104.9,
+            "data_quality_status": "OK"
+          },
+          "IRCOD": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 104.2,
+            "data_quality_status": "OK"
+          },
+          "ZZC1D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 100.75,
+            "data_quality_status": "OK"
+          },
+          "YM39D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 111.45,
+            "data_quality_status": "OK"
+          },
+          "AO27D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 102.25,
+            "data_quality_status": "OK"
+          },
+          "AO28D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 94.84,
+            "data_quality_status": "OK"
+          },
+          "GD29D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 56.19,
+            "data_quality_status": "OK"
+          },
+          "AL29D": {
+            "legacy_v8_alpha": "",
+            "legacy_revenue_growth": "",
+            "legacy_risk": "",
+            "price": 53.96,
+            "data_quality_status": "OK"
+          },
+          "ADBE": {
+            "legacy_v8_alpha": 60.500958281014356,
+            "legacy_revenue_growth": 0.127,
+            "legacy_risk": 30.820770519262982,
+            "price": 266.51,
+            "data_quality_status": "OK"
+          },
+          "CRM": {
+            "legacy_v8_alpha": 63.35756029182369,
+            "legacy_revenue_growth": 0.108,
+            "legacy_risk": 43.02065884980458,
+            "price": 259.23,
+            "data_quality_status": "OK"
+          },
+          "INTU": {
+            "legacy_v8_alpha": 53.957821686024836,
+            "legacy_revenue_growth": 0.137,
+            "legacy_risk": 31.518704634282525,
+            "price": 332.7,
+            "data_quality_status": "OK"
+          },
+          "NOW": {
+            "legacy_v8_alpha": 43.56231785167545,
+            "legacy_revenue_growth": 0.24,
+            "legacy_risk": 35.678391959798994,
+            "price": 141.26,
+            "data_quality_status": "OK"
+          },
+          "IBM": {
+            "legacy_v8_alpha": 36.68455185515232,
+            "legacy_revenue_growth": 0.011,
+            "legacy_risk": 34.39419318816304,
+            "price": 234.89,
+            "data_quality_status": "OK"
+          },
+          "CSCO": {
+            "legacy_v8_alpha": 52.360314685434574,
+            "legacy_revenue_growth": 0.176,
+            "legacy_risk": 61.781127861529875,
+            "price": 109.2,
+            "data_quality_status": "OK"
+          },
+          "QCOM": {
+            "legacy_v8_alpha": 45.39580366450187,
+            "legacy_revenue_growth": -0.04,
+            "legacy_risk": 40.7035175879397,
+            "price": 168.74,
+            "data_quality_status": "OK"
+          },
+          "TXN": {
+            "legacy_v8_alpha": 53.43306316194748,
+            "legacy_revenue_growth": 0.228,
+            "legacy_risk": 44.3606923506421,
+            "price": 258.44,
+            "data_quality_status": "OK"
+          },
+          "ADI": {
+            "legacy_v8_alpha": 58.547758046534675,
+            "legacy_revenue_growth": 0.396,
+            "legacy_risk": 49.0787269681742,
+            "price": 362.25,
+            "data_quality_status": "OK"
+          },
+          "ANET": {
+            "legacy_v8_alpha": 58.64282259036862,
+            "legacy_revenue_growth": 0.377,
+            "legacy_risk": 34.56169737576773,
+            "price": 193.78,
+            "data_quality_status": "OK"
+          },
+          "PLTR": {
+            "legacy_v8_alpha": 60.886021588196996,
+            "legacy_revenue_growth": 0.928,
+            "legacy_risk": 38.91680625348967,
+            "price": 174.33,
+            "data_quality_status": "OK"
+          },
+          "CRWD": {
+            "legacy_v8_alpha": 45.34775033331941,
+            "legacy_revenue_growth": 0.258,
+            "legacy_risk": 36.376326074818536,
+            "price": 213.1,
+            "data_quality_status": "OK"
+          },
+          "FTNT": {
+            "legacy_v8_alpha": 58.258646297856075,
+            "legacy_revenue_growth": 0.256,
+            "legacy_risk": 42.629815745393635,
+            "price": 156.29,
+            "data_quality_status": "OK"
+          },
+          "SNPS": {
+            "legacy_v8_alpha": 47.41041296391092,
+            "legacy_revenue_growth": 0.424,
+            "legacy_risk": 22.752652149637072,
+            "price": 393.84,
+            "data_quality_status": "OK"
+          },
+          "CDNS": {
+            "legacy_v8_alpha": 45.67990784963229,
+            "legacy_revenue_growth": 0.242,
+            "legacy_risk": 30.597431602456727,
+            "price": 306.67,
+            "data_quality_status": "OK"
+          },
+          "ROP": {
+            "legacy_v8_alpha": 57.31450575692448,
+            "legacy_revenue_growth": 0.085,
+            "legacy_risk": 31.825795644891127,
+            "price": 415.79,
+            "data_quality_status": "OK"
+          },
+          "ADSK": {
+            "legacy_v8_alpha": 55.72111370972575,
+            "legacy_revenue_growth": 0.161,
+            "legacy_risk": 20.519262981574542,
+            "price": 241.73,
+            "data_quality_status": "OK"
+          },
+          "TEAM": {
+            "legacy_v8_alpha": 58.87350393337715,
+            "legacy_revenue_growth": 0.276,
+            "legacy_risk": 20.04466778336125,
+            "price": 186.44,
+            "data_quality_status": "OK"
+          },
+          "DDOG": {
+            "legacy_v8_alpha": 48.85022384034006,
+            "legacy_revenue_growth": 0.356,
+            "legacy_risk": 21.635957565605807,
+            "price": 209.23,
+            "data_quality_status": "OK"
+          },
+          "MDB": {
+            "legacy_v8_alpha": 44.34120849887529,
+            "legacy_revenue_growth": 0.305,
+            "legacy_risk": 15.577889447236183,
+            "price": 375.4,
+            "data_quality_status": "OK"
+          },
+          "INTC": {
+            "legacy_v8_alpha": 45.58896253078026,
+            "legacy_revenue_growth": 0.254,
+            "legacy_risk": 38.86097152428811,
+            "price": 90.05,
+            "data_quality_status": "OK"
+          },
+          "LRCX": {
+            "legacy_v8_alpha": 49.72149422354406,
+            "legacy_revenue_growth": 0.3,
+            "legacy_risk": 31.96538246789503,
+            "price": 288.32,
+            "data_quality_status": "OK"
+          },
+          "KLAC": {
+            "legacy_v8_alpha": 43.10792063440835,
+            "legacy_revenue_growth": 0.152,
+            "legacy_risk": 31.993299832495808,
+            "price": 172.26,
+            "data_quality_status": "OK"
+          },
+          "AMAT": {
+            "legacy_v8_alpha": 49.92897427665961,
+            "legacy_revenue_growth": 0.248,
+            "legacy_risk": 33.50083752093803,
+            "price": 438.46,
+            "data_quality_status": "OK"
+          },
+          "MRVL": {
+            "legacy_v8_alpha": 48.01842919569869,
+            "legacy_revenue_growth": 0.365,
+            "legacy_risk": 32.99832495812395,
+            "price": 206.48,
+            "data_quality_status": "OK"
+          },
+          "MCHP": {
+            "legacy_v8_alpha": 47.1281745818808,
+            "legacy_revenue_growth": 0.38,
+            "legacy_risk": 32.914572864321606,
+            "price": 72.76,
+            "data_quality_status": "OK"
+          },
+          "NXPI": {
+            "legacy_v8_alpha": 55.80588445014726,
+            "legacy_revenue_growth": 0.195,
+            "legacy_risk": 31.658291457286435,
+            "price": 228.5,
+            "data_quality_status": "OK"
+          },
+          "ON": {
+            "legacy_v8_alpha": 44.4898025415362,
+            "legacy_revenue_growth": 0.092,
+            "legacy_risk": 22.724734785036294,
+            "price": 72.34,
+            "data_quality_status": "OK"
+          },
+          "MPWR": {
+            "legacy_v8_alpha": 47.75049037232481,
+            "legacy_revenue_growth": 0.476,
+            "legacy_risk": 21.300949190396427,
+            "price": 1219.36,
+            "data_quality_status": "OK"
+          },
+          "JPM": {
+            "legacy_v8_alpha": 59.840896923537635,
+            "legacy_revenue_growth": 0.304,
+            "legacy_risk": 83.10999441652707,
+            "price": 356.22,
+            "data_quality_status": "OK"
+          },
+          "BAC": {
+            "legacy_v8_alpha": 56.623367995834286,
+            "legacy_revenue_growth": 0.168,
+            "legacy_risk": 88.8888888888889,
+            "price": 62.6,
+            "data_quality_status": "OK"
+          },
+          "WFC": {
+            "legacy_v8_alpha": 47.99974703549073,
+            "legacy_revenue_growth": 0.095,
+            "legacy_risk": 73.9251814628699,
+            "price": 89.27,
+            "data_quality_status": "OK"
+          },
+          "C": {
+            "legacy_v8_alpha": 54.17150969673939,
+            "legacy_revenue_growth": 0.155,
+            "legacy_risk": 68.50921273031825,
+            "price": 134.34,
+            "data_quality_status": "OK"
+          },
+          "GS": {
+            "legacy_v8_alpha": 61.377950607022775,
+            "legacy_revenue_growth": 0.425,
+            "legacy_risk": 53.768844221105525,
+            "price": 1004.42,
+            "data_quality_status": "OK"
+          },
+          "MS": {
+            "legacy_v8_alpha": 55.175797551569346,
+            "legacy_revenue_growth": 0.28,
+            "legacy_risk": 59.4360692350642,
+            "price": 211.82,
+            "data_quality_status": "OK"
+          },
+          "BLK": {
+            "legacy_v8_alpha": 52.75732563079997,
+            "legacy_revenue_growth": 0.306,
+            "legacy_risk": 53.43383584589614,
+            "price": 1107.08,
+            "data_quality_status": "OK"
+          },
+          "SCHW": {
+            "legacy_v8_alpha": 59.869978604460435,
+            "legacy_revenue_growth": 0.209,
+            "legacy_risk": 71.55220547180346,
+            "price": 108.24,
+            "data_quality_status": "OK"
+          },
+          "MA": {
+            "legacy_v8_alpha": 50.69334897701637,
+            "legacy_revenue_growth": 0.141,
+            "legacy_risk": 74.20435510887773,
+            "price": 588.14,
+            "data_quality_status": "OK"
+          },
+          "COF": {
+            "legacy_v8_alpha": 68.82976890670297,
+            "legacy_revenue_growth": 11.11,
+            "legacy_risk": 48.352875488553885,
+            "price": 216.6,
+            "data_quality_status": "OK"
+          },
+          "BNY": {
+            "legacy_v8_alpha": 52.398701095900705,
+            "legacy_revenue_growth": 0.131,
+            "legacy_risk": 69.62590731434952,
+            "price": "",
+            "data_quality_status": "OK"
+          },
+          "PNC": {
+            "legacy_v8_alpha": 55.66263726487386,
+            "legacy_revenue_growth": 0.236,
+            "legacy_risk": 63.67950865438302,
+            "price": 242.46,
+            "data_quality_status": "OK"
+          },
+          "USB": {
+            "legacy_v8_alpha": 51.282025615048376,
+            "legacy_revenue_growth": 0.104,
+            "legacy_risk": 70.49134561697376,
+            "price": 62.77,
+            "data_quality_status": "OK"
+          },
+          "SPGI": {
+            "legacy_v8_alpha": 42.62765293922704,
+            "legacy_revenue_growth": 0.104,
+            "legacy_risk": 44.751535455053045,
+            "price": 431.71,
+            "data_quality_status": "OK"
+          },
+          "MCO": {
+            "legacy_v8_alpha": 49.962564452561416,
+            "legacy_revenue_growth": 0.151,
+            "legacy_risk": 44.751535455053045,
+            "price": 490,
+            "data_quality_status": "OK"
+          },
+          "UNH": {
+            "legacy_v8_alpha": 51.51774210683801,
+            "legacy_revenue_growth": 0.004,
+            "legacy_risk": 64.43327749860414,
+            "price": 399.66,
+            "data_quality_status": "OK"
+          },
+          "JNJ": {
+            "legacy_v8_alpha": 41.65888164231098,
+            "legacy_revenue_growth": 0.066,
+            "legacy_risk": 79.7040759352317,
+            "price": 275.21,
+            "data_quality_status": "OK"
+          },
+          "MRK": {
+            "legacy_v8_alpha": 43.307448432609775,
+            "legacy_revenue_growth": 0.051,
+            "legacy_risk": 65.32663316582915,
+            "price": 151.64,
+            "data_quality_status": "OK"
+          },
+          "AMGN": {
+            "legacy_v8_alpha": 57.08282070344504,
+            "legacy_revenue_growth": 0.095,
+            "legacy_risk": 68.03461753210496,
+            "price": 442.84,
+            "data_quality_status": "OK"
+          },
+          "GILD": {
+            "legacy_v8_alpha": 51.88788837898324,
+            "legacy_revenue_growth": 0.102,
+            "legacy_risk": 63.31658291457287,
+            "price": 149.61,
+            "data_quality_status": "OK"
+          },
+          "REGN": {
+            "legacy_v8_alpha": 57.76769122138609,
+            "legacy_revenue_growth": 0.167,
+            "legacy_risk": 46.25907314349525,
+            "price": 852.03,
+            "data_quality_status": "OK"
+          },
+          "VRTX": {
+            "legacy_v8_alpha": 51.043088673663426,
+            "legacy_revenue_growth": 0.125,
+            "legacy_risk": 52.12171970965941,
+            "price": 556.75,
+            "data_quality_status": "OK"
+          },
+          "TMO": {
+            "legacy_v8_alpha": 44.89012611549518,
+            "legacy_revenue_growth": 0.105,
+            "legacy_risk": 54.15968732551647,
+            "price": 608.54,
+            "data_quality_status": "OK"
+          },
+          "DHR": {
+            "legacy_v8_alpha": 42.78957931666589,
+            "legacy_revenue_growth": 0.055,
+            "legacy_risk": 35.73422668900056,
+            "price": 209.91,
+            "data_quality_status": "OK"
+          },
+          "ISRG": {
+            "legacy_v8_alpha": 43.70186025168208,
+            "legacy_revenue_growth": 0.185,
+            "legacy_risk": 28.671133445002795,
+            "price": 371.88,
+            "data_quality_status": "OK"
+          },
+          "MDT": {
+            "legacy_v8_alpha": 56.4574645037522,
+            "legacy_revenue_growth": 0.137,
+            "legacy_risk": 61.33445002791736,
+            "price": 92.18,
+            "data_quality_status": "OK"
+          },
+          "BSX": {
+            "legacy_v8_alpha": 47.850643178093534,
+            "legacy_revenue_growth": 0.075,
+            "legacy_risk": 42.490228922389726,
+            "price": 48.37,
+            "data_quality_status": "OK"
+          },
+          "SYK": {
+            "legacy_v8_alpha": 44.65303727961422,
+            "legacy_revenue_growth": 0.094,
+            "legacy_risk": 39.670575097710774,
+            "price": 312.19,
+            "data_quality_status": "OK"
+          },
+          "ZTS": {
+            "legacy_v8_alpha": 46.39616077412757,
+            "legacy_revenue_growth": -0.002,
+            "legacy_risk": 32.99832495812395,
+            "price": 76.17,
+            "data_quality_status": "OK"
+          },
+          "BMY": {
+            "legacy_v8_alpha": 61.81067639137111,
+            "legacy_revenue_growth": 0.057,
+            "legacy_risk": 64.96370742601898,
+            "price": 67.66,
+            "data_quality_status": "OK"
+          },
+          "HD": {
+            "legacy_v8_alpha": 43.63238266211384,
+            "legacy_revenue_growth": 0.057,
+            "legacy_risk": 61.1390284757119,
+            "price": 318.51,
+            "data_quality_status": "OK"
+          },
+          "LOW": {
+            "legacy_v8_alpha": 49.595444605549474,
+            "legacy_revenue_growth": 0.083,
+            "legacy_risk": 51.926298157453935,
+            "price": 199.84,
+            "data_quality_status": "OK"
+          },
+          "MCD": {
+            "legacy_v8_alpha": 47.159960451674166,
+            "legacy_revenue_growth": 0.037,
+            "legacy_risk": 70.71468453378002,
+            "price": 260.95,
+            "data_quality_status": "OK"
+          },
+          "SBUX": {
+            "legacy_v8_alpha": 42.252689794388715,
+            "legacy_revenue_growth": -0.014,
+            "legacy_risk": 71.1892797319933,
+            "price": 106.72,
+            "data_quality_status": "OK"
+          },
+          "BKNG": {
+            "legacy_v8_alpha": 70.52827042701684,
+            "legacy_revenue_growth": 0.081,
+            "legacy_risk": 44.27694025683976,
+            "price": 199.6,
+            "data_quality_status": "OK"
+          },
+          "ABNB": {
+            "legacy_v8_alpha": 59.31507317501891,
+            "legacy_revenue_growth": 0.165,
+            "legacy_risk": 54.215522054718036,
+            "price": 183.26,
+            "data_quality_status": "OK"
+          },
+          "TJX": {
+            "legacy_v8_alpha": 38.54824398609208,
+            "legacy_revenue_growth": 0.054,
+            "legacy_risk": 69.76549413735343,
+            "price": 131.31,
+            "data_quality_status": "OK"
+          },
+          "ORLY": {
+            "legacy_v8_alpha": 46.069813579903105,
+            "legacy_revenue_growth": 0.081,
+            "legacy_risk": 53.32216638749302,
+            "price": 86.97,
+            "data_quality_status": "OK"
+          },
+          "AZO": {
+            "legacy_v8_alpha": 50.974360987923355,
+            "legacy_revenue_growth": 0.084,
+            "legacy_risk": 41.12227805695142,
+            "price": 2934.52,
+            "data_quality_status": "OK"
+          },
+          "MAR": {
+            "legacy_v8_alpha": 44.499749453836806,
+            "legacy_revenue_growth": 0.111,
+            "legacy_risk": 55.33221663874931,
+            "price": 333.14,
+            "data_quality_status": "OK"
+          },
+          "CMG": {
+            "legacy_v8_alpha": 45.10439304126402,
+            "legacy_revenue_growth": 0.093,
+            "legacy_risk": 34.81295365717476,
+            "price": 38.52,
+            "data_quality_status": "OK"
+          },
+          "RCL": {
+            "legacy_v8_alpha": 42.211268444541695,
+            "legacy_revenue_growth": 0.065,
+            "legacy_risk": 34.33835845896147,
+            "price": 265.6,
+            "data_quality_status": "OK"
+          },
+          "KO": {
+            "legacy_v8_alpha": 48.262090250723965,
+            "legacy_revenue_growth": 0.067,
+            "legacy_risk": 88.8609715242881,
+            "price": 88.24,
+            "data_quality_status": "OK"
+          },
+          "PEP": {
+            "legacy_v8_alpha": 57.19909657555454,
+            "legacy_revenue_growth": 0.064,
+            "legacy_risk": 74.87437185929649,
+            "price": 140.52,
+            "data_quality_status": "OK"
+          },
+          "PM": {
+            "legacy_v8_alpha": 52.45488256545565,
+            "legacy_revenue_growth": 0.104,
+            "legacy_risk": 59.9106644332775,
+            "price": 187.94,
+            "data_quality_status": "OK"
+          },
+          "MO": {
+            "legacy_v8_alpha": 61.15727808239671,
+            "legacy_revenue_growth": 0.012,
+            "legacy_risk": 57.45393634840871,
+            "price": 69.56,
+            "data_quality_status": "OK"
+          },
+          "MDLZ": {
+            "legacy_v8_alpha": 49.95981271493184,
+            "legacy_revenue_growth": 0.041,
+            "legacy_risk": 65.94081518704634,
+            "price": 62.45,
+            "data_quality_status": "OK"
+          },
+          "CL": {
+            "legacy_v8_alpha": 46.69060230912665,
+            "legacy_revenue_growth": 0.049,
+            "legacy_risk": 68.62088218872138,
+            "price": 90.1,
+            "data_quality_status": "OK"
+          },
+          "KMB": {
+            "legacy_v8_alpha": 44.336798725389734,
+            "legacy_revenue_growth": 0.006,
+            "legacy_risk": 51.75879396984924,
+            "price": 109.29,
+            "data_quality_status": "OK"
+          },
+          "TGT": {
+            "legacy_v8_alpha": 60.99368666625193,
+            "legacy_revenue_growth": 0.053,
+            "legacy_risk": 58.17978782802904,
+            "price": 163.36,
+            "data_quality_status": "OK"
+          },
+          "KR": {
+            "legacy_v8_alpha": 45.220823717976906,
+            "legacy_revenue_growth": 0.022,
+            "legacy_risk": 47.59910664433277,
+            "price": 58.22,
+            "data_quality_status": "OK"
+          },
+          "TMUS": {
+            "legacy_v8_alpha": 50.32555420384935,
+            "legacy_revenue_growth": 0.079,
+            "legacy_risk": 39.530988274706864,
+            "price": 187.3,
+            "data_quality_status": "OK"
+          },
+          "VZ": {
+            "legacy_v8_alpha": 49.03582721289826,
+            "legacy_revenue_growth": -0.007,
+            "legacy_risk": 75.68397543271915,
+            "price": 50.22,
+            "data_quality_status": "OK"
+          },
+          "T": {
+            "legacy_v8_alpha": 50.29353348357525,
+            "legacy_revenue_growth": 0.023,
+            "legacy_risk": 63.874930206588495,
+            "price": 25.95,
+            "data_quality_status": "OK"
+          },
+          "CMCSA": {
+            "legacy_v8_alpha": 43.38876380900432,
+            "legacy_revenue_growth": -0.012,
+            "legacy_risk": 48.3249581239531,
+            "price": 26.81,
+            "data_quality_status": "OK"
+          },
+          "CHTR": {
+            "legacy_v8_alpha": 54.51706841167822,
+            "legacy_revenue_growth": -0.017,
+            "legacy_risk": 17.39251814628699,
+            "price": 158.97,
+            "data_quality_status": "OK"
+          },
+          "EA": {
+            "legacy_v8_alpha": 55.262875857691,
+            "legacy_revenue_growth": 0.189,
+            "legacy_risk": "",
+            "price": 209.7,
+            "data_quality_status": "OK"
+          },
+          "TTWO": {
+            "legacy_v8_alpha": 30.64742282723168,
+            "legacy_revenue_growth": 0.02,
+            "legacy_risk": 39.838079285315466,
+            "price": 216.14,
+            "data_quality_status": "OK"
+          },
+          "HON": {
+            "legacy_v8_alpha": 51.48423580890317,
+            "legacy_revenue_growth": 0.043,
+            "legacy_risk": 47.37576772752652,
+            "price": 206.07,
+            "data_quality_status": "OK"
+          },
+          "RTX": {
+            "legacy_v8_alpha": 46.315055575025916,
+            "legacy_revenue_growth": 0.145,
+            "legacy_risk": 64.51702959240647,
+            "price": 200.78,
+            "data_quality_status": "OK"
+          },
+          "LMT": {
+            "legacy_v8_alpha": 59.41170291711186,
+            "legacy_revenue_growth": 0.105,
+            "legacy_risk": 40.45226130653267,
+            "price": 531.55,
+            "data_quality_status": "OK"
+          },
+          "NOC": {
+            "legacy_v8_alpha": 39.5256244854748,
+            "legacy_revenue_growth": 0.051,
+            "legacy_risk": 37.828029034059185,
+            "price": 523.82,
+            "data_quality_status": "OK"
+          },
+          "GD": {
+            "legacy_v8_alpha": 48.585961984383275,
+            "legacy_revenue_growth": 0.081,
+            "legacy_risk": 61.94863204913455,
+            "price": 364.07,
+            "data_quality_status": "OK"
+          },
+          "DE": {
+            "legacy_v8_alpha": 32.97288251584691,
+            "legacy_revenue_growth": -0.111,
+            "legacy_risk": 46.09156895589056,
+            "price": 698.37,
+            "data_quality_status": "OK"
+          },
+          "ETN": {
+            "legacy_v8_alpha": 41.313287974870306,
+            "legacy_revenue_growth": 0.214,
+            "legacy_risk": 34.56169737576773,
+            "price": 390.85,
+            "data_quality_status": "OK"
+          },
+          "PH": {
+            "legacy_v8_alpha": 46.05206812583699,
+            "legacy_revenue_growth": 0.098,
+            "legacy_risk": 54.718034617532105,
+            "price": 949.38,
+            "data_quality_status": "OK"
+          },
+          "EMR": {
+            "legacy_v8_alpha": 50.00909455380329,
+            "legacy_revenue_growth": 0.07,
+            "legacy_risk": 39.61474036850921,
+            "price": 148.98,
+            "data_quality_status": "OK"
+          },
+          "ITW": {
+            "legacy_v8_alpha": 46.862090597679554,
+            "legacy_revenue_growth": 0.061,
+            "legacy_risk": 62.45114461194863,
+            "price": 269.09,
+            "data_quality_status": "OK"
+          },
+          "WM": {
+            "legacy_v8_alpha": 37.587767574532684,
+            "legacy_revenue_growth": 0.04,
+            "legacy_risk": 69.73757677275266,
+            "price": 219.04,
+            "data_quality_status": "OK"
+          },
+          "UNP": {
+            "legacy_v8_alpha": 51.36619247407305,
+            "legacy_revenue_growth": 0.115,
+            "legacy_risk": 69.821328866555,
+            "price": 289.73,
+            "data_quality_status": "OK"
+          },
+          "UPS": {
+            "legacy_v8_alpha": 47.91771313164269,
+            "legacy_revenue_growth": 0.076,
+            "legacy_risk": 54.80178671133445,
+            "price": 103.01,
+            "data_quality_status": "OK"
+          },
+          "FDX": {
+            "legacy_v8_alpha": 52.69706264894293,
+            "legacy_revenue_growth": 0.125,
+            "legacy_risk": 57.03517587939698,
+            "price": 316.54,
+            "data_quality_status": "OK"
+          },
+          "UBER": {
+            "legacy_v8_alpha": 59.857953502627936,
+            "legacy_revenue_growth": 0.122,
+            "legacy_risk": 46.09156895589057,
+            "price": 76.45,
+            "data_quality_status": "OK"
+          },
+          "XOM": {
+            "legacy_v8_alpha": 51.6174164620961,
+            "legacy_revenue_growth": 0.441,
+            "legacy_risk": 75.09771077610274,
+            "price": 164.15,
+            "data_quality_status": "OK"
+          },
+          "COP": {
+            "legacy_v8_alpha": 58.73670718005203,
+            "legacy_revenue_growth": 0.355,
+            "legacy_risk": 55.611390284757114,
+            "price": 137.2,
+            "data_quality_status": "OK"
+          },
+          "EOG": {
+            "legacy_v8_alpha": 68.78368908815287,
+            "legacy_revenue_growth": 0.587,
+            "legacy_risk": 48.43662758235623,
+            "price": 148.96,
+            "data_quality_status": "OK"
+          },
+          "SLB": {
+            "legacy_v8_alpha": 36.08957893442048,
+            "legacy_revenue_growth": 0.05,
+            "legacy_risk": 45.505304299274144,
+            "price": 58.13,
+            "data_quality_status": "OK"
+          },
+          "OXY": {
+            "legacy_v8_alpha": 63.89657252333793,
+            "legacy_revenue_growth": 0.534,
+            "legacy_risk": 47.45951982132886,
+            "price": 60.91,
+            "data_quality_status": "OK"
+          },
+          "MPC": {
+            "legacy_v8_alpha": 72.85838122300896,
+            "legacy_revenue_growth": 0.537,
+            "legacy_risk": 49.52540480178671,
+            "price": 387,
+            "data_quality_status": "OK"
+          },
+          "VLO": {
+            "legacy_v8_alpha": 70.82449805782989,
+            "legacy_revenue_growth": 0.517,
+            "legacy_risk": 54.8855388051368,
+            "price": 366.09,
+            "data_quality_status": "OK"
+          },
+          "PSX": {
+            "legacy_v8_alpha": 67.54708780164572,
+            "legacy_revenue_growth": 0.531,
+            "legacy_risk": 54.18760469011725,
+            "price": 256.09,
+            "data_quality_status": "OK"
+          },
+          "KMI": {
+            "legacy_v8_alpha": 32.088934460111105,
+            "legacy_revenue_growth": 0.108,
+            "legacy_risk": 73.22724734785037,
+            "price": 31.97,
+            "data_quality_status": "OK"
+          },
+          "WMB": {
+            "legacy_v8_alpha": 33.430661125692005,
+            "legacy_revenue_growth": 0.078,
+            "legacy_risk": 64.23785594639867,
+            "price": 75.16,
+            "data_quality_status": "OK"
+          },
+          "LIN": {
+            "legacy_v8_alpha": 41.969151545275594,
+            "legacy_revenue_growth": 0.093,
+            "legacy_risk": 69.93299832495813,
+            "price": 487.45,
+            "data_quality_status": "OK"
+          },
+          "APD": {
+            "legacy_v8_alpha": 31.974008851298564,
+            "legacy_revenue_growth": 0.046,
+            "legacy_risk": 52.59631490787269,
+            "price": 309.45,
+            "data_quality_status": "OK"
+          },
+          "SHW": {
+            "legacy_v8_alpha": 44.71992517937073,
+            "legacy_revenue_growth": 0.075,
+            "legacy_risk": 48.24120603015076,
+            "price": 331.25,
+            "data_quality_status": "OK"
+          },
+          "FCX": {
+            "legacy_v8_alpha": 45.94660211826775,
+            "legacy_revenue_growth": -0.073,
+            "legacy_risk": 42.211055276381906,
+            "price": 73.93,
+            "data_quality_status": "OK"
+          },
+          "NEM": {
+            "legacy_v8_alpha": 68.43505787919986,
+            "legacy_revenue_growth": 0.151,
+            "legacy_risk": 38.69346733668342,
+            "price": 125.16,
+            "data_quality_status": "OK"
+          },
+          "NUE": {
+            "legacy_v8_alpha": 58.60497382233698,
+            "legacy_revenue_growth": 0.23,
+            "legacy_risk": 35.455053042992745,
+            "price": 263.97,
+            "data_quality_status": "OK"
+          },
+          "STLD": {
+            "legacy_v8_alpha": 54.130474602465384,
+            "legacy_revenue_growth": 0.334,
+            "legacy_risk": 25.85147962032384,
+            "price": 247.64,
+            "data_quality_status": "OK"
+          },
+          "DOW": {
+            "legacy_v8_alpha": 43.0164288989987,
+            "legacy_revenue_growth": 0.197,
+            "legacy_risk": 33.193746510329426,
+            "price": 31.28,
+            "data_quality_status": "OK"
+          },
+          "SAP": {
+            "legacy_v8_alpha": 48.228057697413526,
+            "legacy_revenue_growth": 0.094,
+            "legacy_risk": 27.694025683975436,
+            "price": 209.69,
+            "data_quality_status": "OK"
+          },
+          "SHOP": {
+            "legacy_v8_alpha": 51.33963190773205,
+            "legacy_revenue_growth": 0.337,
+            "legacy_risk": 31.881630374092683,
+            "price": 141.87,
+            "data_quality_status": "OK"
+          },
+          "SE": {
+            "legacy_v8_alpha": 50.314724224886504,
+            "legacy_revenue_growth": 0.481,
+            "legacy_risk": 22.13847012841988,
+            "price": 112.81,
+            "data_quality_status": "OK"
+          },
+          "JD": {
+            "legacy_v8_alpha": 51.1704930267708,
+            "legacy_revenue_growth": -0.029,
+            "legacy_risk": 42.51814628699051,
+            "price": 27.83,
+            "data_quality_status": "OK"
+          },
+          "BIDU": {
+            "legacy_v8_alpha": 35.55199703338985,
+            "legacy_revenue_growth": -0.042,
+            "legacy_risk": 19.93299832495812,
+            "price": 94.34,
+            "data_quality_status": "OK"
+          },
+          "NVO": {
+            "legacy_v8_alpha": 57.46606653613693,
+            "legacy_revenue_growth": 0.021,
+            "legacy_risk": 36.655499720826356,
+            "price": 46.77,
+            "data_quality_status": "OK"
+          },
+          "AZN": {
+            "legacy_v8_alpha": 40.53490571660925,
+            "legacy_revenue_growth": 0.064,
+            "legacy_risk": 45.5890563930765,
+            "price": 161.63,
+            "data_quality_status": "OK"
+          },
+          "SNY": {
+            "legacy_v8_alpha": 45.23569141895697,
+            "legacy_revenue_growth": 0.146,
+            "legacy_risk": 60.77610273590174,
+            "price": 44.47,
+            "data_quality_status": "OK"
+          },
+          "BP": {
+            "legacy_v8_alpha": 56.101547337088256,
+            "legacy_revenue_growth": 0.482,
+            "legacy_risk": 52.56839754327192,
+            "price": 43.93,
+            "data_quality_status": "OK"
+          },
+          "SHEL": {
+            "legacy_v8_alpha": 62.523818192859856,
+            "legacy_revenue_growth": 0.447,
+            "legacy_risk": 71.21719709659409,
+            "price": 92.8,
+            "data_quality_status": "OK"
+          },
+          "RIO": {
+            "legacy_v8_alpha": 59.784679071620126,
+            "legacy_revenue_growth": 0.155,
+            "legacy_risk": 45.78447794528197,
+            "price": 102.75,
+            "data_quality_status": "OK"
+          },
+          "BHP": {
+            "legacy_v8_alpha": 55.73572028350628,
+            "legacy_revenue_growth": 0.183,
+            "legacy_risk": 40.201005025125625,
+            "price": 93.43,
+            "data_quality_status": "OK"
+          },
+          "UL": {
+            "legacy_v8_alpha": 43.88997663819402,
+            "legacy_revenue_growth": 0.005,
+            "legacy_risk": 59.24064768285874,
+            "price": 64.57,
+            "data_quality_status": "OK"
+          },
+          "DEO": {
+            "legacy_v8_alpha": 41.25675109535792,
+            "legacy_revenue_growth": -0.017,
+            "legacy_risk": 35.76214405360134,
+            "price": 91.14,
+            "data_quality_status": "OK"
+          }
+        }
+      },
+      "mep_ars_per_usd": 1521.1,
+      "coordinated_trade_plan": {
+        "portfolio_value_usd": 323.6144895141674,
+        "available_cash_usd_equiv": 0.0,
+        "buys_usd": 272.7829421612904,
+        "sells_usd": 272.7829421612903,
+        "net_external_cash_needed_usd": 1.1368683772161603e-13,
+        "trades": [
+          {
+            "ticker": "AMGN",
+            "current_weight": 0.0,
+            "target_weight": 0.018566753783706858,
+            "current_value_usd": 0.0,
+            "target_value_usd": 6.008470547649531,
+            "delta_usd": 6.008470547649531,
+            "action": "ADD"
+          },
+          {
+            "ticker": "AMZN",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "ANET",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "AVGO",
+            "current_weight": 0.3262569832402234,
+            "target_weight": 0.0,
+            "current_value_usd": 105.58148708171717,
+            "target_value_usd": 0.0,
+            "delta_usd": -105.58148708171717,
+            "action": "EXIT"
+          },
+          {
+            "ticker": "BAC",
+            "current_weight": 0.0,
+            "target_weight": 0.02092608295497344,
+            "current_value_usd": 0.0,
+            "target_value_usd": 6.77198365300485,
+            "delta_usd": 6.77198365300485,
+            "action": "ADD"
+          },
+          {
+            "ticker": "CEPU",
+            "current_weight": 0.0,
+            "target_weight": 0.016295379558929693,
+            "current_value_usd": 0.0,
+            "target_value_usd": 5.273420937402631,
+            "delta_usd": 5.273420937402631,
+            "action": "ADD"
+          },
+          {
+            "ticker": "COF",
+            "current_weight": 0.0,
+            "target_weight": 0.018608833649043977,
+            "current_value_usd": 0.0,
+            "target_value_usd": 6.022088201789428,
+            "delta_usd": 6.022088201789428,
+            "action": "ADD"
+          },
+          {
+            "ticker": "COP",
+            "current_weight": 0.0,
+            "target_weight": 0.0111946023171674,
+            "current_value_usd": 0.0,
+            "target_value_usd": 3.6227355141842437,
+            "delta_usd": 3.6227355141842437,
+            "action": "ADD"
+          },
+          {
+            "ticker": "CRM",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "CRWD",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "FDX",
+            "current_weight": 0.0,
+            "target_weight": 0.011643682704197699,
+            "current_value_usd": 0.0,
+            "target_value_usd": 3.768064434383879,
+            "delta_usd": 3.768064434383879,
+            "action": "ADD"
+          },
+          {
+            "ticker": "GOOGL",
+            "current_weight": 0.395469781615033,
+            "target_weight": 0.0,
+            "current_value_usd": 127.97975149562816,
+            "target_value_usd": 0.0,
+            "delta_usd": -127.97975149562816,
+            "action": "EXIT"
+          },
+          {
+            "ticker": "JD",
+            "current_weight": 0.0,
+            "target_weight": 0.029134852811051253,
+            "current_value_usd": 0.0,
+            "target_value_usd": 9.428460519518756,
+            "delta_usd": 9.428460519518756,
+            "action": "ADD"
+          },
+          {
+            "ticker": "MA",
+            "current_weight": 0.0,
+            "target_weight": 0.13309993421319946,
+            "current_value_usd": 0.0,
+            "target_value_usd": 43.07306726477381,
+            "delta_usd": 43.07306726477381,
+            "action": "ADD"
+          },
+          {
+            "ticker": "MELI",
+            "current_weight": 0.0,
+            "target_weight": 0.0008343527419031017,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.2700086366457181,
+            "delta_usd": 0.2700086366457181,
+            "action": "ADD"
+          },
+          {
+            "ticker": "MPC",
+            "current_weight": 0.0,
+            "target_weight": 0.007132462266748991,
+            "current_value_usd": 0.0,
+            "target_value_usd": 2.308168135433036,
+            "delta_usd": 2.308168135433036,
+            "action": "ADD"
+          },
+          {
+            "ticker": "MSFT",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "MU",
+            "current_weight": 0.0,
+            "target_weight": 0.00827735756099444,
+            "current_value_usd": 0.0,
+            "target_value_usd": 2.6786728416274492,
+            "delta_usd": 2.6786728416274492,
+            "action": "ADD"
+          },
+          {
+            "ticker": "NEM",
+            "current_weight": 0.0,
+            "target_weight": 0.004927831686685787,
+            "current_value_usd": 0.0,
+            "target_value_usd": 1.5947177356985596,
+            "delta_usd": 1.5947177356985596,
+            "action": "ADD"
+          },
+          {
+            "ticker": "NOW",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "NU",
+            "current_weight": 0.0,
+            "target_weight": 0.011896144126132846,
+            "current_value_usd": 0.0,
+            "target_value_usd": 3.8497646085654424,
+            "delta_usd": 3.8497646085654424,
+            "action": "ADD"
+          },
+          {
+            "ticker": "NUE",
+            "current_weight": 0.0,
+            "target_weight": 0.0023630503655181455,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.7647173377334213,
+            "delta_usd": 0.7647173377334213,
+            "action": "ADD"
+          },
+          {
+            "ticker": "NVDA",
+            "current_weight": 0.2782732351447435,
+            "target_weight": 0.15707438634527432,
+            "current_value_usd": 90.05325093682204,
+            "target_value_usd": 50.83154735287706,
+            "delta_usd": -39.22170358394498,
+            "action": "TRIM"
+          },
+          {
+            "ticker": "NVO",
+            "current_weight": 0.0,
+            "target_weight": 0.04520159305386256,
+            "current_value_usd": 0.0,
+            "target_value_usd": 14.627890461352868,
+            "delta_usd": 14.627890461352868,
+            "action": "ADD"
+          },
+          {
+            "ticker": "PBR",
+            "current_weight": 0.0,
+            "target_weight": 0.19990919789837472,
+            "current_value_usd": 0.0,
+            "target_value_usd": 64.6935130270692,
+            "delta_usd": 64.6935130270692,
+            "action": "ADD"
+          },
+          {
+            "ticker": "PLTR",
+            "current_weight": 0.0,
+            "target_weight": 0.0,
+            "current_value_usd": 0.0,
+            "target_value_usd": 0.0,
+            "delta_usd": 0.0,
+            "action": "HOLD"
+          },
+          {
+            "ticker": "PSX",
+            "current_weight": 0.0,
+            "target_weight": 0.011598286722731287,
+            "current_value_usd": 0.0,
+            "target_value_usd": 3.753373637015631,
+            "delta_usd": 3.753373637015631,
+            "action": "ADD"
+          },
+          {
+            "ticker": "ROP",
+            "current_weight": 0.0,
+            "target_weight": 0.018076664909083787,
+            "current_value_usd": 0.0,
+            "target_value_usd": 5.849870686671813,
+            "delta_usd": 5.849870686671813,
+            "action": "ADD"
+          },
+          {
+            "ticker": "SCHW",
+            "current_weight": 0.0,
+            "target_weight": 0.019649476350403303,
+            "current_value_usd": 0.0,
+            "target_value_usd": 6.358855258356471,
+            "delta_usd": 6.358855258356471,
+            "action": "ADD"
+          },
+          {
+            "ticker": "SONY",
+            "current_weight": 0.0,
+            "target_weight": 0.07305727816097327,
+            "current_value_usd": 0.0,
+            "target_value_usd": 23.642393777357896,
+            "delta_usd": 23.642393777357896,
+            "action": "ADD"
+          },
+          {
+            "ticker": "TEAM",
+            "current_weight": 0.0,
+            "target_weight": 0.013942878372561899,
+            "current_value_usd": 0.0,
+            "target_value_usd": 4.512117466894744,
+            "delta_usd": 4.512117466894744,
+            "action": "ADD"
+          },
+          {
+            "ticker": "TGT",
+            "current_weight": 0.0,
+            "target_weight": 0.026514830039204802,
+            "current_value_usd": 0.0,
+            "target_value_usd": 8.580583187692174,
+            "delta_usd": 8.580583187692174,
+            "action": "ADD"
+          },
+          {
+            "ticker": "UNH",
+            "current_weight": 0.0,
+            "target_weight": 0.1025620926917439,
+            "current_value_usd": 0.0,
+            "target_value_usd": 33.19057926994343,
+            "delta_usd": 33.19057926994343,
+            "action": "ADD"
+          },
+          {
+            "ticker": "V",
+            "current_weight": 0.0,
+            "target_weight": 0.01142276358490724,
+            "current_value_usd": 0.0,
+            "target_value_usd": 3.6965718063707773,
+            "delta_usd": 3.6965718063707773,
+            "action": "ADD"
+          },
+          {
+            "ticker": "VIST",
+            "current_weight": 0.0,
+            "target_weight": 0.01805875730123848,
+            "current_value_usd": 0.0,
+            "target_value_usd": 5.844075525300535,
+            "delta_usd": 5.844075525300535,
+            "action": "ADD"
+          },
+          {
+            "ticker": "VLO",
+            "current_weight": 0.0,
+            "target_weight": 0.008030473829387447,
+            "current_value_usd": 0.0,
+            "target_value_usd": 2.5987776888541,
+            "delta_usd": 2.5987776888541,
+            "action": "ADD"
+          }
+        ],
+        "implementation": [
+          {
+            "ticker": "AVGO",
+            "current_nominals": 11,
+            "target_nominals": 0,
+            "delta_nominals": -11,
+            "local_price_ars": 14600.0,
+            "estimated_trade_ars": 160600.0,
+            "target_value_usd": 0.0,
+            "implemented_value_usd": 0.0,
+            "implementation_error_usd": 0.0
+          },
+          {
+            "ticker": "GOOGL",
+            "current_nominals": 21,
+            "target_nominals": 0,
+            "delta_nominals": -21,
+            "local_price_ars": 9270.0,
+            "estimated_trade_ars": 194670.0,
+            "target_value_usd": 0.0,
+            "implemented_value_usd": 0.0,
+            "implementation_error_usd": 0.0
+          },
+          {
+            "ticker": "NVDA",
+            "current_nominals": 9,
+            "target_nominals": 5,
+            "delta_nominals": -4,
+            "local_price_ars": 15220.0,
+            "estimated_trade_ars": 60880.0,
+            "target_value_usd": 50.83154735287706,
+            "implemented_value_usd": 50.02958385379002,
+            "implementation_error_usd": -0.8019634990870372
+          }
+        ],
+        "status": "SIMULATION_ONLY"
+      },
+      "discrete_execution_plan": {
+        "success": true,
+        "capital_ars": 492250.0,
+        "desired_cash_ars": 0.0,
+        "invested_ars": 423720.0,
+        "cash_ars": 68530.0,
+        "cash_pct": 0.13921787709497208,
+        "holdings": 13,
+        "tracking_error_l1": 0.2255291484655302,
+        "turnover_ars": 763770.0,
+        "solver": "SCIPY_MILP_LEXICOGRAPHIC",
+        "objective_primary": 0.2294081225640572,
+        "trades": [
+          {
+            "ticker": "PBR",
+            "current_nominals": 0,
+            "target_nominals": 3,
+            "delta_nominals": 3,
+            "action": "ADD",
+            "local_price_ars": 32000.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 96000.0,
+            "continuous_target_value_ars": 96128.39544240184,
+            "target_weight_continuous": 0.19528368804957205,
+            "implemented_weight": 0.19502285424073135,
+            "implementation_error_ars": -128.39544240184478
+          },
+          {
+            "ticker": "NVDA",
+            "current_nominals": 9,
+            "target_nominals": 5,
+            "delta_nominals": -4,
+            "action": "TRIM",
+            "local_price_ars": 15220.0,
+            "current_value_ars": 136980.0,
+            "target_value_ars": 76100.0,
+            "continuous_target_value_ars": 78656.89010080912,
+            "target_weight_continuous": 0.15979053347040958,
+            "implemented_weight": 0.15459624174707973,
+            "implementation_error_ars": -2556.8901008091198
+          },
+          {
+            "ticker": "UNH",
+            "current_nominals": 0,
+            "target_nominals": 3,
+            "delta_nominals": 3,
+            "action": "ADD",
+            "local_price_ars": 19100.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 57300.0,
+            "continuous_target_value_ars": 53896.152310622165,
+            "target_weight_continuous": 0.10948939016886168,
+            "implemented_weight": 0.11640426612493651,
+            "implementation_error_ars": 3403.847689377835
+          },
+          {
+            "ticker": "MA",
+            "current_nominals": 0,
+            "target_nominals": 2,
+            "delta_nominals": 2,
+            "action": "ADD",
+            "local_price_ars": 26540.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 53080.0,
+            "continuous_target_value_ars": 65304.524042502366,
+            "target_weight_continuous": 0.1326653611833466,
+            "implemented_weight": 0.10783138649060436,
+            "implementation_error_ars": -12224.524042502366
+          },
+          {
+            "ticker": "SONY",
+            "current_nominals": 0,
+            "target_nominals": 8,
+            "delta_nominals": 8,
+            "action": "ADD",
+            "local_price_ars": 4865.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 38920.0,
+            "continuous_target_value_ars": 40741.01129212744,
+            "target_weight_continuous": 0.08276487819629749,
+            "implemented_weight": 0.0790655154900965,
+            "implementation_error_ars": -1821.0112921274413
+          },
+          {
+            "ticker": "NVO",
+            "current_nominals": 0,
+            "target_nominals": 3,
+            "delta_nominals": 3,
+            "action": "ADD",
+            "local_price_ars": 10530.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 31590.0,
+            "continuous_target_value_ars": 26924.12889540544,
+            "target_weight_continuous": 0.054696046511742896,
+            "implemented_weight": 0.06417470797359065,
+            "implementation_error_ars": 4665.87110459456
+          },
+          {
+            "ticker": "NU",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 12160.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 12160.0,
+            "continuous_target_value_ars": 11301.734175220907,
+            "target_weight_continuous": 0.022959338090849987,
+            "implemented_weight": 0.024702894870492636,
+            "implementation_error_ars": 858.2658247790932
+          },
+          {
+            "ticker": "JD",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 11180.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 11180.0,
+            "continuous_target_value_ars": 15602.831266810732,
+            "target_weight_continuous": 0.031696965498853695,
+            "implemented_weight": 0.02271203656678517,
+            "implementation_error_ars": -4422.831266810732
+          },
+          {
+            "ticker": "CEPU",
+            "current_nominals": 0,
+            "target_nominals": 5,
+            "delta_nominals": 5,
+            "action": "ADD",
+            "local_price_ars": 2220.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 11100.0,
+            "continuous_target_value_ars": 11682.641162826963,
+            "target_weight_continuous": 0.023733146090049697,
+            "implemented_weight": 0.022549517521584562,
+            "implementation_error_ars": -582.6411628269634
+          },
+          {
+            "ticker": "TGT",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 10860.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 10860.0,
+            "continuous_target_value_ars": 6879.071508487206,
+            "target_weight_continuous": 0.013974751667825712,
+            "implemented_weight": 0.022061960385982734,
+            "implementation_error_ars": 3980.9284915127937
+          },
+          {
+            "ticker": "ANET",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 10590.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 10590.0,
+            "continuous_target_value_ars": 5563.225857637051,
+            "target_weight_continuous": 0.01130162693273144,
+            "implemented_weight": 0.021513458608430677,
+            "implementation_error_ars": 5026.774142362949
+          },
+          {
+            "ticker": "COP",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 8495.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 8495.0,
+            "continuous_target_value_ars": 5187.325586548641,
+            "target_weight_continuous": 0.010537990018382206,
+            "implemented_weight": 0.017257491112239717,
+            "implementation_error_ars": 3307.674413451359
+          },
+          {
+            "ticker": "TEAM",
+            "current_nominals": 0,
+            "target_nominals": 1,
+            "delta_nominals": 1,
+            "action": "ADD",
+            "local_price_ars": 6345.0,
+            "current_value_ars": 0.0,
+            "target_value_ars": 6345.0,
+            "continuous_target_value_ars": 8903.605237860236,
+            "target_weight_continuous": 0.018087567776252384,
+            "implemented_weight": 0.012889791772473336,
+            "implementation_error_ars": -2558.6052378602362
+          },
+          {
+            "ticker": "AVGO",
+            "current_nominals": 11,
+            "target_nominals": 0,
+            "delta_nominals": -11,
+            "action": "EXIT",
+            "local_price_ars": 14600.0,
+            "current_value_ars": 160600.0,
+            "target_value_ars": 0.0,
+            "continuous_target_value_ars": 0.0,
+            "target_weight_continuous": 0.0,
+            "implemented_weight": 0.0,
+            "implementation_error_ars": 0.0
+          },
+          {
+            "ticker": "GOOGL",
+            "current_nominals": 21,
+            "target_nominals": 0,
+            "delta_nominals": -21,
+            "action": "EXIT",
+            "local_price_ars": 9270.0,
+            "current_value_ars": 194670.0,
+            "target_value_ars": 0.0,
+            "continuous_target_value_ars": 0.0,
+            "target_weight_continuous": 0.0,
+            "implemented_weight": 0.0,
+            "implementation_error_ars": 0.0
+          }
+        ],
+        "rounding_decisions": [
+          {
+            "ticker": "AMGN",
+            "continuous_nominals": 0.11712740842393313,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 2704.471860508616,
+            "upper_error_ars": 20385.528139491384,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 2704.471860508616,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "AMZN",
+            "continuous_nominals": 0.4820864790846852,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 1376.3568977867762,
+            "upper_error_ars": 1478.6431022132238,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 1376.3568977867762,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "ANET",
+            "continuous_nominals": 0.5253282207400426,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 5563.225857637051,
+            "upper_error_ars": 5026.774142362949,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 5026.774142362949,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "AVGO",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "CEPU",
+            "continuous_nominals": 5.26245097424638,
+            "lower_nominals": 5,
+            "upper_nominals": 6,
+            "upper_feasible_nominals": 6,
+            "lower_error_ars": 582.6411628269634,
+            "upper_error_ars": 1637.3588371730366,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 5,
+            "chosen_error_ars": 582.6411628269634,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "COP",
+            "continuous_nominals": 0.6106327941787688,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 5187.325586548641,
+            "upper_error_ars": 3307.674413451359,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 3307.674413451359,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "CRM",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "CRWD",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "FDX",
+            "continuous_nominals": 0.10568493573347744,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 5389.931722407349,
+            "upper_error_ars": 45610.068277592654,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 5389.931722407349,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "GOOGL",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "JD",
+            "continuous_nominals": 1.3956020811100833,
+            "lower_nominals": 1,
+            "upper_nominals": 2,
+            "upper_feasible_nominals": 2,
+            "lower_error_ars": 4422.831266810732,
+            "upper_error_ars": 6757.168733189268,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 4422.831266810732,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "MA",
+            "continuous_nominals": 2.4606075373964718,
+            "lower_nominals": 2,
+            "upper_nominals": 3,
+            "upper_feasible_nominals": 3,
+            "lower_error_ars": 12224.524042502366,
+            "upper_error_ars": 14315.475957497634,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 2,
+            "chosen_error_ars": 12224.524042502366,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "MELI",
+            "continuous_nominals": 0.3965055031225651,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 10348.79363149895,
+            "upper_error_ars": 15751.20636850105,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 10348.79363149895,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "MSFT",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "MU",
+            "continuous_nominals": 0.007572800608613941,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 2432.7621955172285,
+            "upper_error_ars": 318817.23780448275,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 2432.7621955172285,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "NEM",
+            "continuous_nominals": 0.0567047627404438,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 3834.6595803225123,
+            "upper_error_ars": 63790.340419677486,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 3834.6595803225123,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "NOW",
+            "continuous_nominals": 0.0,
+            "lower_nominals": 0,
+            "upper_nominals": 0,
+            "upper_feasible_nominals": 0,
+            "lower_error_ars": 0.0,
+            "upper_error_ars": 0.0,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 0.0,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "NU",
+            "continuous_nominals": 0.9294189288832982,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 11301.734175220907,
+            "upper_error_ars": 858.2658247790932,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 858.2658247790932,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "NUE",
+            "continuous_nominals": 0.1317520485226469,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 3401.837892854743,
+            "upper_error_ars": 22418.162107145257,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 3401.837892854743,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "NVDA",
+            "continuous_nominals": 5.1679954074119,
+            "lower_nominals": 5,
+            "upper_nominals": 6,
+            "upper_feasible_nominals": 6,
+            "lower_error_ars": 2556.8901008091198,
+            "upper_error_ars": 12663.10989919088,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 5,
+            "chosen_error_ars": 2556.8901008091198,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "NVO",
+            "continuous_nominals": 2.5568973309976677,
+            "lower_nominals": 2,
+            "upper_nominals": 3,
+            "upper_feasible_nominals": 3,
+            "lower_error_ars": 5864.12889540544,
+            "upper_error_ars": 4665.87110459456,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 3,
+            "chosen_error_ars": 4665.87110459456,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "PBR",
+            "continuous_nominals": 3.0040123575750575,
+            "lower_nominals": 3,
+            "upper_nominals": 4,
+            "upper_feasible_nominals": 4,
+            "lower_error_ars": 128.39544240184478,
+            "upper_error_ars": 31871.604557598155,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 3,
+            "chosen_error_ars": 128.39544240184478,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "PLTR",
+            "continuous_nominals": 0.07168204367158916,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 6609.0844265205205,
+            "upper_error_ars": 85590.91557347948,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 6609.0844265205205,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "PSX",
+            "continuous_nominals": 0.07811848877307437,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 5259.3272566472315,
+            "upper_error_ars": 62065.67274335277,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 5259.3272566472315,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "SONY",
+            "continuous_nominals": 8.374308590365352,
+            "lower_nominals": 8,
+            "upper_nominals": 9,
+            "upper_feasible_nominals": 9,
+            "lower_error_ars": 1821.0112921274413,
+            "upper_error_ars": 3043.9887078725587,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 8,
+            "chosen_error_ars": 1821.0112921274413,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "TEAM",
+            "continuous_nominals": 1.403247476416113,
+            "lower_nominals": 1,
+            "upper_nominals": 2,
+            "upper_feasible_nominals": 2,
+            "lower_error_ars": 2558.6052378602362,
+            "upper_error_ars": 3786.3947621397638,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 2558.6052378602362,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "TGT",
+            "continuous_nominals": 0.6334319989398901,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 6879.071508487206,
+            "upper_error_ars": 3980.9284915127937,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 1,
+            "chosen_error_ars": 3980.9284915127937,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "UNH",
+            "continuous_nominals": 2.8217880790901657,
+            "lower_nominals": 2,
+            "upper_nominals": 3,
+            "upper_feasible_nominals": 3,
+            "lower_error_ars": 15696.152310622165,
+            "upper_error_ars": 3403.847689377835,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 3,
+            "chosen_error_ars": 3403.847689377835,
+            "chosen_side": "UPPER"
+          },
+          {
+            "ticker": "V",
+            "continuous_nominals": 0.43090068897957023,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 14202.486708766635,
+            "upper_error_ars": 18757.513291233365,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 14202.486708766635,
+            "chosen_side": "LOWER"
+          },
+          {
+            "ticker": "VIST",
+            "continuous_nominals": 0.2539362761881565,
+            "lower_nominals": 0,
+            "upper_nominals": 1,
+            "upper_feasible_nominals": 1,
+            "lower_error_ars": 9918.750947909393,
+            "upper_error_ars": 29141.249052090607,
+            "upper_is_budget_feasible": true,
+            "chosen_nominals": 0,
+            "chosen_error_ars": 9918.750947909393,
+            "chosen_side": "LOWER"
+          }
+        ],
+        "cash_diagnostics": {
+          "desired_cash_ars": 0.0,
+          "final_cash_ars": 68530.0,
+          "tracking_only_cash_ars": 68529.99999999997,
+          "minimum_cash_from_denominations_only_ars": 0.0,
+          "cash_above_tracking_only_ars": 2.9103830456733704e-11,
+          "tracking_only_minus_denomination_floor_ars": 68529.99999999997,
+          "interpretation": "final_cash reflects integer target fit, current-position turnover friction, and any explicit opportunity reserve; denomination-only floor is diagnostic and is not itself a recommended cash target."
+        },
+        "warnings": [],
+        "cash_intent": {
+          "desired_reserve_ars": 0.0,
+          "reason": "NO_VALIDATED_PENDING_OPPORTUNITY_TRIGGER",
+          "horizon_days": null,
+          "source": "ENDOGENOUS_CASH_POLICY",
+          "opportunity_ids": []
+        },
+        "cash_deployment_audit": {
+          "cash_ars": 68530.0,
+          "affordable_plus_one_candidates": 15,
+          "improving_plus_one_candidates": 0,
+          "best_plus_one": {
+            "ticker": "CEPU",
+            "price_ars": 2220.0,
+            "current_target_nominals": 5,
+            "tracking_error_before_ars": 582.6411628269634,
+            "tracking_error_after_plus_one_ars": 1637.3588371730366,
+            "delta_tracking_error_plus_one_ars": 1054.7176743460732,
+            "improves_target_fit": false
+          },
+          "all_affordable_plus_one": [
+            {
+              "ticker": "CEPU",
+              "price_ars": 2220.0,
+              "current_target_nominals": 5,
+              "tracking_error_before_ars": 582.6411628269634,
+              "tracking_error_after_plus_one_ars": 1637.3588371730366,
+              "delta_tracking_error_plus_one_ars": 1054.7176743460732,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "SONY",
+              "price_ars": 4865.0,
+              "current_target_nominals": 8,
+              "tracking_error_before_ars": 1821.0112921274413,
+              "tracking_error_after_plus_one_ars": 3043.9887078725587,
+              "delta_tracking_error_plus_one_ars": 1222.9774157451175,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "TEAM",
+              "price_ars": 6345.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 2558.6052378602362,
+              "tracking_error_after_plus_one_ars": 3786.3947621397638,
+              "delta_tracking_error_plus_one_ars": 1227.7895242795275,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "MA",
+              "price_ars": 26540.0,
+              "current_target_nominals": 2,
+              "tracking_error_before_ars": 12224.524042502366,
+              "tracking_error_after_plus_one_ars": 14315.475957497634,
+              "delta_tracking_error_plus_one_ars": 2090.9519149952685,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "JD",
+              "price_ars": 11180.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 4422.831266810732,
+              "tracking_error_after_plus_one_ars": 6757.168733189268,
+              "delta_tracking_error_plus_one_ars": 2334.337466378536,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "COP",
+              "price_ars": 8495.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 3307.674413451359,
+              "tracking_error_after_plus_one_ars": 11802.67441345136,
+              "delta_tracking_error_plus_one_ars": 8495.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "GOOGL",
+              "price_ars": 9270.0,
+              "current_target_nominals": 0,
+              "tracking_error_before_ars": 0.0,
+              "tracking_error_after_plus_one_ars": 9270.0,
+              "delta_tracking_error_plus_one_ars": 9270.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "NVDA",
+              "price_ars": 15220.0,
+              "current_target_nominals": 5,
+              "tracking_error_before_ars": 2556.8901008091198,
+              "tracking_error_after_plus_one_ars": 12663.10989919088,
+              "delta_tracking_error_plus_one_ars": 10106.21979838176,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "NVO",
+              "price_ars": 10530.0,
+              "current_target_nominals": 3,
+              "tracking_error_before_ars": 4665.87110459456,
+              "tracking_error_after_plus_one_ars": 15195.87110459456,
+              "delta_tracking_error_plus_one_ars": 10530.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "ANET",
+              "price_ars": 10590.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 5026.774142362949,
+              "tracking_error_after_plus_one_ars": 15616.774142362949,
+              "delta_tracking_error_plus_one_ars": 10590.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "TGT",
+              "price_ars": 10860.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 3980.9284915127937,
+              "tracking_error_after_plus_one_ars": 14840.928491512794,
+              "delta_tracking_error_plus_one_ars": 10860.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "NU",
+              "price_ars": 12160.0,
+              "current_target_nominals": 1,
+              "tracking_error_before_ars": 858.2658247790932,
+              "tracking_error_after_plus_one_ars": 13018.265824779093,
+              "delta_tracking_error_plus_one_ars": 12160.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "AVGO",
+              "price_ars": 14600.0,
+              "current_target_nominals": 0,
+              "tracking_error_before_ars": 0.0,
+              "tracking_error_after_plus_one_ars": 14600.0,
+              "delta_tracking_error_plus_one_ars": 14600.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "UNH",
+              "price_ars": 19100.0,
+              "current_target_nominals": 3,
+              "tracking_error_before_ars": 3403.847689377835,
+              "tracking_error_after_plus_one_ars": 22503.847689377835,
+              "delta_tracking_error_plus_one_ars": 19100.0,
+              "improves_target_fit": false
+            },
+            {
+              "ticker": "PBR",
+              "price_ars": 32000.0,
+              "current_target_nominals": 3,
+              "tracking_error_before_ars": 128.39544240184478,
+              "tracking_error_after_plus_one_ars": 31871.604557598155,
+              "delta_tracking_error_plus_one_ars": 31743.20911519631,
+              "improves_target_fit": false
+            }
+          ],
+          "interpretation": "NO_SINGLE_AFFORDABLE_NOMINAL_IMPROVES_ABSOLUTE_TARGET_FIT"
+        },
+        "execution_validations": {
+          "AMGN": {
+            "ticker": "AMGN",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "AMGN.BA",
+            "local_price_ars": 23090.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Amgen Inc."
+          },
+          "AMZN": {
+            "ticker": "AMZN",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "AMZN.BA",
+            "local_price_ars": 2855.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Amazon.com, Inc."
+          },
+          "ANET": {
+            "ticker": "ANET",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "ANET.BA",
+            "local_price_ars": 10590.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Arista Networks, Inc."
+          },
+          "AVGO": {
+            "ticker": "AVGO",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "AVGO.BA",
+            "local_price_ars": 14600.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Broadcom Inc."
+          },
+          "CEPU": {
+            "ticker": "CEPU",
+            "executable": true,
+            "reason": "EXPLICIT_LOCAL_EQUITY_PLUS_ARS_QUOTE",
+            "local_symbol": "CEPU.BA",
+            "local_price_ars": 2220.0,
+            "provenance": "EXPLICIT_LOCAL_EQUITY",
+            "ratio_validated": false,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Central Puerto S.A."
+          },
+          "COP": {
+            "ticker": "COP",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "COP.BA",
+            "local_price_ars": 8495.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "ConocoPhillips"
+          },
+          "CRM": {
+            "ticker": "CRM",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "CRM.BA",
+            "local_price_ars": 22540.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Salesforce, Inc."
+          },
+          "CRWD": {
+            "ticker": "CRWD",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "CRWD.BA",
+            "local_price_ars": 4270.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "CrowdStrike Holdings, Inc."
+          },
+          "FDX": {
+            "ticker": "FDX",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "FDX.BA",
+            "local_price_ars": 51000.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "FedEx Corporation"
+          },
+          "GOOGL": {
+            "ticker": "GOOGL",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "GOOGL.BA",
+            "local_price_ars": 9270.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Alphabet Inc."
+          },
+          "JD": {
+            "ticker": "JD",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "JD.BA",
+            "local_price_ars": 11180.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "JD.com, Inc."
+          },
+          "MA": {
+            "ticker": "MA",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "MA.BA",
+            "local_price_ars": 26540.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Mastercard Incorporated"
+          },
+          "MELI": {
+            "ticker": "MELI",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "MELI.BA",
+            "local_price_ars": 26100.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "MercadoLibre, Inc."
+          },
+          "MSFT": {
+            "ticker": "MSFT",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "MSFT.BA",
+            "local_price_ars": 26400.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Microsoft Corporation"
+          },
+          "MU": {
+            "ticker": "MU",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "MU.BA",
+            "local_price_ars": 321250.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Micron Technology, Inc."
+          },
+          "NEM": {
+            "ticker": "NEM",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "NEM.BA",
+            "local_price_ars": 67625.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Newmont Corporation"
+          },
+          "NOW": {
+            "ticker": "NOW",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "NOW.BA",
+            "local_price_ars": 1297.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "ServiceNow, Inc."
+          },
+          "NU": {
+            "ticker": "NU",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "NU.BA",
+            "local_price_ars": 12160.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Nu Holdings Ltd."
+          },
+          "NUE": {
+            "ticker": "NUE",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "NUE.BA",
+            "local_price_ars": 25820.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Nucor Corporation"
+          },
+          "NVDA": {
+            "ticker": "NVDA",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "NVDA.BA",
+            "local_price_ars": 15220.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "NVIDIA Corporation"
+          },
+          "NVO": {
+            "ticker": "NVO",
+            "executable": true,
+            "reason": "BROKER_CONFIRMED_PLUS_ARS_QUOTE",
+            "local_symbol": "NVO.BA",
+            "local_price_ars": 10530.0,
+            "provenance": "BROKER_CHECK",
+            "ratio_validated": false,
+            "broker_status": "AVAILABLE",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Novo Nordisk A/S"
+          },
+          "PBR": {
+            "ticker": "PBR",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "PBR.BA",
+            "local_price_ars": 32000.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Petróleo Brasileiro S.A. - Petrobras"
+          },
+          "PLTR": {
+            "ticker": "PLTR",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "PLTR.BA",
+            "local_price_ars": 92200.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Palantir Technologies Inc."
+          },
+          "PSX": {
+            "ticker": "PSX",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "PSX.BA",
+            "local_price_ars": 67325.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Phillips 66"
+          },
+          "SONY": {
+            "ticker": "SONY",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "SONY.BA",
+            "local_price_ars": 4865.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Sony Group Corporation"
+          },
+          "TEAM": {
+            "ticker": "TEAM",
+            "executable": true,
+            "reason": "COMPANY_IDENTITY_MATCH_PLUS_ARS_QUOTE",
+            "local_symbol": "TEAM.BA",
+            "local_price_ars": 6345.0,
+            "provenance": "SHEET_NAME_X_YAHOO_NAME",
+            "ratio_validated": false,
+            "broker_status": "UNKNOWN",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Atlassian Corporation"
+          },
+          "TGT": {
+            "ticker": "TGT",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "TGT.BA",
+            "local_price_ars": 10860.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Target Corporation"
+          },
+          "UNH": {
+            "ticker": "UNH",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "UNH.BA",
+            "local_price_ars": 19100.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "UnitedHealth Group Incorporated"
+          },
+          "V": {
+            "ticker": "V",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "V.BA",
+            "local_price_ars": 32960.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Visa Inc."
+          },
+          "VIST": {
+            "ticker": "VIST",
+            "executable": true,
+            "reason": "OFFICIAL_CEDEAR_PLUS_ARS_QUOTE",
+            "local_symbol": "VIST.BA",
+            "local_price_ars": 39060.0,
+            "provenance": "OFFICIAL_CEDEAR",
+            "ratio_validated": true,
+            "broker_status": "CONFIRMED_OR_NOT_REQUIRED",
+            "identity_validated": true,
+            "settlement_currency": "ARS",
+            "quote_name": "Vista Energy, S.A.B. de C.V."
+          }
+        },
+        "excluded_targets": [],
+        "execution_coverage": {
+          "positive_continuous_targets": 24,
+          "validated_executable_targets": 24,
+          "pct": 100.0,
+          "excluded_target_weight": 0
+        },
+        "execution_universe": {
+          "requested": 36,
+          "resolved": 31,
+          "unresolved": [
+            "BAC",
+            "COF",
+            "ROP",
+            "SCHW",
+            "VLO"
+          ],
+          "manual_ratio_overrides": {
+            "ANET": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "ANET",
+              "old_ratio": null,
+              "new_ratio": 2.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "2 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "COP": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "COP",
+              "old_ratio": null,
+              "new_ratio": 25.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "25 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "MU": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "MU",
+              "old_ratio": null,
+              "new_ratio": 5.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "5 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "NU": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "NU",
+              "old_ratio": null,
+              "new_ratio": 2.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "2 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "NVO": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "NVO",
+              "old_ratio": null,
+              "new_ratio": 7.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "7 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "PLTR": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "PLTR",
+              "old_ratio": null,
+              "new_ratio": 3.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "3 CEDEARs : 1 acción",
+              "confirmed": true
+            },
+            "TEAM": {
+              "override_applied": true,
+              "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "ticker": "TEAM",
+              "old_ratio": null,
+              "new_ratio": 47.0,
+              "old_source": "",
+              "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+              "statement": "47 CEDEARs : 1 acción",
+              "confirmed": true
+            }
+          },
+          "resolutions": {
+            "AMGN": {
+              "model_ticker": "AMGN",
+              "local_symbol": "AMGN.BA",
+              "price_ars": 23090.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:50:57.735358+00:00",
+              "candidates": [
+                "AMGN.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 10.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Amgen Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Amgen Inc.",
+                "Amgen Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Amgen Inc.",
+                "observed_name": "Amgen Inc."
+              }
+            },
+            "AMZN": {
+              "model_ticker": "AMZN",
+              "local_symbol": "AMZN.BA",
+              "price_ars": 2855.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:50:58.623274+00:00",
+              "candidates": [
+                "AMZN.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 144.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Amazon.com, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Amazon.com, Inc.",
+                "AMAZON.COM, INC."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Amazon.com, Inc.",
+                "observed_name": "Amazon.com, Inc."
+              }
+            },
+            "ANET": {
+              "model_ticker": "ANET",
+              "local_symbol": "ANET.BA",
+              "price_ars": 10590.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:50:59.441698+00:00",
+              "candidates": [
+                "ANET.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": 2.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Arista Networks, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "ANET",
+                "old_ratio": null,
+                "new_ratio": 2.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "2 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Arista Networks, Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Arista Networks, Inc.",
+                "observed_name": "Arista Networks, Inc."
+              }
+            },
+            "AVGO": {
+              "model_ticker": "AVGO",
+              "local_symbol": "AVGO.BA",
+              "price_ars": 14600.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:00.279717+00:00",
+              "candidates": [
+                "AVGO.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 39.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Broadcom Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Broadcom Inc.",
+                "BROADCOM INC"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Broadcom Inc.",
+                "observed_name": "Broadcom Inc."
+              }
+            },
+            "BAC": {
+              "model_ticker": "BAC",
+              "local_symbol": null,
+              "price_ars": null,
+              "source": "UNRESOLVED",
+              "observed_at": "2026-09-06T23:51:03.830551+00:00",
+              "candidates": [
+                "BA.C.BA",
+                "BAC.BA"
+              ],
+              "reason": "NO_VALID_LOCAL_QUOTE",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 2.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": null,
+              "quoted_name": null,
+              "exchange": null,
+              "settlement_currency": "UNKNOWN",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Bank of America Corporation",
+                "Bank of America Corporation"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NO_OBSERVED_NAME"
+              }
+            },
+            "CEPU": {
+              "model_ticker": "CEPU",
+              "local_symbol": "CEPU.BA",
+              "price_ars": 2220.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:04.675735+00:00",
+              "candidates": [
+                "CEPU.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "LOCAL_EQUITY",
+              "cedear_ratio": null,
+              "ratio_source": "EXPLICIT_ARG_LOCAL_MAPPING",
+              "quoted_currency": "ARS",
+              "quoted_name": "Central Puerto S.A.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Central Puerto S.A."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Central Puerto S.A.",
+                "observed_name": "Central Puerto S.A."
+              }
+            },
+            "COF": {
+              "model_ticker": "COF",
+              "local_symbol": null,
+              "price_ars": null,
+              "source": "UNRESOLVED",
+              "observed_at": "2026-09-06T23:51:07.088928+00:00",
+              "candidates": [
+                "COF.BA"
+              ],
+              "reason": "NO_VALID_LOCAL_QUOTE",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": null,
+              "quoted_name": null,
+              "exchange": null,
+              "settlement_currency": "UNKNOWN",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Capital One Financial Corporati"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NO_OBSERVED_NAME"
+              }
+            },
+            "COP": {
+              "model_ticker": "COP",
+              "local_symbol": "COP.BA",
+              "price_ars": 8495.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:07.915459+00:00",
+              "candidates": [
+                "COP.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": 25.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "ConocoPhillips",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "COP",
+                "old_ratio": null,
+                "new_ratio": 25.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "25 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "ConocoPhillips"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "ConocoPhillips",
+                "observed_name": "ConocoPhillips"
+              }
+            },
+            "CRM": {
+              "model_ticker": "CRM",
+              "local_symbol": "CRM.BA",
+              "price_ars": 22540.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:08.796504+00:00",
+              "candidates": [
+                "CRM.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 6.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Salesforce, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Salesforce, Inc.",
+                "SALESFORCE.COM, INC."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Salesforce, Inc.",
+                "observed_name": "Salesforce, Inc."
+              }
+            },
+            "CRWD": {
+              "model_ticker": "CRWD",
+              "local_symbol": "CRWD.BA",
+              "price_ars": 4270.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:09.626081+00:00",
+              "candidates": [
+                "CRWD.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": "ARS",
+              "quoted_name": "CrowdStrike Holdings, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "CrowdStrike Holdings, Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "CrowdStrike Holdings, Inc.",
+                "observed_name": "CrowdStrike Holdings, Inc."
+              }
+            },
+            "FDX": {
+              "model_ticker": "FDX",
+              "local_symbol": "FDX.BA",
+              "price_ars": 51000.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:10.505703+00:00",
+              "candidates": [
+                "FDX.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 10.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "FedEx Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "FedEx Corporation",
+                "FEDEX CORP"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "FedEx Corporation",
+                "observed_name": "FedEx Corporation"
+              }
+            },
+            "GOOGL": {
+              "model_ticker": "GOOGL",
+              "local_symbol": "GOOGL.BA",
+              "price_ars": 9270.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:11.359429+00:00",
+              "candidates": [
+                "GOOGL.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 58.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Alphabet Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Alphabet Inc.",
+                "Alphabet Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Alphabet Inc.",
+                "observed_name": "Alphabet Inc."
+              }
+            },
+            "JD": {
+              "model_ticker": "JD",
+              "local_symbol": "JD.BA",
+              "price_ars": 11180.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:12.200751+00:00",
+              "candidates": [
+                "JD.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 2.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "JD.com, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "JD.com, Inc.",
+                "JD.COM, INC."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "JD.com, Inc.",
+                "observed_name": "JD.com, Inc."
+              }
+            },
+            "MA": {
+              "model_ticker": "MA",
+              "local_symbol": "MA.BA",
+              "price_ars": 26540.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:13.063448+00:00",
+              "candidates": [
+                "MA.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 33.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Mastercard Incorporated",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Mastercard Incorporated",
+                "MASTERCARD INC"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Mastercard Incorporated",
+                "observed_name": "Mastercard Incorporated"
+              }
+            },
+            "MELI": {
+              "model_ticker": "MELI",
+              "local_symbol": "MELI.BA",
+              "price_ars": 26100.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:13.969839+00:00",
+              "candidates": [
+                "MELI.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 60.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "MercadoLibre, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "MercadoLibre, Inc.",
+                "MercadoLibre Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "MercadoLibre, Inc.",
+                "observed_name": "MercadoLibre, Inc."
+              }
+            },
+            "MPC": {
+              "model_ticker": "MPC",
+              "local_symbol": "MPC.BA",
+              "price_ars": 5.460000038146973,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:14.834455+00:00",
+              "candidates": [
+                "MPC.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": "USD",
+              "quoted_name": "MP MATERIALS CORP CEDEAR EACH 1",
+              "exchange": "BUE",
+              "settlement_currency": "USD_CABLE",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Marathon Petroleum Corporation"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NAME_MISMATCH",
+                "matched_expected_name": null,
+                "observed_name": "MP MATERIALS CORP CEDEAR EACH 1"
+              }
+            },
+            "MSFT": {
+              "model_ticker": "MSFT",
+              "local_symbol": "MSFT.BA",
+              "price_ars": 26400.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:15.684285+00:00",
+              "candidates": [
+                "MSFT.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 10.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Microsoft Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Microsoft Corporation",
+                "Microsoft Corp"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Microsoft Corporation",
+                "observed_name": "Microsoft Corporation"
+              }
+            },
+            "MU": {
+              "model_ticker": "MU",
+              "local_symbol": "MU.BA",
+              "price_ars": 321250.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:16.518566+00:00",
+              "candidates": [
+                "MU.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 5.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Micron Technology, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "MU",
+                "old_ratio": null,
+                "new_ratio": 5.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "5 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Micron Technology, Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Micron Technology, Inc.",
+                "observed_name": "Micron Technology, Inc."
+              }
+            },
+            "NEM": {
+              "model_ticker": "NEM",
+              "local_symbol": "NEM.BA",
+              "price_ars": 67625.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:17.390976+00:00",
+              "candidates": [
+                "NEM.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 3.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Newmont Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Newmont Corporation",
+                "Newmont Corporation"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Newmont Corporation",
+                "observed_name": "Newmont Corporation"
+              }
+            },
+            "NOW": {
+              "model_ticker": "NOW",
+              "local_symbol": "NOW.BA",
+              "price_ars": 1297.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:18.211303+00:00",
+              "candidates": [
+                "NOW.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": "ARS",
+              "quoted_name": "ServiceNow, Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "ServiceNow, Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "ServiceNow, Inc.",
+                "observed_name": "ServiceNow, Inc."
+              }
+            },
+            "NU": {
+              "model_ticker": "NU",
+              "local_symbol": "NU.BA",
+              "price_ars": 12160.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:19.033176+00:00",
+              "candidates": [
+                "NU.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 2.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Nu Holdings Ltd.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "NU",
+                "old_ratio": null,
+                "new_ratio": 2.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "2 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Nu Holdings Ltd."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Nu Holdings Ltd.",
+                "observed_name": "Nu Holdings Ltd."
+              }
+            },
+            "NUE": {
+              "model_ticker": "NUE",
+              "local_symbol": "NUE.BA",
+              "price_ars": 25820.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:19.924318+00:00",
+              "candidates": [
+                "NUE.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 2.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Nucor Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Nucor Corporation",
+                "Nucor Corp"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Nucor Corporation",
+                "observed_name": "Nucor Corporation"
+              }
+            },
+            "NVDA": {
+              "model_ticker": "NVDA",
+              "local_symbol": "NVDA.BA",
+              "price_ars": 15220.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:20.780002+00:00",
+              "candidates": [
+                "NVDA.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 24.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "NVIDIA Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "NVIDIA Corporation",
+                "NVIDIA CORPORATION"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "NVIDIA Corporation",
+                "observed_name": "NVIDIA Corporation"
+              }
+            },
+            "NVO": {
+              "model_ticker": "NVO",
+              "local_symbol": "NVO.BA",
+              "price_ars": 10530.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:21.927733+00:00",
+              "candidates": [
+                "NVO.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": 7.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Novo Nordisk A/S",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "NVO",
+                "old_ratio": null,
+                "new_ratio": 7.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "7 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Novo Nordisk A/S"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Novo Nordisk A/S",
+                "observed_name": "Novo Nordisk A/S"
+              }
+            },
+            "PBR": {
+              "model_ticker": "PBR",
+              "local_symbol": "PBR.BA",
+              "price_ars": 32000.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:22.774001+00:00",
+              "candidates": [
+                "PBR.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 1.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Petróleo Brasileiro S.A. - Petrobras",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Petroleo Brasileiro S.A. Petrob",
+                "PETROBRAS (ADR)"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.6666666666666666,
+                "reason": "NAME_MISMATCH",
+                "matched_expected_name": "Petroleo Brasileiro S.A. Petrob",
+                "observed_name": "Petróleo Brasileiro S.A. - Petrobras"
+              }
+            },
+            "PLTR": {
+              "model_ticker": "PLTR",
+              "local_symbol": "PLTR.BA",
+              "price_ars": 92200.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:23.909153+00:00",
+              "candidates": [
+                "PLTR.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": 3.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Palantir Technologies Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "PLTR",
+                "old_ratio": null,
+                "new_ratio": 3.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "3 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Palantir Technologies Inc."
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Palantir Technologies Inc.",
+                "observed_name": "Palantir Technologies Inc."
+              }
+            },
+            "PSX": {
+              "model_ticker": "PSX",
+              "local_symbol": "PSX.BA",
+              "price_ars": 67325.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:24.741025+00:00",
+              "candidates": [
+                "PSX.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 6.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Phillips 66",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Phillips 66",
+                "PHILLIPS 66"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Phillips 66",
+                "observed_name": "Phillips 66"
+              }
+            },
+            "ROP": {
+              "model_ticker": "ROP",
+              "local_symbol": null,
+              "price_ars": null,
+              "source": "UNRESOLVED",
+              "observed_at": "2026-09-06T23:51:26.866374+00:00",
+              "candidates": [
+                "ROP.BA"
+              ],
+              "reason": "NO_VALID_LOCAL_QUOTE",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": null,
+              "quoted_name": null,
+              "exchange": null,
+              "settlement_currency": "UNKNOWN",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Roper Technologies, Inc."
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NO_OBSERVED_NAME"
+              }
+            },
+            "SCHW": {
+              "model_ticker": "SCHW",
+              "local_symbol": null,
+              "price_ars": null,
+              "source": "UNRESOLVED",
+              "observed_at": "2026-09-06T23:51:27.316934+00:00",
+              "candidates": [
+                "SCHW.BA"
+              ],
+              "reason": "NO_VALID_LOCAL_QUOTE",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": null,
+              "quoted_name": null,
+              "exchange": null,
+              "settlement_currency": "UNKNOWN",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Charles Schwab Corporation (The"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NO_OBSERVED_NAME"
+              }
+            },
+            "SONY": {
+              "model_ticker": "SONY",
+              "local_symbol": "SONY.BA",
+              "price_ars": 4865.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:28.194683+00:00",
+              "candidates": [
+                "SONY.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 4.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Sony Group Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Sony Group Corporation",
+                "Sony Group Corporation"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Sony Group Corporation",
+                "observed_name": "Sony Group Corporation"
+              }
+            },
+            "TEAM": {
+              "model_ticker": "TEAM",
+              "local_symbol": "TEAM.BA",
+              "price_ars": 6345.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:29.025044+00:00",
+              "candidates": [
+                "TEAM.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": 47.0,
+              "ratio_source": "USER_CONFIRMED_MANUAL_AUTHORITY@2026-09-05",
+              "quoted_currency": "ARS",
+              "quoted_name": "Atlassian Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": true,
+                "reason": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "ticker": "TEAM",
+                "old_ratio": null,
+                "new_ratio": 47.0,
+                "old_source": "",
+                "new_source": "USER_CONFIRMED_MANUAL_AUTHORITY",
+                "statement": "47 CEDEARs : 1 acción",
+                "confirmed": true
+              },
+              "expected_company_names": [
+                "Atlassian Corporation"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Atlassian Corporation",
+                "observed_name": "Atlassian Corporation"
+              }
+            },
+            "TGT": {
+              "model_ticker": "TGT",
+              "local_symbol": "TGT.BA",
+              "price_ars": 10860.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:29.977550+00:00",
+              "candidates": [
+                "TGT.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 4.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Target Corporation",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Target Corporation",
+                "TARGET CORPORATION"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Target Corporation",
+                "observed_name": "Target Corporation"
+              }
+            },
+            "UNH": {
+              "model_ticker": "UNH",
+              "local_symbol": "UNH.BA",
+              "price_ars": 19100.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:30.806812+00:00",
+              "candidates": [
+                "UNH.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 33.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "UnitedHealth Group Incorporated",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "UnitedHealth Group Incorporated",
+                "UNITEDHEALTH GROUP INC"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "UnitedHealth Group Incorporated",
+                "observed_name": "UnitedHealth Group Incorporated"
+              }
+            },
+            "V": {
+              "model_ticker": "V",
+              "local_symbol": "V.BA",
+              "price_ars": 32960.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:31.635982+00:00",
+              "candidates": [
+                "V.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 6.0,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Visa Inc.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Visa Inc.",
+                "VISA INC"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Visa Inc.",
+                "observed_name": "Visa Inc."
+              }
+            },
+            "VIST": {
+              "model_ticker": "VIST",
+              "local_symbol": "VIST.BA",
+              "price_ars": 39060.0,
+              "source": "YAHOO_LOCAL_PROBE",
+              "observed_at": "2026-09-06T23:51:32.477065+00:00",
+              "candidates": [
+                "VIST.BA"
+              ],
+              "reason": "OK",
+              "instrument_class": "CEDEAR",
+              "cedear_ratio": 0.2,
+              "ratio_source": "BANCO_COMAFI_CURRENT_PROGRAMS@2026-09-06T23:49:20.496450+00:00",
+              "quoted_currency": "ARS",
+              "quoted_name": "Vista Energy, S.A.B. de C.V.",
+              "exchange": "BUE",
+              "settlement_currency": "ARS",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Vista Energy S.A.B. de C.V.",
+                "VISTA OIL & GAS SAB DE CV (ADS)"
+              ],
+              "name_match": {
+                "match": true,
+                "score": 1.0,
+                "reason": "NAME_MATCH",
+                "matched_expected_name": "Vista Energy S.A.B. de C.V.",
+                "observed_name": "Vista Energy, S.A.B. de C.V."
+              }
+            },
+            "VLO": {
+              "model_ticker": "VLO",
+              "local_symbol": null,
+              "price_ars": null,
+              "source": "UNRESOLVED",
+              "observed_at": "2026-09-06T23:51:34.655222+00:00",
+              "candidates": [
+                "VLO.BA"
+              ],
+              "reason": "NO_VALID_LOCAL_QUOTE",
+              "instrument_class": "ACCIÓN USA/ADR",
+              "cedear_ratio": null,
+              "ratio_source": "",
+              "quoted_currency": null,
+              "quoted_name": null,
+              "exchange": null,
+              "settlement_currency": "UNKNOWN",
+              "ratio_override": {
+                "override_applied": false,
+                "reason": "NO_MANUAL_OVERRIDE"
+              },
+              "expected_company_names": [
+                "Valero Energy Corporation"
+              ],
+              "name_match": {
+                "match": false,
+                "score": 0.0,
+                "reason": "NO_OBSERVED_NAME"
+              }
+            }
+          }
+        },
+        "feasible_reoptimization": {
+          "success": true,
+          "reason": "OK",
+          "weights": {
+            "PBR": 0.19528368804957205,
+            "MA": 0.1326653611833466,
+            "UNH": 0.10948939016886168,
+            "SONY": 0.08276487819629749,
+            "CEPU": 0.023733146090049697,
+            "NVO": 0.054696046511742896,
+            "VIST": 0.02014982417046093,
+            "NU": 0.022959338090849987,
+            "JD": 0.031696965498853695,
+            "NEM": 0.007790065170792305,
+            "TEAM": 0.018087567776252384,
+            "MELI": 0.02102345074961696,
+            "NUE": 0.006910793078425075,
+            "TGT": 0.013974751667825712,
+            "MU": 0.0049421273651949794,
+            "PSX": 0.010684260551848108,
+            "ANET": 0.01130162693273144,
+            "NVDA": 0.15979053347040958,
+            "PLTR": 0.013426276133104155,
+            "AMZN": 0.002796052611044746,
+            "V": 0.028852182242288745,
+            "NOW": 0.0,
+            "CRM": 0.0,
+            "MSFT": 0.0,
+            "CRWD": 0.0,
+            "AMGN": 0.005494102306772201,
+            "COP": 0.010537990018382206,
+            "FDX": 0.010949581965276484
+          },
+          "original_candidate_count": 34,
+          "feasible_candidate_count": 28,
+          "optimizer_return_eligible_count": 28,
+          "excluded_candidates": [
+            "BAC",
+            "COF",
+            "MPC",
+            "ROP",
+            "SCHW",
+            "VLO"
+          ],
+          "original_unavailable_core_weight": 0.09242399395964095,
+          "objective_value": 0.35391726914288724,
+          "expected_portfolio_vol": 0.11949718384933453,
+          "effective_positions": 9.240402482674595,
+          "concentration_hhi": 0.10822039428206316,
+          "same_frozen_optimizer": true,
+          "factor_weights_frozen": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "candidate_fraction_frozen": 0.2
+        },
+        "original_unconstrained_core_weights": {
+          "PBR": 0.19990919789837472,
+          "MA": 0.13309993421319946,
+          "UNH": 0.1025620926917439,
+          "SONY": 0.07305727816097327,
+          "CEPU": 0.016295379558929693,
+          "NVO": 0.04520159305386256,
+          "VIST": 0.01805875730123848,
+          "NU": 0.011896144126132846,
+          "JD": 0.029134852811051253,
+          "NEM": 0.004927831686685787,
+          "TEAM": 0.013942878372561899,
+          "MELI": 0.0008343527419031017,
+          "NUE": 0.0023630503655181455,
+          "TGT": 0.026514830039204802,
+          "BAC": 0.02092608295497344,
+          "MU": 0.00827735756099444,
+          "PSX": 0.011598286722731287,
+          "VLO": 0.008030473829387447,
+          "ANET": 0.0,
+          "MPC": 0.007132462266748991,
+          "SCHW": 0.019649476350403303,
+          "NVDA": 0.15707438634527432,
+          "ROP": 0.018076664909083787,
+          "PLTR": 0.0,
+          "AMZN": 0.0,
+          "V": 0.01142276358490724,
+          "NOW": 0.0,
+          "CRM": 0.0,
+          "COF": 0.018608833649043977,
+          "MSFT": 0.0,
+          "CRWD": 0.0,
+          "AMGN": 0.018566753783706858,
+          "COP": 0.0111946023171674,
+          "FDX": 0.011643682704197699
+        },
+        "execution_constrained_core_weights": {
+          "PBR": 0.19528368804957205,
+          "MA": 0.1326653611833466,
+          "UNH": 0.10948939016886168,
+          "SONY": 0.08276487819629749,
+          "CEPU": 0.023733146090049697,
+          "NVO": 0.054696046511742896,
+          "VIST": 0.02014982417046093,
+          "NU": 0.022959338090849987,
+          "JD": 0.031696965498853695,
+          "NEM": 0.007790065170792305,
+          "TEAM": 0.018087567776252384,
+          "MELI": 0.02102345074961696,
+          "NUE": 0.006910793078425075,
+          "TGT": 0.013974751667825712,
+          "MU": 0.0049421273651949794,
+          "PSX": 0.010684260551848108,
+          "ANET": 0.01130162693273144,
+          "NVDA": 0.15979053347040958,
+          "PLTR": 0.013426276133104155,
+          "AMZN": 0.002796052611044746,
+          "V": 0.028852182242288745,
+          "NOW": 0.0,
+          "CRM": 0.0,
+          "MSFT": 0.0,
+          "CRWD": 0.0,
+          "AMGN": 0.005494102306772201,
+          "COP": 0.010537990018382206,
+          "FDX": 0.010949581965276484
+        },
+        "execution_coverage_truth": {
+          "original_positive_targets": {
+            "total": 27,
+            "validated_executable": 21,
+            "pct": 77.77777777777777,
+            "unavailable_target_weight": 0.09242399395964095,
+            "excluded": [
+              "BAC",
+              "COF",
+              "MPC",
+              "ROP",
+              "SCHW",
+              "VLO"
+            ]
+          },
+          "frozen_candidate_universe": {
+            "total": 34,
+            "validated_executable": 28,
+            "pct": 82.3529411764706,
+            "excluded": [
+              "BAC",
+              "COF",
+              "MPC",
+              "ROP",
+              "SCHW",
+              "VLO"
+            ]
+          },
+          "post_reoptimization_targets": {
+            "total": 24,
+            "validated_executable": 24,
+            "pct": 100.0,
+            "excluded_target_weight": 0
+          },
+          "note": "Post-reoptimization 100% coverage does not imply 100% local executability of the original economic universe."
+        },
+        "execution_gate": {
+          "ready": true,
+          "reasons": []
+        }
+      },
+      "corporate_actions": {
+        "checked": [
+          "AVGO",
+          "GOOGL",
+          "NVDA"
+        ],
+        "new_actions": [],
+        "errors": {},
+        "official_cedear_registry": {
+          "source": "LIVE_COMAFI",
+          "observed_at": "2026-09-06T23:49:20.496450+00:00",
+          "count": 256,
+          "ratio_changes": [],
+          "name_aliases": {
+            "BRK-B": {
+              "matched_program_origin_ticker": "BRK/B",
+              "matched_program_byma_symbol": "BRKB",
+              "program_name": "BERKSHIRE HATHAWAY INC",
+              "name_match_score": 0.94,
+              "method": "STRICT_COMPANY_IDENTITY"
+            },
+            "BNY": {
+              "matched_program_origin_ticker": "BK",
+              "matched_program_byma_symbol": "BK",
+              "program_name": "THE BANK OF NEW YORK MELLON CORP.",
+              "name_match_score": 0.94,
+              "method": "STRICT_COMPANY_IDENTITY"
+            },
+            "SHEL": {
+              "matched_program_origin_ticker": "RDSB",
+              "matched_program_byma_symbol": "RDS",
+              "program_name": "Royal Dutch Shell PLC",
+              "name_match_score": 0.94,
+              "method": "STRICT_COMPANY_IDENTITY"
+            }
+          }
+        },
+        "ratio_changes": [],
+        "current_action_risk": {
+          "recent_action_count": 0,
+          "recent_actions": [],
+          "review_required": false,
+          "lookback_days": 14
+        }
+      },
+      "motor_closure": {
+        "motor_ready_for_small_capital_test": true,
+        "model_frozen": true,
+        "champion": "V10.4_EQUAL_THIRDS_TOP20",
+        "integer_execution": true,
+        "execution_coverage_pct": 100.0,
+        "excluded_target_weight": 0,
+        "cash_pct": 0.13921787709497208,
+        "cash_reason": "NO_VALIDATED_PENDING_OPPORTUNITY_TRIGGER",
+        "holdings": 13,
+        "solver": "SCIPY_MILP_LEXICOGRAPHIC",
+        "cash_is_gate": false,
+        "holdings_count_is_gate": false,
+        "reasons": []
+      },
+      "warnings": [
+        "PRICE_ONLY instruments excluded from frozen corporate model: 29",
+        "LOCAL/UNRESOLVED instruments excluded pending local provider: 16"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "SENSITIVITY_ONLY_NOT_RETUNED",
+  "baseline_cagr": 0.25120819657807125,
+  "drop_first_2_cagr": 0.2568721500875477,
+  "drop_first_12_cagr": 0.2634396087478077,
+  "drop_first_12_spread_vs_spy": 0.12143121721391315,
+  "interpretation": "If performance remains strong after dropping the concentrated startup, the headline CAGR is less dependent on the initial 2014 concentration. This is a sample-sensitivity diagnostic, not a new model."
+}

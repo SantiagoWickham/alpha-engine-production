@@ -1,0 +1,40 @@
+{
+  "registered_at_utc": "2026-09-07T22:40:26.786593+00:00",
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "audit_version": "V0.8_FORENSIC_BASE",
+  "factors": [
+    "Revenue Growth",
+    "Sales Yield",
+    "Trend"
+  ],
+  "no_retuning": true,
+  "purpose": "Prospective forward-test registration. Future performance must be evaluated without changing frozen factors, weights, candidate fraction or optimizer rules.",
+  "files": [
+    {
+      "path": "src/validation/v10_full_alpha.py",
+      "present": true,
+      "sha256": "ac0b5791d31d9834bc6404351c4a7a5985df2e9591fe5d4fcf25265054059c26"
+    },
+    {
+      "path": "src/live/frozen_evaluator.py",
+      "present": true,
+      "sha256": "2114445636b083cf4eb8cabed2226a4ec235d555e624d6753514aa3f8ad18ee9"
+    },
+    {
+      "path": "src/live/production_factor_engine.py",
+      "present": true,
+      "sha256": "8ce6f8e3e737e617d7a43c7030eb79416d6b483f9e9b094017a2caccd3646687"
+    },
+    {
+      "path": "config/settings.yaml",
+      "present": true,
+      "sha256": "2c90d2d86bf2042261828d772b2c58c034fe9e4b8dee06f149b707d93b3beb26"
+    },
+    {
+      "path": "data/v10_4/final_model_freeze_decision.json",
+      "present": true,
+      "sha256": "1740030032e0686f603cbb7e1ee5f129928207d0fbbde9cc138b4340ee453b54"
+    }
+  ],
+  "registration_sha256": "e121e4023194b57ea152dd9bcd25ec6993e417ec6a7969cce02de8aa85ee25b2"
+}

@@ -1,0 +1,13 @@
+{
+  "v10_status": "PAPER ONLY",
+  "reason": "Full Alpha positive but strict closure incomplete: FF5+MOM alpha=8.79%, t=3.29, positive_regime_signs=True, optimizer_ok=False.",
+  "factor_research_status": "FROZEN",
+  "survivorship_limitation": {
+    "full_survivorship_free": false,
+    "reason": "Public/free historical price coverage for factor-eligible delisted securities was insufficient in V0.9.4.",
+    "delisted_price_usable": 285,
+    "delisted_price_attempted": 1837,
+    "delisted_price_share": 0.15514425694066414
+  },
+  "elapsed_minutes": 2.184880300362905
+}

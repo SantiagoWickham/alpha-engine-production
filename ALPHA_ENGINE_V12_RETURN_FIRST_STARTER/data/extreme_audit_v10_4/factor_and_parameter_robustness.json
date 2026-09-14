@@ -1,0 +1,18 @@
+{
+  "status": "SENSITIVITY_ONLY_NO_RETUNING",
+  "factor_ablation_rows": 7,
+  "parameter_zone_rows": 12,
+  "baseline": {
+    "scenario": "FULL_ALPHA_EQUAL",
+    "type": "FACTOR_ABLATION",
+    "months": 151,
+    "cagr": 0.25136237208202505,
+    "ann_vol": 0.19336107005073497,
+    "max_drawdown": -0.20476566719661304,
+    "avg_turnover_monthly": 0.1529299627225012,
+    "avg_holdings": 19.198675496688743,
+    "spy_cagr": 0.13889613673171453,
+    "cagr_spread_vs_spy": 0.10900241979199765
+  },
+  "rule": "All variants are predeclared diagnostics. No best variant is selected and V10.4 remains the champion regardless of outcome."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "FAIL",
+  "exact_replay": false,
+  "secondary_assessment": "NEAR_REPLAY_MAX_ERROR_LE_10BPS",
+  "matched_periods": 153,
+  "tolerance": 1e-10,
+  "net_return_error": {
+    "matched": 153,
+    "mean_abs": 7.673922828024139e-05,
+    "median_abs": 3.1802193569565804e-05,
+    "p95_abs": 0.0003440627049838824,
+    "max_abs": 0.0007208430450850872,
+    "mean_abs_bps": 0.7673922828024139,
+    "median_abs_bps": 0.31802193569565806,
+    "p95_abs_bps": 3.440627049838824,
+    "max_abs_bps": 7.208430450850872
+  },
+  "gross_return_error": {
+    "matched": 153,
+    "mean_abs": 7.673589898213873e-05,
+    "median_abs": 3.1801634753109154e-05,
+    "p95_abs": 0.00034405868472432585,
+    "max_abs": 0.0007209467506046202,
+    "mean_abs_bps": 0.7673589898213874,
+    "median_abs_bps": 0.31801634753109154,
+    "p95_abs_bps": 3.4405868472432584,
+    "max_abs_bps": 7.209467506046202
+  },
+  "turnover_error": {
+    "matched": 153,
+    "mean_abs": 0.0005495956368569084,
+    "median_abs": 0.00020079522820290463,
+    "p95_abs": 0.0020879285850836597,
+    "max_abs": 0.006558574256931959,
+    "mean_abs_bps": 5.495956368569084,
+    "median_abs_bps": 2.0079522820290463,
+    "p95_abs_bps": 20.879285850836595,
+    "max_abs_bps": 65.58574256931959
+  },
+  "transaction_cost_error": {
+    "matched": 153,
+    "mean_abs": 5.4959563685690264e-08,
+    "median_abs": 2.0079522820293882e-08,
+    "p95_abs": 2.0879285850836048e-07,
+    "max_abs": 6.558574256931999e-07,
+    "mean_abs_bps": 0.0005495956368569027,
+    "median_abs_bps": 0.00020079522820293884,
+    "p95_abs_bps": 0.0020879285850836046,
+    "max_abs_bps": 0.006558574256931998
+  },
+  "max_abs_return_replay_error": 0.0007208430450850872,
+  "persisted_path_cagr_using_these_rows": 0.25225818881571094,
+  "reconstructed_path_cagr_using_these_rows": 0.2523048036256592,
+  "cagr_gap_reconstructed_minus_persisted": 4.661480994827549e-05,
+  "meaning": "Exact PASS requires reconstructed frozen weights to reproduce persisted FINAL_OPTIMIZER monthly net returns to numerical tolerance. The secondary assessment quantifies economic closeness but never converts an exact FAIL into PASS."
+}

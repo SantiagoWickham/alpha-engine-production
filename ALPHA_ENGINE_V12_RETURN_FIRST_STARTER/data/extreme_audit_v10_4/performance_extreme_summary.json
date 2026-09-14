@@ -1,0 +1,18 @@
+{
+  "status": "SENSITIVITY_NOT_COUNTERFACTUAL_REOPTIMIZATION",
+  "base": {
+    "months": 150,
+    "cagr": 0.24774378285499932,
+    "spy_cagr": 0.13889613673171453,
+    "cagr_spread": 0.10884764612328479,
+    "ann_vol": 0.19379044638084358,
+    "max_drawdown": -0.20468786476133982,
+    "downside_deviation": 0.1311031447781721,
+    "positive_month_share": 0.6733333333333333,
+    "active_month_hit_rate": 0.5866666666666667,
+    "skewness": 0.0006044405473817676,
+    "kurtosis_pearson": 4.618457556024655,
+    "active_nw_tstat": 2.932672635844999
+  },
+  "warning": "Removing realized best/worst months is an ex-post fragility diagnostic, not a tradable counterfactual."
+}

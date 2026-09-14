@@ -1,0 +1,14 @@
+{
+  "status_counts": {
+    "PASS": 6,
+    "PASS WITH LIMITATIONS": 5,
+    "UNVERIFIED": 4
+  },
+  "critical_failures": [],
+  "overall": "PASS_WITH_OPEN_VULNERABILITIES",
+  "largest_open_items": [
+    "fundamental data vintage/restatement integrity",
+    "same-close timestamp certification",
+    "survivorship-free historical universe"
+  ]
+}

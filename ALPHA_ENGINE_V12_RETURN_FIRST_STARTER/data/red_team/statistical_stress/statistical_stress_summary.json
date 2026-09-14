@@ -1,0 +1,118 @@
+{
+  "metrics": {
+    "strategy_return_column": "gross_return_1m",
+    "months": 1208,
+    "strategy_cagr": 0.25588413020963485,
+    "spy_cagr": 0.1403096937129622,
+    "cagr_spread": 0.11557443649667265,
+    "strategy_ann_vol": 0.2172179487819515,
+    "strategy_max_drawdown": -0.7786646830643967,
+    "strategy_sharpe_rf0": 1.1653560714986895,
+    "strategy_sortino_rf0": 1.8181946203269896,
+    "strategy_calmar": 0.32861915504195643,
+    "active_arith_ann": 0.11067013475258217,
+    "tracking_error_ann": 0.27742736365485066,
+    "information_ratio": 0.39891571362898315,
+    "active_hit_rate_monthly": 0.5033112582781457,
+    "active_nw_tstat": 2.411623324473257,
+    "bootstrap_ann_active_p2_5": 0.01547638323062414,
+    "bootstrap_ann_active_median": 0.11149913000262238,
+    "bootstrap_ann_active_p97_5": 0.21369573378263348,
+    "prob_ann_active_le_0": 0.0134,
+    "share_positive_annual_alpha_from_best_year": 0.41206920454760404,
+    "share_positive_annual_alpha_from_best_3_years": 0.8470064171180572,
+    "rolling_3y_outperform_rate": 0.690537084398977,
+    "rolling_3y_worst_spread": -0.463318247275431,
+    "rolling_5y_outperform_rate": 0.7841601392515231,
+    "rolling_5y_worst_spread": -0.27011284239221234
+  },
+  "stress": {
+    "remove_best_1_month": {
+      "removed": 1,
+      "months_left": 1207,
+      "strategy_cagr": 0.253927398622499,
+      "spy_cagr": 0.14194708587978466,
+      "active_cagr_spread": 0.11198031274271436,
+      "active_arith_ann": 0.10760923457432264
+    },
+    "remove_best_3_months": {
+      "removed": 3,
+      "months_left": 1205,
+      "strategy_cagr": 0.25012206761444267,
+      "spy_cagr": 0.1452371093939422,
+      "active_cagr_spread": 0.10488495822050048,
+      "active_arith_ann": 0.10157562800010742
+    },
+    "remove_best_5_months": {
+      "removed": 5,
+      "months_left": 1203,
+      "strategy_cagr": 0.24656295582608379,
+      "spy_cagr": 0.14854759843394216,
+      "active_cagr_spread": 0.09801535739214162,
+      "active_arith_ann": 0.09575626324139563
+    },
+    "remove_best_1_year": {
+      "removed_years": [
+        2016
+      ],
+      "months_left": 1112,
+      "strategy_cagr": 0.22934879920029494,
+      "spy_cagr": 0.14208207890406,
+      "active_cagr_spread": 0.08726672029623495,
+      "active_arith_ann": 0.08600255118440533
+    },
+    "remove_best_2_years": {
+      "removed_years": [
+        2016,
+        2022
+      ],
+      "months_left": 1016,
+      "strategy_cagr": 0.2361476217243228,
+      "spy_cagr": 0.178638062631018,
+      "active_cagr_spread": 0.057509559093304796,
+      "active_arith_ann": 0.05889579267333632
+    }
+  },
+  "gates": [
+    {
+      "test": "BEST_5_MONTH_DEPENDENCE",
+      "status": "PASS",
+      "metric": "active_cagr_spread_without_best_5_months",
+      "value": 0.09801535739214162,
+      "threshold_or_reference": "> 0 is favorable",
+      "interpretation": "Tests whether outperformance survives removal of the five best active-return months."
+    },
+    {
+      "test": "BEST_YEAR_DEPENDENCE",
+      "status": "PASS",
+      "metric": "active_cagr_spread_without_best_year",
+      "value": 0.08726672029623495,
+      "threshold_or_reference": "> 0 is favorable",
+      "interpretation": "Tests whether one exceptional calendar year explains the result."
+    },
+    {
+      "test": "BLOCK_BOOTSTRAP_ACTIVE_RETURN",
+      "status": "PASS",
+      "metric": "P(annualized mean active <= 0)",
+      "value": 0.0134,
+      "threshold_or_reference": "<10% favorable; <5% stronger",
+      "interpretation": "Six-month moving-block bootstrap preserves some serial dependence."
+    },
+    {
+      "test": "ROLLING_3Y_CONSISTENCY",
+      "status": "CONDITIONAL",
+      "metric": "rolling_3y_outperform_rate",
+      "value": 0.690537084398977,
+      "threshold_or_reference": ">=80% favorable",
+      "interpretation": "Frequency of positive 3-year CAGR spread vs SPY."
+    },
+    {
+      "test": "ROLLING_5Y_CONSISTENCY",
+      "status": "CONDITIONAL",
+      "metric": "rolling_5y_outperform_rate",
+      "value": 0.7841601392515231,
+      "threshold_or_reference": ">=80% favorable",
+      "interpretation": "Frequency of positive 5-year CAGR spread vs SPY."
+    }
+  ]
+}

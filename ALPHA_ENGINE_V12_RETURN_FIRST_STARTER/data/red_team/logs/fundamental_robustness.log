@@ -1,0 +1,77 @@
+============================================================================================================
+MMM ADVISOR V0.8.3 - FUNDAMENTAL ROBUSTNESS & ECONOMIC VALIDATION
+============================================================================================================
+Focus: Quality | Growth | Value | Revenue Growth | Sales Yield
+Sector-neutral IC + EARLY/LATE + simple economic portfolio test
+Diagnostic only. No production weights are changed.
+------------------------------------------------------------------------------------------------------------
+SECTOR-NEUTRAL IC SUMMARY
+       signal  horizon_days  periods  mean_sector_neutral_ic  median_sector_neutral_ic  hit_rate  nw_tstat
+g_revenue_yoy            21       63                0.022950                  0.016287  0.555556  1.414690
+g_revenue_yoy            63       61                0.011160                  0.001686  0.508197  0.413002
+g_revenue_yoy           126       58                0.004520                 -0.004698  0.482759  0.134699
+g_revenue_yoy           252       52               -0.001536                  0.017656  0.519231 -0.040607
+  growth_diag            21       63                0.017716                  0.012722  0.571429  1.153110
+  growth_diag            63       61                0.028722                  0.028557  0.672131  1.096597
+  growth_diag           126       58                0.024359                  0.032385  0.603448  0.792820
+  growth_diag           252       52               -0.003214                 -0.009632  0.480769 -0.102608
+ quality_diag            21       63               -0.010413                  0.010757  0.523810 -1.099901
+ quality_diag            63       61               -0.032000                 -0.043235  0.377049 -2.698578
+ quality_diag           126       58               -0.025506                 -0.032636  0.310345 -1.680327
+ quality_diag           252       52               -0.059123                 -0.081812  0.211538 -2.282142
+v_sales_yield            21       63                0.029769                  0.033553  0.634921  2.016251
+v_sales_yield            63       61                0.049189                  0.020799  0.606557  2.069814
+v_sales_yield           126       58                0.068529                  0.057017  0.620690  2.365304
+v_sales_yield           252       52                0.106942                  0.104931  0.865385  4.030658
+   value_diag            21       63                0.017632                  0.001429  0.507937  1.192009
+   value_diag            63       61                0.022519                  0.000240  0.508197  0.904742
+   value_diag           126       58                0.036029                  0.024583  0.568966  1.226766
+   value_diag           252       52                0.049541                  0.029019  0.673077  1.909784
+------------------------------------------------------------------------------------------------------------
+EARLY vs LATE - KEY SIGNALS
+       signal  horizon_days sample  periods  mean_rank_ic  median_rank_ic  hit_rate
+ quality_diag            63  EARLY       30     -0.000489       -0.003415  0.500000
+ quality_diag            63   LATE       31     -0.018911       -0.001585  0.483871
+ quality_diag           126  EARLY       29      0.014089        0.032357  0.551724
+ quality_diag           126   LATE       29     -0.041908       -0.027458  0.448276
+ quality_diag           252  EARLY       26      0.017970        0.038418  0.615385
+ quality_diag           252   LATE       26     -0.108285       -0.134883  0.307692
+  growth_diag            63  EARLY       30      0.001141        0.062484  0.600000
+  growth_diag            63   LATE       31      0.065206        0.075057  0.709677
+  growth_diag           126  EARLY       29     -0.013876       -0.002991  0.482759
+  growth_diag           126   LATE       29      0.059649        0.037899  0.655172
+  growth_diag           252  EARLY       26     -0.041029        0.041427  0.538462
+  growth_diag           252   LATE       26      0.013347       -0.049001  0.346154
+   value_diag            63  EARLY       30      0.010437       -0.005921  0.500000
+   value_diag            63   LATE       31      0.028921        0.036901  0.548387
+   value_diag           126  EARLY       29      0.028501        0.067742  0.586207
+   value_diag           126   LATE       29      0.042625        0.050028  0.655172
+   value_diag           252  EARLY       26      0.002060        0.046073  0.538462
+   value_diag           252   LATE       26      0.069256        0.063375  0.846154
+g_revenue_yoy            63  EARLY       30      0.008318        0.069591  0.633333
+g_revenue_yoy            63   LATE       31      0.054284        0.039021  0.645161
+g_revenue_yoy           126  EARLY       29     -0.004025        0.028780  0.551724
+g_revenue_yoy           126   LATE       29      0.038619        0.041636  0.551724
+g_revenue_yoy           252  EARLY       26     -0.001288        0.109527  0.576923
+g_revenue_yoy           252   LATE       26      0.017112        0.012211  0.538462
+v_sales_yield            63  EARLY       30      0.055190        0.008384  0.533333
+v_sales_yield            63   LATE       31      0.014713        0.011834  0.548387
+v_sales_yield           126  EARLY       29      0.099981        0.121795  0.689655
+v_sales_yield           126   LATE       29      0.016483        0.006287  0.551724
+v_sales_yield           252  EARLY       26      0.115284        0.097025  0.692308
+v_sales_yield           252   LATE       26      0.035451        0.020717  0.692308
+------------------------------------------------------------------------------------------------------------
+ECONOMIC SUMMARY - MONTHLY TOP 20%
+       signal  months     cagr  ann_return_arith  ann_vol  sharpe_rf0  ann_excess_vs_universe  excess_hit_rate  tracking_error_ann  information_ratio  nw_tstat_excess
+g_revenue_yoy      64 0.265224          0.263268 0.229583    1.146723                0.086394         0.531250            0.111760           0.773034         1.859720
+  growth_diag      64 0.240476          0.238815 0.208860    1.143424                0.061941         0.578125            0.090307           0.685898         1.722221
+v_sales_yield      64 0.198676          0.197470 0.174707    1.130295                0.020596         0.531250            0.083185           0.247597         0.601135
+ quality_diag      64 0.174182          0.183059 0.208527    0.877867                0.006185         0.453125            0.086786           0.071267         0.170636
+   value_diag      64 0.162299          0.167085 0.179015    0.933360               -0.009789         0.406250            0.089864          -0.108929        -0.321633
+------------------------------------------------------------------------------------------------------------
+IMPORTANT:
+Sales Yield is not accepted as a production factor merely because its 252D IC is robust.
+It must survive sector-neutral, subperiod, and economic tests.
+Current-universe bias remains until a point-in-time universe is reconstructed.
+============================================================================================================
+FUNDAMENTAL ROBUSTNESS PASSED

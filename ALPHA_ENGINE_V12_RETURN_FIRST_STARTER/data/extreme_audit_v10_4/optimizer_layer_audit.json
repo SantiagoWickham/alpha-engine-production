@@ -1,0 +1,15 @@
+{
+  "status": "DESCRIPTIVE_HISTORICAL_STRATEGY_COMPARISON",
+  "strategies_available": [
+    "FINAL_OPTIMIZER",
+    "FULL_ALPHA_CONVICTION",
+    "FULL_ALPHA_EQUAL",
+    "FULL_ALPHA_RISK",
+    "RG_ONLY",
+    "RG_SY_EQUAL",
+    "SY_ONLY",
+    "TREND_ONLY"
+  ],
+  "historical_discrete_cedear_backtest": "NOT_AVAILABLE_UNLESS_SEPARATELY_PERSISTED",
+  "warning": "Continuous research strategy and live discrete CEDEAR implementation are different layers. Historical nominal/integer alpha loss cannot be invented if not persisted."
+}

@@ -1,0 +1,7 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "note": "The environment used to persist the legacy optimizer returns was not independently version-certified by this auditor unless a separate historical environment manifest exists. Small optimizer replay differences can therefore be consistent with solver/version drift, but that cause remains UNVERIFIED until component diagnostics are inspected."
+}

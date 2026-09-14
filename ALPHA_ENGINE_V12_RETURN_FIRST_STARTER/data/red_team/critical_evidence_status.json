@@ -1,0 +1,26 @@
+{
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "scientific_closure": {
+    "survivorship_and_pit_closure": {
+      "found": true,
+      "path": "data\\research_closure\\research_closure_decision.csv",
+      "status": "FAIL",
+      "passed": false
+    },
+    "statistical_stress_completed": true,
+    "multiple_testing_correction_completed": false,
+    "multiple_testing_inventory_status": "INVENTORY_REQUIRED_BEFORE_DSR_PBO",
+    "nested_end_to_end_walk_forward_completed": false
+  },
+  "important_interpretation": {
+    "process_returncode_pass_is_not_scientific_pass": true,
+    "survivorship_free_claim_allowed": false,
+    "proven_structural_alpha_claim_allowed": false,
+    "forward_test_allowed": true
+  },
+  "remaining_critical_work": [
+    "Resolve/quantify survivorship + point-in-time-universe limitation",
+    "Reconstruct research-trial inventory and calculate DSR/PBO",
+    "Run fully nested end-to-end walk-forward replay"
+  ]
+}

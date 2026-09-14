@@ -1,0 +1,145 @@
+{
+  "audit": "ALPHA_ENGINE_RED_TEAM_V0_1",
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "started_at": "2026-09-06T17:44:02.977341+00:00",
+  "principle": "Attempt to falsify the frozen model; do not retune it.",
+  "stages": [
+    {
+      "stage": "PYTEST_RESEARCH_CORE",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T17:44:02.977675+00:00",
+      "ended_at": "2026-09-06T17:44:06.445536+00:00",
+      "elapsed_seconds": 3.467861,
+      "log": "data\\red_team\\logs\\pytest_research_core.log"
+    },
+    {
+      "stage": "HISTORICAL_UNIVERSE",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T17:44:06.446742+00:00",
+      "ended_at": "2026-09-06T17:44:13.729865+00:00",
+      "elapsed_seconds": 7.283123,
+      "log": "data\\red_team\\logs\\historical_universe.log"
+    },
+    {
+      "stage": "LOCKED_HISTORICAL_REPLICATION",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T17:44:13.731475+00:00",
+      "ended_at": "2026-09-06T18:09:07.552913+00:00",
+      "elapsed_seconds": 1493.821438,
+      "log": "data\\red_team\\logs\\locked_historical_replication.log"
+    },
+    {
+      "stage": "FUNDAMENTAL_ROBUSTNESS",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:09:07.555293+00:00",
+      "ended_at": "2026-09-06T18:09:19.193557+00:00",
+      "elapsed_seconds": 11.638264,
+      "log": "data\\red_team\\logs\\fundamental_robustness.log"
+    },
+    {
+      "stage": "MARKET_WALK_FORWARD",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:09:19.195193+00:00",
+      "ended_at": "2026-09-06T18:09:52.880613+00:00",
+      "elapsed_seconds": 33.68542,
+      "log": "data\\red_team\\logs\\market_walk_forward.log"
+    },
+    {
+      "stage": "FUNDAMENTAL_WALK_FORWARD",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:09:52.882176+00:00",
+      "ended_at": "2026-09-06T18:10:13.342164+00:00",
+      "elapsed_seconds": 20.459988,
+      "log": "data\\red_team\\logs\\fundamental_walk_forward.log"
+    },
+    {
+      "stage": "MULTIFACTOR_ALPHA",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:10:13.343899+00:00",
+      "ended_at": "2026-09-06T18:10:14.670856+00:00",
+      "elapsed_seconds": 1.326957,
+      "log": "data\\red_team\\logs\\multifactor_alpha.log"
+    },
+    {
+      "stage": "V10_FULL_VALIDATION",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:10:14.672679+00:00",
+      "ended_at": "2026-09-06T18:12:28.747504+00:00",
+      "elapsed_seconds": 134.074825,
+      "log": "data\\red_team\\logs\\v10_full_validation.log"
+    },
+    {
+      "stage": "V10_1_AUDIT",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:12:28.749349+00:00",
+      "ended_at": "2026-09-06T18:12:55.904622+00:00",
+      "elapsed_seconds": 27.155273,
+      "log": "data\\red_team\\logs\\v10_1_audit.log"
+    },
+    {
+      "stage": "V10_2_BENCHMARKS",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:12:55.906567+00:00",
+      "ended_at": "2026-09-06T18:12:57.362243+00:00",
+      "elapsed_seconds": 1.455676,
+      "log": "data\\red_team\\logs\\v10_2_benchmarks.log"
+    },
+    {
+      "stage": "V10_3_TEMPORAL_REGIME",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:12:57.363685+00:00",
+      "ended_at": "2026-09-06T18:13:01.337500+00:00",
+      "elapsed_seconds": 3.973815,
+      "log": "data\\red_team\\logs\\v10_3_temporal_regime.log"
+    },
+    {
+      "stage": "V10_4_FREEZE_REPLAY",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:13:01.339311+00:00",
+      "ended_at": "2026-09-06T18:13:03.345681+00:00",
+      "elapsed_seconds": 2.00637,
+      "log": "data\\red_team\\logs\\v10_4_freeze_replay.log"
+    },
+    {
+      "stage": "FINAL_RESEARCH_CLOSURE_SURVIVORSHIP",
+      "returncode": 0,
+      "status": "PASS",
+      "started_at": "2026-09-06T18:13:03.348026+00:00",
+      "ended_at": "2026-09-06T18:13:12.066648+00:00",
+      "elapsed_seconds": 8.718622,
+      "log": "data\\red_team\\logs\\final_research_closure_survivorship.log"
+    }
+  ],
+  "statistical_stress_status": "ERROR",
+  "statistical_stress": {
+    "error": "TypeError('Passing PeriodDtype data is invalid. Use `data.to_timestamp()` instead')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\\scripts\\run_red_team_full.py\", line 115, in main\n    stat=run_statistical_stress(ROOT,OUT/\"statistical_stress\")\n  File \"C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\\src\\validation\\red_team_statistical_stress.py\", line 246, in run_statistical_stress\n    b,bd,brc=_load_spy(root)\n             ~~~~~~~~~^^^^^^\n  File \"C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\\src\\validation\\red_team_statistical_stress.py\", line 111, in _load_spy\n    b[mc]=pd.to_datetime(b[mc])\n          ~~~~~~~~~~~~~~^^^^^^^\n  File \"C:\\Users\\santi\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py\", line 1067, in to_datetime\n    values = convert_listlike(arg._values, format)\n  File \"C:\\Users\\santi\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py\", line 416, in _convert_listlike_datetimes\n    arg, _ = maybe_convert_dtype(arg, copy=False, tz=libtimezones.maybe_get_tz(tz))\n             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\santi\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\arrays\\datetimes.py\", line 2466, in maybe_convert_dtype\n    raise TypeError(\n        \"Passing PeriodDtype data is invalid. Use `data.to_timestamp()` instead\"\n    )\nTypeError: Passing PeriodDtype data is invalid. Use `data.to_timestamp()` instead\n"
+  },
+  "matrix_status_counts": {
+    "PARTIAL": 12,
+    "TESTED": 12,
+    "TESTED_CURRENT": 6,
+    "PENDING": 2
+  },
+  "critical_residual_risks": [
+    "SURVIVORSHIP_BIAS",
+    "POINT_IN_TIME_UNIVERSE",
+    "DATA_SNOOPING_MULTIPLE_TESTING",
+    "NESTED_WALK_FORWARD"
+  ],
+  "ended_at": "2026-09-06T18:13:12.151402+00:00",
+  "elapsed_seconds_total": 1749.174061,
+  "final_red_team_status": "EVIDENCE_STRONG_BUT_CRITICAL_AUDITS_REMAIN"
+}

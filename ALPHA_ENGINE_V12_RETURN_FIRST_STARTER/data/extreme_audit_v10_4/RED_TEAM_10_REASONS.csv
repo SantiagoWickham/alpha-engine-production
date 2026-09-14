@@ -1,0 +1,11 @@
+risk,severity,state,test_needed,evidence
+Survivorship bias may inflate returns,CRITICAL,UNRESOLVED,PIT lifecycle universe + delisted factors/prices replay,"Fundamental PIT checks pass for surviving panel, but champion is not certified survivorship-free."
+Research overfitting / false discovery,CRITICAL,UNRESOLVED,Complete trial inventory + definitive DSR/PBO + untouched holdout,Persisted trial paths are only a lower bound; champion was selected after multiple research choices.
+Same-close execution may be untradeable,HIGH,PARTIAL,Timestamped signal/fill or next-session execution protocol,"Lag stress remains profitable historically, but exact same-close tradability is unverified."
+Fundamental restatement/vintage contamination,HIGH,UNVERIFIED,Vintage fact database or source snapshots,filed<=asof does not independently prove the exact value vintage known on that date.
+Portfolio concentration can dominate factor skill,HIGH,OBSERVED,Concentration-cap sensitivity + forward concentration monitoring,Historical max single-name weight 61.81%.
+Alpha may depend on a small tail of winners,HIGH,OBSERVED,Winner-exclusion reoptimization + forward breadth of contributors,Top historical contributors matter materially even though exclusion/reoptimization does not destroy all performance.
+High turnover can make historical costs optimistic,HIGH,OBSERVED,Security-specific spread/slippage/market-impact model,Average annual turnover 178.27%.
+Factor IC is statistically small and can decay,MEDIUM,OBSERVED,Forward IC monitoring and regime stability,Mean Full Alpha rank IC 0.040.
+Exact optimizer replay is not numerically identical,MEDIUM,OPEN,Historical environment lock or persisted exact weights,Exact replay FAIL but secondary NEAR_REPLAY_MAX_ERROR_LE_10BPS.
+Live CEDEAR/integer implementation may lose alpha,CRITICAL_FOR_LOCAL_PRODUCT,UNVERIFIED_HISTORICALLY,"Historical local execution replay with ratios, volumes, spreads and nominal rounding",Research backtest is continuous underlying weights; local discrete layer is newer.

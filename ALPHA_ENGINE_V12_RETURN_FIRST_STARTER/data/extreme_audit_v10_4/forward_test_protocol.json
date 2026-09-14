@@ -1,0 +1,76 @@
+{
+  "status": "PROPOSED_GOVERNANCE_RULE_NOT_EMPIRICAL_FACT",
+  "immutable_during_test": [
+    "factor definitions",
+    "factor weights",
+    "candidate fraction",
+    "risk lookback",
+    "optimizer objective/penalties",
+    "rebalance cadence",
+    "execution convention used for scoring",
+    "benchmark set",
+    "cost-accounting rule"
+  ],
+  "may_change_without_invalidating_model_test": [
+    "UI",
+    "logging",
+    "data transport",
+    "bug fixes that do not alter historical/current decisions and are versioned",
+    "additional diagnostics that do not feed decisions"
+  ],
+  "log_each_decision": [
+    "UTC timestamp",
+    "data cutoff",
+    "factor inputs and filing timestamps",
+    "score/rank",
+    "risk inputs",
+    "previous weights",
+    "continuous target",
+    "discrete/local target",
+    "orders/fills",
+    "costs/slippage",
+    "cash",
+    "benchmark prices",
+    "model hash"
+  ],
+  "benchmarks": [
+    "SPY primary",
+    "RSP",
+    "QQQ",
+    "cash/T-bill RF",
+    "optional sector diagnostic benchmark"
+  ],
+  "monthly_metrics": [
+    "net return",
+    "active return",
+    "tracking error",
+    "IC",
+    "turnover",
+    "costs",
+    "slippage",
+    "coverage",
+    "concentration",
+    "drawdown"
+  ],
+  "quarterly_metrics": [
+    "CAGR-to-date",
+    "IR",
+    "Sharpe/Sortino",
+    "factor alpha regressions with caveat on low n",
+    "regime breakdown",
+    "implementation shortfall",
+    "attribution by ticker/factor"
+  ],
+  "2029_reasonable_evidence_rule": {
+    "minimum_forward_months": 36,
+    "model_hash_unchanged": true,
+    "net_of_all_realized_costs": true,
+    "primary_active_cagr_gt_0": true,
+    "information_ratio_target": ">=0.50 is favorable; <0 is failure evidence",
+    "full_alpha_rank_ic_mean": ">0 and positive in >=55% of forward months is favorable",
+    "ff5_mom_alpha": ">0; HAC t-stat >=1.5 encouraging and >=2.0 materially stronger, recognizing 36 months is a short sample",
+    "drawdown": "must remain within the predeclared risk mandate; no ex-post threshold change",
+    "benchmark_robustness": "positive active evidence vs SPY plus at least one of RSP/QQQ over the same period",
+    "failure_rule": "If 36-month net active CAGR <=0 and mean forward IC <=0, the alpha hypothesis has failed its first serious forward hurdle. Continue observation only as research; do not retune and relabel the same test."
+  }
+}

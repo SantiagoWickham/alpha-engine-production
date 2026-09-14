@@ -1,0 +1,49 @@
+{
+  "status": "COMPUTED",
+  "full_sample": [
+    {
+      "strategy": "FINAL_OPTIMIZER",
+      "sample": "FULL",
+      "model": "CAPM",
+      "months": 149,
+      "alpha_ann": 0.11474846264766678,
+      "alpha_hac_t": 3.380250677222189,
+      "p_value_normal_approx": 0.00072419746157355,
+      "residual_vol_ann": 0.1325966680241843,
+      "r2": 0.534019554476072
+    },
+    {
+      "strategy": "FINAL_OPTIMIZER",
+      "sample": "FULL",
+      "model": "FF3",
+      "months": 149,
+      "alpha_ann": 0.1164534957322706,
+      "alpha_hac_t": 3.4732800722498416,
+      "p_value_normal_approx": 0.0005141385364273863,
+      "residual_vol_ann": 0.13209535953326318,
+      "r2": 0.5375363603130439
+    },
+    {
+      "strategy": "FINAL_OPTIMIZER",
+      "sample": "FULL",
+      "model": "FF5",
+      "months": 149,
+      "alpha_ann": 0.1154626115251853,
+      "alpha_hac_t": 3.4865918101622433,
+      "p_value_normal_approx": 0.0004892174304963918,
+      "residual_vol_ann": 0.13099825757730071,
+      "r2": 0.5451863310083032
+    },
+    {
+      "strategy": "FINAL_OPTIMIZER",
+      "sample": "FULL",
+      "model": "FF5_MOM",
+      "months": 149,
+      "alpha_ann": 0.10633942828329632,
+      "alpha_hac_t": 3.1932698508544286,
+      "p_value_normal_approx": 0.0014067142206679244,
+      "residual_vol_ann": 0.12989323371646552,
+      "r2": 0.552827046724985
+    }
+  ]
+}

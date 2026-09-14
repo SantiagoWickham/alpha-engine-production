@@ -1,0 +1,58 @@
+================================================================================================================================
+ALPHA ENGINE V10.4 - FINAL MODEL & RISK-PROFILE FREEZE
+================================================================================================================================
+This is the final quantitative model-closure stage.
+No new factors. No historical tuning. No retroactive threshold changes.
+Profiles are fixed capital-allocation sleeves built from already frozen V10 strategies.
+[1/5] BUILD FIXED RISK PROFILES
+  CONTROLLED   70% final optimizer + 30% historical risk-free sleeve
+  CORE         100% final optimizer; default production research profile
+  AGGRESSIVE   70% final optimizer + 30% conviction sleeve
+[2/5] PROFILE PERFORMANCE VS SPY
+   profile  months     cagr  spy_cagr  cagr_spread_vs_spy  ann_return  ann_vol  spy_vol  max_drawdown  spy_max_drawdown  monthly_hit_rate_vs_spy  tracking_error  information_ratio
+AGGRESSIVE     151 0.279094  0.138285            0.140808    0.270942 0.213129 0.144916     -0.187344         -0.239272                 0.582781        0.163839           0.795174
+CONTROLLED     148 0.182618  0.138424            0.044194    0.178045 0.136392 0.146271     -0.141994         -0.239272                 0.540541        0.106780           0.347121
+      CORE     151 0.248419  0.138285            0.110134    0.242218 0.193149 0.144916     -0.204688         -0.239272                 0.589404        0.135366           0.750231
+[3/5] PROFILE FF5+MOM ALPHA
+   profile  months  alpha_ann  alpha_hac_t       r2
+AGGRESSIVE     149   0.143134     3.660246 0.450046
+CONTROLLED     149   0.074438     3.193270 0.552827
+      CORE     149   0.106339     3.193270 0.552827
+[4/5] ROLLING 3Y / 5Y CONSISTENCY
+  CONTROLLED   3Y outperform=84.1% | 5Y outperform=100.0% | worst3Y=-4.01% | worst5Y=0.93%
+  CORE         3Y outperform=100.0% | 5Y outperform=100.0% | worst3Y=1.42% | worst5Y=5.96%
+  AGGRESSIVE   3Y outperform=100.0% | 5Y outperform=100.0% | worst3Y=1.51% | worst5Y=7.51%
+[5/5] FINAL QUANTITATIVE FREEZE DECISION
+{
+  "model_research_status": "FROZEN",
+  "capital_test_status": "READY_FOR_SMALL_CAPITAL_TEST",
+  "gates": {
+    "positive_cagr_spread_vs_spy": true,
+    "ff5_mom_alpha_positive_significant": true,
+    "rolling_3y_consistency": true,
+    "rolling_5y_consistency": true,
+    "drawdown_not_materially_worse_than_spy": true
+  },
+  "core_metrics": {
+    "cagr": 0.24841884567827588,
+    "spy_cagr": 0.13828509610056416,
+    "cagr_spread_vs_spy": 0.11013374957771171,
+    "ann_vol": 0.19314944911952409,
+    "spy_vol": 0.1449159480023751,
+    "max_drawdown": -0.20468786476133982,
+    "spy_max_drawdown": -0.2392718238921987,
+    "ff5_mom_alpha_ann": 0.10633942828329629,
+    "ff5_mom_alpha_hac_t": 3.193269850854426,
+    "rolling_3y_outperform_share": 1.0,
+    "rolling_5y_outperform_share": 1.0
+  },
+  "limitations": [
+    "Historical results do not guarantee future performance.",
+    "Full survivorship-free validation remains unavailable because public/free delisted-price coverage was insufficient.",
+    "The profiles are research capital-allocation sleeves; production execution still requires cash/ledger/CEDEAR/slippage integration."
+  ]
+}
+================================================================================================================================
+If model_research_status=FROZEN, the next stage is PRODUCT ENGINEERING:
+alerts, user interaction, cash/ledger, CEDEAR execution translation, UI/API, branding and packaging.
+================================================================================================================================

@@ -1,0 +1,17 @@
+field,present,status,artifact
+date,True,PASS,data\audit_v10_4\rebalance_history.csv
+universe_candidates,True,PASS,data\audit_v10_4\candidates_by_rebalance.csv
+alpha_score,True,PASS,data\audit_v10_4\portfolio_snapshots.csv
+risk_score,True,PASS,data\audit_v10_4\portfolio_snapshots.csv
+factor_components,True,PASS,data\audit_v10_4\factor_analysis.csv
+previous_and_target_portfolio,True,PASS,data\audit_v10_4\operations.csv
+operations,True,PASS,data\audit_v10_4\operations.csv
+prices,True,PASS,data\audit_v10_4\operations.csv
+period_costs,True,PASS,data\audit_v10_4\rebalance_history.csv
+benchmark,True,PASS,data\audit_v10_4\monthly_performance.csv
+subsequent_result,True,PASS,data\audit_v10_4\monthly_performance.csv
+intraday_signal_timestamp,False,MISSING,
+intraday_execution_timestamp,False,MISSING,
+per_trade_realized_cost,False,MISSING,
+optimizer_marginal_reason_per_asset,False,MISSING,
+discarded_alternative_reason_per_asset,False,MISSING,

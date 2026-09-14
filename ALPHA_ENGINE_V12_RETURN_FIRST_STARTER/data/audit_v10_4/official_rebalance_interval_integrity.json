@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "decision_rows": 152,
+  "unique_forward_intervals": 152,
+  "reused_forward_intervals": 0,
+  "decision_rows_inside_reused_intervals": 0,
+  "max_decisions_same_forward_interval": 1,
+  "reason": "Each reconstructed decision maps to a unique forward-return interval."
+}

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "rule": "A harness error never becomes scientific PASS. The affected section is UNVERIFIED until fixed and rerun."
+}

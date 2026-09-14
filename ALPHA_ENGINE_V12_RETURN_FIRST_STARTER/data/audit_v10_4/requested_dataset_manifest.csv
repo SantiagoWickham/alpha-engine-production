@@ -1,0 +1,13 @@
+dataset,present,path
+portfolio_vs_spy.csv,True,data/audit_v10_4/portfolio_vs_spy.csv
+operations.csv,True,data/audit_v10_4/operations.csv
+portfolio_snapshots.csv,True,data/audit_v10_4/portfolio_snapshots.csv
+monthly_performance.csv,True,data/audit_v10_4/monthly_performance.csv
+annual_performance.csv,True,data/audit_v10_4/annual_performance.csv
+ticker_contribution.csv,True,data/audit_v10_4/ticker_contribution.csv
+factor_analysis.csv,True,data/audit_v10_4/factor_analysis.csv
+holding_periods.csv,True,data/audit_v10_4/holding_periods.csv
+turnover.csv,True,data/audit_v10_4/turnover.csv
+drawdown.csv,True,data/audit_v10_4/drawdown.csv
+alpha_attribution.csv,True,data/audit_v10_4/alpha_attribution.csv
+rebalance_history.csv,True,data/audit_v10_4/rebalance_history.csv

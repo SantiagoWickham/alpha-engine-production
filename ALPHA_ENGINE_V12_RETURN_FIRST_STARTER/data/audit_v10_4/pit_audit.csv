@@ -1,0 +1,10 @@
+component,data,data_date,published_available_date,decision_date,pit_status,evidence,problem
+Revenue Growth,revenue,,,,PASS,"Checked 14,750 rows: filed <= asof; violations=0.",
+Sales Yield,revenue,,,,PASS,"Checked 14,750 rows: filed <= asof; violations=0.",
+Sales Yield,shares_outstanding,,,,PASS,"Checked 23,870 rows: filed <= asof; violations=0.",
+Sales Yield,market_cap_pit,,,,PASS WITH LIMITATIONS,PIT feature builder defines market cap as price known at t × latest shares outstanding filed by t.,"Daily date is known, but exact intraday execution time is not persisted; same-close tradability remains unverified."
+Trend,historical prices,,,,PASS WITH LIMITATIONS,Frozen V10 code slices each ticker price series with s.loc[:asof]; no future price is an input to Trend.,"If execution is assumed at the same close used by the signal, exact decision/execution timestamp is not persisted."
+Risk,126-session trailing returns / covariance,,,,PASS WITH LIMITATIONS,trailing_returns_matrix filters OHLCV date <= asof and uses only the trailing window before optimization.,Same-close execution timing is not timestamp-certified.
+Portfolio construction,"candidate scores, covariance, previous weights",,,,PASS,"Frozen optimizer receives current candidate scores, trailing covariance inputs and previous weights; forward returns are used only after weights are determined to score the backtest.",
+Rebalance timing,signal/decision/execution sequence,,,,UNVERIFIED,Backtest maps score date to the last market month-end <= asof and measures the next monthly return.,The research artifacts do not persist exact intraday signal timestamp versus execution price. Same-close execution therefore cannot be certified.
+Universe,historical lifecycle membership,,,,PASS WITH LIMITATIONS,Historical lifecycle and PIT-with-delisted artifacts are present.,V10.4's published champion was still frozen with the survivorship limitation disclosed; presence of later artifacts alone does not retroactively certify the original backtest.

@@ -1,0 +1,13 @@
+artifact,path,required_for_core_reconstruction,present,size_bytes
+frozen_full_alpha_panel,data/v10/frozen_full_alpha_panel.parquet,True,True,6825431
+strategy_monthly_returns,data/v10/strategy_monthly_returns.csv,True,True,179413
+extended_ohlcv,data/cache/market_ohlcv_extended.parquet,True,True,2456344
+benchmark_monthly_returns,data/v10_2/benchmark_monthly_returns.parquet,True,True,8881
+locked_replication_panel,data/validation/locked_replication_panel.parquet,False,True,6047067
+historical_universe,data/universe/historical_universe_monthly.parquet,False,True,7265043
+lifecycle_mapping,data/universe/historical_lifecycle_sec_mapping.csv,False,True,3446480
+pit_delisted_panel,data/research_closure/historical_pit_locked_factor_panel_with_delisted.parquet,False,True,9566950
+fama_french,data/cache/fama_french_us_monthly.parquet,False,True,33938
+v10_1_holdings,data/v10_1/holdings_by_month.parquet,False,True,59317
+v10_4_profiles,data/v10_4/profile_monthly_returns.csv,False,True,40867
+v10_4_freeze_decision,data/v10_4/final_model_freeze_decision.json,False,True,1172

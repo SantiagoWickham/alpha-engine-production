@@ -1,0 +1,76 @@
+================================================================================================================================
+ALPHA ENGINE V10.3 - TEMPORAL, REGIME & STATISTICAL RISK AUDIT
+================================================================================================================================
+Product-facing name decoupled from legacy MMM naming.
+Legacy module/file names are preserved internally for reproducibility.
+No new factors. No threshold tuning. No portfolio retuning.
+Primary strategy: FINAL_OPTIMIZER | Primary benchmark: SPY
+[1/5] ROLLING 3Y / 5Y OUTPERFORMANCE
+3Y: {
+  "windows": 117,
+  "outperform_share": 1.0,
+  "median_cagr_spread": 0.1164781394044776,
+  "worst_cagr_spread": 0.014240882524918286,
+  "best_cagr_spread": 0.21449752187208682,
+  "p10_cagr_spread": 0.05751158732781949
+}
+5Y: {
+  "windows": 93,
+  "outperform_share": 1.0,
+  "median_cagr_spread": 0.10918190290748764,
+  "worst_cagr_spread": 0.059643195190632214,
+  "best_cagr_spread": 0.1734587050048908,
+  "p10_cagr_spread": 0.08106851034657457
+}
+[2/5] BULL/BEAR + HIGH/LOW VOL REGIMES
+    dimension   regime  months  strategy_ann_return  benchmark_ann_return  ann_active  hit_rate  strategy_vol  benchmark_vol
+market_regime     BEAR      17            -0.036939             -0.124436    0.087498  0.588235      0.319565       0.238012
+market_regime     BULL     124             0.295128              0.180018    0.115110  0.604839      0.166950       0.129841
+   vol_regime HIGH_VOL      74             0.228634              0.145847    0.082787  0.608108      0.222986       0.178078
+   vol_regime  LOW_VOL      56             0.310511              0.157302    0.153209  0.589286      0.153811       0.102440
+[3/5] RISK / CAPTURE / RECOVERY
+{
+  "strategy_vol": 0.19251051133418814,
+  "benchmark_vol": 0.1444511987990304,
+  "vol_diff": 0.048059312535157744,
+  "strategy_downside_dev": 0.10315604378793548,
+  "benchmark_downside_dev": 0.08799603635176567,
+  "strategy_mdd": -0.20468786476133982,
+  "benchmark_mdd": -0.2392718238921987,
+  "strategy_recovery_months": 5,
+  "benchmark_recovery_months": 15,
+  "up_capture": 1.193754718388152,
+  "down_capture": 0.6239689458454432,
+  "up_months": 106,
+  "down_months": 46
+}
+[4/5] JOINT MOVING-BLOCK BOOTSTRAP
+{
+  "ann_active": {
+    "estimate_mean": 0.10670164756025974,
+    "ci95_low": 0.04729430274394106,
+    "ci95_high": 0.16744808422471905
+  },
+  "vol_diff": {
+    "estimate_mean": 0.046601979800948906,
+    "ci95_low": 0.02502707884554765,
+    "ci95_high": 0.0690180793747068
+  },
+  "cagr_spread": {
+    "estimate_mean": 0.11719880300426641,
+    "ci95_low": 0.04724140483931961,
+    "ci95_high": 0.1913426843416198
+  },
+  "p_active_le_0": 0.0002,
+  "p_vol_diff_ge_0": 1.0,
+  "p_cagr_spread_le_0": 0.0004
+}
+[5/5] PREDECLARED INTERPRETATION
+{
+  "rolling_consistency_gate": "PASS",
+  "active_return_sampling_gate": "PASS",
+  "volatility_lower_than_spy_gate": "NOT_PROVEN",
+  "note": "Volatility gate is deliberately separate: a strategy can be valid even if its volatility is not statistically lower than SPY."
+}
+================================================================================================================================
+V10.3 TEMPORAL / REGIME / RISK AUDIT COMPLETED

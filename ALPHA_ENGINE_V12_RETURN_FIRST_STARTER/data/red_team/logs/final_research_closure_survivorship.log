@@ -1,0 +1,44 @@
+C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\scripts\run_final_research_closure.py:39: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  d["eligible"]=d["eligible"].fillna(False)
+============================================================================================================================
+MMM ADVISOR V0.9.4 - FINAL RESEARCH CLOSURE BEFORE V10
+============================================================================================================================
+[1/4] REUSE EXPENSIVE V0.9.3 OUTPUTS
+FAST CACHE HIT: C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\data\cache\historical_pit_factor_inputs.parquet
+PIT panel rows: 980,452
+[2/4] TARGET ONLY FACTOR-ELIGIBLE DELISTED NAMES
+Raw delisted lifecycle rows:   9,457
+Factor-eligible delisted:      1,837
+Parallel workers:              6
+  progress 100/1,837 | usable=13
+  progress 200/1,837 | usable=29
+  progress 300/1,837 | usable=49
+  progress 400/1,837 | usable=65
+  progress 500/1,837 | usable=83
+  progress 600/1,837 | usable=107
+  progress 700/1,837 | usable=116
+  progress 800/1,837 | usable=134
+  progress 900/1,837 | usable=155
+  progress 1,000/1,837 | usable=172
+  progress 1,100/1,837 | usable=182
+  progress 1,200/1,837 | usable=195
+  progress 1,300/1,837 | usable=206
+  progress 1,400/1,837 | usable=220
+  progress 1,500/1,837 | usable=234
+  progress 1,600/1,837 | usable=253
+  progress 1,700/1,837 | usable=265
+  progress 1,800/1,837 | usable=281
+Eligible delisted with prices: 285/1,837 (15.5%)
+[3/4] REBUILD LOCKED FACTOR COVERAGE
+Revenue Growth median coverage: 58.3%
+Sales Yield median coverage:    3.3%
+[4/4] FINAL PRE-V10 GATES
+                       name status                                                          detail
+                SEC_MAPPING   PASS                                          lifecycle mapped=46.5%
+REVENUE_GROWTH_PIT_COVERAGE   PASS                                             median usable=58.3%
+   SALES_YIELD_PIT_COVERAGE   FAIL                                              median usable=3.3%
+    DELISTED_PRICE_COVERAGE   FAIL                             eligible delisted=285/1,837 (15.5%)
+     MODEL_RESEARCH_CLOSURE   FAIL Automatic aggregation of data-integrity and locked-alpha gates.
+FINAL PRE-V10 STATUS: FAIL
+Elapsed minutes: 0.1
+============================================================================================================================

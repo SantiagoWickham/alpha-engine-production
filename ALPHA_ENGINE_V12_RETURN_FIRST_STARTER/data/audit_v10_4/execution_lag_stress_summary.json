@@ -1,0 +1,10 @@
+{
+  "status": "SENSITIVITY_ONLY_NOT_RETUNED",
+  "basis": "Completed official monthly path, reconstructed V10.4 weights, close-to-close execution delay, same period-level cost assumption.",
+  "same_close_reconstructed_cagr": 0.2512568229299954,
+  "plus_1_close_cagr": 0.2287781249815921,
+  "plus_1_close_cagr_delta": -0.022478697948403292,
+  "plus_3_close_cagr": 0.20668167428840234,
+  "plus_3_close_cagr_delta": -0.044575148641593065,
+  "warning": "Lag stress uses reconstructed weights because exact historical optimizer weights were not independently persisted. It does not claim exact counterfactual execution of the persisted CORE profile."
+}

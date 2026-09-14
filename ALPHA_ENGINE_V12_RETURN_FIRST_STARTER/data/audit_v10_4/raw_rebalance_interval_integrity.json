@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "decision_rows": 153,
+  "unique_forward_intervals": 152,
+  "reused_forward_intervals": 1,
+  "decision_rows_inside_reused_intervals": 2,
+  "max_decisions_same_forward_interval": 2,
+  "reason": "One or more forward market intervals are reused by multiple score as-of decisions. Raw decision rows must not be annualized directly; compare against the official V10.4 monthly profile path, which deduplicates by period_end month and keeps the last decision."
+}

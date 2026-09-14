@@ -1,0 +1,13 @@
+{
+  "raw_decision_rows": 153,
+  "official_profile_months": 152,
+  "causally_valid_months": 152,
+  "completed_months": 151,
+  "rows_removed_by_profile_month_dedup": 1,
+  "raw_reused_forward_intervals": 1,
+  "official_reused_forward_intervals": 0,
+  "decision_interval_causality_violations": 1,
+  "latest_interval_partial": true,
+  "frozen_profile_rule": "period_end calendar month; keep last decision in each month (src.validation.v10_4_profile_freeze._monthly_map)",
+  "diagnostic_rule": "for audit only, causally valid rows require asof <= period_start; this does not retune or replace V10.4"
+}

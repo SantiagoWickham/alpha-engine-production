@@ -1,0 +1,66 @@
+C:\Users\santi\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_slsqp_py.py:435: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  fx = wrapped_fun(x)
+C:\Users\santi\AppData\Local\Programs\Python\Python313\Lib\site-packages\scipy\optimize\_slsqp_py.py:435: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+  fx = wrapped_fun(x)
+==============================================================================================================================
+MMM ADVISOR V10 - FROZEN FULL ALPHA & PORTFOLIO VALIDATION
+==============================================================================================================================
+Frozen signals: Revenue Growth 1M | Sales Yield 12M | V8 Trend
+Frozen combinations: RG+SY 50/50 | Full Alpha 1/3 each
+No historical weight optimization. No factor search. No threshold tuning.
+Survivorship limitation remains explicitly disclosed.
+------------------------------------------------------------------------------------------------------------------------------
+[1/7] BUILD FROZEN THREE-SIGNAL PANEL
+FAST CACHE HIT trend panel:    26,434 rows
+Full Alpha rows:               26,455
+Full Alpha dates:              153
+Median full-score coverage:    73.7%
+------------------------------------------------------------------------------------------------------------------------------
+[2/7] SIGNAL ORTHOGONALITY
+Median Spearman correlations:
+  rg_sy        -0.1216
+  rg_trend      0.0995
+  sy_trend     -0.1213
+------------------------------------------------------------------------------------------------------------------------------
+[3/7] ECONOMIC BACKTESTS
+  running RG_ONLY...
+  running SY_ONLY...
+  running TREND_ONLY...
+  running RG_SY_EQUAL...
+  running FULL_ALPHA_EQUAL...
+  running FULL_ALPHA_CONVICTION...
+  running FULL_ALPHA_RISK...
+  running FINAL_OPTIMIZER...
+------------------------------------------------------------------------------------------------------------------------------
+[4/7] REAL-RF MULTIFACTOR ALPHA
+------------------------------------------------------------------------------------------------------------------------------
+[5/7] FULL-SAMPLE PERFORMANCE
+             strategy     cagr  ann_return  ann_vol  max_drawdown  ann_active_vs_universe  information_ratio  avg_turnover  avg_holdings
+FULL_ALPHA_CONVICTION 0.345137    0.340494 0.287552     -0.231288                0.167601           0.680042      0.377676     19.326797
+     FULL_ALPHA_EQUAL 0.236791    0.230201 0.179589     -0.199226                0.057308           0.657507      0.247903     19.326797
+      FULL_ALPHA_RISK 0.323792    0.316860 0.260728     -0.212305                0.143967           0.639436      0.395081     19.326797
+      FINAL_OPTIMIZER 0.252258    0.245157 0.192120     -0.204688                0.072263           0.575553      0.153226     19.326797
+          RG_SY_EQUAL 0.219508    0.216890 0.185364     -0.233603                0.043997           0.556418      0.077190     19.326797
+              RG_ONLY 0.230506    0.231335 0.212899     -0.297100                0.058441           0.543588      0.051693     20.326797
+           TREND_ONLY 0.225955    0.222994 0.189122     -0.251710                0.050101           0.499001      0.438598     34.875817
+              SY_ONLY 0.213538    0.214956 0.202155     -0.289939                0.042063           0.395022      0.048651     19.529412
+------------------------------------------------------------------------------------------------------------------------------
+[6/7] FULL FF5+MOM ALPHA
+             strategy  alpha_ann  alpha_hac_t  p_value_normal_approx  p_holm_across_v10_strategies       r2
+FULL_ALPHA_CONVICTION   0.228988     3.779444               0.000157                      0.001257 0.244903
+      FULL_ALPHA_RISK   0.200665     3.638444               0.000274                      0.001920 0.246561
+     FULL_ALPHA_EQUAL   0.087899     3.291527               0.000996                      0.005979 0.712707
+           TREND_ONLY   0.083533     3.230602               0.001235                      0.006176 0.757667
+      FINAL_OPTIMIZER   0.106339     3.193270               0.001407                      0.006176 0.552827
+          RG_SY_EQUAL   0.064340     3.014530               0.002574                      0.007721 0.790734
+              RG_ONLY   0.072723     2.627859               0.008592                      0.017185 0.803653
+              SY_ONLY   0.075807     2.319795               0.020352                      0.020352 0.702744
+------------------------------------------------------------------------------------------------------------------------------
+[7/7] FROZEN V10 DECISION
+FINAL V10 STATUS:              PAPER ONLY
+Reason:                        Full Alpha positive but strict closure incomplete: FF5+MOM alpha=8.79%, t=3.29, positive_regime_signs=True, optimizer_ok=False.
+SURVIVORSHIP LIMITATION:       DISCLOSED - not silently treated as solved.
+Usable delisted price coverage:15.5%
+Elapsed minutes:               2.2
+==============================================================================================================================
+V10 FROZEN FULL ALPHA VALIDATION COMPLETED

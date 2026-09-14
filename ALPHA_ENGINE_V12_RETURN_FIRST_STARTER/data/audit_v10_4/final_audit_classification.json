@@ -1,0 +1,88 @@
+{
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "audit_version": "V0.8_FORENSIC_BASE",
+  "no_retuning": true,
+  "classifications": [
+    {
+      "test": "PIT::Revenue Growth::revenue",
+      "classification": "PASS",
+      "reason": "Checked 14,750 rows: filed <= asof; violations=0."
+    },
+    {
+      "test": "PIT::Sales Yield::revenue",
+      "classification": "PASS",
+      "reason": "Checked 14,750 rows: filed <= asof; violations=0."
+    },
+    {
+      "test": "PIT::Sales Yield::shares_outstanding",
+      "classification": "PASS",
+      "reason": "Checked 23,870 rows: filed <= asof; violations=0."
+    },
+    {
+      "test": "PIT::Sales Yield::market_cap_pit",
+      "classification": "PASS WITH LIMITATIONS",
+      "reason": "Daily date is known, but exact intraday execution time is not persisted; same-close tradability remains unverified."
+    },
+    {
+      "test": "PIT::Trend::historical prices",
+      "classification": "PASS WITH LIMITATIONS",
+      "reason": "If execution is assumed at the same close used by the signal, exact decision/execution timestamp is not persisted."
+    },
+    {
+      "test": "PIT::Risk::126-session trailing returns / covariance",
+      "classification": "PASS WITH LIMITATIONS",
+      "reason": "Same-close execution timing is not timestamp-certified."
+    },
+    {
+      "test": "PIT::Portfolio construction::candidate scores, covariance, previous weights",
+      "classification": "PASS",
+      "reason": "Frozen optimizer receives current candidate scores, trailing covariance inputs and previous weights; forward returns are used only after weights are determined to score the backtest."
+    },
+    {
+      "test": "PIT::Rebalance timing::signal/decision/execution sequence",
+      "classification": "UNVERIFIED",
+      "reason": "The research artifacts do not persist exact intraday signal timestamp versus execution price. Same-close execution therefore cannot be certified."
+    },
+    {
+      "test": "PIT::Universe::historical lifecycle membership",
+      "classification": "PASS WITH LIMITATIONS",
+      "reason": "V10.4's published champion was still frozen with the survivorship limitation disclosed; presence of later artifacts alone does not retroactively certify the original backtest."
+    },
+    {
+      "test": "CORE_BACKTEST_REPLAY_EXACT",
+      "classification": "FAIL",
+      "reason": "Exact PASS requires reconstructed frozen weights to reproduce persisted FINAL_OPTIMIZER monthly net returns to numerical tolerance. The secondary assessment quantifies economic closeness but never converts an exact FAIL into PASS. Secondary assessment: NEAR_REPLAY_MAX_ERROR_LE_10BPS."
+    },
+    {
+      "test": "CORE_FROZEN_PROFILE_MONTHLY_CROSSCHECK",
+      "classification": "PASS",
+      "reason": "Official forensic monthly path exactly matches the persisted frozen CORE profile series."
+    },
+    {
+      "test": "RAW_DECISION_FORWARD_INTERVAL_UNIQUENESS",
+      "classification": "FAIL",
+      "reason": "One or more forward market intervals are reused by multiple score as-of decisions. Raw decision rows must not be annualized directly; compare against the official V10.4 monthly profile path, which deduplicates by period_end month and keeps the last decision."
+    },
+    {
+      "test": "OFFICIAL_MONTHLY_FORWARD_INTERVAL_UNIQUENESS",
+      "classification": "PASS",
+      "reason": "Each reconstructed decision maps to a unique forward-return interval."
+    },
+    {
+      "test": "LATEST_RETURN_INTERVAL_COMPLETENESS",
+      "classification": "PASS WITH LIMITATIONS",
+      "reason": "Latest forward return ends at the current OHLCV data frontier before business month-end; treat it as live/partial, not a completed historical month."
+    },
+    {
+      "test": "DECISION_TO_FORWARD_INTERVAL_CAUSALITY",
+      "classification": "FAIL",
+      "reason": "At least one decision is credited with a return interval that starts before the decision date. This is direct timing leakage for those rows; quantify its performance impact separately rather than treating the whole historical sample as invalid."
+    },
+    {
+      "test": "SURVIVORSHIP",
+      "classification": "UNRESOLVED",
+      "reason": "Complete survivorship-free certification remains unresolved unless full historical universe + factor-eligible delisted PIT history is demonstrably complete."
+    }
+  ],
+  "scientific_position": "The raw 153-decision research ledger and the official frozen monthly CORE profile are distinct objects. The official profile uses the documented V10.4 month-deduplication rule (keep last decision per period_end month). An exact optimizer replay FAIL remains a FAIL even if the economic error is small. A frozen-profile cross-check can independently PASS because it verifies persisted profile construction rather than re-solving the optimizer. Survivorship and exact same-close execution timing remain bounded by the evidence actually present."
+}

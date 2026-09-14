@@ -1,0 +1,45 @@
+======================================================================================================================
+MMM ADVISOR V0.8.9 - MULTIFACTOR ALPHA AUDIT
+======================================================================================================================
+Official Kenneth French monthly factors.
+Models: CAPM | FF3 | FF5 | FF5 + Momentum
+RF: historical monthly US one-month T-bill from French factor files.
+Alpha inference: Newey-West/HAC.
+No factor definitions, horizons or production weights are changed.
+French factor history: 1963-07 -> 2026-06
+French monthly rows:   756
+----------------------------------------------------------------------------------------------------------------------
+MULTIFACTOR ALPHA SUMMARY
+           signal   sample   model  months  hac_lag  alpha_ann  alpha_hac_t  residual_vol_ann       r2  beta_MKT_RF  beta_SMB  beta_HML  beta_RMW  beta_CMA  beta_MOM
+Revenue Growth 1M  PRE2021    CAPM      83        3   0.064662     1.187014          0.143484 0.604165     1.186189       NaN       NaN       NaN       NaN       NaN
+Revenue Growth 1M  PRE2021     FF3      83        3   0.045157     0.806938          0.140794 0.618866     1.271713 -0.295197 -0.036866       NaN       NaN       NaN
+Revenue Growth 1M  PRE2021     FF5      83        3   0.054073     1.090197          0.134341 0.653004     1.276861 -0.525326  0.209078 -0.718374 -0.565703       NaN
+Revenue Growth 1M  PRE2021 FF5_MOM      83        3   0.055980     1.136483          0.128728 0.681393     1.164818 -0.643736  0.041138 -0.802422 -0.748254 -0.392672
+Revenue Growth 1M POST2021    CAPM      66        3   0.058516     1.727733          0.093032 0.825435     1.306189       NaN       NaN       NaN       NaN       NaN
+Revenue Growth 1M POST2021     FF3      66        3   0.086409     2.114612          0.087655 0.845033     1.260029  0.040925 -0.233379       NaN       NaN       NaN
+Revenue Growth 1M POST2021     FF5      66        3   0.085046     2.321784          0.075413 0.885295     1.263209 -0.134530 -0.182016 -0.481455  0.105781       NaN
+Revenue Growth 1M POST2021 FF5_MOM      66        3   0.090915     2.537675          0.074923 0.886780     1.256800 -0.160422 -0.196378 -0.510443  0.138932 -0.072704
+Revenue Growth 1M     FULL    CAPM     149        3   0.060974     1.793039          0.123658 0.697815     1.241184       NaN       NaN       NaN       NaN       NaN
+Revenue Growth 1M     FULL     FF3     149        3   0.054679     1.680994          0.121071 0.710328     1.263701 -0.130921 -0.141834       NaN       NaN       NaN
+Revenue Growth 1M     FULL     FF5     149        3   0.059809     1.908472          0.114198 0.742279     1.269916 -0.320476  0.009522 -0.541910 -0.125484       NaN
+Revenue Growth 1M     FULL FF5_MOM     149        3   0.070053     2.130733          0.112596 0.749462     1.237945 -0.378622 -0.041709 -0.599238 -0.080508 -0.166313
+  Sales Yield 12M  PRE2021    CAPM      83       11   0.108922     2.131952          0.167659 0.497362     1.116006       NaN       NaN       NaN       NaN       NaN
+  Sales Yield 12M  PRE2021     FF3      83       11   0.128606     2.377709          0.163643 0.521156     1.145764 -0.269199  0.355085       NaN       NaN       NaN
+  Sales Yield 12M  PRE2021     FF5      83       11   0.131225     2.640071          0.160846 0.537385     1.232090 -0.367006  0.239530 -0.429981  0.558515       NaN
+  Sales Yield 12M  PRE2021 FF5_MOM      83       11   0.133362     2.646360          0.154974 0.570545     1.106524 -0.499707  0.051320 -0.524174  0.353932 -0.440065
+  Sales Yield 12M POST2021    CAPM      66       11   0.057964     1.534243          0.101139 0.656105     0.901995       NaN       NaN       NaN       NaN       NaN
+  Sales Yield 12M POST2021     FF3      66       11   0.023415     0.568330          0.091509 0.718475     0.957513  0.001543  0.308331       NaN       NaN       NaN
+  Sales Yield 12M POST2021     FF5      66       11   0.027654     0.725417          0.085061 0.756753     0.965954  0.149159  0.195979  0.354059  0.060738       NaN
+  Sales Yield 12M POST2021 FF5_MOM      66       11   0.044333     1.200335          0.081491 0.776744     0.947741  0.075573  0.155163  0.271676  0.154951 -0.206623
+  Sales Yield 12M     FULL    CAPM     149       11   0.087899     2.532101          0.143003 0.538015     1.019319       NaN       NaN       NaN       NaN       NaN
+  Sales Yield 12M     FULL     FF3     149       11   0.083410     2.401167          0.138342 0.567644     1.045218 -0.101987  0.310219       NaN       NaN       NaN
+  Sales Yield 12M     FULL     FF5     149       11   0.081058     2.468714          0.137005 0.575962     1.060355 -0.023723  0.185212  0.181178  0.214854       NaN
+  Sales Yield 12M     FULL FF5_MOM     149       11   0.101506     3.255765          0.131613 0.608679     0.996537 -0.139791  0.082945  0.066743  0.304633 -0.331987
+----------------------------------------------------------------------------------------------------------------------
+DECISION RULE
+A factor is NOT called independent alpha merely because CAPM alpha is significant.
+The strongest test here is FF5+MOM with historical RF.
+We want positive alpha, HAC t >= 1.96, and broadly stable sign across PRE/POST/FULL.
+Survivorship/current-universe bias is still a separate issue and remains unresolved.
+======================================================================================================================
+MULTIFACTOR ALPHA AUDIT PASSED

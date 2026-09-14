@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "matched_months": 152,
+  "official_months": 152,
+  "frozen_profile_months": 152,
+  "unmatched_rows": 0,
+  "max_abs_return_error": 0.0,
+  "tolerance": 1e-12,
+  "reason": "Official forensic monthly path exactly matches the persisted frozen CORE profile series."
+}

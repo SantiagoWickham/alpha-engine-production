@@ -1,0 +1,6 @@
+{
+  "status": "SENSITIVITY_ONLY",
+  "baseline_one_way_cost_bps": 0.5,
+  "break_even_one_way_cost_bps_vs_spy": 255.22766622900758,
+  "note": "Historical backtest cost model uses period turnover and a constant one-way friction; it does not model security-specific spreads or market impact."
+}

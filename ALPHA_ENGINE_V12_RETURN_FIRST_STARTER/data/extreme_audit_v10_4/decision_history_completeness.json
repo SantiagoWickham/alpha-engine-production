@@ -1,0 +1,12 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "present_fields": 11,
+  "total_fields": 16,
+  "missing_fields": [
+    "intraday_signal_timestamp",
+    "intraday_execution_timestamp",
+    "per_trade_realized_cost",
+    "optimizer_marginal_reason_per_asset",
+    "discarded_alternative_reason_per_asset"
+  ]
+}

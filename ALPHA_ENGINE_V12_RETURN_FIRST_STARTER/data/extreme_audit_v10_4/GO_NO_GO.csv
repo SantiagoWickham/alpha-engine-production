@@ -1,0 +1,15 @@
+test,GO_criterion,current_evidence,status,blocking_before_institutional_claim,evidence
+Frozen monthly profile identity,Exact match to persisted CORE,PASS,GO,True,profile_monthly_crosscheck.json
+Point-in-time fundamentals,No filed>asof violations; normalizations cross-sectional at date,"{'PASS': 4, 'PASS WITH LIMITATIONS': 4, 'UNVERIFIED': 1}",GO_WITH_LIMITATIONS,True,pit_audit.csv
+Data vintage/restatement integrity,Historical vintage of each fact independently certified,UNVERIFIED,NO-GO,True,extreme_data_leakage.csv
+Exact signal/fill timing,Executable price strictly after information availability or documented next-session rule,UNVERIFIED,NO-GO,True,execution_lag_stress_summary.csv
+Survivorship-free replay,Full lifecycle universe + delisted prices + PIT factors included and champion replayed,UNRESOLVED,NO-GO,True,survivorship_status.json
+Research multiple-testing inventory,All tried specifications manually certified,446,NO-GO,True,persisted_trial_inventory.csv
+DSR/PBO,"Computed on complete research-trial history, not lower bound",PERSISTED_TRIAL_LOWER_BOUND_ONLY,NO-GO,True,false_discovery_audit.json
+Execution delay,+1 session retains positive meaningful spread vs SPY,22.88%,GO,False,execution_lag_stress_summary.json
+Cost stress,Positive spread under conservative implementation cost,2.55%,GO_WITH_LIMITATIONS,False,transaction_cost_stress_extreme.csv
+Factor ordering stability,Composite IC positive across most years and not concentrated in one regime,84.62%,GO_WITH_LIMITATIONS,False,factor_ic_by_year.csv
+Parameter neighborhood,Nearby predeclared variants retain positive alpha without selecting a winner,SENSITIVITY_ONLY_NO_RETUNING,GO_WITH_LIMITATIONS,False,parameter_neighborhood_sensitivity.csv
+Capacity / CEDEAR liquidity,Local BYMA liquidity supports intended AUM at conservative participation,UNVERIFIED,NO-GO,True,capacity_audit.json
+True forward test,">=36 monthly observations on frozen hash, net of costs, with no retuning",NOT YET MATURE,NO-GO,True,forward_test_preregistration.json
+Decision reconstruction,"Third party can reconstruct inputs, score, target and execution with timestamps",PASS_WITH_LIMITATIONS,NO-GO,True,decision_history_completeness.csv

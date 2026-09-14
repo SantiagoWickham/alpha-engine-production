@@ -1,0 +1,31 @@
+============================================================================
+MMM ADVISOR V0.7 - MARKET WALK-FORWARD VALIDATION
+============================================================================
+Scope: V8 Market pillar only
+Status: DIAGNOSTIC_ONLY - does NOT set _MODEL_CONFIG to PASS
+Current V8 snapshot archived: 228 assets
+Yahoo symbols requested:      241
+Downloading/reading 6Y OHLCV cache...
+OHLCV rows:                   309,342
+OHLCV tickers returned:       208
+----------------------------------------------------------------------------
+Point-in-time rows:            12,537
+Rebalance months:              65
+Assets represented:            195
+----------------------------------------------------------------------------
+VALIDATION SUMMARY
+ horizon_days  periods  mean_rank_ic  median_rank_ic  rank_ic_hit_rate  ic_ir_annualized  mean_top_minus_bottom  top_bottom_hit_rate  mean_top_minus_universe
+           21       63     -0.020452        0.004364          0.507937         -0.400066              -0.007537             0.507937                -0.002835
+           63       61     -0.016509       -0.045472          0.426230         -0.356397              -0.007282             0.442623                -0.003141
+          126       58      0.031131        0.031747          0.603448          0.722231               0.008543             0.551724                 0.016478
+          252       52      0.009103        0.055851          0.557692          0.212055              -0.015796             0.500000                 0.014489
+----------------------------------------------------------------------------
+Outputs:
+  C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\data\validation\market_point_in_time_panel.parquet
+  C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\data\validation\market_rank_ic_by_date.csv
+  C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\data\validation\market_quintile_spreads.csv
+  C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_RED_TEAM_V0_1_FULL_AUDIT\data\validation\market_validation_summary.csv
+============================================================================
+MARKET WALK-FORWARD PASSED
+IMPORTANT: Full Alpha validation still requires point-in-time fundamentals.
+No model weights were changed.

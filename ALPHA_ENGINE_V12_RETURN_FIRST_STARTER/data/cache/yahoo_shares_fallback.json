@@ -1,0 +1,248 @@
+{
+  "ABNB": {
+    "shares": 589585682.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624738.2480867,
+    "cached_at": "2026-09-05T16:12:18.248103+00:00"
+  },
+  "AZN": {
+    "shares": 1550895914.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624741.1568627,
+    "cached_at": "2026-09-05T16:12:21.156865+00:00"
+  },
+  "BBD": {
+    "shares": 10589176727.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624742.25537,
+    "cached_at": "2026-09-05T16:12:22.255371+00:00"
+  },
+  "BHP": {
+    "shares": 2541476901.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624742.544544,
+    "cached_at": "2026-09-05T16:12:22.544545+00:00"
+  },
+  "BIDU": {
+    "shares": 339186531.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624742.897238,
+    "cached_at": "2026-09-05T16:12:22.897240+00:00"
+  },
+  "BKNG": {
+    "shares": 751380500.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624743.2828922,
+    "cached_at": "2026-09-05T16:12:23.282894+00:00"
+  },
+  "BNY": {
+    "shares": 678504142.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624743.9613376,
+    "cached_at": "2026-09-05T16:12:23.961339+00:00"
+  },
+  "BP": {
+    "shares": 2575342288.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624744.3315694,
+    "cached_at": "2026-09-05T16:12:24.331571+00:00"
+  },
+  "CAAP": {
+    "shares": 163371430.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624745.1526535,
+    "cached_at": "2026-09-05T16:12:25.152655+00:00"
+  },
+  "CEPU": {
+    "shares": 149986238.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624745.8270872,
+    "cached_at": "2026-09-05T16:12:25.827089+00:00"
+  },
+  "COIN": {
+    "shares": 263836923.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624747.1384215,
+    "cached_at": "2026-09-05T16:12:27.138423+00:00"
+  },
+  "CRWD": {
+    "shares": 1023934842.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624748.0586033,
+    "cached_at": "2026-09-05T16:12:28.058605+00:00"
+  },
+  "DDOG": {
+    "shares": 359075024.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624748.8141217,
+    "cached_at": "2026-09-05T16:12:28.814123+00:00"
+  },
+  "DEO": {
+    "shares": 555900799.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624749.3154137,
+    "cached_at": "2026-09-05T16:12:29.315415+00:00"
+  },
+  "GLOB": {
+    "shares": 43179556.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624751.7738922,
+    "cached_at": "2026-09-05T16:12:31.773893+00:00"
+  },
+  "GOOGL": {
+    "shares": 12229934831.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624752.146897,
+    "cached_at": "2026-09-05T16:12:32.146898+00:00"
+  },
+  "GS": {
+    "shares": 291171408.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624752.499274,
+    "cached_at": "2026-09-05T16:12:32.499275+00:00"
+  },
+  "JD": {
+    "shares": 1350500000.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624754.165715,
+    "cached_at": "2026-09-05T16:12:34.165716+00:00"
+  },
+  "KEEL": {
+    "shares": 617573212.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624754.9446383,
+    "cached_at": "2026-09-05T16:12:34.944640+00:00"
+  },
+  "LAR": {
+    "shares": 164100000.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624756.1885684,
+    "cached_at": "2026-09-05T16:12:36.188570+00:00"
+  },
+  "META": {
+    "shares": 2547506225.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624759.1740925,
+    "cached_at": "2026-09-05T16:12:39.174094+00:00"
+  },
+  "MS": {
+    "shares": 1570566292.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624760.6473615,
+    "cached_at": "2026-09-05T16:12:40.647363+00:00"
+  },
+  "NU": {
+    "shares": 4830688659.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624762.3429818,
+    "cached_at": "2026-09-05T16:12:42.342983+00:00"
+  },
+  "NVO": {
+    "shares": 4421030124.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624763.1135287,
+    "cached_at": "2026-09-05T16:12:43.113531+00:00"
+  },
+  "PLTR": {
+    "shares": 2403058480.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624765.547393,
+    "cached_at": "2026-09-05T16:12:45.547394+00:00"
+  },
+  "RIO": {
+    "shares": 1626359271.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624766.4715965,
+    "cached_at": "2026-09-05T16:12:46.471597+00:00"
+  },
+  "SAP": {
+    "shares": 1154204232.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624766.9380517,
+    "cached_at": "2026-09-05T16:12:46.938052+00:00"
+  },
+  "SHEL": {
+    "shares": 2860771664.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624767.445804,
+    "cached_at": "2026-09-05T16:12:47.445805+00:00"
+  },
+  "SHOP": {
+    "shares": 1286643931.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624767.753864,
+    "cached_at": "2026-09-05T16:12:47.753865+00:00"
+  },
+  "SID": {
+    "shares": 1326093947.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624768.1421402,
+    "cached_at": "2026-09-05T16:12:48.142141+00:00"
+  },
+  "SNY": {
+    "shares": 2428198054.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624768.6147692,
+    "cached_at": "2026-09-05T16:12:48.614770+00:00"
+  },
+  "SPCX": {
+    "shares": 13181779945.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624768.964625,
+    "cached_at": "2026-09-05T16:12:48.964626+00:00"
+  },
+  "T": {
+    "shares": 6852385650.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624769.57607,
+    "cached_at": "2026-09-05T16:12:49.576071+00:00"
+  },
+  "TEAM": {
+    "shares": 253138815.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624769.8741243,
+    "cached_at": "2026-09-05T16:12:49.874125+00:00"
+  },
+  "TSM": {
+    "shares": 5186474013.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624770.7737753,
+    "cached_at": "2026-09-05T16:12:50.773776+00:00"
+  },
+  "UBER": {
+    "shares": 2042560121.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624771.2846608,
+    "cached_at": "2026-09-05T16:12:51.284662+00:00"
+  },
+  "UL": {
+    "shares": 2153264756.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624771.5444176,
+    "cached_at": "2026-09-05T16:12:51.544418+00:00"
+  },
+  "VIST": {
+    "shares": 110617404.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624772.5027738,
+    "cached_at": "2026-09-05T16:12:52.502774+00:00"
+  },
+  "VLO": {
+    "shares": 287927461.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624772.7898114,
+    "cached_at": "2026-09-05T16:12:52.789812+00:00"
+  },
+  "XOM": {
+    "shares": 4111911960.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624773.7181888,
+    "cached_at": "2026-09-05T16:12:53.718190+00:00"
+  },
+  "YPF": {
+    "shares": 392075056.0,
+    "source": "YAHOO_GET_SHARES_FULL",
+    "cached_epoch": 1788624773.9792306,
+    "cached_at": "2026-09-05T16:12:53.979232+00:00"
+  }
+}

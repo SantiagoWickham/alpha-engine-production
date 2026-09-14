@@ -1,0 +1,2312 @@
+{
+  "schema_version": 2,
+  "observed_at": "2026-09-06T23:49:20.496450+00:00",
+  "source_url": "https://www.comafi.com.ar/CEDEAR-SHARES-2254.note.aspx",
+  "programs": {
+    "MMM": {
+      "byma_symbol": "MMM",
+      "origin_ticker": "MMM",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "3M Company",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ABT": {
+      "byma_symbol": "ABT",
+      "origin_ticker": "ABT",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Abbott Labs",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ABBV": {
+      "byma_symbol": "ABBV",
+      "origin_ticker": "ABBV",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "ABBVIE INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ANF": {
+      "byma_symbol": "ANF",
+      "origin_ticker": "ANF",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "ABERCROMBIE & FITCH CO.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AGRO": {
+      "byma_symbol": "ADGO",
+      "origin_ticker": "AGRO",
+      "cedears_per_underlying": 0.5,
+      "raw_ratio": "1:2",
+      "program_name": "ADECOAGRO S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ADBE": {
+      "byma_symbol": "ADBE",
+      "origin_ticker": "ADBE",
+      "cedears_per_underlying": 22.0,
+      "raw_ratio": "22:1",
+      "program_name": "ADOBE SYSTEMS INCORPORATED",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AMD": {
+      "byma_symbol": "AMD",
+      "origin_ticker": "AMD",
+      "cedears_per_underlying": 0.5,
+      "raw_ratio": "1:2",
+      "program_name": "ADVANCED MICRO DEVICES, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AEG": {
+      "byma_symbol": "AEG",
+      "origin_ticker": "AEG",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "AEGON N.V.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AEM": {
+      "byma_symbol": "AEM",
+      "origin_ticker": "AEM",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Agnico Eagle Mines Limited",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BABA": {
+      "byma_symbol": "BABA",
+      "origin_ticker": "BABA",
+      "cedears_per_underlying": 9.0,
+      "raw_ratio": "9:1",
+      "program_name": "ALIBABA GROUP HOLDING LIMITED",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GOOGL": {
+      "byma_symbol": "GOOGL",
+      "origin_ticker": "GOOGL",
+      "cedears_per_underlying": 58.0,
+      "raw_ratio": "58:1",
+      "program_name": "Alphabet Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AABA": {
+      "byma_symbol": "AABA",
+      "origin_ticker": "AABA",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "ALTABA INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MO": {
+      "byma_symbol": "MO",
+      "origin_ticker": "MO",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Altria Group Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ACH": {
+      "byma_symbol": "ACH",
+      "origin_ticker": "ACH",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Aluminum Corp of China",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AMZN": {
+      "byma_symbol": "AMZN",
+      "origin_ticker": "AMZN",
+      "cedears_per_underlying": 144.0,
+      "raw_ratio": "144:1",
+      "program_name": "AMAZON.COM, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ABEV": {
+      "byma_symbol": "ABEV",
+      "origin_ticker": "ABEV",
+      "cedears_per_underlying": 0.3333333333333333,
+      "raw_ratio": "1:3",
+      "program_name": "AMBEV S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AMX": {
+      "byma_symbol": "AMX",
+      "origin_ticker": "AMX",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "America Movil",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AXP": {
+      "byma_symbol": "AXP",
+      "origin_ticker": "AXP",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "American Express Co",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AIG": {
+      "byma_symbol": "AIG",
+      "origin_ticker": "AIG",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "American International Group (AIG)",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AMGN": {
+      "byma_symbol": "AMGN",
+      "origin_ticker": "AMGN",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "Amgen Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ADI": {
+      "byma_symbol": "ADI",
+      "origin_ticker": "ADI",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Analog Devices",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AAPL": {
+      "byma_symbol": "AAPL",
+      "origin_ticker": "AAPL",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "Apple Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AMAT": {
+      "byma_symbol": "AMAT",
+      "origin_ticker": "AMAT",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Applied Materials Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HWM": {
+      "byma_symbol": "HWM",
+      "origin_ticker": "HWM",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Howmet Aerospace Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ARCO": {
+      "byma_symbol": "ARCO",
+      "origin_ticker": "ARCO",
+      "cedears_per_underlying": 0.5,
+      "raw_ratio": "1:2",
+      "program_name": "ARCOS DORADOS HOLDINGS INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AZN": {
+      "byma_symbol": "AZN",
+      "origin_ticker": "AZN",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Astrazeneca PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "T": {
+      "byma_symbol": "T",
+      "origin_ticker": "T",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "AT &T Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ADP": {
+      "byma_symbol": "ADP",
+      "origin_ticker": "ADP",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Automatic Data Processing Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AVY": {
+      "byma_symbol": "AVY",
+      "origin_ticker": "AVY",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Avery Dennison Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CAR": {
+      "byma_symbol": "CAR",
+      "origin_ticker": "CAR",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Avis Budget Group Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NTCO": {
+      "byma_symbol": "NTCO",
+      "origin_ticker": "NTCO",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Natura & Co Holding S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BIDU": {
+      "byma_symbol": "BIDU",
+      "origin_ticker": "BIDU",
+      "cedears_per_underlying": 11.0,
+      "raw_ratio": "11:1",
+      "program_name": "BAIDU, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BBD": {
+      "byma_symbol": "BBD",
+      "origin_ticker": "BBD",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Banco Bradesco S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BSBR": {
+      "byma_symbol": "BSBR",
+      "origin_ticker": "BSBR",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Banco Santander (BRASIL) S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SAN": {
+      "byma_symbol": "SAN",
+      "origin_ticker": "SAN",
+      "cedears_per_underlying": 0.25,
+      "raw_ratio": "1:4",
+      "program_name": "BANCO SANTANDER (ADR)",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BAC": {
+      "byma_symbol": "BA.C",
+      "origin_ticker": "BAC",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Bank of America Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BCS": {
+      "byma_symbol": "BCS",
+      "origin_ticker": "BCS",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Barclays Bank PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GOLD": {
+      "byma_symbol": "GOLD",
+      "origin_ticker": "GOLD",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Barrick Gold Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BAS": {
+      "byma_symbol": "BAS",
+      "origin_ticker": "BAS",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "BASF SE",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BAYN": {
+      "byma_symbol": "BAYN",
+      "origin_ticker": "BAYN",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Bayer AG",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BRK/B": {
+      "byma_symbol": "BRKB",
+      "origin_ticker": "BRK/B",
+      "cedears_per_underlying": 22.0,
+      "raw_ratio": "22:1",
+      "program_name": "BERKSHIRE HATHAWAY INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BHP": {
+      "byma_symbol": "BHP",
+      "origin_ticker": "BHP",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "BHP Group LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BBVA": {
+      "byma_symbol": "BBV",
+      "origin_ticker": "BBVA",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Bilbao Vizcaya Argentaria S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BIOX": {
+      "byma_symbol": "BIOX",
+      "origin_ticker": "BIOX",
+      "cedears_per_underlying": 0.5,
+      "raw_ratio": "1:2",
+      "program_name": "BIOCERES CROP SOLUTIONS CORP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BIIB": {
+      "byma_symbol": "BIIB",
+      "origin_ticker": "BIIB",
+      "cedears_per_underlying": 13.0,
+      "raw_ratio": "13:1",
+      "program_name": "BIOGEN INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BB": {
+      "byma_symbol": "BB",
+      "origin_ticker": "BB",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "BlackBerry Limited",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BA": {
+      "byma_symbol": "BA",
+      "origin_ticker": "BA",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Boeing Co",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BP": {
+      "byma_symbol": "BP",
+      "origin_ticker": "BP",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "BP PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BRFS": {
+      "byma_symbol": "BRFS",
+      "origin_ticker": "BRFS",
+      "cedears_per_underlying": 0.3333333333333333,
+      "raw_ratio": "1:3",
+      "program_name": "BRF S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BMY": {
+      "byma_symbol": "BMY",
+      "origin_ticker": "BMY",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Bristol-Myers Squibb Company",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AVGO": {
+      "byma_symbol": "AVGO",
+      "origin_ticker": "AVGO",
+      "cedears_per_underlying": 39.0,
+      "raw_ratio": "39:1",
+      "program_name": "BROADCOM INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BG": {
+      "byma_symbol": "BNG",
+      "origin_ticker": "BG",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "BUNGE LIMITED",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CAJ": {
+      "byma_symbol": "CAJ",
+      "origin_ticker": "CAJ",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Canon Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CAH": {
+      "byma_symbol": "CAH",
+      "origin_ticker": "CAH",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Cardinal Health Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CAT": {
+      "byma_symbol": "CAT",
+      "origin_ticker": "CAT",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Caterpillar Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CX": {
+      "byma_symbol": "CX",
+      "origin_ticker": "CX",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Cemex S.A.B. de CV",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "EBR": {
+      "byma_symbol": "EBR",
+      "origin_ticker": "EBR",
+      "cedears_per_underlying": 0.25,
+      "raw_ratio": "1:4",
+      "program_name": "CENTRAIS ELÉTRICAS BRASILEIRAS S.A. - ELETROBRÁS",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CVX": {
+      "byma_symbol": "CVX",
+      "origin_ticker": "CVX",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "Chevron Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LFC": {
+      "byma_symbol": "LFC",
+      "origin_ticker": "LFC",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "China Life Insurance",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CHL": {
+      "byma_symbol": "CHL",
+      "origin_ticker": "CHL",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "CHINA MOBILE LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SNP": {
+      "byma_symbol": "SNP",
+      "origin_ticker": "SNP",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "China Petroleum & Chem",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CHA": {
+      "byma_symbol": "CHA",
+      "origin_ticker": "CHA",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "China Telecom Corp LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CSCO": {
+      "byma_symbol": "CSCO",
+      "origin_ticker": "CSCO",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Cisco Systems Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "C": {
+      "byma_symbol": "C",
+      "origin_ticker": "C",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Citigroup Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CEO": {
+      "byma_symbol": "CEO",
+      "origin_ticker": "CEO",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "CNOOC LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KO": {
+      "byma_symbol": "KO",
+      "origin_ticker": "KO",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Coca-Cola Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KOF": {
+      "byma_symbol": "KOFM",
+      "origin_ticker": "KOF",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "COCA-COLA FEMSA, S.A.B. De C.V..",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CDE": {
+      "byma_symbol": "CDE",
+      "origin_ticker": "CDE",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Coeur Mining Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CL": {
+      "byma_symbol": "CL",
+      "origin_ticker": "CL",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Colgate Palmolive Co",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SBS": {
+      "byma_symbol": "SBS",
+      "origin_ticker": "SBS",
+      "cedears_per_underlying": 0.5,
+      "raw_ratio": "1:2",
+      "program_name": "COMPANHIA DE SANEAMENTO BÁSICO DO ESTADO DE SÃO PAULO–SABESP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ELP": {
+      "byma_symbol": "ELP",
+      "origin_ticker": "ELP",
+      "cedears_per_underlying": 0.3333333333333333,
+      "raw_ratio": "1:3",
+      "program_name": "COMPANHIA PARANAENSE DE ENERGIA – COPEL",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SID": {
+      "byma_symbol": "SID",
+      "origin_ticker": "SID",
+      "cedears_per_underlying": 0.125,
+      "raw_ratio": "1:8",
+      "program_name": "COMPANHIA SIDERÚRGICA NACIONAL",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GLW": {
+      "byma_symbol": "GLW",
+      "origin_ticker": "GLW",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Corning Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CAAP": {
+      "byma_symbol": "CAAP",
+      "origin_ticker": "CAAP",
+      "cedears_per_underlying": 0.25,
+      "raw_ratio": "1:4",
+      "program_name": "CORP AMERICA AIRPORTS SA",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "COST": {
+      "byma_symbol": "COST",
+      "origin_ticker": "COST",
+      "cedears_per_underlying": 12.0,
+      "raw_ratio": "12:1",
+      "program_name": "Costco Wholesale Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CS": {
+      "byma_symbol": "CS",
+      "origin_ticker": "CS",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Credit Suisse Group",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TCOM": {
+      "byma_symbol": "TCOM",
+      "origin_ticker": "TCOM",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "TRIP.COM Group Ltd.​.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DAI": {
+      "byma_symbol": "DAI",
+      "origin_ticker": "DAI",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Daimler AG",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BSN": {
+      "byma_symbol": "BSN",
+      "origin_ticker": "BSN",
+      "cedears_per_underlying": 20.0,
+      "raw_ratio": "20:1",
+      "program_name": "DANONE",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DE": {
+      "byma_symbol": "DE",
+      "origin_ticker": "DE",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "Deere & Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DESP": {
+      "byma_symbol": "DESP",
+      "origin_ticker": "DESP",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "DESPEGAR.COM, CORP.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DTEA": {
+      "byma_symbol": "DTEA",
+      "origin_ticker": "DTEA",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Deutsche Telekom AG",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DEO": {
+      "byma_symbol": "DEO",
+      "origin_ticker": "DEO",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Diageo PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DOCU": {
+      "byma_symbol": "DOCU",
+      "origin_ticker": "DOCU",
+      "cedears_per_underlying": 22.0,
+      "raw_ratio": "22:1",
+      "program_name": "DOCUSIGN INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DD": {
+      "byma_symbol": "DD",
+      "origin_ticker": "DD",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "DUPONT DE NOMOURS",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "EOAN": {
+      "byma_symbol": "EOAN",
+      "origin_ticker": "EOAN",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "E.ON SE",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "EBAY": {
+      "byma_symbol": "EBAY",
+      "origin_ticker": "EBAY",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "EBAY Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CBD": {
+      "byma_symbol": "CBRD",
+      "origin_ticker": "CBD",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "COMPANHIA BRASILEIRA DE DISTRIBUIÇÃO",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LLY": {
+      "byma_symbol": "LLY",
+      "origin_ticker": "LLY",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "Eli Lilly and Company",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ERJ": {
+      "byma_symbol": "ERJ",
+      "origin_ticker": "ERJ",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "EMBRAER-EMPRESA BRASILEIRA DE AERONÁUTICA S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "E": {
+      "byma_symbol": "E",
+      "origin_ticker": "E",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "ENI SpA",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ETSY": {
+      "byma_symbol": "ETSY",
+      "origin_ticker": "ETSY",
+      "cedears_per_underlying": 16.0,
+      "raw_ratio": "16:1",
+      "program_name": "ETSY INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "EFX": {
+      "byma_symbol": "EFX",
+      "origin_ticker": "EFX",
+      "cedears_per_underlying": 16.0,
+      "raw_ratio": "16:1",
+      "program_name": "EQUIFAX INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "XOM": {
+      "byma_symbol": "XOM",
+      "origin_ticker": "XOM",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Exxon Mobil Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FB": {
+      "byma_symbol": "FB",
+      "origin_ticker": "FB",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "FACEBOOK, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FNMA": {
+      "byma_symbol": "FNMA",
+      "origin_ticker": "FNMA",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Fed. Natl, Mortgage - Fannie Mae",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FDX": {
+      "byma_symbol": "FDX",
+      "origin_ticker": "FDX",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "FEDEX CORP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FSLR": {
+      "byma_symbol": "FSLR",
+      "origin_ticker": "FSLR",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "First Solar Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FMX": {
+      "byma_symbol": "FMX",
+      "origin_ticker": "FMX",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Fomento Economico Mexicano - FEMSA",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FMCC": {
+      "byma_symbol": "FMCC",
+      "origin_ticker": "FMCC",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Freddie Mac (Federal Home Loan)",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "FCX": {
+      "byma_symbol": "FCX",
+      "origin_ticker": "FCX",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Freeport McMoran Copper & Gold Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GRMN": {
+      "byma_symbol": "GRMN",
+      "origin_ticker": "GRMN",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "GARMIN LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GE": {
+      "byma_symbol": "GE",
+      "origin_ticker": "GE",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "General Electric Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GPRK": {
+      "byma_symbol": "GPRK",
+      "origin_ticker": "GPRK",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "GEOPARK LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GGB": {
+      "byma_symbol": "GGB",
+      "origin_ticker": "GGB",
+      "cedears_per_underlying": 0.25,
+      "raw_ratio": "1:4",
+      "program_name": "GERDAU S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GILD": {
+      "byma_symbol": "GILD",
+      "origin_ticker": "GILD",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "GILEAD SCIENCES, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GSK": {
+      "byma_symbol": "GSK",
+      "origin_ticker": "GSK",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "GlaxoSmithkline plc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GLOB": {
+      "byma_symbol": "GLNT",
+      "origin_ticker": "GLOB",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "GLOBANT S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GFI": {
+      "byma_symbol": "GFI",
+      "origin_ticker": "GFI",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Gold Fields Ltd.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PAC": {
+      "byma_symbol": "PAC",
+      "origin_ticker": "PAC",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "GRUPO AEROPORTUARIO DEL PACIFICO, S.A.B. de C.V.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ASR": {
+      "byma_symbol": "ASR",
+      "origin_ticker": "ASR",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "GRUPO AEROPORTUARIO DEL SURESTE , S.A.B. de C.V.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TV": {
+      "byma_symbol": "TV",
+      "origin_ticker": "TV",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Grupo Televisa S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HAL": {
+      "byma_symbol": "HAL",
+      "origin_ticker": "HAL",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "HALLIBURTON CO",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HOG": {
+      "byma_symbol": "HOG",
+      "origin_ticker": "HOG",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Harley-Davidson Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HMY": {
+      "byma_symbol": "HMY",
+      "origin_ticker": "HMY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "HARMONY GOLD MINING COMPANY LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HDB": {
+      "byma_symbol": "HDB",
+      "origin_ticker": "HDB",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "HDFC BANK LIMITED.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HL": {
+      "byma_symbol": "HL",
+      "origin_ticker": "HL",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Hecla Mining Co .",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HD": {
+      "byma_symbol": "HD",
+      "origin_ticker": "HD",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "Home Depot Inc., The",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HHPD": {
+      "byma_symbol": "HHPD",
+      "origin_ticker": "HHPD",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Hon Hai Precision Industry Co. Ltd.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HMC": {
+      "byma_symbol": "HMC",
+      "origin_ticker": "HMC",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Honda Motor Co. LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HON": {
+      "byma_symbol": "HON",
+      "origin_ticker": "HON",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "HONEYWELL INTERNATIONAL INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HPQ": {
+      "byma_symbol": "HPQ",
+      "origin_ticker": "HPQ",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "HP Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HSBC": {
+      "byma_symbol": "HSBC",
+      "origin_ticker": "HSBC",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "HSBC Holdings PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HNP": {
+      "byma_symbol": "HNP",
+      "origin_ticker": "HNP",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Huaneng Power Intl",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "IBN": {
+      "byma_symbol": "IBN",
+      "origin_ticker": "IBN",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "ICICI BANK LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "INFY": {
+      "byma_symbol": "INFY",
+      "origin_ticker": "INFY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Infosys Limited",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ING": {
+      "byma_symbol": "ING",
+      "origin_ticker": "ING",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "ING Groep NV",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "INTC": {
+      "byma_symbol": "INTC",
+      "origin_ticker": "INTC",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Intel Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "IBM": {
+      "byma_symbol": "IBM",
+      "origin_ticker": "IBM",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "International Business Machines",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "IFF": {
+      "byma_symbol": "IFF",
+      "origin_ticker": "IFF",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "International Flavors & Fragrances Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "IP": {
+      "byma_symbol": "IP",
+      "origin_ticker": "IP",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "International Paper Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ITUB": {
+      "byma_symbol": "ITUB",
+      "origin_ticker": "ITUB",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "ITAÚ UNIBANCO HOLDING S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "JPM": {
+      "byma_symbol": "JPM",
+      "origin_ticker": "JPM",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "J.P. Morgan & Chase Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "JD": {
+      "byma_symbol": "JD",
+      "origin_ticker": "JD",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "JD.COM, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "JNJ": {
+      "byma_symbol": "JNJ",
+      "origin_ticker": "JNJ",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Johnson & Johnson",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "JCI": {
+      "byma_symbol": "JCI",
+      "origin_ticker": "JCI",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "JOHNSON CONTROLS INTERNATIONAL",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "YY": {
+      "byma_symbol": "YY",
+      "origin_ticker": "YY",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "JOYY INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KB": {
+      "byma_symbol": "KB",
+      "origin_ticker": "KB",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "KB Financial Group Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KMB": {
+      "byma_symbol": "KMB",
+      "origin_ticker": "KMB",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Kimberly-Clark Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KGC": {
+      "byma_symbol": "KGC",
+      "origin_ticker": "KGC",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Kinross Gold Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PHG": {
+      "byma_symbol": "PHG",
+      "origin_ticker": "PHG",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Koninklijke Philips N.V.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "KEP": {
+      "byma_symbol": "KEP",
+      "origin_ticker": "KEP",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Korea Electric Power Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LVS": {
+      "byma_symbol": "LVS",
+      "origin_ticker": "LVS",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Las Vegas Sands Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LYG": {
+      "byma_symbol": "LYG",
+      "origin_ticker": "LYG",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Lloyds Banking Group plc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ERIC": {
+      "byma_symbol": "ERIC",
+      "origin_ticker": "ERIC",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "LM Ericsson Telephone Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LMT": {
+      "byma_symbol": "LMT",
+      "origin_ticker": "LMT",
+      "cedears_per_underlying": 20.0,
+      "raw_ratio": "20:1",
+      "program_name": "Lockheed Martin Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MMC": {
+      "byma_symbol": "MMC",
+      "origin_ticker": "MMC",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Marsh & McLennan Companies Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MA": {
+      "byma_symbol": "MA",
+      "origin_ticker": "MA",
+      "cedears_per_underlying": 33.0,
+      "raw_ratio": "33:1",
+      "program_name": "MASTERCARD INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MCD": {
+      "byma_symbol": "MCD",
+      "origin_ticker": "MCD",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "McDonald's Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MDT": {
+      "byma_symbol": "MDT",
+      "origin_ticker": "MDT",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "MEDTRONIC PUBLIC LIMITED COMPANY",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MELI": {
+      "byma_symbol": "MELI",
+      "origin_ticker": "MELI",
+      "cedears_per_underlying": 60.0,
+      "raw_ratio": "60:1",
+      "program_name": "MercadoLibre Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MRK": {
+      "byma_symbol": "MRK",
+      "origin_ticker": "MRK",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Merck & Co. Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MSFT": {
+      "byma_symbol": "MSFT",
+      "origin_ticker": "MSFT",
+      "cedears_per_underlying": 10.0,
+      "raw_ratio": "10:1",
+      "program_name": "Microsoft Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MUFG": {
+      "byma_symbol": "MUFG",
+      "origin_ticker": "MUFG",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Mitsubishi UFJ Financial Group",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MFG": {
+      "byma_symbol": "MFG",
+      "origin_ticker": "MFG",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Mizuho Financial Group",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MBT": {
+      "byma_symbol": "MBT",
+      "origin_ticker": "MBT",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Mobile Telesystems",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "MSI": {
+      "byma_symbol": "MSI",
+      "origin_ticker": "MSI",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Motorola Solutions, Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NGG": {
+      "byma_symbol": "NGG",
+      "origin_ticker": "NGG",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "National Grid PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NEC1": {
+      "byma_symbol": "NEC1",
+      "origin_ticker": "NEC1",
+      "cedears_per_underlying": 0.3333333333333333,
+      "raw_ratio": "1:3",
+      "program_name": "Nec Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NTES": {
+      "byma_symbol": "NTES",
+      "origin_ticker": "NTES",
+      "cedears_per_underlying": 14.0,
+      "raw_ratio": "14:1",
+      "program_name": "NETEASE, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NFLX": {
+      "byma_symbol": "NFLX",
+      "origin_ticker": "NFLX",
+      "cedears_per_underlying": 16.0,
+      "raw_ratio": "16:1",
+      "program_name": "NETFLIX, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NEM": {
+      "byma_symbol": "NEM",
+      "origin_ticker": "NEM",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Newmont Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NKE": {
+      "byma_symbol": "NKE",
+      "origin_ticker": "NKE",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Nike Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NSANY": {
+      "byma_symbol": "NSAN",
+      "origin_ticker": "NSANY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Nissan Motor Co., LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NOK": {
+      "byma_symbol": "NOKA",
+      "origin_ticker": "NOK",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Nokia Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NMR": {
+      "byma_symbol": "NMR",
+      "origin_ticker": "NMR",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Nomura Holdings, Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NG": {
+      "byma_symbol": "NG",
+      "origin_ticker": "NG",
+      "cedears_per_underlying": 0.25,
+      "raw_ratio": "1:4",
+      "program_name": "NOVAGOLD RESOURCES INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NVS": {
+      "byma_symbol": "NVS",
+      "origin_ticker": "NVS",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Novartis AG",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NLMK": {
+      "byma_symbol": "NLM",
+      "origin_ticker": "NLMK",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "NOVOLIPETSK STEEL PJSC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DCMYY": {
+      "byma_symbol": "DCMYY",
+      "origin_ticker": "DCMYY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "NTT Docomo, Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NUE": {
+      "byma_symbol": "NUE",
+      "origin_ticker": "NUE",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Nucor Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "NVDA": {
+      "byma_symbol": "NVDA",
+      "origin_ticker": "NVDA",
+      "cedears_per_underlying": 24.0,
+      "raw_ratio": "24:1",
+      "program_name": "NVIDIA CORPORATION",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ORCL": {
+      "byma_symbol": "ORCL",
+      "origin_ticker": "ORCL",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Oracle Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ORAN": {
+      "byma_symbol": "ORAN",
+      "origin_ticker": "ORAN",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "ORANGE",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PCAR": {
+      "byma_symbol": "PCAR",
+      "origin_ticker": "PCAR",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Paccar Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PAAS": {
+      "byma_symbol": "PAAS",
+      "origin_ticker": "PAAS",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "PAN AMERICAN SILVER CORP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PCRFY": {
+      "byma_symbol": "PCRF",
+      "origin_ticker": "PCRFY",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Panasonic Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PYPL": {
+      "byma_symbol": "PYPL",
+      "origin_ticker": "PYPL",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "PAYPAL HOLDINGS, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PSO": {
+      "byma_symbol": "PSO",
+      "origin_ticker": "PSO",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Pearson PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PEP": {
+      "byma_symbol": "PEP",
+      "origin_ticker": "PEP",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Pepsico Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PBR": {
+      "byma_symbol": "PBR",
+      "origin_ticker": "PBR",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "PETROBRAS (ADR)",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PTR": {
+      "byma_symbol": "PTR",
+      "origin_ticker": "PTR",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Petrochina Co Ltd",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PFE": {
+      "byma_symbol": "PFE",
+      "origin_ticker": "PFE",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Pfizer Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PSX": {
+      "byma_symbol": "PSX",
+      "origin_ticker": "PSX",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "PHILLIPS 66",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PBI": {
+      "byma_symbol": "PBI",
+      "origin_ticker": "PBI",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Pitney Bowes Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "OGZD": {
+      "byma_symbol": "OGZD",
+      "origin_ticker": "OGZD",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "PJSC GAZPROM",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "LKOD": {
+      "byma_symbol": "LKOD",
+      "origin_ticker": "LKOD",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "PJSC LUKOIL",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ATAD": {
+      "byma_symbol": "ATAD",
+      "origin_ticker": "ATAD",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "PJSC TATNEFT",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PKX": {
+      "byma_symbol": "PKS",
+      "origin_ticker": "PKX",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "POSCO",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "PG": {
+      "byma_symbol": "PG",
+      "origin_ticker": "PG",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Procter & Gamble",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "QCOM": {
+      "byma_symbol": "QCOM",
+      "origin_ticker": "QCOM",
+      "cedears_per_underlying": 11.0,
+      "raw_ratio": "11:1",
+      "program_name": "Qualcomm Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "RIO": {
+      "byma_symbol": "RIO",
+      "origin_ticker": "RIO",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Rio Tinto PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ROST": {
+      "byma_symbol": "ROST",
+      "origin_ticker": "ROST",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "ROSS STORES, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "RDSB": {
+      "byma_symbol": "RDS",
+      "origin_ticker": "RDSB",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Royal Dutch Shell PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "CRM": {
+      "byma_symbol": "CRM",
+      "origin_ticker": "CRM",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "SALESFORCE.COM, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SMSN": {
+      "byma_symbol": "SMSN",
+      "origin_ticker": "SMSN",
+      "cedears_per_underlying": 14.0,
+      "raw_ratio": "14:1",
+      "program_name": "SAMSUNG ELECTRONICS CO. LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SAP": {
+      "byma_symbol": "SAP",
+      "origin_ticker": "SAP",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "SAP SE",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SLB": {
+      "byma_symbol": "SLB",
+      "origin_ticker": "SLB",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Schlumberger Ltd",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SIEGY": {
+      "byma_symbol": "SIEGY",
+      "origin_ticker": "SIEGY",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Siemens AG ADR",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SHOP": {
+      "byma_symbol": "SHOP",
+      "origin_ticker": "SHOP",
+      "cedears_per_underlying": 107.0,
+      "raw_ratio": "107:1",
+      "program_name": "SHOPIFY INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SNAP": {
+      "byma_symbol": "SNAP",
+      "origin_ticker": "SNAP",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "SNAP INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SNA": {
+      "byma_symbol": "SNA",
+      "origin_ticker": "SNA",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "Snap-On Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SNOW": {
+      "byma_symbol": "SNOW",
+      "origin_ticker": "SNOW",
+      "cedears_per_underlying": 30.0,
+      "raw_ratio": "30:1",
+      "program_name": "SNOWFLAKE INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SONY": {
+      "byma_symbol": "SONY",
+      "origin_ticker": "SONY",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Sony Group Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SCCO": {
+      "byma_symbol": "SCCO",
+      "origin_ticker": "SCCO",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Southern Copper Corp",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SPOT": {
+      "byma_symbol": "SPOT",
+      "origin_ticker": "SPOT",
+      "cedears_per_underlying": 28.0,
+      "raw_ratio": "28:1",
+      "program_name": "SPOTIFY TECHNOLOGY SA",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SQ": {
+      "byma_symbol": "SQ",
+      "origin_ticker": "SQ",
+      "cedears_per_underlying": 20.0,
+      "raw_ratio": "20:1",
+      "program_name": "SQUARE INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SBUX": {
+      "byma_symbol": "SBUX",
+      "origin_ticker": "SBUX",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "Starbucks Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SUZ": {
+      "byma_symbol": "SUZ",
+      "origin_ticker": "SUZ",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "SUZANO PAPEL E CELULOSE S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "SYY": {
+      "byma_symbol": "SYY",
+      "origin_ticker": "SYY",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Sysco Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TSM": {
+      "byma_symbol": "TSM",
+      "origin_ticker": "TSM",
+      "cedears_per_underlying": 0.3333333333333333,
+      "raw_ratio": "1:3",
+      "program_name": "Taiwan Semiconductor Manufacturing",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TGT": {
+      "byma_symbol": "TGT",
+      "origin_ticker": "TGT",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "TARGET CORPORATION",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TTM": {
+      "byma_symbol": "TTM",
+      "origin_ticker": "TTM",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "TATA MOTORS LTD",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TIIAY": {
+      "byma_symbol": "TIIAY",
+      "origin_ticker": "TIIAY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Telecom Italia S.P.A. Ordinary Shares",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VIV": {
+      "byma_symbol": "VIV",
+      "origin_ticker": "VIV",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "TELEFÔNICA BRASIL S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TEF": {
+      "byma_symbol": "TEFO",
+      "origin_ticker": "TEF",
+      "cedears_per_underlying": 8.0,
+      "raw_ratio": "8:1",
+      "program_name": "Telefonica S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TS": {
+      "byma_symbol": "TEN",
+      "origin_ticker": "TS",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "TENARIS",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TX": {
+      "byma_symbol": "TXR",
+      "origin_ticker": "TX",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "TERNIUM S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TSLA": {
+      "byma_symbol": "TSLA",
+      "origin_ticker": "TSLA",
+      "cedears_per_underlying": 15.0,
+      "raw_ratio": "15:1",
+      "program_name": "TESLA, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TXN": {
+      "byma_symbol": "TXN",
+      "origin_ticker": "TXN",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Texas Instruments Inc",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "BK": {
+      "byma_symbol": "BK",
+      "origin_ticker": "BK",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "THE BANK OF NEW YORK MELLON CORP.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "GS": {
+      "byma_symbol": "GS",
+      "origin_ticker": "GS",
+      "cedears_per_underlying": 13.0,
+      "raw_ratio": "13:1",
+      "program_name": "THE GOLDMAN SACHS GROUP, INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "HSY": {
+      "byma_symbol": "HSY",
+      "origin_ticker": "HSY",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "THE HERSHEY COMPANY",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "DIS": {
+      "byma_symbol": "DISN",
+      "origin_ticker": "DIS",
+      "cedears_per_underlying": 4.0,
+      "raw_ratio": "4:1",
+      "program_name": "THE WALT DISNEY CO.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TMO": {
+      "byma_symbol": "TMO",
+      "origin_ticker": "TMO",
+      "cedears_per_underlying": 22.0,
+      "raw_ratio": "22:1",
+      "program_name": "THERMO FISHER SCIENTIFIC INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TIMB": {
+      "byma_symbol": "TSU",
+      "origin_ticker": "TIMB",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "TIM PARTICIPAÇÕES S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TTE": {
+      "byma_symbol": "TTE",
+      "origin_ticker": "TTE",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "TotalEnergies SE - ADR",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TM": {
+      "byma_symbol": "TM",
+      "origin_ticker": "TM",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Toyota Motor Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TRV": {
+      "byma_symbol": "TRVV",
+      "origin_ticker": "TRV",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "The Travelers Companies, Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TRIP": {
+      "byma_symbol": "TRIP",
+      "origin_ticker": "TRIP",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "TRIPADVISOR, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "TWTR": {
+      "byma_symbol": "TWTR",
+      "origin_ticker": "TWTR",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "TWITTER, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "USB": {
+      "byma_symbol": "USB",
+      "origin_ticker": "USB",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "U.S. BANCORP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "UGP": {
+      "byma_symbol": "UGP",
+      "origin_ticker": "UGP",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "ULTRAPAR PARTICIPAÇÕES S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "UL": {
+      "byma_symbol": "UL",
+      "origin_ticker": "UL",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "UNILEVER PLC-SPONSORED ADR",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "UNP": {
+      "byma_symbol": "UNP",
+      "origin_ticker": "UNP",
+      "cedears_per_underlying": 20.0,
+      "raw_ratio": "20:1",
+      "program_name": "UNION PACIFIC CORP",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "X": {
+      "byma_symbol": "X",
+      "origin_ticker": "X",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "United States Steel Corp.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "UNH": {
+      "byma_symbol": "UNH",
+      "origin_ticker": "UNH",
+      "cedears_per_underlying": 33.0,
+      "raw_ratio": "33:1",
+      "program_name": "UNITEDHEALTH GROUP INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "RTX": {
+      "byma_symbol": "RTX",
+      "origin_ticker": "RTX",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "RAYTHEON TECHNOLOGIES CORP USD 0.01",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "URBN": {
+      "byma_symbol": "URBN",
+      "origin_ticker": "URBN",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "URBAN OUTFITTERS, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VALE": {
+      "byma_symbol": "VALE",
+      "origin_ticker": "VALE",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Vale S.A.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VEDL": {
+      "byma_symbol": "VEDL",
+      "origin_ticker": "VEDL",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "VEDANTA LIMITED",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VRSN": {
+      "byma_symbol": "VRSN",
+      "origin_ticker": "VRSN",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "VERISIGN, INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VZ": {
+      "byma_symbol": "VZ",
+      "origin_ticker": "VZ",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "Verizon Communications Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "V": {
+      "byma_symbol": "V",
+      "origin_ticker": "V",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "VISA INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VIST": {
+      "byma_symbol": "VIST",
+      "origin_ticker": "VIST",
+      "cedears_per_underlying": 0.2,
+      "raw_ratio": "1:5",
+      "program_name": "VISTA OIL & GAS SAB DE CV (ADS)",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "VOD": {
+      "byma_symbol": "VOD",
+      "origin_ticker": "VOD",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Vodafone Group PLC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "WBA": {
+      "byma_symbol": "WBA",
+      "origin_ticker": "WBA",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "WALGREENS BOOTS ALLIANCE INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "WMT": {
+      "byma_symbol": "WMT",
+      "origin_ticker": "WMT",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "WALMART Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "WB": {
+      "byma_symbol": "WBO",
+      "origin_ticker": "WB",
+      "cedears_per_underlying": 6.0,
+      "raw_ratio": "6:1",
+      "program_name": "WEIBO CORPORATION",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "WFC": {
+      "byma_symbol": "WFC",
+      "origin_ticker": "WFC",
+      "cedears_per_underlying": 5.0,
+      "raw_ratio": "5:1",
+      "program_name": "Wells Fargo & Co.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "WBK": {
+      "byma_symbol": "WBK",
+      "origin_ticker": "WBK",
+      "cedears_per_underlying": 3.0,
+      "raw_ratio": "3:1",
+      "program_name": "Westpac Banking Corporation",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "XRX": {
+      "byma_symbol": "XROX",
+      "origin_ticker": "XRX",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "XEROX HOLDING CORPORATION",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "AUY": {
+      "byma_symbol": "AUY",
+      "origin_ticker": "AUY",
+      "cedears_per_underlying": 1.0,
+      "raw_ratio": "1:1",
+      "program_name": "Yamana Gold Inc.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "YZCAY": {
+      "byma_symbol": "YZCA",
+      "origin_ticker": "YZCAY",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "YANZHOU COAL MINING CO. LTD.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "YELP": {
+      "byma_symbol": "YELP",
+      "origin_ticker": "YELP",
+      "cedears_per_underlying": 2.0,
+      "raw_ratio": "2:1",
+      "program_name": "YELP INC.",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    },
+    "ZM": {
+      "byma_symbol": "ZM",
+      "origin_ticker": "ZM",
+      "cedears_per_underlying": 47.0,
+      "raw_ratio": "47:1",
+      "program_name": "ZOOM VIDEO COMMUNICATIONS INC",
+      "source": "BANCO_COMAFI_CURRENT_PROGRAMS",
+      "observed_at": "2026-09-06T23:49:20.496450+00:00"
+    }
+  },
+  "ratio_changes": []
+}

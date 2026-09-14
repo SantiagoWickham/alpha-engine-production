@@ -1,0 +1,33 @@
+test,status,method_or_evidence,observed_artifacts,sufficiency,residual_risk
+LOOK_AHEAD_BIAS,PARTIAL,PIT fundamentals and temporal panels,,NEEDS_IMPROVEMENT,MODERATE
+SURVIVORSHIP_BIAS,PARTIAL,Historical lifecycle + delisted acquisition/closure suite,research_closure_decision.csv,NEEDS_IMPROVEMENT,MODERATE
+POINT_IN_TIME_UNIVERSE,PARTIAL,Historical universe reconstruction,historical_universe_monthly.parquet,NEEDS_IMPROVEMENT,MODERATE
+DATA_LEAKAGE,PARTIAL,PIT feature tests + walk-forward tests,,NEEDS_IMPROVEMENT,MODERATE
+CORPORATE_ACTIONS_HISTORY,PARTIAL,Current production action controls; historical coverage not exhaustive,,NEEDS_IMPROVEMENT,MODERATE
+FILING_PUBLICATION_DATES,TESTED,SEC PIT fundamentals,sec_monthly_point_in_time_facts.parquet,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+DATA_SNOOPING_MULTIPLE_TESTING,PENDING,Experiment inventory + DSR/PBO/SPA,,NEEDS_IMPROVEMENT,MATERIAL
+PARAMETER_SENSITIVITY,PARTIAL,Existing challengers + additional local surface still desirable,,NEEDS_IMPROVEMENT,MODERATE
+FACTOR_SENSITIVITY,TESTED,Individual factor diagnostics and frozen-factor validation,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+WEIGHT_SENSITIVITY,PARTIAL,Champion vs dynamic-weight challenger; full simplex surface pending,,NEEDS_IMPROVEMENT,MODERATE
+REBALANCE_FREQUENCY,PENDING,Dedicated sensitivity not fully documented,,NEEDS_IMPROVEMENT,MATERIAL
+TRANSACTION_COSTS,TESTED,V10.2 benchmark/cost stress,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+SLIPPAGE,PARTIAL,Production proxy; empirical local slippage model pending,,NEEDS_IMPROVEMENT,MODERATE
+REAL_EXECUTION_CONSTRAINTS,TESTED_CURRENT,Current executable-universe + integer MILP,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+CEDEAR_RATIOS,TESTED_CURRENT,Current validated registry/manual authority; historical series pending,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+ARS_MEP,TESTED_CURRENT,Current production translation tested; full historical execution replay pending,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+INTEGER_NOMINALS,TESTED_CURRENT,MILP integer implementation,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+CASH_RESIDUAL,TESTED_CURRENT,Endogenous cash + deployment audit,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+LIQUIDITY,PARTIAL,Risk/implementation awareness; empirical capacity model pending,,NEEDS_IMPROVEMENT,MODERATE
+CONCENTRATION_ASSET,TESTED,Optimizer penalties + V10.1 concentration audit,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+CONCENTRATION_SECTOR,PARTIAL,Sector-neutral factor tests; portfolio sector exposure audit can improve,,NEEDS_IMPROVEMENT,MODERATE
+INSTRUMENT_IDENTITY,TESTED_CURRENT,Instrument master hardening + settlement safety,,SUFFICIENT_FOR_CURRENT_STAGE,CURRENT_ONLY
+BENCHMARK_CORRECTNESS,TESTED,SPY + V10.2 benchmark audit,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+FF5_MOM,TESTED,Multifactor alpha audit,v10_4/profile_multifactor_alpha.csv,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+MARKET_REGIMES,TESTED,V10.3 temporal/regime audit,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+BULL_BEAR_SIDEWAYS,PARTIAL,Regime diagnostics plus new simple stress; formal ex-ante taxonomy can improve,,NEEDS_IMPROVEMENT,MODERATE
+TEMPORAL_ROBUSTNESS,TESTED,V10.3 + rolling windows,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+ROLLING_3Y_5Y,TESTED,V10.4 rolling validation,v10_4 rolling outputs,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+OUT_OF_SAMPLE,TESTED,Market/fundamental OOS and champion/challenger,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+NESTED_WALK_FORWARD,PARTIAL,Walk-forward components exist; end-to-end nested replay still pending,,NEEDS_IMPROVEMENT,MODERATE
+ALTERNATIVE_SPECIFICATIONS,TESTED,Many challengers/factor variants tested,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER
+CHAMPION_VS_CHALLENGER,TESTED,V11.1 challenger lost robustly,,SUFFICIENT_FOR_CURRENT_STAGE,LOWER

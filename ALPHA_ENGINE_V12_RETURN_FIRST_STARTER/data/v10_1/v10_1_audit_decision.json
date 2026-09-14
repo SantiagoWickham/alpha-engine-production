@@ -1,0 +1,26 @@
+{
+  "conviction_concentration": {
+    "status": "FAIL",
+    "median_effective_n": 3.7633081869593292,
+    "median_max_weight": 0.4056365170260411,
+    "median_top5_weight": 0.9291511788003042
+  },
+  "conviction_contribution_concentration": {
+    "status": "PASS",
+    "top1_share_of_positive": 0.15589318420841247,
+    "top5_share_of_positive": 0.5512831388601751
+  },
+  "conviction_fragility": {
+    "status": "PASS",
+    "drop1_delta": -0.022094915455740494,
+    "drop3_delta": -0.06181613610231457
+  },
+  "optimizer_value_add": {
+    "status": "PASS",
+    "delta_ir_vs_conviction": -0.10448904505521683,
+    "delta_mdd_vs_conviction": 0.0265998776808683,
+    "delta_vol_vs_conviction": -0.0954314632578499,
+    "delta_turnover_vs_conviction": -0.22445060010842507
+  },
+  "final_audit_status": "FAIL"
+}

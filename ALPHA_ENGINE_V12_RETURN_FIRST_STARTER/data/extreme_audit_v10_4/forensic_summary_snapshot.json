@@ -1,0 +1,820 @@
+{
+  "audit_version": "V0.8_FORENSIC_BASE",
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "model_changed": false,
+  "core_strategy": "FINAL_OPTIMIZER",
+  "path_reconciliation": {
+    "raw_decision_rows": 153,
+    "official_profile_months": 152,
+    "causally_valid_months": 152,
+    "completed_months": 151,
+    "rows_removed_by_profile_month_dedup": 1,
+    "raw_reused_forward_intervals": 1,
+    "official_reused_forward_intervals": 0,
+    "decision_interval_causality_violations": 1,
+    "latest_interval_partial": true,
+    "frozen_profile_rule": "period_end calendar month; keep last decision in each month (src.validation.v10_4_profile_freeze._monthly_map)",
+    "diagnostic_rule": "for audit only, causally valid rows require asof <= period_start; this does not retune or replace V10.4"
+  },
+  "replay": {
+    "status": "FAIL",
+    "exact_replay": false,
+    "secondary_assessment": "NEAR_REPLAY_MAX_ERROR_LE_10BPS",
+    "matched_periods": 152,
+    "tolerance": 1e-10,
+    "net_return_error": {
+      "matched": 152,
+      "mean_abs": 7.710751336282224e-05,
+      "median_abs": 3.2165520039230226e-05,
+      "p95_abs": 0.00034520176283941675,
+      "max_abs": 0.0007208430450850872,
+      "mean_abs_bps": 0.7710751336282223,
+      "median_abs_bps": 0.3216552003923023,
+      "p95_abs_bps": 3.4520176283941675,
+      "max_abs_bps": 7.208430450850872
+    },
+    "gross_return_error": {
+      "matched": 152,
+      "mean_abs": 7.710441019531272e-05,
+      "median_abs": 3.216913386819287e-05,
+      "p95_abs": 0.00034518225950815864,
+      "max_abs": 0.0007209467506046202,
+      "mean_abs_bps": 0.7710441019531272,
+      "median_abs_bps": 0.3216913386819287,
+      "p95_abs_bps": 3.451822595081587,
+      "max_abs_bps": 7.209467506046202
+    },
+    "turnover_error": {
+      "matched": 152,
+      "mean_abs": 0.0005507310589254007,
+      "median_abs": 0.00020009660800025114,
+      "p95_abs": 0.002089876481999504,
+      "max_abs": 0.006558574256931959,
+      "mean_abs_bps": 5.507310589254009,
+      "median_abs_bps": 2.0009660800025113,
+      "p95_abs_bps": 20.89876481999504,
+      "max_abs_bps": 65.58574256931959
+    },
+    "transaction_cost_error": {
+      "matched": 152,
+      "mean_abs": 5.507310589253954e-08,
+      "median_abs": 2.0009660800029093e-08,
+      "p95_abs": 2.0898764819994492e-07,
+      "max_abs": 6.558574256931999e-07,
+      "mean_abs_bps": 0.0005507310589253954,
+      "median_abs_bps": 0.00020009660800029093,
+      "p95_abs_bps": 0.002089876481999449,
+      "max_abs_bps": 0.006558574256931998
+    },
+    "max_abs_return_replay_error": 0.0007208430450850872,
+    "persisted_path_cagr_using_these_rows": 0.25185784314463566,
+    "reconstructed_path_cagr_using_these_rows": 0.25190675521020744,
+    "cagr_gap_reconstructed_minus_persisted": 4.891206557178229e-05,
+    "meaning": "Exact PASS requires reconstructed frozen weights to reproduce persisted FINAL_OPTIMIZER monthly net returns to numerical tolerance. The secondary assessment quantifies economic closeness but never converts an exact FAIL into PASS."
+  },
+  "raw_replay": {
+    "status": "FAIL",
+    "exact_replay": false,
+    "secondary_assessment": "NEAR_REPLAY_MAX_ERROR_LE_10BPS",
+    "matched_periods": 153,
+    "tolerance": 1e-10,
+    "net_return_error": {
+      "matched": 153,
+      "mean_abs": 7.673922828024139e-05,
+      "median_abs": 3.1802193569565804e-05,
+      "p95_abs": 0.0003440627049838824,
+      "max_abs": 0.0007208430450850872,
+      "mean_abs_bps": 0.7673922828024139,
+      "median_abs_bps": 0.31802193569565806,
+      "p95_abs_bps": 3.440627049838824,
+      "max_abs_bps": 7.208430450850872
+    },
+    "gross_return_error": {
+      "matched": 153,
+      "mean_abs": 7.673589898213873e-05,
+      "median_abs": 3.1801634753109154e-05,
+      "p95_abs": 0.00034405868472432585,
+      "max_abs": 0.0007209467506046202,
+      "mean_abs_bps": 0.7673589898213874,
+      "median_abs_bps": 0.31801634753109154,
+      "p95_abs_bps": 3.4405868472432584,
+      "max_abs_bps": 7.209467506046202
+    },
+    "turnover_error": {
+      "matched": 153,
+      "mean_abs": 0.0005495956368569084,
+      "median_abs": 0.00020079522820290463,
+      "p95_abs": 0.0020879285850836597,
+      "max_abs": 0.006558574256931959,
+      "mean_abs_bps": 5.495956368569084,
+      "median_abs_bps": 2.0079522820290463,
+      "p95_abs_bps": 20.879285850836595,
+      "max_abs_bps": 65.58574256931959
+    },
+    "transaction_cost_error": {
+      "matched": 153,
+      "mean_abs": 5.4959563685690264e-08,
+      "median_abs": 2.0079522820293882e-08,
+      "p95_abs": 2.0879285850836048e-07,
+      "max_abs": 6.558574256931999e-07,
+      "mean_abs_bps": 0.0005495956368569027,
+      "median_abs_bps": 0.00020079522820293884,
+      "p95_abs_bps": 0.0020879285850836046,
+      "max_abs_bps": 0.006558574256931998
+    },
+    "max_abs_return_replay_error": 0.0007208430450850872,
+    "persisted_path_cagr_using_these_rows": 0.25225818881571094,
+    "reconstructed_path_cagr_using_these_rows": 0.2523048036256592,
+    "cagr_gap_reconstructed_minus_persisted": 4.661480994827549e-05,
+    "meaning": "Exact PASS requires reconstructed frozen weights to reproduce persisted FINAL_OPTIMIZER monthly net returns to numerical tolerance. The secondary assessment quantifies economic closeness but never converts an exact FAIL into PASS."
+  },
+  "profile_monthly_crosscheck": {
+    "status": "PASS",
+    "matched_months": 152,
+    "official_months": 152,
+    "frozen_profile_months": 152,
+    "unmatched_rows": 0,
+    "max_abs_return_error": 0.0,
+    "tolerance": 1e-12,
+    "reason": "Official forensic monthly path exactly matches the persisted frozen CORE profile series."
+  },
+  "raw_rebalance_interval_integrity": {
+    "status": "FAIL",
+    "decision_rows": 153,
+    "unique_forward_intervals": 152,
+    "reused_forward_intervals": 1,
+    "decision_rows_inside_reused_intervals": 2,
+    "max_decisions_same_forward_interval": 2,
+    "reason": "One or more forward market intervals are reused by multiple score as-of decisions. Raw decision rows must not be annualized directly; compare against the official V10.4 monthly profile path, which deduplicates by period_end month and keeps the last decision."
+  },
+  "official_rebalance_interval_integrity": {
+    "status": "PASS",
+    "decision_rows": 152,
+    "unique_forward_intervals": 152,
+    "reused_forward_intervals": 0,
+    "decision_rows_inside_reused_intervals": 0,
+    "max_decisions_same_forward_interval": 1,
+    "reason": "Each reconstructed decision maps to a unique forward-return interval."
+  },
+  "decision_interval_causality": {
+    "status": "FAIL",
+    "decision_rows": 153,
+    "violations": 1,
+    "max_days_after_period_start": 2,
+    "reason": "At least one decision is credited with a return interval that starts before the decision date. This is direct timing leakage for those rows; quantify its performance impact separately rather than treating the whole historical sample as invalid."
+  },
+  "latest_partial_interval": {
+    "status": "PARTIAL_LATEST_INTERVAL",
+    "partial": true,
+    "period_start": "2026-08-31T00:00:00",
+    "period_end": "2026-09-02T00:00:00",
+    "asof": "2026-09-02T00:00:00",
+    "max_ohlcv_date": "2026-09-02T00:00:00",
+    "business_month_end_reference": "2026-09-30T00:00:00",
+    "reason": "Latest forward return ends at the current OHLCV data frontier before business month-end; treat it as live/partial, not a completed historical month."
+  },
+  "performance": {
+    "months": 152,
+    "cagr": 0.25185784314463566,
+    "spy_cagr": 0.13828509610056416,
+    "cagr_spread_vs_spy": 0.1135727470440715,
+    "annualized_arithmetic_return": 0.2449492062397762,
+    "annualized_volatility": 0.1927541045671981,
+    "sharpe": 1.1890840277042916,
+    "sharpe_basis": "KENNETH_FRENCH_MONTHLY_RF",
+    "sortino_rf0": 1.3482101880491668,
+    "max_drawdown": -0.20468786476134004,
+    "calmar": 1.230448338685317,
+    "beta_vs_spy": 0.9519536864375175,
+    "correlation_vs_spy": 0.7142307242050729,
+    "tracking_error": 0.13536647889530404,
+    "information_ratio": 0.7502310086242678,
+    "upside_capture": 1.1884767737870794,
+    "downside_capture": 0.6239689458454432,
+    "recovery_months_from_worst_trough": 5,
+    "positive_month_share": 0.6776315789473685,
+    "months_beating_spy_share": 0.5894039735099338,
+    "best_month": 0.1901626552419456,
+    "worst_month": -0.1828752672558496
+  },
+  "performance_completed_months": {
+    "months": 151,
+    "cagr": 0.25120819657807125,
+    "spy_cagr": 0.1388961367317143,
+    "cagr_spread_vs_spy": 0.11231205984635695,
+    "annualized_arithmetic_return": 0.24453914846072264,
+    "annualized_volatility": 0.1933900076539617,
+    "sharpe": 1.1890840277042916,
+    "sharpe_basis": "KENNETH_FRENCH_MONTHLY_RF",
+    "sortino_rf0": 1.3459532136996861,
+    "max_drawdown": -0.20468786476134004,
+    "calmar": 1.227274498519844,
+    "beta_vs_spy": 0.9523237905470291,
+    "correlation_vs_spy": 0.7144510646465334,
+    "tracking_error": 0.13576939810220004,
+    "information_ratio": 0.7403352745465306,
+    "upside_capture": 1.182454987045632,
+    "downside_capture": 0.6239689458454432,
+    "recovery_months_from_worst_trough": 5,
+    "positive_month_share": 0.6754966887417219,
+    "months_beating_spy_share": 0.5866666666666667,
+    "best_month": 0.1901626552419456,
+    "worst_month": -0.1828752672558496
+  },
+  "performance_causal_diagnostic": {
+    "months": 152,
+    "cagr": 0.25161524166546645,
+    "spy_cagr": 0.13828509610056416,
+    "cagr_spread_vs_spy": 0.11333014556490228,
+    "annualized_arithmetic_return": 0.24475068186721194,
+    "annualized_volatility": 0.19275004993038966,
+    "sharpe": 1.1890840277042916,
+    "sharpe_basis": "KENNETH_FRENCH_MONTHLY_RF",
+    "sortino_rf0": 1.3471175019948785,
+    "max_drawdown": -0.20468786476134004,
+    "calmar": 1.2292631121969166,
+    "beta_vs_spy": 0.9520267590927298,
+    "correlation_vs_spy": 0.7143014898746928,
+    "tracking_error": 0.13534899099443565,
+    "information_ratio": 0.748851470168685,
+    "upside_capture": 1.1877463674757085,
+    "downside_capture": 0.6239689458454432,
+    "recovery_months_from_worst_trough": 5,
+    "positive_month_share": 0.6776315789473685,
+    "months_beating_spy_share": 0.5894039735099338,
+    "best_month": 0.1901626552419456,
+    "worst_month": -0.1828752672558496
+  },
+  "holding_period": {
+    "holding_episodes": 757,
+    "closed_holding_episodes": 728,
+    "open_holding_episodes_at_end": 29,
+    "unique_tickers": 122,
+    "average_days_held_observed_all": 116.63540290620872,
+    "median_days_held_observed_all": 61.0,
+    "average_days_held": 116.02884615384616,
+    "median_days_held": 61.0,
+    "min_days_held": 28.0,
+    "max_days_held": 1764.0,
+    "p25_days_held": 31.0,
+    "p75_days_held": 122.0,
+    "winner_share": 0.5274725274725275,
+    "average_winner_return": 0.23397788846918546,
+    "average_loser_return": -0.07457504368904913,
+    "win_loss_ratio_abs": 3.137482418981722,
+    "profit_factor_episode_returns": 3.50230595607262,
+    "expectancy_per_closed_episode": 0.08817815129551418,
+    "holding_period_basis": "Closed episodes only for completed-duration statistics; open end-of-backtest episodes are reported separately as right-censored."
+  },
+  "operations_and_turnover": {
+    "trade_transition_rows": 1931,
+    "entries": 332,
+    "exits": 307,
+    "adds": 513,
+    "reductions": 779,
+    "average_trade_transitions_per_year": 148.53846153846155,
+    "average_annual_turnover": 1.7826842860953636,
+    "turnover_classification": "HIGH TURNOVER",
+    "turnover_classification_rule": "LOW <50%; MEDIUM 50%-150%; HIGH >150% annual sum of one-way portfolio turnover."
+  },
+  "contribution_concentration": {
+    "top_1_ticker_share_of_positive_contribution": 0.1938123017015091,
+    "top_5_ticker_share_of_positive_contribution": 0.5374278730568255,
+    "top_10_ticker_share_of_positive_contribution": 0.7462093848217931,
+    "positive_contribution_hhi": 0.08940774956359025
+  },
+  "portfolio_concentration": {
+    "status": "DESCRIPTIVE",
+    "rebalance_dates": 152,
+    "average_positions": 11.236842105263158,
+    "median_positions": 11.0,
+    "min_positions": 4,
+    "max_positions": 25,
+    "average_top1": 0.22219107754397002,
+    "average_top3": 0.5630180305998576,
+    "average_top5": 0.7750784696025146,
+    "median_top1": 0.2157698644333782,
+    "median_top3": 0.5645357979077286,
+    "median_top5": 0.7662053594193254,
+    "average_hhi": 0.15069257777867814,
+    "median_hhi": 0.14009098904479106,
+    "average_effective_n": 7.017788915031059,
+    "median_effective_n": 7.138272440075757,
+    "max_top1": 0.6181248721068532,
+    "max_top3": 0.9995896914208207,
+    "max_top5": 1.0,
+    "max_hhi": 0.5034785493852738,
+    "max_top1_asof": "2014-02-28T00:00:00",
+    "first_12_average_top1": 0.30715976998328026,
+    "first_12_average_positions": 7.333333333333333,
+    "post_first_12_average_top1": 0.2149080467634577,
+    "post_first_12_average_positions": 11.571428571428571,
+    "interpretation": "Concentration is reported, not corrected. Large early weights can materially affect backtest risk and must be evaluated separately from factor skill."
+  },
+  "startup_effect_stress": {
+    "status": "SENSITIVITY_ONLY_NOT_RETUNED",
+    "baseline_cagr": 0.25120819657807125,
+    "drop_first_2_cagr": 0.2568721500875477,
+    "drop_first_12_cagr": 0.2634396087478077,
+    "drop_first_12_spread_vs_spy": 0.12143121721391315,
+    "interpretation": "If performance remains strong after dropping the concentrated startup, the headline CAGR is less dependent on the initial 2014 concentration. This is a sample-sensitivity diagnostic, not a new model."
+  },
+  "startup_effect_scenarios": [
+    {
+      "scenario": "ALL_COMPLETED_MONTHS",
+      "dropped_months": 0,
+      "months": 151,
+      "cagr": 0.25120819657807125,
+      "spy_cagr": 0.1388961367317143,
+      "cagr_spread_vs_spy": 0.11231205984635695,
+      "annualized_volatility": 0.1933900076539617,
+      "max_drawdown": -0.20468786476134004,
+      "information_ratio": 0.7403352745465306,
+      "cagr_delta_vs_all_completed": 0.0
+    },
+    {
+      "scenario": "DROP_FIRST_2_MONTHS",
+      "dropped_months": 2,
+      "months": 149,
+      "cagr": 0.2568721500875477,
+      "spy_cagr": 0.1391325423250407,
+      "cagr_spread_vs_spy": 0.11773960776250703,
+      "annualized_volatility": 0.19274868217469407,
+      "max_drawdown": -0.2046878647613397,
+      "information_ratio": 0.8020225184166715,
+      "cagr_delta_vs_all_completed": 0.00566395350947646
+    },
+    {
+      "scenario": "DROP_FIRST_12_MONTHS",
+      "dropped_months": 12,
+      "months": 139,
+      "cagr": 0.2634396087478077,
+      "spy_cagr": 0.14200839153389455,
+      "cagr_spread_vs_spy": 0.12143121721391315,
+      "annualized_volatility": 0.19410418408109734,
+      "max_drawdown": -0.20468786476133982,
+      "information_ratio": 0.8236857588064493,
+      "cagr_delta_vs_all_completed": 0.012231412169736444
+    }
+  ],
+  "factor_ic_stability": {
+    "status": "ASSOCIATION_ONLY_NOT_CAUSAL",
+    "full_alpha_months": 153,
+    "full_alpha_mean_rank_ic": 0.04028027104475704,
+    "full_alpha_median_rank_ic": 0.0528823888128653,
+    "full_alpha_positive_month_share": 0.5816993464052288,
+    "full_alpha_years": 13,
+    "full_alpha_positive_year_share": 0.8461538461538461,
+    "full_alpha_negative_years": [
+      2019,
+      2023
+    ],
+    "best_full_alpha_year": {
+      "year": 2020,
+      "factor": "FULL_ALPHA",
+      "months": 12,
+      "mean_rank_ic": 0.11444201065591036,
+      "median_rank_ic": 0.0996042691109707,
+      "positive_ic_share": 0.75
+    },
+    "worst_full_alpha_year": {
+      "year": 2019,
+      "factor": "FULL_ALPHA",
+      "months": 12,
+      "mean_rank_ic": -0.02420738134590439,
+      "median_rank_ic": -0.061761232662386735,
+      "positive_ic_share": 0.3333333333333333
+    },
+    "interpretation": "A stable positive IC supports cross-sectional ordering ability; it does not prove causal alpha or guarantee portfolio outperformance."
+  },
+  "execution_lag_stress": {
+    "status": "SENSITIVITY_ONLY_NOT_RETUNED",
+    "basis": "Completed official monthly path, reconstructed V10.4 weights, close-to-close execution delay, same period-level cost assumption.",
+    "same_close_reconstructed_cagr": 0.2512568229299954,
+    "plus_1_close_cagr": 0.2287781249815921,
+    "plus_1_close_cagr_delta": -0.022478697948403292,
+    "plus_3_close_cagr": 0.20668167428840234,
+    "plus_3_close_cagr_delta": -0.044575148641593065,
+    "warning": "Lag stress uses reconstructed weights because exact historical optimizer weights were not independently persisted. It does not claim exact counterfactual execution of the persisted CORE profile."
+  },
+  "execution_lag_scenarios": [
+    {
+      "lag_sessions": 0,
+      "scenario": "RECONSTRUCTED_SAME_CLOSE",
+      "valid_periods": 151,
+      "invalid_periods": 0,
+      "mean_weighted_price_coverage": 1.0,
+      "cagr": 0.2512568229299954,
+      "annualized_volatility": 0.19338828188967008,
+      "max_drawdown": -0.20462345021844597,
+      "mean_monthly_return": 0.020381557323614293,
+      "cagr_delta_vs_same_close": 0.0
+    },
+    {
+      "lag_sessions": 1,
+      "scenario": "EXECUTE_CLOSE_PLUS_1_SESSION",
+      "valid_periods": 151,
+      "invalid_periods": 0,
+      "mean_weighted_price_coverage": 1.0,
+      "cagr": 0.2287781249815921,
+      "annualized_volatility": 0.19232921181589105,
+      "max_drawdown": -0.21219634983431956,
+      "mean_monthly_return": 0.01883335135382118,
+      "cagr_delta_vs_same_close": -0.022478697948403292
+    },
+    {
+      "lag_sessions": 2,
+      "scenario": "EXECUTE_CLOSE_PLUS_2_SESSION",
+      "valid_periods": 151,
+      "invalid_periods": 0,
+      "mean_weighted_price_coverage": 1.0,
+      "cagr": 0.21749271552475902,
+      "annualized_volatility": 0.1861776356734529,
+      "max_drawdown": -0.24464033856766976,
+      "mean_monthly_return": 0.01796343856234689,
+      "cagr_delta_vs_same_close": -0.03376410740523639
+    },
+    {
+      "lag_sessions": 3,
+      "scenario": "EXECUTE_CLOSE_PLUS_3_SESSION",
+      "valid_periods": 151,
+      "invalid_periods": 0,
+      "mean_weighted_price_coverage": 1.0,
+      "cagr": 0.20668167428840234,
+      "annualized_volatility": 0.18657044066402073,
+      "max_drawdown": -0.23235112537108105,
+      "mean_monthly_return": 0.01720665847367628,
+      "cagr_delta_vs_same_close": -0.044575148641593065
+    }
+  ],
+  "anti_memorization": {
+    "code_ticker_blind": {
+      "status": "PASS",
+      "files_checked": [
+        "src/validation/v10_full_alpha.py",
+        "src/live/frozen_evaluator.py",
+        "src/live/production_factor_engine.py"
+      ],
+      "historical_ticker_literals_found": [],
+      "parse_errors": [],
+      "false_positive_guard": "Lowercase generic field names are not treated as ticker literals; e.g. key 'cost' is not ticker COST.",
+      "meaning": "PASS means no explicit historical holding ticker literal was found in the frozen score/optimizer/live-evaluator source files under the V0.7.1 lexical/context guard. It does not prove absence of data-snooping or research overfitting."
+    },
+    "first_entry_vs_reentry": {
+      "status": "ASSOCIATION_ONLY_NOT_CAUSAL",
+      "first_ever_entry": {
+        "cohort": "FIRST_EVER_ENTRY",
+        "episodes": 119,
+        "unique_tickers": 119,
+        "winner_share": 0.5462184873949579,
+        "mean_episode_return": 0.10425128005195683,
+        "median_episode_return": 0.024145125979446513,
+        "mean_portfolio_contribution": 0.007522094266060513,
+        "median_portfolio_contribution": 0.0,
+        "mean_days_held": 143.81512605042016,
+        "median_days_held": 61.0
+      },
+      "reentry": {
+        "cohort": "REENTRY",
+        "episodes": 609,
+        "unique_tickers": 107,
+        "winner_share": 0.5238095238095238,
+        "mean_episode_return": 0.085037424986784,
+        "median_episode_return": 0.008345183561663694,
+        "mean_portfolio_contribution": 0.0033714897898080957,
+        "median_portfolio_contribution": 0.0,
+        "mean_days_held": 110.59934318555008,
+        "median_days_held": 61.0
+      },
+      "mean_return_gap_reentry_minus_first": -0.019213855065172827,
+      "winner_share_gap_reentry_minus_first": -0.022408963585434094,
+      "interpretation": "If first-ever entries also work, the historical edge is less consistent with a strategy that only succeeds by recycling previously successful names. This is not a causal proof against research overfitting."
+    },
+    "selection_history_dependence": {
+      "status": "DESCRIPTIVE_NOT_CAUSAL",
+      "eligible_universe_observations": 26274,
+      "candidate_observations": 2928,
+      "overall_rates_by_history_state": [
+        {
+          "history_state": "HELD_PREV_MONTH",
+          "observations": 2899,
+          "candidate_rate": 0.7488789237668162,
+          "selected_rate": 0.7488789237668162,
+          "mean_target_weight": 0.049161453520155024
+        },
+        {
+          "history_state": "NEVER_HELD_BEFORE",
+          "observations": 16784,
+          "candidate_rate": 0.007268827454718779,
+          "selected_rate": 0.007268827454718779,
+          "mean_target_weight": 0.00017436175379002377
+        },
+        {
+          "history_state": "RETURNING_NOT_PREV_MONTH",
+          "observations": 6591,
+          "candidate_rate": 0.09634349871036262,
+          "selected_rate": 0.09634349871036262,
+          "mean_target_weight": 0.0009944558594232775
+        }
+      ],
+      "returning_minus_never_candidate_rate_gap_score_decile_controlled": 0.0010545421758066853,
+      "returning_minus_never_target_weight_gap_score_decile_controlled": -0.013444446735570699,
+      "matched_candidate_rate_score_deciles": 10,
+      "matched_target_weight_score_deciles": 3,
+      "candidate_selected_rate_test": "NOT_INFORMATIVE_ALL_CANDIDATES_SELECTED",
+      "v0_7_selection_rate_result_retracted": true,
+      "important_note": "HELD_PREV_MONTH persistence is expected because previous weights are an explicit optimizer input for turnover control. The more relevant old-name comparison is RETURNING_NOT_PREV_MONTH vs NEVER_HELD_BEFORE, because both start with previous weight zero.",
+      "interpretation": "Near-zero candidate-rate and target-weight gaps at similar current score are evidence against an explicit old-name preference, but remain associative because current risk/covariance characteristics can differ. The V0.7 all-ones selection-rate output was non-informative and is explicitly retracted rather than treated as evidence."
+    },
+    "current_recommendation_familiarity": {
+      "status": "CURRENT_STATE_DIAGNOSTIC",
+      "current_names": 36,
+      "historically_seen_names": 25,
+      "historically_seen_share": 0.6944444444444444,
+      "never_seen_names": [
+        "CEPU",
+        "COF",
+        "CRWD",
+        "GOOGL",
+        "JD",
+        "NU",
+        "NVO",
+        "PLTR",
+        "TEAM",
+        "VIST",
+        "VLO"
+      ],
+      "historically_seen_names_list": [
+        "AMGN",
+        "AMZN",
+        "ANET",
+        "AVGO",
+        "BAC",
+        "COP",
+        "CRM",
+        "FDX",
+        "MA",
+        "MELI",
+        "MPC",
+        "MSFT",
+        "MU",
+        "NEM",
+        "NOW",
+        "NUE",
+        "NVDA",
+        "PBR",
+        "PSX",
+        "ROP",
+        "SCHW",
+        "SONY",
+        "TGT",
+        "UNH",
+        "V"
+      ],
+      "warning": "A current name having appeared historically is not itself evidence of cherry-picking. The model is ticker-blind only if current selection is driven by current factor inputs and optimizer state; forward testing is required to validate future efficacy."
+    },
+    "historical_winner_exclusion_reoptimization": {
+      "status": "EX_POST_FRAGILITY_STRESS_NOT_A_MODEL",
+      "baseline_cagr": 0.2512568229299954,
+      "top_contributors_order": [
+        "UNH",
+        "NFLX",
+        "MAR",
+        "NVDA",
+        "PBR",
+        "KLAC",
+        "CMG",
+        "TJX",
+        "AMZN",
+        "SBUX"
+      ],
+      "scenarios": [
+        {
+          "scenario": "BASELINE_RECONSTRUCTED",
+          "excluded_count": 0,
+          "excluded_tickers": "",
+          "valid_months": 151,
+          "cagr": 0.2512568229299954,
+          "annualized_volatility": 0.19338828188967008,
+          "max_drawdown": -0.20462345021844597,
+          "average_turnover": null,
+          "cagr_delta_vs_baseline": 0.0
+        },
+        {
+          "scenario": "EXCLUDE_TOP_1_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+          "excluded_count": 1,
+          "excluded_tickers": "UNH",
+          "valid_months": 151,
+          "cagr": 0.24892457477483743,
+          "annualized_volatility": 0.19684282066985695,
+          "max_drawdown": -0.20193897077878153,
+          "average_turnover": 0.16080112757662454,
+          "cagr_delta_vs_baseline": -0.002332248155157979
+        },
+        {
+          "scenario": "EXCLUDE_TOP_3_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+          "excluded_count": 3,
+          "excluded_tickers": "UNH;NFLX;MAR",
+          "valid_months": 151,
+          "cagr": 0.23445455880413668,
+          "annualized_volatility": 0.1904698121674086,
+          "max_drawdown": -0.2230503406394957,
+          "average_turnover": 0.17349952731706847,
+          "cagr_delta_vs_baseline": -0.016802264125858724
+        },
+        {
+          "scenario": "EXCLUDE_TOP_5_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+          "excluded_count": 5,
+          "excluded_tickers": "UNH;NFLX;MAR;NVDA;PBR",
+          "valid_months": 151,
+          "cagr": 0.2252417331098453,
+          "annualized_volatility": 0.18216164011330388,
+          "max_drawdown": -0.1920841877094478,
+          "average_turnover": 0.1798973667071416,
+          "cagr_delta_vs_baseline": -0.026015089820150106
+        },
+        {
+          "scenario": "EXCLUDE_TOP_10_HISTORICAL_CONTRIBUTORS_REOPTIMIZE",
+          "excluded_count": 10,
+          "excluded_tickers": "UNH;NFLX;MAR;NVDA;PBR;KLAC;CMG;TJX;AMZN;SBUX",
+          "valid_months": 151,
+          "cagr": 0.19997823663649683,
+          "annualized_volatility": 0.19137974604787145,
+          "max_drawdown": -0.25888478917588387,
+          "average_turnover": 0.19287766027492484,
+          "cagr_delta_vs_baseline": -0.051278586293498574
+        }
+      ],
+      "warning": "Historical winners are identified with full-sample hindsight only to stress dependence. This is not a trading rule and must never be used to retune V10.4. Re-optimization uses the same frozen score, candidate fraction, risk inputs, optimizer and costs on the remaining universe."
+    }
+  },
+  "forward_test_preregistration": {
+    "registered_at_utc": "2026-09-07T22:40:26.786593+00:00",
+    "model": "V10.4_FROZEN_UNCHANGED",
+    "audit_version": "V0.8_FORENSIC_BASE",
+    "factors": [
+      "Revenue Growth",
+      "Sales Yield",
+      "Trend"
+    ],
+    "no_retuning": true,
+    "purpose": "Prospective forward-test registration. Future performance must be evaluated without changing frozen factors, weights, candidate fraction or optimizer rules.",
+    "files": [
+      {
+        "path": "src/validation/v10_full_alpha.py",
+        "present": true,
+        "sha256": "ac0b5791d31d9834bc6404351c4a7a5985df2e9591fe5d4fcf25265054059c26"
+      },
+      {
+        "path": "src/live/frozen_evaluator.py",
+        "present": true,
+        "sha256": "2114445636b083cf4eb8cabed2226a4ec235d555e624d6753514aa3f8ad18ee9"
+      },
+      {
+        "path": "src/live/production_factor_engine.py",
+        "present": true,
+        "sha256": "8ce6f8e3e737e617d7a43c7030eb79416d6b483f9e9b094017a2caccd3646687"
+      },
+      {
+        "path": "config/settings.yaml",
+        "present": true,
+        "sha256": "2c90d2d86bf2042261828d772b2c58c034fe9e4b8dee06f149b707d93b3beb26"
+      },
+      {
+        "path": "data/v10_4/final_model_freeze_decision.json",
+        "present": true,
+        "sha256": "1740030032e0686f603cbb7e1ee5f129928207d0fbbde9cc138b4340ee453b54"
+      }
+    ],
+    "registration_sha256": "e121e4023194b57ea152dd9bcd25ec6993e417ec6a7969cce02de8aa85ee25b2"
+  },
+  "temporal_concentration": {
+    "years": 13,
+    "years_beating_spy_share": 0.8461538461538461,
+    "best_year": [
+      {
+        "period": "2020",
+        "alpha_engine_return": 0.47784152041807104,
+        "spy_return": 0.18331636419012898,
+        "active_return": 0.29452515622794206,
+        "volatility_annualized": 0.2888299502343561,
+        "max_drawdown": -0.09197968889033037,
+        "turnover": 1.3984377511273158,
+        "number_of_trades_periods": 12,
+        "frequency": "ANNUAL"
+      }
+    ],
+    "worst_year": [
+      {
+        "period": "2022",
+        "alpha_engine_return": -0.01856371999468276,
+        "spy_return": -0.18175373711458997,
+        "active_return": 0.16319001711990722,
+        "volatility_annualized": 0.3713773735026839,
+        "max_drawdown": -0.18287526725584957,
+        "turnover": 1.51076752594911,
+        "number_of_trades_periods": 12,
+        "frequency": "ANNUAL"
+      }
+    ],
+    "largest_active_year": [
+      {
+        "period": "2020",
+        "alpha_engine_return": 0.47784152041807104,
+        "spy_return": 0.18331636419012898,
+        "active_return": 0.29452515622794206,
+        "volatility_annualized": 0.2888299502343561,
+        "max_drawdown": -0.09197968889033037,
+        "turnover": 1.3984377511273158,
+        "number_of_trades_periods": 12,
+        "frequency": "ANNUAL"
+      }
+    ],
+    "worst_active_year": [
+      {
+        "period": "2019",
+        "alpha_engine_return": 0.15872476128898416,
+        "spy_return": 0.31223848040947066,
+        "active_return": -0.1535137191204865,
+        "volatility_annualized": 0.172153985922304,
+        "max_drawdown": -0.11060420499077828,
+        "turnover": 2.793811624163883,
+        "number_of_trades_periods": 12,
+        "frequency": "ANNUAL"
+      }
+    ]
+  },
+  "survivorship": {
+    "status": "UNRESOLVED",
+    "what_is_proven": [
+      "A formal pre-V10 survivorship/PIT gate was executed and persisted.",
+      "Delisted-price acquisition attempts are auditable from a persisted manifest."
+    ],
+    "what_is_not_proven": [
+      "A complete survivorship-free V10.4 champion backtest has not been certified by the frozen research decision."
+    ],
+    "minimum_dataset_to_close": [
+      "Point-in-time monthly universe membership including delisted names for the full backtest window",
+      "Historical prices covering the investment horizon for factor-eligible delisted securities",
+      "Point-in-time Revenue Growth and Sales Yield inputs for those delisted securities",
+      "Historical shares outstanding/filing availability dates needed for PIT market cap"
+    ],
+    "research_closure_gates": [
+      {
+        "name": "SEC_MAPPING",
+        "status": "PASS",
+        "detail": "lifecycle mapped=46.5%"
+      },
+      {
+        "name": "REVENUE_GROWTH_PIT_COVERAGE",
+        "status": "PASS",
+        "detail": "median usable=58.3%"
+      },
+      {
+        "name": "SALES_YIELD_PIT_COVERAGE",
+        "status": "FAIL",
+        "detail": "median usable=3.3%"
+      },
+      {
+        "name": "DELISTED_PRICE_COVERAGE",
+        "status": "FAIL",
+        "detail": "eligible delisted=285/1,837 (15.5%)"
+      },
+      {
+        "name": "MODEL_RESEARCH_CLOSURE",
+        "status": "FAIL",
+        "detail": "Automatic aggregation of data-integrity and locked-alpha gates."
+      }
+    ],
+    "delisted_attempted": 1837,
+    "delisted_with_usable_rows": 285
+  },
+  "pit_classification_counts": {
+    "PASS": 4,
+    "PASS WITH LIMITATIONS": 4,
+    "UNVERIFIED": 1
+  },
+  "dataset_count": 43,
+  "limitations": [
+    "Historical research backtest is continuous-weight. Historical integer quantities were not part of V10.4 and are left blank rather than invented.",
+    "Per-operation transaction costs were not persisted; only the exact period-level cost return is available.",
+    "Risk Score in the original V10.4 holdings ledger was not persisted; the audit reconstructs the documented standalone trailing-price risk proxy and labels it explicitly.",
+    "Historical PIT sector labels are not present in the frozen CORE panel unless a separate certified historical sector dataset is supplied.",
+    "Factor analysis is associative, not causal attribution.",
+    "Removing best holding episodes is a conceptual contribution stress with frozen subsequent weights, not a full counterfactual re-optimization.",
+    "Same-close signal/execution timing is not intraday timestamp-certified.",
+    "The raw strategy decision ledger and the frozen monthly profile are not interchangeable: V10.4 profile freeze deduplicates by period_end month and keeps the last decision.",
+    "If decision_interval_causality=FAIL, at least one row is credited with return beginning before its asof date. This is isolated and quantified rather than silently treated as valid.",
+    "If the latest interval is partial, completed-month historical performance is reported separately from the frozen profile series that includes the current partial observation.",
+    "An exact replay FAIL remains FAIL. A secondary near-replay label only measures economic closeness and does not certify numerical identity.",
+    "Execution-lag stress uses reconstructed frozen weights, not independently persisted historical weights; it is a sensitivity diagnostic, not an exact counterfactual replay of the persisted profile.",
+    "The +1/+2/+3 execution-lag scenarios use subsequent-session CLOSE prices. They are deliberately more conservative than next-session open and do not certify intraday tradeability.",
+    "Portfolio concentration is descriptive. No historical weight cap is imposed because doing so would alter V10.4; concentration-cap tests, if run, must remain sensitivity analyses only.",
+    "Factor IC stability is association-only and does not establish causal factor attribution.",
+    "Ticker-blind source-code PASS only rules out explicit name-specific literals under a lexical/context guard; it does not prove absence of research overfitting or data-snooping.",
+    "First-entry/re-entry and selection-history comparisons are associative. V0.7 selection rates among candidates were non-informative because all historical candidates received positive weights; V0.7.1 retracts that sub-result and instead compares full-universe candidate rates plus target weights for returning-vs-never-held names.",
+    "Historical-winner exclusion uses full-sample hindsight to identify winners and is only a fragility stress. It must never become a model rule or be used to retune V10.4.",
+    "The forward-test preregistration file is an audit fingerprint, not an immutable external timestamp unless committed to an external version-control history before future returns are observed.",
+    "Survivorship remains unresolved unless the copied data contains complete historical universe, delisted prices and PIT factor inputs and those artifacts pass the dedicated closure gate."
+  ]
+}

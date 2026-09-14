@@ -1,0 +1,37 @@
+ticker,current_sources,current_action,current_alpha_score,current_risk_score,historically_seen,historical_closed_episodes,historical_first_entry,historical_last_observed_end,historical_total_months_held,historical_terminal_contribution_index,historical_share_of_terminal_gain,historical_contribution_rank,novelty_class
+AMGN,root.details.coordinated_trade_plan.trades[0] | root.details.opportunity_book[11],,62.44033151559925,17.765567765567766,True,3,2025-03-31,2026-09-02,8.0,0.0236221305206871,1.4575560084100652e-05,60.0,HISTORICALLY_HELD
+AMZN,root.details.coordinated_trade_plan.trades[1],HOLD,,,True,10,2019-02-28,2026-09-02,61.0,69.34406895006343,0.04278736173151365,9.0,HISTORICALLY_HELD
+ANET,root.details.coordinated_trade_plan.trades[2] | root.details.discrete_execution_plan.trades[10],HOLD,,,True,8,2019-02-28,2026-08-31,64.0,-28.3237089015071,-0.01747657437321132,122.0,HISTORICALLY_HELD
+AVGO,root.details.coordinated_trade_plan.implementation[0] | root.details.coordinated_trade_plan.trades[3] | root.details.discrete_execution_plan.trades[13],EXIT,,,True,7,2019-12-31,2026-06-30,58.0,26.289191488422144,0.016221216361765274,16.0,HISTORICALLY_HELD
+BAC,root.details.coordinated_trade_plan.trades[4] | root.details.opportunity_book[8],,67.62906945924762,3.6630036630036633,True,8,2014-10-31,2026-09-02,14.0,13.93912820431053,0.00860085844009639,20.0,HISTORICALLY_HELD
+CEPU,root.details.coordinated_trade_plan.trades[5] | root.details.discrete_execution_plan.trades[8] | root.details.opportunity_book[14],,75.17426374250209,68.13186813186812,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+COF,root.details.coordinated_trade_plan.trades[6] | root.details.opportunity_book[10],,62.77998650327737,29.304029304029307,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+COP,root.details.coordinated_trade_plan.trades[7] | root.details.discrete_execution_plan.trades[11],ADD,,,True,5,2019-02-28,2026-09-02,23.0,0.8797477151480265,0.0005428306168133621,46.0,HISTORICALLY_HELD
+CRM,root.details.coordinated_trade_plan.trades[8],HOLD,,,True,4,2020-06-30,2026-09-02,5.0,-1.0219993433764286e-05,-6.306041202443268e-09,96.0,HISTORICALLY_HELD
+CRWD,root.details.coordinated_trade_plan.trades[9],HOLD,,,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+FDX,root.details.coordinated_trade_plan.trades[10] | root.details.opportunity_book[17],,62.11580864730132,34.61538461538462,True,10,2020-02-28,2026-08-31,35.0,0.4888880587568817,0.00030165853450728414,47.0,HISTORICALLY_HELD
+GOOGL,root.details.coordinated_trade_plan.implementation[1] | root.details.coordinated_trade_plan.trades[11] | root.details.discrete_execution_plan.trades[14],EXIT,,,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+JD,root.details.coordinated_trade_plan.trades[12] | root.details.discrete_execution_plan.trades[7] | root.details.opportunity_book[6],,72.18613070767566,54.02930402930403,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+MA,root.details.coordinated_trade_plan.trades[13] | root.details.discrete_execution_plan.trades[3] | root.details.opportunity_book[2],,79.64968673693234,12.454212454212454,True,5,2020-02-28,2026-09-02,58.0,2.247106659039817,0.0013865319258791753,40.0,HISTORICALLY_HELD
+MELI,root.details.coordinated_trade_plan.trades[14],ADD,,,True,6,2020-05-29,2026-09-02,29.0,0.11613177368843164,7.16567730242005e-05,54.0,HISTORICALLY_HELD
+MPC,root.details.coordinated_trade_plan.trades[15],ADD,,,True,5,2020-02-28,2026-09-02,46.0,50.220658038223455,0.03098764601517013,11.0,HISTORICALLY_HELD
+MSFT,root.details.coordinated_trade_plan.trades[16],HOLD,,,True,0,2026-09-02,2026-09-02,1.0,0.0,0.0,72.0,HISTORICALLY_HELD
+MU,root.details.coordinated_trade_plan.trades[17],ADD,,,True,3,2021-11-30,2026-09-02,22.0,-0.008534362670564092,-5.265956674626586e-06,99.0,HISTORICALLY_HELD
+NEM,root.details.coordinated_trade_plan.trades[18],ADD,,,True,4,2020-02-28,2026-09-02,24.0,37.50352908391021,0.02314079761135997,13.0,HISTORICALLY_HELD
+NOW,root.details.coordinated_trade_plan.trades[19],HOLD,,,True,8,2019-02-28,2026-09-02,50.0,1.3727568729045163,0.0008470319924936179,45.0,HISTORICALLY_HELD
+NU,root.details.coordinated_trade_plan.trades[20] | root.details.discrete_execution_plan.trades[6] | root.details.opportunity_book[16],,73.02941270458908,65.01831501831502,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+NUE,root.details.coordinated_trade_plan.trades[21],ADD,,,True,6,2021-04-30,2026-09-02,30.0,0.3549555605227777,0.00021901818276105623,49.0,HISTORICALLY_HELD
+NVDA,root.details.coordinated_trade_plan.implementation[2] | root.details.coordinated_trade_plan.trades[22] | root.details.discrete_execution_plan.trades[1] | root.details.opportunity_book[1],,64.49709670082203,58.97435897435898,True,9,2019-03-29,2026-09-02,60.0,103.99370676585261,0.06416722318956775,4.0,HISTORICALLY_HELD
+NVO,root.details.coordinated_trade_plan.trades[23] | root.details.discrete_execution_plan.trades[5] | root.details.opportunity_book[5],,74.14569317325244,44.32234432234432,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+PBR,root.details.coordinated_trade_plan.trades[24] | root.details.discrete_execution_plan.trades[0] | root.details.opportunity_book[0],,85.35923275455328,62.82051282051282,True,7,2014-01-31,2026-09-02,137.0,81.83787796757646,0.05049641506413163,5.0,HISTORICALLY_HELD
+PLTR,root.details.coordinated_trade_plan.trades[25],HOLD,,,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+PSX,root.details.coordinated_trade_plan.trades[26] | root.details.opportunity_book[18],,65.3105092099154,43.223443223443226,True,4,2021-01-29,2026-09-02,32.0,19.891452505642683,0.012273620319815088,18.0,HISTORICALLY_HELD
+ROP,root.details.coordinated_trade_plan.trades[27] | root.details.opportunity_book[12],,64.46985888593765,32.234432234432234,True,0,2026-07-31,2026-09-02,2.0,0.047926720661797845,2.9572218137910093e-05,58.0,HISTORICALLY_HELD
+SCHW,root.details.coordinated_trade_plan.trades[28] | root.details.opportunity_book[9],,64.74518826800205,28.20512820512821,True,2,2015-05-29,2026-09-02,7.0,2.826911432775473,0.0017442887890559108,39.0,HISTORICALLY_HELD
+SONY,root.details.coordinated_trade_plan.trades[29] | root.details.discrete_execution_plan.trades[4] | root.details.opportunity_book[4],,76.3214851658236,34.24908424908424,True,9,2019-07-31,2026-09-02,48.0,4.174516269605368,0.002575801224042975,34.0,HISTORICALLY_HELD
+TEAM,root.details.coordinated_trade_plan.trades[30] | root.details.discrete_execution_plan.trades[12] | root.details.opportunity_book[15],,71.61712542365235,91.39194139194139,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+TGT,root.details.coordinated_trade_plan.trades[31] | root.details.discrete_execution_plan.trades[9] | root.details.opportunity_book[7],,67.70311345705956,32.234432234432234,True,7,2019-05-31,2026-09-02,40.0,16.22811571300112,0.010013232101119795,19.0,HISTORICALLY_HELD
+UNH,root.details.coordinated_trade_plan.trades[32] | root.details.discrete_execution_plan.trades[2] | root.details.opportunity_book[3],,78.68615608452181,18.13186813186813,True,11,2014-01-31,2026-09-02,105.0,333.44535585932874,0.20574574401050263,1.0,HISTORICALLY_HELD
+V,root.details.coordinated_trade_plan.trades[33] | root.details.opportunity_book[19],,63.50691096110575,4.395604395604396,True,2,2024-12-31,2026-09-02,7.0,-6.971026075927228e-11,-4.301331301532164e-14,94.0,HISTORICALLY_HELD
+VIST,root.details.coordinated_trade_plan.trades[34] | root.details.opportunity_book[13],,73.09920843037628,72.34432234432234,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST
+VLO,root.details.coordinated_trade_plan.trades[35],ADD,,,False,0,,,0.0,,,,NEVER_HELD_IN_BACKTEST

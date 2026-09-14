@@ -1,0 +1,6 @@
+{
+  "rolling_consistency_gate": "PASS",
+  "active_return_sampling_gate": "PASS",
+  "volatility_lower_than_spy_gate": "NOT_PROVEN",
+  "note": "Volatility gate is deliberately separate: a strategy can be valid even if its volatility is not statistically lower than SPY."
+}

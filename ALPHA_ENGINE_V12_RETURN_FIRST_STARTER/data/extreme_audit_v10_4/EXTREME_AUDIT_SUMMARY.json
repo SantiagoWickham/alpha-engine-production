@@ -1,0 +1,725 @@
+{
+  "audit_version": "V0.8.1_EXTREME_AUDIT",
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "out_dir": "C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_PRODUCT_V0_8_EXTREME_AUDIT_WEB\\ALPHA_ENGINE_PRODUCT_V0_8_EXTREME_AUDIT_WEB\\data\\extreme_audit_v10_4",
+  "thesis": {
+    "model": "V10.4_FROZEN_UNCHANGED",
+    "description": "Long-only cross-sectional asset-selection and portfolio-construction system. It does not forecast a point price; it implicitly forecasts relative expected returns by ranking current characteristics and allocating more capital to selected names.",
+    "factor_definitions": {
+      "Revenue Growth": "cross-sectional percentile of year-over-year revenue growth (g_revenue_yoy)",
+      "Sales Yield": "cross-sectional percentile of revenue / point-in-time market capitalization (v_sales_yield)",
+      "Trend": "cross-sectional percentile of the previously validated V8 price-trend score",
+      "Full Alpha": "equal mean of Revenue Growth, Sales Yield and Trend percentiles; all three required"
+    },
+    "economic_hypothesis": {
+      "Revenue Growth": "Firms with stronger current revenue growth may contain information about business momentum not fully reflected immediately in relative prices.",
+      "Sales Yield": "Higher revenue relative to market capitalization is a valuation signal; if revenue is economically durable, cheaper sales can imply higher prospective relative returns.",
+      "Trend": "Price trends can persist because information diffusion, underreaction, flows and behavioral frictions are gradual rather than instantaneous.",
+      "combination": "Growth, valuation and trend are intended to be partially complementary; no single factor needs to dominate in every regime."
+    },
+    "what_must_be_true": [
+      "Cross-sectional information in the three signals must not be immediately and perfectly arbitraged away.",
+      "The relationships must persist after realistic implementation costs and delays.",
+      "Portfolio concentration and optimizer choices must not dominate the factor edge.",
+      "The historical universe/data process must not create material survivorship or look-ahead bias."
+    ],
+    "failure_conditions": [
+      "Signal premia structurally disappear or reverse.",
+      "Implementation delay/slippage absorbs the modest per-decision edge.",
+      "Sector or factor crowding creates persistent adverse exposures.",
+      "Historical results are mostly research-selection bias, survivorship bias or a small number of non-repeatable winners."
+    ],
+    "code_evidence": {
+      "groupby_asof_rank_present": true,
+      "full_alpha_equal_present": true,
+      "top_fraction_20pct_present": true,
+      "risk_lookback_126_present": true
+    },
+    "backtest_independent_status": "HYPOTHESIS"
+  },
+  "leakage": {
+    "status_counts": {
+      "PASS": 6,
+      "PASS WITH LIMITATIONS": 5,
+      "UNVERIFIED": 4
+    },
+    "critical_failures": [],
+    "overall": "PASS_WITH_OPEN_VULNERABILITIES",
+    "largest_open_items": [
+      "fundamental data vintage/restatement integrity",
+      "same-close timestamp certification",
+      "survivorship-free historical universe"
+    ]
+  },
+  "false_discovery": {
+    "persisted_inventory_rows": 553,
+    "distinct_persisted_return_paths": 446,
+    "champion_trial_id": "data\\v10\\strategy_monthly_returns.csv::gross_return_1m::strategy=FINAL_OPTIMIZER",
+    "dsr": {
+      "status": "PERSISTED_TRIAL_LOWER_BOUND_ONLY",
+      "champion_sharpe_ann": 1.2717469379127375,
+      "distinct_persisted_trials": 446,
+      "trial_sharpe_std_ann": 1.71449832751129,
+      "expected_max_null_sharpe_ann": 5.1743599399251305,
+      "skew": -0.012286410762845104,
+      "kurtosis": 4.6560371594945815,
+      "observations": 152,
+      "dsr_probability": 3.799472379022359e-39,
+      "interpretation": "Valid only for the automatically recovered distinct persisted return paths; not a complete historical research-trial inventory unless manually certified."
+    },
+    "pbo": {
+      "status": "INSUFFICIENT_ALIGNED_TRIAL_MATRIX",
+      "strategies": 0
+    },
+    "survivorship_uniform_monthly_break_even_haircut_bps_vs_spy": 77.97904318607053,
+    "nested_walk_forward_readiness": {
+      "status": "BLOCKED_BY_SURVIVORSHIP_PIT",
+      "artifacts_present": {
+        "historical_universe": true,
+        "sec_mapping": true,
+        "pit_factor_panel": true,
+        "extended_ohlcv": true,
+        "frozen_profile": true
+      },
+      "missing": []
+    },
+    "scientific_warning": "Persisted paths are a lower bound on the number of research trials. DSR/PBO cannot be called definitive until the historical research-decision inventory is manually certified complete."
+  },
+  "statistical_stress": {
+    "metrics": {
+      "strategy_return_column": "gross_return_1m",
+      "months": 1208,
+      "strategy_cagr": 0.25588413020963485,
+      "spy_cagr": 0.1403096937129622,
+      "cagr_spread": 0.11557443649667265,
+      "strategy_ann_vol": 0.2172179487819515,
+      "strategy_max_drawdown": -0.7786646830643967,
+      "strategy_sharpe_rf0": 1.1653560714986895,
+      "strategy_sortino_rf0": 1.8181946203269896,
+      "strategy_calmar": 0.32861915504195643,
+      "active_arith_ann": 0.11067013475258217,
+      "tracking_error_ann": 0.27742736365485066,
+      "information_ratio": 0.39891571362898315,
+      "active_hit_rate_monthly": 0.5033112582781457,
+      "active_nw_tstat": 2.411623324473257,
+      "bootstrap_ann_active_p2_5": 0.01547638323062414,
+      "bootstrap_ann_active_median": 0.11149913000262238,
+      "bootstrap_ann_active_p97_5": 0.21369573378263348,
+      "prob_ann_active_le_0": 0.0134,
+      "share_positive_annual_alpha_from_best_year": 0.41206920454760404,
+      "share_positive_annual_alpha_from_best_3_years": 0.8470064171180572,
+      "rolling_3y_outperform_rate": 0.690537084398977,
+      "rolling_3y_worst_spread": -0.463318247275431,
+      "rolling_5y_outperform_rate": 0.7841601392515231,
+      "rolling_5y_worst_spread": -0.27011284239221234
+    },
+    "stress": {
+      "remove_best_1_month": {
+        "removed": 1,
+        "months_left": 1207,
+        "strategy_cagr": 0.253927398622499,
+        "spy_cagr": 0.14194708587978466,
+        "active_cagr_spread": 0.11198031274271436,
+        "active_arith_ann": 0.10760923457432264
+      },
+      "remove_best_3_months": {
+        "removed": 3,
+        "months_left": 1205,
+        "strategy_cagr": 0.25012206761444267,
+        "spy_cagr": 0.1452371093939422,
+        "active_cagr_spread": 0.10488495822050048,
+        "active_arith_ann": 0.10157562800010742
+      },
+      "remove_best_5_months": {
+        "removed": 5,
+        "months_left": 1203,
+        "strategy_cagr": 0.24656295582608379,
+        "spy_cagr": 0.14854759843394216,
+        "active_cagr_spread": 0.09801535739214162,
+        "active_arith_ann": 0.09575626324139563
+      },
+      "remove_best_1_year": {
+        "removed_years": [
+          2016
+        ],
+        "months_left": 1112,
+        "strategy_cagr": 0.22934879920029494,
+        "spy_cagr": 0.14208207890406,
+        "active_cagr_spread": 0.08726672029623495,
+        "active_arith_ann": 0.08600255118440533
+      },
+      "remove_best_2_years": {
+        "removed_years": [
+          2016,
+          2022
+        ],
+        "months_left": 1016,
+        "strategy_cagr": 0.2361476217243228,
+        "spy_cagr": 0.178638062631018,
+        "active_cagr_spread": 0.057509559093304796,
+        "active_arith_ann": 0.05889579267333632
+      }
+    },
+    "gates": [
+      {
+        "test": "BEST_5_MONTH_DEPENDENCE",
+        "status": "PASS",
+        "metric": "active_cagr_spread_without_best_5_months",
+        "value": 0.09801535739214162,
+        "threshold_or_reference": "> 0 is favorable",
+        "interpretation": "Tests whether outperformance survives removal of the five best active-return months."
+      },
+      {
+        "test": "BEST_YEAR_DEPENDENCE",
+        "status": "PASS",
+        "metric": "active_cagr_spread_without_best_year",
+        "value": 0.08726672029623495,
+        "threshold_or_reference": "> 0 is favorable",
+        "interpretation": "Tests whether one exceptional calendar year explains the result."
+      },
+      {
+        "test": "BLOCK_BOOTSTRAP_ACTIVE_RETURN",
+        "status": "PASS",
+        "metric": "P(annualized mean active <= 0)",
+        "value": 0.0134,
+        "threshold_or_reference": "<10% favorable; <5% stronger",
+        "interpretation": "Six-month moving-block bootstrap preserves some serial dependence."
+      },
+      {
+        "test": "ROLLING_3Y_CONSISTENCY",
+        "status": "CONDITIONAL",
+        "metric": "rolling_3y_outperform_rate",
+        "value": 0.690537084398977,
+        "threshold_or_reference": ">=80% favorable",
+        "interpretation": "Frequency of positive 3-year CAGR spread vs SPY."
+      },
+      {
+        "test": "ROLLING_5Y_CONSISTENCY",
+        "status": "CONDITIONAL",
+        "metric": "rolling_5y_outperform_rate",
+        "value": 0.7841601392515231,
+        "threshold_or_reference": ">=80% favorable",
+        "interpretation": "Frequency of positive 5-year CAGR spread vs SPY."
+      }
+    ]
+  },
+  "performance_extreme": {
+    "status": "SENSITIVITY_NOT_COUNTERFACTUAL_REOPTIMIZATION",
+    "base": {
+      "months": 150,
+      "cagr": 0.24774378285499932,
+      "spy_cagr": 0.13889613673171453,
+      "cagr_spread": 0.10884764612328479,
+      "ann_vol": 0.19379044638084358,
+      "max_drawdown": -0.20468786476133982,
+      "downside_deviation": 0.1311031447781721,
+      "positive_month_share": 0.6733333333333333,
+      "active_month_hit_rate": 0.5866666666666667,
+      "skewness": 0.0006044405473817676,
+      "kurtosis_pearson": 4.618457556024655,
+      "active_nw_tstat": 2.932672635844999
+    },
+    "warning": "Removing realized best/worst months is an ex-post fragility diagnostic, not a tradable counterfactual."
+  },
+  "rolling": {
+    "status": "DESCRIPTIVE_DEPENDENCE_ADJUSTED",
+    "windows": {
+      "24": {
+        "overlapping_windows": 127,
+        "overlapping_outperform_share": 0.968503937007874,
+        "worst_overlapping_spread": -0.061402052327311996,
+        "nonoverlap_window_instances_across_offsets": 67,
+        "nonoverlap_outperform_share": 0.9552238805970149,
+        "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+      },
+      "36": {
+        "overlapping_windows": 115,
+        "overlapping_outperform_share": 1.0,
+        "worst_overlapping_spread": 0.014240882524918286,
+        "nonoverlap_window_instances_across_offsets": 43,
+        "nonoverlap_outperform_share": 1.0,
+        "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+      },
+      "48": {
+        "overlapping_windows": 103,
+        "overlapping_outperform_share": 1.0,
+        "worst_overlapping_spread": 0.04111746969709551,
+        "nonoverlap_window_instances_across_offsets": 31,
+        "nonoverlap_outperform_share": 1.0,
+        "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+      },
+      "60": {
+        "overlapping_windows": 91,
+        "overlapping_outperform_share": 1.0,
+        "worst_overlapping_spread": 0.05964319519063199,
+        "nonoverlap_window_instances_across_offsets": 24,
+        "nonoverlap_outperform_share": 1.0,
+        "warning": "Overlapping rolling windows are strongly dependent; their count is not a count of independent experiments."
+      }
+    }
+  },
+  "benchmarks": {
+    "status": "PASS",
+    "benchmarks": [
+      {
+        "benchmark": "QQQ",
+        "months": 150,
+        "alpha_engine_cagr": 0.24774378285499932,
+        "benchmark_cagr": 0.1893059102947896,
+        "cagr_spread": 0.058437872560209714,
+        "active_month_hit_rate": 0.5533333333333333,
+        "tracking_error": 0.15407138499355363,
+        "information_ratio": 0.3297540010527285,
+        "active_nw_tstat": 1.24065735880296
+      },
+      {
+        "benchmark": "RSP",
+        "months": 150,
+        "alpha_engine_cagr": 0.24774378285499932,
+        "benchmark_cagr": 0.11071247282297492,
+        "cagr_spread": 0.1370313100320244,
+        "active_month_hit_rate": 0.6,
+        "tracking_error": 0.13420881388472392,
+        "information_ratio": 0.9247540362738611,
+        "active_nw_tstat": 3.6255527232565536
+      },
+      {
+        "benchmark": "SMH",
+        "months": 150,
+        "alpha_engine_cagr": 0.24774378285499932,
+        "benchmark_cagr": 0.30892463644543966,
+        "cagr_spread": -0.06118085359044034,
+        "active_month_hit_rate": 0.4866666666666667,
+        "tracking_error": 0.22661763488513534,
+        "information_ratio": -0.29158020755394265,
+        "active_nw_tstat": -1.083384309515054
+      },
+      {
+        "benchmark": "SPY",
+        "months": 150,
+        "alpha_engine_cagr": 0.24774378285499932,
+        "benchmark_cagr": 0.1388961367317143,
+        "cagr_spread": 0.10884764612328501,
+        "active_month_hit_rate": 0.5866666666666667,
+        "tracking_error": 0.13576939810220004,
+        "information_ratio": 0.7403352745465306,
+        "active_nw_tstat": 2.932672635844991
+      }
+    ]
+  },
+  "multifactor": {
+    "status": "COMPUTED",
+    "full_sample": [
+      {
+        "strategy": "FINAL_OPTIMIZER",
+        "sample": "FULL",
+        "model": "CAPM",
+        "months": 149,
+        "alpha_ann": 0.11474846264766678,
+        "alpha_hac_t": 3.380250677222189,
+        "p_value_normal_approx": 0.00072419746157355,
+        "residual_vol_ann": 0.1325966680241843,
+        "r2": 0.534019554476072
+      },
+      {
+        "strategy": "FINAL_OPTIMIZER",
+        "sample": "FULL",
+        "model": "FF3",
+        "months": 149,
+        "alpha_ann": 0.1164534957322706,
+        "alpha_hac_t": 3.4732800722498416,
+        "p_value_normal_approx": 0.0005141385364273863,
+        "residual_vol_ann": 0.13209535953326318,
+        "r2": 0.5375363603130439
+      },
+      {
+        "strategy": "FINAL_OPTIMIZER",
+        "sample": "FULL",
+        "model": "FF5",
+        "months": 149,
+        "alpha_ann": 0.1154626115251853,
+        "alpha_hac_t": 3.4865918101622433,
+        "p_value_normal_approx": 0.0004892174304963918,
+        "residual_vol_ann": 0.13099825757730071,
+        "r2": 0.5451863310083032
+      },
+      {
+        "strategy": "FINAL_OPTIMIZER",
+        "sample": "FULL",
+        "model": "FF5_MOM",
+        "months": 149,
+        "alpha_ann": 0.10633942828329632,
+        "alpha_hac_t": 3.1932698508544286,
+        "p_value_normal_approx": 0.0014067142206679244,
+        "residual_vol_ann": 0.12989323371646552,
+        "r2": 0.552827046724985
+      }
+    ]
+  },
+  "robustness": {
+    "status": "SENSITIVITY_ONLY_NO_RETUNING",
+    "factor_ablation_rows": 7,
+    "parameter_zone_rows": 12,
+    "baseline": {
+      "scenario": "FULL_ALPHA_EQUAL",
+      "type": "FACTOR_ABLATION",
+      "months": 151,
+      "cagr": 0.25136237208202505,
+      "ann_vol": 0.19336107005073497,
+      "max_drawdown": -0.20476566719661304,
+      "avg_turnover_monthly": 0.1529299627225012,
+      "avg_holdings": 19.198675496688743,
+      "spy_cagr": 0.13889613673171453,
+      "cagr_spread_vs_spy": 0.10900241979199765
+    },
+    "rule": "All variants are predeclared diagnostics. No best variant is selected and V10.4 remains the champion regardless of outcome."
+  },
+  "cost_stress": {
+    "status": "SENSITIVITY_ONLY",
+    "baseline_one_way_cost_bps": 0.5,
+    "break_even_one_way_cost_bps_vs_spy": 255.22766622900758,
+    "note": "Historical backtest cost model uses period turnover and a constant one-way friction; it does not model security-specific spreads or market impact."
+  },
+  "capacity": {
+    "status": "PENDING_DATA",
+    "underlying_capacity_proxy": "UNAVAILABLE_NO_VOLUME",
+    "cedear_capacity": "UNVERIFIED",
+    "missing_data": [
+      "historical underlying volume",
+      "historical BYMA CEDEAR price/volume/order-book spreads",
+      "broker participation/impact assumptions"
+    ]
+  },
+  "optimizer": {
+    "status": "DESCRIPTIVE_HISTORICAL_STRATEGY_COMPARISON",
+    "strategies_available": [
+      "FINAL_OPTIMIZER",
+      "FULL_ALPHA_CONVICTION",
+      "FULL_ALPHA_EQUAL",
+      "FULL_ALPHA_RISK",
+      "RG_ONLY",
+      "RG_SY_EQUAL",
+      "SY_ONLY",
+      "TREND_ONLY"
+    ],
+    "historical_discrete_cedear_backtest": "NOT_AVAILABLE_UNLESS_SEPARATELY_PERSISTED",
+    "warning": "Continuous research strategy and live discrete CEDEAR implementation are different layers. Historical nominal/integer alpha loss cannot be invented if not persisted."
+  },
+  "regimes": {
+    "status": "RECOVERED_V10_3",
+    "rows": 4,
+    "macro_regimes": "ONLY_IF_PRESENT_IN_ARTIFACT"
+  },
+  "drawdowns": {
+    "status": "COMPUTED",
+    "alpha_engine": {
+      "episodes": 26,
+      "worst_drawdown": -0.20468786476134004,
+      "worst_trough": "2022-06-30 00:00:00",
+      "worst_recovery": "2022-11-30 00:00:00",
+      "average_trough_to_recovery_months": 2.0
+    },
+    "spy": {
+      "episodes": 23,
+      "worst_drawdown": -0.23927182389219837,
+      "worst_trough": "2022-09-30 00:00:00",
+      "worst_recovery": "2023-12-29 00:00:00",
+      "average_trough_to_recovery_months": 2.4347826086956523
+    }
+  },
+  "decision_history": {
+    "status": "PASS_WITH_LIMITATIONS",
+    "present_fields": 11,
+    "total_fields": 16,
+    "missing_fields": [
+      "intraday_signal_timestamp",
+      "intraday_execution_timestamp",
+      "per_trade_realized_cost",
+      "optimizer_marginal_reason_per_asset",
+      "discarded_alternative_reason_per_asset"
+    ]
+  },
+  "current_decisions": {
+    "status": "CURRENT_STATE_DIAGNOSTIC",
+    "requested_names": 15,
+    "found": 15,
+    "missing_names": []
+  },
+  "current_portfolio": {
+    "status": "CURRENT_STATE_DIAGNOSTIC",
+    "portfolio_value_ars": 492250.0,
+    "cash_ars": 0.0,
+    "cash_pct": 0.13921787709497208,
+    "discrete_holdings": 13,
+    "discrete_turnover_ars": 763770.0,
+    "solver": "SCIPY_MILP_LEXICOGRAPHIC",
+    "objective_primary": 0.2294081225640572,
+    "note": "The current integer/CEDEAR implementation is audited separately from the continuous historical research backtest. Historical alpha loss from nominal rounding cannot be claimed without a historical discrete replay."
+  },
+  "freeze_integrity": {
+    "status": "HASHED_CURRENT_STATE",
+    "sha256": "5e168c854e6009f6384643c548194aaf427e7d6e0fdc1c912a85e632b6b5c2fa",
+    "files": [
+      "src\\validation\\v10_full_alpha.py",
+      "src\\live\\frozen_evaluator.py",
+      "src\\live\\production_factor_engine.py",
+      "config\\settings.yaml",
+      "data\\v10_4\\final_model_freeze_decision.json"
+    ],
+    "forensic_preregistration_sha256": "e121e4023194b57ea152dd9bcd25ec6993e417ec6a7969cce02de8aa85ee25b2",
+    "freeze_decision": {
+      "model_research_status": "FROZEN",
+      "capital_test_status": "READY_FOR_SMALL_CAPITAL_TEST",
+      "gates": {
+        "positive_cagr_spread_vs_spy": true,
+        "ff5_mom_alpha_positive_significant": true,
+        "rolling_3y_consistency": true,
+        "rolling_5y_consistency": true,
+        "drawdown_not_materially_worse_than_spy": true
+      },
+      "core_metrics": {
+        "cagr": 0.24841884567827588,
+        "spy_cagr": 0.13828509610056416,
+        "cagr_spread_vs_spy": 0.11013374957771171,
+        "ann_vol": 0.19314944911952409,
+        "spy_vol": 0.1449159480023751,
+        "max_drawdown": -0.20468786476133982,
+        "spy_max_drawdown": -0.2392718238921987,
+        "ff5_mom_alpha_ann": 0.10633942828329629,
+        "ff5_mom_alpha_hac_t": 3.193269850854426,
+        "rolling_3y_outperform_share": 1.0,
+        "rolling_5y_outperform_share": 1.0
+      },
+      "limitations": [
+        "Historical results do not guarantee future performance.",
+        "Full survivorship-free validation remains unavailable because public/free delisted-price coverage was insufficient.",
+        "The profiles are research capital-allocation sleeves; production execution still requires cash/ledger/CEDEAR/slippage integration."
+      ]
+    },
+    "warning": "A local hash proves present-state identity only. Strong external timestamp evidence requires a committed/tagged hash in version control before future returns are observed."
+  },
+  "oos": {
+    "status": "UNVERIFIED_TRUE_NEVER_TOUCHED_HOLDOUT",
+    "artifacts_present": {
+      "market_oos_summary": false,
+      "fundamental_walk_forward": false,
+      "v10_profile_freeze": true,
+      "v11_challenger": false
+    },
+    "freeze_decision": {
+      "model_research_status": "FROZEN",
+      "capital_test_status": "READY_FOR_SMALL_CAPITAL_TEST",
+      "gates": {
+        "positive_cagr_spread_vs_spy": true,
+        "ff5_mom_alpha_positive_significant": true,
+        "rolling_3y_consistency": true,
+        "rolling_5y_consistency": true,
+        "drawdown_not_materially_worse_than_spy": true
+      },
+      "core_metrics": {
+        "cagr": 0.24841884567827588,
+        "spy_cagr": 0.13828509610056416,
+        "cagr_spread_vs_spy": 0.11013374957771171,
+        "ann_vol": 0.19314944911952409,
+        "spy_vol": 0.1449159480023751,
+        "max_drawdown": -0.20468786476133982,
+        "spy_max_drawdown": -0.2392718238921987,
+        "ff5_mom_alpha_ann": 0.10633942828329629,
+        "ff5_mom_alpha_hac_t": 3.193269850854426,
+        "rolling_3y_outperform_share": 1.0,
+        "rolling_5y_outperform_share": 1.0
+      },
+      "limitations": [
+        "Historical results do not guarantee future performance.",
+        "Full survivorship-free validation remains unavailable because public/free delisted-price coverage was insufficient.",
+        "The profiles are research capital-allocation sleeves; production execution still requires cash/ledger/CEDEAR/slippage integration."
+      ]
+    },
+    "current_hash": "5e168c854e6009f6384643c548194aaf427e7d6e0fdc1c912a85e632b6b5c2fa",
+    "reason": "Existing walk-forward/OOS diagnostics are useful, but a true holdout requires evidence that the final model was frozen before the holdout was observed and that no model decision was subsequently conditioned on that holdout. Local artifacts alone do not prove the researcher's historical information set.",
+    "minimum_to_certify": [
+      "pre-registered freeze timestamp/hash",
+      "explicit holdout start/end",
+      "immutable version-control history",
+      "log proving no post-holdout retuning"
+    ]
+  },
+  "forward_protocol": {
+    "status": "PROPOSED_GOVERNANCE_RULE_NOT_EMPIRICAL_FACT",
+    "immutable_during_test": [
+      "factor definitions",
+      "factor weights",
+      "candidate fraction",
+      "risk lookback",
+      "optimizer objective/penalties",
+      "rebalance cadence",
+      "execution convention used for scoring",
+      "benchmark set",
+      "cost-accounting rule"
+    ],
+    "may_change_without_invalidating_model_test": [
+      "UI",
+      "logging",
+      "data transport",
+      "bug fixes that do not alter historical/current decisions and are versioned",
+      "additional diagnostics that do not feed decisions"
+    ],
+    "log_each_decision": [
+      "UTC timestamp",
+      "data cutoff",
+      "factor inputs and filing timestamps",
+      "score/rank",
+      "risk inputs",
+      "previous weights",
+      "continuous target",
+      "discrete/local target",
+      "orders/fills",
+      "costs/slippage",
+      "cash",
+      "benchmark prices",
+      "model hash"
+    ],
+    "benchmarks": [
+      "SPY primary",
+      "RSP",
+      "QQQ",
+      "cash/T-bill RF",
+      "optional sector diagnostic benchmark"
+    ],
+    "monthly_metrics": [
+      "net return",
+      "active return",
+      "tracking error",
+      "IC",
+      "turnover",
+      "costs",
+      "slippage",
+      "coverage",
+      "concentration",
+      "drawdown"
+    ],
+    "quarterly_metrics": [
+      "CAGR-to-date",
+      "IR",
+      "Sharpe/Sortino",
+      "factor alpha regressions with caveat on low n",
+      "regime breakdown",
+      "implementation shortfall",
+      "attribution by ticker/factor"
+    ],
+    "2029_reasonable_evidence_rule": {
+      "minimum_forward_months": 36,
+      "model_hash_unchanged": true,
+      "net_of_all_realized_costs": true,
+      "primary_active_cagr_gt_0": true,
+      "information_ratio_target": ">=0.50 is favorable; <0 is failure evidence",
+      "full_alpha_rank_ic_mean": ">0 and positive in >=55% of forward months is favorable",
+      "ff5_mom_alpha": ">0; HAC t-stat >=1.5 encouraging and >=2.0 materially stronger, recognizing 36 months is a short sample",
+      "drawdown": "must remain within the predeclared risk mandate; no ex-post threshold change",
+      "benchmark_robustness": "positive active evidence vs SPY plus at least one of RSP/QQQ over the same period",
+      "failure_rule": "If 36-month net active CAGR <=0 and mean forward IC <=0, the alpha hypothesis has failed its first serious forward hurdle. Continue observation only as research; do not retune and relabel the same test."
+    }
+  },
+  "institutional": {
+    "quant_recruiter": {
+      "technically_impressive": [
+        "PIT fundamental pipeline",
+        "frozen model governance",
+        "forensic portfolio reconstruction",
+        "optimizer/execution separation",
+        "red-team/false-discovery work",
+        "live cloud/ledger architecture"
+      ],
+      "easy_to_replicate": [
+        "basic factor ranking",
+        "standard performance ratios",
+        "simple FastAPI dashboard"
+      ],
+      "shows_judgment": [
+        "refusing to convert exact replay FAIL into PASS",
+        "separating backtest/PAPER/REAL",
+        "documenting survivorship as unresolved",
+        "pre-registering forward hash"
+      ],
+      "concerns": [
+        "survivorship unresolved",
+        "true OOS history not certified",
+        "local capacity unproven",
+        "research trial history incomplete"
+      ]
+    },
+    "institution_types": {
+      "hedge_fund": "Will focus on independent alpha, false discovery, capacity, execution and reproducibility.",
+      "family_office": "Will focus on drawdown, transparency, live evidence and operational simplicity.",
+      "ALyC": "Will focus on CEDEAR execution, suitability, compliance, liquidity, audit trail and client communication.",
+      "fintech": "Will focus on product reliability, explainability, scalability, data licensing and user safety.",
+      "bank": "Will require governance, model risk management, compliance, reproducibility and vendor/data controls.",
+      "asset_manager": "Will focus on benchmark-relative performance, capacity, factor exposures, turnover, drawdowns and team/process repeatability."
+    },
+    "economic_value": {
+      "today": "Software/research IP can have professional and development value, but a backtest alone is not an institutional track record and does not justify an arbitrary strategy valuation.",
+      "12_months": "A clean forward year adds evidence about implementation and signal persistence but remains statistically short.",
+      "3_years": "A frozen, net-of-cost three-year forward record can materially change credibility, especially with benchmark-relative and factor-adjusted evidence.",
+      "5_years": "Five years of independently auditable live/forward history across regimes can support far stronger commercial, AUM and licensing discussions, subject to capacity and regulation."
+    }
+  },
+  "harness_errors": [],
+  "final_verdict": {
+    "A_alpha_engine_parece_funcionar": "No podemos saber todavía hacia adelante; históricamente hay evidencia favorable.",
+    "B_evidencia_actual_fuerte": "Parcial: fuerte en varias dimensiones del backtest, incompleta en survivorship, research selection, exact execution/capacity and forward evidence.",
+    "C_mayor_debilidad": "Survivorship-free certification and complete research-trial/false-discovery history are not closed.",
+    "D_mayor_riesgo_resultado_falso": "Combination of survivorship bias and research selection/data mining, amplified by concentration/high turnover.",
+    "E_test_urgente": "Close survivorship-free PIT replay and lock/execute the true forward protocol; both matter more than another optimized backtest.",
+    "F_test_redundante": "More ex-post parameter searching for a better champion would add little and increase false-discovery risk.",
+    "G_bien_construido": "Frozen profile reconstruction, PIT filing checks, factor/risk temporal slicing, forensic holdings/replay, explicit layer separation and audit logging.",
+    "H_rehacer": "Any claim of institutional readiness/capacity before local liquidity and forward evidence; also historical data-vintage certification if unavailable.",
+    "I_listo_para_congelarse": "Sí: V10.4 should remain frozen; changing it now would contaminate the forward test.",
+    "J_listo_para_forward_testing": "Sí, as research/shadow testing, provided the hash and execution rule are fixed and every decision is logged before outcomes.",
+    "K_listo_para_profesionales": "Sí as a transparent research project, with unresolved limitations presented prominently; no as a proven institutional strategy.",
+    "L_listo_para_monetizar": "No as a proven alpha product. Software/research tooling can have value, but strategy monetization claims should wait for critical evidence.",
+    "global_category": "🟢 Prometedor",
+    "blocking_tests": [
+      {
+        "test": "Data vintage/restatement integrity",
+        "current_evidence": "UNVERIFIED",
+        "status": "NO-GO"
+      },
+      {
+        "test": "Exact signal/fill timing",
+        "current_evidence": "UNVERIFIED",
+        "status": "NO-GO"
+      },
+      {
+        "test": "Survivorship-free replay",
+        "current_evidence": "UNRESOLVED",
+        "status": "NO-GO"
+      },
+      {
+        "test": "Research multiple-testing inventory",
+        "current_evidence": 446,
+        "status": "NO-GO"
+      },
+      {
+        "test": "DSR/PBO",
+        "current_evidence": "PERSISTED_TRIAL_LOWER_BOUND_ONLY",
+        "status": "NO-GO"
+      },
+      {
+        "test": "Capacity / CEDEAR liquidity",
+        "current_evidence": "UNVERIFIED",
+        "status": "NO-GO"
+      },
+      {
+        "test": "True forward test",
+        "current_evidence": "NOT YET MATURE",
+        "status": "NO-GO"
+      },
+      {
+        "test": "Decision reconstruction",
+        "current_evidence": "PASS_WITH_LIMITATIONS",
+        "status": "NO-GO"
+      }
+    ],
+    "rule": "Category is capped by critical unresolved evidence. Strong backtest performance cannot override missing survivorship/false-discovery/forward proof."
+  }
+}

@@ -1,0 +1,2510 @@
+{
+  "MSFT": {
+    "ticker": "MSFT",
+    "primary_name": "Microsoft Corporation",
+    "names": [
+      "Microsoft Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BRK-B": {
+    "ticker": "BRK-B",
+    "primary_name": "Berkshire Hathaway Inc. New",
+    "names": [
+      "Berkshire Hathaway Inc. New"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PG": {
+    "ticker": "PG",
+    "primary_name": "Procter & Gamble Company (The)",
+    "names": [
+      "Procter & Gamble Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MELI": {
+    "ticker": "MELI",
+    "primary_name": "MercadoLibre, Inc.",
+    "names": [
+      "MercadoLibre, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "META": {
+    "ticker": "META",
+    "primary_name": "Meta Platforms, Inc.",
+    "names": [
+      "Meta Platforms, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "primary_name": "Broadcom Inc.",
+    "names": [
+      "Broadcom Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AMZN": {
+    "ticker": "AMZN",
+    "primary_name": "Amazon.com, Inc.",
+    "names": [
+      "Amazon.com, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GE": {
+    "ticker": "GE",
+    "primary_name": "GE Aerospace",
+    "names": [
+      "GE Aerospace"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NKE": {
+    "ticker": "NKE",
+    "primary_name": "Nike, Inc.",
+    "names": [
+      "Nike, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DIS": {
+    "ticker": "DIS",
+    "primary_name": "Walt Disney Company (The)",
+    "names": [
+      "Walt Disney Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CAT": {
+    "ticker": "CAT",
+    "primary_name": "Caterpillar, Inc.",
+    "names": [
+      "Caterpillar, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MMM": {
+    "ticker": "MMM",
+    "primary_name": "3M Company",
+    "names": [
+      "3M Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "primary_name": "Pfizer, Inc.",
+    "names": [
+      "Pfizer, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "V": {
+    "ticker": "V",
+    "primary_name": "Visa Inc.",
+    "names": [
+      "Visa Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AXP": {
+    "ticker": "AXP",
+    "primary_name": "American Express Company",
+    "names": [
+      "American Express Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CAAP": {
+    "ticker": "CAAP",
+    "primary_name": "Corporacion America Airports SA",
+    "names": [
+      "Corporacion America Airports SA"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ABBV": {
+    "ticker": "ABBV",
+    "primary_name": "AbbVie Inc.",
+    "names": [
+      "AbbVie Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BABA": {
+    "ticker": "BABA",
+    "primary_name": "Alibaba Group Holding Limited",
+    "names": [
+      "Alibaba Group Holding Limited"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "COIN": {
+    "ticker": "COIN",
+    "primary_name": "COIN",
+    "names": [
+      "COIN"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "primary_name": "Netflix, Inc.",
+    "names": [
+      "Netflix, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GLOB": {
+    "ticker": "GLOB",
+    "primary_name": "Globant S.A.",
+    "names": [
+      "Globant S.A."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BA": {
+    "ticker": "BA",
+    "primary_name": "Boeing Company (The)",
+    "names": [
+      "Boeing Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NU": {
+    "ticker": "NU",
+    "primary_name": "Nu Holdings Ltd.",
+    "names": [
+      "Nu Holdings Ltd."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CIBR": {
+    "ticker": "CIBR",
+    "primary_name": "CIBR",
+    "names": [
+      "CIBR"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ORCL": {
+    "ticker": "ORCL",
+    "primary_name": "Oracle Corporation",
+    "names": [
+      "Oracle Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "primary_name": "NVIDIA Corporation",
+    "names": [
+      "NVIDIA Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TSM": {
+    "ticker": "TSM",
+    "primary_name": "Taiwan Semiconductor Manufactur",
+    "names": [
+      "Taiwan Semiconductor Manufactur"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ETHA": {
+    "ticker": "ETHA",
+    "primary_name": "ETHA",
+    "names": [
+      "ETHA"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "primary_name": "Advanced Micro Devices, Inc.",
+    "names": [
+      "Advanced Micro Devices, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ASML": {
+    "ticker": "ASML",
+    "primary_name": "ASML Holding N.V. - New York Re",
+    "names": [
+      "ASML Holding N.V. - New York Re"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LAR": {
+    "ticker": "LAR",
+    "primary_name": "Lithium Argentina AG",
+    "names": [
+      "Lithium Argentina AG"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SH": {
+    "ticker": "SH",
+    "primary_name": "SH",
+    "names": [
+      "SH"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GLD": {
+    "ticker": "GLD",
+    "primary_name": "GLD",
+    "names": [
+      "GLD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "WMT": {
+    "ticker": "WMT",
+    "primary_name": "Walmart Inc.",
+    "names": [
+      "Walmart Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "XLF": {
+    "ticker": "XLF",
+    "primary_name": "XLF",
+    "names": [
+      "XLF"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "XLI": {
+    "ticker": "XLI",
+    "primary_name": "XLI",
+    "names": [
+      "XLI"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "XLE": {
+    "ticker": "XLE",
+    "primary_name": "XLE",
+    "names": [
+      "XLE"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TM": {
+    "ticker": "TM",
+    "primary_name": "Toyota Motor Corporation",
+    "names": [
+      "Toyota Motor Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SONY": {
+    "ticker": "SONY",
+    "primary_name": "Sony Group Corporation",
+    "names": [
+      "Sony Group Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EWJ": {
+    "ticker": "EWJ",
+    "primary_name": "EWJ",
+    "names": [
+      "EWJ"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PBR": {
+    "ticker": "PBR",
+    "primary_name": "Petroleo Brasileiro S.A. Petrob",
+    "names": [
+      "Petroleo Brasileiro S.A. Petrob"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BBD": {
+    "ticker": "BBD",
+    "primary_name": "Banco Bradesco Sa",
+    "names": [
+      "Banco Bradesco Sa"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SID": {
+    "ticker": "SID",
+    "primary_name": "Companhia Siderurgica Nacional",
+    "names": [
+      "Companhia Siderurgica Nacional"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VALE": {
+    "ticker": "VALE",
+    "primary_name": "VALE S.A.",
+    "names": [
+      "VALE S.A."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ARKK": {
+    "ticker": "ARKK",
+    "primary_name": "ARKK",
+    "names": [
+      "ARKK"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EEM": {
+    "ticker": "EEM",
+    "primary_name": "EEM",
+    "names": [
+      "EEM"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EWZ": {
+    "ticker": "EWZ",
+    "primary_name": "EWZ",
+    "names": [
+      "EWZ"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ARM": {
+    "ticker": "ARM",
+    "primary_name": "Arm Holdings plc",
+    "names": [
+      "Arm Holdings plc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TXAR": {
+    "ticker": "TXAR",
+    "primary_name": "TERNIUM ARGENTINA SA",
+    "names": [
+      "TERNIUM ARGENTINA SA"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PAMP": {
+    "ticker": "PAMP",
+    "primary_name": "Pampa Energia S.A.",
+    "names": [
+      "Pampa Energia S.A."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CEPU": {
+    "ticker": "CEPU",
+    "primary_name": "Central Puerto S.A.",
+    "names": [
+      "Central Puerto S.A."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ECOG": {
+    "ticker": "ECOG",
+    "primary_name": "ECOGAS INVERSIONES SA",
+    "names": [
+      "ECOGAS INVERSIONES SA"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CVX": {
+    "ticker": "CVX",
+    "primary_name": "Chevron Corporation",
+    "names": [
+      "Chevron Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AAPL": {
+    "ticker": "AAPL",
+    "primary_name": "Apple Inc.",
+    "names": [
+      "Apple Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SPCX": {
+    "ticker": "SPCX",
+    "primary_name": "Space Exploration Technologies",
+    "names": [
+      "Space Exploration Technologies"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "primary_name": "Alphabet Inc.",
+    "names": [
+      "Alphabet Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MU": {
+    "ticker": "MU",
+    "primary_name": "Micron Technology, Inc.",
+    "names": [
+      "Micron Technology, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ACN": {
+    "ticker": "ACN",
+    "primary_name": "Accenture plc",
+    "names": [
+      "Accenture plc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "COST": {
+    "ticker": "COST",
+    "primary_name": "Costco Wholesale Corporation",
+    "names": [
+      "Costco Wholesale Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LLY": {
+    "ticker": "LLY",
+    "primary_name": "Eli Lilly and Company",
+    "names": [
+      "Eli Lilly and Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TSLA": {
+    "ticker": "TSLA",
+    "primary_name": "Tesla, Inc.",
+    "names": [
+      "Tesla, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VIST": {
+    "ticker": "VIST",
+    "primary_name": "Vista Energy S.A.B. de C.V.",
+    "names": [
+      "Vista Energy S.A.B. de C.V."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "YPF": {
+    "ticker": "YPF",
+    "primary_name": "YPF Sociedad Anonima",
+    "names": [
+      "YPF Sociedad Anonima"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BYMA.BA": {
+    "ticker": "BYMA.BA",
+    "primary_name": "BOLSAS Y MERCADOS ARGENTINOS SA",
+    "names": [
+      "BOLSAS Y MERCADOS ARGENTINOS SA"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PANW": {
+    "ticker": "PANW",
+    "primary_name": "Palo Alto Networks, Inc.",
+    "names": [
+      "Palo Alto Networks, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KEEL": {
+    "ticker": "KEEL",
+    "primary_name": "BITF",
+    "names": [
+      "BITF"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BPC7D": {
+    "ticker": "BPC7D",
+    "primary_name": "BPC7D",
+    "names": [
+      "BPC7D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BPD7D": {
+    "ticker": "BPD7D",
+    "primary_name": "BPD7D",
+    "names": [
+      "BPD7D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GD30D": {
+    "ticker": "GD30D",
+    "primary_name": "GD30D",
+    "names": [
+      "GD30D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AL30D": {
+    "ticker": "AL30D",
+    "primary_name": "AL30D",
+    "names": [
+      "AL30D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AL35D": {
+    "ticker": "AL35D",
+    "primary_name": "AL35D",
+    "names": [
+      "AL35D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GD38D": {
+    "ticker": "GD38D",
+    "primary_name": "GD38D",
+    "names": [
+      "GD38D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GD41D": {
+    "ticker": "GD41D",
+    "primary_name": "GD41D",
+    "names": [
+      "GD41D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PNXCD": {
+    "ticker": "PNXCD",
+    "primary_name": "PNXCD",
+    "names": [
+      "PNXCD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PLC4D": {
+    "ticker": "PLC4D",
+    "primary_name": "PLC4D",
+    "names": [
+      "PLC4D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VSCVD": {
+    "ticker": "VSCVD",
+    "primary_name": "VSCVD",
+    "names": [
+      "VSCVD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "YM34D": {
+    "ticker": "YM34D",
+    "primary_name": "YM34D",
+    "names": [
+      "YM34D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "YMCXD": {
+    "ticker": "YMCXD",
+    "primary_name": "YMCXD",
+    "names": [
+      "YMCXD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "IRCPD": {
+    "ticker": "IRCPD",
+    "primary_name": "IRCPD",
+    "names": [
+      "IRCPD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "RUCDD": {
+    "ticker": "RUCDD",
+    "primary_name": "RUCDD",
+    "names": [
+      "RUCDD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "RUCED": {
+    "ticker": "RUCED",
+    "primary_name": "RUCED",
+    "names": [
+      "RUCED"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TLCMD": {
+    "ticker": "TLCMD",
+    "primary_name": "TLCMD",
+    "names": [
+      "TLCMD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TLCPD": {
+    "ticker": "TLCPD",
+    "primary_name": "TLCPD",
+    "names": [
+      "TLCPD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TLCTD": {
+    "ticker": "TLCTD",
+    "primary_name": "TLCTD",
+    "names": [
+      "TLCTD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DNCAD": {
+    "ticker": "DNCAD",
+    "primary_name": "DNCAD",
+    "names": [
+      "DNCAD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VSCPD": {
+    "ticker": "VSCPD",
+    "primary_name": "VSCPD",
+    "names": [
+      "VSCPD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CS47D": {
+    "ticker": "CS47D",
+    "primary_name": "CS47D",
+    "names": [
+      "CS47D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "IRCOD": {
+    "ticker": "IRCOD",
+    "primary_name": "IRCOD",
+    "names": [
+      "IRCOD"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ZZC1D": {
+    "ticker": "ZZC1D",
+    "primary_name": "ZZC1D",
+    "names": [
+      "ZZC1D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "YM39D": {
+    "ticker": "YM39D",
+    "primary_name": "YM39D",
+    "names": [
+      "YM39D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AO27D": {
+    "ticker": "AO27D",
+    "primary_name": "AO27D",
+    "names": [
+      "AO27D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AO28D": {
+    "ticker": "AO28D",
+    "primary_name": "AO28D",
+    "names": [
+      "AO28D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GD29D": {
+    "ticker": "GD29D",
+    "primary_name": "GD29D",
+    "names": [
+      "GD29D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AL29D": {
+    "ticker": "AL29D",
+    "primary_name": "AL29D",
+    "names": [
+      "AL29D"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "primary_name": "Adobe Inc.",
+    "names": [
+      "Adobe Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CRM": {
+    "ticker": "CRM",
+    "primary_name": "Salesforce, Inc.",
+    "names": [
+      "Salesforce, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "INTU": {
+    "ticker": "INTU",
+    "primary_name": "Intuit Inc.",
+    "names": [
+      "Intuit Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NOW": {
+    "ticker": "NOW",
+    "primary_name": "ServiceNow, Inc.",
+    "names": [
+      "ServiceNow, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "IBM": {
+    "ticker": "IBM",
+    "primary_name": "International Business Machines",
+    "names": [
+      "International Business Machines"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CSCO": {
+    "ticker": "CSCO",
+    "primary_name": "Cisco Systems, Inc.",
+    "names": [
+      "Cisco Systems, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "QCOM": {
+    "ticker": "QCOM",
+    "primary_name": "QUALCOMM Incorporated",
+    "names": [
+      "QUALCOMM Incorporated"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TXN": {
+    "ticker": "TXN",
+    "primary_name": "Texas Instruments Incorporated",
+    "names": [
+      "Texas Instruments Incorporated"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ADI": {
+    "ticker": "ADI",
+    "primary_name": "Analog Devices, Inc.",
+    "names": [
+      "Analog Devices, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ANET": {
+    "ticker": "ANET",
+    "primary_name": "Arista Networks, Inc.",
+    "names": [
+      "Arista Networks, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PLTR": {
+    "ticker": "PLTR",
+    "primary_name": "Palantir Technologies Inc.",
+    "names": [
+      "Palantir Technologies Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CRWD": {
+    "ticker": "CRWD",
+    "primary_name": "CrowdStrike Holdings, Inc.",
+    "names": [
+      "CrowdStrike Holdings, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "FTNT": {
+    "ticker": "FTNT",
+    "primary_name": "Fortinet, Inc.",
+    "names": [
+      "Fortinet, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SNPS": {
+    "ticker": "SNPS",
+    "primary_name": "Synopsys, Inc.",
+    "names": [
+      "Synopsys, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CDNS": {
+    "ticker": "CDNS",
+    "primary_name": "Cadence Design Systems, Inc.",
+    "names": [
+      "Cadence Design Systems, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ROP": {
+    "ticker": "ROP",
+    "primary_name": "Roper Technologies, Inc.",
+    "names": [
+      "Roper Technologies, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ADSK": {
+    "ticker": "ADSK",
+    "primary_name": "Autodesk, Inc.",
+    "names": [
+      "Autodesk, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TEAM": {
+    "ticker": "TEAM",
+    "primary_name": "Atlassian Corporation",
+    "names": [
+      "Atlassian Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DDOG": {
+    "ticker": "DDOG",
+    "primary_name": "Datadog, Inc.",
+    "names": [
+      "Datadog, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MDB": {
+    "ticker": "MDB",
+    "primary_name": "MongoDB, Inc.",
+    "names": [
+      "MongoDB, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "INTC": {
+    "ticker": "INTC",
+    "primary_name": "Intel Corporation",
+    "names": [
+      "Intel Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LRCX": {
+    "ticker": "LRCX",
+    "primary_name": "Lam Research Corporation",
+    "names": [
+      "Lam Research Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KLAC": {
+    "ticker": "KLAC",
+    "primary_name": "KLA Corporation",
+    "names": [
+      "KLA Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AMAT": {
+    "ticker": "AMAT",
+    "primary_name": "Applied Materials, Inc.",
+    "names": [
+      "Applied Materials, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MRVL": {
+    "ticker": "MRVL",
+    "primary_name": "Marvell Technology, Inc.",
+    "names": [
+      "Marvell Technology, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MCHP": {
+    "ticker": "MCHP",
+    "primary_name": "Microchip Technology Incorporat",
+    "names": [
+      "Microchip Technology Incorporat"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NXPI": {
+    "ticker": "NXPI",
+    "primary_name": "NXP Semiconductors N.V.",
+    "names": [
+      "NXP Semiconductors N.V."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ON": {
+    "ticker": "ON",
+    "primary_name": "ON Semiconductor Corporation",
+    "names": [
+      "ON Semiconductor Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MPWR": {
+    "ticker": "MPWR",
+    "primary_name": "Monolithic Power Systems, Inc.",
+    "names": [
+      "Monolithic Power Systems, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "JPM": {
+    "ticker": "JPM",
+    "primary_name": "JP Morgan Chase & Co.",
+    "names": [
+      "JP Morgan Chase & Co."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BAC": {
+    "ticker": "BAC",
+    "primary_name": "Bank of America Corporation",
+    "names": [
+      "Bank of America Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "WFC": {
+    "ticker": "WFC",
+    "primary_name": "Wells Fargo & Company",
+    "names": [
+      "Wells Fargo & Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "C": {
+    "ticker": "C",
+    "primary_name": "Citigroup, Inc.",
+    "names": [
+      "Citigroup, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GS": {
+    "ticker": "GS",
+    "primary_name": "Goldman Sachs Group, Inc. (The)",
+    "names": [
+      "Goldman Sachs Group, Inc. (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MS": {
+    "ticker": "MS",
+    "primary_name": "Morgan Stanley",
+    "names": [
+      "Morgan Stanley"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BLK": {
+    "ticker": "BLK",
+    "primary_name": "BlackRock, Inc.",
+    "names": [
+      "BlackRock, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SCHW": {
+    "ticker": "SCHW",
+    "primary_name": "Charles Schwab Corporation (The",
+    "names": [
+      "Charles Schwab Corporation (The"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MA": {
+    "ticker": "MA",
+    "primary_name": "Mastercard Incorporated",
+    "names": [
+      "Mastercard Incorporated"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "COF": {
+    "ticker": "COF",
+    "primary_name": "Capital One Financial Corporati",
+    "names": [
+      "Capital One Financial Corporati"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BNY": {
+    "ticker": "BNY",
+    "primary_name": "The Bank of New York Mellon Cor",
+    "names": [
+      "The Bank of New York Mellon Cor"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PNC": {
+    "ticker": "PNC",
+    "primary_name": "PNC Financial Services Group, I",
+    "names": [
+      "PNC Financial Services Group, I"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "USB": {
+    "ticker": "USB",
+    "primary_name": "U.S. Bancorp",
+    "names": [
+      "U.S. Bancorp"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SPGI": {
+    "ticker": "SPGI",
+    "primary_name": "S&P Global Inc.",
+    "names": [
+      "S&P Global Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MCO": {
+    "ticker": "MCO",
+    "primary_name": "Moody's Corporation",
+    "names": [
+      "Moody's Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "UNH": {
+    "ticker": "UNH",
+    "primary_name": "UnitedHealth Group Incorporated",
+    "names": [
+      "UnitedHealth Group Incorporated"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "JNJ": {
+    "ticker": "JNJ",
+    "primary_name": "Johnson & Johnson",
+    "names": [
+      "Johnson & Johnson"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MRK": {
+    "ticker": "MRK",
+    "primary_name": "Merck & Company, Inc.",
+    "names": [
+      "Merck & Company, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AMGN": {
+    "ticker": "AMGN",
+    "primary_name": "Amgen Inc.",
+    "names": [
+      "Amgen Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GILD": {
+    "ticker": "GILD",
+    "primary_name": "Gilead Sciences, Inc.",
+    "names": [
+      "Gilead Sciences, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "REGN": {
+    "ticker": "REGN",
+    "primary_name": "Regeneron Pharmaceuticals, Inc.",
+    "names": [
+      "Regeneron Pharmaceuticals, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VRTX": {
+    "ticker": "VRTX",
+    "primary_name": "Vertex Pharmaceuticals Incorpor",
+    "names": [
+      "Vertex Pharmaceuticals Incorpor"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TMO": {
+    "ticker": "TMO",
+    "primary_name": "Thermo Fisher Scientific Inc",
+    "names": [
+      "Thermo Fisher Scientific Inc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DHR": {
+    "ticker": "DHR",
+    "primary_name": "Danaher Corporation",
+    "names": [
+      "Danaher Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ISRG": {
+    "ticker": "ISRG",
+    "primary_name": "Intuitive Surgical, Inc.",
+    "names": [
+      "Intuitive Surgical, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MDT": {
+    "ticker": "MDT",
+    "primary_name": "Medtronic plc.",
+    "names": [
+      "Medtronic plc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BSX": {
+    "ticker": "BSX",
+    "primary_name": "Boston Scientific Corporation",
+    "names": [
+      "Boston Scientific Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SYK": {
+    "ticker": "SYK",
+    "primary_name": "Stryker Corporation",
+    "names": [
+      "Stryker Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ZTS": {
+    "ticker": "ZTS",
+    "primary_name": "Zoetis Inc.",
+    "names": [
+      "Zoetis Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BMY": {
+    "ticker": "BMY",
+    "primary_name": "Bristol-Myers Squibb Company",
+    "names": [
+      "Bristol-Myers Squibb Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "HD": {
+    "ticker": "HD",
+    "primary_name": "Home Depot, Inc. (The)",
+    "names": [
+      "Home Depot, Inc. (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LOW": {
+    "ticker": "LOW",
+    "primary_name": "Lowe's Companies, Inc.",
+    "names": [
+      "Lowe's Companies, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MCD": {
+    "ticker": "MCD",
+    "primary_name": "McDonald's Corporation",
+    "names": [
+      "McDonald's Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SBUX": {
+    "ticker": "SBUX",
+    "primary_name": "Starbucks Corporation",
+    "names": [
+      "Starbucks Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BKNG": {
+    "ticker": "BKNG",
+    "primary_name": "Booking Holdings Inc. Common St",
+    "names": [
+      "Booking Holdings Inc. Common St"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ABNB": {
+    "ticker": "ABNB",
+    "primary_name": "Airbnb, Inc.",
+    "names": [
+      "Airbnb, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TJX": {
+    "ticker": "TJX",
+    "primary_name": "TJX Companies, Inc. (The)",
+    "names": [
+      "TJX Companies, Inc. (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ORLY": {
+    "ticker": "ORLY",
+    "primary_name": "O'Reilly Automotive, Inc.",
+    "names": [
+      "O'Reilly Automotive, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AZO": {
+    "ticker": "AZO",
+    "primary_name": "AutoZone, Inc.",
+    "names": [
+      "AutoZone, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MAR": {
+    "ticker": "MAR",
+    "primary_name": "Marriott International",
+    "names": [
+      "Marriott International"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CMG": {
+    "ticker": "CMG",
+    "primary_name": "Chipotle Mexican Grill, Inc.",
+    "names": [
+      "Chipotle Mexican Grill, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "RCL": {
+    "ticker": "RCL",
+    "primary_name": "Royal Caribbean Cruises Ltd.",
+    "names": [
+      "Royal Caribbean Cruises Ltd."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KO": {
+    "ticker": "KO",
+    "primary_name": "Coca-Cola Company (The)",
+    "names": [
+      "Coca-Cola Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PEP": {
+    "ticker": "PEP",
+    "primary_name": "Pepsico, Inc.",
+    "names": [
+      "Pepsico, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PM": {
+    "ticker": "PM",
+    "primary_name": "Philip Morris International Inc",
+    "names": [
+      "Philip Morris International Inc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MO": {
+    "ticker": "MO",
+    "primary_name": "Altria Group, Inc.",
+    "names": [
+      "Altria Group, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MDLZ": {
+    "ticker": "MDLZ",
+    "primary_name": "Mondelez International, Inc.",
+    "names": [
+      "Mondelez International, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CL": {
+    "ticker": "CL",
+    "primary_name": "Colgate-Palmolive Company",
+    "names": [
+      "Colgate-Palmolive Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KMB": {
+    "ticker": "KMB",
+    "primary_name": "Kimberly-Clark Corporation",
+    "names": [
+      "Kimberly-Clark Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TGT": {
+    "ticker": "TGT",
+    "primary_name": "Target Corporation",
+    "names": [
+      "Target Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KR": {
+    "ticker": "KR",
+    "primary_name": "Kroger Company (The)",
+    "names": [
+      "Kroger Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TMUS": {
+    "ticker": "TMUS",
+    "primary_name": "T-Mobile US, Inc.",
+    "names": [
+      "T-Mobile US, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VZ": {
+    "ticker": "VZ",
+    "primary_name": "Verizon Communications Inc.",
+    "names": [
+      "Verizon Communications Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "T": {
+    "ticker": "T",
+    "primary_name": "AT&T Inc.",
+    "names": [
+      "AT&T Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CMCSA": {
+    "ticker": "CMCSA",
+    "primary_name": "Comcast Corporation",
+    "names": [
+      "Comcast Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "CHTR": {
+    "ticker": "CHTR",
+    "primary_name": "Charter Communications, Inc.",
+    "names": [
+      "Charter Communications, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EA": {
+    "ticker": "EA",
+    "primary_name": "Electronic Arts Inc.",
+    "names": [
+      "Electronic Arts Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "TTWO": {
+    "ticker": "TTWO",
+    "primary_name": "Take-Two Interactive Software,",
+    "names": [
+      "Take-Two Interactive Software,"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "HON": {
+    "ticker": "HON",
+    "primary_name": "Honeywell International Inc.",
+    "names": [
+      "Honeywell International Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "RTX": {
+    "ticker": "RTX",
+    "primary_name": "RTX Corporation",
+    "names": [
+      "RTX Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LMT": {
+    "ticker": "LMT",
+    "primary_name": "Lockheed Martin Corporation",
+    "names": [
+      "Lockheed Martin Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NOC": {
+    "ticker": "NOC",
+    "primary_name": "Northrop Grumman Corporation",
+    "names": [
+      "Northrop Grumman Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "GD": {
+    "ticker": "GD",
+    "primary_name": "General Dynamics Corporation",
+    "names": [
+      "General Dynamics Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DE": {
+    "ticker": "DE",
+    "primary_name": "Deere & Company",
+    "names": [
+      "Deere & Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ETN": {
+    "ticker": "ETN",
+    "primary_name": "Eaton Corporation, PLC",
+    "names": [
+      "Eaton Corporation, PLC"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PH": {
+    "ticker": "PH",
+    "primary_name": "Parker-Hannifin Corporation",
+    "names": [
+      "Parker-Hannifin Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EMR": {
+    "ticker": "EMR",
+    "primary_name": "Emerson Electric Company",
+    "names": [
+      "Emerson Electric Company"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "ITW": {
+    "ticker": "ITW",
+    "primary_name": "Illinois Tool Works Inc.",
+    "names": [
+      "Illinois Tool Works Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "WM": {
+    "ticker": "WM",
+    "primary_name": "Waste Management, Inc.",
+    "names": [
+      "Waste Management, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "UNP": {
+    "ticker": "UNP",
+    "primary_name": "Union Pacific Corporation",
+    "names": [
+      "Union Pacific Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "UPS": {
+    "ticker": "UPS",
+    "primary_name": "United Parcel Service, Inc.",
+    "names": [
+      "United Parcel Service, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "FDX": {
+    "ticker": "FDX",
+    "primary_name": "FedEx Corporation",
+    "names": [
+      "FedEx Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "UBER": {
+    "ticker": "UBER",
+    "primary_name": "Uber Technologies, Inc.",
+    "names": [
+      "Uber Technologies, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "XOM": {
+    "ticker": "XOM",
+    "primary_name": "ExxonMobil Holdings Corporation",
+    "names": [
+      "ExxonMobil Holdings Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "COP": {
+    "ticker": "COP",
+    "primary_name": "ConocoPhillips",
+    "names": [
+      "ConocoPhillips"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "EOG": {
+    "ticker": "EOG",
+    "primary_name": "EOG Resources, Inc.",
+    "names": [
+      "EOG Resources, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SLB": {
+    "ticker": "SLB",
+    "primary_name": "SLB Limited",
+    "names": [
+      "SLB Limited"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "OXY": {
+    "ticker": "OXY",
+    "primary_name": "Occidental Petroleum Corporatio",
+    "names": [
+      "Occidental Petroleum Corporatio"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "MPC": {
+    "ticker": "MPC",
+    "primary_name": "Marathon Petroleum Corporation",
+    "names": [
+      "Marathon Petroleum Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "VLO": {
+    "ticker": "VLO",
+    "primary_name": "Valero Energy Corporation",
+    "names": [
+      "Valero Energy Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "PSX": {
+    "ticker": "PSX",
+    "primary_name": "Phillips 66",
+    "names": [
+      "Phillips 66"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "KMI": {
+    "ticker": "KMI",
+    "primary_name": "Kinder Morgan, Inc.",
+    "names": [
+      "Kinder Morgan, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "WMB": {
+    "ticker": "WMB",
+    "primary_name": "Williams Companies, Inc. (The)",
+    "names": [
+      "Williams Companies, Inc. (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "LIN": {
+    "ticker": "LIN",
+    "primary_name": "Linde plc",
+    "names": [
+      "Linde plc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "APD": {
+    "ticker": "APD",
+    "primary_name": "Air Products and Chemicals, Inc",
+    "names": [
+      "Air Products and Chemicals, Inc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SHW": {
+    "ticker": "SHW",
+    "primary_name": "Sherwin-Williams Company (The)",
+    "names": [
+      "Sherwin-Williams Company (The)"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "FCX": {
+    "ticker": "FCX",
+    "primary_name": "Freeport-McMoRan, Inc.",
+    "names": [
+      "Freeport-McMoRan, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NEM": {
+    "ticker": "NEM",
+    "primary_name": "Newmont Corporation",
+    "names": [
+      "Newmont Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NUE": {
+    "ticker": "NUE",
+    "primary_name": "Nucor Corporation",
+    "names": [
+      "Nucor Corporation"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "STLD": {
+    "ticker": "STLD",
+    "primary_name": "Steel Dynamics, Inc.",
+    "names": [
+      "Steel Dynamics, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DOW": {
+    "ticker": "DOW",
+    "primary_name": "Dow Inc.",
+    "names": [
+      "Dow Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SAP": {
+    "ticker": "SAP",
+    "primary_name": "SAP  SE",
+    "names": [
+      "SAP  SE"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SHOP": {
+    "ticker": "SHOP",
+    "primary_name": "Shopify Inc.",
+    "names": [
+      "Shopify Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SE": {
+    "ticker": "SE",
+    "primary_name": "Sea Limited",
+    "names": [
+      "Sea Limited"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "JD": {
+    "ticker": "JD",
+    "primary_name": "JD.com, Inc.",
+    "names": [
+      "JD.com, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BIDU": {
+    "ticker": "BIDU",
+    "primary_name": "Baidu, Inc.",
+    "names": [
+      "Baidu, Inc."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "NVO": {
+    "ticker": "NVO",
+    "primary_name": "Novo Nordisk A/S",
+    "names": [
+      "Novo Nordisk A/S"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "AZN": {
+    "ticker": "AZN",
+    "primary_name": "AstraZeneca PLC",
+    "names": [
+      "AstraZeneca PLC"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SNY": {
+    "ticker": "SNY",
+    "primary_name": "Sanofi",
+    "names": [
+      "Sanofi"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BP": {
+    "ticker": "BP",
+    "primary_name": "BP p.l.c.",
+    "names": [
+      "BP p.l.c."
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "SHEL": {
+    "ticker": "SHEL",
+    "primary_name": "Shell PLC",
+    "names": [
+      "Shell PLC"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "RIO": {
+    "ticker": "RIO",
+    "primary_name": "Rio Tinto Plc",
+    "names": [
+      "Rio Tinto Plc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "BHP": {
+    "ticker": "BHP",
+    "primary_name": "BHP Group Limited",
+    "names": [
+      "BHP Group Limited"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "UL": {
+    "ticker": "UL",
+    "primary_name": "Unilever PLC",
+    "names": [
+      "Unilever PLC"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  },
+  "DEO": {
+    "ticker": "DEO",
+    "primary_name": "Diageo plc",
+    "names": [
+      "Diageo plc"
+    ],
+    "sources": [
+      "advisor",
+      "research"
+    ]
+  }
+}

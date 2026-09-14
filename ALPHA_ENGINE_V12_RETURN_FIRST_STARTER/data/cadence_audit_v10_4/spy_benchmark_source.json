@@ -1,0 +1,7 @@
+{
+  "status": "PASS_PERSISTED_MONTHLY_BENCHMARK",
+  "source": "data\\v10_2\\benchmark_monthly_returns.parquet",
+  "rows": 151,
+  "daily_spy_required": false,
+  "meaning": "All cadence benchmark-relative metrics use the same persisted monthly SPY return series; SPY never enters V10.4 targets."
+}

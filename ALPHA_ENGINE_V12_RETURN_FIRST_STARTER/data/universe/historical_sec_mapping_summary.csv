@@ -1,0 +1,7 @@
+source_state,mapping_method,lifecycle_rows,unique_symbols,mapped_rows
+active,EXACT_NAME_UNIQUE,622,622,622
+active,EXACT_TICKER_UNIQUE,7155,7155,7155
+active,UNMAPPED,6635,6635,0
+delisted,EXACT_NAME_UNIQUE,2820,2820,2820
+delisted,EXACT_TICKER_UNIQUE,501,501,501
+delisted,UNMAPPED,6136,6136,0

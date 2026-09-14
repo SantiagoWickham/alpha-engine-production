@@ -1,0 +1,35 @@
+{
+  "model": "V10.4_FROZEN_UNCHANGED",
+  "description": "Long-only cross-sectional asset-selection and portfolio-construction system. It does not forecast a point price; it implicitly forecasts relative expected returns by ranking current characteristics and allocating more capital to selected names.",
+  "factor_definitions": {
+    "Revenue Growth": "cross-sectional percentile of year-over-year revenue growth (g_revenue_yoy)",
+    "Sales Yield": "cross-sectional percentile of revenue / point-in-time market capitalization (v_sales_yield)",
+    "Trend": "cross-sectional percentile of the previously validated V8 price-trend score",
+    "Full Alpha": "equal mean of Revenue Growth, Sales Yield and Trend percentiles; all three required"
+  },
+  "economic_hypothesis": {
+    "Revenue Growth": "Firms with stronger current revenue growth may contain information about business momentum not fully reflected immediately in relative prices.",
+    "Sales Yield": "Higher revenue relative to market capitalization is a valuation signal; if revenue is economically durable, cheaper sales can imply higher prospective relative returns.",
+    "Trend": "Price trends can persist because information diffusion, underreaction, flows and behavioral frictions are gradual rather than instantaneous.",
+    "combination": "Growth, valuation and trend are intended to be partially complementary; no single factor needs to dominate in every regime."
+  },
+  "what_must_be_true": [
+    "Cross-sectional information in the three signals must not be immediately and perfectly arbitraged away.",
+    "The relationships must persist after realistic implementation costs and delays.",
+    "Portfolio concentration and optimizer choices must not dominate the factor edge.",
+    "The historical universe/data process must not create material survivorship or look-ahead bias."
+  ],
+  "failure_conditions": [
+    "Signal premia structurally disappear or reverse.",
+    "Implementation delay/slippage absorbs the modest per-decision edge.",
+    "Sector or factor crowding creates persistent adverse exposures.",
+    "Historical results are mostly research-selection bias, survivorship bias or a small number of non-repeatable winners."
+  ],
+  "code_evidence": {
+    "groupby_asof_rank_present": true,
+    "full_alpha_equal_present": true,
+    "top_fraction_20pct_present": true,
+    "risk_lookback_126_present": true
+  },
+  "backtest_independent_status": "HYPOTHESIS"
+}

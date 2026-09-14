@@ -1,0 +1,6 @@
+name,status,detail
+SEC_MAPPING,PASS,lifecycle mapped=46.5%
+REVENUE_GROWTH_PIT_COVERAGE,PASS,median usable=58.3%
+SALES_YIELD_PIT_COVERAGE,FAIL,median usable=3.3%
+DELISTED_PRICE_COVERAGE,FAIL,"eligible delisted=285/1,837 (15.5%)"
+MODEL_RESEARCH_CLOSURE,FAIL,Automatic aggregation of data-integrity and locked-alpha gates.

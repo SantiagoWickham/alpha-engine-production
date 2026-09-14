@@ -1,0 +1,63 @@
+==============================================================================================================================
+MMM ADVISOR V10.2 - BENCHMARK & IMPLEMENTATION REALITY AUDIT
+==============================================================================================================================
+No new factors. No optimizer tuning. No retrospective threshold changes.
+Goal: put V10 returns on the ground against investable benchmarks and realistic costs.
+[1/4] INVESTABLE BENCHMARKS
+  SPY: 151 monthly returns
+  RSP: 151 monthly returns
+  QQQ: 151 monthly returns
+  SMH: 151 monthly returns
+[2/4] DIRECT BENCHMARK COMPARISON
+             strategy benchmark  months  strategy_cagr  benchmark_cagr  cagr_spread  ann_active_arithmetic  tracking_error  information_ratio  strategy_mdd  benchmark_mdd
+      FINAL_OPTIMIZER       QQQ     152       0.248843        0.187170     0.061673               0.053492        0.153197           0.349170     -0.204688      -0.325770
+      FINAL_OPTIMIZER       RSP     152       0.248843        0.108867     0.139976               0.126597        0.133464           0.948549     -0.204688      -0.266803
+      FINAL_OPTIMIZER       SMH     152       0.248843        0.308107    -0.059264              -0.064313        0.225156          -0.285638     -0.204688      -0.400499
+      FINAL_OPTIMIZER       SPY     152       0.248843        0.137682     0.111161               0.102385        0.134950           0.758691     -0.204688      -0.239272
+FULL_ALPHA_CONVICTION       QQQ     152       0.342100        0.187170     0.154930               0.149456        0.258809           0.577476     -0.231288      -0.325770
+FULL_ALPHA_CONVICTION       RSP     152       0.342100        0.108867     0.233233               0.222561        0.257043           0.865851     -0.231288      -0.266803
+FULL_ALPHA_CONVICTION       SMH     152       0.342100        0.308107     0.033993               0.031651        0.291018           0.108761     -0.231288      -0.400499
+FULL_ALPHA_CONVICTION       SPY     152       0.342100        0.137682     0.204418               0.198350        0.256247           0.774056     -0.231288      -0.239272
+     FULL_ALPHA_EQUAL       QQQ     152       0.233569        0.187170     0.046399               0.038653        0.125857           0.307117     -0.199226      -0.325770
+     FULL_ALPHA_EQUAL       RSP     152       0.233569        0.108867     0.124702               0.111758        0.102965           1.085394     -0.199226      -0.266803
+     FULL_ALPHA_EQUAL       SMH     152       0.233569        0.308107    -0.074538              -0.079152        0.196002          -0.403831     -0.199226      -0.400499
+     FULL_ALPHA_EQUAL       SPY     152       0.233569        0.137682     0.095887               0.087546        0.099962           0.875795     -0.199226      -0.239272
+[3/4] COST / IMPLEMENTATION STRESS
+             strategy  one_way_bps  cagr_net  ann_return_net  max_drawdown_net  avg_turnover
+      FINAL_OPTIMIZER          0.5  0.252258        0.245157         -0.204688      0.153226
+      FINAL_OPTIMIZER          5.0  0.250220        0.243502         -0.205537      0.153226
+      FINAL_OPTIMIZER         10.0  0.247958        0.241663         -0.206480      0.153226
+      FINAL_OPTIMIZER         25.0  0.241195        0.236147         -0.209303      0.153226
+      FINAL_OPTIMIZER         50.0  0.229994        0.226953         -0.213990      0.153226
+FULL_ALPHA_CONVICTION          0.5  0.345137        0.340494         -0.231288      0.377676
+FULL_ALPHA_CONVICTION          5.0  0.339845        0.336415         -0.231433      0.377676
+FULL_ALPHA_CONVICTION         10.0  0.333987        0.331883         -0.231595      0.377676
+FULL_ALPHA_CONVICTION         25.0  0.316549        0.318286         -0.235608      0.377676
+FULL_ALPHA_CONVICTION         50.0  0.287936        0.295626         -0.253340      0.377676
+     FULL_ALPHA_EQUAL          0.5  0.236791        0.230201         -0.199226      0.247903
+     FULL_ALPHA_EQUAL          5.0  0.233533        0.227524         -0.201094      0.247903
+     FULL_ALPHA_EQUAL         10.0  0.229922        0.224549         -0.203166      0.247903
+     FULL_ALPHA_EQUAL         25.0  0.219147        0.215625         -0.209353      0.247903
+     FULL_ALPHA_EQUAL         50.0  0.201376        0.200750         -0.219572      0.247903
+[4/4] MONTHLY HIT RATE VS BENCHMARK
+             strategy benchmark  months  monthly_hit_rate  avg_win_active  avg_loss_active  payoff_ratio
+      FINAL_OPTIMIZER       QQQ     152          0.559211        0.033434        -0.032303      1.035004
+      FINAL_OPTIMIZER       RSP     152          0.605263        0.034554        -0.026257      1.315991
+      FINAL_OPTIMIZER       SMH     152          0.493421        0.042951        -0.052415      0.819441
+      FINAL_OPTIMIZER       SPY     152          0.592105        0.033485        -0.027690      1.209292
+FULL_ALPHA_CONVICTION       QQQ     152          0.572368        0.057796        -0.048233      1.198264
+FULL_ALPHA_CONVICTION       RSP     152          0.631579        0.057360        -0.047991      1.195235
+FULL_ALPHA_CONVICTION       SMH     152          0.506579        0.061624        -0.057921      1.063919
+FULL_ALPHA_CONVICTION       SPY     152          0.605263        0.057909        -0.046920      1.234202
+     FULL_ALPHA_EQUAL       QQQ     152          0.500000        0.030987        -0.024545      1.262466
+     FULL_ALPHA_EQUAL       RSP     152          0.592105        0.027731        -0.017422      1.591693
+     FULL_ALPHA_EQUAL       SMH     152          0.486842        0.037259        -0.048202      0.772976
+     FULL_ALPHA_EQUAL       SPY     152          0.572368        0.025572        -0.017167      1.489613
+==============================================================================================================================
+Interpretation rule:
+- SPY is the primary passive opportunity-cost benchmark.
+- RSP checks whether alpha is merely an equal-weight/smaller-stock effect.
+- QQQ is a growth/tech opportunity-cost comparator.
+- SMH is diagnostic only; it is NOT a fair primary benchmark unless the portfolio is semiconductor-dominated.
+- Hit rate is descriptive, not an optimization target.
+==============================================================================================================================

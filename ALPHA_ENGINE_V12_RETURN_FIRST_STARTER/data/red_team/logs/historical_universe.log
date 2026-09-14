@@ -1,0 +1,28 @@
+====================================================================================================================
+MMM ADVISOR V0.9.0 - HISTORICAL UNIVERSE / SURVIVORSHIP CONTROL
+====================================================================================================================
+Source: Alpha Vantage LISTING_STATUS lifecycle files.
+Window: 2010 onward (source-supported historical listing window).
+Goal: reconstruct the investable US-stock universe month by month.
+No Alpha definitions or production weights are changed.
+--------------------------------------------------------------------------------------------------------------------
+Lifecycle rows:                23,870
+Unique lifecycle symbols:      23,249
+Delisted-source symbols:       9,457
+Monthly universe rows:         1,220,279
+Monthly dates:                 200
+History:                       2010-01-31 00:00:00 -> 2026-08-31 00:00:00
+Universe size min/median/max:  4,130 / 5,859 / 9,030
+--------------------------------------------------------------------------------------------------------------------
+CURRENT-UNIVERSE SURVIVORSHIP DIAGNOSTIC
+2010 historical universe covered by current research: 154/4130 (3.7%)
+Latest historical universe covered by current research: 184/9030 (2.0%)
+Historical symbols absent from current research: 15,203
+--------------------------------------------------------------------------------------------------------------------
+IMPORTANT:
+This stage reconstructs membership only; it does NOT yet claim the delisted
+companies have full point-in-time SEC fundamentals or clean price histories.
+The next stage maps historical/delisted symbols to SEC CIKs and measures
+fundamental-data coverage before rerunning Revenue Growth and Sales Yield.
+====================================================================================================================
+HISTORICAL UNIVERSE RECONSTRUCTION PASSED
