@@ -1,0 +1,77 @@
+{
+  "build": "V13_P3AA_FINAL_PREHOLDOUT_REVIEW_FREEZE_2026-09-13",
+  "freeze_id": "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8",
+  "holdout_start": "2025-01-01",
+  "phase3z_build": "V13_P3Z_ROUNDTRIP_RESIZE_HYSTERESIS_2026-09-13",
+  "phase3z_design": {
+    "active_alpha": "unchanged from Phase3Y",
+    "entry_hurdle": "full round-trip cost",
+    "holding": "keep while expected active alpha > 0",
+    "resize_hurdle": "full expected round-trip cost / local risk curvature",
+    "top_n": false,
+    "fixed_holding_period": false,
+    "per_name_cap": false
+  },
+  "files": [
+    {
+      "path": "outputs/v13_phase0_summary.json",
+      "sha256": "aa55dd3aeb6b0ca6c4fbdc56a170a8c3c46820c783ad5ec53f9a1916795c7b39",
+      "bytes": 5148
+    },
+    {
+      "path": "outputs/v13_phase3z_summary.json",
+      "sha256": "fb7beb4822ce199ed97fcdc7878cbeb95a55af1c05e4f8f31438e11ed26c5b36",
+      "bytes": 7204
+    },
+    {
+      "path": "outputs/v13_phase3z_nav_20bps.csv",
+      "sha256": "64da6e6d253dc91c174c5085a6b8ff5b5d5122007269cb3ee045995276997991",
+      "bytes": 339028
+    },
+    {
+      "path": "outputs/v13_phase3z_nav_40bps.csv",
+      "sha256": "83d62105064715c2cbf0dd9e3f83029a5180c595693915fc0e17bc81be493d94",
+      "bytes": 339154
+    },
+    {
+      "path": "outputs/v13_phase3z_nav_60bps.csv",
+      "sha256": "1b12aa0f5fd60446a3d66a601564a3ae9fe031180e1619116c83e43b82e4e238",
+      "bytes": 339275
+    },
+    {
+      "path": "outputs/v13_phase3z_universe_lineage.csv",
+      "sha256": "53527a102936b42ad0ebf3a11a30376552d1050b481b8bc188dde1c0bb0c3021",
+      "bytes": 11736
+    },
+    {
+      "path": "config/v13_phase3z.toml",
+      "sha256": "e5a5c1aa604ce5d1bc320a1d1e2157f4e5f315392ec0bfc2c6aa461b75beb152",
+      "bytes": 1259
+    },
+    {
+      "path": "config/v13_phase3aa.toml",
+      "sha256": "ed81bdf81901b4e5c41ea912804602a84f479e69f776c7a889bb734da53d5603",
+      "bytes": 796
+    },
+    {
+      "path": "src/alpha_engine_v13/roundtrip_resize_hysteresis.py",
+      "sha256": "27cc3f64a8f52efcfc99ed3f8526ad5fb87e876184c1c16e3828a3ed70d85e4b",
+      "bytes": 9114
+    },
+    {
+      "path": "src/alpha_engine_v13/active_alpha_persistent_portfolio.py",
+      "sha256": "3b2e88817d6c01bdefe8ad00de4f33bce94752e166d2934d46b1b289b430dbae",
+      "bytes": 20705
+    },
+    {
+      "path": "src/alpha_engine_v13/economic_portfolio_closure.py",
+      "sha256": "e4a2d79bb42daf09cac1ab2e4d8dd3b11276db481a3547feb38779ab23a2ce52",
+      "bytes": 27524
+    },
+    {
+      "path": "src/alpha_engine_v13/final_prehodout_review.py",
+      "sha256": "312cb8fc74078905abf00c91939f20d8936d550dddc16ab71521c77437c70aca",
+      "bytes": 8071
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "build": "V13_P2R_ADAPTIVE_MULTI_EXPERT_ALPHA_REBUILD_2026-09-12",
+  "research_contract": "ALL_2015_2024_IS_PRE_HOLDOUT_RESEARCH; 2025+ HARD-BLOCKED",
+  "horizons": [
+    5,
+    10,
+    20,
+    60,
+    120,
+    252
+  ],
+  "experts": [
+    "RIDGE_RANK_DECAY",
+    "HGB_RANK_DECAY",
+    "HGB_ABS_RETURN_DECAY",
+    "HGB_BENCH_EXCESS_DECAY",
+    "HGB_WINNER_DECAY"
+  ],
+  "folds": [
+    [
+      "WF_2017_2018",
+      "2017-01-03",
+      "2019-01-02"
+    ],
+    [
+      "WF_2019_2020",
+      "2019-01-02",
+      "2021-01-04"
+    ],
+    [
+      "WF_2021_2022",
+      "2021-01-04",
+      "2023-01-03"
+    ],
+    [
+      "WF_2023_2024",
+      "2023-01-03",
+      "2025-01-01"
+    ]
+  ],
+  "ensemble_schemes": [
+    [
+      "EQUAL",
+      0.0,
+      0.0
+    ],
+    [
+      "ADAPTIVE_T075",
+      0.75,
+      0.04
+    ],
+    [
+      "ADAPTIVE_T150",
+      1.5,
+      0.04
+    ],
+    [
+      "ADAPTIVE_T250",
+      2.5,
+      0.04
+    ]
+  ],
+  "base_feature_count": 78,
+  "regime_feature_count": 14,
+  "selected_horizon_ensembles": [
+    {
+      "horizon_sessions": 5,
+      "selected_scheme": "ADAPTIVE_T075",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.03458815926748399,
+        "HGB_RANK_DECAY": 0.03458815926748399,
+        "HGB_ABS_RETURN_DECAY": 0.03458815926748399,
+        "HGB_BENCH_EXCESS_DECAY": 0.03458815926748399,
+        "HGB_WINNER_DECAY": 0.8616473629300642
+      }
+    },
+    {
+      "horizon_sessions": 10,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    {
+      "horizon_sessions": 20,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    {
+      "horizon_sessions": 60,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    {
+      "horizon_sessions": 120,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    },
+    {
+      "horizon_sessions": 252,
+      "selected_scheme": "EQUAL",
+      "final_expert_weights": {
+        "RIDGE_RANK_DECAY": 0.2,
+        "HGB_RANK_DECAY": 0.2,
+        "HGB_ABS_RETURN_DECAY": 0.2,
+        "HGB_BENCH_EXCESS_DECAY": 0.2,
+        "HGB_WINNER_DECAY": 0.2
+      }
+    }
+  ],
+  "holdout_start": "2025-01-01",
+  "holdout_used": false
+}
