@@ -1,1 +1,25 @@
-﻿{"nav":null,"cagr":null,"max_drawdown":null,"note":"Populate from actual portfolio ledger later."}
+{
+  "schema": "ALPHA_ENGINE_PERSONAL_PORTFOLIO_V1",
+  "generated_at_utc": "2026-09-14T18:45:57.939114+00:00",
+  "source": "GOOGLE_SHEETS_LEDGER",
+  "status": "EMPTY_PORTFOLIO",
+  "operations_count": 0,
+  "positions_count": 0,
+  "initial_cash_usd": 0.0,
+  "cash_usd": 0.0,
+  "total_cost_basis_usd": 0,
+  "book_value_usd": 0.0,
+  "nav": null,
+  "market_nav_usd": null,
+  "cagr": null,
+  "max_drawdown": null,
+  "realized_pnl_usd": 0.0,
+  "dividends_usd": 0.0,
+  "interest_usd": 0.0,
+  "fees_usd": 0.0,
+  "taxes_usd": 0.0,
+  "deposits_usd": 0.0,
+  "withdrawals_usd": 0.0,
+  "market_prices_connected": false,
+  "note": "Portfolio ledger reconstructed. Market NAV, unrealized P&L, weights, CAGR and drawdown require market-price layer."
+}

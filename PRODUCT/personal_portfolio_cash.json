@@ -1,0 +1,13 @@
+{
+  "schema": "ALPHA_ENGINE_PERSONAL_CASH_V1",
+  "generated_at_utc": "2026-09-14T18:45:57.939114+00:00",
+  "initial_cash_rows": [],
+  "initial_cash_usd": 0.0,
+  "current_cash_usd": 0.0,
+  "deposits_usd": 0.0,
+  "withdrawals_usd": 0.0,
+  "dividends_usd": 0.0,
+  "interest_usd": 0.0,
+  "fees_usd": 0.0,
+  "taxes_usd": 0.0
+}
