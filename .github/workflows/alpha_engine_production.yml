@@ -1,0 +1,283 @@
+﻿name: Alpha Engine Production
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '30 19 * * 1-5'
+      timezone: 'America/Argentina/Buenos_Aires'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alpha-engine-production
+  cancel-in-progress: false
+
+jobs:
+
+  production:
+
+    runs-on: windows-latest
+
+    timeout-minutes: 90
+
+    steps:
+
+      # --------------------------------------------------------
+      # REPO
+      # --------------------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      # --------------------------------------------------------
+      # GIT LFS CACHE
+      # --------------------------------------------------------
+
+      - name: Restore Git LFS cache
+        uses: actions/cache@v6
+        with:
+          path: .git/lfs
+          key: ${{ runner.os }}-alpha-engine-lfs-${{ hashFiles('.gitattributes') }}
+
+      - name: Download Git LFS files
+        shell: pwsh
+        run: |
+          git lfs install --local
+          git lfs pull
+          Write-Host "GIT LFS: PASS"
+
+      # --------------------------------------------------------
+      # COMPATIBILIDAD CON LA RUTA SELLADA ORIGINAL
+      # --------------------------------------------------------
+
+      - name: Create original Windows path
+        shell: pwsh
+        run: |
+
+          $ExpectedParent = "C:\Users\santi\OneDrive\Escritorio"
+
+          $ExpectedRoot = `
+            "C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST"
+
+          New-Item `
+            -ItemType Directory `
+            -Force `
+            -Path $ExpectedParent | Out-Null
+
+          if (Test-Path $ExpectedRoot) {
+              throw "La ruta sellada ya existe inesperadamente."
+          }
+
+          New-Item `
+            -ItemType Junction `
+            -Path $ExpectedRoot `
+            -Target $env:GITHUB_WORKSPACE | Out-Null
+
+          Write-Host "SEALED WINDOWS PATH: PASS"
+          Write-Host $ExpectedRoot
+
+      # --------------------------------------------------------
+      # PYTHON
+      # --------------------------------------------------------
+
+      - name: Setup Python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install Python dependencies
+        shell: pwsh
+        run: |
+
+          python -m pip install --upgrade pip
+
+          $Req = `
+            "$env:GITHUB_WORKSPACE\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\requirements.txt"
+
+          if (Test-Path $Req) {
+              pip install -r $Req
+          }
+
+          pip install `
+            numpy `
+            pandas `
+            pyarrow `
+            scipy `
+            scikit-learn `
+            statsmodels `
+            joblib `
+            requests `
+            python-dateutil `
+            python-dotenv `
+            pytest `
+            yfinance `
+            openpyxl `
+            exchange-calendars `
+            lxml `
+            beautifulsoup4 `
+            html5lib
+
+      # --------------------------------------------------------
+      # PREFLIGHT
+      # --------------------------------------------------------
+
+      - name: Production preflight
+        shell: pwsh
+        run: |
+
+          $Root = `
+            "C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST"
+
+          $Required = @(
+
+            "$Root\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\data",
+
+            "$Root\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\outputs\phase2_canonical_pit_panel.parquet",
+
+            "$Root\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\outputs\phase2c_return_price_layer.parquet",
+
+            "$Root\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\v13_phase4_sealed_model_bundle.joblib",
+
+            "$Root\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\RUN_V13_PHASE5B_LIVE_SHADOW.ps1",
+
+            "$Root\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\RUN_V13_PHASE5H_V4_EXECUTABLE.ps1"
+
+          )
+
+          foreach ($Item in $Required) {
+
+              if (-not (Test-Path $Item)) {
+                  throw "FALTA INPUT: $Item"
+              }
+
+              Write-Host "OK: $Item"
+          }
+
+          Write-Host ""
+          Write-Host "PRODUCTION PREFLIGHT: PASS"
+
+      # --------------------------------------------------------
+      # V13 IDEAL
+      # --------------------------------------------------------
+
+      - name: Run V13 Ideal
+        shell: pwsh
+        run: |
+
+          $Root = `
+            "C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST"
+
+          $V13 = `
+            "$Root\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON"
+
+          $V12 = `
+            "$Root\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER"
+
+          $env:PYTHONPATH = "$V13\src;$V12\src"
+
+          $env:MMM_SEC_USER_AGENT = `
+            "AlphaEngineV13 production SantiagoWickham GitHub"
+
+          Set-Location $V13
+
+          powershell.exe `
+            -NoProfile `
+            -ExecutionPolicy Bypass `
+            -File ".\RUN_V13_PHASE5B_LIVE_SHADOW.ps1"
+
+          if ($LASTEXITCODE -ne 0) {
+              throw "V13 PHASE 5B FAILED"
+          }
+
+          Write-Host ""
+          Write-Host "V13 CLOUD: PASS"
+
+      # --------------------------------------------------------
+      # BYMA TRANSFER
+      # --------------------------------------------------------
+
+      - name: Run BYMA Transfer
+        shell: pwsh
+        run: |
+
+          $Root = `
+            "C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_V12_RETURN_FIRST"
+
+          $V13 = `
+            "$Root\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON"
+
+          $V12 = `
+            "$Root\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER"
+
+          $env:PYTHONPATH = "$V13\src;$V12\src"
+
+          Set-Location $V13
+
+          powershell.exe `
+            -NoProfile `
+            -ExecutionPolicy Bypass `
+            -File ".\RUN_V13_PHASE5H_V4_EXECUTABLE.ps1"
+
+          if ($LASTEXITCODE -ne 0) {
+              throw "BYMA TRANSFER FAILED"
+          }
+
+          Write-Host ""
+          Write-Host "BYMA TRANSFER CLOUD: PASS"
+
+      # --------------------------------------------------------
+      # ESTADO PARA WEB
+      # --------------------------------------------------------
+
+      - name: Export production state
+        shell: pwsh
+        run: |
+
+          Set-Location $env:GITHUB_WORKSPACE
+
+          python cloud/export_state.py
+
+      # --------------------------------------------------------
+      # PUBLICAR RESULTADO
+      # --------------------------------------------------------
+
+      - name: Save latest production state
+        shell: pwsh
+        run: |
+
+          Set-Location $env:GITHUB_WORKSPACE
+
+          git config user.name "alpha-engine-bot"
+
+          git config `
+            user.email `
+            "alpha-engine-bot@users.noreply.github.com"
+
+          git add public/data/latest.json
+
+          if (git diff --cached --quiet) {
+
+              Write-Host "No hubo cambio de estado."
+
+          } else {
+
+              git commit `
+                -m "Production state update"
+
+              git pull `
+                --rebase `
+                origin main
+
+              git push `
+                origin HEAD:main
+          }
+
+          Write-Host ""
+          Write-Host "============================================"
+          Write-Host "ALPHA ENGINE CLOUD PRODUCTION: PASS"
+          Write-Host "============================================"
