@@ -1,0 +1,14 @@
+test,status,blocking,value,rule
+PHASE7_INPUT_PASS,PASS,True,PASS,Phase 7 must PASS
+PHASE7_READINESS,PASS,True,READY_FOR_PRE_FREEZE_REPLAY,Phase 7 must be ready for pre-freeze replay
+FINAL_OOS_FEATURE_FIREWALL,PASS,True,2024-12-31,max refit feature date must be before 2025-01-01
+FINAL_OOS_LABEL_FIREWALL,PASS,True,2024-12-31,all refit labels must mature before 2025-01-01
+FIXED_FEATURE_SET_UNCHANGED,PASS,True,9,Phase 8 may refit magnitudes but cannot admit/drop/reselect Phase 5 H20 features
+POLICY_HYPERPARAMETERS_UNCHANGED,PASS,True,"{'top_n': 15, 'entry_floor': 0.8, 'uncertainty_z': 0.5, 'minimum_extra_edge_bps': 50.0, 'max_replacements_per_session': 1, 'base_round_trip_cost_bps': 20.0, 'stress_round_trip_cost_bps': 40.0}",Phase 7 event-driven policy constants must be copied exactly
+EDGE_CALIBRATION_MONOTONIC,PASS,True,True,final pre-OOS isotonic score-to-return curve must be nondecreasing
+REFIT_DIRECTION_STABILITY_DIAGNOSTIC,PASS,False,1.0,diagnostic: >=75% fixed Phase 5 feature directions agree with all-pre-OOS refit IC
+PRE_FREEZE_REPLAY_DETERMINISM,PASS,True,22d377deffa2695651f02855e82a0bbb30aacb8d61f28aa932b83ff677c0e62b,two identical runs must produce identical NAV and edge-decision hashes
+PRE_FREEZE_EXECUTION_INTEGRITY,PASS,True,0.0,execution skip rate <= 0.050
+FINAL_REFIT_ALPHA_LINEAGE,PASS,True,"{'snapshots': 24, 'milp_success_rate': 1.0, 'median_spearman_alpha_milp': 0.9752578220905855, 'median_kendall_alpha_milp': 0.9147907439754503, 'median_top10_capture': 1.0, 'median_alpha_capture': 1.009019138755981, 'median_l1_optimizer_milp': 0.09899775894243941}",final refit score -> reference -> theoretical -> optimizer -> MILP must preserve alpha
+FREEZE_FINGERPRINT_CREATED,PASS,True,4b74e1665b6428b0a767142c80d20f04639472d06a4c19426e28ecb5e6cc0e2b,canonical model/policy/calibration payload must have SHA-256 fingerprint
+FINAL_OOS_OPENED,PASS,True,False,Phase 8 must not load or evaluate any 2025+ feature/label/score

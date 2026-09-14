@@ -1,0 +1,168 @@
+{
+  "acceptance_gate": [
+    {
+      "rule": ">= 252 OOS sessions",
+      "status": "PASS",
+      "test": "MINIMUM_OOS_SESSIONS",
+      "value": 420
+    },
+    {
+      "rule": "frozen portfolio net CAGR > 0 at base costs",
+      "status": "PASS",
+      "test": "BASE_NET_CAGR_POSITIVE",
+      "value": 0.165940480599
+    },
+    {
+      "rule": "frozen portfolio net CAGR > 0 at stress costs",
+      "status": "PASS",
+      "test": "STRESS_NET_CAGR_POSITIVE",
+      "value": 0.121305206876
+    },
+    {
+      "rule": "max drawdown >= -0.50",
+      "status": "PASS",
+      "test": "BASE_MAX_DRAWDOWN",
+      "value": -0.266444495617
+    },
+    {
+      "rule": "stress max drawdown >= -0.50",
+      "status": "PASS",
+      "test": "STRESS_MAX_DRAWDOWN",
+      "value": -0.288667797791
+    }
+  ],
+  "base_cost_performance": {
+    "annual_turnover": 2.529607564403,
+    "cagr": 0.165940480599,
+    "days": 420,
+    "edge_decisions": 420,
+    "edge_trades": 22,
+    "execution_skip_rate": 0.0,
+    "execution_skips": 0,
+    "max_drawdown": -0.266444495617,
+    "milp_calls": 22,
+    "milp_success_rate": 1.0,
+    "positive_month_share": 0.52380952381,
+    "total_cost_fraction_sum": 0.008432025215,
+    "total_return": 0.291597814799,
+    "trade_days": 22
+  },
+  "build": "V1_FINAL_OOS_ONE_SHOT_2026-09-12",
+  "determinism": {
+    "hashes": {
+      "edges": "6437e4c342ee7278403dba451a6c09a937078a934a47b90ee6715e9bd66bf509",
+      "milp": "9231737b43d09a7d1715709ba2cad6e81217ea4a61882c32791e87352ed28dcb",
+      "nav": "5dd60bd8758f52da5b6cb85e39005de989d6bb539651269599732e04165ed985"
+    },
+    "identical": true
+  },
+  "edge_realization_20d": {
+    "mean_realized_incremental_return_all_decisions": 0.000676150841,
+    "mean_realized_incremental_return_trades": -0.051937347662,
+    "resolved_edge_decisions_20d": 399,
+    "resolved_trade_decisions_20d": 22,
+    "trade_realized_positive_share": 0.318181818182
+  },
+  "integrity_gate": [
+    {
+      "blocking": true,
+      "rule": "must equal reviewed Phase 8B final freeze",
+      "status": "PASS",
+      "test": "FINAL_FREEZE_FINGERPRINT",
+      "value": "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d"
+    },
+    {
+      "blocking": true,
+      "rule": "all Phase 8 frozen source hashes must match",
+      "status": "PASS",
+      "test": "FROZEN_SOURCE_MANIFEST",
+      "value": 13
+    },
+    {
+      "blocking": true,
+      "rule": "pre-OOS regenerated score correlation >= 0.999999",
+      "status": "PASS",
+      "test": "FROZEN_SCORER_FIDELITY",
+      "value": 1.0
+    },
+    {
+      "blocking": true,
+      "rule": "all newly generated scores are 2025+",
+      "status": "PASS",
+      "test": "FINAL_OOS_SCORE_BOUNDARY",
+      "value": "2025-01-02"
+    },
+    {
+      "blocking": true,
+      "rule": "two internal frozen OOS runs must produce identical NAV/edge/MILP hashes",
+      "status": "PASS",
+      "test": "DETERMINISTIC_FINAL_OOS_REPLAY",
+      "value": {
+        "edges": "6437e4c342ee7278403dba451a6c09a937078a934a47b90ee6715e9bd66bf509",
+        "milp": "9231737b43d09a7d1715709ba2cad6e81217ea4a61882c32791e87352ed28dcb",
+        "nav": "5dd60bd8758f52da5b6cb85e39005de989d6bb539651269599732e04165ed985"
+      }
+    },
+    {
+      "blocking": true,
+      "rule": "if MILP is called, success rate >= 1.000; zero calls is valid HOLD behavior",
+      "status": "PASS",
+      "test": "FINAL_OOS_MILP_SUCCESS",
+      "value": {
+        "calls": 22,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "blocking": true,
+      "rule": "<= 0.050",
+      "status": "PASS",
+      "test": "FINAL_OOS_EXECUTION_SKIP_RATE",
+      "value": 0.0
+    }
+  ],
+  "name": "FINAL_OOS_ONE_SHOT_EVALUATION",
+  "next_gate": "If READY_FOR_SHADOW_FORWARD: connect the frozen model to live PIT ingestion and run shadow forward/champion monitoring without changing the frozen historical OOS result.",
+  "objective": "OPEN_THE_LOCKED_2025_PLUS_HOLDOUT_EXACTLY_ONCE_AND_MEASURE_FROZEN_NET_PORTFOLIO_PERFORMANCE_WITHOUT_ANY_TUNING",
+  "one_shot_contract": {
+    "carry_in_state_reconstructed_from": "2023-01-03 through 2024-12-31 frozen scores",
+    "final_freeze_fingerprint_sha256": "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d",
+    "final_oos_start": "2025-01-01",
+    "parameter_tuning_after_open": false,
+    "reselection_after_open": false
+  },
+  "oos_verdict": "PASS_FOR_SHADOW_FORWARD",
+  "oos_window": {
+    "first_score_date": "2025-01-02",
+    "last_price_date": "2026-09-04",
+    "last_score_date": "2026-09-04",
+    "score_rows": 86386,
+    "tickers": 256
+  },
+  "phase": 9,
+  "readiness": "READY_FOR_SHADOW_FORWARD",
+  "score_fidelity": {
+    "correlation": 1.0,
+    "mean_abs_diff": 0.0,
+    "overlap_rows": 54056
+  },
+  "spy_benchmark_diagnostic": null,
+  "status": "PASS",
+  "stress_cost_performance": {
+    "annual_turnover": 2.068373810401,
+    "cagr": 0.121305206876,
+    "days": 420,
+    "edge_decisions": 420,
+    "edge_trades": 18,
+    "execution_skip_rate": 0.0,
+    "execution_skips": 0,
+    "max_drawdown": -0.288667797791,
+    "milp_calls": 18,
+    "milp_success_rate": 1.0,
+    "positive_month_share": 0.52380952381,
+    "total_cost_fraction_sum": 0.013789158736,
+    "total_return": 0.210244352538,
+    "trade_days": 18
+  },
+  "warning": "Final OOS is now consumed. These 2025+ results may never be used to retune and then relabeled as out-of-sample."
+}

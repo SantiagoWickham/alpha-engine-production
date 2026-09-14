@@ -1,0 +1,183 @@
+{
+  "boundaries": {
+    "final_oos_start": "2025-01-01",
+    "final_oos_used_for_freeze": false,
+    "refit_start": "2015-01-02"
+  },
+  "edge_calibration": [
+    {
+      "expected_return_20d": 0.007258291313,
+      "hac_se": 0.009648985637,
+      "score_center": 0.025
+    },
+    {
+      "expected_return_20d": 0.008901540658,
+      "hac_se": 0.00647163641,
+      "score_center": 0.075
+    },
+    {
+      "expected_return_20d": 0.011646143855,
+      "hac_se": 0.005705444203,
+      "score_center": 0.125
+    },
+    {
+      "expected_return_20d": 0.011646143855,
+      "hac_se": 0.004433465729,
+      "score_center": 0.175
+    },
+    {
+      "expected_return_20d": 0.011646143855,
+      "hac_se": 0.004153376733,
+      "score_center": 0.225
+    },
+    {
+      "expected_return_20d": 0.011646143855,
+      "hac_se": 0.003832881806,
+      "score_center": 0.275
+    },
+    {
+      "expected_return_20d": 0.011721180231,
+      "hac_se": 0.004194858058,
+      "score_center": 0.325
+    },
+    {
+      "expected_return_20d": 0.011721180231,
+      "hac_se": 0.00376175917,
+      "score_center": 0.375
+    },
+    {
+      "expected_return_20d": 0.012074424989,
+      "hac_se": 0.004774779818,
+      "score_center": 0.425
+    },
+    {
+      "expected_return_20d": 0.012074424989,
+      "hac_se": 0.003569983611,
+      "score_center": 0.475
+    },
+    {
+      "expected_return_20d": 0.012074424989,
+      "hac_se": 0.003546944927,
+      "score_center": 0.525
+    },
+    {
+      "expected_return_20d": 0.012074424989,
+      "hac_se": 0.00353596785,
+      "score_center": 0.575
+    },
+    {
+      "expected_return_20d": 0.013871468597,
+      "hac_se": 0.003681273793,
+      "score_center": 0.625
+    },
+    {
+      "expected_return_20d": 0.018017842516,
+      "hac_se": 0.003703366772,
+      "score_center": 0.675
+    },
+    {
+      "expected_return_20d": 0.018043041471,
+      "hac_se": 0.003747597966,
+      "score_center": 0.725
+    },
+    {
+      "expected_return_20d": 0.018043041471,
+      "hac_se": 0.004005418785,
+      "score_center": 0.775
+    },
+    {
+      "expected_return_20d": 0.020465291723,
+      "hac_se": 0.005925296513,
+      "score_center": 0.825
+    },
+    {
+      "expected_return_20d": 0.020465291723,
+      "hac_se": 0.004218722468,
+      "score_center": 0.875
+    },
+    {
+      "expected_return_20d": 0.021841049371,
+      "hac_se": 0.004401170011,
+      "score_center": 0.925
+    },
+    {
+      "expected_return_20d": 0.027555796371,
+      "hac_se": 0.005056881862,
+      "score_center": 0.975
+    }
+  ],
+  "freeze_build": "V1_PRE_FREEZE_LOCK_2026-09-12",
+  "model": {
+    "architecture": "DEV_IC_COMPOSITE",
+    "feature_transform": "same-date cross-sectional percentile ranks; composite uses centered ranks",
+    "feature_weights": [
+      {
+        "direction": 1,
+        "feature": "fund_update_count_60d",
+        "weight": 0.166851548388
+      },
+      {
+        "direction": -1,
+        "feature": "size_log_market_cap",
+        "weight": -0.146760183283
+      },
+      {
+        "direction": -1,
+        "feature": "size_log_shares",
+        "weight": -0.117499887023
+      },
+      {
+        "direction": -1,
+        "feature": "size_log_assets",
+        "weight": -0.131848146186
+      },
+      {
+        "direction": -1,
+        "feature": "skew_60d",
+        "weight": -0.06898001893
+      },
+      {
+        "direction": 1,
+        "feature": "fund_update_count_20d",
+        "weight": 0.05497594473
+      },
+      {
+        "direction": 1,
+        "feature": "fund_cash_assets",
+        "weight": 0.104064418773
+      },
+      {
+        "direction": 1,
+        "feature": "mom_skip_252_20",
+        "weight": 0.108149191256
+      },
+      {
+        "direction": 1,
+        "feature": "rel_mom_252d",
+        "weight": 0.100870661431
+      }
+    ],
+    "horizon_sessions": 20
+  },
+  "policy": {
+    "base_round_trip_cost_bps": 20.0,
+    "decision_rule": "trade only when expected_incremental_return - estimated_total_cost - uncertainty_buffer > 0",
+    "entry_floor": 0.8,
+    "max_replacements_per_session": 1,
+    "minimum_extra_edge_bps": 50.0,
+    "policy_type": "EVENT_DRIVEN_EXPECTED_NET_EDGE",
+    "stress_round_trip_cost_bps": 40.0,
+    "top_n": 15,
+    "uncertainty_z": 0.5
+  },
+  "portfolio_construction": {
+    "lineage_candidate_count": 20,
+    "milp_holdings": 15,
+    "milp_max_weight": 0.12,
+    "milp_min_weight": 0.03,
+    "milp_weight_step": 0.005,
+    "optimizer_max_weight": 0.12,
+    "reference_top_n": 15
+  },
+  "model_fingerprint_sha256": "4b74e1665b6428b0a767142c80d20f04639472d06a4c19426e28ecb5e6cc0e2b"
+}

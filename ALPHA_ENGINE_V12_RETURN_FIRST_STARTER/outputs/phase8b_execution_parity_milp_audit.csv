@@ -1,0 +1,14 @@
+signal_date,success,message,members_before,members_after,membership_changes
+2023-01-03,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),0,15,15
+2023-09-07,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2023-11-03,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-02-05,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-02-07,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-02-20,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-05-08,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-07-25,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-08-30,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-10-18,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-11-05,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-11-19,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2024-11-29,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2

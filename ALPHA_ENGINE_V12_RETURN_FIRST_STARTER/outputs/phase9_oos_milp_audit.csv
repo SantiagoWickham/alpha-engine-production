@@ -1,0 +1,23 @@
+signal_date,success,message,members_before,members_after,membership_changes
+2025-01-30,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-02-18,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-03-10,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-04-04,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-04-07,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-05-02,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-05-23,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-08-05,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-11-04,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-12-02,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2025-12-10,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-01-26,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-01-30,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-02-06,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-03-02,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-05-15,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-06-12,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-07-20,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-07-22,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-07-28,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-07-30,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2
+2026-08-05,True,Optimization terminated successfully. (HiGHS Status 7: Optimal),15,15,2

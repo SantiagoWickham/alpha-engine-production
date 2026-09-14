@@ -1,0 +1,25 @@
+{
+  "status": "PASS_AUDIT_COMPLETE",
+  "phase": "3B",
+  "build": "V1_2026-09-12",
+  "name": "UNRESOLVED_TERMINATION_AUDIT",
+  "objective": "EXPLAIN_EARLY_PRICE_HISTORY_TERMINATIONS_BEFORE_ALPHA_RESEARCH",
+  "phase3_input_status": "FAIL",
+  "sample_end": "2026-09-04",
+  "unresolved_tickers": 176,
+  "blocking_tickers_requiring_repair": 176,
+  "classification_counts": {
+    "CONFIRMED_OR_NEAR_DELISTING_METADATA_GAP": 176
+  },
+  "unresolved_rows_by_horizon": {
+    "1": 73,
+    "5": 691,
+    "10": 1476,
+    "20": 3014,
+    "40": 5945,
+    "60": 8788,
+    "120": 16813,
+    "252": 33027
+  },
+  "next_gate": "Repair termination metadata/price histories by classification, rebuild Phase 3, and require zero UNRESOLVED_TERMINATION before alpha research."
+}

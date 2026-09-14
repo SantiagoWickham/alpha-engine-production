@@ -1,0 +1,3 @@
+partition,snapshots,milp_success_rate,median_spearman_alpha_milp,median_kendall_alpha_milp,median_top5_capture,median_top10_capture,median_alpha_capture,median_l1_optimizer_milp,median_rank_displacement,median_zero_reference_to_positive_theoretical_mass,snapshots_with_excluded_top_alpha
+SELECTION_2021_2022,24,1.0,0.9752578220905855,0.9147907439754503,1.0,1.0,1.0077354260089686,0.09186904887432878,0.95,0.041595751330342406,0
+VALIDATION_2023_2024,24,1.0,0.9752578220905855,0.9147907439754503,1.0,1.0,1.009019138755981,0.09856447613979215,0.95,0.04233057528311521,0

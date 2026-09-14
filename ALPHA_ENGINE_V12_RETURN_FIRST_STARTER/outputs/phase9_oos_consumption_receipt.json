@@ -1,0 +1,13 @@
+{
+  "build": "V1_FINAL_OOS_ONE_SHOT_2026-09-12",
+  "consumed_at_utc": "2026-09-12T21:56:32.954376+00:00",
+  "final_freeze_fingerprint_sha256": "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d",
+  "final_oos_last_observation": "2026-09-04",
+  "final_oos_start": "2025-01-01",
+  "oos_verdict": "PASS_FOR_SHADOW_FORWARD",
+  "phase": 9,
+  "rerun_permitted": false,
+  "status": "CONSUMED",
+  "summary_sha256": "2164830ed18a639ec7fe4ef0ddd7e9eb27e78f4a321afb93335598ec21a4817b",
+  "tuning_permitted_after_consumption": false
+}

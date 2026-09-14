@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "phase": 2,
+  "name": "CANONICAL_PIT_RESEARCH_PANEL",
+  "objective": "BUILD_LEAKAGE_RESISTANT_EVENT_DRIVEN_RESEARCH_PANEL",
+  "calendar": {
+    "sessions": 3194,
+    "first": "2013-12-23",
+    "last": "2026-09-04"
+  },
+  "market": {
+    "rows": 804159,
+    "tickers": 466,
+    "first": "2013-12-23",
+    "last": "2026-09-04",
+    "market_source_rows": [
+      {
+        "source": "PRIMARY",
+        "path": "data/cache/production_market_ohlcv.parquet",
+        "rows": 552865
+      },
+      {
+        "source": "SECONDARY",
+        "path": "data/cache/market_ohlcv_extended.parquet",
+        "rows": 550514
+      },
+      {
+        "source": "DELISTED",
+        "path": "data/cache/delisted_prices_yahoo",
+        "rows": 561799
+      }
+    ],
+    "supplemental_delisted_parquet_files": 285
+  },
+  "universe": {
+    "universe_rows": 1220279,
+    "universe_snapshots": 200,
+    "market_rows_with_snapshot": 804159,
+    "research_eligible_rows": 795185
+  },
+  "fundamentals": {
+    "fundamental_events": 82085,
+    "tickers": 181,
+    "metrics": 13,
+    "first_filed": "2009-05-11",
+    "last_filed": "2026-09-03"
+  },
+  "panel": {
+    "rows": 804159,
+    "tickers": 466,
+    "research_eligible_rows": 795185,
+    "fundamental_metrics": [
+      "assets",
+      "capex",
+      "cash",
+      "current_assets",
+      "current_liabilities",
+      "eps_diluted",
+      "equity",
+      "long_term_debt",
+      "net_income",
+      "operating_cash_flow",
+      "operating_income",
+      "revenue",
+      "shares_outstanding"
+    ]
+  },
+  "event_calendar": {
+    "rows": 886244,
+    "fundamental_events": 82085,
+    "session_close_events": 804159
+  },
+  "pit_gate": [
+    {
+      "test": "UNIQUE_TICKER_DATE",
+      "status": "PASS",
+      "value": 0,
+      "rule": "0 duplicates"
+    },
+    {
+      "test": "POSITIVE_CLOSE",
+      "status": "PASS",
+      "value": 0,
+      "rule": "all close > 0"
+    },
+    {
+      "test": "UNIVERSE_ASOF_CAUSAL",
+      "status": "PASS",
+      "value": 0,
+      "rule": "universe_asof <= date"
+    },
+    {
+      "test": "FUNDAMENTAL_NEXT_SESSION_STRICT",
+      "status": "PASS",
+      "value": 0,
+      "rule": "available_date > filed"
+    },
+    {
+      "test": "NO_FUTURE_FUNDAMENTALS_IN_PANEL",
+      "status": "PASS",
+      "value": 0,
+      "rule": "all metric available dates <= panel date"
+    },
+    {
+      "test": "EXECUTION_AFTER_SIGNAL",
+      "status": "PASS",
+      "value": 0,
+      "rule": "earliest_execution_date > signal_date"
+    },
+    {
+      "test": "UNIVERSE_SNAPSHOT_AGE",
+      "status": "PASS",
+      "value": 0,
+      "rule": "snapshot age <= 45 days"
+    },
+    {
+      "test": "MARKET_SOURCE_CONFLICTS",
+      "status": "PASS",
+      "value": 0,
+      "rule": "relative spread <= 1e-06; precedence resolves conflicts"
+    }
+  ],
+  "next_gate": "Do not create return targets or alpha features unless Phase 2 status is PASS and price semantics/corporate-action handling are reviewed."
+}

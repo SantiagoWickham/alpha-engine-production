@@ -1,0 +1,47 @@
+test,status,blocking,value,rule
+PHASE2C_INPUT_PASS,PASS,True,PASS,Phase 2C status must be PASS
+PHASE3C_INPUT_PASS,PASS,True,PASS,Phase 3C terminal repair must be PASS
+TERMINAL_OVERLAY_FEATURE_FORBIDDEN,PASS,True,True,Phase 3C delisting overlay must remain target-only and feature-forbidden
+TERMINAL_OVERLAY_TICKER_COVERAGE,PASS,True,0,0 validated Phase 3C terminal-overlay tickers unused in rebuilt targets
+RESEARCH_EXCLUSION_LEAKAGE,PASS,True,0,0 target rows may remain inside Phase 3C non-equity exclusion windows
+RESEARCH_EXCLUSION_ROWS_APPLIED,PASS,True,24,at least one signal row must be removed when Phase 3C declares research exclusions
+TARGET_PRICE_FEATURE_FORBIDDEN,PASS,True,True,target_total_return_price must remain TARGET_CONSTRUCTION_ONLY
+UNIQUE_SIGNAL_TICKER,PASS,True,0,"0 duplicate signal_date,ticker rows"
+ENTRY_AFTER_SIGNAL,PASS,True,0,actual entry_date must be strictly after signal_date
+ENTRY_PRICE_COVERAGE,PASS,True,0.9998138313261499,>= 0.995 among signals with a requested execution date
+ENTRY_DELAY_LIMIT,PASS,True,0,0 actual entries delayed by more than 7 calendar days
+RESOLVED_LABEL_COVERAGE_1D,PASS,True,1.0,>= 1.000 among resolved 1-session outcomes
+UNRESOLVED_TERMINATION_1D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_1D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_1D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_5D,PASS,True,1.0,>= 1.000 among resolved 5-session outcomes
+UNRESOLVED_TERMINATION_5D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_5D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_5D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_10D,PASS,True,1.0,>= 1.000 among resolved 10-session outcomes
+UNRESOLVED_TERMINATION_10D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_10D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_10D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_20D,PASS,True,1.0,>= 1.000 among resolved 20-session outcomes
+UNRESOLVED_TERMINATION_20D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_20D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_20D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_40D,PASS,True,1.0,>= 1.000 among resolved 40-session outcomes
+UNRESOLVED_TERMINATION_40D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_40D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_40D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_60D,PASS,True,1.0,>= 1.000 among resolved 60-session outcomes
+UNRESOLVED_TERMINATION_60D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_60D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_60D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_120D,PASS,True,1.0,>= 1.000 among resolved 120-session outcomes
+UNRESOLVED_TERMINATION_120D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_120D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_120D,PASS,True,0,0 unresolved terminations may carry a future-return label
+RESOLVED_LABEL_COVERAGE_252D,PASS,True,1.0,>= 1.000 among resolved 252-session outcomes
+UNRESOLVED_TERMINATION_252D,PASS,True,0.0,<= 0.000000; unknown early history termination is not silently censored
+CENSORED_HAS_NO_LABEL_252D,PASS,True,0,0 right-censored rows may carry a future-return label
+UNRESOLVED_HAS_NO_LABEL_252D,PASS,True,0,0 unresolved terminations may carry a future-return label
+TARGET_END_NOT_BEFORE_ENTRY,PASS,True,0,0 target end dates before actual entry
+SIMPLE_RETURN_FLOOR,PASS,True,-0.9999999166666698,all simple-return labels >= -1.000001
+TARGET_OUTPUT_FEATURE_FORBIDDEN,PASS,True,0,0 target rows may be feature-allowed

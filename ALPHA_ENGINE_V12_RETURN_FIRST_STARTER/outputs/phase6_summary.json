@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "phase": 6,
+  "build": "V1_FIX1_PANDAS_LOC_2026-09-12",
+  "name": "PORTFOLIO_POLICY_TOURNAMENT",
+  "objective": "MAXIMIZE_ROBUST_PRE_OOS_NET_PORTFOLIO_RETURN_WITHOUT_TOUCHING_FINAL_OOS",
+  "phase5_input": {
+    "status": "PASS",
+    "model_readiness": "READY_FOR_PORTFOLIO_POLICY_RESEARCH"
+  },
+  "champion_models": {
+    "20": "DEV_IC_COMPOSITE",
+    "60": "HGB_RANK",
+    "120": "HGB_RANK",
+    "252": "HGB_RANK"
+  },
+  "policy_candidates": 240,
+  "qualified_policies": 34,
+  "research_champion": {
+    "ensemble": "H20",
+    "top_n": 15,
+    "policy": "WEEKLY",
+    "hold_floor": NaN,
+    "score_edge": NaN,
+    "oof_total_return_20bps": 3.3493475093276928,
+    "oof_cagr_20bps": 0.44412912612731703,
+    "worst_fold_cagr_20bps": 0.09658639602310304,
+    "worst_fold_max_drawdown_20bps": -0.3515742526355323,
+    "mean_annual_turnover_20bps": 8.047232072432477,
+    "total_trade_days_20bps": 209,
+    "max_execution_skip_rate": 0.0,
+    "oof_total_return_40bps": 3.077994899517246,
+    "oof_cagr_40bps": 0.4210575605328839,
+    "worst_fold_cagr_40bps": 0.07922708240140786,
+    "positive_each_oof_fold": true,
+    "stress_oof_positive": true,
+    "drawdown_ok": true,
+    "execution_ok": true,
+    "qualified": true,
+    "return_first_rank": 1.0
+  },
+  "validation_confirmed": true,
+  "policy_readiness": "READY_FOR_EXPECTED_EDGE_CALIBRATION",
+  "selection_contract": {
+    "policy_selection_period": "OOF_2019_2022_ONLY",
+    "validation_period": "2023_2024_CONFIRMATION_ONLY",
+    "final_oos_start": "2025-01-01",
+    "final_oos_used": false,
+    "primary_sort": [
+      "oof_cagr_20bps",
+      "worst_fold_cagr_20bps",
+      "oof_cagr_40bps",
+      "max_drawdown",
+      "turnover"
+    ]
+  },
+  "score_regeneration": {
+    "max_score_date": "2024-12-31",
+    "fidelity_min_correlation": 1.0
+  },
+  "gate": [
+    {
+      "test": "PHASE5_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 5 must PASS"
+    },
+    {
+      "test": "PHASE5_MODEL_READINESS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "READY_FOR_PORTFOLIO_POLICY_RESEARCH",
+      "rule": "Phase 5 must be ready for policy research"
+    },
+    {
+      "test": "FINAL_OOS_SCORE_FIREWALL",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "all Phase 6 score surfaces must be strictly before 2025-01-01"
+    },
+    {
+      "test": "CHAMPION_SCORE_REGENERATION_FIDELITY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": "all overlapping regenerated/stored champion scores correlation >= 0.9999"
+    },
+    {
+      "test": "POLICY_GRID_NONEMPTY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 240,
+      "rule": "> 0 policy candidates"
+    },
+    {
+      "test": "QUALIFIED_POLICY_EXISTS",
+      "status": "PASS",
+      "blocking": true,
+      "value": 34,
+      "rule": ">= 1 robust OOF policies"
+    },
+    {
+      "test": "VALIDATION_NOT_USED_FOR_POLICY_SELECTION",
+      "status": "PASS",
+      "blocking": true,
+      "value": false,
+      "rule": "policy rank is determined exclusively from OOF 2019-2022; validation is confirmation only"
+    },
+    {
+      "test": "POLICY_READINESS",
+      "status": "PASS",
+      "blocking": false,
+      "value": "READY_FOR_EXPECTED_EDGE_CALIBRATION",
+      "rule": "OOF champion must confirm positive net CAGR under base and stress costs in 2023-2024"
+    }
+  ],
+  "next_gate": "If policy_readiness is READY_FOR_EXPECTED_EDGE_CALIBRATION: Phase 7 calibrates expected incremental return + costs + uncertainty buffer, compares optimizer/reference/MILP alpha lineage, and only then prepares freeze. Final OOS remains untouched."
+}

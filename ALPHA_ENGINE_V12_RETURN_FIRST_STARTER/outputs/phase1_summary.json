@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "project": "ALPHA_ENGINE_V12_RETURN_FIRST",
+  "objective": "MAXIMIZE_OUT_OF_SAMPLE_NET_RETURN",
+  "research_mode": "RETURN_FIRST",
+  "total_files_seen": 2518,
+  "allowed_model_input_files": 2218,
+  "rejected_or_audit_only_files": 300,
+  "role_counts": {
+    "universe": 6,
+    "benchmarks": 2,
+    "market": 1839,
+    "fundamentals": 371
+  },
+  "clock": {
+    "evaluation_policy": "EACH_TRADING_SESSION",
+    "trade_policy": "EVENT_DRIVEN",
+    "fixed_rebalance": false,
+    "allow_multiple_trades_per_month": true,
+    "allow_zero_trades_per_month": true,
+    "principle": "Evaluate whenever information can change; trade only when expected net edge clears the trigger."
+  },
+  "next_gate": "Do not build alpha model until approved source schemas and PIT timing are reviewed."
+}

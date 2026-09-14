@@ -1,0 +1,6 @@
+test,status,value,rule
+MINIMUM_OOS_SESSIONS,PASS,420.0,>= 252 OOS sessions
+BASE_NET_CAGR_POSITIVE,PASS,0.16594048059869548,frozen portfolio net CAGR > 0 at base costs
+STRESS_NET_CAGR_POSITIVE,PASS,0.12130520687567126,frozen portfolio net CAGR > 0 at stress costs
+BASE_MAX_DRAWDOWN,PASS,-0.26644449561740735,max drawdown >= -0.50
+STRESS_MAX_DRAWDOWN,PASS,-0.2886677977912835,stress max drawdown >= -0.50

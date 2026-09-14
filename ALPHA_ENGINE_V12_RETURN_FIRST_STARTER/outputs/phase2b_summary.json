@@ -1,0 +1,77 @@
+{
+  "status": "FAIL",
+  "phase": "2B",
+  "name": "PRICE_SEMANTICS_AND_CORPORATE_ACTION_GATE",
+  "objective": "RESOLVE_RETURN_PRICE_SEMANTICS_BEFORE_TARGET_CONSTRUCTION",
+  "panel": {
+    "rows": 804159,
+    "tickers": 466,
+    "eligible_rows": 795185,
+    "eligible_tickers": 458,
+    "eligible_adj_close_rows": 246223,
+    "eligible_adj_close_coverage": 0.3096424102567327
+  },
+  "source_semantics": [
+    {
+      "source": "PRIMARY",
+      "overlap_rows": 3045,
+      "overlap_tickers": 1,
+      "raw_match_rate": 1.0,
+      "adjusted_match_rate": 0.0,
+      "median_rel_diff_to_raw": 0.0,
+      "median_rel_diff_to_adjusted": 0.17217219945283593,
+      "classification": "RAW_CLOSE_LIKE"
+    },
+    {
+      "source": "SECONDARY",
+      "overlap_rows": 3045,
+      "overlap_tickers": 1,
+      "raw_match_rate": 1.0,
+      "adjusted_match_rate": 0.0,
+      "median_rel_diff_to_raw": 0.0,
+      "median_rel_diff_to_adjusted": 0.17217219945283593,
+      "classification": "RAW_CLOSE_LIKE"
+    },
+    {
+      "source": "DELISTED_REFERENCE",
+      "overlap_rows": 560775,
+      "overlap_tickers": 285,
+      "raw_match_rate": NaN,
+      "adjusted_match_rate": NaN,
+      "median_rel_diff_to_raw": NaN,
+      "median_rel_diff_to_adjusted": NaN,
+      "classification": "HAS_RAW_AND_ADJUSTED"
+    }
+  ],
+  "corporate_action_diagnostics": {
+    "extreme_raw_return_rows": 1064,
+    "extreme_research_eligible_rows": 1048,
+    "extreme_rows_with_adjusted_pair": 1035,
+    "likely_corporate_action_rows_where_adjusted": 0
+  },
+  "adjusted_price_candidates": 289,
+  "nonblocked_adjusted_price_candidates": 287,
+  "tickers_requiring_adjusted_history": 183,
+  "gate": [
+    {
+      "test": "RESEARCH_ELIGIBLE_ADJUSTED_COVERAGE",
+      "status": "FAIL",
+      "value": 0.3096424102567327,
+      "rule": ">= 0.995"
+    },
+    {
+      "test": "DOMINANT_SOURCE_CLOSE_SEMANTICS",
+      "status": "FAIL",
+      "value": "RAW_CLOSE_LIKE",
+      "rule": "PRIMARY and SECONDARY must be proven ADJUSTED_CLOSE_LIKE if adj_close is not complete"
+    },
+    {
+      "test": "TICKERS_REQUIRING_ADJUSTED_HISTORY",
+      "status": "FAIL",
+      "value": 183,
+      "rule": "0 tickers below 99.5% adjusted-price coverage before target creation"
+    }
+  ],
+  "recommendation": "ENRICH_ADJUSTED_PRICE_HISTORY_BEFORE_RETURN_TARGETS",
+  "next_gate": "If PASS: build forward-return targets. If FAIL: enrich/repair corporate-action-adjusted price history first; do not train alpha."
+}

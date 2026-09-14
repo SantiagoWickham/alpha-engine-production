@@ -1,0 +1,9 @@
+test,status,value,rule
+UNIQUE_TICKER_DATE,PASS,0,0 duplicates
+POSITIVE_CLOSE,PASS,0,all close > 0
+UNIVERSE_ASOF_CAUSAL,PASS,0,universe_asof <= date
+FUNDAMENTAL_NEXT_SESSION_STRICT,PASS,0,available_date > filed
+NO_FUTURE_FUNDAMENTALS_IN_PANEL,PASS,0,all metric available dates <= panel date
+EXECUTION_AFTER_SIGNAL,PASS,0,earliest_execution_date > signal_date
+UNIVERSE_SNAPSHOT_AGE,PASS,0,snapshot age <= 45 days
+MARKET_SOURCE_CONFLICTS,PASS,0,relative spread <= 1e-06; precedence resolves conflicts

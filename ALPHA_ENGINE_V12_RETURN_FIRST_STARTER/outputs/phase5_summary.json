@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "phase": 5,
+  "build": "V1_FIX2_GATE_SEMANTICS_2026-09-12",
+  "name": "MODEL_ARCHITECTURE_TOURNAMENT",
+  "objective": "SELECT_PRE_OOS_PREDICTIVE_ARCHITECTURES_WITHOUT_TOUCHING_FINAL_OOS",
+  "phase4_input": {
+    "status": "PASS",
+    "readiness": "READY_FOR_MODEL_RESEARCH"
+  },
+  "feature_selection": {
+    "validation_fields_used": false,
+    "horizons": {
+      "20": {
+        "development_candidates": 10,
+        "post_correlation_prune": 9
+      },
+      "60": {
+        "development_candidates": 6,
+        "post_correlation_prune": 6
+      },
+      "120": {
+        "development_candidates": 27,
+        "post_correlation_prune": 24
+      },
+      "252": {
+        "development_candidates": 26,
+        "post_correlation_prune": 23
+      }
+    }
+  },
+  "walk_forward": {
+    "folds": [
+      "WF_2019_2020",
+      "WF_2021_2022"
+    ],
+    "purge_violations": 0
+  },
+  "champions": [
+    {
+      "horizon_sessions": 20,
+      "architecture": "DEV_IC_COMPOSITE",
+      "qualified": true,
+      "selection_score": 0.7800000000000001,
+      "cv_mean_ic": 0.0985306766794696,
+      "validation_ic": 0.11578863498343764,
+      "validation_top_vs_universe_net_spread": 0.014740719339706465,
+      "validation_winner_lift": 1.4082021375843807
+    },
+    {
+      "horizon_sessions": 60,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.76,
+      "cv_mean_ic": 0.11302322019349284,
+      "validation_ic": 0.17668994352722878,
+      "validation_top_vs_universe_net_spread": 0.036021791940311965,
+      "validation_winner_lift": 1.4075874680865357
+    },
+    {
+      "horizon_sessions": 120,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.89,
+      "cv_mean_ic": 0.1153540268159822,
+      "validation_ic": 0.2401656775836007,
+      "validation_top_vs_universe_net_spread": 0.08562149173978414,
+      "validation_winner_lift": 1.856245885823356
+    },
+    {
+      "horizon_sessions": 252,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.87,
+      "cv_mean_ic": 0.11827493807981204,
+      "validation_ic": 0.30958968182970187,
+      "validation_top_vs_universe_net_spread": 0.18472887665735352,
+      "validation_winner_lift": 2.1667023055127825
+    }
+  ],
+  "ready_horizons": 4,
+  "model_readiness": "READY_FOR_PORTFOLIO_POLICY_RESEARCH",
+  "final_oos_firewall": {
+    "final_oos_start": "2025-01-01",
+    "used_for_model_selection": false
+  },
+  "next_gate": "If model_readiness is READY_FOR_PORTFOLIO_POLICY_RESEARCH, Phase 6 may compare horizon ensembles and Monthly/Weekly/Daily/EventDriven decision policies using only purged OOF + pre-OOS validation scores. Final OOS remains untouched."
+}

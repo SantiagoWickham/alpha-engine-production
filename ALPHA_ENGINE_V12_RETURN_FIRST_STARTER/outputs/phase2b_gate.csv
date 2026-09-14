@@ -1,0 +1,4 @@
+test,status,value,rule
+RESEARCH_ELIGIBLE_ADJUSTED_COVERAGE,FAIL,0.3096424102567327,>= 0.995
+DOMINANT_SOURCE_CLOSE_SEMANTICS,FAIL,RAW_CLOSE_LIKE,PRIMARY and SECONDARY must be proven ADJUSTED_CLOSE_LIKE if adj_close is not complete
+TICKERS_REQUIRING_ADJUSTED_HISTORY,FAIL,183,0 tickers below 99.5% adjusted-price coverage before target creation

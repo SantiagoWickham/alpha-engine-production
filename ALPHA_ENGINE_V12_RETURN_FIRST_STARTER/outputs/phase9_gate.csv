@@ -1,0 +1,8 @@
+test,status,blocking,value,rule
+FINAL_FREEZE_FINGERPRINT,PASS,True,3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d,must equal reviewed Phase 8B final freeze
+FROZEN_SOURCE_MANIFEST,PASS,True,13,all Phase 8 frozen source hashes must match
+FROZEN_SCORER_FIDELITY,PASS,True,1.0,pre-OOS regenerated score correlation >= 0.999999
+FINAL_OOS_SCORE_BOUNDARY,PASS,True,2025-01-02,all newly generated scores are 2025+
+DETERMINISTIC_FINAL_OOS_REPLAY,PASS,True,"{'nav': '5dd60bd8758f52da5b6cb85e39005de989d6bb539651269599732e04165ed985', 'edges': '6437e4c342ee7278403dba451a6c09a937078a934a47b90ee6715e9bd66bf509', 'milp': '9231737b43d09a7d1715709ba2cad6e81217ea4a61882c32791e87352ed28dcb'}",two internal frozen OOS runs must produce identical NAV/edge/MILP hashes
+FINAL_OOS_MILP_SUCCESS,PASS,True,"{'calls': 22, 'success_rate': 1.0}","if MILP is called, success rate >= 1.000; zero calls is valid HOLD behavior"
+FINAL_OOS_EXECUTION_SKIP_RATE,PASS,True,0.0,<= 0.050

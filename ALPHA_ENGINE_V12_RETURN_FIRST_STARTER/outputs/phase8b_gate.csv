@@ -1,0 +1,8 @@
+test,status,blocking,value,rule
+PHASE8_LOCKED,PASS,True,LOCKED_PRE_OOS,Phase 8 must be locked
+FINAL_OOS_STILL_CLOSED,PASS,True,2024-12-31,Phase 8B may not load 2025+ scores
+MILP_EXECUTION_PARITY,PASS,True,1.0,MILP success rate >= 1.000
+EXECUTION_SKIP_RATE,PASS,True,0.0,execution skip rate <= 0.050
+BASE_VALIDATION_POSITIVE,PASS,True,0.4122889660235418,fixed execution-parity implementation must remain positive at base cost
+STRESS_VALIDATION_POSITIVE,PASS,True,0.3367852840848684,fixed execution-parity implementation must remain positive at stress cost
+DETERMINISTIC_EXECUTION_REPLAY,PASS,True,"{'nav': '910608286ae009806027192b6e090cb9a58d4dcb703f3ca5d6e8d4ff90e013ea', 'edges': 'f1d336de9bbbb5dbd3efe22c370503a885076449ba1a7711fb072445c52b5981', 'milp': '12793fb82093cbebdffbd05404a5c38d56a39346bb2650a9d23d1e9863a5a5b6'}",identical runs must produce identical NAV/edge/MILP hashes

@@ -1,0 +1,9 @@
+test,status,blocking,value,rule
+PHASE5_INPUT_PASS,PASS,True,PASS,Phase 5 must PASS
+PHASE5_MODEL_READINESS,PASS,True,READY_FOR_PORTFOLIO_POLICY_RESEARCH,Phase 5 must be ready for policy research
+FINAL_OOS_SCORE_FIREWALL,PASS,True,2024-12-31,all Phase 6 score surfaces must be strictly before 2025-01-01
+CHAMPION_SCORE_REGENERATION_FIDELITY,PASS,True,1.0,all overlapping regenerated/stored champion scores correlation >= 0.9999
+POLICY_GRID_NONEMPTY,PASS,True,240,> 0 policy candidates
+QUALIFIED_POLICY_EXISTS,PASS,True,34,>= 1 robust OOF policies
+VALIDATION_NOT_USED_FOR_POLICY_SELECTION,PASS,True,False,policy rank is determined exclusively from OOF 2019-2022; validation is confirmation only
+POLICY_READINESS,PASS,False,READY_FOR_EXPECTED_EDGE_CALIBRATION,OOF champion must confirm positive net CAGR under base and stress costs in 2023-2024

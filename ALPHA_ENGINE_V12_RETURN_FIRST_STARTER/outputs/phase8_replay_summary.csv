@@ -1,0 +1,2 @@
+period,role,days,total_return,cagr,max_drawdown,annual_turnover,trade_days,execution_skip_rate,edge_decisions,edge_trades,selection_evidence
+2019-01-02_to_2024-12-31,NON_EVALUATIVE_REFIT_REPLAY,1510,4.525089368080392,0.33010856387054677,-0.34416981263252355,0.3899268122811835,28,0.0,1509,27,False

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "phase": "2C",
+  "build": "FIX3_FLAT_2026-09-12",
+  "name": "RETURN_PRICE_ENRICHMENT",
+  "objective": "BUILD_VALIDATED_TARGET_ONLY_TOTAL_RETURN_PRICE_LAYER",
+  "required_tickers": 183,
+  "download": {
+    "success_or_cache": 183,
+    "failed": 0,
+    "downloaded_rows": 549543,
+    "downloaded_tickers": 183
+  },
+  "coverage": {
+    "eligible_rows": 795185,
+    "covered_rows": 795185,
+    "coverage": 1.0,
+    "eligible_tickers": 458
+  },
+  "provider_identity": {
+    "validated_tickers": 183,
+    "failing_tickers": 0,
+    "median_match_rate": 1.0,
+    "raw_like_tickers": 180,
+    "adjusted_like_tickers": 3
+  },
+  "local_adjusted_crosscheck": {
+    "status": "NO_OVERLAP",
+    "overlap_rows": 0,
+    "match_rate": NaN
+  },
+  "gate": [
+    {
+      "test": "DOWNLOAD_FAILURES",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "0 failed required tickers"
+    },
+    {
+      "test": "ELIGIBLE_TOTAL_RETURN_PRICE_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 0.995"
+    },
+    {
+      "test": "PER_TICKER_TOTAL_RETURN_PRICE_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "0 tickers below 0.995"
+    },
+    {
+      "test": "PROVIDER_SECURITY_IDENTITY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": "weighted best(raw, adjusted) close identity >= 0.980 and 0 failing tickers"
+    },
+    {
+      "test": "LOCAL_ADJUSTED_REFERENCE_CROSSCHECK",
+      "status": "NOT_APPLICABLE",
+      "blocking": false,
+      "value": NaN,
+      "rule": "diagnostic reference: blocking only when overlapping observations exist; disjoint universe => NOT_APPLICABLE"
+    }
+  ],
+  "target_price_policy": {
+    "column": "target_total_return_price",
+    "feature_allowed": false,
+    "purpose": "TARGET_CONSTRUCTION_ONLY",
+    "execution_price_column": "close",
+    "principle": "Never substitute target adjusted price for observable execution close."
+  },
+  "next_gate": "If PASS: Phase 3 may construct forward-return labels. If FAIL: repair only the failing mappings/coverage; do not train alpha."
+}

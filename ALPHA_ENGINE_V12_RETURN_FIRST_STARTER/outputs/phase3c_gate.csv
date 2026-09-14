@@ -1,0 +1,11 @@
+test,status,blocking,value,rule
+OVERLAY_COVERS_PHASE3B_UNRESOLVED_TICKERS,PASS,True,176,terminal overlays + research exclusions must equal Phase 3B unresolved_tickers=176
+UNIQUE_TICKERS,PASS,True,0,0 duplicate ticker overlays
+ALL_CLASSIFICATIONS_ELIGIBLE,PASS,True,0,all rows classification == CONFIRMED_OR_NEAR_DELISTING_METADATA_GAP
+MINIMUM_INDEPENDENT_EVIDENCE,PASS,True,0,every overlay has >= 3 independent date sources within 4 days
+HISTORICAL_NAME_IDENTITY,PASS,True,0,historical lifecycle name must match Alpha Vantage delisted name
+ALL_OVERLAYS_VALIDATED,PASS,True,0,0 unvalidated terminal overlays
+OVERLAY_TARGET_ONLY,PASS,True,0,all overlay rows are target-only
+OVERLAY_FEATURE_FORBIDDEN,PASS,True,0,0 overlay rows feature-allowed
+RESEARCH_EXCLUSIONS_FEATURE_FORBIDDEN,PASS,True,0,0 research exclusions feature-allowed
+RESEARCH_EXCLUSION_WINDOWS_VALID,PASS,True,0,all manual exclusion windows have valid start/end dates

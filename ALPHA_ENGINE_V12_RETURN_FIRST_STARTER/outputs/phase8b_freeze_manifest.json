@@ -1,0 +1,11 @@
+{
+  "build": "V1_EXECUTION_PARITY_2026-09-12",
+  "deterministic": true,
+  "execution_fingerprint_sha256": "226c77a7f9ad76b8b33fcc32d81e921a8cdd5e99391a5d28a72c94c3b88a3e08",
+  "final_freeze_fingerprint_sha256": "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d",
+  "final_oos_start": "2025-01-01",
+  "final_oos_used": false,
+  "freeze_status": "LOCKED_PRE_OOS_EXECUTION_PARITY",
+  "phase8_freeze_fingerprint_sha256": "b631db0bcb500ea9928dcea1d457a34de74619bbb07fff637720e62df44d863b",
+  "warning": "This supersedes Phase 8 for final OOS execution identity. Do not change model, policy, membership logic, optimizer or MILP before Phase 9."
+}

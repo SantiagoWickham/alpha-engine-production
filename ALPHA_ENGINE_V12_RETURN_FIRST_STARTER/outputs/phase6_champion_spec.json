@@ -1,0 +1,38 @@
+{
+  "build": "V1_FIX1_PANDAS_LOC_2026-09-12",
+  "selection_contract": "RETURN_FIRST; policy hyperparameters selected only on purged OOF 2019-2022; 2023-2024 confirmation only; final OOS 2025+ untouched",
+  "research_champion": {
+    "ensemble": "H20",
+    "top_n": 15,
+    "policy": "WEEKLY",
+    "hold_floor": NaN,
+    "score_edge": NaN,
+    "oof_total_return_20bps": 3.3493475093276928,
+    "oof_cagr_20bps": 0.44412912612731703,
+    "worst_fold_cagr_20bps": 0.09658639602310304,
+    "worst_fold_max_drawdown_20bps": -0.3515742526355323,
+    "mean_annual_turnover_20bps": 8.047232072432477,
+    "total_trade_days_20bps": 209,
+    "max_execution_skip_rate": 0.0,
+    "oof_total_return_40bps": 3.077994899517246,
+    "oof_cagr_40bps": 0.4210575605328839,
+    "worst_fold_cagr_40bps": 0.07922708240140786,
+    "positive_each_oof_fold": true,
+    "stress_oof_positive": true,
+    "drawdown_ok": true,
+    "execution_ok": true,
+    "qualified": true,
+    "return_first_rank": 1.0
+  },
+  "validation_confirmed": true,
+  "readiness": "READY_FOR_EXPECTED_EDGE_CALIBRATION",
+  "champion_models": {
+    "20": "DEV_IC_COMPOSITE",
+    "60": "HGB_RANK",
+    "120": "HGB_RANK",
+    "252": "HGB_RANK"
+  },
+  "base_round_trip_cost_bps": 20.0,
+  "stress_round_trip_cost_bps": 40.0,
+  "warning": "This is a pre-OOS research policy, not the final frozen execution policy. Phase 7 must calibrate expected incremental return, uncertainty buffer and executable net-edge before freeze."
+}

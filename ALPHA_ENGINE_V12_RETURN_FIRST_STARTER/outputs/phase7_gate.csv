@@ -1,0 +1,8 @@
+test,status,blocking,value,rule
+PHASE6_INPUT_PASS,PASS,True,PASS,Phase 6 must PASS
+PHASE6_EDGE_READINESS,PASS,True,READY_FOR_EXPECTED_EDGE_CALIBRATION,Phase 6 must be ready for expected-edge calibration
+FINAL_OOS_SCORE_FIREWALL,PASS,True,2024-12-31,no Phase 7 score may reach final OOS
+TEMPORAL_CALIBRATION_SEPARATION,PASS,True,2019-2020 -> calibrate; 2021-2022 -> select; 2023-2024 -> confirm,expected-return calibration and edge-policy selection use disjoint chronological periods
+QUALIFIED_EDGE_POLICY_EXISTS,PASS,True,20,>=1 qualified net-edge policy
+VALIDATION_EDGE_CONFIRMATION,PASS,False,True,selected edge policy must remain positive under base and stress costs in 2023-2024
+ALPHA_LINEAGE_AUDIT,PASS,True,H0_OPTIMIZER_PRESERVES_ALPHA,same-snapshot alpha -> reference -> theoretical -> optimizer -> MILP must preserve alpha

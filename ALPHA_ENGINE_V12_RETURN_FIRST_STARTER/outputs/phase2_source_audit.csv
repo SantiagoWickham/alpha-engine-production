@@ -1,0 +1,11 @@
+source_key,path,exists,size_bytes
+market_primary,data/cache/production_market_ohlcv.parquet,True,2626718
+market_secondary,data/cache/market_ohlcv_extended.parquet,True,2456344
+delisted_market_dir,data/cache/delisted_prices_yahoo,True,9828152
+benchmark_daily,data/cache/cadence_spy_daily.parquet,True,49214
+universe_monthly,data/universe/historical_universe_monthly.parquet,True,7265043
+listing_lifecycle,data/universe/listing_lifecycle.csv,True,1994685
+historical_sec_mapping,data/universe/historical_lifecycle_sec_mapping.csv,True,3446480
+sec_facts_long,data/fundamentals/sec_companyfacts_long.parquet,True,2217468
+sec_monthly_crosscheck,data/fundamentals/sec_monthly_point_in_time_facts.parquet,True,847850
+sec_universe_mapping,data/fundamentals/sec_universe_mapping.csv,True,21477

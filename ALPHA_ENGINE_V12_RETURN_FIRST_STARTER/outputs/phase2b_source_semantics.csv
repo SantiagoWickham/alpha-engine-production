@@ -1,0 +1,4 @@
+source,overlap_rows,overlap_tickers,raw_match_rate,adjusted_match_rate,median_rel_diff_to_raw,median_rel_diff_to_adjusted,classification
+PRIMARY,3045,1,1.0,0.0,0.0,0.17217219945283593,RAW_CLOSE_LIKE
+SECONDARY,3045,1,1.0,0.0,0.0,0.17217219945283593,RAW_CLOSE_LIKE
+DELISTED_REFERENCE,560775,285,,,,,HAS_RAW_AND_ADJUSTED

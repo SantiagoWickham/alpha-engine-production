@@ -1,0 +1,57 @@
+{
+  "build": "V1_PRE_FREEZE_LOCK_2026-09-12",
+  "final_lineage": {
+    "median_alpha_capture": 1.009019138756,
+    "median_kendall_alpha_milp": 0.914790743975,
+    "median_l1_optimizer_milp": 0.098997758942,
+    "median_spearman_alpha_milp": 0.975257822091,
+    "median_top10_capture": 1.0,
+    "milp_success_rate": 1.0,
+    "snapshots": 24
+  },
+  "final_oos_firewall": {
+    "final_oos_start": "2025-01-01",
+    "used": false
+  },
+  "final_refit": {
+    "architecture": "DEV_IC_COMPOSITE",
+    "direction_sign_agreement": 1.0,
+    "fixed_features": 9,
+    "horizon_sessions": 20,
+    "latest_label_end_date": "2024-12-31",
+    "pre_oos_mature_labels": 634803,
+    "refit_feature_first_date": "2015-01-02",
+    "refit_feature_last_date": "2024-12-31"
+  },
+  "freeze": {
+    "freeze_fingerprint_sha256": "b631db0bcb500ea9928dcea1d457a34de74619bbb07fff637720e62df44d863b",
+    "freeze_status": "LOCKED_PRE_OOS",
+    "model_fingerprint_sha256": "4b74e1665b6428b0a767142c80d20f04639472d06a4c19426e28ecb5e6cc0e2b",
+    "source_manifest_fingerprint_sha256": "e818886d56f12d9eead21a0b00b8575414493f87111109ec3f6b26455f4242fb"
+  },
+  "frozen_policy": {
+    "base_round_trip_cost_bps": 20.0,
+    "entry_floor": 0.8,
+    "max_replacements_per_session": 1,
+    "minimum_extra_edge_bps": 50.0,
+    "stress_round_trip_cost_bps": 40.0,
+    "top_n": 15,
+    "uncertainty_z": 0.5
+  },
+  "name": "PRE_FREEZE_REFIT_REPLAY_AND_FINGERPRINT",
+  "next_gate": "If READY_TO_OPEN_FINAL_OOS_ONCE: Phase 9 loads the frozen Phase 8 spec/fingerprint, opens 2025+ exactly once, persists ex-ante decisions and realized outcomes, and must not tune anything afterward.",
+  "objective": "REFIT_ONLY_FIXED_COMPONENTS_ON_ALL_MATURE_PRE_OOS_DATA_THEN_LOCK_A_DETERMINISTIC_FREEZE_ARTIFACT_WITHOUT_OPENING_FINAL_OOS",
+  "phase": 8,
+  "phase7_input": {
+    "readiness": "READY_FOR_PRE_FREEZE_REPLAY",
+    "status": "PASS"
+  },
+  "pre_freeze_replay": {
+    "deterministic": true,
+    "execution_skip_rate": 0.0,
+    "role": "NON_EVALUATIVE_REFIT_REPLAY",
+    "selection_evidence": false
+  },
+  "readiness": "READY_TO_OPEN_FINAL_OOS_ONCE",
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+test,status,blocking,value,rule
+PHASE4_INPUT_PASS,PASS,True,PASS,Phase 4 must be PASS
+PHASE4_READINESS,PASS,True,READY_FOR_MODEL_RESEARCH,Phase 4 must be READY_FOR_MODEL_RESEARCH
+DEVELOPMENT_ONLY_FEATURE_SELECTION,PASS,True,0,"feature pool uses only development coverage, IC and FDR; validation fields are ignored"
+FORBIDDEN_FEATURES,PASS,True,0,0 target/adjusted-level/future columns in model feature pool
+FEATURE_BREADTH_DIAGNOSTIC,WARN,False,1,diagnostic only: count horizons with fewer than 8 post-prune features; model qualification remains the economic gate
+PURGED_WALK_FORWARD,PASS,True,0,0 train/test or train/validation target_end_date boundary violations
+FINAL_OOS_SCORE_FIREWALL,PASS,True,2024-12-26,all model-selection scores must be before 2025-01-01
+FINAL_OOS_USED_FOR_SELECTION,PASS,True,False,final OOS labels/features are not loaded into model selection
+READY_HORIZONS,PASS,True,4,>= 2 horizons with qualified champion
+MODEL_READINESS,PASS,True,READY_FOR_PORTFOLIO_POLICY_RESEARCH,Phase 5 must produce sufficient qualified champions before Phase 6

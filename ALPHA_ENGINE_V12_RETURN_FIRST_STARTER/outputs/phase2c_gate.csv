@@ -1,0 +1,6 @@
+test,status,blocking,value,rule
+DOWNLOAD_FAILURES,PASS,True,0.0,0 failed required tickers
+ELIGIBLE_TOTAL_RETURN_PRICE_COVERAGE,PASS,True,1.0,>= 0.995
+PER_TICKER_TOTAL_RETURN_PRICE_COVERAGE,PASS,True,0.0,0 tickers below 0.995
+PROVIDER_SECURITY_IDENTITY,PASS,True,1.0,"weighted best(raw, adjusted) close identity >= 0.980 and 0 failing tickers"
+LOCAL_ADJUSTED_REFERENCE_CROSSCHECK,NOT_APPLICABLE,False,,diagnostic reference: blocking only when overlapping observations exist; disjoint universe => NOT_APPLICABLE

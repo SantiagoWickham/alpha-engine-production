@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "phase": 4,
+  "build": "V1_PURGED_PRE_OOS_2026-09-12",
+  "name": "LEAKAGE_FREE_FEATURE_LIBRARY_AND_PREDICTIVE_RESEARCH",
+  "objective": "BUILD_CAUSAL_FEATURES_AND_MEASURE_PRE_OOS_PREDICTIVE_EVIDENCE",
+  "phase3_input": {
+    "status": "PASS",
+    "build": "V3_TERMINAL_OVERLAY_2026-09-12"
+  },
+  "feature_library": {
+    "rows": 795161,
+    "tickers": 457,
+    "first_date": "2013-12-23",
+    "last_date": "2026-09-04",
+    "feature_count": 85
+  },
+  "feature_safe_return_price": {
+    "rows": 795161,
+    "covered_rows": 795161,
+    "coverage": 1.0,
+    "tickers": 457,
+    "covered_tickers": 457,
+    "panel_adj_rows": 246199,
+    "cache_adj_rows": 548962
+  },
+  "research_exclusions_removed_rows": 24,
+  "fundamental_future_availability_violations": 0,
+  "partitions": {
+    "development_start": "2015-01-02",
+    "validation_start": "2023-01-03",
+    "final_oos_start": "2025-01-01"
+  },
+  "research_horizons": [
+    1,
+    5,
+    10,
+    20,
+    40,
+    60,
+    120,
+    252
+  ],
+  "predictive_evidence": {
+    "validated_features": 56,
+    "validated_families": 6,
+    "watch_features": 9,
+    "readiness": "READY_FOR_MODEL_RESEARCH"
+  },
+  "feature_firewall": {
+    "target_total_return_price_used": false,
+    "phase3_target_columns_written_to_feature_library": false,
+    "direct_adjusted_price_level_written": false,
+    "feature_allowed": true
+  },
+  "final_oos_firewall": {
+    "final_oos_start": "2025-01-01",
+    "used_for_predictive_research": false,
+    "purged_by_target_end_date": true
+  },
+  "next_gate": "If status PASS, inspect candidate-feature stability. Proceed to model architecture research only if predictive_evidence.readiness is READY_FOR_MODEL_RESEARCH or after explicit review of REVIEW_BEFORE_MODEL_RESEARCH; never use final OOS for model selection."
+}

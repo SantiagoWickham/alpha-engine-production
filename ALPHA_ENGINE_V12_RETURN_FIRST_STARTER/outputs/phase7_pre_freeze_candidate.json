@@ -1,0 +1,19 @@
+{
+  "build": "V1_EDGE_LINEAGE_2026-09-12",
+  "policy_type": "EVENT_DRIVEN_EXPECTED_NET_EDGE",
+  "alpha_surface": "H20 / Phase 5 DEV_IC_COMPOSITE",
+  "top_n": 15,
+  "entry_floor": 0.8,
+  "uncertainty_z": 0.5,
+  "minimum_extra_edge_bps": 50.0,
+  "max_replacements_per_session": 1,
+  "decision_rule": "trade only when expected_incremental_return - estimated_total_cost - uncertainty_buffer > 0",
+  "base_round_trip_cost_bps": 20.0,
+  "stress_round_trip_cost_bps": 40.0,
+  "selection_period": "2021-01-04 to 2023-01-03 using calibration fitted only on 2019-2020",
+  "validation_period": "2023-01-03 to 2025-01-01 confirmation only",
+  "final_oos_start": "2025-01-01",
+  "final_oos_used": false,
+  "lineage_hypothesis_conclusion": "H0_OPTIMIZER_PRESERVES_ALPHA",
+  "warning": "Pre-freeze candidate only. Do not refit/tune on 2025+."
+}

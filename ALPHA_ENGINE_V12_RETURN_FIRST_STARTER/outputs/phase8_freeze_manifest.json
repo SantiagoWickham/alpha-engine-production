@@ -1,0 +1,87 @@
+{
+  "build": "V1_PRE_FREEZE_LOCK_2026-09-12",
+  "final_oos_start": "2025-01-01",
+  "final_oos_used": false,
+  "freeze_fingerprint_sha256": "b631db0bcb500ea9928dcea1d457a34de74619bbb07fff637720e62df44d863b",
+  "freeze_status": "LOCKED_PRE_OOS",
+  "model_fingerprint_sha256": "4b74e1665b6428b0a767142c80d20f04639472d06a4c19426e28ecb5e6cc0e2b",
+  "replay_determinism": {
+    "edge_hash_run1": "acc1a181a287b9abf87c55314741c53a6bedc720c7517e35395991568685af69",
+    "edge_hash_run2": "acc1a181a287b9abf87c55314741c53a6bedc720c7517e35395991568685af69",
+    "identical": true,
+    "nav_hash_run1": "22d377deffa2695651f02855e82a0bbb30aacb8d61f28aa932b83ff677c0e62b",
+    "nav_hash_run2": "22d377deffa2695651f02855e82a0bbb30aacb8d61f28aa932b83ff677c0e62b",
+    "performance_metrics_are_not_selection_evidence": true,
+    "replay_role": "NON_EVALUATIVE_REFIT_REPLAY"
+  },
+  "replay_role": "NON_EVALUATIVE_REFIT_REPLAY",
+  "source_manifest": [
+    {
+      "bytes": 4055,
+      "path": "outputs/phase7_summary.json",
+      "sha256": "b06c004e0cf03b51ac0308b5cb704c20eeadfc173142308170d6b96c3263c608"
+    },
+    {
+      "bytes": 847,
+      "path": "outputs/phase7_pre_freeze_candidate.json",
+      "sha256": "de67b5edb9be9de7142f28d28e5caa35ff69b11fd0907cfd76df2d0806d30ae9"
+    },
+    {
+      "bytes": 8808,
+      "path": "outputs/phase5_feature_pool.csv",
+      "sha256": "d6c5204cf37f89af70d86ec9674877a231a0b1f2260095e8a7974779dfcfdfc9"
+    },
+    {
+      "bytes": 166158374,
+      "path": "outputs/phase4_feature_library.parquet",
+      "sha256": "fd9ed28b5826c42c5a9c4df21dcde7764cb62e1ba29ad9d151b366801d85300e"
+    },
+    {
+      "bytes": 216235583,
+      "path": "outputs/phase3_return_targets.parquet",
+      "sha256": "999e1c3a165bb1a7d3e33f0680587f099fd53c4fc7fe30f0019c7e1d9e8bd35d"
+    },
+    {
+      "bytes": 8056491,
+      "path": "outputs/phase2c_return_price_layer.parquet",
+      "sha256": "d02736c7993270e1a1c9a5ae58357540200b85167132b9396cb960ad56426e13"
+    },
+    {
+      "bytes": 47648,
+      "path": "outputs/phase3c_terminal_outcome_overlay.csv",
+      "sha256": "45042afae6654f584679121480543f697ea84b0b05e1246e2ea8df715e861b05"
+    },
+    {
+      "bytes": 1672,
+      "path": "config/phase5.toml",
+      "sha256": "c39241f7b700a58812c2f88a8963c17493c8eef1fcba0a5616fe2d1c51c96c1f"
+    },
+    {
+      "bytes": 1348,
+      "path": "config/phase7.toml",
+      "sha256": "524f9b93ae8b720652100b1db82e5c02611ca013c756920bafe4d4c2fc6f6e30"
+    },
+    {
+      "bytes": 1188,
+      "path": "config/phase8.toml",
+      "sha256": "04ef02f2515bdfa7ed2f8e91365cb622b6fb466b6e6e84cb6d5ccd20a4842b11"
+    },
+    {
+      "bytes": 33328,
+      "path": "src/alpha_engine_v12/model_tournament.py",
+      "sha256": "76d1bcb14afbdd432f355c973348b4479643e2a3b74e823227af7965669ed1df"
+    },
+    {
+      "bytes": 43129,
+      "path": "src/alpha_engine_v12/edge_lineage.py",
+      "sha256": "4ca0f91ea74db2069bd7c6ff5d365a7c59058702f1cee5fcd9d87dbe4bacde43"
+    },
+    {
+      "bytes": 31576,
+      "path": "src/alpha_engine_v12/pre_freeze.py",
+      "sha256": "440436884eb102f524fdf709b50b993534d9252579a6c6ffd50b4aa22e37eed4"
+    }
+  ],
+  "source_manifest_fingerprint_sha256": "e818886d56f12d9eead21a0b00b8575414493f87111109ec3f6b26455f4242fb",
+  "warning": "After PASS, do not change feature set, feature weights, calibration, policy, costs, optimizer or MILP before the one-time final OOS run."
+}

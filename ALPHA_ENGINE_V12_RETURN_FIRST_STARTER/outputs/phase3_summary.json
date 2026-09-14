@@ -1,0 +1,490 @@
+{
+  "status": "PASS",
+  "phase": 3,
+  "build": "V3_TERMINAL_OVERLAY_2026-09-12",
+  "name": "RETURN_TARGET_ENGINE",
+  "objective": "DEFINE_CAUSAL_MULTI_HORIZON_RETURN_TARGETS_BEFORE_ALPHA_RESEARCH",
+  "entry_anchor": "NEXT_TRADABLE_SESSION_CLOSE",
+  "horizon_semantics": "TICKER_OBSERVED_TRADING_SESSIONS",
+  "horizons_trading_sessions": [
+    1,
+    5,
+    10,
+    20,
+    40,
+    60,
+    120,
+    252
+  ],
+  "targets": {
+    "rows": 795161,
+    "tickers": 457,
+    "first_signal_date": "2013-12-23",
+    "last_signal_date": "2026-09-04",
+    "rows_with_requested_execution_date": 794978,
+    "rows_with_actual_entry_date": 794830,
+    "rows_with_entry_target_price": 794830,
+    "phase3c_excluded_signal_rows": 24
+  },
+  "horizon_diagnostics": {
+    "1": {
+      "resolved_rows": 794637,
+      "label_rows": 794637,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 794490,
+      "terminal_delisting_rows": 147,
+      "repaired_terminal_delisting_rows": 72,
+      "right_censored_rows": 193,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.0014622306680809652,
+      "median_return": 0.0,
+      "q95": 0.0380241794227887,
+      "q99": 0.09333893517979872
+    },
+    "5": {
+      "resolved_rows": 793865,
+      "label_rows": 793865,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 792813,
+      "terminal_delisting_rows": 1052,
+      "repaired_terminal_delisting_rows": 686,
+      "right_censored_rows": 965,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.005318469649285329,
+      "median_return": 0.0017979451001175484,
+      "q95": 0.08933789926533361,
+      "q99": 0.2123850046587616
+    },
+    "10": {
+      "resolved_rows": 792900,
+      "label_rows": 792900,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 790719,
+      "terminal_delisting_rows": 2181,
+      "repaired_terminal_delisting_rows": 1466,
+      "right_censored_rows": 1930,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.008396364849229995,
+      "median_return": 0.003875965410453208,
+      "q95": 0.12939639876173106,
+      "q99": 0.3012348381033881
+    },
+    "20": {
+      "resolved_rows": 790970,
+      "label_rows": 790970,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 786579,
+      "terminal_delisting_rows": 4391,
+      "repaired_terminal_delisting_rows": 2994,
+      "right_censored_rows": 3860,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.014984435619171661,
+      "median_return": 0.007703689463570695,
+      "q95": 0.18857155304534715,
+      "q99": 0.4411111668725204
+    },
+    "40": {
+      "resolved_rows": 787110,
+      "label_rows": 787110,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 778471,
+      "terminal_delisting_rows": 8639,
+      "repaired_terminal_delisting_rows": 5922,
+      "right_censored_rows": 7720,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.028050346537095518,
+      "median_return": 0.01554645481209771,
+      "q95": 0.2779126320194871,
+      "q99": 0.6470588548390256
+    },
+    "60": {
+      "resolved_rows": 783263,
+      "label_rows": 783263,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 770461,
+      "terminal_delisting_rows": 12802,
+      "repaired_terminal_delisting_rows": 8765,
+      "right_censored_rows": 11567,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.04181105769821132,
+      "median_return": 0.02424247372139554,
+      "q95": 0.3484848101714859,
+      "q99": 0.8124804760170217
+    },
+    "120": {
+      "resolved_rows": 771743,
+      "label_rows": 771743,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 746956,
+      "terminal_delisting_rows": 24787,
+      "repaired_terminal_delisting_rows": 16790,
+      "right_censored_rows": 23087,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.08562686250408305,
+      "median_return": 0.04594153750352237,
+      "q95": 0.536955456413277,
+      "q99": 1.2300000190734863
+    },
+    "252": {
+      "resolved_rows": 746417,
+      "label_rows": 746417,
+      "resolved_label_coverage": 1.0,
+      "full_horizon_rows": 696729,
+      "terminal_delisting_rows": 49688,
+      "repaired_terminal_delisting_rows": 33004,
+      "right_censored_rows": 48413,
+      "unresolved_termination_rows": 0,
+      "no_entry_rows": 331,
+      "mean_return": 0.19344219510320151,
+      "median_return": 0.09711935649679515,
+      "q95": 0.9251836222962707,
+      "q99": 2.243895984284917
+    }
+  },
+  "gate": [
+    {
+      "test": "PHASE2C_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 2C status must be PASS"
+    },
+    {
+      "test": "PHASE3C_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 3C terminal repair must be PASS"
+    },
+    {
+      "test": "TERMINAL_OVERLAY_FEATURE_FORBIDDEN",
+      "status": "PASS",
+      "blocking": true,
+      "value": true,
+      "rule": "Phase 3C delisting overlay must remain target-only and feature-forbidden"
+    },
+    {
+      "test": "TERMINAL_OVERLAY_TICKER_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 validated Phase 3C terminal-overlay tickers unused in rebuilt targets"
+    },
+    {
+      "test": "RESEARCH_EXCLUSION_LEAKAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 target rows may remain inside Phase 3C non-equity exclusion windows"
+    },
+    {
+      "test": "RESEARCH_EXCLUSION_ROWS_APPLIED",
+      "status": "PASS",
+      "blocking": true,
+      "value": 24,
+      "rule": "at least one signal row must be removed when Phase 3C declares research exclusions"
+    },
+    {
+      "test": "TARGET_PRICE_FEATURE_FORBIDDEN",
+      "status": "PASS",
+      "blocking": true,
+      "value": true,
+      "rule": "target_total_return_price must remain TARGET_CONSTRUCTION_ONLY"
+    },
+    {
+      "test": "UNIQUE_SIGNAL_TICKER",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 duplicate signal_date,ticker rows"
+    },
+    {
+      "test": "ENTRY_AFTER_SIGNAL",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "actual entry_date must be strictly after signal_date"
+    },
+    {
+      "test": "ENTRY_PRICE_COVERAGE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.9998138313261499,
+      "rule": ">= 0.995 among signals with a requested execution date"
+    },
+    {
+      "test": "ENTRY_DELAY_LIMIT",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 actual entries delayed by more than 7 calendar days"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_1D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 1-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_1D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_1D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_1D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_5D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 5-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_5D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_5D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_5D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_10D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 10-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_10D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_10D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_10D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_20D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 20-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_20D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_20D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_20D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_40D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 40-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_40D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_40D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_40D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_60D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 60-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_60D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_60D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_60D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_120D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 120-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_120D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_120D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_120D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "RESOLVED_LABEL_COVERAGE_252D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 1.0,
+      "rule": ">= 1.000 among resolved 252-session outcomes"
+    },
+    {
+      "test": "UNRESOLVED_TERMINATION_252D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0.0,
+      "rule": "<= 0.000000; unknown early history termination is not silently censored"
+    },
+    {
+      "test": "CENSORED_HAS_NO_LABEL_252D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 right-censored rows may carry a future-return label"
+    },
+    {
+      "test": "UNRESOLVED_HAS_NO_LABEL_252D",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unresolved terminations may carry a future-return label"
+    },
+    {
+      "test": "TARGET_END_NOT_BEFORE_ENTRY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 target end dates before actual entry"
+    },
+    {
+      "test": "SIMPLE_RETURN_FLOOR",
+      "status": "PASS",
+      "blocking": true,
+      "value": -0.9999999166666698,
+      "rule": "all simple-return labels >= -1.000001"
+    },
+    {
+      "test": "TARGET_OUTPUT_FEATURE_FORBIDDEN",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 target rows may be feature-allowed"
+    }
+  ],
+  "terminal_repair": {
+    "phase3c_status": "PASS",
+    "overlay_path": "outputs/phase3c_terminal_outcome_overlay.csv",
+    "validated_terminal_overlays": 175,
+    "research_exclusions": 1,
+    "research_exclusions_path": "outputs/phase3c_research_exclusions.csv",
+    "feature_allowed": false
+  },
+  "target_firewall": {
+    "feature_allowed": false,
+    "target_price_column": "target_total_return_price",
+    "targets_file": "outputs/phase3_return_targets.parquet",
+    "principle": "Future labels and terminal-outcome metadata remain physically separate from the PIT feature panel."
+  },
+  "next_gate": "If PASS: analyze target stability/distributions and build a leakage-free feature library before fitting any alpha model."
+}

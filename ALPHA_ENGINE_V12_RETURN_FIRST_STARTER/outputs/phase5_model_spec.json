@@ -1,0 +1,80 @@
+{
+  "build": "V1_FIX2_GATE_SEMANTICS_2026-09-12",
+  "target": "cross-sectional future-return rank, plus direct top-decile winner probability architecture",
+  "feature_transform": "same-date cross-sectional percentile rank; no future data; missing values preserved except ridge median-rank imputation",
+  "feature_selection_contract": "DEVELOPMENT ONLY: coverage/FDR/IC; Phase 4 validation labels are not used to define the Phase 5 pool",
+  "research_horizons": [
+    20,
+    60,
+    120,
+    252
+  ],
+  "architectures": [
+    "DEV_IC_COMPOSITE",
+    "RIDGE_RANK",
+    "HGB_RANK",
+    "HGB_WINNER",
+    "BLEND_RIDGE_HGB"
+  ],
+  "champions": [
+    {
+      "horizon_sessions": 20,
+      "architecture": "DEV_IC_COMPOSITE",
+      "qualified": true,
+      "selection_score": 0.7800000000000001,
+      "cv_mean_ic": 0.0985306766794696,
+      "validation_ic": 0.11578863498343764,
+      "validation_top_vs_universe_net_spread": 0.014740719339706465,
+      "validation_winner_lift": 1.4082021375843807
+    },
+    {
+      "horizon_sessions": 60,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.76,
+      "cv_mean_ic": 0.11302322019349284,
+      "validation_ic": 0.17668994352722878,
+      "validation_top_vs_universe_net_spread": 0.036021791940311965,
+      "validation_winner_lift": 1.4075874680865357
+    },
+    {
+      "horizon_sessions": 120,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.89,
+      "cv_mean_ic": 0.1153540268159822,
+      "validation_ic": 0.2401656775836007,
+      "validation_top_vs_universe_net_spread": 0.08562149173978414,
+      "validation_winner_lift": 1.856245885823356
+    },
+    {
+      "horizon_sessions": 252,
+      "architecture": "HGB_RANK",
+      "qualified": true,
+      "selection_score": 0.87,
+      "cv_mean_ic": 0.11827493807981204,
+      "validation_ic": 0.30958968182970187,
+      "validation_top_vs_universe_net_spread": 0.18472887665735352,
+      "validation_winner_lift": 2.1667023055127825
+    }
+  ],
+  "partitions": {
+    "development_start": "2015-01-02",
+    "validation_start": "2023-01-03",
+    "final_oos_start": "2025-01-01"
+  },
+  "cv_folds": [
+    {
+      "name": "WF_2019_2020",
+      "test_start": "2019-01-02",
+      "test_end": "2021-01-01"
+    },
+    {
+      "name": "WF_2021_2022",
+      "test_start": "2021-01-04",
+      "test_end": "2023-01-03"
+    }
+  ],
+  "round_trip_cost_bps_proxy": 20.0,
+  "warning": "Phase 5 chooses predictive architecture only. It does not choose rebalance cadence, event thresholds, portfolio weights, execution rules or final OOS performance."
+}

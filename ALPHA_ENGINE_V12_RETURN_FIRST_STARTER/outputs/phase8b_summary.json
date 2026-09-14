@@ -1,0 +1,68 @@
+{
+  "build": "V1_EXECUTION_PARITY_2026-09-12",
+  "correction_reason": "Phase 8 lineage audited MILP weights but its NAV replay did not apply MILP weights. Phase 8B enforces research/live execution parity before final OOS is opened.",
+  "execution_parity": {
+    "deterministic": true,
+    "hashes": {
+      "edges": "f1d336de9bbbb5dbd3efe22c370503a885076449ba1a7711fb072445c52b5981",
+      "milp": "12793fb82093cbebdffbd05404a5c38d56a39346bb2650a9d23d1e9863a5a5b6",
+      "nav": "910608286ae009806027192b6e090cb9a58d4dcb703f3ca5d6e8d4ff90e013ea"
+    },
+    "milp_success_rate": 1.0
+  },
+  "final_oos_firewall": {
+    "final_oos_start": "2025-01-01",
+    "used": false
+  },
+  "freeze": {
+    "build": "V1_EXECUTION_PARITY_2026-09-12",
+    "deterministic": true,
+    "execution_fingerprint_sha256": "226c77a7f9ad76b8b33fcc32d81e921a8cdd5e99391a5d28a72c94c3b88a3e08",
+    "final_freeze_fingerprint_sha256": "3cd792488b41f5954b6a7cf944e05cff582fe94fc30d187c42e6935a1c5e3e1d",
+    "final_oos_start": "2025-01-01",
+    "final_oos_used": false,
+    "freeze_status": "LOCKED_PRE_OOS_EXECUTION_PARITY",
+    "phase8_freeze_fingerprint_sha256": "b631db0bcb500ea9928dcea1d457a34de74619bbb07fff637720e62df44d863b",
+    "warning": "This supersedes Phase 8 for final OOS execution identity. Do not change model, policy, membership logic, optimizer or MILP before Phase 9."
+  },
+  "name": "PRE_OOS_EXECUTION_PARITY_LOCK",
+  "next_gate": "If READY_TO_OPEN_FINAL_OOS_ONCE: Phase 9 must use phase8b final freeze identity and open 2025+ once with no tuning.",
+  "objective": "MAKE_THE_FROZEN_NAV_ENGINE_USE_THE_SAME_NET_EDGE_MEMBERSHIP_AND_MILP_WEIGHTING_THAT_WILL_BE_USED_LIVE_BEFORE_OPENING_FINAL_OOS",
+  "parameters_reselected": false,
+  "phase": "8B",
+  "phase8_freeze_status": "LOCKED_PRE_OOS",
+  "readiness": "READY_TO_OPEN_FINAL_OOS_ONCE",
+  "status": "PASS",
+  "validation_base": {
+    "annual_turnover": 1.688611513727,
+    "cagr": 0.412288966024,
+    "days": 502,
+    "edge_decisions": 501,
+    "edge_trades": 12,
+    "execution_skip_rate": 0.0,
+    "execution_skips": 0,
+    "max_drawdown": -0.154347675453,
+    "milp_calls": 13,
+    "milp_success_rate": 1.0,
+    "positive_month_share": 0.75,
+    "total_cost_fraction_sum": 0.006727642698,
+    "total_return": 0.98910295484,
+    "trade_days": 13
+  },
+  "validation_stress": {
+    "annual_turnover": 1.555089798317,
+    "cagr": 0.336785284085,
+    "days": 502,
+    "edge_decisions": 501,
+    "edge_trades": 11,
+    "execution_skip_rate": 0.0,
+    "execution_skips": 0,
+    "max_drawdown": -0.170112543527,
+    "milp_calls": 12,
+    "milp_success_rate": 1.0,
+    "positive_month_share": 0.666666666667,
+    "total_cost_fraction_sum": 0.012391350456,
+    "total_return": 0.782882912704,
+    "trade_days": 12
+  }
+}

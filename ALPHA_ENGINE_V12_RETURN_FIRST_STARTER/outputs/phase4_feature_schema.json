@@ -1,0 +1,448 @@
+{
+  "build": "V1_PURGED_PRE_OOS_2026-09-12",
+  "keys": [
+    "date",
+    "ticker"
+  ],
+  "feature_count": 85,
+  "features": {
+    "mom_1d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_5d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_10d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_40d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_252d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_skip_20_5": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_skip_60_5": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_skip_120_20": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_skip_252_20": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "trend_sma_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "drawdown_high_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "distance_low_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "trend_sma_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "drawdown_high_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "distance_low_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "trend_sma_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "drawdown_high_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "distance_low_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "trend_sma_252d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "drawdown_high_252d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "distance_low_252d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "vol_10d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "vol_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "vol_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "vol_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "downside_vol_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "worst_day_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "downside_vol_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "worst_day_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "skew_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_accel_20_60": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_accel_60_120": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "mom_accel_120_252": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_log_dollar_volume_20d": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_amihud_20d": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_log_dollar_volume_60d": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_amihud_60d": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_dollar_volume_trend_20_60": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "liq_zero_volume_20d": {
+      "family": "LIQUIDITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "size_log_market_cap": {
+      "family": "SIZE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "size_log_assets": {
+      "family": "SIZE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "size_log_shares": {
+      "family": "SIZE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_cash_assets": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_debt_assets": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_equity_assets": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_current_ratio": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_net_debt_assets": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_profit_assets_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_operating_income_assets_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_ocf_assets_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_fcf_assets_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_accruals_assets_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_profit_margin_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_operating_margin_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "quality_ocf_margin_reported": {
+      "family": "QUALITY",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_book_to_market_snapshot": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_sales_yield_reported": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_earnings_yield_reported": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_ocf_yield_reported": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_fcf_yield_reported": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "value_eps_yield_reported": {
+      "family": "VALUATION",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_latest_update_age_days": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_revenue_age_days": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_net_income_age_days": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_ocf_age_days": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_update_count_20d": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "fund_update_count_60d": {
+      "family": "BALANCE_SHEET_OR_FRESHNESS",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "growth_revenue_126s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_profit_assets_126s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_ocf_assets_126s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_operating_margin_126s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_cash_assets_126s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "growth_revenue_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "growth_assets_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "growth_shares_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_profit_assets_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_ocf_assets_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "delta_operating_margin_252s": {
+      "family": "FUNDAMENTAL_CHANGE",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "rel_mom_20d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "rel_mom_60d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "rel_mom_120d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    },
+    "rel_mom_252d": {
+      "family": "MARKET_TREND_RISK",
+      "feature_allowed": true,
+      "causal_semantics": "computed only from observations available at or before the feature date"
+    }
+  },
+  "partitions": {
+    "development_start": "2015-01-02",
+    "validation_start": "2023-01-03",
+    "final_oos_start": "2025-01-01"
+  },
+  "price_transform_contract": {
+    "direct_adjusted_price_level_exported": false,
+    "target_total_return_price_read_for_feature_generation": false,
+    "allowed_use": "source adjusted prices may be used only inside backward-looking scale-invariant transformations; levels are discarded"
+  },
+  "fundamental_contract": "Phase 2 strict-next-session filing availability is preserved; reported flow metrics are snapshot/reported values and are not labelled TTM.",
+  "target_firewall": "Phase 3 targets are joined only inside predictive_research after feature library construction; no target column is written to the feature parquet.",
+  "final_oos_firewall": "signal dates >= 2025-01-01 are excluded from all predictive diagnostics and feature selection."
+}

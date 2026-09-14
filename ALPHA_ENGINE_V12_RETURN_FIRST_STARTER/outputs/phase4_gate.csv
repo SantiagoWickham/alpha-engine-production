@@ -1,0 +1,12 @@
+test,status,blocking,value,rule
+PHASE3_INPUT_PASS,PASS,True,PASS,Phase 3 V3 status validated before Phase 4
+UNIQUE_FEATURE_KEY,PASS,True,0,"0 duplicate date,ticker rows"
+FEATURE_SAFE_RETURN_PRICE_COVERAGE,PASS,True,1.0,>= 0.995; adjusted levels are temporary and never exported
+NO_TARGET_OR_ADJUSTED_LEVEL_FEATURES,PASS,True,0,0 target columns or adjusted price levels exposed as features
+FEATURE_ALLOWED_FLAGS,PASS,True,0,all feature rows feature_allowed=True
+PHASE3_SIGNAL_KEY_ALIGNMENT,PASS,True,1.0,>= 0.999999 of Phase 3 target keys have feature rows
+RESEARCH_EXCLUSIONS_APPLIED,PASS,True,24,Phase 3C research exclusions must remove their contaminated rows
+USABLE_FEATURE_COUNT,PASS,True,66,>= 25 features with development coverage >= 0.50
+FUNDAMENTAL_CAUSALITY_RECHECK,PASS,True,0,0 fundamental available_at dates after feature date
+FINAL_OOS_LABEL_FIREWALL,PASS,True,2024-12-27,max research signal date < 2025-01-01
+PURGED_OUTCOME_BOUNDARIES,PASS,True,0,0 development/validation outcomes cross into the next partition

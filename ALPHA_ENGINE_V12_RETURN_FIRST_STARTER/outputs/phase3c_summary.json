@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "phase": "3C",
+  "build": "V1_2026-09-12",
+  "name": "TERMINAL_OUTCOME_REPAIR",
+  "objective": "CONVERT_ONLY_HIGH_CONFIDENCE_DELISTING_TERMINATIONS_INTO_VALID_TARGET_OUTCOMES",
+  "phase3b_input_status": "PASS_AUDIT_COMPLETE",
+  "phase3b_unresolved_tickers": 176,
+  "terminal_overlays": 175,
+  "validated_terminal_overlays": 175,
+  "research_exclusions": 1,
+  "resolved_unresolved_tickers": 176,
+  "minimum_evidence_sources": 3,
+  "max_terminal_gap_calendar_days": 4,
+  "evidence_count_distribution": {
+    "3": 41,
+    "4": 134
+  },
+  "historical_name_identity_failures": 0,
+  "feature_allowed": false,
+  "terminal_overlay_path": "outputs/phase3c_terminal_outcome_overlay.csv",
+  "research_exclusions_path": "outputs/phase3c_research_exclusions.csv",
+  "gate": [
+    {
+      "test": "OVERLAY_COVERS_PHASE3B_UNRESOLVED_TICKERS",
+      "status": "PASS",
+      "blocking": true,
+      "value": 176,
+      "rule": "terminal overlays + research exclusions must equal Phase 3B unresolved_tickers=176"
+    },
+    {
+      "test": "UNIQUE_TICKERS",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 duplicate ticker overlays"
+    },
+    {
+      "test": "ALL_CLASSIFICATIONS_ELIGIBLE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "all rows classification == CONFIRMED_OR_NEAR_DELISTING_METADATA_GAP"
+    },
+    {
+      "test": "MINIMUM_INDEPENDENT_EVIDENCE",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "every overlay has >= 3 independent date sources within 4 days"
+    },
+    {
+      "test": "HISTORICAL_NAME_IDENTITY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "historical lifecycle name must match Alpha Vantage delisted name"
+    },
+    {
+      "test": "ALL_OVERLAYS_VALIDATED",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 unvalidated terminal overlays"
+    },
+    {
+      "test": "OVERLAY_TARGET_ONLY",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "all overlay rows are target-only"
+    },
+    {
+      "test": "OVERLAY_FEATURE_FORBIDDEN",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 overlay rows feature-allowed"
+    },
+    {
+      "test": "RESEARCH_EXCLUSIONS_FEATURE_FORBIDDEN",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "0 research exclusions feature-allowed"
+    },
+    {
+      "test": "RESEARCH_EXCLUSION_WINDOWS_VALID",
+      "status": "PASS",
+      "blocking": true,
+      "value": 0,
+      "rule": "all manual exclusion windows have valid start/end dates"
+    }
+  ],
+  "next_gate": "Rebuild Phase 3 with the validated target-only terminal overlay and require zero UNRESOLVED_TERMINATION."
+}

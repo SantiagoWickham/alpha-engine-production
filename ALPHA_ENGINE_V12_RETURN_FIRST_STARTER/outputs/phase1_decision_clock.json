@@ -1,0 +1,8 @@
+{
+  "evaluation_policy": "EACH_TRADING_SESSION",
+  "trade_policy": "EVENT_DRIVEN",
+  "fixed_rebalance": false,
+  "allow_multiple_trades_per_month": true,
+  "allow_zero_trades_per_month": true,
+  "principle": "Evaluate whenever information can change; trade only when expected net edge clears the trigger."
+}

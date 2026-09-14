@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "phase": 7,
+  "build": "V1_EDGE_LINEAGE_2026-09-12",
+  "name": "EXPECTED_EDGE_CALIBRATION_AND_ALPHA_LINEAGE",
+  "objective": "CALIBRATE_EVENT_DRIVEN_NET_EDGE_AND_VERIFY_ALPHA_SURVIVES_PORTFOLIO_CONSTRUCTION_BEFORE_FREEZE",
+  "phase6_input": {
+    "status": "PASS",
+    "policy_readiness": "READY_FOR_EXPECTED_EDGE_CALIBRATION"
+  },
+  "temporal_contract": {
+    "edge_calibration": "WF_2019_2020_ONLY",
+    "edge_policy_selection": "WF_2021_2022_ONLY",
+    "validation": "2023_2024_CONFIRMATION_ONLY",
+    "final_oos_start": "2025-01-01",
+    "final_oos_used": false
+  },
+  "edge_policy_candidates": 36,
+  "qualified_edge_policies": 20,
+  "selected_edge_policy": {
+    "entry_floor": 0.8,
+    "uncertainty_z": 0.5,
+    "minimum_extra_edge_bps": 50.0,
+    "max_replacements": 1,
+    "selection_total_return_20bps": 0.2522130345633913,
+    "selection_cagr_20bps": 0.11927345933560596,
+    "selection_max_drawdown_20bps": -0.25145977387111595,
+    "selection_annual_turnover_20bps": 1.2693740268967768,
+    "selection_trade_days_20bps": 30,
+    "selection_edge_decisions_20bps": 502,
+    "selection_edge_trades_20bps": 29,
+    "selection_total_return_40bps": 0.23837837075641888,
+    "selection_cagr_40bps": 0.11306103237435616,
+    "selection_max_drawdown_40bps": -0.2655093489547591,
+    "selection_annual_turnover_40bps": 1.0532021171356645,
+    "qualified": true,
+    "return_first_rank": 1.0
+  },
+  "weekly_reference_selection_cagr_20bps": 0.09658639602310304,
+  "validation_confirmed": true,
+  "lineage_hypothesis_conclusion": "H0_OPTIMIZER_PRESERVES_ALPHA",
+  "lineage_validation_summary": {
+    "partition": "VALIDATION_2023_2024",
+    "snapshots": 24,
+    "milp_success_rate": 1.0,
+    "median_spearman_alpha_milp": 0.9752578220905855,
+    "median_kendall_alpha_milp": 0.9147907439754503,
+    "median_top5_capture": 1.0,
+    "median_top10_capture": 1.0,
+    "median_alpha_capture": 1.009019138755981,
+    "median_l1_optimizer_milp": 0.09856447613979215,
+    "median_rank_displacement": 0.95,
+    "median_zero_reference_to_positive_theoretical_mass": 0.04233057528311521,
+    "snapshots_with_excluded_top_alpha": 0
+  },
+  "readiness": "READY_FOR_PRE_FREEZE_REPLAY",
+  "gate": [
+    {
+      "test": "PHASE6_INPUT_PASS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "PASS",
+      "rule": "Phase 6 must PASS"
+    },
+    {
+      "test": "PHASE6_EDGE_READINESS",
+      "status": "PASS",
+      "blocking": true,
+      "value": "READY_FOR_EXPECTED_EDGE_CALIBRATION",
+      "rule": "Phase 6 must be ready for expected-edge calibration"
+    },
+    {
+      "test": "FINAL_OOS_SCORE_FIREWALL",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2024-12-31",
+      "rule": "no Phase 7 score may reach final OOS"
+    },
+    {
+      "test": "TEMPORAL_CALIBRATION_SEPARATION",
+      "status": "PASS",
+      "blocking": true,
+      "value": "2019-2020 -> calibrate; 2021-2022 -> select; 2023-2024 -> confirm",
+      "rule": "expected-return calibration and edge-policy selection use disjoint chronological periods"
+    },
+    {
+      "test": "QUALIFIED_EDGE_POLICY_EXISTS",
+      "status": "PASS",
+      "blocking": true,
+      "value": 20,
+      "rule": ">=1 qualified net-edge policy"
+    },
+    {
+      "test": "VALIDATION_EDGE_CONFIRMATION",
+      "status": "PASS",
+      "blocking": false,
+      "value": true,
+      "rule": "selected edge policy must remain positive under base and stress costs in 2023-2024"
+    },
+    {
+      "test": "ALPHA_LINEAGE_AUDIT",
+      "status": "PASS",
+      "blocking": true,
+      "value": "H0_OPTIMIZER_PRESERVES_ALPHA",
+      "rule": "same-snapshot alpha -> reference -> theoretical -> optimizer -> MILP must preserve alpha"
+    }
+  ],
+  "next_gate": "If READY_FOR_PRE_FREEZE_REPLAY: Phase 8 refits only fixed components on all pre-OOS data, fingerprints the model/policy, runs deterministic pre-freeze replay, then and only then opens untouched 2025+ OOS once."
+}
