@@ -14,3 +14,6 @@
 *.bin filter=lfs diff=lfs merge=lfs -text
 
 ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON/outputs/** -text
+ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON/outputs/v13_phase3aa_freeze_manifest.json -text
+ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON/outputs/v13_phase2r_model_spec.json -text
+ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON/outputs/v13_phase2u_expert_evidence.csv -text
