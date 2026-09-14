@@ -88,16 +88,24 @@ jobs:
 
           $changes = git status --porcelain
 
-          if (!$changes) {
-            Write-Host "No Product State changes."
-            exit 0
+          if ($changes) {
+            git commit -m "Update Alpha Product State"
+
+            git pull --rebase origin main
+
+            git push origin main
           }
-
-          git commit -m "Update Alpha Product State"
-
-          git pull --rebase origin main
-
-          git push origin main
+          else {
+            Write-Host "No Product State changes."
+          }
 
           Write-Host ""
           Write-Host "ALPHA PRODUCT STATE REMOTE SYNC: PASS"
+
+      - name: Sync Product State to Google Sheets
+        shell: pwsh
+        env:
+          ALPHA_SHEET_WEBAPP_URL: ${{ secrets.ALPHA_SHEET_WEBAPP_URL }}
+          ALPHA_SHEET_TOKEN: ${{ secrets.ALPHA_SHEET_TOKEN }}
+        run: |
+          python cloud/push_product_state_to_sheets.py
