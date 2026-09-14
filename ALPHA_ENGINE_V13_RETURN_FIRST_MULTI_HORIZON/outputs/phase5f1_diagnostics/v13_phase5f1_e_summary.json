@@ -1,0 +1,49 @@
+{
+  "asof": "2026-09-11",
+  "build": "V13_P5F1_E_COMMON_FACTOR_CONCENTRATION_AUDIT_2026-09-13",
+  "diagnostic_label": "MATERIAL_COMMON_FACTOR_CONCENTRATION",
+  "diagnostic_only": true,
+  "files": {
+    "hidden_exposures": "outputs\\phase5f1_diagnostics\\v13_phase5f1_e_hidden_common_factor_exposures.csv",
+    "pairwise": "outputs\\phase5f1_diagnostics\\v13_phase5f1_e_focus_pairwise_correlations.csv",
+    "shock_scenarios": "outputs\\phase5f1_diagnostics\\v13_phase5f1_e_mechanical_shock_scenarios.csv",
+    "window_metrics": "outputs\\phase5f1_diagnostics\\v13_phase5f1_e_window_metrics.csv"
+  },
+  "input_hashes": {
+    "current_sizing": "4758392a9f8dcf180c69024c57a97a2d09e8734ceecc5a9ede773ed109263151",
+    "phase3z_config": "e5a5c1aa604ce5d1bc320a1d1e2157f4e5f315392ec0bfc2c6aa461b75beb152",
+    "return_price_layer": "d02736c7993270e1a1c9a5ae58357540200b85167132b9396cb960ad56426e13"
+  },
+  "model_changed": false,
+  "next": "Interpret whether current CEPU/VIST/YPF/CAAP exposure represents a material common factor. Do not create a cap or veto from this diagnostic. After interpretation, close Phase 5F.1 and resume Phase 5G confirmation-gated proposal ledger.",
+  "orders_sent": false,
+  "phase": "V13-P5F1-E",
+  "policy_changed": false,
+  "portfolio_state_mutated": false,
+  "price_history_calendar_lag_days": 7,
+  "price_history_end": "2026-09-04",
+  "review_basket": {
+    "important_note": "This basket is explicitly user-defined for concentration review. Membership does not imply country domicile, legal residence, or a model-inferred Argentina risk classification.",
+    "name": "USER_DEFINED_ARGENTINA_LINKED_REVIEW_BASKET",
+    "risky_book_weight": 0.20497811324435106,
+    "tickers": [
+      "CEPU",
+      "VIST",
+      "YPF",
+      "CAAP"
+    ],
+    "total_nav_weight": 0.2037997250513682
+  },
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "sheets_mutated": false,
+  "status": "PASS_COMMON_FACTOR_CONCENTRATION_AUDIT",
+  "thresholds_are_report_only": true,
+  "tuning_performed": false,
+  "weight_concentration": {
+    "effective_names_weight_only": 22.014156407840073,
+    "focus_common_factor_increment": 0.031203440964970748,
+    "focus_individual_hhi": 0.01081258594424326,
+    "focus_perfect_correlation_hhi": 0.04201602690921401,
+    "risky_book_hhi": 0.04542531548671391
+  }
+}

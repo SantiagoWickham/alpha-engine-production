@@ -1,0 +1,20 @@
+{
+  "candidate_risk_not_above_v13": true,
+  "cedear_price_constraint": false,
+  "covariance_estimator": "LedoitWolf",
+  "diagnostic_only": true,
+  "integer_nominal_constraint": false,
+  "interpretation": "This is a structural redundancy test only. Even if endogenous sparsity appears, no production allocator change is permitted until a separately frozen realized-return simulation compares CAGR, drawdown, turnover and costs.",
+  "minimum_weight_constraint": false,
+  "model_changed": false,
+  "orders_sent": false,
+  "phase": "V13-P5G1-B-FIX1",
+  "phase5g_state": "PROPOSED",
+  "policy_changed": false,
+  "same_risky_capital": true,
+  "same_v13_alphas": true,
+  "sheets_mutated": false,
+  "solver": "SLSQP scaled convex QCQP; minimum-variance feasible start; multiple feasible initializations",
+  "status": "PASS_COVARIANCE_STRUCTURAL_AUDIT_FIX1",
+  "top_n_constraint": false
+}

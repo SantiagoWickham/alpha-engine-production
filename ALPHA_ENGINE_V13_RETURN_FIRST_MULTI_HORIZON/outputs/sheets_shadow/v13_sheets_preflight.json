@@ -1,0 +1,11 @@
+{
+  "health": {
+    "api_version": "V9.1-FORWARD-CLOUD",
+    "legacy_health_model_version": "V10.4_FROZEN",
+    "validation_status": "PENDING"
+  },
+  "positions_rows": 3,
+  "cash_rows": 2,
+  "mandate_rows": 14,
+  "env_source": "DOTENV:C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\.env"
+}

@@ -1,0 +1,15 @@
+{
+  "invested_market_value_usd": 319.2237680405669,
+  "cash_usd_native": 0.0,
+  "cash_ars": 1809.0,
+  "cash_ars_usd_equivalent": 1.1991517678702517,
+  "fx_rate_ars_per_usd": 1508.56634537,
+  "total_nav_usd": 320.42291980843714,
+  "current_invested_weight_total_nav": 0.9962575967768249,
+  "current_cash_weight_total_nav": 0.0037424032231750375,
+  "phase3z_target_invested_weight": 0.994251151138376,
+  "phase3z_target_cash_weight": 0.0057488488616239675,
+  "phase3z_target_cash_usd": 1.8420629377789617,
+  "net_trade_value_usd": -0.6429111699087139,
+  "post_trade_cash_usd_identity": 1.8420629377789624
+}

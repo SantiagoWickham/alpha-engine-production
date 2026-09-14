@@ -1,0 +1,4 @@
+ticker,quantity,market_value_usd,current_weight_invested_basis,action,phase3z_target_weight,raw_model_target_weight,weight_delta_invested_basis,resize_band,expected_active_total,effective_horizon_sessions,reason
+AVGO,11.0,106.26706540111819,0.3328920839867218,EXIT,0.0,0.0,-0.3328920839867218,0.005796402966030618,-0.00023705410969567387,36.02097654975962,Existing position loses positive expected active alpha; exact Phase3Z rule exits.
+GOOGL,21.0,127.64920036406188,0.3998737348023542,REDUCE,0.020753305832990565,0.013663455908540142,-0.37912042896936365,0.0070898499244504525,0.0038543709822177158,39.61605029979323,Current weight is above desired weight by more than the sealed resize band.
+NVDA,9.0,85.30750227538681,0.26723418121092396,EXIT,0.0,0.0,-0.26723418121092396,0.006926641680913313,-0.00466352834776346,33.08636687564591,Existing position loses positive expected active alpha; exact Phase3Z rule exits.

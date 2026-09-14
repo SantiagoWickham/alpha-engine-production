@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "phase": "V13-P5E",
+  "build": "V13_P5E_PORTFOLIO_ACTION_REVIEW_BASIS_AUDIT_2026-09-13",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "asof": "2026-09-11",
+  "held_tickers": 3,
+  "held_actions": {
+    "BUY": 0,
+    "HOLD": 0,
+    "REDUCE": 1,
+    "EXIT": 2
+  },
+  "invested_market_value_usd": 319.2237680405669,
+  "cash_snapshot": {
+    "ARS": 1809.0,
+    "USD": 0.0
+  },
+  "phase3z_model_cash_weight": 0.0057488488616239675,
+  "weight_basis_status": "BLOCKED_NONUSD_CASH_REQUIRES_AUDITED_FX",
+  "absolute_execution_sizing_certified": false,
+  "held_positions": [
+    {
+      "ticker": "AVGO",
+      "quantity": 11.0,
+      "market_value_usd": 106.26706540111819,
+      "current_weight_invested_basis": 0.3328920839867218,
+      "action": "EXIT",
+      "phase3z_target_weight": 0.0,
+      "raw_model_target_weight": 0.0,
+      "weight_delta_invested_basis": -0.3328920839867218,
+      "resize_band": 0.005796402966030618,
+      "expected_active_total": -0.00023705410969567387,
+      "effective_horizon_sessions": 36.02097654975962,
+      "reason": "Existing position loses positive expected active alpha; exact Phase3Z rule exits."
+    },
+    {
+      "ticker": "GOOGL",
+      "quantity": 21.0,
+      "market_value_usd": 127.64920036406188,
+      "current_weight_invested_basis": 0.3998737348023542,
+      "action": "REDUCE",
+      "phase3z_target_weight": 0.020753305832990565,
+      "raw_model_target_weight": 0.013663455908540142,
+      "weight_delta_invested_basis": -0.37912042896936365,
+      "resize_band": 0.0070898499244504525,
+      "expected_active_total": 0.0038543709822177158,
+      "effective_horizon_sessions": 39.61605029979323,
+      "reason": "Current weight is above desired weight by more than the sealed resize band."
+    },
+    {
+      "ticker": "NVDA",
+      "quantity": 9.0,
+      "market_value_usd": 85.30750227538681,
+      "current_weight_invested_basis": 0.26723418121092396,
+      "action": "EXIT",
+      "phase3z_target_weight": 0.0,
+      "raw_model_target_weight": 0.0,
+      "weight_delta_invested_basis": -0.26723418121092396,
+      "resize_band": 0.006926641680913313,
+      "expected_active_total": -0.00466352834776346,
+      "effective_horizon_sessions": 33.08636687564591,
+      "reason": "Existing position loses positive expected active alpha; exact Phase3Z rule exits."
+    }
+  ],
+  "top_10_buy_candidates": [
+    {
+      "ticker": "FDX",
+      "currently_held": false,
+      "phase3z_target_weight": 0.08934579808489145,
+      "raw_model_target_weight": 0.08934579808489145,
+      "expected_active_total": 0.014031448798957142,
+      "effective_horizon_sessions": 40.967715516631195,
+      "resize_band": 0.01273507808994491,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "NKE",
+      "currently_held": false,
+      "phase3z_target_weight": 0.06344129289079982,
+      "raw_model_target_weight": 0.06344129289079982,
+      "expected_active_total": 0.013281983449656339,
+      "effective_horizon_sessions": 37.14125031408989,
+      "resize_band": 0.009552984782922812,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "CEPU",
+      "currently_held": false,
+      "phase3z_target_weight": 0.06143078214313742,
+      "raw_model_target_weight": 0.06143078214313742,
+      "expected_active_total": 0.017422083966546063,
+      "effective_horizon_sessions": 35.69090166256359,
+      "resize_band": 0.007052059014420661,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "CAAP",
+      "currently_held": false,
+      "phase3z_target_weight": 0.057499552780832824,
+      "raw_model_target_weight": 0.057499552780832824,
+      "expected_active_total": 0.010397472488243503,
+      "effective_horizon_sessions": 39.557211665856485,
+      "resize_band": 0.011060294287067937,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "TTWO",
+      "currently_held": false,
+      "phase3z_target_weight": 0.05640757295772763,
+      "raw_model_target_weight": 0.05640757295772763,
+      "expected_active_total": 0.014318211977733248,
+      "effective_horizon_sessions": 40.201782626088026,
+      "resize_band": 0.007879136451597312,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "ZTS",
+      "currently_held": false,
+      "phase3z_target_weight": 0.052242152427021446,
+      "raw_model_target_weight": 0.052242152427021446,
+      "expected_active_total": 0.01084231880711082,
+      "effective_horizon_sessions": 35.49788375843546,
+      "resize_band": 0.009636712101245167,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "NUE",
+      "currently_held": false,
+      "phase3z_target_weight": 0.04973543723614926,
+      "raw_model_target_weight": 0.04973543723614926,
+      "expected_active_total": 0.015241817743156265,
+      "effective_horizon_sessions": 42.639798620701114,
+      "resize_band": 0.00652618186022871,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "MPWR",
+      "currently_held": false,
+      "phase3z_target_weight": 0.046097224872026096,
+      "raw_model_target_weight": 0.046097224872026096,
+      "expected_active_total": 0.029238668560963178,
+      "effective_horizon_sessions": 36.08826521839135,
+      "resize_band": 0.003153168536105706,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "VIST",
+      "currently_held": false,
+      "phase3z_target_weight": 0.044342205540363375,
+      "raw_model_target_weight": 0.044342205540363375,
+      "expected_active_total": 0.016603964805756714,
+      "effective_horizon_sessions": 36.81572090522146,
+      "resize_band": 0.0053411587002388265,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    },
+    {
+      "ticker": "STLD",
+      "currently_held": false,
+      "phase3z_target_weight": 0.04354105257132993,
+      "raw_model_target_weight": 0.04354105257132993,
+      "expected_active_total": 0.015149836224792716,
+      "effective_horizon_sessions": 38.58295101976738,
+      "resize_band": 0.005748055876680037,
+      "entry_ok": true,
+      "reason": "No current position; sealed Phase3Z entry gate is open."
+    }
+  ],
+  "no_sheet_mutation": true,
+  "shadow_only": true,
+  "real_orders_sent": false,
+  "tuning_performed": false,
+  "review_digest": "a9a7173a1ca389711b8336b69262c142914bc9e25bcdddd2aff578c5ab5379e2",
+  "next": "If basis_status is PASS, build confirmation-gated sizing/ledger. If BLOCKED, add one audited FX conversion source before computing dollar trade sizes. Do not change V13 model/policy."
+}

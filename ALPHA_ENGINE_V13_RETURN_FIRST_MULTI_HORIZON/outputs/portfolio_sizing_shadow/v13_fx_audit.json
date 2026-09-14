@@ -1,0 +1,18 @@
+{
+  "pair": "USD/ARS",
+  "quote_semantics": "ARS per 1 USD",
+  "certified_rate_ars_per_usd": 1508.56634537,
+  "certified_source": "ALPHA_VANTAGE_CURRENCY_EXCHANGE_RATE",
+  "api_key_source": "DOTENV:C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\.env:MMM_ALPHA_VANTAGE_API_KEY",
+  "primary_last_refreshed_raw": "2026-09-13 18:45:19",
+  "primary_age_hours": 0.00014123583333333335,
+  "max_allowed_age_hours": 120.0,
+  "secondary_source": "YAHOO_FINANCE_ARS=X",
+  "secondary_rate_ars_per_usd": 1508.5,
+  "secondary_market_time_utc": "2026-09-13T17:55:28+00:00",
+  "secondary_relative_spread_vs_primary": 4.397908663648193e-05,
+  "secondary_error": null,
+  "fetched_at_utc": "2026-09-13T18:45:19.508449+00:00",
+  "certification": "PASS_PRIMARY_VALID_AND_FRESH",
+  "audit_digest": "3bcd9254a90d516fbe4adbd834bd77fceb51086abf9898bbc08dbfd99f52dab0"
+}

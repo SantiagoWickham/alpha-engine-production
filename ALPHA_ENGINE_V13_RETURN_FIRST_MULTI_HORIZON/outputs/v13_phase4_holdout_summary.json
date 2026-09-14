@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "phase": "V13-P4",
+  "build": "V13_P4_ONE_SHOT_CODE_BLINDED_HOLDOUT_2026-09-13",
+  "holdout_opened": true,
+  "holdout_start": "2025-01-01",
+  "holdout_end": "2026-09-04",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "research_freeze_id": "3c3ebdd84730abee33d74575387b019e453588021ff1bb3249d11824ecf234b8",
+  "economic_verdict": "STRONG_CONFIRMATION",
+  "metrics": {
+    "20bps": {
+      "days": 420,
+      "total_return": 0.5531302401316229,
+      "cagr": 0.3023410368272932,
+      "max_drawdown": -0.2459151937657995,
+      "annual_turnover": 18.58071085154936,
+      "median_holdings": 39.0,
+      "max_holdings": 48,
+      "mean_cash_weight": 0.018464935538447476,
+      "median_max_name_weight": 0.08642967664974105,
+      "p95_max_name_weight": 0.14768603711126063,
+      "execution_blocked_rate": 0.0,
+      "target_deviation_rate": 1.5236755483047316e-17,
+      "spy_cagr": 0.19016682431178467,
+      "excess_cagr_vs_spy": 0.11217421251550852,
+      "qqq_cagr": 0.23249676445260725,
+      "excess_cagr_vs_qqq": 0.06984427237468593,
+      "uew_cagr": 0.9667719996333013,
+      "excess_cagr_vs_uew": -0.6644309628060081
+    },
+    "40bps": {
+      "days": 420,
+      "total_return": 0.47015421930901846,
+      "cagr": 0.26013692265032007,
+      "max_drawdown": -0.24843544769148485,
+      "annual_turnover": 18.58071085154936,
+      "median_holdings": 39.0,
+      "max_holdings": 48,
+      "mean_cash_weight": 0.018464935538447476,
+      "median_max_name_weight": 0.08642967664974105,
+      "p95_max_name_weight": 0.14768603711126063,
+      "execution_blocked_rate": 0.0,
+      "target_deviation_rate": 1.5236755483047316e-17,
+      "spy_cagr": 0.19016682431178467,
+      "excess_cagr_vs_spy": 0.0699700983385354,
+      "qqq_cagr": 0.23249676445260725,
+      "excess_cagr_vs_qqq": 0.027640158197712816,
+      "uew_cagr": 0.9667719996333013,
+      "excess_cagr_vs_uew": -0.7066350769829812
+    },
+    "60bps": {
+      "days": 420,
+      "total_return": 0.3915976683809075,
+      "cagr": 0.2192933788475271,
+      "max_drawdown": -0.25095175173860973,
+      "annual_turnover": 18.58071085154936,
+      "median_holdings": 39.0,
+      "max_holdings": 48,
+      "mean_cash_weight": 0.018464935538447476,
+      "median_max_name_weight": 0.08642967664974105,
+      "p95_max_name_weight": 0.14768603711126063,
+      "execution_blocked_rate": 0.0,
+      "target_deviation_rate": 1.5236755483047316e-17,
+      "spy_cagr": 0.19016682431178467,
+      "excess_cagr_vs_spy": 0.02912655453574242,
+      "qqq_cagr": 0.23249676445260725,
+      "excess_cagr_vs_qqq": -0.013203385605080165,
+      "uew_cagr": 0.9667719996333013,
+      "excess_cagr_vs_uew": -0.7474786207857742
+    }
+  },
+  "beta_attribution": [
+    {
+      "benchmark": "SPY",
+      "n": 420,
+      "alpha_ann": 0.07905382438996807,
+      "beta": 1.112699741109497,
+      "r2": 0.729599285445641
+    },
+    {
+      "benchmark": "QQQ",
+      "n": 420,
+      "alpha_ann": 0.10038588580460743,
+      "beta": 0.8057867980455325,
+      "r2": 0.6545193854175206
+    },
+    {
+      "benchmark": "UEW",
+      "n": 420,
+      "alpha_ann": 0.22706136597838178,
+      "beta": 0.07393800225344466,
+      "r2": 0.05304049271144207
+    }
+  ],
+  "horizon_evidence": [
+    {
+      "horizon_sessions": 5,
+      "economic_score": 0.03829658703338525,
+      "worst_cut_robust_excess": 0.03369392540198096,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.1825177921237677,
+      "mean_rank_ic": -0.013059625212692636
+    },
+    {
+      "horizon_sessions": 10,
+      "economic_score": -0.0045078301698233915,
+      "worst_cut_robust_excess": -0.005106485820806964,
+      "positive_cut_share": 0.0,
+      "winner_lift": 1.5363861567745192,
+      "mean_rank_ic": 0.07350260014186508
+    },
+    {
+      "horizon_sessions": 20,
+      "economic_score": -0.00037074049610701164,
+      "worst_cut_robust_excess": -0.002982047417929993,
+      "positive_cut_share": 0.6666666666666666,
+      "winner_lift": 1.5038099812526629,
+      "mean_rank_ic": 0.09333956313833656
+    },
+    {
+      "horizon_sessions": 60,
+      "economic_score": 0.02069502844187605,
+      "worst_cut_robust_excess": 0.018919792550800382,
+      "positive_cut_share": 1.0,
+      "winner_lift": 1.83364216940848,
+      "mean_rank_ic": 0.12982564895075663
+    },
+    {
+      "horizon_sessions": 120,
+      "economic_score": 0.09626783708274521,
+      "worst_cut_robust_excess": 0.04406177354616196,
+      "positive_cut_share": 1.0,
+      "winner_lift": 2.4225225714943384,
+      "mean_rank_ic": 0.17245224951277432
+    },
+    {
+      "horizon_sessions": 252,
+      "economic_score": 0.43872755540711167,
+      "worst_cut_robust_excess": 0.34210509014231905,
+      "positive_cut_share": 1.0,
+      "winner_lift": 3.0308856029599647,
+      "mean_rank_ic": 0.27735644638421647
+    }
+  ],
+  "annual_returns": [
+    {
+      "year": 2025,
+      "strategy_return": 0.17747554949401811,
+      "sessions": 250
+    },
+    {
+      "year": 2026,
+      "strategy_return": 0.3190339627850727,
+      "sessions": 170
+    }
+  ],
+  "policy_changed": false,
+  "predictor_retrained_after_holdout_open": false,
+  "next": "Do not retune on this holdout. Treat 2025+ as observed validation evidence and move to live/shadow production using the sealed model."
+}

@@ -1,0 +1,22 @@
+{
+  "headers": [
+    "Moneda",
+    "Saldo",
+    "Actualizado",
+    "Fuente"
+  ],
+  "rows": [
+    [
+      "ARS",
+      1809,
+      "2026-09-08T02:50:18.368Z",
+      "INITIALIZED"
+    ],
+    [
+      "USD",
+      0,
+      "2026-09-08T02:50:18.525Z",
+      "INITIALIZED"
+    ]
+  ]
+}

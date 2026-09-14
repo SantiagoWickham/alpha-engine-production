@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "phase": "V13-P5B",
+  "build": "V13_P5B_FIX4_SEC_FACT_SCHEMA_ALIGNMENT_2026-09-13",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "holdout_verdict": "STRONG_CONFIRMATION",
+  "last_observed": "2026-09-04",
+  "latest_completed_session": "2026-09-11",
+  "new_sessions": 4,
+  "universe": {
+    "snapshot_date": "2026-09-04",
+    "snapshot_age_days": 0,
+    "tickers": 183
+  },
+  "market_coverage_latest": 1.0,
+  "sec": {
+    "mapping_coverage": 1.0,
+    "mapped_tickers": 183,
+    "universe_tickers": 183,
+    "success_rate": 1.0,
+    "source": "VALID_CACHE",
+    "identity_source": "DOTENV:C:\\Users\\santi\\OneDrive\\Escritorio\\ALPHA_ENGINE_V12_RETURN_FIRST\\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\\.env:MMM_SEC_USER_AGENT",
+    "live_fact_rows": 381515
+  },
+  "advisor_rows_latest": 183,
+  "entry_eligible_latest": 31,
+  "positive_targets_latest": 35,
+  "target_weight_sum_latest": 1.0000000000000002,
+  "input_fingerprint": "ff09f2498192fa0e822678145ada64be74df6e2633d7af4161aea664587f8348",
+  "shadow_only": true,
+  "real_orders_sent": false,
+  "tuning_performed": false,
+  "production_contract_csv": "outputs/live_shadow/v13_live_shadow_contract_latest.csv",
+  "production_contract_json": "outputs/live_shadow/v13_live_shadow_contract_latest.json",
+  "next": "Connect Sheets/App Script to this exact contract as portfolio/ledger UI; keep Alpha Engine Python authoritative."
+}

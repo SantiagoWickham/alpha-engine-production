@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "phase": "V13-P5A",
+  "build": "V13_P5A_SHADOW_PRODUCTION_PARITY_CONTRACT_2026-09-13",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "holdout_verdict": "STRONG_CONFIRMATION",
+  "asof": "2026-09-04",
+  "advisor_rows": 183,
+  "advisor_parity_max_abs_diff": 0.0,
+  "target_weight_sum": 0.9999999999999999,
+  "entry_eligible_count": 32,
+  "positive_target_count": 38,
+  "shadow_only": true,
+  "real_orders_sent": false,
+  "tuning_performed": false,
+  "production_contract_csv": "outputs/shadow/v13_shadow_contract_latest.csv",
+  "production_contract_json": "outputs/shadow/v13_shadow_contract_latest.json",
+  "next": "If PASS, extend the exact sealed inference pipeline to new completed sessions only; then connect Sheets/App Script as portfolio/input/output interface."
+}

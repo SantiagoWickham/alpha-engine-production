@@ -1,0 +1,8 @@
+{
+  "state": "COMPLETE",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "source_sha256": "d12d1e04bde3a9248c7374650fc71c552c90081135810e3037125e2b9c0c23fa",
+  "holdout_start": "2025-01-01",
+  "holdout_end": "2026-09-04",
+  "economic_verdict": "STRONG_CONFIRMATION"
+}

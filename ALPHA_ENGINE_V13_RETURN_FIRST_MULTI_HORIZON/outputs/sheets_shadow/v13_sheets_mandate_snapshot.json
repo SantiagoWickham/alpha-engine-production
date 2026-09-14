@@ -1,0 +1,124 @@
+{
+  "headers": [
+    "Campo",
+    "Valor",
+    "Unidad",
+    "Fuente",
+    "Estado",
+    "Interpretaci\u00f3n"
+  ],
+  "rows": [
+    [
+      "profile_status",
+      "PENDIENTE PYTHON",
+      "",
+      "Python",
+      "PENDIENTE",
+      "Sin perfil no existe target final."
+    ],
+    [
+      "base_currency",
+      "USD",
+      "",
+      "Python",
+      "PENDIENTE",
+      "Moneda de referencia."
+    ],
+    [
+      "investment_horizon_years",
+      "",
+      "a\u00f1os",
+      "Python",
+      "PENDIENTE",
+      "Horizonte efectivo."
+    ],
+    [
+      "liquidity_need_12m",
+      "",
+      "% cartera",
+      "Python",
+      "PENDIENTE",
+      "Capital que no debe exponerse a riesgo alto."
+    ],
+    [
+      "max_drawdown_tolerance",
+      "",
+      "%",
+      "Python",
+      "PENDIENTE",
+      "Restricci\u00f3n primaria de riesgo."
+    ],
+    [
+      "target_volatility",
+      "",
+      "% anual",
+      "Python",
+      "PENDIENTE",
+      "Risk budget."
+    ],
+    [
+      "minimum_cash",
+      "",
+      "% cartera",
+      "Python",
+      "PENDIENTE",
+      "Reserva de liquidez."
+    ],
+    [
+      "income_need",
+      "",
+      "USD/a\u00f1o",
+      "Python",
+      "PENDIENTE",
+      "Necesidad de flujo."
+    ],
+    [
+      "new_cash_usd",
+      "",
+      "USD",
+      "Python/usuario",
+      "PENDIENTE",
+      "Capital incremental a asignar."
+    ],
+    [
+      "allow_high_concentration",
+      "",
+      "bool",
+      "Python",
+      "PENDIENTE",
+      "Permite concentraci\u00f3n si Alpha lo justifica."
+    ],
+    [
+      "max_single_name_soft",
+      "",
+      "% cartera",
+      "Python",
+      "PENDIENTE",
+      "Soft constraint, no sector cap r\u00edgido."
+    ],
+    [
+      "max_alternatives",
+      "",
+      "% cartera",
+      "Python",
+      "PENDIENTE",
+      "Restricci\u00f3n por perfil."
+    ],
+    [
+      "rf_floor",
+      "",
+      "% cartera",
+      "Python",
+      "PENDIENTE",
+      "Piso RF s\u00f3lo si perfil lo requiere."
+    ],
+    [
+      "rebalance_mode",
+      "BANDS",
+      "",
+      "Sistema",
+      "ACTIVO",
+      "No rebalanceo por ruido."
+    ]
+  ]
+}

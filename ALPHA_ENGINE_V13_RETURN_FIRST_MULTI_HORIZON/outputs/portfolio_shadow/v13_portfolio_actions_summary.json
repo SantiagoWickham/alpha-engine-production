@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "phase": "V13-P5D",
+  "build": "V13_P5D_PORTFOLIO_AWARE_SHADOW_ACTIONS_2026-09-13",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "asof": "2026-09-11",
+  "positions_rows_consumed": 3,
+  "cash_rows_consumed": 2,
+  "mandate_rows_consumed": 14,
+  "held_tickers": 3,
+  "contract_tickers": 183,
+  "actions": {
+    "BUY": 30,
+    "HOLD": 150,
+    "REDUCE": 1,
+    "EXIT": 2
+  },
+  "current_weight_sum_input": 1.0,
+  "phase3z_economic_target_weight_sum": 0.994251151138376,
+  "cash_snapshot": {
+    "ARS": 1809.0,
+    "USD": 0.0
+  },
+  "weight_basis": "SHEETS_CURRENT_WEIGHT_FIELD (legacy V8 positions; typically invested-equity normalized)",
+  "portfolio_action_digest": "923ffdb12a12f244d2e20b9ed5e4d0a777f51a19d6f980a1435954a3524ead76",
+  "alert_rows_published": 183,
+  "alert_readback_rows_match": true,
+  "python_v13_authoritative": true,
+  "sheets_display_only": true,
+  "shadow_only": true,
+  "real_orders_sent": false,
+  "operation_append_called": false,
+  "cash_mutated": false,
+  "forward_ledger_mutated": false,
+  "tuning_performed": false,
+  "readback_checks": {
+    "alert_row_count_matches": true,
+    "real_orders_sent_is_false": true
+  },
+  "note": "Directional actions are exact Phase3Z hysteresis applied to the current_weight values read from Sheets. No execution is performed.",
+  "next": "Review the shadow BUY/HOLD/REDUCE/EXIT output against the real portfolio. If coherent, build a confirmation-gated execution ledger; do not auto-trade."
+}
