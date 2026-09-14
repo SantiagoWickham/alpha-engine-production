@@ -1,0 +1,43 @@
+﻿name: Alpha Engine Sheets Sync
+
+on:
+  workflow_run:
+    workflows:
+      - "Alpha Engine Production"
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync-sheets:
+
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Checkout production state
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          lfs: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.3'
+
+      - name: Sync Alpha Engine to Google Sheets
+        shell: pwsh
+        env:
+          ALPHA_SHEET_WEBAPP_URL: ${{ secrets.ALPHA_SHEET_WEBAPP_URL }}
+          ALPHA_SHEET_TOKEN: ${{ secrets.ALPHA_SHEET_TOKEN }}
+        run: |
+          python cloud/push_sheets.py
