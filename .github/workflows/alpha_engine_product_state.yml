@@ -1,0 +1,103 @@
+﻿name: Alpha Engine Product State
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows:
+      - Alpha Engine Production
+      - Alpha Engine Personal Portfolio Read
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alpha-engine-product-state
+  cancel-in-progress: false
+
+jobs:
+
+  build-product-state:
+
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: windows-latest
+
+    steps:
+
+      - name: Checkout latest production main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          lfs: false
+          fetch-depth: 0
+
+      - name: Sync to latest remote main
+        shell: pwsh
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.3'
+
+      - name: Build Alpha Product State
+        shell: pwsh
+        run: |
+          python cloud/build_product_state.py
+
+      - name: Validate Product State
+        shell: pwsh
+        run: |
+          if (!(Test-Path "public/data/alpha_product_state.json")) {
+            throw "MISSING alpha_product_state.json"
+          }
+
+          $state = Get-Content `
+            "public/data/alpha_product_state.json" `
+            -Raw | ConvertFrom-Json
+
+          if ($state.schema -ne "ALPHA_ENGINE_PRODUCT_STATE_V1") {
+            throw "INVALID PRODUCT STATE SCHEMA"
+          }
+
+          if ($state.system.status -ne "PASS") {
+            throw "PRODUCT STATE SYSTEM NOT PASS"
+          }
+
+          if ($state.system.authority -ne "V13_IDEAL") {
+            throw "INVALID PRODUCT STATE AUTHORITY"
+          }
+
+          Write-Host ""
+          Write-Host "PRODUCT STATE VALIDATION: PASS"
+
+      - name: Commit Product State
+        shell: pwsh
+        run: |
+          git config user.name "alpha-engine-bot"
+          git config user.email "alpha-engine-bot@users.noreply.github.com"
+
+          git add public/data/alpha_product_state.json
+
+          $changes = git status --porcelain
+
+          if (!$changes) {
+            Write-Host "No Product State changes."
+            exit 0
+          }
+
+          git commit -m "Update Alpha Product State"
+
+          git pull --rebase origin main
+
+          git push origin main
+
+          Write-Host ""
+          Write-Host "ALPHA PRODUCT STATE REMOTE SYNC: PASS"
