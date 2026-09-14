@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  />
+
+  <title>Alpha Engine</title>
+
+  <link
+    rel="stylesheet"
+    href="/styles.css"
+  />
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-mark">A</div>
+
+        <div>
+          <div class="brand-title">
+            ALPHA ENGINE
+          </div>
+
+          <div class="brand-subtitle">
+            Production
+          </div>
+        </div>
+      </div>
+
+
+      <nav class="nav">
+
+        <button
+          class="nav-item active"
+          data-section="overview"
+        >
+          <span>01</span>
+          Overview
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="recommendations"
+        >
+          <span>02</span>
+          Recomendaciones
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="byma"
+        >
+          <span>03</span>
+          BYMA Model
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="portfolio"
+        >
+          <span>04</span>
+          Mi Cartera
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="market"
+        >
+          <span>05</span>
+          Mercado & Riesgo
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="fundamentals"
+        >
+          <span>06</span>
+          Fundamentales
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="alpha"
+        >
+          <span>07</span>
+          Alpha AI
+        </button>
+
+        <button
+          class="nav-item"
+          data-section="system"
+        >
+          <span>08</span>
+          Sistema
+        </button>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="security-row">
+          <span class="security-dot"></span>
+
+          <div>
+            <strong>Private Local</strong>
+            <small>127.0.0.1</small>
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <main class="main">
+
+      <header class="topbar">
+
+        <div>
+
+          <div class="eyebrow">
+            ALPHA ENGINE V13
+          </div>
+
+          <h1 id="page-title">
+            Overview
+          </h1>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="asof-block">
+            <span>AS OF</span>
+            <strong id="asof">—</strong>
+          </div>
+
+          <div
+            id="system-status"
+            class="status-pill loading"
+          >
+            LOADING
+          </div>
+
+          <button
+            id="refresh-btn"
+            class="refresh-button"
+          >
+            Actualizar
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <div
+        id="loading"
+        class="loading-screen"
+      >
+        <div class="loader"></div>
+        <span>Cargando Alpha Product State…</span>
+      </div>
+
+
+      <div
+        id="error-box"
+        class="error-box hidden"
+      ></div>
+
+
+      <!-- ================================================= -->
+      <!-- OVERVIEW -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-overview"
+        class="page-section active"
+      >
+
+        <div class="hero-panel">
+
+          <div>
+
+            <div class="eyebrow">
+              SYSTEM AUTHORITY
+            </div>
+
+            <h2>
+              V13 Ideal
+            </h2>
+
+            <p id="hero-description">
+              Motor cuantitativo productivo.
+            </p>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <span>Holdout</span>
+              <strong id="hero-holdout">—</strong>
+            </div>
+
+            <div>
+              <span>Local</span>
+              <strong id="hero-local">—</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div
+          id="overview-cards"
+          class="metric-grid"
+        ></div>
+
+
+        <div class="grid-2">
+
+          <article class="panel chart-panel">
+
+            <div class="panel-header">
+
+              <div>
+                <div class="eyebrow">
+                  PERFORMANCE
+                </div>
+
+                <h3>
+                  NAV histórico · Base 100
+                </h3>
+              </div>
+
+              <div class="legend">
+
+                <span class="legend-item">
+                  <i class="legend-v13"></i>
+                  V13 Ideal
+                </span>
+
+                <span class="legend-item">
+                  <i class="legend-byma"></i>
+                  BYMA
+                </span>
+
+                <span class="legend-item">
+                  <i class="legend-personal"></i>
+                  Mi Cartera
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="chart-wrap">
+              <canvas id="nav-chart"></canvas>
+            </div>
+
+          </article>
+
+
+          <article class="panel">
+
+            <div class="panel-header">
+
+              <div>
+                <div class="eyebrow">
+                  LATEST MODEL
+                </div>
+
+                <h3>
+                  Estado actual
+                </h3>
+              </div>
+
+            </div>
+
+            <div
+              id="overview-status-list"
+              class="status-list"
+            ></div>
+
+          </article>
+
+        </div>
+
+
+        <article class="panel">
+
+          <div class="panel-header">
+
+            <div>
+              <div class="eyebrow">
+                TOP SIGNALS
+              </div>
+
+              <h3>
+                Principales recomendaciones V13
+              </h3>
+            </div>
+
+            <button
+              class="text-button"
+              data-goto="recommendations"
+            >
+              Ver todas →
+            </button>
+
+          </div>
+
+          <div class="table-wrap">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Intent</th>
+                  <th>Target</th>
+                  <th>Expected Alpha</th>
+                  <th>Entry</th>
+                </tr>
+              </thead>
+
+              <tbody id="top-recommendations"></tbody>
+            </table>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- RECOMMENDATIONS -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-recommendations"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              V13 IDEAL
+            </div>
+
+            <h2>
+              Recomendaciones
+            </h2>
+
+            <p>
+              Señales y pesos directamente del modelo productivo.
+            </p>
+          </div>
+
+
+          <div class="filter-group">
+
+            <input
+              id="recommendation-search"
+              type="search"
+              placeholder="Buscar ticker…"
+            />
+
+            <select id="recommendation-filter">
+              <option value="all">
+                Todos
+              </option>
+
+              <option value="positive">
+                Target positivo
+              </option>
+
+              <option value="entry">
+                Entry eligible
+              </option>
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <article class="panel">
+
+          <div class="table-wrap tall">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Intent</th>
+                  <th>Target</th>
+                  <th>Expected Active</th>
+                  <th>Entry</th>
+                  <th>Fecha señal</th>
+                </tr>
+              </thead>
+
+              <tbody id="recommendations-table"></tbody>
+            </table>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- BYMA -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-byma"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              ACCEPTED BYMA TRANSFER
+            </div>
+
+            <h2>
+              BYMA Model
+            </h2>
+
+            <p>
+              Traducción local del V13, separada de la geometría
+              de capacidad actual.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div
+          id="byma-cards"
+          class="metric-grid compact"
+        ></div>
+
+
+        <article class="panel">
+
+          <div class="table-wrap tall">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>V13</th>
+                  <th>Target</th>
+                  <th>Vehículo</th>
+                  <th>BYMA</th>
+                  <th>Ratio</th>
+                  <th>Disponible</th>
+                  <th>Peso actual</th>
+                  <th>Error</th>
+                </tr>
+              </thead>
+
+              <tbody id="byma-table"></tbody>
+            </table>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- PORTFOLIO -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-portfolio"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              PERSONAL LEDGER
+            </div>
+
+            <h2>
+              Mi Cartera
+            </h2>
+
+            <p>
+              Posiciones reales reconstruidas desde operaciones confirmadas.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div
+          id="portfolio-cards"
+          class="metric-grid"
+        ></div>
+
+
+        <div class="grid-2">
+
+          <article class="panel">
+
+            <div class="panel-header">
+
+              <div>
+                <div class="eyebrow">
+                  POSITIONS
+                </div>
+
+                <h3>
+                  Posiciones actuales
+                </h3>
+              </div>
+
+            </div>
+
+            <div class="table-wrap">
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Cantidad</th>
+                    <th>Costo prom.</th>
+                    <th>Valor</th>
+                    <th>P&L</th>
+                    <th>Peso</th>
+                  </tr>
+                </thead>
+
+                <tbody id="portfolio-positions"></tbody>
+              </table>
+
+            </div>
+
+          </article>
+
+
+          <article class="panel">
+
+            <div class="panel-header">
+
+              <div>
+                <div class="eyebrow">
+                  CASH
+                </div>
+
+                <h3>
+                  Caja y flujos
+                </h3>
+              </div>
+
+            </div>
+
+            <div
+              id="cash-list"
+              class="status-list"
+            ></div>
+
+          </article>
+
+        </div>
+
+
+        <article class="panel">
+
+          <div class="panel-header">
+
+            <div>
+              <div class="eyebrow">
+                LEDGER
+              </div>
+
+              <h3>
+                Últimas operaciones
+              </h3>
+            </div>
+
+          </div>
+
+          <div class="table-wrap">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Ticker</th>
+                  <th>Operación</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
+                  <th>Moneda</th>
+                  <th>Costos</th>
+                  <th>Fuente</th>
+                </tr>
+              </thead>
+
+              <tbody id="operations-table"></tbody>
+            </table>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- MARKET -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-market"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              MARKET STATE
+            </div>
+
+            <h2>
+              Mercado & Riesgo
+            </h2>
+
+            <p>
+              Estado del pipeline, cobertura y métricas disponibles.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="grid-2">
+
+          <article class="panel">
+
+            <div class="panel-header">
+              <h3>Mercado</h3>
+            </div>
+
+            <div
+              id="market-list"
+              class="data-list"
+            ></div>
+
+          </article>
+
+
+          <article class="panel">
+
+            <div class="panel-header">
+              <h3>Riesgo</h3>
+            </div>
+
+            <div
+              id="risk-list"
+              class="data-list"
+            ></div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- FUNDAMENTALS -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-fundamentals"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              SEC / COMPANY DATA
+            </div>
+
+            <h2>
+              Fundamentales
+            </h2>
+
+            <p>
+              Capa fundamental disponible para Alpha Engine.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div
+          id="fundamental-cards"
+          class="metric-grid compact"
+        ></div>
+
+
+        <article class="panel">
+
+          <div class="panel-header">
+            <h3>Estado de fundamentales</h3>
+          </div>
+
+          <div
+            id="fundamentals-list"
+            class="data-list"
+          ></div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- ALPHA AI -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-alpha"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              INTELLIGENCE LAYER
+            </div>
+
+            <h2>
+              Alpha AI
+            </h2>
+
+            <p>
+              Interfaz conversacional sobre modelo, empresas y cartera.
+            </p>
+          </div>
+
+          <div class="status-pill pending">
+            NEXT
+          </div>
+
+        </div>
+
+
+        <div class="alpha-layout">
+
+          <article class="panel alpha-chat">
+
+            <div class="chat-empty">
+
+              <div class="alpha-orb">
+                α
+              </div>
+
+              <h3>
+                Alpha AI todavía no está conectada
+              </h3>
+
+              <p>
+                El Product State y la cartera ya están preparados.
+                El siguiente paso conecta la LLM con permisos de
+                lectura y escritura confirmada.
+              </p>
+
+              <div class="prompt-examples">
+
+                <span>¿Qué recomienda comprar V13?</span>
+                <span>Mostrame NVDA</span>
+                <span>Comparame NVDA con MSFT</span>
+                <span>Compré 3 NVDA a 225</span>
+
+              </div>
+
+            </div>
+
+
+            <div class="chat-input disabled">
+
+              <input
+                disabled
+                placeholder="Alpha AI se conecta en el próximo paso…"
+              />
+
+              <button disabled>
+                Enviar
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <aside class="panel alpha-tools">
+
+            <div class="panel-header">
+              <h3>Herramientas previstas</h3>
+            </div>
+
+            <div class="tool-list">
+
+              <div>
+                <strong>V13</strong>
+                <span>Read</span>
+              </div>
+
+              <div>
+                <strong>BYMA</strong>
+                <span>Read</span>
+              </div>
+
+              <div>
+                <strong>Fundamentales</strong>
+                <span>Read</span>
+              </div>
+
+              <div>
+                <strong>Mi Cartera</strong>
+                <span>Read</span>
+              </div>
+
+              <div>
+                <strong>Operaciones</strong>
+                <span>Confirm → Write</span>
+              </div>
+
+              <div>
+                <strong>Broker</strong>
+                <span>NO ORDERS</span>
+              </div>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================================================= -->
+      <!-- SYSTEM -->
+      <!-- ================================================= -->
+
+      <section
+        id="section-system"
+        class="page-section"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <div class="eyebrow">
+              AUDIT
+            </div>
+
+            <h2>
+              Sistema
+            </h2>
+
+            <p>
+              Autoridad, seguridad y estado del producto.
+            </p>
+          </div>
+
+        </div>
+
+
+        <article class="panel">
+
+          <div
+            id="system-list"
+            class="data-list system-grid"
+          ></div>
+
+        </article>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
