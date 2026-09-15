@@ -1,0 +1,1910 @@
+﻿:root {
+
+  --alpha-ink:
+    #030b13;
+
+  --alpha-navy:
+    #061827;
+
+  --alpha-navy-2:
+    #09263a;
+
+  --alpha-panel:
+    rgba(7, 25, 38, .91);
+
+  --alpha-panel-2:
+    rgba(9, 31, 45, .82);
+
+  --alpha-line:
+    rgba(61, 132, 153, .18);
+
+  --alpha-green:
+    #20d875;
+
+  --alpha-green-2:
+    #0ea85a;
+
+  --alpha-green-soft:
+    rgba(32, 216, 117, .11);
+
+  --alpha-red:
+    #e33858;
+
+  --alpha-red-soft:
+    rgba(227, 56, 88, .10);
+
+  --alpha-cyan:
+    #48c8d7;
+
+  --alpha-white:
+    #f3f8fa;
+
+  --alpha-muted:
+    #7d9baa;
+
+  --alpha-gold:
+    #dfbd73;
+}
+
+
+html,
+body {
+
+  background:
+    radial-gradient(
+      circle at 12% 5%,
+      rgba(11, 122, 86, .14),
+      transparent 29%
+    ),
+    radial-gradient(
+      circle at 94% 22%,
+      rgba(188, 31, 65, .08),
+      transparent 26%
+    ),
+    linear-gradient(
+      160deg,
+      #02070d 0%,
+      #04101a 48%,
+      #061522 100%
+    )
+    fixed;
+
+}
+
+
+body::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  opacity: .22;
+
+  background-image:
+    linear-gradient(
+      rgba(43, 161, 124, .035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(43, 161, 124, .035) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    42px 42px;
+
+}
+
+
+.sidebar {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 15, 24, .98),
+      rgba(3, 10, 17, .98)
+    );
+
+  border-right:
+    1px solid
+    rgba(32, 216, 117, .12);
+
+}
+
+
+.brand {
+
+  padding-bottom:
+    28px;
+
+}
+
+
+.brand-mark {
+
+  width:
+    46px !important;
+
+  height:
+    46px !important;
+
+  overflow:
+    hidden;
+
+  padding:
+    0;
+
+  border-radius:
+    12px;
+
+  background:
+    #02101b !important;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .25);
+
+  box-shadow:
+    0 0 30px
+    rgba(32, 216, 117, .12);
+
+}
+
+
+.brand-logo {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  object-fit:
+    cover;
+
+}
+
+
+.brand-title {
+
+  color:
+    var(--alpha-white);
+
+  font-size:
+    12px;
+
+  letter-spacing:
+    .14em;
+
+}
+
+
+.brand-subtitle {
+
+  color:
+    var(--alpha-green);
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    .09em;
+
+  font-size:
+    8px;
+
+}
+
+
+.nav-item.active {
+
+  color:
+    white;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(32, 216, 117, .13),
+      rgba(32, 216, 117, .025)
+    );
+
+  border-color:
+    rgba(32, 216, 117, .18);
+
+  box-shadow:
+    inset 3px 0 0
+    var(--alpha-green);
+
+}
+
+
+.nav-item.active span {
+
+  color:
+    var(--alpha-green);
+
+}
+
+
+.security-dot {
+
+  background:
+    var(--alpha-green);
+
+  box-shadow:
+    0 0 15px
+    rgba(32, 216, 117, .75);
+
+}
+
+
+.topbar {
+
+  background:
+    rgba(3, 11, 18, .87);
+
+  border-color:
+    rgba(32, 216, 117, .09);
+
+}
+
+
+.eyebrow {
+
+  color:
+    #638793;
+
+}
+
+
+.refresh-button {
+
+  color:
+    #dffbed;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(18, 135, 78, .75),
+      rgba(14, 98, 64, .72)
+    );
+
+  border-color:
+    rgba(32, 216, 117, .24);
+
+}
+
+
+.refresh-button:hover {
+
+  background:
+    linear-gradient(
+      135deg,
+      #138d55,
+      #0a6541
+    );
+
+}
+
+
+.status-pill.pass {
+
+  color:
+    var(--alpha-green);
+
+  background:
+    var(--alpha-green-soft);
+
+  border-color:
+    rgba(32, 216, 117, .24);
+
+}
+
+
+.panel,
+.metric-card {
+
+  border-color:
+    var(--alpha-line);
+
+  background:
+    linear-gradient(
+      155deg,
+      rgba(9, 29, 43, .94),
+      rgba(4, 16, 26, .95)
+    );
+
+  box-shadow:
+    0 18px 55px
+    rgba(0, 0, 0, .16);
+
+}
+
+
+.metric-card {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+}
+
+
+.metric-card::before {
+
+  content: "";
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  top:
+    0;
+
+  width:
+    2px;
+
+  height:
+    100%;
+
+  background:
+    linear-gradient(
+      var(--alpha-green),
+      transparent
+    );
+
+}
+
+
+.metric-value {
+
+  color:
+    #f3fbf7;
+
+}
+
+
+.hero-panel {
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .18);
+
+  background:
+    linear-gradient(
+      105deg,
+      rgba(7, 31, 40, .97) 0%,
+      rgba(5, 24, 35, .93) 52%,
+      rgba(7, 44, 36, .90) 100%
+    );
+
+}
+
+
+.alpha-brand-banner {
+
+  position:
+    relative;
+
+  min-height:
+    225px;
+
+  overflow:
+    hidden;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    30px;
+
+  margin-bottom:
+    18px;
+
+  padding:
+    30px 34px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .23);
+
+  border-radius:
+    17px;
+
+  background:
+    radial-gradient(
+      circle at 73% 48%,
+      rgba(32, 216, 117, .17),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 75%,
+      rgba(227, 56, 88, .10),
+      transparent 28%
+    ),
+    linear-gradient(
+      125deg,
+      #04111c,
+      #082235 57%,
+      #08271e
+    );
+
+  box-shadow:
+    0 28px 90px
+    rgba(0, 0, 0, .24);
+
+}
+
+
+.alpha-brand-copy {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    670px;
+
+}
+
+
+.alpha-brand-kicker {
+
+  margin-bottom:
+    10px;
+
+  color:
+    var(--alpha-green);
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .22em;
+
+}
+
+
+.alpha-brand-banner h2 {
+
+  margin:
+    0;
+
+  max-width:
+    650px;
+
+  font-size:
+    clamp(
+      28px,
+      4vw,
+      50px
+    );
+
+  line-height:
+    1.02;
+
+  letter-spacing:
+    -.04em;
+
+}
+
+
+.alpha-brand-banner p {
+
+  max-width:
+    600px;
+
+  margin:
+    15px 0 0;
+
+  color:
+    #8ba8b5;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.65;
+
+}
+
+
+.alpha-brand-system {
+
+  display:
+    flex;
+
+  gap:
+    18px;
+
+  margin-top:
+    22px;
+
+}
+
+
+.alpha-brand-system > div {
+
+  padding:
+    9px 12px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .14);
+
+  border-radius:
+    8px;
+
+  background:
+    rgba(0, 0, 0, .16);
+
+}
+
+
+.alpha-brand-system span,
+.alpha-brand-system strong {
+
+  display:
+    block;
+
+}
+
+
+.alpha-brand-system span {
+
+  color:
+    #62808d;
+
+  font-size:
+    7px;
+
+  letter-spacing:
+    .12em;
+
+}
+
+
+.alpha-brand-system strong {
+
+  margin-top:
+    4px;
+
+  font-size:
+    10px;
+
+}
+
+
+.alpha-brand-image {
+
+  position:
+    absolute;
+
+  right:
+    -35px;
+
+  top:
+    50%;
+
+  transform:
+    translateY(-50%);
+
+  width:
+    330px;
+
+  height:
+    330px;
+
+  object-fit:
+    cover;
+
+  opacity:
+    .34;
+
+  filter:
+    saturate(1.15)
+    contrast(1.12);
+
+  mask-image:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      black 35%
+    );
+
+}
+
+
+.alpha-live-ribbon {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  margin-bottom:
+    14px;
+
+  color:
+    #a1c1b0;
+
+  font-size:
+    9px;
+
+  letter-spacing:
+    .08em;
+
+}
+
+
+.alpha-live-dot {
+
+  width:
+    7px;
+
+  height:
+    7px;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--alpha-green);
+
+  box-shadow:
+    0 0 15px
+    var(--alpha-green);
+
+}
+
+
+.alpha-market-strip {
+
+  margin-bottom:
+    18px;
+
+}
+
+
+.alpha-market-header {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    10px;
+
+}
+
+
+.alpha-market-header small {
+
+  color:
+    var(--alpha-muted);
+
+  font-size:
+    8px;
+
+}
+
+
+.alpha-market-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      6,
+      minmax(
+        120px,
+        1fr
+      )
+    );
+
+  gap:
+    8px;
+
+}
+
+
+.alpha-market-card {
+
+  padding:
+    13px;
+
+  border:
+    1px solid
+    var(--alpha-line);
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(
+      5,
+      20,
+      31,
+      .78
+    );
+
+}
+
+
+.alpha-market-symbol {
+
+  color:
+    #83a4b2;
+
+  font-size:
+    8px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .1em;
+
+}
+
+
+.alpha-market-price {
+
+  margin-top:
+    7px;
+
+  color:
+    white;
+
+  font-size:
+    16px;
+
+  font-weight:
+    750;
+
+}
+
+
+.alpha-market-change {
+
+  margin-top:
+    5px;
+
+  font-size:
+    10px;
+
+  font-weight:
+    700;
+
+}
+
+
+.alpha-market-change.up {
+
+  color:
+    var(--alpha-green);
+
+}
+
+
+.alpha-market-change.down {
+
+  color:
+    var(--alpha-red);
+
+}
+
+
+.alpha-market-change.flat {
+
+  color:
+    var(--alpha-muted);
+
+}
+
+
+.alpha-market-source {
+
+  margin-top:
+    7px;
+
+  color:
+    #4e6c79;
+
+  font-size:
+    7px;
+
+}
+
+
+.alpha-monitor {
+
+  margin-bottom:
+    15px;
+
+  padding:
+    18px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .17);
+
+  border-radius:
+    14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 25, 37, .96),
+      rgba(5, 17, 27, .96)
+    );
+
+}
+
+
+.alpha-monitor-title {
+
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  gap:
+    20px;
+
+  margin-bottom:
+    14px;
+
+}
+
+
+.alpha-monitor-title h3 {
+
+  margin:
+    3px 0 0;
+
+}
+
+
+.alpha-monitor-title small {
+
+  align-self:
+    center;
+
+  color:
+    var(--alpha-muted);
+
+  font-size:
+    8px;
+
+}
+
+
+/* ==========================================================
+   TICKER INTELLIGENCE
+   ========================================================== */
+
+.ticker {
+
+  cursor:
+    pointer;
+
+}
+
+
+.ticker:hover {
+
+  color:
+    var(--alpha-green);
+
+  text-decoration:
+    underline;
+
+  text-underline-offset:
+    3px;
+
+}
+
+
+.ticker-modal-backdrop {
+
+  position:
+    fixed;
+
+  inset:
+    0;
+
+  z-index:
+    1000;
+
+  display:
+    none;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    20px;
+
+  background:
+    rgba(
+      0,
+      5,
+      10,
+      .79
+    );
+
+  backdrop-filter:
+    blur(9px);
+
+}
+
+
+.ticker-modal-backdrop.open {
+
+  display:
+    flex;
+
+}
+
+
+.ticker-modal {
+
+  width:
+    min(
+      1140px,
+      97vw
+    );
+
+  max-height:
+    94vh;
+
+  overflow:
+    auto;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .20);
+
+  border-radius:
+    17px;
+
+  background:
+    linear-gradient(
+      155deg,
+      #061521,
+      #030c14
+    );
+
+  box-shadow:
+    0 40px 120px
+    rgba(0, 0, 0, .7);
+
+}
+
+
+.ticker-modal-header {
+
+  position:
+    sticky;
+
+  top:
+    0;
+
+  z-index:
+    4;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  padding:
+    20px 23px;
+
+  background:
+    rgba(4, 15, 24, .96);
+
+  border-bottom:
+    1px solid
+    rgba(32, 216, 117, .12);
+
+  backdrop-filter:
+    blur(12px);
+
+}
+
+
+.ticker-modal-header h2 {
+
+  margin:
+    3px 0 0;
+
+  font-size:
+    27px;
+
+}
+
+
+.ticker-close {
+
+  width:
+    36px;
+
+  height:
+    36px;
+
+  border:
+    1px solid
+    var(--alpha-line);
+
+  border-radius:
+    8px;
+
+  background:
+    #0a1c29;
+
+  color:
+    var(--alpha-white);
+
+  cursor:
+    pointer;
+
+}
+
+
+.ticker-modal-body {
+
+  padding:
+    20px;
+
+}
+
+
+.ticker-live-banner {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      220px,
+      1.3fr
+    )
+    repeat(
+      4,
+      minmax(
+        120px,
+        .7fr
+      )
+    );
+
+  gap:
+    9px;
+
+  margin-bottom:
+    15px;
+
+}
+
+
+.ticker-live-primary,
+.ticker-live-stat {
+
+  padding:
+    15px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .15);
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(8, 30, 41, .78);
+
+}
+
+
+.ticker-live-primary strong {
+
+  display:
+    block;
+
+  margin-top:
+    5px;
+
+  font-size:
+    26px;
+
+}
+
+
+.ticker-live-stat span,
+.ticker-live-primary span {
+
+  display:
+    block;
+
+  color:
+    #708f9c;
+
+  font-size:
+    8px;
+
+  letter-spacing:
+    .08em;
+
+}
+
+
+.ticker-live-stat strong {
+
+  display:
+    block;
+
+  margin-top:
+    7px;
+
+  font-size:
+    13px;
+
+}
+
+
+.ticker-coverage {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    6px;
+
+  margin-bottom:
+    15px;
+
+}
+
+
+.coverage-chip {
+
+  padding:
+    6px 9px;
+
+  border:
+    1px solid
+    var(--alpha-line);
+
+  border-radius:
+    999px;
+
+  color:
+    #6f8d9a;
+
+  font-size:
+    8px;
+
+  font-weight:
+    800;
+
+}
+
+
+.coverage-chip.yes {
+
+  color:
+    var(--alpha-green);
+
+  background:
+    var(--alpha-green-soft);
+
+  border-color:
+    rgba(32, 216, 117, .22);
+
+}
+
+
+.ticker-section {
+
+  margin-bottom:
+    12px;
+
+  padding:
+    17px;
+
+  border:
+    1px solid
+    var(--alpha-line);
+
+  border-radius:
+    11px;
+
+  background:
+    rgba(
+      7,
+      24,
+      36,
+      .72
+    );
+
+}
+
+
+.ticker-section h3 {
+
+  margin:
+    0 0 12px;
+
+  color:
+    #dfecef;
+
+  font-size:
+    12px;
+
+}
+
+
+.ticker-kv-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    7px;
+
+}
+
+
+.ticker-kv {
+
+  min-width:
+    0;
+
+  padding:
+    10px;
+
+  border:
+    1px solid
+    rgba(78, 126, 143, .11);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(2, 11, 18, .46);
+
+}
+
+
+.ticker-kv span,
+.ticker-kv strong {
+
+  display:
+    block;
+
+  overflow-wrap:
+    anywhere;
+
+}
+
+
+.ticker-kv span {
+
+  margin-bottom:
+    5px;
+
+  color:
+    #63808c;
+
+  font-size:
+    8px;
+
+}
+
+
+.ticker-kv strong {
+
+  font-size:
+    10px;
+
+}
+
+
+/* ==========================================================
+   ALPHA DECISION DESK
+   ========================================================== */
+
+.alpha-layout {
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    310px;
+
+}
+
+
+.alpha-chat {
+
+  min-height:
+    610px;
+
+  border-color:
+    rgba(32, 216, 117, .19);
+
+}
+
+
+.alpha-desk-header {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    20px;
+
+  margin:
+    -19px -19px 18px;
+
+  padding:
+    20px;
+
+  border-bottom:
+    1px solid
+    rgba(32, 216, 117, .13);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 93, 59, .16),
+      transparent
+    );
+
+}
+
+
+.alpha-desk-identity {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    13px;
+
+}
+
+
+.alpha-desk-logo {
+
+  width:
+    44px;
+
+  height:
+    44px;
+
+  object-fit:
+    cover;
+
+  border-radius:
+    10px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .28);
+
+}
+
+
+.alpha-desk-header h3 {
+
+  margin:
+    2px 0 0;
+
+  font-size:
+    14px;
+
+}
+
+
+.alpha-desk-header small {
+
+  color:
+    var(--alpha-green);
+
+  font-size:
+    8px;
+
+  letter-spacing:
+    .1em;
+
+}
+
+
+.alpha-desk-messages {
+
+  min-height:
+    390px;
+
+  max-height:
+    520px;
+
+  overflow-y:
+    auto;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    9px;
+
+  padding:
+    4px 2px 18px;
+
+}
+
+
+.alpha-desk-message {
+
+  position:
+    relative;
+
+  width:
+    100%;
+
+  padding:
+    14px 15px 14px 17px;
+
+  border:
+    1px solid
+    rgba(60, 112, 130, .13);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(3, 14, 22, .58);
+
+  color:
+    #dce8ec;
+
+  font-size:
+    11px;
+
+  line-height:
+    1.65;
+
+  white-space:
+    pre-wrap;
+
+}
+
+
+.alpha-desk-message::before {
+
+  display:
+    block;
+
+  margin-bottom:
+    7px;
+
+  font-size:
+    7px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .14em;
+
+}
+
+
+.alpha-desk-message.alpha {
+
+  border-left:
+    2px solid
+    var(--alpha-green);
+
+}
+
+
+.alpha-desk-message.alpha::before {
+
+  content:
+    "ALPHA // INTELLIGENCE";
+
+  color:
+    var(--alpha-green);
+
+}
+
+
+.alpha-desk-message.user {
+
+  border-left:
+    2px solid
+    #52778a;
+
+  color:
+    #b9cbd2;
+
+}
+
+
+.alpha-desk-message.user::before {
+
+  content:
+    "DESK QUERY";
+
+  color:
+    #668c9d;
+
+}
+
+
+.alpha-desk-input {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap:
+    8px;
+
+  padding-top:
+    14px;
+
+  border-top:
+    1px solid
+    rgba(32, 216, 117, .10);
+
+}
+
+
+.alpha-desk-input textarea {
+
+  min-height:
+    55px;
+
+  max-height:
+    145px;
+
+  resize:
+    vertical;
+
+  padding:
+    12px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .15);
+
+  border-radius:
+    8px;
+
+  outline:
+    none;
+
+  color:
+    var(--alpha-white);
+
+  background:
+    rgba(1, 10, 16, .75);
+
+}
+
+
+.alpha-desk-input textarea:focus {
+
+  border-color:
+    rgba(32, 216, 117, .38);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(32, 216, 117, .05);
+
+}
+
+
+.alpha-desk-input button {
+
+  min-width:
+    100px;
+
+  border:
+    1px solid
+    rgba(32, 216, 117, .24);
+
+  border-radius:
+    8px;
+
+  color:
+    #effff6;
+
+  background:
+    linear-gradient(
+      135deg,
+      #13864f,
+      #08623c
+    );
+
+  font-weight:
+    750;
+
+  cursor:
+    pointer;
+
+}
+
+
+.alpha-desk-note {
+
+  margin-bottom:
+    12px;
+
+  padding:
+    10px 12px;
+
+  border:
+    1px solid
+    rgba(223, 189, 115, .16);
+
+  border-radius:
+    7px;
+
+  color:
+    var(--alpha-gold);
+
+  background:
+    rgba(223, 189, 115, .055);
+
+  font-size:
+    9px;
+
+}
+
+
+.alpha-tools {
+
+  border-color:
+    rgba(32, 216, 117, .14);
+
+}
+
+
+.alpha-doctrine {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    8px;
+
+}
+
+
+.alpha-doctrine-item {
+
+  padding:
+    11px;
+
+  border:
+    1px solid
+    var(--alpha-line);
+
+  border-radius:
+    8px;
+
+  background:
+    rgba(3, 13, 21, .46);
+
+}
+
+
+.alpha-doctrine-item strong,
+.alpha-doctrine-item span {
+
+  display:
+    block;
+
+}
+
+
+.alpha-doctrine-item strong {
+
+  font-size:
+    10px;
+
+}
+
+
+.alpha-doctrine-item span {
+
+  margin-top:
+    4px;
+
+  color:
+    #62808d;
+
+  font-size:
+    8px;
+
+  line-height:
+    1.45;
+
+}
+
+
+.positive {
+
+  color:
+    var(--alpha-green) !important;
+
+}
+
+
+.negative {
+
+  color:
+    var(--alpha-red) !important;
+
+}
+
+
+@media (
+  max-width: 1200px
+) {
+
+  .alpha-market-grid {
+
+    grid-template-columns:
+      repeat(
+        3,
+        1fr
+      );
+
+  }
+
+
+  .ticker-kv-grid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+  }
+
+
+  .ticker-live-banner {
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+  }
+
+}
+
+
+@media (
+  max-width: 700px
+) {
+
+  .alpha-brand-banner {
+
+    min-height:
+      290px;
+
+    padding:
+      23px;
+
+  }
+
+
+  .alpha-brand-image {
+
+    opacity:
+      .16;
+
+    right:
+      -85px;
+
+  }
+
+
+  .alpha-market-grid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+  }
+
+
+  .ticker-kv-grid,
+  .ticker-live-banner {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
