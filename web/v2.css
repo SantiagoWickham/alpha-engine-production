@@ -1,0 +1,320 @@
+﻿.brand-mark {
+  overflow: hidden !important;
+  padding: 0 !important;
+  background: #07101a !important;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.ticker {
+  cursor: pointer;
+}
+
+.ticker:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ticker-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background:
+    rgba(0, 0, 0, .72);
+
+  backdrop-filter:
+    blur(6px);
+}
+
+.ticker-modal-backdrop.open {
+  display: flex;
+}
+
+.ticker-modal {
+  width: min(1050px, 96vw);
+  max-height: 92vh;
+
+  overflow: auto;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 16px;
+
+  background: #0a111b;
+
+  box-shadow:
+    0 30px 90px
+    rgba(0, 0, 0, .6);
+}
+
+.ticker-modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 22px;
+
+  background:
+    rgba(10, 17, 27, .96);
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.ticker-modal-header h2 {
+  margin: 4px 0 0;
+}
+
+.ticker-close {
+  width: 35px;
+  height: 35px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 8px;
+
+  background: #121c2a;
+  color: var(--text);
+
+  cursor: pointer;
+}
+
+.ticker-modal-body {
+  padding: 20px;
+}
+
+.ticker-coverage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-bottom: 16px;
+}
+
+.coverage-chip {
+  padding: 6px 9px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 999px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.coverage-chip.yes {
+  color: var(--green);
+  background: var(--green-soft);
+
+  border-color:
+    rgba(71, 215, 161, .24);
+}
+
+.ticker-section {
+  margin-bottom: 14px;
+  padding: 17px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 12px;
+
+  background: #0e1723;
+}
+
+.ticker-section h3 {
+  margin: 0 0 13px;
+  font-size: 13px;
+}
+
+.ticker-kv-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 8px;
+}
+
+.ticker-kv {
+  min-width: 0;
+
+  padding: 10px;
+
+  border:
+    1px solid var(--border-soft);
+
+  border-radius: 8px;
+
+  background: #09111a;
+}
+
+.ticker-kv span,
+.ticker-kv strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.ticker-kv span {
+  margin-bottom: 5px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+}
+
+.ticker-kv strong {
+  font-size: 11px;
+}
+
+.alpha-v2-chat {
+  min-height: 560px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.alpha-v2-messages {
+  flex: 1;
+
+  min-height: 390px;
+
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding-bottom: 16px;
+}
+
+.alpha-message {
+  max-width: 83%;
+
+  padding: 12px 14px;
+
+  border-radius: 11px;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+}
+
+.alpha-message.user {
+  align-self: flex-end;
+
+  background: #173459;
+
+  border:
+    1px solid #285486;
+}
+
+.alpha-message.assistant {
+  align-self: flex-start;
+
+  background: #111b28;
+
+  border:
+    1px solid var(--border);
+}
+
+.alpha-v2-input {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap: 9px;
+
+  padding-top: 14px;
+
+  border-top:
+    1px solid var(--border);
+}
+
+.alpha-v2-input textarea {
+  min-height: 54px;
+
+  padding: 12px;
+
+  resize: vertical;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #080f18;
+  color: var(--text);
+}
+
+.alpha-v2-input button {
+  min-width: 90px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #1f74d7;
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.alpha-config-note {
+  margin-bottom: 14px;
+
+  padding: 11px 13px;
+
+  border:
+    1px solid
+    rgba(243, 169, 92, .25);
+
+  border-radius: 9px;
+
+  background:
+    rgba(243, 169, 92, .08);
+
+  color: #e9b77f;
+
+  font-size: 11px;
+}
+
+@media (max-width: 800px) {
+
+  .ticker-kv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .alpha-message {
+    max-width: 95%;
+  }
+
+}
