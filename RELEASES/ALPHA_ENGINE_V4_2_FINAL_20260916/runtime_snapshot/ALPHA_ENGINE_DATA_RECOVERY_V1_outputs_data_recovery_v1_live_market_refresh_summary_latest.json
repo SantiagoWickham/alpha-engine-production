@@ -1,0 +1,13 @@
+{
+  "stage": "ALPHA_ENGINE_DATA_RECOVERY_V1_DR1F_MARKET",
+  "asof": "2026-09-16T05:52:48.518912+00:00",
+  "market_asset_rows": 200,
+  "unique_provider_symbols_requested": 212,
+  "provider_symbols_failed": 0,
+  "asset_symbols_missing": 0,
+  "score_columns_blank": true,
+  "sheet_write_pending": true,
+  "v13_mutated": false,
+  "web_mutated": false,
+  "product_state_mutated": false
+}

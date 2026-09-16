@@ -1,0 +1,466 @@
+
+from __future__ import annotations
+
+import concurrent.futures
+import json
+import math
+import os
+import sys
+import time
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(r"C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_PRODUCTION")
+V13 = ROOT / "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON"
+SOURCE = ROOT / "ALPHA_ENGINE_V12_RETURN_FIRST_STARTER"
+REC = ROOT / "ALPHA_ENGINE_DATA_RECOVERY_V1"
+
+OUT_DIR = REC / "outputs" / "data_recovery_v1" / "forward_v42"
+OUT_JSON = OUT_DIR / "forward_nav_latest.json"
+OUT_CSV = OUT_DIR / "forward_nav_latest.csv"
+
+CONTRACT = V13 / "outputs" / "live_shadow" / "v13_live_shadow_contract_history.csv"
+SUMMARY = V13 / "outputs" / "live_shadow" / "v13_live_shadow_summary.json"
+ANCHORS = V13 / "outputs" / "live_shadow" / "v13_live_adjusted_anchor_audit.csv"
+MKT_AUDIT = V13 / "outputs" / "live_shadow" / "v13_live_market_audit.csv"
+HOLD_ADVISOR = V13 / "outputs" / "v13_phase4_holdout_advisor.parquet"
+HOLD_NAV = V13 / "outputs" / "v13_phase4_holdout_nav_20bps.csv"
+
+CANON = SOURCE / "outputs" / "phase2_canonical_pit_panel.parquet"
+RET = SOURCE / "outputs" / "phase2c_return_price_layer.parquet"
+
+HOLD_START = pd.Timestamp("2025-01-02")
+LIVE_START = pd.Timestamp("2026-09-04")
+UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 Chrome/153 Safari/537.36 "
+    "AlphaEngineForwardNAV/4.2"
+)
+
+sys.path.insert(0, str(V13 / "src"))
+from alpha_engine_v13 import active_alpha_persistent_portfolio as p3y
+from alpha_engine_v13 import economic_portfolio_closure as p3v
+from alpha_engine_v13 import roundtrip_resize_hysteresis as p3z
+
+
+def _num(x):
+    try:
+        v = float(x)
+    except (TypeError, ValueError):
+        return None
+    return v if math.isfinite(v) else None
+
+
+def _bool(x):
+    if isinstance(x, bool):
+        return x
+    return str(x).strip().lower() in {"1","true","yes","y","si","sí"}
+
+
+def _date(s):
+    return pd.to_datetime(s, errors="coerce").dt.normalize()
+
+
+def _ticker(s):
+    return s.astype(str).str.strip().str.upper()
+
+
+def _read_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def _yahoo_daily(symbol: str, start: pd.Timestamp, end: pd.Timestamp) -> pd.DataFrame:
+    p1 = int((start.tz_localize("UTC") if start.tzinfo is None else start).timestamp())
+    p2 = int(((end + pd.Timedelta(days=2)).tz_localize("UTC") if end.tzinfo is None else (end + pd.Timedelta(days=2))).timestamp())
+    last_error = None
+    for host in ("https://query1.finance.yahoo.com","https://query2.finance.yahoo.com"):
+        url = (
+            f"{host}/v8/finance/chart/{urllib.parse.quote(symbol, safe='')}"
+            f"?period1={p1}&period2={p2}&interval=1d&events=div%2Csplits"
+            "&includeAdjustedClose=true"
+        )
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request(
+                    url,
+                    headers={"User-Agent": UA, "Accept": "application/json"},
+                )
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    payload = json.loads(resp.read().decode("utf-8"))
+                result = ((payload.get("chart") or {}).get("result") or [None])[0]
+                if not result:
+                    raise RuntimeError("YAHOO_EMPTY_RESULT")
+                ts = result.get("timestamp") or []
+                quote = ((result.get("indicators") or {}).get("quote") or [{}])[0]
+                adj = ((result.get("indicators") or {}).get("adjclose") or [{}])[0].get("adjclose") or []
+                close = quote.get("close") or []
+                volume = quote.get("volume") or []
+                rows = []
+                for i, raw_ts in enumerate(ts):
+                    c = _num(close[i]) if i < len(close) else None
+                    a = _num(adj[i]) if i < len(adj) else c
+                    if c is None:
+                        continue
+                    rows.append({
+                        "date": pd.Timestamp(raw_ts, unit="s", tz="UTC").tz_convert(None).normalize(),
+                        "close": c,
+                        "adj_close": a if a is not None else c,
+                        "volume": _num(volume[i]) if i < len(volume) else None,
+                    })
+                if not rows:
+                    raise RuntimeError("YAHOO_NO_DAILY_ROWS")
+                return pd.DataFrame(rows).drop_duplicates("date", keep="last").sort_values("date")
+            except Exception as exc:
+                last_error = exc
+                time.sleep(0.6 * (attempt + 1))
+    raise RuntimeError(f"YAHOO_FAILED {symbol}: {last_error}")
+
+
+def _load_hist_benchmark(cfg, symbol: str) -> pd.Series:
+    key = "source_spy_benchmark" if symbol == "SPY" else "source_qqq_benchmark"
+    rel = cfg.p.get(key)
+    if not rel:
+        raise RuntimeError(f"BENCHMARK_CONFIG_MISSING {key}")
+    path = SOURCE / rel
+    if not path.exists():
+        raise RuntimeError(f"BENCHMARK_FILE_MISSING {path}")
+    x = pd.read_parquet(path)
+    if "date" not in x.columns:
+        raise RuntimeError(f"BENCHMARK_DATE_COLUMN_MISSING {path}")
+    x["date"] = _date(x["date"])
+    value_col = symbol if symbol in x.columns else None
+    if value_col is None:
+        numeric = [
+            c for c in x.columns
+            if c != "date" and pd.to_numeric(x[c], errors="coerce").notna().sum() > 10
+        ]
+        if not numeric:
+            raise RuntimeError(f"BENCHMARK_VALUE_COLUMN_MISSING {path}")
+        value_col = numeric[0]
+    s = pd.Series(
+        pd.to_numeric(x[value_col], errors="coerce").to_numpy(),
+        index=pd.DatetimeIndex(x["date"]),
+        name=symbol,
+    ).dropna()
+    return s[~s.index.duplicated(keep="last")].sort_index()
+
+
+def _extend_benchmark(hist: pd.Series, symbol: str, latest: pd.Timestamp) -> pd.Series:
+    live = _yahoo_daily(symbol, LIVE_START - pd.Timedelta(days=10), latest)
+    # Benchmark only defines the exchange calendar inside prepare_market.
+    # Raw close is used for a transparent live benchmark comparison.
+    ls = pd.Series(live["close"].to_numpy(float), index=pd.DatetimeIndex(live["date"]), name=symbol)
+    out = pd.concat([hist[hist.index <= LIVE_START], ls[ls.index > LIVE_START]])
+    return out[~out.index.duplicated(keep="last")].sort_index()
+
+
+def _historical_surface() -> tuple[pd.DataFrame, dict[str, bool]]:
+    c = pd.read_parquet(
+        CANON,
+        columns=["date","ticker","close","research_eligible"],
+    )
+    r = pd.read_parquet(
+        RET,
+        columns=["date","ticker","target_total_return_price"],
+    )
+    c["date"] = _date(c["date"])
+    c["ticker"] = _ticker(c["ticker"])
+    r["date"] = _date(r["date"])
+    r["ticker"] = _ticker(r["ticker"])
+    c = c[c["date"] <= LIVE_START].copy()
+    r = r[r["date"] <= LIVE_START].copy()
+    surf = c.merge(r, on=["date","ticker"], how="left", validate="one_to_one")
+    surf["execution_close"] = pd.to_numeric(surf["close"], errors="coerce")
+    surf["mark_price"] = pd.to_numeric(surf["target_total_return_price"], errors="coerce")
+    surf["research_eligible"] = surf["research_eligible"].fillna(False).astype(bool)
+    eligibility = (
+        surf.sort_values(["ticker","date"])
+        .groupby("ticker", sort=False)["research_eligible"]
+        .last()
+        .to_dict()
+    )
+    return (
+        surf[["date","ticker","execution_close","mark_price","research_eligible"]]
+        .drop_duplicates(["date","ticker"], keep="last")
+        .sort_values(["date","ticker"]),
+        eligibility,
+    )
+
+
+def _live_surface(latest: pd.Timestamp, eligibility: dict[str, bool]) -> tuple[pd.DataFrame, dict]:
+    audit = pd.read_csv(MKT_AUDIT)
+    anchors = pd.read_csv(ANCHORS)
+    audit["ticker"] = _ticker(audit["ticker"])
+    anchors["ticker"] = _ticker(anchors["ticker"])
+    provider_col = "provider_symbol" if "provider_symbol" in audit.columns else None
+    if provider_col is None:
+        raise RuntimeError("LIVE_MARKET_AUDIT_PROVIDER_SYMBOL_MISSING")
+    scales = {
+        str(r.ticker): float(r.scale)
+        for r in anchors.dropna(subset=["ticker","scale"]).itertuples()
+        if _num(r.scale) is not None
+    }
+    mapping = {}
+    for r in audit.itertuples():
+        t = str(r.ticker)
+        sym = str(getattr(r, provider_col)).strip()
+        if t and sym and sym.lower() != "nan":
+            mapping[t] = sym
+    if len(mapping) < 175:
+        raise RuntimeError(f"LIVE_PROVIDER_MAPPING_TOO_SMALL {len(mapping)}")
+
+    def one(item):
+        ticker, symbol = item
+        y = _yahoo_daily(symbol, LIVE_START - pd.Timedelta(days=7), latest)
+        y = y[(y["date"] > LIVE_START) & (y["date"] <= latest)].copy()
+        scale = scales.get(ticker)
+        if scale is None:
+            raise RuntimeError(f"LIVE_SCALE_MISSING {ticker}")
+        if y.empty:
+            raise RuntimeError(f"LIVE_ROWS_MISSING {ticker}")
+        y["ticker"] = ticker
+        y["execution_close"] = pd.to_numeric(y["close"], errors="coerce")
+        y["mark_price"] = pd.to_numeric(y["adj_close"], errors="coerce") * scale
+        y["research_eligible"] = bool(eligibility.get(ticker, True))
+        return y[["date","ticker","execution_close","mark_price","research_eligible"]]
+
+    frames = []
+    errors = {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
+        futures = {ex.submit(one, item): item for item in mapping.items()}
+        for fut in concurrent.futures.as_completed(futures):
+            ticker, _ = futures[fut]
+            try:
+                frames.append(fut.result())
+            except Exception as exc:
+                errors[ticker] = str(exc)
+
+    if errors:
+        raise RuntimeError(
+            "LIVE_SURFACE_FETCH_FAILED "
+            + json.dumps(dict(list(errors.items())[:12]), ensure_ascii=False)
+        )
+    live = pd.concat(frames, ignore_index=True)
+    latest_cov = live[live["date"] == latest]["ticker"].nunique()
+    if latest_cov < 175:
+        raise RuntimeError(f"LIVE_SURFACE_LATEST_COVERAGE_LOW {latest_cov}/183")
+    return live.sort_values(["date","ticker"]), {
+        "provider_tickers": len(mapping),
+        "latest_coverage": int(latest_cov),
+        "rows": int(len(live)),
+    }
+
+
+def _contract_plans() -> tuple[dict, pd.DataFrame]:
+    c = pd.read_csv(CONTRACT)
+    if c.empty:
+        raise RuntimeError("LIVE_CONTRACT_HISTORY_EMPTY")
+    c["signal_date"] = _date(c["signal_date"])
+    c["ticker"] = _ticker(c["ticker"])
+    c = c[c["signal_date"] > LIVE_START].copy()
+    c = c.drop_duplicates(["signal_date","ticker"], keep="last").sort_values(["signal_date","ticker"])
+    plans = {}
+    for d, g in c.groupby("signal_date", sort=True):
+        plan = {}
+        for r in g.itertuples():
+            alpha = _num(getattr(r, "expected_active_total", None))
+            if alpha is None:
+                a = _num(getattr(r, "expected_active_per_session", None))
+                h = _num(getattr(r, "effective_horizon_sessions", None))
+                alpha = (a * h) if a is not None and h is not None else float("nan")
+            plan[str(r.ticker)] = {
+                "desired": float(_num(getattr(r, "model_target_weight", 0.0)) or 0.0),
+                "alpha_total": float(alpha) if alpha is not None else float("nan"),
+                "entry_ok": _bool(getattr(r, "entry_ok", False)),
+                "band": float(_num(getattr(r, "resize_band", 0.0)) or 0.0),
+            }
+        plans[pd.Timestamp(d)] = plan
+    return plans, c
+
+
+def _benchmark_base100(series: pd.Series, start: pd.Timestamp, latest: pd.Timestamp) -> list[dict]:
+    s = series[(series.index >= start) & (series.index <= latest)].dropna()
+    if s.empty:
+        return []
+    base = float(s.iloc[0])
+    if not math.isfinite(base) or base == 0:
+        return []
+    return [
+        {"date": str(pd.Timestamp(d).date()), "value": float(100.0 * float(v) / base)}
+        for d, v in s.items()
+    ]
+
+
+def main():
+    required = [
+        CONTRACT, SUMMARY, ANCHORS, MKT_AUDIT, HOLD_ADVISOR, HOLD_NAV,
+        CANON, RET,
+    ]
+    for p in required:
+        if not p.exists():
+            raise RuntimeError(f"REQUIRED_FILE_MISSING {p}")
+
+    summ = _read_json(SUMMARY)
+    if summ.get("status") != "PASS":
+        raise RuntimeError("LIVE_SHADOW_NOT_PASS")
+    if summ.get("real_orders_sent") is not False:
+        raise RuntimeError("REAL_ORDERS_FLAG_NOT_FALSE")
+    if summ.get("tuning_performed") is not False:
+        raise RuntimeError("TUNING_FLAG_NOT_FALSE")
+
+    latest = pd.Timestamp(str(summ["latest_completed_session"])).normalize()
+    if latest < LIVE_START:
+        raise RuntimeError("LIVE_SHADOW_BEFORE_FORWARD_START")
+
+    cfg3z = p3z.load_cfg(V13)
+    cfg3v = p3v.load_cfg(V13)
+    cost_bps = float(cfg3z.p["base_round_trip_cost_bps"])
+
+    hist_surface, eligibility = _historical_surface()
+    live_surface, live_meta = _live_surface(latest, eligibility)
+    surface = (
+        pd.concat([hist_surface, live_surface], ignore_index=True)
+        .drop_duplicates(["date","ticker"], keep="last")
+        .sort_values(["date","ticker"])
+    )
+
+    spy_hist = _load_hist_benchmark(cfg3v, "SPY")
+    qqq_hist = _load_hist_benchmark(cfg3v, "QQQ")
+    spy = _extend_benchmark(spy_hist, "SPY", latest)
+    qqq = _extend_benchmark(qqq_hist, "QQQ", latest)
+
+    end_excl = latest + pd.Timedelta(days=1)
+    market = p3v.prepare_market(
+        surface,
+        spy,
+        HOLD_START,
+        end_excl,
+        int(cfg3z.p["risk_lookback_sessions"]),
+    )
+
+    hold_advisor = pd.read_parquet(HOLD_ADVISOR)
+    hold_advisor["signal_date"] = _date(hold_advisor["signal_date"])
+    hold_advisor["ticker"] = _ticker(hold_advisor["ticker"])
+    hold_advisor = hold_advisor[hold_advisor["signal_date"] <= LIVE_START].copy()
+
+    plans = p3z.build_plans(hold_advisor, market, cfg3z)
+    live_plans, contract = _contract_plans()
+    plans.update(live_plans)
+
+    terminals = p3v.load_terminals(SOURCE, cfg3v)
+    sim = p3y.simulate_persistent(
+        plans,
+        market,
+        terminals,
+        HOLD_START,
+        end_excl,
+        cost_bps,
+    ).copy()
+    sim["date"] = _date(sim["date"])
+
+    # Hard parity gate: the reconstructed path must reproduce the sealed holdout
+    # through 2026-09-04 before any prospective NAV is published.
+    sealed = pd.read_csv(HOLD_NAV)
+    sealed["date"] = _date(sealed["date"])
+    parity = sealed[["date","nav"]].merge(
+        sim[["date","nav"]],
+        on="date",
+        how="inner",
+        suffixes=("_sealed","_replay"),
+        validate="one_to_one",
+    )
+    parity = parity[parity["date"] <= LIVE_START]
+    if len(parity) != len(sealed[sealed["date"] <= LIVE_START]):
+        raise RuntimeError(
+            f"HOLDOUT_PARITY_DATE_MISMATCH replay={len(parity)} "
+            f"sealed={len(sealed[sealed['date'] <= LIVE_START])}"
+        )
+    parity["abs_diff"] = (
+        pd.to_numeric(parity["nav_sealed"], errors="coerce")
+        - pd.to_numeric(parity["nav_replay"], errors="coerce")
+    ).abs()
+    max_diff = float(parity["abs_diff"].max())
+    if not math.isfinite(max_diff) or max_diff > 1e-8:
+        raise RuntimeError(f"HOLDOUT_PARITY_FAILED max_nav_abs_diff={max_diff:.12g}")
+
+    fwd = sim[(sim["date"] >= LIVE_START) & (sim["date"] <= latest)].copy()
+    if fwd.empty or fwd["date"].max() != latest:
+        raise RuntimeError(
+            f"FORWARD_NAV_NOT_CURRENT last={fwd['date'].max() if len(fwd) else None} "
+            f"expected={latest.date()}"
+        )
+    base_row = fwd[fwd["date"] == LIVE_START]
+    if base_row.empty:
+        raise RuntimeError("FORWARD_BASE_DATE_MISSING")
+    base_nav = float(base_row.iloc[-1]["nav"])
+    if not math.isfinite(base_nav) or base_nav <= 0:
+        raise RuntimeError("FORWARD_BASE_NAV_INVALID")
+    fwd["base100"] = 100.0 * pd.to_numeric(fwd["nav"], errors="coerce") / base_nav
+
+    keep = [
+        c for c in [
+            "date","nav","base100","net_return","turnover","entry_exit_notional",
+            "resize_notional","cost_fraction","holdings","cash_weight",
+            "max_name_weight","requested","executed","blocked","deviation"
+        ] if c in fwd.columns
+    ]
+    out_df = fwd[keep].copy()
+    out_df["date"] = out_df["date"].dt.strftime("%Y-%m-%d")
+
+    total_return = float(fwd.iloc[-1]["nav"] / base_nav - 1.0)
+    spy100 = _benchmark_base100(spy, LIVE_START, latest)
+    qqq100 = _benchmark_base100(qqq, LIVE_START, latest)
+
+    payload = {
+        "status": "PASS",
+        "schema": "ALPHA_ENGINE_FORWARD_NAV_V42",
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "authority": "V13_SEALED_POLICY_REPLAY",
+        "seal_id": summ.get("seal_id"),
+        "start_date": str(LIVE_START.date()),
+        "latest_date": str(latest.date()),
+        "latest_signal_date": str(contract["signal_date"].max().date()) if len(contract) else None,
+        "cost_bps_round_trip": cost_bps,
+        "execution_clock": "signal at session t becomes pending; execution occurs on next completed session",
+        "carry_in": "reconstructed by replaying the sealed 2025+ holdout, not artificial cash at 2026-09-04",
+        "holdout_parity": {
+            "status": "PASS",
+            "rows": int(len(parity)),
+            "max_nav_abs_diff": max_diff,
+        },
+        "live_market": live_meta,
+        "metrics": {
+            "sessions_including_base": int(len(fwd)),
+            "total_return_since_2026_09_04_close": total_return,
+            "base_nav_2026_09_04": base_nav,
+            "latest_nav": float(fwd.iloc[-1]["nav"]),
+        },
+        "series": out_df.to_dict(orient="records"),
+        "spy_base100": spy100,
+        "qqq_base100": qqq100,
+    }
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    tmp = OUT_JSON.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, OUT_JSON)
+    out_df.to_csv(OUT_CSV, index=False)
+
+    print(json.dumps({
+        "status": "PASS",
+        "start": payload["start_date"],
+        "latest": payload["latest_date"],
+        "sessions": payload["metrics"]["sessions_including_base"],
+        "return": payload["metrics"]["total_return_since_2026_09_04_close"],
+        "parity_max_diff": max_diff,
+        "output": str(OUT_JSON),
+    }, indent=2))
+
+
+if __name__ == "__main__":
+    main()

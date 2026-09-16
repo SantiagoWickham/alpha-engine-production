@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "schema": "ALPHA_ENGINE_FORWARD_NAV_V42",
+  "generated_at_utc": "2026-09-16T05:52:29.139418+00:00",
+  "authority": "V13_SEALED_POLICY_REPLAY",
+  "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
+  "start_date": "2026-09-04",
+  "latest_date": "2026-09-15",
+  "latest_signal_date": "2026-09-15",
+  "cost_bps_round_trip": 20.0,
+  "execution_clock": "signal at session t becomes pending; execution occurs on next completed session",
+  "carry_in": "reconstructed by replaying the sealed 2025+ holdout, not artificial cash at 2026-09-04",
+  "holdout_parity": {
+    "status": "PASS",
+    "rows": 420,
+    "max_nav_abs_diff": 2.220446049250313e-16
+  },
+  "live_market": {
+    "provider_tickers": 183,
+    "latest_coverage": 183,
+    "rows": 1098
+  },
+  "metrics": {
+    "sessions_including_base": 7,
+    "total_return_since_2026_09_04_close": -0.006453001752081078,
+    "base_nav_2026_09_04": 1.553130240131626,
+    "latest_nav": 1.5431078879708466
+  },
+  "series": [
+    {
+      "date": "2026-09-04",
+      "nav": 1.553130240131626,
+      "base100": 99.99999999999999,
+      "net_return": -0.005634313405693092,
+      "turnover": 0.04026571390798462,
+      "entry_exit_notional": 0.009278449017507535,
+      "resize_notional": 0.051591669524545185,
+      "cost_fraction": 6.0870118542052725e-05,
+      "holdings": 39,
+      "cash_weight": 0.019661309273916516,
+      "max_name_weight": 0.08510419478646225,
+      "requested": 0.06087011854205272,
+      "executed": 0.06087011854205272,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-08",
+      "nav": 1.550501898006657,
+      "base100": 99.83077129933763,
+      "net_return": -0.0016922870066237161,
+      "turnover": 0.15049969812960695,
+      "entry_exit_notional": 0.07330196892927408,
+      "resize_notional": 0.21916154977110286,
+      "cost_fraction": 0.000292463518700377,
+      "holdings": 39,
+      "cash_weight": 0.011153000732294194,
+      "max_name_weight": 0.08768556300117505,
+      "requested": 0.292463518700377,
+      "executed": 0.292463518700377,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-09",
+      "nav": 1.548207387798451,
+      "base100": 99.68303673407597,
+      "net_return": -0.0014798499835154688,
+      "turnover": 0.0851214848287207,
+      "entry_exit_notional": 0.08046945020691233,
+      "resize_notional": 0.07860576628490284,
+      "cost_fraction": 0.00015907521649181517,
+      "holdings": 39,
+      "cash_weight": 0.0,
+      "max_name_weight": 0.07679705335055355,
+      "requested": 0.15907521649181516,
+      "executed": 0.15907521649181516,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-10",
+      "nav": 1.55333735885917,
+      "base100": 100.01333556724298,
+      "net_return": 0.0033134908805814156,
+      "turnover": 0.10064443138140831,
+      "entry_exit_notional": 0.07285679630001027,
+      "resize_notional": 0.11502043848634337,
+      "cost_fraction": 0.00018787723478635364,
+      "holdings": 36,
+      "cash_weight": 0.013411627976463003,
+      "max_name_weight": 0.0771750594330411,
+      "requested": 0.18787723478635363,
+      "executed": 0.18787723478635363,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-11",
+      "nav": 1.550846053993131,
+      "base100": 99.8529301613301,
+      "net_return": -0.0016038401779434608,
+      "turnover": 0.04646332133089465,
+      "entry_exit_notional": 0.01196638334719275,
+      "resize_notional": 0.07500244097424202,
+      "cost_fraction": 8.696882432143479e-05,
+      "holdings": 37,
+      "cash_weight": 0.007474186030872021,
+      "max_name_weight": 0.07733940699007069,
+      "requested": 0.08696882432143478,
+      "executed": 0.08696882432143478,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-14",
+      "nav": 1.545419550767285,
+      "base100": 99.5035387783263,
+      "net_return": -0.003499059891775791,
+      "turnover": 0.038688877460669,
+      "entry_exit_notional": 0.01193491918669271,
+      "resize_notional": 0.06129735858873272,
+      "cost_fraction": 7.323227777542543e-05,
+      "holdings": 36,
+      "cash_weight": 0.003354404066836514,
+      "max_name_weight": 0.07805478825804972,
+      "requested": 0.07323227777542543,
+      "executed": 0.07323227777542543,
+      "blocked": 0.0,
+      "deviation": 0.0
+    },
+    {
+      "date": "2026-09-15",
+      "nav": 1.5431078879708466,
+      "base100": 99.3546998247919,
+      "net_return": -0.001495815680143675,
+      "turnover": 0.07261847863832462,
+      "entry_exit_notional": 0.04781138296046861,
+      "resize_notional": 0.09012870208667854,
+      "cost_fraction": 0.00013794008504714714,
+      "holdings": 37,
+      "cash_weight": 0.0106558379831998,
+      "max_name_weight": 0.08024887934282629,
+      "requested": 0.13794008504714714,
+      "executed": 0.13794008504714714,
+      "blocked": 0.0,
+      "deviation": 0.0
+    }
+  ],
+  "spy_base100": [
+    {
+      "date": "2026-09-08",
+      "value": 100.0
+    },
+    {
+      "date": "2026-09-09",
+      "value": 99.53522410354716
+    },
+    {
+      "date": "2026-09-10",
+      "value": 98.93858626434908
+    },
+    {
+      "date": "2026-09-11",
+      "value": 99.78196721794808
+    },
+    {
+      "date": "2026-09-14",
+      "value": 99.33677777637001
+    },
+    {
+      "date": "2026-09-15",
+      "value": 98.88114169429528
+    }
+  ],
+  "qqq_base100": [
+    {
+      "date": "2026-09-08",
+      "value": 100.0
+    },
+    {
+      "date": "2026-09-09",
+      "value": 99.71462945671097
+    },
+    {
+      "date": "2026-09-10",
+      "value": 98.65388062985944
+    },
+    {
+      "date": "2026-09-11",
+      "value": 99.51556593633944
+    },
+    {
+      "date": "2026-09-14",
+      "value": 98.7220901967015
+    },
+    {
+      "date": "2026-09-15",
+      "value": 98.07617244751525
+    }
+  ]
+}
