@@ -297,6 +297,28 @@ def chart_daily(result: dict) -> list[dict]:
     return [dedup[k] for k in sorted(dedup)]
 
 
+def _inferred_market_state(meta: dict) -> str:
+    direct = str(meta.get("marketState") or "").strip().upper()
+    if direct in {"PRE", "PREPRE", "REGULAR", "POST", "POSTPOST", "CLOSED"}:
+        return direct
+
+    now = time.time()
+    periods = meta.get("currentTradingPeriod") or {}
+
+    def inside(name: str) -> bool:
+        p = periods.get(name) or {}
+        start = finite(p.get("start"))
+        end = finite(p.get("end"))
+        return bool(start is not None and end is not None and start <= now < end)
+
+    if inside("regular"):
+        return "REGULAR"
+    if inside("pre"):
+        return "PRE"
+    if inside("post"):
+        return "POST"
+    return "CLOSED"
+
 def current_quote(symbol: str) -> dict:
     symbol = str(symbol or "").strip().upper()
     now = time.time()
@@ -315,7 +337,7 @@ def current_quote(symbol: str) -> dict:
         if meta.get("regularMarketTime") else None
     )
     market_date = market_time.date().isoformat() if market_time else None
-    market_state = str(meta.get("marketState") or "").upper() or None
+    market_state = _inferred_market_state(meta)
 
     prev = None
     if daily:
@@ -393,15 +415,46 @@ def latest_completed_us_session() -> str | None:
     daily = chart_daily(result)
     if not daily:
         return None
-    state_ = str(meta.get("marketState") or "").upper()
-    mt = (
-        datetime.fromtimestamp(float(meta.get("regularMarketTime")), tz=timezone.utc)
-        if meta.get("regularMarketTime") else None
+
+    state_ = _inferred_market_state(meta)
+    periods = meta.get("currentTradingPeriod") or {}
+    regular = periods.get("regular") or {}
+    reg_start = finite(regular.get("start"))
+    reg_end = finite(regular.get("end"))
+    now = time.time()
+
+    session_date = None
+    if reg_start is not None:
+        session_date = datetime.fromtimestamp(
+            reg_start, tz=timezone.utc
+        ).date().isoformat()
+
+    last_date = daily[-1]["date"]
+    current_session_incomplete = bool(
+        session_date
+        and last_date == session_date
+        and (
+            state_ in {"PRE", "PREPRE", "REGULAR"}
+            or (reg_end is not None and now < reg_end)
+        )
     )
-    mt_date = mt.date().isoformat() if mt else None
-    if state_ == "REGULAR" and mt_date and daily[-1]["date"] == mt_date and len(daily) >= 2:
+
+    if current_session_incomplete and len(daily) >= 2:
         return daily[-2]["date"]
-    return daily[-1]["date"]
+
+    if not session_date and state_ == "REGULAR":
+        mt = (
+            datetime.fromtimestamp(
+                float(meta.get("regularMarketTime")), tz=timezone.utc
+            )
+            if meta.get("regularMarketTime")
+            else None
+        )
+        mt_date = mt.date().isoformat() if mt else None
+        if mt_date and last_date == mt_date and len(daily) >= 2:
+            return daily[-2]["date"]
+
+    return last_date
 
 
 def history_for(symbol: str, range_: str = "2y") -> list[dict]:
