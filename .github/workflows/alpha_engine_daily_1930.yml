@@ -112,6 +112,21 @@ jobs:
           $rows | ConvertTo-Json -Depth 5 | Set-Content "$env:RUNNER_TEMP\seal_before.json" -Encoding UTF8
           Write-Host "SEALED SNAPSHOT PASS 6/6"
 
+      - name: Preflight Forward NAV imports
+        shell: pwsh
+        run: |
+          $v13src = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\src"
+          $v12src = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\src"
+          $recsrc = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_DATA_RECOVERY_V1\src"
+          $env:PYTHONPATH = "$v13src;$v12src;$recsrc"
+
+          Write-Host "PYTHONPATH=$env:PYTHONPATH"
+
+          python -c "from alpha_engine_v13 import active_alpha_persistent_portfolio as p3y; from alpha_engine_v13 import economic_portfolio_closure as p3v; print('FORWARD_IMPORT_PREFLIGHT=PASS')"
+          if ($LASTEXITCODE -ne 0) { throw "Forward import preflight failed before Phase5B." }
+
+          python -m py_compile ".\ALPHA_ENGINE_DATA_RECOVERY_V1\scripts\build_forward_nav_v42.py"
+          if ($LASTEXITCODE -ne 0) { throw "Forward NAV builder compile preflight failed." }
       - name: Run Phase5B live shadow
         shell: pwsh
         run: |
@@ -121,6 +136,14 @@ jobs:
       - name: Rebuild Forward NAV
         shell: pwsh
         run: |
+          $v13src = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\src"
+          $v12src = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\src"
+          $recsrc = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_DATA_RECOVERY_V1\src"
+          $env:PYTHONPATH = "$v13src;$v12src;$recsrc"
+
+          python -c "from alpha_engine_v13 import active_alpha_persistent_portfolio as p3y; print('FORWARD_RUNTIME_IMPORT=PASS')"
+          if ($LASTEXITCODE -ne 0) { throw "Forward runtime import failed." }
+
           python ".\ALPHA_ENGINE_DATA_RECOVERY_V1\scripts\build_forward_nav_v42.py"
           if ($LASTEXITCODE -ne 0) { throw "Forward NAV builder failed." }
 
@@ -172,4 +195,5 @@ jobs:
           if ($LASTEXITCODE -ne 0) {
             throw "Daily Alpha push failed. No forced overwrite attempted."
           }
+
 
