@@ -112,6 +112,34 @@ jobs:
           $rows | ConvertTo-Json -Depth 5 | Set-Content "$env:RUNNER_TEMP\seal_before.json" -Encoding UTF8
           Write-Host "SEALED SNAPSHOT PASS 6/6"
 
+      - name: Restore production root compatibility alias
+        shell: pwsh
+        run: |
+          $legacyParent = "C:\Users\santi\OneDrive\Escritorio"
+          $legacyRoot = Join-Path $legacyParent "ALPHA_ENGINE_PRODUCTION"
+          $targetRoot = $env:GITHUB_WORKSPACE
+
+          New-Item -ItemType Directory -Force -Path $legacyParent | Out-Null
+
+          if (Test-Path -LiteralPath $legacyRoot) {
+            $item = Get-Item -LiteralPath $legacyRoot -Force
+            if (($item.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0) {
+              cmd.exe /c "rmdir `"$legacyRoot`"" | Out-Null
+            } else {
+              Remove-Item -LiteralPath $legacyRoot -Recurse -Force
+            }
+          }
+
+          New-Item -ItemType Junction -Path $legacyRoot -Target $targetRoot | Out-Null
+
+          $probe = Join-Path $legacyRoot "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON"
+          if (-not (Test-Path $probe)) {
+            throw "Production root alias probe failed: $probe"
+          }
+
+          Write-Host "CLOUD_PRODUCTION_ROOT_ALIAS=PASS"
+          Write-Host "ALIAS=$legacyRoot"
+          Write-Host "TARGET=$targetRoot"
       - name: Preflight Forward NAV imports
         shell: pwsh
         run: |
@@ -143,6 +171,24 @@ jobs:
 
           python -c "from alpha_engine_v13 import active_alpha_persistent_portfolio as p3y; print('FORWARD_RUNTIME_IMPORT=PASS')"
           if ($LASTEXITCODE -ne 0) { throw "Forward runtime import failed." }
+
+          $workspaceHistory = Join-Path $env:GITHUB_WORKSPACE "ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\live_shadow\v13_live_shadow_contract_history.csv"
+          $legacyHistory = "C:\Users\santi\OneDrive\Escritorio\ALPHA_ENGINE_PRODUCTION\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\live_shadow\v13_live_shadow_contract_history.csv"
+
+          if (-not (Test-Path $workspaceHistory)) {
+            throw "PHASE5B_HISTORY_MISSING_WORKSPACE: $workspaceHistory"
+          }
+          if (-not (Test-Path $legacyHistory)) {
+            throw "PHASE5B_HISTORY_MISSING_ALIAS: $legacyHistory"
+          }
+
+          $h1 = (Get-FileHash -Algorithm SHA256 $workspaceHistory).Hash
+          $h2 = (Get-FileHash -Algorithm SHA256 $legacyHistory).Hash
+          if ($h1 -ne $h2) {
+            throw "PHASE5B_HISTORY_ALIAS_HASH_MISMATCH"
+          }
+
+          Write-Host "FORWARD_HISTORY_ALIAS=PASS"
 
           python ".\ALPHA_ENGINE_DATA_RECOVERY_V1\scripts\build_forward_nav_v42.py"
           if ($LASTEXITCODE -ne 0) { throw "Forward NAV builder failed." }
@@ -195,5 +241,6 @@ jobs:
           if ($LASTEXITCODE -ne 0) {
             throw "Daily Alpha push failed. No forced overwrite attempted."
           }
+
 
 
