@@ -1,4 +1,4 @@
-name: Alpha Engine - Daily 19:30
+﻿name: Alpha Engine - Daily 19:30
 
 on:
   workflow_dispatch:
@@ -40,6 +40,17 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r ".\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\requirements.txt"
+
+          # Exact sealed-model runtime family used by the local production environment.
+          # Do not allow a future "scikit-learn>=..." requirement to silently upgrade this.
+          python -m pip install --upgrade --force-reinstall `
+            "numpy==2.2.6" `
+            "pandas==2.2.3" `
+            "scipy==1.15.3" `
+            "scikit-learn==1.6.1" `
+            "joblib==1.5.1" `
+            "threadpoolctl==3.6.0"
+
           python -m pip install statsmodels openpyxl
 
       - name: Validate SEC identity secret
@@ -49,6 +60,14 @@ jobs:
             throw "Repository Actions secret MMM_SEC_USER_AGENT is missing."
           }
           Write-Host "SEC identity secret: CONFIGURED (value hidden)"
+      - name: Verify sealed model runtime parity
+        shell: pwsh
+        run: |
+          python -c "import numpy,pandas,scipy,sklearn,joblib,threadpoolctl; expected={'numpy':'2.2.6','pandas':'2.2.3','scipy':'1.15.3','sklearn':'1.6.1','joblib':'1.5.1','threadpoolctl':'3.6.0'}; actual={'numpy':numpy.__version__,'pandas':pandas.__version__,'scipy':scipy.__version__,'sklearn':sklearn.__version__,'joblib':joblib.__version__,'threadpoolctl':threadpoolctl.__version__}; print('SEALED_RUNTIME_VERSIONS=',actual); assert actual==expected, (actual,expected); print('SEALED_RUNTIME_PARITY=PASS')"
+          if ($LASTEXITCODE -ne 0) { throw "Sealed runtime version parity failed." }
+
+          python -c "from pathlib import Path; import hashlib,joblib; p=Path(r'.\ALPHA_ENGINE_V13_RETURN_FIRST_MULTI_HORIZON\outputs\v13_phase4_sealed_model_bundle.joblib'); h=hashlib.sha256(p.read_bytes()).hexdigest(); print('SEALED_BUNDLE_SHA256='+h); assert h=='247e829cf3dbae02775e9df263697e8762a597d05468fec253967b2f2b045853', h; obj=joblib.load(p); print('SEALED_BUNDLE_LOAD=PASS'); print('SEALED_BUNDLE_TYPE='+type(obj).__name__)"
+          if ($LASTEXITCODE -ne 0) { throw "Sealed model bundle compatibility smoke failed." }
 
       - name: Restore V12 compatibility alias
         shell: pwsh
@@ -153,3 +172,4 @@ jobs:
           if ($LASTEXITCODE -ne 0) {
             throw "Daily Alpha push failed. No forced overwrite attempted."
           }
+
