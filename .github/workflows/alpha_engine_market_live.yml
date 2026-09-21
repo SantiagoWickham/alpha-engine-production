@@ -1,0 +1,72 @@
+name: Alpha Engine - Market Live
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 10-18 * * 1-5"
+      timezone: "America/Argentina/Buenos_Aires"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alpha-engine-runtime
+  cancel-in-progress: false
+
+jobs:
+  market:
+    runs-on: windows-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout repository + Git LFS
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          lfs: true
+
+      - name: Setup Python 3.13
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: ALPHA_ENGINE_V12_RETURN_FIRST_STARTER/requirements.txt
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r ".\ALPHA_ENGINE_V12_RETURN_FIRST_STARTER\requirements.txt"
+
+      - name: Refresh regular-session market snapshot
+        id: market
+        shell: pwsh
+        run: |
+          $args = @(".\cloud\run_market_live.py")
+          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+            $args += "--force"
+          }
+          python @args
+
+      - name: Persist latest public market snapshot
+        if: steps.market.outputs.updated == 'true'
+        shell: pwsh
+        run: |
+          git config user.name "alpha-engine-live"
+          git config user.email "alpha-engine-live@users.noreply.github.com"
+
+          git add -- "mobile_snapshot/market.json"
+
+          $pending = git diff --cached --name-only
+          if ([string]::IsNullOrWhiteSpace(($pending -join "`n"))) {
+            Write-Host "No market snapshot change to commit."
+            exit 0
+          }
+
+          git commit -m "Market snapshot ${{ github.run_id }} [skip ci]"
+          if ($LASTEXITCODE -ne 0) { throw "Market snapshot commit failed." }
+
+          git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) {
+            throw "Market snapshot push failed. No forced overwrite attempted."
+          }

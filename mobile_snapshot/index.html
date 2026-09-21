@@ -1,8 +1,217 @@
 <!doctype html>
+<html lang="es">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0f14">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="alpha_engine_logo.jpeg">
 <title>Alpha Engine</title>
-<body style="background:#0b0f14;color:#fff;font-family:system-ui;padding:30px">
-<h1>Alpha Engine</h1>
-<p>Esperando la primera ejecución exitosa del Live Forward.</p>
+<style>
+:root{--bg:#0b0f14;--card:#121923;--card2:#0f151e;--line:#263244;--text:#f5f7fb;--muted:#91a0b4;--good:#49d17d;--warn:#ffcc66;--bad:#ff7474}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:18px 14px 44px}
+.header{display:flex;gap:13px;align-items:center;margin:6px 0 16px}
+.logo{width:54px;height:54px;border-radius:14px;object-fit:cover;background:#151b24}
+h1{font-size:24px;margin:0}.sub{color:var(--muted);font-size:13px;margin-top:3px}
+.statusrow{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 16px}
+.badge{padding:6px 9px;border:1px solid var(--line);border-radius:999px;font-size:11px;background:var(--card2)}
+.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.wide{grid-column:1/-1}.half{grid-column:span 2}
+.k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.v{font-size:20px;font-weight:720;margin-top:5px}
+.small{font-size:13px;color:var(--muted);margin-top:5px}
+.toolbar{display:flex;gap:8px;align-items:center;justify-content:space-between;margin:4px 0 10px}
+input{width:220px;max-width:48vw;padding:9px 11px;border-radius:10px;border:1px solid var(--line);background:#0b1119;color:#fff}
+button{padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:#182231;color:#fff;cursor:pointer}
+.tablewrap{overflow:auto;max-height:58vh;border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:740px}
+th,td{padding:9px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--card)}
+th{color:var(--muted);font-size:10px;text-transform:uppercase;position:sticky;top:0;background:var(--card);z-index:2}
+th:first-child{z-index:3}
+.footer{color:var(--muted);font-size:11px;margin-top:17px;line-height:1.55}
+.section-title{font-weight:720;font-size:16px;margin-bottom:9px}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.half{grid-column:1/-1}.v{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <img class="logo" src="alpha_engine_logo.jpeg" onerror="this.style.display='none'">
+    <div>
+      <h1>Alpha Engine</h1>
+      <div class="sub">Mobile · read-only · auto refresh</div>
+    </div>
+  </div>
+
+  <div class="statusrow">
+    <span id="marketBadge" class="badge">MARKET —</span>
+    <span id="modelBadge" class="badge">MODEL —</span>
+    <span class="badge">V13 SEALED</span>
+    <span class="badge">NO REAL ORDERS</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="k">Mercado actualizado</div>
+      <div id="marketTime" class="v">—</div>
+      <div id="marketAge" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Activos mercado</div>
+      <div id="marketRows" class="v">—</div>
+      <div id="marketState" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Decisión modelo</div>
+      <div id="modelTime" class="v">—</div>
+      <div id="modelClass" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Última sesión modelo</div>
+      <div id="modelSession" class="v">—</div>
+      <div id="newSessions" class="small">—</div>
+    </div>
+
+    <div class="card">
+      <div class="k">Forward</div>
+      <div id="forwardRange" class="v">—</div>
+      <div id="forwardSessions" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Retorno Forward</div>
+      <div id="forwardReturn" class="v">—</div>
+      <div id="parity" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Targets positivos</div>
+      <div id="positiveTargets" class="v">—</div>
+      <div id="entryEligible" class="small">—</div>
+    </div>
+    <div class="card">
+      <div class="k">Peso objetivo</div>
+      <div id="targetWeight" class="v">—</div>
+      <div class="small">modelo sellado</div>
+    </div>
+
+    <div class="card half">
+      <div class="section-title">Targets del modelo</div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Ticker</th><th>Peso objetivo</th><th>Entry</th><th>Alpha esp.</th></tr></thead>
+          <tbody id="targetsBody"><tr><td colspan="4">Esperando modelo...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card half">
+      <div class="toolbar">
+        <div class="section-title" style="margin:0">Mercado</div>
+        <div>
+          <input id="search" placeholder="Buscar ticker">
+          <button id="reload">Actualizar</button>
+        </div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Ticker</th><th>Precio</th><th>Var 1D</th><th>1M</th><th>3M</th><th>Vol 20D</th><th>Beta 6M</th></tr></thead>
+          <tbody id="marketBody"><tr><td colspan="7">Esperando mercado...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Mercado: GitHub refresca cada ~5 min durante rueda regular de EE.UU. ·
+    Modelo/Forward: actualización oficial 19:30 Argentina, lunes a viernes ·
+    La página vuelve a consultar los snapshots cada 60 segundos.
+  </div>
+</div>
+
+<script>
+let marketData=null, modelData=null;
+
+const fmtPct=(x,d=2)=> x==null||Number.isNaN(Number(x)) ? "—" : (Number(x)*100).toFixed(d)+"%";
+const fmtNum=(x,d=2)=> x==null||Number.isNaN(Number(x)) ? "—" : Number(x).toLocaleString("es-AR",{maximumFractionDigits:d});
+const fmtTime=(s)=>{if(!s)return"—"; const d=new Date(s); return d.toLocaleString("es-AR",{timeZone:"America/Argentina/Buenos_Aires",hour12:false,month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"});}
+const ageMin=(s)=> s ? Math.max(0,(Date.now()-new Date(s).getTime())/60000) : null;
+
+function badge(id,text,cls){
+  const e=document.getElementById(id); e.textContent=text; e.className="badge "+(cls||"");
+}
+
+function renderMarket(){
+  if(!marketData)return;
+  const age=ageMin(marketData.generated_at_utc);
+  document.getElementById("marketTime").textContent=fmtTime(marketData.generated_at_utc);
+  document.getElementById("marketAge").textContent=age==null?"—":`hace ${Math.round(age)} min`;
+  document.getElementById("marketRows").textContent=marketData.asset_rows ?? "—";
+  document.getElementById("marketState").textContent=`run: ${marketData.market_state_at_run||"—"}`;
+  badge("marketBadge", age!=null && age<=20 ? "MARKET CURRENT" : "MARKET LAST SNAPSHOT", age!=null && age<=20 ? "good":"warn");
+
+  const q=(document.getElementById("search").value||"").trim().toUpperCase();
+  const rows=(marketData.rows||[]).filter(r=>!q || (r.ticker||"").toUpperCase().includes(q));
+  document.getElementById("marketBody").innerHTML=rows.map(r=>`
+    <tr>
+      <td>${r.ticker||""}</td>
+      <td>${fmtNum(r.price,4)}</td>
+      <td class="${Number(r.var_1d)>=0?'good':'bad'}">${fmtPct(r.var_1d)}</td>
+      <td>${fmtPct(r.ret_1m)}</td>
+      <td>${fmtPct(r.ret_3m)}</td>
+      <td>${fmtPct(r.vol_20d)}</td>
+      <td>${fmtNum(r.beta_6m,2)}</td>
+    </tr>`).join("") || '<tr><td colspan="7">Sin coincidencias.</td></tr>';
+}
+
+function renderModel(){
+  if(!modelData)return;
+  document.getElementById("modelTime").textContent=fmtTime(modelData.generated_at_utc);
+  document.getElementById("modelClass").textContent=modelData.classification||"—";
+  document.getElementById("modelSession").textContent=modelData.latest_completed_session||"—";
+  document.getElementById("newSessions").textContent=`new sessions: ${modelData.new_sessions ?? "—"}`;
+  const f=modelData.forward||{};
+  document.getElementById("forwardRange").textContent=`${f.start||"—"} → ${f.latest||"—"}`;
+  document.getElementById("forwardSessions").textContent=`${f.sessions ?? "—"} sesiones`;
+  document.getElementById("forwardReturn").textContent=fmtPct(f.return);
+  document.getElementById("parity").textContent=`parity: ${f.holdout_parity||"—"}`;
+  document.getElementById("positiveTargets").textContent=modelData.positive_targets ?? "—";
+  document.getElementById("entryEligible").textContent=`entry eligible: ${modelData.entry_eligible ?? "—"}`;
+  document.getElementById("targetWeight").textContent=fmtPct(modelData.target_weight_sum);
+  badge("modelBadge", modelData.status==="PASS" ? "MODEL CURRENT" : "MODEL CHECK", modelData.status==="PASS" ? "good":"warn");
+
+  const rows=(modelData.targets||[]).slice(0,40);
+  document.getElementById("targetsBody").innerHTML=rows.map(r=>`
+    <tr>
+      <td>${r.ticker||""}</td>
+      <td>${fmtPct(r.target_weight)}</td>
+      <td>${r.entry_ok ?? ""}</td>
+      <td>${r.expected_active==null?"—":fmtNum(r.expected_active,4)}</td>
+    </tr>`).join("") || '<tr><td colspan="4">Sin targets positivos.</td></tr>';
+}
+
+async function getJSON(url){
+  const sep=url.includes("?")?"&":"?";
+  const r=await fetch(url+sep+"t="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+  return await r.json();
+}
+
+async function loadAll(){
+  const tasks=[
+    getJSON("market.json").then(x=>{marketData=x;renderMarket();}).catch(()=>{}),
+    getJSON("model.json").then(x=>{modelData=x;renderModel();}).catch(()=>{})
+  ];
+  await Promise.all(tasks);
+}
+
+document.getElementById("search").addEventListener("input",renderMarket);
+document.getElementById("reload").addEventListener("click",loadAll);
+loadAll();
+setInterval(loadAll,60000);
+</script>
 </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Alpha Engine",
+  "short_name": "Alpha Engine",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0f14",
+  "theme_color": "#0b0f14",
+  "icons": [
+    {
+      "src": "alpha_engine_logo.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ]
+}
