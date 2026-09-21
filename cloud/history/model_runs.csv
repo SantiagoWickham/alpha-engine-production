@@ -1,0 +1,2 @@
+﻿executed_at_ba,execution_mode,trigger,run_id,run_attempt,source_commit,latest_completed_session,new_sessions,forward_latest,forward_return,entry_eligible,positive_targets,target_weight_sum,holdout_parity,seal_id
+2026-09-21T01:41:42.264420-03:00,MANUAL_BOOTSTRAP_OR_CATCHUP,workflow_dispatch,35560910320,1,f1d384413c7bcbb321ec6016307ba57f70455cae,2026-09-18,9,2026-09-18,,31,36,1.000000000000,CHECK,46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9
