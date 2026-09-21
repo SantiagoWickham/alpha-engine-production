@@ -1,0 +1,229 @@
+﻿canonical_ticker,asset_class,motor,sector,benchmark,market_symbol,fundamentals_symbol,sec_ticker,country,active,note
+MSFT,CEDEAR,Fundamental,Tecnologico,XLK,MSFT,MSFT,MSFT,Exterior,SI,
+BRK-B,CEDEAR,Fundamental,Financiero,XLF,BRK-B,BRK-B,BRK-B,Exterior,SI,
+PG,CEDEAR,Fundamental,Consumo Masivo,XLP,PG,PG,PG,Exterior,SI,
+MELI,CEDEAR,Fundamental,Tecnologico,XLK,MELI,MELI,MELI,Exterior,SI,
+META,CEDEAR,Fundamental,Comunicacion,XLC,META,META,META,Exterior,SI,
+AVGO,CEDEAR,Fundamental,IA / Semiconductores,SMH,AVGO,AVGO,AVGO,Exterior,SI,
+AMZN,CEDEAR,Fundamental,Consumo Discrecional,XLY,AMZN,AMZN,AMZN,Exterior,SI,
+GE,CEDEAR,Fundamental,Industrial,XLI,GE,GE,GE,Exterior,SI,
+NKE,CEDEAR,Fundamental,Consumo Discrecional,XLY,NKE,NKE,NKE,Exterior,SI,
+DIS,CEDEAR,Fundamental,Comunicacion,XLC,DIS,DIS,DIS,Exterior,SI,
+CAT,CEDEAR,Fundamental,Industrial,XLI,CAT,CAT,CAT,Exterior,SI,
+MMM,CEDEAR,Fundamental,Industrial,XLI,MMM,MMM,MMM,Exterior,SI,
+PFE,CEDEAR,Fundamental,Salud,XLV,PFE,PFE,PFE,Exterior,SI,
+V,CEDEAR,Fundamental,Financiero,XLF,V,V,V,Exterior,SI,
+AXP,CEDEAR,Fundamental,Financiero,XLF,AXP,AXP,AXP,Exterior,SI,
+CAAP,CEDEAR,Fundamental,Industrial,XLI,CAAP,CAAP,CAAP,Exterior,SI,
+ABBV,CEDEAR,Fundamental,Salud,XLV,ABBV,ABBV,ABBV,Exterior,SI,
+BABA,CEDEAR,Fundamental,Consumo Discrecional,XLY,BABA,BABA,BABA,Exterior,SI,
+COIN,CEDEAR,Alternativo,Cripto,BTC-USD,COIN,COIN,COIN,Exterior,SI,
+NFLX,CEDEAR,Fundamental,Comunicacion,XLC,NFLX,NFLX,NFLX,Exterior,SI,
+GLOB,CEDEAR,Fundamental,Tecnologico,XLK,GLOB,GLOB,GLOB,Exterior,SI,
+BA,CEDEAR,Fundamental,Industrial,XLI,BA,BA,BA,Exterior,SI,
+NU,CEDEAR,Fundamental,Financiero,XLF,NU,NU,NU,Exterior,SI,
+CIBR,ETF,Alternativo,Tecnologico,QQQ,CIBR,CIBR,CIBR,Exterior,SI,
+ORCL,CEDEAR,Fundamental,Tecnologico,XLK,ORCL,ORCL,ORCL,Exterior,SI,
+NVDA,CEDEAR,Fundamental,IA / Semiconductores,SMH,NVDA,NVDA,NVDA,Exterior,SI,
+TSM,CEDEAR,Fundamental,IA / Semiconductores,SMH,TSM,TSM,TSM,Exterior,SI,
+ETHA,ETF,Alternativo,Cripto,ETH-USD,ETHA,ETHA,ETHA,Exterior,SI,
+AMD,CEDEAR,Fundamental,IA / Semiconductores,SMH,AMD,AMD,AMD,Exterior,SI,
+ASML,CEDEAR,Fundamental,IA / Semiconductores,SMH,ASML,ASML,ASML,Exterior,SI,
+LAR,CEDEAR,Fundamental,Materiales,XLB,LAR,LAR,LAR,Exterior,SI,
+SH,ETF,Alternativo,Diversificado (ETF),SPY,SH,SH,SH,Exterior,SI,
+GLD,ETF,Alternativo,Otro,SPY,GLD,GLD,GLD,Exterior,SI,
+WMT,CEDEAR,Fundamental,Consumo Masivo,XLP,WMT,WMT,WMT,Exterior,SI,
+XLF,ETF,Alternativo,Financiero,SPY,XLF,XLF,XLF,Exterior,SI,
+XLI,ETF,Alternativo,Industrial,SPY,XLI,XLI,XLI,Exterior,SI,
+XLE,ETF,Alternativo,Energia,SPY,XLE,XLE,XLE,Exterior,SI,
+TM,CEDEAR,Fundamental,Consumo Discrecional,XLY,TM,TM,TM,Exterior,SI,
+SONY,CEDEAR,Fundamental,Tecnologico,XLK,SONY,SONY,SONY,Exterior,SI,
+EWJ,ETF,Alternativo,Diversificado (ETF),SPY,EWJ,EWJ,EWJ,Exterior,SI,
+PBR,CEDEAR,Fundamental,Energia,XLE,PBR,PBR,PBR,Exterior,SI,
+BBD,CEDEAR,Fundamental,Financiero,XLF,BBD,BBD,BBD,Exterior,SI,
+SID,CEDEAR,Fundamental,Materiales,XLB,SID,SID,SID,Exterior,SI,
+VALE,CEDEAR,Fundamental,Materiales,XLB,VALE,VALE,VALE,Exterior,SI,
+ARKK,ETF,Alternativo,Diversificado (ETF),SPY,ARKK,ARKK,ARKK,Exterior,SI,
+EEM,ETF,Alternativo,Diversificado (ETF),SPY,EEM,EEM,EEM,Exterior,SI,
+EWZ,ETF,Alternativo,Diversificado (ETF),SPY,EWZ,EWZ,EWZ,Exterior,SI,
+ARM,CEDEAR,Fundamental,IA / Semiconductores,SMH,ARM,ARM,ARM,Exterior,SI,
+TXAR,Acción,Fundamental,Materiales,^MERV,TXAR.BA,TXAR.BA,,Argentina,SI,
+PAMP,Acción,Fundamental,Energia,^MERV,PAMP.BA,PAM,PAM,Argentina,SI,Ticker maestro único; fundamentales/SEC vía PAM.
+CEPU,Acción,Fundamental,Energia,^MERV,CEPU.BA,CEPU,CEPU,Argentina,SI,
+ECOG,Acción,Fundamental,Energia,^MERV,ECOG.BA,ECOG.BA,,Argentina,SI,
+CVX,CEDEAR,Fundamental,Energia,XLE,CVX,CVX,CVX,Exterior,SI,
+AAPL,CEDEAR,Fundamental,Tecnologico,XLK,AAPL,AAPL,AAPL,Exterior,SI,
+SPCX,CEDEAR,Fundamental,Industrial,XLI,SPCX,SPCX,SPCX,Exterior,SI,
+GOOGL,CEDEAR,Fundamental,Tecnologico,XLK,GOOGL,GOOGL,GOOGL,Exterior,SI,
+MU,CEDEAR,Fundamental,IA / Semiconductores,SMH,MU,MU,MU,Exterior,SI,
+ACN,CEDEAR,Fundamental,Otro,SPY,ACN,ACN,ACN,Exterior,SI,
+COST,CEDEAR,Fundamental,Consumo Masivo,XLP,COST,COST,COST,Exterior,SI,
+LLY,CEDEAR,Fundamental,Salud,XLV,LLY,LLY,LLY,Exterior,SI,
+TSLA,CEDEAR,Fundamental,Tecnologico,XLK,TSLA,TSLA,TSLA,Exterior,SI,
+VIST,CEDEAR,Fundamental,Energia,XLE,VIST,VIST,VIST,Exterior,SI,
+YPF,Acción,Fundamental,Energia,^MERV,YPFD.BA,YPF,YPF,Argentina,SI,
+BYMA.BA,Acción,Fundamental,Financiero,^MERV,BYMA.BA,BYMA.BA,,Argentina,SI,
+PANW,CEDEAR,Fundamental,Tecnologico,XLK,PANW,PANW,PANW,Exterior,SI,
+KEEL,CEDEAR,Alternativo,Otro,BTC-USD,KEEL,KEEL,KEEL,Exterior,SI,Ticker actualizado: BITF → KEEL.
+BPC7D,Bono,Renta Fija,BONOS HD,,BPC7D,BPC7D,BPC7D,Exterior,SI,
+BPD7D,Bono,Renta Fija,BONOS HD,,BPD7D,BPD7D,BPD7D,Exterior,SI,
+GD30D,Bono,Renta Fija,BONOS HD,,GD30D,GD30D,GD30D,Exterior,SI,
+AL30D,Bono,Renta Fija,BONOS HD,,AL30D,AL30D,AL30D,Exterior,SI,
+AL35D,Bono,Renta Fija,BONOS HD,,AL35D,AL35D,AL35D,Exterior,SI,
+GD38D,Bono,Renta Fija,BONOS HD,,GD38D,GD38D,GD38D,Exterior,SI,
+GD41D,Bono,Renta Fija,BONOS HD,,GD41D,GD41D,GD41D,Exterior,SI,
+PNXCD,ON,Renta Fija,ONs,,PNXCD,PNXCD,PNXCD,Exterior,SI,
+PLC4D,ON,Renta Fija,ONs,,PLC4D,PLC4D,PLC4D,Exterior,SI,
+VSCVD,ON,Renta Fija,ONs,,VSCVD,VSCVD,VSCVD,Exterior,SI,
+YM34D,ON,Renta Fija,ONs,,YM34D,YM34D,YM34D,Exterior,SI,
+YMCXD,ON,Renta Fija,ONs,,YMCXD,YMCXD,YMCXD,Exterior,SI,
+IRCPD,ON,Renta Fija,ONs,,IRCPD,IRCPD,IRCPD,Exterior,SI,
+RUCDD,ON,Renta Fija,ONs,,RUCDD,RUCDD,RUCDD,Exterior,SI,
+RUCED,ON,Renta Fija,ONs,,RUCED,RUCED,RUCED,Exterior,SI,
+TLCMD,ON,Renta Fija,ONs,,TLCMD,TLCMD,TLCMD,Exterior,SI,
+TLCPD,ON,Renta Fija,ONs,,TLCPD,TLCPD,TLCPD,Exterior,SI,
+TLCTD,ON,Renta Fija,ONs,,TLCTD,TLCTD,TLCTD,Exterior,SI,
+DNCAD,ON,Renta Fija,ONs,,DNCAD,DNCAD,DNCAD,Exterior,SI,
+VSCPD,ON,Renta Fija,ONs,,VSCPD,VSCPD,VSCPD,Exterior,SI,
+CS47D,ON,Renta Fija,ONs,,CS47D,CS47D,CS47D,Exterior,SI,
+IRCOD,ON,Renta Fija,ONs,,IRCOD,IRCOD,IRCOD,Exterior,SI,
+ZZC1D,ON,Renta Fija,ONs,,ZZC1D,ZZC1D,ZZC1D,Exterior,SI,
+YM39D,ON,Renta Fija,ONs,,YM39D,YM39D,YM39D,Exterior,SI,
+AO27D,Bono,Renta Fija,BONOS HD,,AO27D,AO27D,AO27D,Exterior,SI,
+AO28D,Bono,Renta Fija,BONOS HD,,AO28D,AO28D,AO28D,Exterior,SI,
+GD29D,Bono,Renta Fija,BONOS HD,,GD29D,GD29D,GD29D,Exterior,SI,
+AL29D,Bono,Renta Fija,BONOS HD,,AL29D,AL29D,AL29D,Exterior,SI,
+ADBE,Acción USA/ADR,Fundamental,Tecnologico,XLK,ADBE,ADBE,ADBE,Exterior,SI,Universo ampliado V6.1
+CRM,Acción USA/ADR,Fundamental,Tecnologico,XLK,CRM,CRM,CRM,Exterior,SI,Universo ampliado V6.1
+INTU,Acción USA/ADR,Fundamental,Tecnologico,XLK,INTU,INTU,INTU,Exterior,SI,Universo ampliado V6.1
+NOW,Acción USA/ADR,Fundamental,Tecnologico,XLK,NOW,NOW,NOW,Exterior,SI,Universo ampliado V6.1
+IBM,Acción USA/ADR,Fundamental,Tecnologico,XLK,IBM,IBM,IBM,Exterior,SI,Universo ampliado V6.1
+CSCO,Acción USA/ADR,Fundamental,Tecnologico,XLK,CSCO,CSCO,CSCO,Exterior,SI,Universo ampliado V6.1
+QCOM,Acción USA/ADR,Fundamental,Tecnologico,XLK,QCOM,QCOM,QCOM,Exterior,SI,Universo ampliado V6.1
+TXN,Acción USA/ADR,Fundamental,Tecnologico,XLK,TXN,TXN,TXN,Exterior,SI,Universo ampliado V6.1
+ADI,Acción USA/ADR,Fundamental,Tecnologico,XLK,ADI,ADI,ADI,Exterior,SI,Universo ampliado V6.1
+ANET,Acción USA/ADR,Fundamental,Tecnologico,XLK,ANET,ANET,ANET,Exterior,SI,Universo ampliado V6.1
+PLTR,Acción USA/ADR,Fundamental,Tecnologico,XLK,PLTR,PLTR,PLTR,Exterior,SI,Universo ampliado V6.1
+CRWD,Acción USA/ADR,Fundamental,Tecnologico,XLK,CRWD,CRWD,CRWD,Exterior,SI,Universo ampliado V6.1
+FTNT,Acción USA/ADR,Fundamental,Tecnologico,XLK,FTNT,FTNT,FTNT,Exterior,SI,Universo ampliado V6.1
+SNPS,Acción USA/ADR,Fundamental,Tecnologico,XLK,SNPS,SNPS,SNPS,Exterior,SI,Universo ampliado V6.1
+CDNS,Acción USA/ADR,Fundamental,Tecnologico,XLK,CDNS,CDNS,CDNS,Exterior,SI,Universo ampliado V6.1
+ROP,Acción USA/ADR,Fundamental,Tecnologico,XLK,ROP,ROP,ROP,Exterior,SI,Universo ampliado V6.1
+ADSK,Acción USA/ADR,Fundamental,Tecnologico,XLK,ADSK,ADSK,ADSK,Exterior,SI,Universo ampliado V6.1
+TEAM,Acción USA/ADR,Fundamental,Tecnologico,XLK,TEAM,TEAM,TEAM,Exterior,SI,Universo ampliado V6.1
+DDOG,Acción USA/ADR,Fundamental,Tecnologico,XLK,DDOG,DDOG,DDOG,Exterior,SI,Universo ampliado V6.1
+MDB,Acción USA/ADR,Fundamental,Tecnologico,XLK,MDB,MDB,MDB,Exterior,SI,Universo ampliado V6.1
+INTC,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,INTC,INTC,INTC,Exterior,SI,Universo ampliado V6.1
+LRCX,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,LRCX,LRCX,LRCX,Exterior,SI,Universo ampliado V6.1
+KLAC,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,KLAC,KLAC,KLAC,Exterior,SI,Universo ampliado V6.1
+AMAT,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,AMAT,AMAT,AMAT,Exterior,SI,Universo ampliado V6.1
+MRVL,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,MRVL,MRVL,MRVL,Exterior,SI,Universo ampliado V6.1
+MCHP,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,MCHP,MCHP,MCHP,Exterior,SI,Universo ampliado V6.1
+NXPI,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,NXPI,NXPI,NXPI,Exterior,SI,Universo ampliado V6.1
+ON,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,ON,ON,ON,Exterior,SI,Universo ampliado V6.1
+MPWR,Acción USA/ADR,Fundamental,IA / Semiconductores,SMH,MPWR,MPWR,MPWR,Exterior,SI,Universo ampliado V6.1
+JPM,Acción USA/ADR,Fundamental,Financiero,XLF,JPM,JPM,JPM,Exterior,SI,Universo ampliado V6.1
+BAC,Acción USA/ADR,Fundamental,Financiero,XLF,BAC,BAC,BAC,Exterior,SI,Universo ampliado V6.1
+WFC,Acción USA/ADR,Fundamental,Financiero,XLF,WFC,WFC,WFC,Exterior,SI,Universo ampliado V6.1
+C,Acción USA/ADR,Fundamental,Financiero,XLF,C,C,C,Exterior,SI,Universo ampliado V6.1
+GS,Acción USA/ADR,Fundamental,Financiero,XLF,GS,GS,GS,Exterior,SI,Universo ampliado V6.1
+MS,Acción USA/ADR,Fundamental,Financiero,XLF,MS,MS,MS,Exterior,SI,Universo ampliado V6.1
+BLK,Acción USA/ADR,Fundamental,Financiero,XLF,BLK,BLK,BLK,Exterior,SI,Universo ampliado V6.1
+SCHW,Acción USA/ADR,Fundamental,Financiero,XLF,SCHW,SCHW,SCHW,Exterior,SI,Universo ampliado V6.1
+MA,Acción USA/ADR,Fundamental,Financiero,XLF,MA,MA,MA,Exterior,SI,Universo ampliado V6.1
+COF,Acción USA/ADR,Fundamental,Financiero,XLF,COF,COF,COF,Exterior,SI,Universo ampliado V6.1
+BNY,Acción USA/ADR,Fundamental,Financiero,XLF,BNY,BNY,BNY,Exterior,SI,Ticker actualizado: BK → BNY.
+PNC,Acción USA/ADR,Fundamental,Financiero,XLF,PNC,PNC,PNC,Exterior,SI,Universo ampliado V6.1
+USB,Acción USA/ADR,Fundamental,Financiero,XLF,USB,USB,USB,Exterior,SI,Universo ampliado V6.1
+SPGI,Acción USA/ADR,Fundamental,Financiero,XLF,SPGI,SPGI,SPGI,Exterior,SI,Universo ampliado V6.1
+MCO,Acción USA/ADR,Fundamental,Financiero,XLF,MCO,MCO,MCO,Exterior,SI,Universo ampliado V6.1
+UNH,Acción USA/ADR,Fundamental,Salud,XLV,UNH,UNH,UNH,Exterior,SI,Universo ampliado V6.1
+JNJ,Acción USA/ADR,Fundamental,Salud,XLV,JNJ,JNJ,JNJ,Exterior,SI,Universo ampliado V6.1
+MRK,Acción USA/ADR,Fundamental,Salud,XLV,MRK,MRK,MRK,Exterior,SI,Universo ampliado V6.1
+AMGN,Acción USA/ADR,Fundamental,Salud,XLV,AMGN,AMGN,AMGN,Exterior,SI,Universo ampliado V6.1
+GILD,Acción USA/ADR,Fundamental,Salud,XLV,GILD,GILD,GILD,Exterior,SI,Universo ampliado V6.1
+REGN,Acción USA/ADR,Fundamental,Salud,XLV,REGN,REGN,REGN,Exterior,SI,Universo ampliado V6.1
+VRTX,Acción USA/ADR,Fundamental,Salud,XLV,VRTX,VRTX,VRTX,Exterior,SI,Universo ampliado V6.1
+TMO,Acción USA/ADR,Fundamental,Salud,XLV,TMO,TMO,TMO,Exterior,SI,Universo ampliado V6.1
+DHR,Acción USA/ADR,Fundamental,Salud,XLV,DHR,DHR,DHR,Exterior,SI,Universo ampliado V6.1
+ISRG,Acción USA/ADR,Fundamental,Salud,XLV,ISRG,ISRG,ISRG,Exterior,SI,Universo ampliado V6.1
+MDT,Acción USA/ADR,Fundamental,Salud,XLV,MDT,MDT,MDT,Exterior,SI,Universo ampliado V6.1
+BSX,Acción USA/ADR,Fundamental,Salud,XLV,BSX,BSX,BSX,Exterior,SI,Universo ampliado V6.1
+SYK,Acción USA/ADR,Fundamental,Salud,XLV,SYK,SYK,SYK,Exterior,SI,Universo ampliado V6.1
+ZTS,Acción USA/ADR,Fundamental,Salud,XLV,ZTS,ZTS,ZTS,Exterior,SI,Universo ampliado V6.1
+BMY,Acción USA/ADR,Fundamental,Salud,XLV,BMY,BMY,BMY,Exterior,SI,Universo ampliado V6.1
+HD,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,HD,HD,HD,Exterior,SI,Universo ampliado V6.1
+LOW,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,LOW,LOW,LOW,Exterior,SI,Universo ampliado V6.1
+MCD,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,MCD,MCD,MCD,Exterior,SI,Universo ampliado V6.1
+SBUX,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,SBUX,SBUX,SBUX,Exterior,SI,Universo ampliado V6.1
+BKNG,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,BKNG,BKNG,BKNG,Exterior,SI,Universo ampliado V6.1
+ABNB,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,ABNB,ABNB,ABNB,Exterior,SI,Universo ampliado V6.1
+TJX,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,TJX,TJX,TJX,Exterior,SI,Universo ampliado V6.1
+ORLY,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,ORLY,ORLY,ORLY,Exterior,SI,Universo ampliado V6.1
+AZO,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,AZO,AZO,AZO,Exterior,SI,Universo ampliado V6.1
+MAR,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,MAR,MAR,MAR,Exterior,SI,Universo ampliado V6.1
+CMG,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,CMG,CMG,CMG,Exterior,SI,Universo ampliado V6.1
+RCL,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,RCL,RCL,RCL,Exterior,SI,Universo ampliado V6.1
+KO,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,KO,KO,KO,Exterior,SI,Universo ampliado V6.1
+PEP,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,PEP,PEP,PEP,Exterior,SI,Universo ampliado V6.1
+PM,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,PM,PM,PM,Exterior,SI,Universo ampliado V6.1
+MO,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,MO,MO,MO,Exterior,SI,Universo ampliado V6.1
+MDLZ,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,MDLZ,MDLZ,MDLZ,Exterior,SI,Universo ampliado V6.1
+CL,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,CL,CL,CL,Exterior,SI,Universo ampliado V6.1
+KMB,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,KMB,KMB,KMB,Exterior,SI,Universo ampliado V6.1
+TGT,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,TGT,TGT,TGT,Exterior,SI,Universo ampliado V6.1
+KR,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,KR,KR,KR,Exterior,SI,Universo ampliado V6.1
+TMUS,Acción USA/ADR,Fundamental,Comunicacion,XLC,TMUS,TMUS,TMUS,Exterior,SI,Universo ampliado V6.1
+VZ,Acción USA/ADR,Fundamental,Comunicacion,XLC,VZ,VZ,VZ,Exterior,SI,Universo ampliado V6.1
+T,Acción USA/ADR,Fundamental,Comunicacion,XLC,T,T,T,Exterior,SI,Universo ampliado V6.1
+CMCSA,Acción USA/ADR,Fundamental,Comunicacion,XLC,CMCSA,CMCSA,CMCSA,Exterior,SI,Universo ampliado V6.1
+CHTR,Acción USA/ADR,Fundamental,Comunicacion,XLC,CHTR,CHTR,CHTR,Exterior,SI,Universo ampliado V6.1
+EA,Acción USA/ADR,Fundamental,Comunicacion,XLC,EA,EA,EA,Exterior,SI,Universo ampliado V6.1
+TTWO,Acción USA/ADR,Fundamental,Comunicacion,XLC,TTWO,TTWO,TTWO,Exterior,SI,Universo ampliado V6.1
+HON,Acción USA/ADR,Fundamental,Industrial,XLI,HON,HON,HON,Exterior,SI,Universo ampliado V6.1
+RTX,Acción USA/ADR,Fundamental,Industrial,XLI,RTX,RTX,RTX,Exterior,SI,Universo ampliado V6.1
+LMT,Acción USA/ADR,Fundamental,Industrial,XLI,LMT,LMT,LMT,Exterior,SI,Universo ampliado V6.1
+NOC,Acción USA/ADR,Fundamental,Industrial,XLI,NOC,NOC,NOC,Exterior,SI,Universo ampliado V6.1
+GD,Acción USA/ADR,Fundamental,Industrial,XLI,GD,GD,GD,Exterior,SI,Universo ampliado V6.1
+DE,Acción USA/ADR,Fundamental,Industrial,XLI,DE,DE,DE,Exterior,SI,Universo ampliado V6.1
+ETN,Acción USA/ADR,Fundamental,Industrial,XLI,ETN,ETN,ETN,Exterior,SI,Universo ampliado V6.1
+PH,Acción USA/ADR,Fundamental,Industrial,XLI,PH,PH,PH,Exterior,SI,Universo ampliado V6.1
+EMR,Acción USA/ADR,Fundamental,Industrial,XLI,EMR,EMR,EMR,Exterior,SI,Universo ampliado V6.1
+ITW,Acción USA/ADR,Fundamental,Industrial,XLI,ITW,ITW,ITW,Exterior,SI,Universo ampliado V6.1
+WM,Acción USA/ADR,Fundamental,Industrial,XLI,WM,WM,WM,Exterior,SI,Universo ampliado V6.1
+UNP,Acción USA/ADR,Fundamental,Industrial,XLI,UNP,UNP,UNP,Exterior,SI,Universo ampliado V6.1
+UPS,Acción USA/ADR,Fundamental,Industrial,XLI,UPS,UPS,UPS,Exterior,SI,Universo ampliado V6.1
+FDX,Acción USA/ADR,Fundamental,Industrial,XLI,FDX,FDX,FDX,Exterior,SI,Universo ampliado V6.1
+UBER,Acción USA/ADR,Fundamental,Industrial,XLI,UBER,UBER,UBER,Exterior,SI,Universo ampliado V6.1
+XOM,Acción USA/ADR,Fundamental,Energia,XLE,XOM,XOM,XOM,Exterior,SI,Universo ampliado V6.1
+COP,Acción USA/ADR,Fundamental,Energia,XLE,COP,COP,COP,Exterior,SI,Universo ampliado V6.1
+EOG,Acción USA/ADR,Fundamental,Energia,XLE,EOG,EOG,EOG,Exterior,SI,Universo ampliado V6.1
+SLB,Acción USA/ADR,Fundamental,Energia,XLE,SLB,SLB,SLB,Exterior,SI,Universo ampliado V6.1
+OXY,Acción USA/ADR,Fundamental,Energia,XLE,OXY,OXY,OXY,Exterior,SI,Universo ampliado V6.1
+MPC,Acción USA/ADR,Fundamental,Energia,XLE,MPC,MPC,MPC,Exterior,SI,Universo ampliado V6.1
+VLO,Acción USA/ADR,Fundamental,Energia,XLE,VLO,VLO,VLO,Exterior,SI,Universo ampliado V6.1
+PSX,Acción USA/ADR,Fundamental,Energia,XLE,PSX,PSX,PSX,Exterior,SI,Universo ampliado V6.1
+KMI,Acción USA/ADR,Fundamental,Energia,XLE,KMI,KMI,KMI,Exterior,SI,Universo ampliado V6.1
+WMB,Acción USA/ADR,Fundamental,Energia,XLE,WMB,WMB,WMB,Exterior,SI,Universo ampliado V6.1
+LIN,Acción USA/ADR,Fundamental,Materiales,XLB,LIN,LIN,LIN,Exterior,SI,Universo ampliado V6.1
+APD,Acción USA/ADR,Fundamental,Materiales,XLB,APD,APD,APD,Exterior,SI,Universo ampliado V6.1
+SHW,Acción USA/ADR,Fundamental,Materiales,XLB,SHW,SHW,SHW,Exterior,SI,Universo ampliado V6.1
+FCX,Acción USA/ADR,Fundamental,Materiales,XLB,FCX,FCX,FCX,Exterior,SI,Universo ampliado V6.1
+NEM,Acción USA/ADR,Fundamental,Materiales,XLB,NEM,NEM,NEM,Exterior,SI,Universo ampliado V6.1
+NUE,Acción USA/ADR,Fundamental,Materiales,XLB,NUE,NUE,NUE,Exterior,SI,Universo ampliado V6.1
+STLD,Acción USA/ADR,Fundamental,Materiales,XLB,STLD,STLD,STLD,Exterior,SI,Universo ampliado V6.1
+DOW,Acción USA/ADR,Fundamental,Materiales,XLB,DOW,DOW,DOW,Exterior,SI,Universo ampliado V6.1
+SAP,Acción USA/ADR,Fundamental,Tecnologico,XLK,SAP,SAP,SAP,Exterior,SI,Universo ampliado V6.1
+SHOP,Acción USA/ADR,Fundamental,Tecnologico,XLK,SHOP,SHOP,SHOP,Exterior,SI,Universo ampliado V6.1
+SE,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,SE,SE,SE,Exterior,SI,Universo ampliado V6.1
+JD,Acción USA/ADR,Fundamental,Consumo Discrecional,XLY,JD,JD,JD,Exterior,SI,Universo ampliado V6.1
+BIDU,Acción USA/ADR,Fundamental,Comunicacion,XLC,BIDU,BIDU,BIDU,Exterior,SI,Universo ampliado V6.1
+NVO,Acción USA/ADR,Fundamental,Salud,XLV,NVO,NVO,NVO,Exterior,SI,Universo ampliado V6.1
+AZN,Acción USA/ADR,Fundamental,Salud,XLV,AZN,AZN,AZN,Exterior,SI,Universo ampliado V6.1
+SNY,Acción USA/ADR,Fundamental,Salud,XLV,SNY,SNY,SNY,Exterior,SI,Universo ampliado V6.1
+BP,Acción USA/ADR,Fundamental,Energia,XLE,BP,BP,BP,Exterior,SI,Universo ampliado V6.1
+SHEL,Acción USA/ADR,Fundamental,Energia,XLE,SHEL,SHEL,SHEL,Exterior,SI,Universo ampliado V6.1
+RIO,Acción USA/ADR,Fundamental,Materiales,XLB,RIO,RIO,RIO,Exterior,SI,Universo ampliado V6.1
+BHP,Acción USA/ADR,Fundamental,Materiales,XLB,BHP,BHP,BHP,Exterior,SI,Universo ampliado V6.1
+UL,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,UL,UL,UL,Exterior,SI,Universo ampliado V6.1
+DEO,Acción USA/ADR,Fundamental,Consumo Masivo,XLP,DEO,DEO,DEO,Exterior,SI,Universo ampliado V6.1
