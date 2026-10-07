@@ -1,282 +1,270 @@
 {
   "schema": "ALPHA_ENGINE_MOBILE_MODEL_V1",
   "status": "PASS",
-  "generated_at_utc": "2026-10-06T14:41:18.270441+00:00",
-  "generated_at_ba": "2026-10-06T11:41:18.270441-03:00",
-  "trigger": "workflow_dispatch",
-  "classification": "MANUAL_BOOTSTRAP_OR_CATCHUP",
-  "run_id": "37478824098",
-  "source_commit": "4ec2f714f2bbd3b6bde939bbc72dc4ee202e079b",
-  "latest_completed_session": "2026-10-05",
-  "new_sessions": 20,
+  "generated_at_utc": "2026-10-07T01:58:27.655335+00:00",
+  "generated_at_ba": "2026-10-06T22:58:27.655335-03:00",
+  "trigger": "schedule",
+  "classification": "SCHEDULED_WITH_CATCHUP",
+  "run_id": "37558471615",
+  "source_commit": "27e3bd8f4fcb9e85d3a3013e276140ea2090c862",
+  "latest_completed_session": "2026-10-06",
+  "new_sessions": 21,
   "seal_id": "46bbbf853561e26625ee3ecbccb6037051556f2f3ca26dcb4e311c165c08d8e9",
   "shadow_only": true,
   "real_orders_sent": false,
   "tuning_performed": false,
-  "entry_eligible": 35,
-  "positive_targets": 42,
-  "target_weight_sum": 1.0000000000000002,
+  "entry_eligible": 32,
+  "positive_targets": 40,
+  "target_weight_sum": 1.0,
   "forward": {
     "start": "2026-09-04",
-    "latest": "2026-10-05",
+    "latest": "2026-10-06",
     "sessions": "",
     "return": null,
     "parity_max_diff": null,
     "holdout_parity": "CHECK"
   },
-  "contract_sha256": "cb0452a351f399161c6965865c4ef60699db9a9a663ff93af70811b047b64540",
+  "contract_sha256": "65ae8e342df2f38034057c80823cab8d0bd61d0582be9fdb4a24e154987fbd51",
   "targets": [
     {
       "ticker": "FDX",
-      "target_weight": 0.15167496310558565,
+      "target_weight": 0.14019743436958146,
       "entry_ok": "True",
-      "expected_active": 0.019950685420557727
-    },
-    {
-      "ticker": "ZTS",
-      "target_weight": 0.06266115899396577,
-      "entry_ok": "True",
-      "expected_active": 0.012613080114234895
-    },
-    {
-      "ticker": "TTWO",
-      "target_weight": 0.05763959279453882,
-      "entry_ok": "True",
-      "expected_active": 0.016191829812112504
+      "expected_active": 0.01831799306135683
     },
     {
       "ticker": "NUE",
-      "target_weight": 0.05692223706652355,
+      "target_weight": 0.06393338276636547,
       "entry_ok": "True",
-      "expected_active": 0.018035694392968073
+      "expected_active": 0.019302464667665616
     },
     {
-      "ticker": "NXPI",
-      "target_weight": 0.04175375937178655,
+      "ticker": "TTWO",
+      "target_weight": 0.056439753471942515,
       "entry_ok": "True",
-      "expected_active": 0.010586453328774174
-    },
-    {
-      "ticker": "CEPU",
-      "target_weight": 0.041595877509536056,
-      "entry_ok": "True",
-      "expected_active": 0.017057274596313888
-    },
-    {
-      "ticker": "STLD",
-      "target_weight": 0.0401504440609814,
-      "entry_ok": "True",
-      "expected_active": 0.012953778219215535
-    },
-    {
-      "ticker": "YPF",
-      "target_weight": 0.040004307738959514,
-      "entry_ok": "True",
-      "expected_active": 0.01076662213794552
-    },
-    {
-      "ticker": "UPS",
-      "target_weight": 0.037447915326216906,
-      "entry_ok": "True",
-      "expected_active": 0.007029373344590532
-    },
-    {
-      "ticker": "MCHP",
-      "target_weight": 0.03522657292809511,
-      "entry_ok": "True",
-      "expected_active": 0.022299666100515862
-    },
-    {
-      "ticker": "VIST",
-      "target_weight": 0.03501675442347562,
-      "entry_ok": "True",
-      "expected_active": 0.014984940024301289
+      "expected_active": 0.01472075627507879
     },
     {
       "ticker": "NKE",
-      "target_weight": 0.03345810432660633,
+      "target_weight": 0.05425392772963556,
       "entry_ok": "True",
-      "expected_active": 0.007099255868326707
+      "expected_active": 0.011440541296701249
+    },
+    {
+      "ticker": "YPF",
+      "target_weight": 0.053313384085670025,
+      "entry_ok": "True",
+      "expected_active": 0.012936186671607283
+    },
+    {
+      "ticker": "STLD",
+      "target_weight": 0.050533282207870595,
+      "entry_ok": "True",
+      "expected_active": 0.015413568691616138
+    },
+    {
+      "ticker": "UPS",
+      "target_weight": 0.045535844815461246,
+      "entry_ok": "True",
+      "expected_active": 0.008285635782728448
+    },
+    {
+      "ticker": "CEPU",
+      "target_weight": 0.04536862003641113,
+      "entry_ok": "True",
+      "expected_active": 0.017532971713420883
     },
     {
       "ticker": "KMB",
-      "target_weight": 0.033049837799290396,
+      "target_weight": 0.0439079472778538,
       "entry_ok": "True",
-      "expected_active": 0.004570337327571963
+      "expected_active": 0.005833325111743503
     },
     {
-      "ticker": "DOW",
-      "target_weight": 0.025492613317768927,
+      "ticker": "VIST",
+      "target_weight": 0.043014444622753126,
       "entry_ok": "True",
-      "expected_active": 0.007101618757772135
+      "expected_active": 0.017523489581573327
+    },
+    {
+      "ticker": "MCHP",
+      "target_weight": 0.03779771186858517,
+      "entry_ok": "True",
+      "expected_active": 0.021603054227959155
+    },
+    {
+      "ticker": "NXPI",
+      "target_weight": 0.03571723520765414,
+      "entry_ok": "True",
+      "expected_active": 0.008733353428278374
     },
     {
       "ticker": "MPWR",
-      "target_weight": 0.025143853715159183,
+      "target_weight": 0.02845069729811925,
       "entry_ok": "True",
-      "expected_active": 0.013867679668026442
-    },
-    {
-      "ticker": "ON",
-      "target_weight": 0.018638710414970505,
-      "entry_ok": "True",
-      "expected_active": 0.013622338036887614
-    },
-    {
-      "ticker": "LAR",
-      "target_weight": 0.018389916446970356,
-      "entry_ok": "True",
-      "expected_active": 0.01578666541680367
-    },
-    {
-      "ticker": "NOC",
-      "target_weight": 0.01806916904741908,
-      "entry_ok": "True",
-      "expected_active": 0.002018449308113361
-    },
-    {
-      "ticker": "ADSK",
-      "target_weight": 0.017691540813345043,
-      "entry_ok": "True",
-      "expected_active": 0.00931400926500539
-    },
-    {
-      "ticker": "TXN",
-      "target_weight": 0.01687370414857357,
-      "entry_ok": "True",
-      "expected_active": 0.0032877194710219295
+      "expected_active": 0.014472454081639358
     },
     {
       "ticker": "VLO",
-      "target_weight": 0.01672823784702528,
+      "target_weight": 0.02790508936110105,
       "entry_ok": "True",
-      "expected_active": 0.0039988260245315535
+      "expected_active": 0.006240446072958513
     },
     {
-      "ticker": "CAT",
-      "target_weight": 0.016265184093131203,
+      "ticker": "DOW",
+      "target_weight": 0.02448792127478869,
       "entry_ok": "True",
-      "expected_active": 0.003100106160445726
+      "expected_active": 0.00601376501617368
     },
     {
-      "ticker": "AVGO",
-      "target_weight": 0.015808302437529616,
+      "ticker": "EOG",
+      "target_weight": 0.02392388390231616,
       "entry_ok": "True",
-      "expected_active": 0.0054887530246131
+      "expected_active": 0.00570336465699818
     },
     {
-      "ticker": "OXY",
-      "target_weight": 0.015634499980061254,
+      "ticker": "ZTS",
+      "target_weight": 0.017253779121301122,
       "entry_ok": "True",
-      "expected_active": 0.004014364358332845
-    },
-    {
-      "ticker": "HON",
-      "target_weight": 0.012390116169982902,
-      "entry_ok": "False",
-      "expected_active": 0.0016091776303331327
-    },
-    {
-      "ticker": "ASML",
-      "target_weight": 0.011635140447910608,
-      "entry_ok": "True",
-      "expected_active": 0.0030621304072426434
-    },
-    {
-      "ticker": "MELI",
-      "target_weight": 0.01143432077653619,
-      "entry_ok": "True",
-      "expected_active": 0.004132934326519975
-    },
-    {
-      "ticker": "MDB",
-      "target_weight": 0.011140900642497254,
-      "entry_ok": "True",
-      "expected_active": 0.016789102203638488
-    },
-    {
-      "ticker": "DDOG",
-      "target_weight": 0.011049480239065082,
-      "entry_ok": "True",
-      "expected_active": 0.009547621191484707
-    },
-    {
-      "ticker": "KEEL",
-      "target_weight": 0.010674434558193256,
-      "entry_ok": "True",
-      "expected_active": 0.02796219788168701
-    },
-    {
-      "ticker": "MU",
-      "target_weight": 0.010371203972913915,
-      "entry_ok": "True",
-      "expected_active": 0.014377670396133245
-    },
-    {
-      "ticker": "MPC",
-      "target_weight": 0.010356753969694227,
-      "entry_ok": "True",
-      "expected_active": 0.002892044978120683
-    },
-    {
-      "ticker": "CRWD",
-      "target_weight": 0.010302201878304265,
-      "entry_ok": "True",
-      "expected_active": 0.009963214526694521
-    },
-    {
-      "ticker": "FCX",
-      "target_weight": 0.006394324258176309,
-      "entry_ok": "True",
-      "expected_active": 0.002288417451404617
-    },
-    {
-      "ticker": "PLTR",
-      "target_weight": 0.006269632948247242,
-      "entry_ok": "True",
-      "expected_active": 0.008243817107233941
+      "expected_active": 0.003575484642396733
     },
     {
       "ticker": "ADI",
-      "target_weight": 0.005550519608806528,
-      "entry_ok": "False",
-      "expected_active": 0.0010341807889128565
+      "target_weight": 0.016959284086106974,
+      "entry_ok": "True",
+      "expected_active": 0.0029813569691242176
     },
     {
-      "ticker": "GOOGL",
-      "target_weight": 0.004380993273225871,
-      "entry_ok": "False",
-      "expected_active": 0.0011583451746435183
+      "ticker": "LAR",
+      "target_weight": 0.01677373076482012,
+      "entry_ok": "True",
+      "expected_active": 0.013791726603729895
     },
     {
-      "ticker": "GLOB",
-      "target_weight": 0.0024098770146017265,
+      "ticker": "TXN",
+      "target_weight": 0.016693295689110235,
+      "entry_ok": "True",
+      "expected_active": 0.0029943820467397833
+    },
+    {
+      "ticker": "ADSK",
+      "target_weight": 0.01490679562147482,
+      "entry_ok": "True",
+      "expected_active": 0.007790800660968728
+    },
+    {
+      "ticker": "HON",
+      "target_weight": 0.014354532006359668,
       "entry_ok": "False",
-      "expected_active": 0.0017573338617421742
+      "expected_active": 0.0017483101774189564
+    },
+    {
+      "ticker": "MPC",
+      "target_weight": 0.013596978623085718,
+      "entry_ok": "True",
+      "expected_active": 0.00349090554621909
+    },
+    {
+      "ticker": "DDOG",
+      "target_weight": 0.012451001726555111,
+      "entry_ok": "True",
+      "expected_active": 0.010495114860530825
+    },
+    {
+      "ticker": "ON",
+      "target_weight": 0.011990693522191264,
+      "entry_ok": "True",
+      "expected_active": 0.008559647396421328
+    },
+    {
+      "ticker": "KEEL",
+      "target_weight": 0.011503181228498414,
+      "entry_ok": "True",
+      "expected_active": 0.028967901168432383
+    },
+    {
+      "ticker": "MDB",
+      "target_weight": 0.011070924974240295,
+      "entry_ok": "True",
+      "expected_active": 0.015616646572071582
+    },
+    {
+      "ticker": "CRWD",
+      "target_weight": 0.010810164355135132,
+      "entry_ok": "True",
+      "expected_active": 0.010089477123650886
+    },
+    {
+      "ticker": "OXY",
+      "target_weight": 0.010715224099255384,
+      "entry_ok": "True",
+      "expected_active": 0.00253300162875735
+    },
+    {
+      "ticker": "MU",
+      "target_weight": 0.010688963604465357,
+      "entry_ok": "True",
+      "expected_active": 0.014204300435482747
+    },
+    {
+      "ticker": "CAT",
+      "target_weight": 0.007014393468153467,
+      "entry_ok": "False",
+      "expected_active": 0.0012915348427463816
     },
     {
       "ticker": "AMD",
-      "target_weight": 0.0020848391086445684,
+      "target_weight": 0.0057526194336938305,
       "entry_ok": "True",
-      "expected_active": 0.002105148254741384
+      "expected_active": 0.005479278522523158
+    },
+    {
+      "ticker": "NOC",
+      "target_weight": 0.005355955719851238,
+      "entry_ok": "False",
+      "expected_active": 0.0005975675705449493
+    },
+    {
+      "ticker": "PLTR",
+      "target_weight": 0.00457679192998037,
+      "entry_ok": "True",
+      "expected_active": 0.005806909112685137
+    },
+    {
+      "ticker": "CHTR",
+      "target_weight": 0.004020691410108402,
+      "entry_ok": "True",
+      "expected_active": 0.0027715062604202847
     },
     {
       "ticker": "TGT",
-      "target_weight": 0.0013736609034048762,
+      "target_weight": 0.0030799329280685453,
       "entry_ok": "False",
-      "expected_active": 0.00027668695079880026
+      "expected_active": 0.0005922215607189219
     },
     {
-      "ticker": "ANET",
-      "target_weight": 0.0005124250580654634,
+      "ticker": "AMAT",
+      "target_weight": 0.002247475256458549,
       "entry_ok": "False",
-      "expected_active": 0.00020331674355613503
+      "expected_active": 0.001529869338488348
     },
     {
-      "ticker": "MRVL",
-      "target_weight": 0.0003319174642142039,
+      "ticker": "PANW",
+      "target_weight": 0.0020685934235322883,
       "entry_ok": "False",
-      "expected_active": 0.0005398606033235998
+      "expected_active": 0.0010596651822286833
+    },
+    {
+      "ticker": "FCX",
+      "target_weight": 0.0009742969565547694,
+      "entry_ok": "False",
+      "expected_active": 0.000356408627594055
+    },
+    {
+      "ticker": "GLOB",
+      "target_weight": 0.0003601397548896096,
+      "entry_ok": "False",
+      "expected_active": 0.00024371448728697137
     }
   ]
 }
